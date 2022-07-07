@@ -15,7 +15,7 @@ export default function Advocacy() {
                     <div className="advocacy-examples">
                         <div className="bg-white rounded p-5 shadow">
                             <h4 className="text-secondary">Examples include</h4>
-                            <ul>
+                            <ul className="styled-bullets">
                                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium aliquam nam rerum.</li>
                                 <li>Asperiores, quaerat laborum distinctio cupiditate in enim nam. Consequuntur et illo delectus.</li>
                                 <li>Sint libero ad eligendi rem corrupti voluptas voluptatum quia nisi nemo! Quam!</li>

@@ -3,6 +3,7 @@ import Hero from '../components/landing-page/Hero'
 import WhoAreWe from '../components/landing-page/WhoAreWe'
 import WhatWeDo from '../components/landing-page/WhatWeDo'
 import Advocacy from '../components/landing-page/Advocacy'
+import SaWork from '../components/landing-page/SaWork'
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<WhoAreWe/>
 			<WhatWeDo/>
 			<Advocacy/>
+			<SaWork/>
 		</Layout>
 	)
 }

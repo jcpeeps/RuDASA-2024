@@ -51,11 +51,11 @@ nav .navbar-nav li a{
   height: 80%;
 }
 
-ul {
+.styled-bullets {
   list-style: none;
 }
 
-ul li::before {
+.styled-bullets li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: var(--primary); /* Change the color */
   font-weight: bold; /* If you want it to be bold */
