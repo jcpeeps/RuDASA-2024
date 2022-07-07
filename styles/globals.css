@@ -78,3 +78,18 @@ ul {
 .card-width {
   width: 300px;
 }
+
+.partner-width {
+  width: 400px;
+}
+
+/* About us svg */
+.team-svg {
+  right: 0;
+  top: 120px;
+  z-index: -1;
+}
+
+.meet-team-height {
+  min-height: 580px;
+}

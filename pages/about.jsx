@@ -5,7 +5,7 @@ import Team from '../components/about-us/Team'
 
 export default function about() {
   return (
-    <Layout pageTitle="RuDASA | About Us">
+    <Layout pageTitle="RuDASA | About Us">    
       <Hero/>
       <Team/>
 		</Layout>

@@ -1,8 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
+import TeamSvg from '../../media/svg/team.svg'
 
 export default function Hero() {
     return (
-        <section>
+        <section className="meet-team-height">
             <div className="container">
                 <h1 className="dispaly-4 fw-bold text-primary mb-5">About Us</h1>
                 <h4 className="fw-bold mb-4">Meet the Team</h4>
@@ -15,6 +17,9 @@ export default function Hero() {
                         <p className="mb-4">Qui asperiores ipsam adipisci harum quo officia inventore, expedita et eligendi. Maxime, voluptatum quibusdam quam reiciendis voluptate animi nisi ducimus tempora veritatis in dolor illo?</p>
                         <p>Quos id tenetur sed laborum perferendis. A autem distinctio dolore repellat accusantium dolor perspiciatis error libero at cum? Tempore molestias quisquam error, tenetur cum nostrum!</p>
                     </div>
+                </div>
+                <div className="position-absolute team-svg">
+                    <Image src={TeamSvg} width={700} />
                 </div>
             </div>
         </section>
