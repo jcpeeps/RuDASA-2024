@@ -4,14 +4,14 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 export default function Footer() {
 	return (
-		<footer className="bg-secondary">
-			<div className="container">
+		<footer className="bg-secondary py-5">
+			<div className="container my-5">
 				<div className="row">
 					<div className="col">
-						<h5>Our Values</h5>
-						<ul>
-							<li><a href="#">Value statement</a></li>
-							<li><a href="#">Code of Conduct</a></li>
+						<h5 className="text-white">Our Values</h5>
+						<ul className="list-unstyled">
+							<li><a href="#" className="text-white text-decoration-none">Value statement</a></li>
+							<li><a href="#" className="text-white text-decoration-none">Code of Conduct</a></li>
 						</ul>
 					</div>
 					<div className="col">
