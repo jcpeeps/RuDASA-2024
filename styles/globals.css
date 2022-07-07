@@ -73,3 +73,8 @@ ul {
 .advocacy-examples {
   max-width: 50%;
 }
+
+/* Contact card custom width */
+.card-width {
+  width: 300px;
+}

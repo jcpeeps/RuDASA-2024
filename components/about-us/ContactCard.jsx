@@ -1,0 +1,17 @@
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+
+export default function ContactCard(props) {
+    return (
+        <a href={props.email} target="_blank" className="text-decoration-none text-black">
+            <div className="bg-white rounded-3 shadow d-flex justify-content-between align-items-center p-4 card-width m-3">
+                <div>
+                    <p className="fw-bold mb-1">{props.title}</p>
+                    <p className="mb-0 ms-2">Dr. {props.name}</p>
+                </div>
+                <FontAwesomeIcon icon={faEnvelope} className="text-primary fs-3" />
+            </div>
+        </a>
+    )
+}

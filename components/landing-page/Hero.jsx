@@ -9,7 +9,7 @@ export default function Hero() {
                 <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <Image src={Logo} />
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 offset-1 mt-5">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 offset-md-1 offset-lg-1 mt-5">
                     <h1 className="display-3 fw-bold mb-5">Inspiring others towards rural health</h1>
                     <div className="d-flex">
                         <div className="gradient-outline me-3">
