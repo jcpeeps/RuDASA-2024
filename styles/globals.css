@@ -28,7 +28,25 @@ nav .navbar-nav li a{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3CD28A",endColorstr="#3CD2AE",GradientType=1);
 }
 
+.gradient-fill {
+  color: var(--primary) !important;
+}
+
+.gradient-outline {
+  padding: 0.25rem;
+  border-radius: 0.7rem;
+  background: var(--gradient);
+  display: inline-block;
+}
+.gradient-outline .btn-outline-primary {
+  background-color: white;
+}
+
 .active a {
   color: var(--primary) !important;
   font-weight: bold;
+}
+
+.main-container {
+  height: 80%;
 }
