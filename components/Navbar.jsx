@@ -22,7 +22,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/resources">
+                        <Link href="/articles">
                             <a className="nav-link">Articles</a>
                         </Link>
                     </li>
@@ -32,12 +32,12 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/resources">
+                        <Link href="/contact">
                             <a className="nav-link">Contact Us</a>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/resources">
+                        <Link href="/portal">
                             <Button className="nav-link p-3 text-white gradient-background">Learning Portal</Button>
                         </Link>
                     </li>
