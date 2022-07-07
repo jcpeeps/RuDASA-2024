@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+//Custom Variables
+$font-family-base: 'Poppins', sans-serif;
+$font-family-sans-serif: 'Poppins', sans-serif;
+$primary: rgb(108,125,255);
+$secondary: #A7D1FF;
+$cyan: #F0F2FB;
+$info: #A7ADFF;
+$text-muted: #CACEE0;
+$btn-border-width: 0rem;
+$btn-border-radius-lg: .5rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1520px
+);
+
+//Import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
