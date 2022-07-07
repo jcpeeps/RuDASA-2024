@@ -92,6 +92,10 @@ ul {
 .partner-width {
   width: 400px;
 }
+/* Resource card custom width */
+.resc-card-width {
+  width: 200px;
+}
 
 /* About us svg */
 .team-svg {
