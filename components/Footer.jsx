@@ -7,17 +7,17 @@ import { faHandHoldingMedical } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
 	return (
-		<footer className="bg-secondary py-5">
-			<div className="container my-5">
-				<div className="row">
-					<div className="col">
+		<footer className="bg-secondary pt-5 pb-3">
+			<div className="container mt-5 mb-3 d-flex flex-column align-items-center">
+				<div className="row w-100">
+					<div className="col-3">
 						<h5 className="text-white">Our Values</h5>
 						<ul className="list-unstyled">
 							<li><a href="#" className="text-white text-decoration-none">Value statement</a></li>
 							<li><a href="#" className="text-white text-decoration-none">Code of Conduct</a></li>
 						</ul>
 					</div>
-					<div className="col">
+					<div className="col-3">
 						<h5 className="text-white">Find a Hospital</h5>
 						<ul className="list-unstyled">
 							<li><a href="#" className="text-white text-decoration-none">Hospitals in South Africa</a></li>
@@ -25,7 +25,7 @@ export default function Footer() {
 							<li><a href="#" className="text-white text-decoration-none">Rural hospitals</a></li>
 						</ul>
 					</div>
-					<div className="col">
+					<div className="col-3">
 						<h5 className="text-white">HST Email Discussion Groups</h5>
 						<ul className="list-unstyled">
 							<li><a href="#" className="text-white text-decoration-none">Drug Policy & Practice</a></li>
