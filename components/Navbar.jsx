@@ -10,7 +10,7 @@ export default function Navbar() {
             </button>
 
             <div className="collapse navbar-collapse" id="navbarsExample07XL">
-                <ul className="navbar-nav ms-auto w-75 d-flex justify-content-around align-items-center">
+                <ul className="navbar-nav ms-auto w-50 d-flex justify-content-around align-items-center">
                     <li className="nav-item active">
                         <Link href="/">
                             <a className="nav-link">Home</a>
