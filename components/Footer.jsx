@@ -1,9 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faSprout } from '@fortawesome/free-solid-svg-icons'
-import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
-import { faHandHoldingMedical } from '@fortawesome/free-solid-svg-icons'
+import { faSprout, faHandHoldingMedical, faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
 	return (

@@ -73,3 +73,14 @@ ul {
 .advocacy-examples {
   max-width: 50%;
 }
+
+@media screen and (max-width: 720px) {
+  .advocacy-container {
+    max-width: 100%;
+  }
+  
+  .advocacy-examples {
+    max-width: 100%;
+  }
+  
+}

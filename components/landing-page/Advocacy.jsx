@@ -2,18 +2,18 @@ import React from 'react'
 
 export default function Advocacy() {
     return (
-        <section className="bg-primary">
+        <section className="bg-primary w-100">
             <div className="container py-5">
                 <h1 className="text-white display-3 mt-5">Advocacy Work</h1>
-                <div className="d-flex justify-content-between my-5 pe-5">
-                    <div className="bg-white rounded p-5 shadow advocacy-container">
+                <div className="d-flex justify-content-between my-3 pe-3 flex-column flex-md-row my-md-5 pe-md-5">
+                    <div className="bg-white rounded shadow advocacy-container p-4 m-3 p-md-5">
                         <h4 className="text-secondary">Contribution</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, molestias maxime quibusdam odit ea unde molestiae, distinctio veniam dolore eveniet repellendus, sequi neque? Amet dolorum minima, repudiandae earum quas dolores deserunt reiciendis voluptatum suscipit! Asperiores rerum error sapiente recusandae accusantium cum modi alias similique dolores ratione eum quis totam, iure nostrum maiores quisquam perspiciatis deleniti labore. Nulla error dolorum illum placeat laborum. Omnis laboriosam eum corporis iusto quam repudiandae aliquid ipsam perspiciatis, adipisci asperiores error.</p>
                         <h4 className="text-secondary">Partnerships</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore ullam, optio odio explicabo reiciendis? Quae quod vero impedit sunt eveniet quia, beatae, corporis quas error incidunt placeat nam consequuntur architecto? Doloremque est minima quod eos corrupti placeat exercitationem magnam quam? Pariatur magnam dignissimos consequuntur. Quis exercitationem deleniti quos beatae dolorem doloremque minus obcaecati. Ut, autem modi? Omnis amet asperiores adipisci iure nostrum ea, expedita corporis unde quibusdam ullam tenetur dolores aliquam, provident minus consequuntur?</p>
                     </div>
                     <div className="advocacy-examples">
-                        <div className="bg-white rounded p-5 shadow">
+                        <div className="bg-white rounded shadow p-4 m-3 p-md-5">
                             <h4 className="text-secondary">Examples include</h4>
                             <ul className="styled-bullets">
                                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium aliquam nam rerum.</li>
