@@ -74,7 +74,6 @@ ul {
   max-width: 50%;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 720px) {
   .advocacy-container {
     max-width: 100%;
@@ -83,8 +82,7 @@ ul {
   .advocacy-examples {
     max-width: 100%;
   }
-  
-=======
+}
 /* Contact card custom width */
 .card-width {
   width: 300px;
@@ -103,5 +101,4 @@ ul {
 
 .meet-team-height {
   min-height: 580px;
->>>>>>> 6b00c617cce886ef85a3e1cd8f7371ad0a866693
 }
