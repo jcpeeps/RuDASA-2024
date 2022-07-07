@@ -12,9 +12,9 @@ const Layout = (props) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
             </Head>
-            <div className="vh-100">
+            <div>
                 <Navbar />
-                <main className="main-container">
+                <main>
                     {props.children}
                 </main>
             </div>
