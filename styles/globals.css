@@ -48,10 +48,10 @@ nav .navbar-nav li a{
 }
 
 .main-container {
-  height: 80%;
+  height: 70vh;
 }
 
-.ul {
+ul {
   list-style: none;
 }
 

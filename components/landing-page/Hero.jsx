@@ -4,12 +4,12 @@ import Logo from '../../media/svg/logo.svg'
 
 export default function Hero() {
     return (
-        <section className="container h-100 d-flex align-items-center justify-content-between">
+        <section className="container d-flex align-items-center justify-content-between main-container">
             <div className="row mb-5 pb-5">
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <Image src={Logo} />
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 offset-1 mt-5">
                     <h1 className="display-3 fw-bold mb-5">Inspiring others towards rural health</h1>
                     <div className="d-flex">
                         <div className="gradient-outline me-3">
