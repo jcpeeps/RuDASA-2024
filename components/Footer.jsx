@@ -39,7 +39,7 @@ export default function Footer() {
 						<div className="bg-warning rounded p-2 p my-1 w-100"><a href="#" className="text-black text-decoration-none">Buy me a coffee</a></div>
 					</div>
 				</div>
-				<div className="w-100 d-flex justify-content-center">
+				<div className="w-25 d-flex justify-content-between mt-4">
 					<a href="#"><FontAwesomeIcon icon={faFacebook} size="2x" className="text-white p-2"/></a>
 					<a href="#"><FontAwesomeIcon icon={faTwitter} size="2x" className="text-white p-2"/></a>
 					<a href="#"><FontAwesomeIcon icon={faInstagram} size="2x" className="text-white p-2"/></a>
