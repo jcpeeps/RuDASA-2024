@@ -2,15 +2,33 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --primary: #3CD28A;
+  --gradient: linear-gradient(90deg, #3CD28A 0%, #3CD2AE 100%);
+}
+
+/* Navigation links override */
+nav .navbar-nav li a{
+  text-decoration: none !important;
+}
+
+.gradient-background {
+  background: var(--primary);
+  background: var(--gradient);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3CD28A",endColorstr="#3CD2AE",GradientType=1);
+}
+
+.active a {
+  color: var(--primary) !important;
+  font-weight: bold;
 }
