@@ -1,4 +1,6 @@
-### **Meet the Team** 
+---
+title: 'Meet the team'
+---
 
 RuDASA has an active Executive Committee, as well as a National Advisory Committee of Provincial Representatives and Portfolio bearers. The committee administrates and manages RuDASA through transparent and inclusive mechanisms that encourage all RuDASA members to contribute their experiences and opinions.
 

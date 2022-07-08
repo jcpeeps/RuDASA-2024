@@ -141,7 +141,7 @@ ul {
 }
 
 /* Style article layout */
-article {
+article, .column-wrap {
   column-count: 2;
   column-gap: 10em;
 }

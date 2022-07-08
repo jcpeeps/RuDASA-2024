@@ -2,29 +2,25 @@ import React from 'react'
 import ContactCard from './ContactCard'
 import PartnerCard from './PartnerCard'
 
-export default function Team() {
+export default function Team({ executives, portfolios }) {
+
+    const members = executives.frontmatter.members
+    const portfolioArray = portfolios.frontmatter.members
+
     return (
         <section className="bg-light py-5">
             <div className="container">
-                <h3 className="my-4">Executive Committee 2018-2019</h3>
+                <h3 className="my-4">{executives.content}</h3>
                 <div className="d-flex flex-wrap mb-5">
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
+                    {members.map((member, index) => (
+                        <ContactCard title={member.title} name={member.name} email={`mailto:${member.email}`} />
+                    ))}
                 </div>
-                <h3 className="my-4">National Portfolios</h3>
+                <h3 className="my-4">{portfolios.content}</h3>
                 <div className="d-flex flex-wrap">
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
-                    <ContactCard title="Chairperson" name="Lungi Hobe" email="mailto:keelanmatthews123@gmail.com" />
+                {portfolioArray.map((member, index) => (
+                        <ContactCard title={member.title} name={member.name} email={`mailto:${member.email}`} />
+                    ))}
                 </div>
                 <div className="my-5 py-3" /> {/*Spacing utility*/}
 
