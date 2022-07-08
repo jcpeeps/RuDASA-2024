@@ -139,3 +139,9 @@ ul {
   top: -17px;
   left: -17px;
 }
+
+/* Style article layout */
+article {
+  column-count: 2;
+  column-gap: 10em;
+}

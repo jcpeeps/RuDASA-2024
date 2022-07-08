@@ -14,6 +14,4 @@
     The # symbol is used to change the size of the subheadings, one # being the biggest.
     We suggest keeping the subheadings with 4 # symbols. Feel free to change any of the
     word content
-
-    The * symbol is used to add a bullet point.
  -->

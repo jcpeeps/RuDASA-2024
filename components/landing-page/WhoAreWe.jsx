@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Illustration1 from '../../media/svg/who-are-we.svg'
 
-export default function WhoAreWe() {
+export default function WhoAreWe({ content }) {
     return (
         <section className="bg-light">
             <div className="container py-5">
@@ -11,9 +11,9 @@ export default function WhoAreWe() {
                         <h1 className="display-4 fw-bold mb-5">Who are we?</h1>
                         <div>
                             <h4 className="text-primary fw-bold">Our Vision</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quia unde doloribus quae dicta officiis, laborum officia beatae accusamus dolore nesciunt? Officiis dolor temporibus, molestiae impedit provident tempore earum cum?</p>
+                            <p>{content.vision}</p>
                             <h4 className="text-primary fw-bold">Our Mission</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quia unde doloribus quae dicta officiis, laborum officia beatae accusamus dolore nesciunt? Officiis dolor temporibus, molestiae impedit provident tempore earum cum?</p>
+                            <p>{content.mission}</p>
                         </div>
                         <div className="w-100 text-end">
                             <a href="/about" role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4">Meet our team</a>
@@ -27,3 +27,5 @@ export default function WhoAreWe() {
         </section>
     )
 }
+
+
