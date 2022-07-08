@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Hero () {
     return (
-        <section className="mb-5">
+        <section>
+            <div className="py-5 mb-5"></div>
             <div className="container">
                 <h1 className="display-6 fw-bold text-primary mb-5">Resources</h1>
                 <div className="row">
