@@ -1,0 +1,3 @@
+RuDASA is a network of rural health care professionals, and provides numerous opportunities for members to connect, share concerns and challenges, highlight good practices and put forward innovative ideas. This is done in various ways and through several different forums, such as a members-only mailing list, periodical newsletters, a provincial representative structure and regular teleconferences. 
+
+RuDASA members are therefore able to request assistance on a variety of issues. Other doctors can assist by sharing their knowledge and experiences, and where appropriate, the committee can attempt to help to address issues, escalating them through the correct channels by drawing on RuDASA’s collective expertise and partnerships.
