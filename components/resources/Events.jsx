@@ -1,15 +1,27 @@
 import React from 'react'
 import SnT from '../resources/events/SnT'
+import RHC from '../resources/events/RHC'
+import Onboarding from '../resources/events/Onboarding'
 
 export default function Events() {
     return (
-        <section className="bg-light py-5">
-            <div className="container my-5">
-                <div className="p-5">
-                    <h1 className="display-6 fw-bold text-primary mb-3">Events</h1>
+        <>
+            <section className="bg-light">
+                <div className="container my-5 p-5">
+                    <h1 className="display-5 fw-bold text-primary mb-3">Events</h1>
                     <SnT />
                 </div>
-            </div>
-        </section>
+            </section>
+            <section className="bg-white">
+                <div className="container my-3 p-3">
+                    <Onboarding />
+                </div>
+            </section>
+            <section className="bg-light">
+                <div className="container my-3 p-3">
+                    <RHC />
+                </div>
+            </section>
+        </>
     )
 }
