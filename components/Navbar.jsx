@@ -37,7 +37,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/portal">
+                        <Link href="/login">
                             <Button className="nav-link p-3 text-white gradient-background shadow">Learning Portal</Button>
                         </Link>
                     </li>
