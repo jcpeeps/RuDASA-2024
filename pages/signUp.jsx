@@ -6,6 +6,7 @@ import General from '../components/signup-login/General'
 import Address from '../components/signup-login/Address'
 import Club from '../components/signup-login/Club'
 import ProgressBar from '../components/signup-login/ProgressBar'
+import Benefits from '../components/signup-login/Benefits'
 
 export default function signUp() {
 
@@ -21,8 +22,8 @@ export default function signUp() {
 
     return (
         <Layout pageTitle="RuDASA | Sign up">
-            <section className="container">
-                <div className="py-5 mb-5"></div>
+            <section>
+                <div className="py-5 mb-5 container"></div>
                 <div className="d-flex justify-content-center align-items-start mb-5 pb-5">
                     <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} />
                     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
@@ -52,6 +53,7 @@ export default function signUp() {
                         </div>
                     </div>
                 </div>
+                <Benefits />
             </section>
         </Layout>
     )
