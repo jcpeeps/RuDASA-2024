@@ -113,3 +113,29 @@ ul {
 .navbar-z-index {
   z-index: 100;
 }
+
+/* Sign up */
+.progress-bar {
+  height: 6px;
+  background-color: #BEBEBE !important;
+  width: 90%;
+}
+
+.progress-loader {
+  height: 6px;
+  background-color: var(--primary);
+  transition: all 0.5s ease;
+}
+
+.progress-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.progress-offset {
+  position: relative;
+  top: -17px;
+  left: -17px;
+}
