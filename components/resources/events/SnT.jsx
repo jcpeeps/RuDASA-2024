@@ -16,13 +16,13 @@ export default function SnT () {
                     <div className="bg-white rounded shadow p-5 m-2 col-12 col-lg-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime error, minima laborum aliquam nihil obcaecati cum fugiat, nobis suscipit commodi voluptatem quia laboriosam ut illum eius excepturi. Quisquam, quod.</div>
                 </div>
             </div>
-            <h4 className="w-100 fw-bold">Survive and Thrive Students</h4>
+            <h4 className="w-100 fw-bold m-0">Survive and Thrive Students</h4>
             <div className="d-flex align-items-center col-12">
                 <div className="d-flex flex-column col-12 col-lg-7">
-                    <div className="bg-white rounded shadow p-5 m-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime error, minima laborum aliquam nihil obcaecati cum fugiat, nobis suscipit commodi voluptatem quia laboriosam ut illum eius excepturi. Quisquam, quod.</div>
-                    <div className="bg-white rounded shadow p-5 m-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime error, minima laborum aliquam nihil obcaecati cum fugiat, nobis suscipit commodi voluptatem quia laboriosam ut illum eius excepturi. Quisquam, quod.</div>
+                    <div className="bg-white rounded shadow p-5 mb-2 w-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime error, minima laborum aliquam nihil obcaecati cum fugiat, nobis suscipit commodi voluptatem quia laboriosam ut illum eius excepturi. Quisquam, quod.</div>
+                    <div className="bg-white rounded shadow p-5 mt-2 w-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime error, minima laborum aliquam nihil obcaecati cum fugiat, nobis suscipit commodi voluptatem quia laboriosam ut illum eius excepturi. Quisquam, quod.</div>
                 </div>
-                <Image src={Illustration4} classname="col-12 col-lg-5"/>
+                <Image src={Illustration4} classname="col-12 col-lg-5" width={400}/>
             </div>
         </div>
     )

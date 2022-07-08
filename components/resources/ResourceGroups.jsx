@@ -3,7 +3,7 @@ import ResourceCard from '../resources/ResourceCard'
 
 export default function ResourceGroups() {
   return (
-    <div className="container">
+    <div className="container my-5">
         <h3 className="fw-bold">Students &amp; Young Doctors</h3>
         <div className="col-12 col-lg-8 d-flex flex-wrap p-4">
             <ResourceCard icon="" title="Student Electives"/>
