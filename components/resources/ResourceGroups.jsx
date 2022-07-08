@@ -1,6 +1,6 @@
 import React from 'react'
 import ResourceCard from '../ResourceCard'
-import Icon from '../../media/icons/icon-01.svg'
+import Icon from '../../media/icons/icon.svg'
 
 export default function ResourceGroups() {
   return (

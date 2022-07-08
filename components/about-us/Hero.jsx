@@ -5,6 +5,7 @@ import TeamSvg from '../../media/svg/team.svg'
 export default function Hero() {
     return (
         <section className="meet-team-height">
+            <div className="py-5 mb-5"></div>
             <div className="container">
                 <h1 className="dispaly-4 fw-bold text-primary mb-5">About Us</h1>
                 <h4 className="fw-bold mb-4">Meet the Team</h4>
