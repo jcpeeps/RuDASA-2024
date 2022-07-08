@@ -10,18 +10,44 @@ import Benefits from '../components/signup-login/Benefits'
 
 export default function signUp() {
 
+    // Object that stores information across all components
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "",
+        password: "",
+        signUpReason: "",
+        cellNo: "",
+        workNo: "",
+
+        country: "",
+        province: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        workPlace: "",
+        district: "",
+
+        clubName: "",
+        uniName: "",
+        externalSupport: "",
+        contactName: "",
+        contactRole: "",
+        contactEmail: "",
+        supportName: ""
+    })
+
     const [step, setStep] = useState(0);
 
     const stepDisplay = () => {
         switch (step) {
-            case 0: return <General />
-            case 1: return <Address />
-            case 2: return <Club />
+            case 0: return <General formData={formData} setFormData={setFormData} />
+            case 1: return <Address formData={formData} setFormData={setFormData} />
+            case 2: return <Club formData={formData} setFormData={setFormData} />
         }
     }
 
     return (
-        <Layout pageTitle="RuDASA | Sign up">
+        <Layout pageTitle="RuDASA | Sign up" hide="true">
             <section>
                 <div className="py-5 mb-5 container"></div>
                 <div className="d-flex justify-content-center align-items-start mb-5 pb-5">

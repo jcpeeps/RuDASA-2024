@@ -18,7 +18,9 @@ const Layout = (props) => {
                     {props.children}
                 </main>
             </div>
-            <Footer />
+            <div className={props.hide == "true" ? "d-none" : ""}>
+                <Footer />
+            </div>
         </>
     )
 }

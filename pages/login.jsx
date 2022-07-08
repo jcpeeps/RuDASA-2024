@@ -5,7 +5,7 @@ import Illustration from '../media/svg/login.svg'
 
 export default function login() {
     return (
-        <Layout pageTitle="RuDASA | Login">
+        <Layout pageTitle="RuDASA | Login" hide="true">
             <section className="container">
                 <div className="py-5 mb-5"></div>
                 <div className="d-flex justify-content-center align-items-center mb-5 pb-5">
