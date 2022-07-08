@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero () {
     return (
-        <section className="my-5">
+        <section className="mb-5">
             <div className="container">
                 <h1 className="display-6 fw-bold text-primary mb-5">Resources</h1>
                 <div className="row">

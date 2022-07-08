@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <Nav className="navbar navbar-expand-lg navbar-light bg-white p-4">
+        <Nav className="navbar navbar-expand-lg navbar-light bg-white p-4 position-fixed w-100 navbar-z-index">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

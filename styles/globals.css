@@ -107,3 +107,9 @@ ul {
 .meet-team-height {
   min-height: 580px;
 }
+
+/* Navbar */
+
+.navbar-z-index {
+  z-index: 100;
+}
