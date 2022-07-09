@@ -1,1 +1,1 @@
-dfgfgf
+A major part of RuDASA's function is to provide support for doctors working in remote areas; from networking to advocacy on key issues. In this section, you will find a growing collection of resources and references. We have a Public Library, including access to our COVID-19 library on Google Drive, and a more extensive members-only library in the Learning Portal.

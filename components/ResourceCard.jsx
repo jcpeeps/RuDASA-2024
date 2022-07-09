@@ -7,7 +7,7 @@ export default function ResourceCard(props) {
         <a href={props.link} className="text-black text-decoration-none">
             <p className="fw-bold text-center">{props.title}</p>
             <div className="d-flex justify-content-center">
-              <img src={props.icon} />
+              <img src={props.icon} width={70} />
             </div> 
         </a>
     </div>

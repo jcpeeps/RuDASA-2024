@@ -1,15 +1,15 @@
 import React from 'react'
+import { marked } from 'marked'
 
-export default function Hero () {
+export default function Hero ({ content }) {
     return (
         <section>
             <div className="py-5 mb-5"></div>
             <div className="container">
                 <h1 className="display-6 fw-bold text-primary mb-5">Resources</h1>
                 <div className="row">
-                    <div className="col-12 mb-4">
-                        <p>Quos id tenetur sed laborum perferendis. A autem distinctio dolore repellat accusantium dolor perspiciatis error libero at cum? Tempore molestias quisquam error, tenetur cum nostrum!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, obcaecati doloremque delectus omnis debitis dolores numquam voluptatem cumque excepturi ipsam magni optio magnam ullam voluptatibus?</p>
+                    <div className="col-12 mb-4 w-100">
+                        <div dangerouslySetInnerHTML={{__html: marked(content.content)}}/>
                     </div>
                 </div>
             </div>
