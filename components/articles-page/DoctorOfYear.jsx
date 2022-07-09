@@ -3,29 +3,31 @@ import Image from 'next/image'
 import Portrait from '../../media/doctor-of-the-year/portrait.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseMedical, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { marked } from 'marked'
 
-export default function DoctorOfYear() {
+export default function DoctorOfYear({ markdown: { frontmatter, content }, prevRecipients }) {
+
     return (
         <section className="container mb-5 p-5">
             <h1 className="dispaly-4 fw-bold text-primary my-5">Articles</h1>
-            <h3 className="my-4 pb-4 fw-bold">Rural Doctor of the Year 2022</h3>
+            <h3 className="my-4 pb-4 fw-bold">Rural Doctor of the Year {frontmatter.year}</h3>
             <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-4 d-flex flex-wrap flex-md-nowrap">
-                    <Image src={Portrait} width={230} height={230} className="rounded-circle" />
+                <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-wrap flex-md-nowrap">
+                    <Image src={Portrait} width={270} height={270} className="rounded-circle" />
                     <div className="ms-5 my-3">
-                        <h5 className="fw-bold mb-3">Dr Pierre Jaques</h5>
+                        <h5 className="fw-bold mb-3">Dr {frontmatter.name}</h5>
                         <div className="d-flex mb-2">
                             <FontAwesomeIcon icon={faHouseMedical} className="text-primary me-2" />
-                            <p className="m-0">Madwaleni hospital</p>
+                            <p className="m-0">{frontmatter.hospital}</p>
                         </div>
                         <div className="d-flex">
                             <FontAwesomeIcon icon={faLocationDot} className="text-primary me-2" />
-                            <p className="m-0">Eastern Cape</p>
+                            <p className="m-0">{frontmatter.location}</p>
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-12 col-md-12 col-lg-6  offset-lg-1 mt-md-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex velit libero, expedita excepturi officiis vero perferendis! Ex doloribus itaque asperiores ullam sequi quidem saepe fugiat, assumenda, tempore ab nihil nisi veritatis aspernatur hic et eaque explicabo sunt repellendus beatae magni.</p>
+                <div className="col-sm-12 col-md-6 col-lg-6 mt-md-3">
+                    <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
                 </div>
             </div>
             <div className="flex">
