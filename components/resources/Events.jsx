@@ -9,12 +9,12 @@ export default function Events({ snt, snts, onboarding }) {
             <section className="bg-light" id="events">
                 <div className="container my-5 p-5">
                     <h1 className="display-5 fw-bold text-primary mb-3">Events</h1>
-                    <SnT />
+                    <SnT snt={snt} snts={snts} />
                 </div>
             </section>
             <section className="bg-white">
                 <div className="container my-3 p-3">
-                    <Onboarding />
+                    <Onboarding content={onboarding} />
                 </div>
             </section>
             <section className="bg-light">
