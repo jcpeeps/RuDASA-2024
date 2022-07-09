@@ -113,6 +113,16 @@ ul {
 /* Resource card custom width */
 .resc-card-width {
 	width: 200px;
+	transition: all 0.3s ease;
+}
+
+.resc-card-width:hover {
+	background-color: var(--primary) !important;
+	transform: scale(1.1);
+}
+
+.resc-card-width:hover p {
+	color: white !important;
 }
 
 /* About us svg */
