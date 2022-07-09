@@ -7,7 +7,7 @@ export default function SnT ({ snt, snts }) {
     return (
         <div className="d-flex flex-column">
             <h4 className="w-100 fw-bold">Survive and Thrive</h4>
-            <div className="d-flex flex-wrap col-12 col-lg-10 my-3 mb-5 pb-5">
+            <div className="d-flex flex-wrap col-12 my-3 mb-5 pb-5">
                 <div className="d-flex flex-wrap flex-lg-nowrap">
                     <div className="bg-white rounded shadow p-5 m-2 col-12 col-lg-7">{snt.frontmatter.firstPoint}</div>
                     <div className="bg-white rounded shadow p-5 m-2 col-12 col-lg-5 styled-bullets" dangerouslySetInnerHTML={{__html: marked(snt.content)}}/>
@@ -18,12 +18,12 @@ export default function SnT ({ snt, snts }) {
                 </div>
             </div>
             <h4 className="w-100 fw-bold">Survive and Thrive Students</h4>
-            <div className="d-flex align-items-center col-12 my-3">
+            <div className="d-flex align-items-center justify-content-between col-12 my-3">
                 <div className="d-flex flex-column col-12 col-lg-7">
-                    <div className="bg-white rounded shadow p-5 mb-2 w-75">{snts.frontmatter.firstPoint}</div>
-                    <div className="bg-white rounded shadow p-5 mt-2 w-75">{snts.frontmatter.secondPoint}</div>
+                    <div className="bg-white rounded shadow p-5 mb-2 w-100">{snts.frontmatter.firstPoint}</div>
+                    <div className="bg-white rounded shadow p-5 mt-2 w-100">{snts.frontmatter.secondPoint}</div>
                 </div>
-                <Image src={Illustration4} classname="col-12 col-lg-5" width={400}/>
+                <Image src={Illustration4} className="col-12 col-lg-5" width={400}/>
             </div>
         </div>
     )
