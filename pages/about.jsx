@@ -11,7 +11,9 @@ export default function about({ data }) {
   return (
     <Layout pageTitle="RuDASA | About Us">
       <Hero content={data.find(file => file.slug === "meet-the-team")} />
-      <Team executives={data.find(file => file.slug === "executive-committee")} portfolios={data.find(file => file.slug === "portfolios")} />
+      <Team executives={data.find(file => file.slug === "executive-committee")} 
+            portfolios={data.find(file => file.slug === "portfolios")}
+            partners={data.find(file => file.slug === "partners")} />
     </Layout>
   )
 }
