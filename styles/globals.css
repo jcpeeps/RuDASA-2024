@@ -173,3 +173,8 @@ article,
 	column-count: 2;
 	column-gap: 10em;
 }
+
+span {
+	color: var(--primary);
+	font-weight: bold;
+}
