@@ -14,7 +14,8 @@ export default function articles({ otherInfo, studentResources, ruralResources, 
 			<ResourceGroups student={studentResources} rural={ruralResources} other={otherResources} />
 			<Events snt={otherInfo.find(file => file.slug === "survive-and-thrive")} 
 					snts={otherInfo.find(file => file.slug === "survive-and-thrive-students")}
-					onboarding={otherInfo.find(file => file.slug === "onboarding")} />
+					onboarding={otherInfo.find(file => file.slug === "onboarding")}
+					rhc={otherInfo.find(file => file.slug === "rural-health-conference")} />
 		</Layout>
 	)
 }
