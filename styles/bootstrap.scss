@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 //Custom Variables
-$font-family-base: 'Poppins', sans-serif;
-$font-family-sans-serif: 'Poppins', sans-serif;
+$headings-font-family: 'Poppins', sans-serif;
+$font-family-base: 'Inter', sans-serif;
+$font-family-sans-serif: 'Inter', sans-serif;
 $primary: #3CD28A;
 $secondary: #263238;
 $light: #FBFBFB;
 $btn-border-width: 0rem;
-$btn-border-radius: .4rem;
+$btn-border-radius: .5rem;
 
 $container-max-widths: (
   sm: 540px,
