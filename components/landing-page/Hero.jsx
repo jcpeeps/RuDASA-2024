@@ -5,7 +5,7 @@ import Logo from '../../media/svg/logo.svg'
 export default function Hero() {
     return (
         <section className="container d-flex align-items-center justify-content-between main-container">
-            <div className="row mb-5 pb-5">
+            <div className="row my-5 py-5">
                 <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mt-5">
                     <Image src={Logo}/>
                 </div>

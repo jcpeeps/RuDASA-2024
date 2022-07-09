@@ -1,52 +1,29 @@
 import React from 'react'
-import { Nav, Button } from 'react-bootstrap';
-import Link from 'next/link'
+import { Nav, Button, Navbar } from 'react-bootstrap';
 import { useRouter } from 'next/router'
 
-export default function Navbar() {
+export default function Navigation() {
 
     const router = useRouter();
 
     return (
-        <Nav className="navbar navbar-expand-lg navbar-light bg-white p-4 position-fixed w-100 navbar-z-index">
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div className="collapse navbar-collapse" id="navbarsExample07XL">
-                <ul className="navbar-nav ms-auto w-50 d-flex justify-content-around align-items-center">
-                    <li className={router.pathname == "/" ? "nav-item active" : "nav-item"}>
-                        <Link href="/">
-                            <a className="nav-link">Home</a>
-                        </Link>
-                    </li>
-                    <li className={router.pathname == "/about" ? "nav-item active" : "nav-item"}>
-                        <Link href="/about">
-                            <a className="nav-link">About Us</a>
-                        </Link>
-                    </li>
-                    <li className={router.pathname == "/articles" ? "nav-item active" : "nav-item"}>
-                        <Link href="/articles">
-                            <a className="nav-link">Articles</a>
-                        </Link>
-                    </li>
-                    <li className={router.pathname == "/resources" ? "nav-item active" : "nav-item"}>
-                        <Link href="/resources">
-                            <a className="nav-link">Resources</a>
-                        </Link>
-                    </li>
-                    <li className={router.pathname == "/contact" ? "nav-item active" : "nav-item"}>
-                        <Link href="/contact">
-                            <a className="nav-link">Contact Us</a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="/login">
-                            <Button className="nav-link p-3 text-white gradient-background shadow">Learning Portal</Button>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-        </Nav >
-  )
+        <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="p-4 position-fixed w-100 navbar-z-index">
+            <Navbar.Brand href="/" className="fw-bold">
+                RuDASA
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="navbar-nav ms-auto w-50 d-flex justify-content-around align-items-center">
+                    <Nav.Link className={router.pathname == "/" ? "active" : ""} href="/">Home</Nav.Link>
+                    <Nav.Link className={router.pathname == "/about" ? "active" : ""} href="/about">About Us</Nav.Link>
+                    <Nav.Link className={router.pathname == "/articles" ? "active" : ""} href="/articles">Articles</Nav.Link>
+                    <Nav.Link className={router.pathname == "/resources" ? "active" : ""} href="/resources">Resources</Nav.Link>
+                    <Nav.Link className={router.pathname == "/contact" ? "active" : ""} href="/contact">Contact Us</Nav.Link>
+                    <Nav.Link href="/login">
+                        <Button className="nav-link p-3 text-white gradient-background shadow">Learning Portal</Button>
+                    </Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    )
 }

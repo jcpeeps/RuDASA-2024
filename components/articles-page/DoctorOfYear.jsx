@@ -4,6 +4,7 @@ import Portrait from '../../media/doctor-of-the-year/portrait.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseMedical, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { marked } from 'marked'
+import { Accordion } from 'react-bootstrap'
 
 export default function DoctorOfYear({ markdown: { frontmatter, content }, prevRecipients }) {
 
@@ -30,23 +31,17 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
                 </div>
             </div>
-            <div className="flex">
-                {/* <div className="accordion accordion-flush w-50" id="recipients">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                View previous recipients
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#recipients">
-                            <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+            <div className="d-flex w-100 justify-content-between align-items-start my-5">
+                <Accordion className="w-50 border-bottom" flush>
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>View previous recipients</Accordion.Header>
+                        <Accordion.Body>
+                            <div dangerouslySetInnerHTML={{ __html: marked(prevRecipients.content) }} />
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
                 <div className="text-end">
-                    <a href="#" role="button" className="btn btn-lg btn-secondary text-white mt-4">Nominate a Doctor</a>
+                    <a href="#" role="button" className="btn btn-lg btn-secondary text-white">Nominate a Doctor</a>
                 </div>
             </div>
         </section>
