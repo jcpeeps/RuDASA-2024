@@ -3,7 +3,7 @@ import SnT from '../resources/events/SnT'
 import RHC from '../resources/events/RHC'
 import Onboarding from '../resources/events/Onboarding'
 
-export default function Events() {
+export default function Events({ snt, snts, onboarding }) {
     return (
         <>
             <section className="bg-light" id="events">

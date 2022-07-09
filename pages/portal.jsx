@@ -5,7 +5,7 @@ import ResourceGroups from '../components/portal/ResourceGroups'
 
 export default function Portal () {
     return(
-        <Layout pageTitle="RuDASA | Learning Portal">
+        <Layout pageTitle="RuDASA | Learning Portal" hide="true">
             <ResourceGroups/>
             <Hero/>
 		</Layout>
