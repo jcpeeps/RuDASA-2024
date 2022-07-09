@@ -58,7 +58,7 @@ export default function signUp() {
                         <div className="w-100">
                             {stepDisplay()}
                         </div>
-                        <div className="w-100 text-end">
+                        <div className="w-100 d-flex justify-content-end align-items-center">
                             <small>Have an account? <a href="/login">Log in</a></small>
                             <button className="btn btn-lg btn-outline"
                                 disabled={step == 0}
@@ -68,14 +68,16 @@ export default function signUp() {
                             >
                                 Back
                             </button>
-                            <button className="btn btn-lg btn-secondary"
-                                disabled={step == 2}
-                                onClick={() => {
-                                    setStep((currStep) => currStep + 1);
-                                }}
-                            >
-                                Next
-                            </button>
+                            <div className="hover-button">
+                                <button className="btn btn-lg btn-secondary"
+                                    disabled={step == 2}
+                                    onClick={() => {
+                                        setStep((currStep) => currStep + 1);
+                                    }}
+                                >
+                                    Next
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

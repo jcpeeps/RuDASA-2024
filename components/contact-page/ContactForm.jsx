@@ -31,7 +31,7 @@ export default function ContactForm() {
                             <textarea id="msg" className="w-100 h-100 border-0 border-bottom ms-2 p-3 bg-light" rows="8" placeholder="Type here..." />
                         </div>
                     </div>
-                    <div className="text-end w-100 my-4">
+                    <div className="text-end w-100 my-4 hover-button">
                         <input className="btn btn-secondary btn-lg" type="submit" value="Send" />
                     </div>
                 </form>

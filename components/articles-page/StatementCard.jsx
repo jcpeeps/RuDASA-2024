@@ -9,7 +9,7 @@ export default function StatementCard(props) {
             <small className="text-muted mb-4">by {props.author}</small>
             <p>{props.description}</p>
             <div className="d-flex justify-content-between align-items-end">
-                <div>
+                <div className="hover-button">
                     <a href={props.link} role="button" className="btn btn-primary text-white mt-4">Read</a>
                 </div>
                 <div className="d-flex align-items-center">

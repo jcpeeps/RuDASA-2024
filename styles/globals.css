@@ -1,147 +1,174 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 a {
-  color: inherit;
+	color: inherit;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  --primary: #3CD28A;
-  --gradient: linear-gradient(90deg, #3CD28A 0%, #3CD2AE 100%);
+	--primary: #3CD28A;
+	--gradient: linear-gradient(90deg, #3CD28A 0%, #3CD2AE 100%);
 }
 
 /* Navigation links override */
-nav .navbar-nav li a{
-  text-decoration: none !important;
+nav .navbar-nav li a {
+	text-decoration: none !important;
 }
 
 .gradient-background {
-  background: var(--primary);
-  background: var(--gradient);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3CD28A",endColorstr="#3CD2AE",GradientType=1);
+	background: var(--primary);
+	background: var(--gradient);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3CD28A", endColorstr="#3CD2AE", GradientType=1);
 }
 
 .gradient-fill {
-  color: var(--primary) !important;
+	color: var(--primary) !important;
 }
 
 .gradient-outline {
-  padding: 0.25rem;
-  border-radius: 0.7rem;
-  background: var(--gradient);
-  display: inline-block;
-}
-.gradient-outline .btn-outline-primary {
-  background-color: white;
+	padding: 0.25rem;
+	border-radius: 0.5rem;
+	background: var(--gradient);
+	display: inline-block;
 }
 
-.active a {
-  color: var(--primary) !important;
-  font-weight: bold;
+.gradient-outline .btn-outline-primary {
+	background-color: white;
+}
+
+.active {
+	color: var(--primary) !important;
+	font-weight: bold;
 }
 
 .main-container {
-  height: 70vh;
+	height: 70vh;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 .styled-bullets li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: var(--primary); /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  font-size: 30px;
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: .8em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+	content: "\2022";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: var(--primary);
+	/* Change the color */
+	font-weight: bold;
+	/* If you want it to be bold */
+	font-size: 30px;
+	display: inline-block;
+	/* Needed to add space between the bullet and the text */
+	width: .8em;
+	/* Also needed for space (tweak if needed) */
+	margin-left: -1em;
+	/* Also needed for space (tweak if needed) */
 }
 
 /* Advocacy container widths */
 .advocacy-container {
-  max-width: 46%;
+	max-width: 46%;
 }
 
 .advocacy-examples {
-  max-width: 50%;
+	max-width: 50%;
 }
 
 @media screen and (max-width: 960px) {
-  .advocacy-container {
-    max-width: 100%;
-  }
-  
-  .advocacy-examples {
-    max-width: 100%;
-  }
+	.advocacy-container {
+		max-width: 100%;
+	}
+
+	.advocacy-examples {
+		max-width: 100%;
+	}
 }
-  
+
 /* Contact card custom width */
 .card-width {
-  width: 300px;
+	width: 300px;
 }
 
 .partner-width {
-  width: 400px;
+	width: 400px;
 }
+
+.contact-card {
+	transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+	background-color: var(--primary) !important;
+	color: white !important;
+	transform: scale(1.1);
+}
+
 /* Resource card custom width */
 .resc-card-width {
-  width: 200px;
+	width: 200px;
 }
 
 /* About us svg */
 .team-svg {
-  right: 0;
-  top: 120px;
-  z-index: -1;
+	right: 0;
+	top: 120px;
+	z-index: -1;
 }
 
 .meet-team-height {
-  min-height: 580px;
+	min-height: 580px;
+}
+
+.hover-button {
+	transition: all 0.3s ease;
+}
+
+.hover-button:hover {
+	transform: scale(1.1);
 }
 
 /* Navbar */
 
 .navbar-z-index {
-  z-index: 100;
+	z-index: 100;
 }
 
 /* Sign up */
 .progress-bar {
-  height: 6px;
-  background-color: #BEBEBE !important;
-  width: 90%;
+	height: 6px;
+	background-color: #BEBEBE !important;
+	width: 90%;
 }
 
 .progress-loader {
-  height: 6px;
-  background-color: var(--primary);
-  transition: all 0.5s ease;
+	height: 6px;
+	background-color: var(--primary);
+	transition: all 0.5s ease;
 }
 
 .progress-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  transition: all 1s ease;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	transition: all 1s ease;
 }
 
 .progress-offset {
-  position: relative;
-  top: -17px;
-  left: -17px;
+	position: relative;
+	top: -17px;
+	left: -17px;
 }
 
 /* Style article layout */
-article, .column-wrap {
-  column-count: 2;
-  column-gap: 10em;
+article,
+.column-wrap {
+	column-count: 2;
+	column-gap: 10em;
 }

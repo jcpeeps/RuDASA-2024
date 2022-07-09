@@ -9,7 +9,7 @@ export default function articles() {
     <Layout pageTitle="RuDASA | Resources">
       <Hero/>
       <ResourceGroups/>
-      <Events/>
+      <Events />
 		</Layout>
   )
 }

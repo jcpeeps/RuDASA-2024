@@ -24,7 +24,9 @@ export default function login() {
                         </div>
                         <div className="w-100 my-4 d-flex justify-content-end align-items-center">
                             <small className="me-3">Don't have an account? <a href="/signUp">Sign up</a></small>
-                            <input className="btn btn-secondary btn-lg" type="submit" value="Login" />
+                            <div className="hover-button">
+                                <input className="btn btn-secondary btn-lg" type="submit" value="Login" />
+                            </div>
                         </div>
                     </form>
                 </div>

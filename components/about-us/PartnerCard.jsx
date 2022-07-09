@@ -6,7 +6,7 @@ export default function PartnerCard(props) {
             <h5 className="fw-bold mb-3">{props.title}</h5>
             <p>{props.description}</p>
             <div className="text-end">
-                <div>
+                <div className="hover-button">
                     <a href={props.link} role="button" className="btn btn-primary text-white mt-4">Learn more</a>
                 </div>
             </div>

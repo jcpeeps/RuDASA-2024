@@ -13,10 +13,10 @@ export default function Hero() {
                     <h1 className="display-3 fw-bold mb-5">Inspiring others towards rural health</h1>
                     <div className="d-flex">
                         <div className="gradient-outline me-3">
-                            <a href="/sign-up" role="button" className="btn btn-primary btn-lg gradient-background text-white fw-bold">Sign Up</a>
+                            <a href="/signUp" role="button" className="btn btn-primary btn-lg gradient-background text-white fw-bold">Sign Up</a>
                         </div>
                         <div className="gradient-outline">
-                            <a href="#" role="button" className="btn btn-outline-primary btn-lg fw-bold">Learn More</a>
+                            <a href="#who-are-we" role="button" className="btn btn-outline-primary btn-lg fw-bold">Learn More</a>
                         </div>
                     </div>
                 </div>

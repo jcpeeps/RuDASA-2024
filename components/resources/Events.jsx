@@ -6,7 +6,7 @@ import Onboarding from '../resources/events/Onboarding'
 export default function Events() {
     return (
         <>
-            <section className="bg-light">
+            <section className="bg-light" id="events">
                 <div className="container my-5 p-5">
                     <h1 className="display-5 fw-bold text-primary mb-3">Events</h1>
                     <SnT />

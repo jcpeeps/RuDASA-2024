@@ -4,7 +4,7 @@ import Illustration1 from '../../media/svg/who-are-we.svg'
 
 export default function WhoAreWe({ content }) {
     return (
-        <section className="bg-light">
+        <section className="bg-light" id="who-are-we">
             <div className="container py-5">
                 <div className="row my-5 py-5">
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -15,7 +15,7 @@ export default function WhoAreWe({ content }) {
                             <h4 className="text-primary fw-bold">Our Mission</h4>
                             <p>{content.mission}</p>
                         </div>
-                        <div className="w-100 text-end">
+                        <div className="w-100 text-end hover-button">
                             <a href="/about" role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4">Meet our team</a>
                         </div>
                     </div>

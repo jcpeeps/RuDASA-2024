@@ -10,7 +10,7 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
 
     return (
         <section className="container mb-5 p-5">
-            <h1 className="dispaly-4 fw-bold text-primary my-5">Articles</h1>
+            <h1 className="dispaly-4 fw-bold text-primary my-5 pt-5">Articles</h1>
             <h3 className="my-4 pb-4 fw-bold">Rural Doctor of the Year {frontmatter.year}</h3>
             <div className="row">
                 <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-wrap flex-md-nowrap">
@@ -40,7 +40,7 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-                <div className="text-end">
+                <div className="text-end hover-button">
                     <a href="#" role="button" className="btn btn-lg btn-secondary text-white">Nominate a Doctor</a>
                 </div>
             </div>

@@ -20,7 +20,9 @@ export default function Navigation() {
                     <Nav.Link className={router.pathname == "/resources" ? "active" : ""} href="/resources">Resources</Nav.Link>
                     <Nav.Link className={router.pathname == "/contact" ? "active" : ""} href="/contact">Contact Us</Nav.Link>
                     <Nav.Link href="/login">
-                        <Button className="nav-link p-3 text-white gradient-background shadow">Learning Portal</Button>
+                        <div className="hover-button">
+                            <Button className="nav-link p-3 text-white gradient-background shadow">Learning Portal</Button>
+                        </div>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
