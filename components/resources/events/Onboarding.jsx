@@ -2,7 +2,7 @@ import React from 'react'
 import { marked } from 'marked'
 
 export default function Onboarding({ content: { frontmatter, sections } }) {
-    console.log(sections)
+
     return (
         <div className="d-flex flex-column my-5">
             <h4 className="w-100 fw-bold display-6 text-primary">Rural Health On-Boarding Programme</h4>
