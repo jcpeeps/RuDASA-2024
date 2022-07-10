@@ -5,13 +5,15 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Layout from '../../../components/Layout'
 
-export default function resourcePage({frontmatter:{title},content}) {
+export default function resourcePage({ frontmatter: { title }, content }) {
     return (
         <Layout pageTitle={`RuDASA | ${title}`}>
             <div className="my-5 py-5" />
             <section className="container">
                 <div className="w-100 border-bottom pb-4 mb-5">
-                    <a href="/resources" role="button" className="btn btn-primary text-white hover-button">Go back</a>
+                    <div className="hover-button">
+                        <a href="/resources" role="button" className="btn btn-primary text-white">Go back</a>
+                    </div>
                 </div>
                 <h1 className="fw-bold my-5">{title}</h1>
                 <article className="mb-5 pb-5">

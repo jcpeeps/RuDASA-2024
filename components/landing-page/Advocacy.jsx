@@ -14,7 +14,7 @@ export default function Advocacy({ content, examples }) {
                         <div className="bg-white rounded shadow p-4 m-3 p-md-5 styled-bullets">
                             <div dangerouslySetInnerHTML={{__html: marked(examples)}}/>
                         </div>
-                        <div className="w-100 text-end">
+                        <div className="w-100 hover-button text-end">
                             <a href="/resources#events" role="button" className="btn btn-lg btn-secondary text-white mt-4">View events</a>
                         </div>
                     </div>
