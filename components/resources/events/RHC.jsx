@@ -10,7 +10,7 @@ export default function SnT({ content }) {
                     <div dangerouslySetInnerHTML={{ __html: marked(content.content) }} className="column-wrap" />
                 </div>
                 <div className="hover-button text-end">
-                    <a href="#" class="btn btn-secondary mt-3 offset-1 offset-md-10">Visit RHC Site</a>
+                    <a href="#" className="btn btn-secondary mt-3 offset-1 offset-md-10">Visit RHC Site</a>
                 </div>
             </div>
         </div>

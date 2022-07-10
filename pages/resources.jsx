@@ -8,14 +8,15 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default function articles({ otherInfo, studentResources, ruralResources, otherResources }) {
+
 	return (
 		<Layout pageTitle="RuDASA | Resources">
 			<Hero content={otherInfo.find(file => file.slug === "description")} />
 			<ResourceGroups student={studentResources} rural={ruralResources} other={otherResources} />
-			<Events snt={otherInfo.find(file => file.slug === "survive-and-thrive")} 
-					snts={otherInfo.find(file => file.slug === "survive-and-thrive-students")}
-					onboarding={otherInfo.find(file => file.slug === "onboarding")}
-					rhc={otherInfo.find(file => file.slug === "rural-health-conference")} />
+			<Events snt={otherInfo.find(file => file.slug === "survive-and-thrive")}
+				snts={otherInfo.find(file => file.slug === "survive-and-thrive-students")}
+				onboarding={otherInfo.find(file => file.slug === "onboarding")}
+				rhc={otherInfo.find(file => file.slug === "rural-health-conference")} />
 		</Layout>
 	)
 }
@@ -34,12 +35,19 @@ export async function getStaticProps() {
 		const slug = filename.replace('.md', '')
 		const markdown = fs.readFileSync(path.join('markdown/resources/other-information', filename), 'utf-8')
 
-		const { data: frontmatter, content } = matter(markdown)
+		let { data: frontmatter, content, sections } = matter(markdown, {
+			section: function (section, file) {
+				section.content = section.content.trim() + '\n';
+			}
+		});
+
+		if (sections === undefined) {sections = {};}
 
 		return {
 			slug,
 			frontmatter,
-			content
+			content,
+			sections
 		}
 	})
 
