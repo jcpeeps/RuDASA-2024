@@ -5,11 +5,16 @@ import ResourceGroups from '../components/portal/ResourceGroups'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import Illustration from '../media/svg/portal.svg'
+import Image from 'next/image'
 
 export default function Portal ({ resources, overview }) {
 
     return(
         <Layout pageTitle="RuDASA | Learning Portal" hide="true">
+			<div className="position-absolute team-svg">
+                    <Image src={Illustration} width={700} />
+                </div>
             <ResourceGroups resources={resources}/>
             <Hero overview={overview.find(file => file.slug === "overview").content}/>
 		</Layout>
