@@ -72,6 +72,49 @@ ul {
 	/* Also needed for space (tweak if needed) */
 }
 
+.week-list ul {
+	list-style: none;
+	counter-reset: item;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.week-list li::before {
+	content: "Week " counter(item) ": ";
+	counter-increment: item;
+	color: var(--primary);
+	font-weight: bold;
+	display: inline-block;
+	margin-left: -1em;
+	margin-right: 10px;
+}
+
+.week-list li {
+	margin-bottom: 10px;
+}
+
+.styled-numbers ol {
+	list-style: none;
+	counter-reset: item;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.styled-numbers li {
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.styled-numbers li::before {
+	content: counter(item) ". ";
+	counter-increment: item;
+	color: var(--primary);
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
 /* Advocacy container widths */
 .advocacy-container {
 	max-width: 46%;

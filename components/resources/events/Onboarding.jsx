@@ -26,14 +26,14 @@ export default function Onboarding({ content: { frontmatter, sections } }) {
                 <div className="d-flex flex-wrap flex-lg-nowrap align-items-start justify-content-between my-5">
                     <div className="d-flex flex-column col-12 col-lg-6">
                         <h5 className="fw-bold">Curriculum Overview</h5>
-                        <div dangerouslySetInnerHTML={{
+                        <div className="styled-numbers" dangerouslySetInnerHTML={{
                             __html: marked(
                                 sections[sections.findIndex((e) => e.key === "overview")].data
                             )
                         }} />
                     </div>
                     <div className="bg-white rounded shadow d-flex p-5 col-12 col-lg-5">
-                        <div dangerouslySetInnerHTML={{
+                        <div className="week-list" dangerouslySetInnerHTML={{
                             __html: marked(
                                 sections[sections.findIndex((e) => e.key === "weeks")].data
                             )
