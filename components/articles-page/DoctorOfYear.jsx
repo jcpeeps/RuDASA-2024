@@ -13,7 +13,7 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
             <h1 className="dispaly-4 fw-bold text-primary my-5 pt-5">Articles</h1>
             <h3 className="my-4 pb-4 fw-bold">Rural Doctor of the Year {frontmatter.year}</h3>
             <div className="row">
-                <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-wrap flex-md-nowrap">
+                <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-wrap flex-md-nowrap align-items-start">
                     <Image src={Portrait} width={270} height={270} className="rounded-circle" />
                     <div className="ms-5 my-3">
                         <h5 className="fw-bold mb-3">Dr {frontmatter.name}</h5>
