@@ -3,8 +3,36 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 export default function Club({formData, setFormData}) {
+
+    const ClubSchema = Yup.object().shape({
+        fullName: Yup.string()
+            .matches(
+                /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
+                'Name can only contain letters.'
+            )
+            .matches(/^\s*[\S]+(\s[\S]+)+\s*$/gms, 'Please enter your full name.')
+            .required("Please enter your full name"),
+        email: Yup.string()
+            .email("Invalid email address")
+            .required("Email is required"),
+        password: Yup.string()
+            .min(5, "Password must be minimum 5 characters")
+            .required("Password is required"),
+        cellNo: Yup.string()
+            .matches(
+                /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+                'Invalid phone number'),
+        workNo: Yup.string()
+            .matches(
+                /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+                'Invalid phone number')
+    });
+
     return (
-        <div>
+        <Formik
+            initialValues={{ fullName: "", email: "", password: "", cellNo: "", workNo: "" }}
+            validationSchema={ClubSchema}
+        >
             <div className="my-5 w-100 d-flex justify-content-between">
                 <div className="w-50 me-5">
                     <label for="sc-name" className="text-primary fw-bold form-label ms-2">Student Club*</label>
@@ -52,6 +80,6 @@ export default function Club({formData, setFormData}) {
                         onChange={(e) => setFormData({...formData, supportName: e.target.value})} />
                 </div>
             </div>
-        </div>
+        </Formik>
     )
 }
