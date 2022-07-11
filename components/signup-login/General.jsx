@@ -5,12 +5,13 @@ import * as Yup from "yup";
 export default function General({ formData, setFormData }) {
 
     const GeneralSchema = Yup.object().shape({
-        name: Yup.string()
+        fullName: Yup.string()
             .matches(
                 /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
                 'Name can only contain letters.'
             )
-            .matches(/^\s*[\S]+(\s[\S]+)+\s*$/gms, 'Please enter your full name.'),
+            .matches(/^\s*[\S]+(\s[\S]+)+\s*$/gms, 'Please enter your full name.')
+            .required("Please enter your full name"),
         email: Yup.string()
             .email("Invalid email address")
             .required("Email is required"),
@@ -29,14 +30,10 @@ export default function General({ formData, setFormData }) {
 
     return (
         <Formik
-            initialValues={{ name: "", email: "", password: "", cellNo: "", workNo: "" }}
+            initialValues={{ fullName: "", email: "", password: "", cellNo: "", workNo: "" }}
             validationSchema={GeneralSchema}
-            onSubmit={({ setSubmitting, values }) => {
-                alert("Form is validated! Submitting the form...", values); //THIS IS WHERE YOU USE VALUES FOR BACKEND
-                setSubmitting(false);
-            }}
         >
-            {({ touched, errors, isSubmitting }) => (
+            {({ touched, errors }) => (
                 <Form>
                     <div className="my-5 w-100 d-flex justify-content-between">
                         <div className="w-50 me-5 form-group">
@@ -46,7 +43,7 @@ export default function General({ formData, setFormData }) {
                                 name="fullName"
                                 placeholder="Name"
                                 className={`form-control border-0 border-bottom ${
-                                    touched.name && errors.name ? "is-invalid" : ""
+                                    touched.fullName && errors.fullName ? "is-invalid" : ""
                                 }`}
                                 value={formData.fullName}
                                 onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
@@ -108,10 +105,10 @@ export default function General({ formData, setFormData }) {
                     </div>
                     <div className="mb-5 w-100 d-flex justify-content-between">
                         <div className="w-50 me-5 form-group">
-                            <label htmlFor="cell" className="text-primary fw-bold form-label ms-2">Cellphone number*</label>
+                            <label htmlFor="cellNo" className="text-primary fw-bold form-label ms-2">Cellphone number*</label>
                             <Field
                                 type="tel" 
-                                name="cell"
+                                name="cellNo"
                                 placeholder="Number" 
                                 className={`form-control border-0 border-bottom ${
                                     touched.cellNo && errors.cellNo ? "is-invalid" : ""
@@ -126,10 +123,10 @@ export default function General({ formData, setFormData }) {
                             />
                         </div>
                         <div className="w-50 form-group">
-                            <label htmlFor="work" className="text-primary fw-bold form-label ms-2">Work Telephone</label>
+                            <label htmlFor="workNo" className="text-primary fw-bold form-label ms-2">Work Telephone</label>
                             <Field
                                 type="tel" 
-                                name="work"
+                                name="workNo"
                                 placeholder="Number" 
                                 className={`form-control border-0 border-bottom ${
                                     touched.workNo && errors.workNo ? "is-invalid" : ""

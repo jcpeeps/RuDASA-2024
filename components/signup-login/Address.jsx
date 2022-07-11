@@ -3,6 +3,14 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 export default function Address({formData, setFormData}) {
+
+    const AddressSchema = Yup.object().shape({
+        pow: Yup.string()
+            .required("Place of work is required"),
+        district: Yup.string()
+            .required("District is required")
+    });
+
     return (
         <div>
             <div className="my-5 w-100 d-flex justify-content-between">
