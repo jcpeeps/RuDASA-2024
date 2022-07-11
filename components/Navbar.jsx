@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Nav, Button, Navbar } from 'react-bootstrap';
 import { useRouter } from 'next/router'
 
@@ -6,8 +6,41 @@ export default function Navigation() {
 
     const router = useRouter();
 
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this, args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
+    const handleScroll = debounce(() => {
+        const currentScrollPos = window.pageYOffset;
+
+        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+
+        setPrevScrollPos(currentScrollPos);
+    }, 100);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+
+    }, [prevScrollPos, visible, handleScroll]);
+
     return (
-        <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="p-4 position-fixed w-100 navbar-z-index">
+        <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="p-4 position-fixed w-100 navbar-z-index" style={{top: visible ? '0' : '-100px'}}>
             <Navbar.Brand href="/" className="fw-bold">
                 RuDASA
             </Navbar.Brand>

@@ -3,7 +3,7 @@ import SnT from '../resources/events/SnT'
 import RHC from '../resources/events/RHC'
 import Onboarding from '../resources/events/Onboarding'
 
-export default function Events({ snt, snts, onboarding }) {
+export default function Events({ snt, snts, onboarding, rhc }) {
     return (
         <>
             <section className="bg-light" id="events">
@@ -19,7 +19,7 @@ export default function Events({ snt, snts, onboarding }) {
             </section>
             <section className="bg-light">
                 <div className="container my-3 p-3">
-                    <RHC />
+                    <RHC content={rhc} />
                 </div>
             </section>
         </>
