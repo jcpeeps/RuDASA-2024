@@ -50,6 +50,10 @@ export default function signUp({ data }) {
         }
     }
 
+    let submitShow = false;
+    if (step == 2 || (step == 1 && formData.signUpReason !== "rhc"))
+        submitShow = true;
+
     return (
         <Layout pageTitle="RuDASA | Sign up" hide="true">
             <section>
@@ -72,14 +76,25 @@ export default function signUp({ data }) {
                             >
                                 Back
                             </button>
-                            <div className="hover-button">
+                            <div className={`hover-button ${
+                                submitShow ? "d-none" : ""
+                            }`}>
                                 <button className="btn btn-lg btn-secondary"
-                                    disabled={formData.signUpReason == "rhc" ? step == 2 : step == 1} //This prevents the third component from being navigatible when not selected
+                                    disabled={step == 2} //This prevents the third component from being navigatible when not selected
                                     onClick={() => {
                                         setStep((currStep) => currStep + 1);
                                     }}
                                 >
                                     Next
+                                </button>
+                            </div>
+                            <div className={`hover-button ${
+                                submitShow ? "" : "d-none"
+                            }`}>
+                                <button className="btn btn-lg btn-secondary"
+                                    type="submit"
+                                >
+                                    login
                                 </button>
                             </div>
                         </div>
