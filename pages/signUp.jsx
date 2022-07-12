@@ -58,7 +58,7 @@ export default function signUp({ data }) {
                     <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} />
                     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
                         <h1 className="fw-bold w-100 mb-5 text-center text-primary">Sign Up</h1>
-                        <ProgressBar step={step} />
+                        <ProgressBar step={step} thirdStep={formData.signUpReason === "rhc"} />
                         <div className="w-100">
                             {stepDisplay()}
                         </div>
@@ -74,7 +74,7 @@ export default function signUp({ data }) {
                             </button>
                             <div className="hover-button">
                                 <button className="btn btn-lg btn-secondary"
-                                    disabled={step == 2}
+                                    disabled={formData.signUpReason == "rhc" ? step == 2 : step == 1} //This prevents the third component from being navigatible when not selected
                                     onClick={() => {
                                         setStep((currStep) => currStep + 1);
                                     }}

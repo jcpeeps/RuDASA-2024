@@ -8,7 +8,9 @@ export default function ProgressBar(props) {
                     className="progress-loader"
                     style={{
                         width: props.step === 0 ? "0%" :
-                            props.step === 1 ? "50%" : "100%"
+                            props.step === 1 ? 
+                                props.thirdStep ? "50%" : "100%"
+                                : "100%"
                     }}
                 />
             </div>
@@ -25,7 +27,9 @@ export default function ProgressBar(props) {
                     </div>
                     <small style={{ color: props.step === 0 ? "#BEBEBE" : "var(--primary)" }}>Address</small>
                 </div>
-                <div className="d-flex flex-column align-items-center">
+                <div className={`d-flex flex-column align-items-center ${
+                    props.thirdStep ? "" : 'd-none'
+                }`}>
                     <div className="rounded-circle progress-circle text-white fw-bold p-1"
                         style={{ background: props.step === 2 ? "var(--primary)" : "#BEBEBE" }}
                     >
