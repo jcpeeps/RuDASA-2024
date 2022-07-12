@@ -33,7 +33,7 @@ export default function Footer() {
 					</div> */}
 					<div className="col d-flex flex-column">
 						<div className="bg-white rounded p-2 my-1 w-100"><a href="#" className="text-black text-decoration-none"><FontAwesomeIcon icon={faShareNodes}/> Rural Health Conference</a></div>
-						<div className="bg-white rounded p-2 p my-1 w-100"><a href="#" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> Rural Students Facebook</a></div>
+						<div className="bg-white rounded p-2 p my-1 w-100"><a href="#" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> RuDASA Students Facebook</a></div>
 						<div className="bg-warning rounded p-2 p my-1 w-100"><a href="#" className="text-black text-decoration-none"><FontAwesomeIcon icon={faMugSaucer}/> Buy me a coffee</a></div>
 					</div>
 				</div>

@@ -1,14 +1,30 @@
 ---
 title: 'Student Electives'
 ---
+# Hello Students!
 
+**If you would like to do a rural elective but are not sure where to go then send us an email. We have a list of hospitals willing to take students. We can also circulate your email request on our members forum.**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget felis laoreet, eleifend ligula sed, consequat leo. Integer eros felis, sodales id urna eu, posuere sodales nunc. Praesent ex massa, maximus eu justo at, iaculis sodales dui. Suspendisse aliquam velit ac erat dictum hendrerit. Donec ultrices justo nec metus egestas suscipit. Mauris egestas, risus et accumsan congue, urna ligula porttitor nulla, id semper nisl lorem nec arcu. Maecenas congue fermentum orci id aliquam. Sed quis nisi efficitur, cursus dolor euismod, commodo arcu. In hac habitasse platea dictumst. Donec et nisi molestie, accumsan ex quis, commodo tortor.
+### At the moment we have the following hospitals our Elective List:
 
-Aliquam congue enim quis nisl laoreet luctus. Fusce at enim quis elit pretium euismod nec non purus. Sed elementum ex justo, ut dignissim enim ultricies ac. Nam in aliquam nisl. Nullam dolor arcu, gravida consequat egestas eget, mollis ac risus. Duis non tellus lectus. Vivamus molestie, risus quis finibus blandit, diam nibh dictum enim, ac luctus ipsum tortor in metus. Morbi vitae dui placerat, condimentum turpis eu, elementum ipsum.
+* EC: Adelaide & [Zithulele](http://www.zithulele.org/) Hospitals
+* KZN: Bethesda, [Manguzi](http://www.kznhealth.gov.za/manguzihospital.htm), [Mosvold](http://www.kznhealth.gov.za/mosvoldhospital.htm), [Mseleni](http://mseleni.co.za/hospital/) & [Stanger](http://www.kznhealth.gov.za/gjgmrh.htm) Hospitals
+* MP: [Barberton](http://www.mpuhealth.gov.za/Barberton%20Hospitals.html) & [Middelburg](https://web.facebook.com/pages/Middelburg-Provincial-Hospital/1586179001449296?_rdc=1&_rdr) Hospitals
+* NC: [Abraham Esau Hospital](https://web.facebook.com/calviniahospital/?_rdc=1&_rdr)
+* WC: [Knysna](https://www.westerncape.gov.za/facility/knysna-hospital) & [George](https://www.westerncape.gov.za/george-hospital/) Hospitals
+* Swaziland: [Good Shepherd Mission Hospital](https://web.facebook.com/people/Good-Shepherd-Mission-Hospital/100054373936734/)
 
-Quisque luctus ultrices tortor et dignissim. Proin at augue at urna porttitor consectetur. Nullam vitae dapibus nibh. Nullam dignissim laoreet sapien quis ultricies. Nam sed risus nec neque vulputate sodales. Maecenas mattis tellus a nulla tristique tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin lacus eros, finibus eget risus id, rutrum suscipit libero. Nullam mollis dui vehicula turpis tincidunt, a mattis massa varius. Suspendisse potenti.
+Please note that we are unable to provide sponsorship for electives at this stage, but you may want to try crowdfunding! 
 
-Sed non neque lorem. Phasellus purus libero, feugiat commodo enim ut, hendrerit vestibulum nulla. Nulla feugiat felis a scelerisque varius. Phasellus faucibus, nunc eu hendrerit viverra, risus augue interdum dolor, in feugiat augue urna ac massa. Vestibulum fermentum accumsan ipsum. Nunc vel sollicitudin sem. Morbi hendrerit blandit bibendum. Mauris non lacus a sem ultricies eleifend quis non arcu. Aenean ornare dictum nunc, quis pharetra mi fringilla in. Suspendisse ornare laoreet maximus. Nam porttitor pharetra lacus. Praesent urna risus, interdum ut metus sed, condimentum suscipit ipsum. Phasellus iaculis lacinia mi. Sed pharetra quam in est aliquet, a tempor orci pellentesque. Phasellus libero lorem, varius ut condimentum a, consequat nec ligula. Nullam eleifend metus eget purus lacinia, sed mollis augue hendrerit.
+## Foreign Student Electives
 
-Duis nulla est, pulvinar at ipsum aliquam, sagittis laoreet orci. Donec tincidunt at metus ac semper. Curabitur molestie imperdiet lorem id volutpat. Cras id mauris ornare, dictum nulla ac, facilisis tortor. Nam vel tincidunt lectus. Fusce eget erat non massa auctor condimentum. Duis vel diam a dui mollis sagittis ut mollis massa. Curabitur feugiat metus in velit convallis, id faucibus quam pellentesque. Morbi tempor est ex, et dictum purus volutpat ac. Ut convallis pretium tellus, vel tempus urna molestie vitae. Suspendisse semper purus quis metus cursus, sed ultrices massa gravida. Praesent massa risus, bibendum ultricies metus sagittis, tempus accumsan augue. Aliquam erat volutpat. Praesent rhoncus et turpis vel accumsan.
+Foreign students hoping to do an elective in South Africa have to do this through one of the universities. If you have a particular hospital or Province in mind we can link you to the university that works in that area. 
+
+Foreign Students need to contact these International Offices directly to register as an elective student in South Africa:
+
+* [Sefako Makgatho Health Science University (Gauteng)](http://www.smu.ac.za/students/international-students/)
+* [University of Cape Town (Western Cape)](http://www.healthelectives.uct.ac.za/applications/elective-placements)
+* [University of KZN (KwaZulu Natal)](http://applications.ukzn.ac.za/ApplicationProcedures/International-Applicants/International-Application-Procedures.aspx)
+* [University of Pretoria (Gauteng)]()
+* [University of Stellenbosch (Western Cape)](https://www.sun.ac.za/english/faculty/healthsciences/international-office/international-undergraduate-elective-students)
+* [University of the Witwatersand (Gauteng)](https://www.wits.ac.za/health/faculty-services/elective/)
