@@ -32,6 +32,7 @@ export default function signUp() {
         externalSupport: "",
         contactName: "",
         contactRole: "",
+        contactNo: "",
         contactEmail: "",
         supportName: ""
     })
