@@ -7,8 +7,11 @@ import Address from '../components/signup-login/Address'
 import Club from '../components/signup-login/Club'
 import ProgressBar from '../components/signup-login/ProgressBar'
 import Benefits from '../components/signup-login/Benefits'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 
-export default function signUp() {
+export default function signUp({ data }) {
 
     // Object that stores information across all components
     const [formData, setFormData] = useState({
@@ -82,8 +85,41 @@ export default function signUp() {
                         </div>
                     </div>
                 </div>
-                <Benefits />
+                <Benefits content={data.find(file => file.slug === "offers")} />
             </section>
         </Layout>
     )
 }
+
+export async function getStaticProps() {
+	// Get files from the other information sub-directory
+	const files = fs.readdirSync(path.join('markdown/sign-up'))
+
+	// Get slug and markdown from other information
+	const data = files.map((filename) => {
+		const slug = filename.replace('.md', '')
+		const markdown = fs.readFileSync(path.join('markdown/sign-up', filename), 'utf-8')
+
+		let { data: frontmatter, content, sections } = matter(markdown, {
+			section: function (section, file) {
+				section.content = section.content.trim() + '\n';
+			}
+		});
+
+		if (sections === undefined) {sections = {};}
+
+		return {
+			slug,
+			frontmatter,
+			content,
+			sections
+		}
+	})
+
+	return {
+		props: {
+			data
+		}
+	}
+}
+
