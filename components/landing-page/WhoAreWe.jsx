@@ -9,6 +9,7 @@ export default function WhoAreWe({ content }) {
                 <div className="row my-5 py-5">
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h1 className="display-4 fw-bold mb-5">Who are we?</h1>
+                        <p className="fw-bold">{content.about}</p>
                         <div>
                             <h4 className="text-primary fw-bold">Our Vision</h4>
                             <p>{content.vision}</p>
