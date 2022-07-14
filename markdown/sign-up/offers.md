@@ -3,9 +3,10 @@ offer: "RuDASA is a growing network of rural health care professionals, and we i
 ---
 
 ---benefits
-* Attend the Rural Health Conference
-* Enjoy networking opportunities and support
 * Keep up-to-date with RuDASA activities and rural health policy developments
+* Attend the Rural Health Conference (with a discounted registration fee)
+* Enjoy networking opportunities with rural practitioners on a local and national level
+* Access channels for raising concerns and ideas and influence policy developments in the field of rural health
 * Have your say in policy developments and implementation
-* Join your provinical structure
+* Join your provinical structure and facilitate communication between health care workers at grass roots level
 ---
