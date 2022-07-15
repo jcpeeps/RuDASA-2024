@@ -15,3 +15,8 @@ Other links are:
 * [Tuks Rural Health Society](https://tuksruralhealth.wixsite.com/trhs)
 * [UFS Medical Students Association](https://web.facebook.com/ufsmsa/?_rdc=1&_rdr)
 * UKZN students have a clinic project at [Happy Valley](https://web.facebook.com/happyvalleyclinicukzn/?_rdc=1&_rdr)
+
+**Health Systems Trust (HST)** has 3 email discussion groups you may like to join:
+* [Drug Policy & Practice](druginfo-subscribe@lists.hst.org.za) 
+* [Health & Human Rights](hhrnet-subscribe@lists.hst.org.za)
+* [60percent](60percent-subscribe@lists.hst.org.za)
