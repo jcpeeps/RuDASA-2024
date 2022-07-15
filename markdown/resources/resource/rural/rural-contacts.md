@@ -3,7 +3,7 @@ title: 'Rural Contacts'
 ---
 We are developing our Rural Champion's and Rural Buddy systems. In the meantime here are some rural specific organisations and journals.
 
-Whats a **Rural champion?** These are rural veterans willing to share their knowledge of DoH systems and how to use the systems as well as giving advice about "what to do" in clinical situations.
+Whats a **Rural champion**? These are rural veterans willing to share their knowledge of DoH systems and how to use the systems as well as giving advice about "what to do" in clinical situations.
 
 The **Rural Buddies** is an email or WhatsApp Group of RuDASA members in your District.
 
@@ -20,7 +20,7 @@ The [Wits Centre for Rural Health (CRH)](https://www.wits.ac.za/health/research-
 The Centre is committed to improving the health care offered to impoverished people living in rural and underserved areas. Including research and programmes in Health Systems Strengthening, Human Resources for Health and Health and Social Justice.
 
 ## Search for Rural Journal Articles
-## The Rural Health Research Gateway
+### The Rural Health Research Gateway
 The [Rural Health Research Gateway](https://www.ruralhealthresearch.org/publications) provide easy and timely access to research and findings of the FORHP-funded Rural Health Research Centers, 1997-present. Their goal is to help move new research findings of the Rural Health Research Centers to various end users as quickly and efficiently as possible. The site can be used to find:
 
 * Completed rural health research [products and journal articles](https://www.ruralhealthresearch.org/publications)
