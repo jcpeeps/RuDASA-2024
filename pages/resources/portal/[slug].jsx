@@ -12,7 +12,7 @@ export default function resourcePage({ frontmatter: { title }, content }) {
             <section className="container">
                 <div className="w-100 border-bottom pb-4 mb-5">
                     <div className="hover-button">
-                        <a href="/resources" role="button" className="btn btn-primary text-white">Go back</a>
+                        <a href="/portal" role="button" className="btn btn-primary text-white">Go back</a>
                     </div>
                 </div>
                 <h1 className="fw-bold my-5">{title}</h1>
