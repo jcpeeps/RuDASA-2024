@@ -9,16 +9,16 @@ export default function resourcePage({ frontmatter: { title }, content }) {
     return (
         <Layout pageTitle={`RuDASA | ${title}`}>
             <div className="my-5 py-5" />
-            <section className="container">
+            <section className="container px-5">
                 <div className="w-100 border-bottom pb-4 mb-5">
                     <div className="hover-button">
                         <a href="/portal" role="button" className="btn btn-primary text-white">Go back</a>
                     </div>
                 </div>
                 <h1 className="fw-bold my-5">{title}</h1>
-                <article className="mb-5 pb-5">
+                <div className="mb-5 pb-5">
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
-                </article>
+                </div>
             </section>
         </Layout>
     )
