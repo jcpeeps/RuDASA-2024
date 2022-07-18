@@ -50,9 +50,9 @@ export default function Club({ formData, setFormData }) {
             validationSchema={ClubSchema}
         >
             {({ touched, errors }) => (
-                <Form>
-                    <div className="my-5 w-100 d-flex justify-content-between">
-                        <div className="w-50 me-5 form-group">
+                <Form className="px-3 px-md-0">
+                    <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                             <label htmlFor="clubName" className="text-primary fw-bold form-label ms-2">Student Club*</label>
                             <Field
                                 type="text" 
@@ -85,7 +85,7 @@ export default function Club({ formData, setFormData }) {
                                 className="invalid-feedback"
                             />
                         </div>
-                        <div className="w-50">
+                        <div className="w-auto form-group">
                             <div className="mb-4 form-group">
                                 <label className="text-primary fw-bold form-label ms-2">Does Your Club Recieve External Support?</label>
                                 <div className="d-flex ms-3">
@@ -101,8 +101,8 @@ export default function Club({ formData, setFormData }) {
                             </div>
                         </div>
                     </div>
-                    <div className="mb-5 w-100 d-flex justify-content-between">
-                        <div className="w-50 me-5 form-group">
+                    <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                             <label htmlFor="contactName" className="text-primary fw-bold form-label ms-2">Contact Person*</label>
                             <Field
                                 type="text" 
@@ -165,7 +165,7 @@ export default function Club({ formData, setFormData }) {
                                 className="invalid-feedback"
                             />
                         </div>
-                        <div className="w-50 form-group">
+                        <div className="w-auto form-group">
                             <label htmlFor="supportName" className="text-primary fw-bold form-label ms-2">Person Giving Support*</label>
                             <Field
                                 type="text" 

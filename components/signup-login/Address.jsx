@@ -19,9 +19,9 @@ export default function Address({ formData, setFormData }) {
             validationSchema={AddressSchema}
         >
             {({ touched, errors }) => (
-                <Form>
-                    <div className="my-5 w-100 d-flex justify-content-between">
-                        <div className="w-50 me-5 form-group">
+                <Form className="px-3 px-md-0">
+                    <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                             <label for="country" className="text-primary fw-bold form-label">Country*</label>
                             <select id="country" class="form-select border-0 border-bottom" aria-label="country" value={formData.country} onChange={(e) => setFormData({ ...formData, country: e.target.value })}>
                                 <option value="rural-work">Rural work</option>
@@ -31,7 +31,7 @@ export default function Address({ formData, setFormData }) {
                                 <option value="event">Events</option>
                             </select>
                         </div>
-                        <div className="w-50 form-group">
+                        <div className="w-auto form-group">
                             <label for="province" className="text-primary fw-bold form-label">Province*</label>
                             <select id="province" class="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
                                 <option value="rural-work">Rural work</option>
@@ -42,8 +42,8 @@ export default function Address({ formData, setFormData }) {
                             </select>
                         </div>
                     </div>
-                    <div className="mb-5 w-100 d-flex justify-content-between">
-                        <div className="w-50 me-5 form-group">
+                    <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                             <label htmlFor="address" className="text-primary fw-bold form-label ms-2">Address*</label>
                             <Field
                                 type="text"
@@ -65,7 +65,7 @@ export default function Address({ formData, setFormData }) {
                                 value={formData.address3}
                                 onChange={(e) => setFormData({ ...formData, address3: e.target.value })} />
                         </div>
-                        <div className="w-50">
+                        <div className="w-auto">
                             <div className="mb-4 form-group">
                                 <label htmlFor="pow" className="text-primary fw-bold form-label ms-2">Place of work*</label>
                                 <Field

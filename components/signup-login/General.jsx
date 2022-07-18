@@ -34,9 +34,9 @@ export default function General({ formData, setFormData }) {
             validationSchema={GeneralSchema}
         >
             {({ touched, errors }) => (
-                <Form>
-                    <div className="my-5 w-100 d-flex justify-content-between">
-                        <div className="w-50 me-5 form-group">
+                <Form className="px-3 px-md-0">
+                    <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                             <label htmlFor="fullName" className="text-primary fw-bold form-label ms-2">Full Name*</label>
                             <Field
                                 type="text"
@@ -54,7 +54,7 @@ export default function General({ formData, setFormData }) {
                                 className="invalid-feedback"
                             />
                         </div>
-                        <div className="w-50 form-group">
+                        <div className="w-auto form-group">
                             <label htmlFor="email" className="text-primary fw-bold form-label ms-2">Email Address*</label>
                             <Field
                                 type="email" 
@@ -73,8 +73,8 @@ export default function General({ formData, setFormData }) {
                             />
                         </div>
                     </div>
-                    <div className="mb-5 w-100 d-flex justify-content-between">
-                        <div className="w-50 me-5 form-group">
+                    <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                             <label htmlFor="password" className="text-primary fw-bold form-label ms-2">Password*</label>
                             <Field
                                 type="password" 
@@ -92,7 +92,7 @@ export default function General({ formData, setFormData }) {
                                 className="invalid-feedback"
                             />
                         </div>
-                        <div className="w-50">
+                        <div className="w-auto form-group">
                             <label for="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
                             <select id="reason" class="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
                                 <option value="rural-work">Rural work</option>
@@ -103,8 +103,8 @@ export default function General({ formData, setFormData }) {
                             </select>
                         </div>
                     </div>
-                    <div className="mb-5 w-100 d-flex justify-content-between">
-                        <div className="w-50 me-5 form-group">
+                    <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                             <label htmlFor="cellNo" className="text-primary fw-bold form-label ms-2">Cellphone number*</label>
                             <Field
                                 type="tel" 
@@ -122,7 +122,7 @@ export default function General({ formData, setFormData }) {
                                 className="invalid-feedback"
                             />
                         </div>
-                        <div className="w-50 form-group">
+                        <div className="w-auto form-group">
                             <label htmlFor="workNo" className="text-primary fw-bold form-label ms-2">Work Telephone</label>
                             <Field
                                 type="tel" 
