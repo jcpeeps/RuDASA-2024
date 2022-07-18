@@ -11,7 +11,7 @@ export default function WhatWeDo({ content }) {
                     <div className="col-lg-6 col-xl-6 text-center d-none d-lg-block">
                         <Image src={Illustration2} />
                     </div>
-                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <h1 className="display-4 fw-bold mb-5">What do we do?</h1>
                         <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
                         <div className="hover-button">

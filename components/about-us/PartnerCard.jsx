@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PartnerCard(props) {
     return (
-        <div className="bg-white shadow rounded-3 p-5 m-4 partner-width">
+        <div className="bg-white shadow rounded-3 p-4 p-lg-5 m-2 m-lg-2 partner-width">
             <h5 className="fw-bold mb-3">{props.title}</h5>
             <p>{props.description}</p>
             <div className="text-end">

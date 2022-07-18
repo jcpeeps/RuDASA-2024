@@ -41,7 +41,7 @@ export default function Navigation() {
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="p-4 position-fixed w-100 navbar-z-index" style={{top: visible ? '0' : '-100px'}}>
-            <Navbar.Brand href="/" className="fw-bold">
+            <Navbar.Brand href="/" className="fw-bold d-lg-none">
                 RuDASA
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
