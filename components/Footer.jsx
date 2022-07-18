@@ -41,7 +41,7 @@ export default function Footer() {
 					<a href="https://www.instagram.com/ruraldoctorssa/"><FontAwesomeIcon icon={faInstagram} size="2x" className="text-white p-2"/></a>
 					<a href=""><FontAwesomeIcon icon={faHandHoldingMedical} size="2x" className="text-white p-2"/></a>
 				</div>
-				<div className="w-25 d-flex justify-content-center mt-4">
+				<div className="w-50 d-flex justify-content-center mt-4">
 					<h5 className="text-white">168-404NPO</h5>
 				</div>
 				<div className="w-25 d-flex justify-content-center mt-4">

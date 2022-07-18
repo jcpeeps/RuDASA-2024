@@ -225,6 +225,7 @@ article,
 .column-wrap {
 	column-count: 2;
 	column-gap: 10em;
+	column-width: 400px;
 }
 
 span {
