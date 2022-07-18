@@ -4,7 +4,7 @@ import { marked } from 'marked'
 export default function Onboarding({ content: { frontmatter, sections } }) {
 
     return (
-        <div className="d-flex flex-column my-5">
+        <div className="d-flex flex-column my-2 my-lg-5 px-2 px-sm-3 px-lg-0">
             <h4 className="w-100 fw-bold display-6 text-primary">Rural Health On-Boarding Programme</h4>
             <h5 className="w-100 fw-bold">{frontmatter.date}</h5>
             <div className="d-flex flex-wrap col-12 col-lg-12 my-5">
@@ -19,7 +19,7 @@ export default function Onboarding({ content: { frontmatter, sections } }) {
                             )
                         }} />
                     </div>
-                    <div className="bg-white rounded shadow d-flex p-5 col-12 col-lg-5">
+                    <div className="bg-white rounded shadow d-flex p-4 p-md-5 col-12 col-lg-5 mt-4 mt-lg-0">
                         <p>You can join anytime during the 6 weeks course running from {frontmatter.date}. <strong>The webinars are limited to 100 participants.</strong> All interactive Zoom sessions will be recorded and will be made available online and we will send you links to all the material you may have missed.</p>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export default function Onboarding({ content: { frontmatter, sections } }) {
                             )
                         }} />
                     </div>
-                    <div className="bg-white rounded shadow d-flex p-5 col-12 col-lg-5">
+                    <div className="bg-white rounded shadow d-flex p-5 col-12 col-lg-5 mt-4 mt-lg-0">
                         <div className="week-list" dangerouslySetInnerHTML={{
                             __html: marked(
                                 sections[sections.findIndex((e) => e.key === "weeks")].data
@@ -59,7 +59,7 @@ export default function Onboarding({ content: { frontmatter, sections } }) {
                             )
                         }} />
                     </div>
-                    <div className="bg-white rounded shadow d-flex flex-column p-5 col-12 col-lg-5">
+                    <div className="bg-white rounded shadow d-flex flex-column p-4 p-md-5 col-12 col-lg-5 mt-4 mt-lg-0">
                         <div dangerouslySetInnerHTML={{
                             __html: marked(
                                 sections[sections.findIndex((e) => e.key === "orgs")].data
