@@ -46,7 +46,7 @@ export default function Navigation() {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="navbar-nav ms-auto w-50 d-flex justify-content-around align-items-center">
+                <Nav className="navbar-nav ms-auto w-auto d-flex justify-content-around align-items-center">
                     <Nav.Link className={router.pathname == "/" ? "active" : ""} href="/">Home</Nav.Link>
                     <Nav.Link className={router.pathname == "/about" ? "active" : ""} href="/about">About Us</Nav.Link>
                     <Nav.Link className={router.pathname == "/articles" ? "active" : ""} href="/articles">Articles</Nav.Link>
