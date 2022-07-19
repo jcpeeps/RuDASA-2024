@@ -17,3 +17,10 @@ Foreign doctors who apply to the HPCSA for registration will have their qualific
 The examination for registration for public service practice will continue to be held two or three annually for those doctors who do not meet these criteria, and who thus need additional assessment. For more information go to the website of the Health Professions Council. Within the Council, registration of doctors (physicians) falls under the Medical and Dental Professions Board.
 
 Forms for registration of Foreign Qualified Practitioners are obtainable from the HPCSA
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+    
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

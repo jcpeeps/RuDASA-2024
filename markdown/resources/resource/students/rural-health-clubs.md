@@ -20,3 +20,18 @@ Other links are:
 * [Drug Policy & Practice](druginfo-subscribe@lists.hst.org.za) 
 * [Health & Human Rights](hhrnet-subscribe@lists.hst.org.za)
 * [60percent](60percent-subscribe@lists.hst.org.za)
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "title:" title, or the ---. Only change the text inside '' for that section.
+
+    The text surrounded by double  stars ( ** ) with no spaces shows bold text. 
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line.
+    
+    Links are created with the following: [Link text that is displayed on the website](url)
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

@@ -41,3 +41,20 @@ Our 4 permanent sub themes are: Building Teams, Health Systems, Community Engage
 * Public Resources: [UWC](https://soph.uwc.ac.za/resources/open-education-resources/)
 * Short courses: Winter or Summer School UWC, [SU](http://www0.sun.ac.za/summerschools/ipsu/public-health/)
 * Short courses and Masters: [WITS](https://www.wits.ac.za/publichealth/), [UP](https://www.up.ac.za/school-of-health-systems-and-public-health), [UNISA](https://www.unisa.ac.za/sites/corporate/default/Register-to-study-through-Unisa/Subjects-&-modules/All-subjects/PUBLIC-HEALTH), [UWC](https://www.uwc.ac.za/), [UL](https://www.ul.ac.za/index.php?Entity=Public%20Health), [UFH](https://www.ufh.ac.za/faculties/healthsciences/public-health)
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "title:" title, or the ---. Only change the text inside '' for that section.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
+
+    The text surrounded by single stars ( * ) with no spaces shows italic text. 
+
+    Links are created with the following: [Link text that is displayed on the website](url)
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

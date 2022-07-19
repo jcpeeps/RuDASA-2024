@@ -11,8 +11,13 @@
 * 2010 - Open letter to the President: shadow a rural doctor for a day
 * 2009 - Press Release: The government''s OSD proposal is anti-rural
 
-<!-- 
-    The # symbol is used to change the size of the subheadings, one # being the biggest.
-    We suggest keeping the subheadings with 4 # symbols. Feel free to change any of the
-    word content
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document. 
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

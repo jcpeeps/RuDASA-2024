@@ -9,3 +9,18 @@ thirdPoint: "SADAG is Africa’s largest mental health support and advocacy grou
 * Tools to strengthen resilience in yourself and your colleagues
 * Simplified approaches to improve and change inefficient systems in the workplace
 * Practical and legal aspects of healthcare worker reporting (VOICE)
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "firstPoint:", "secondPoint:" or "thirdPoint:" titles, or the ---. Only change the text inside '' for that section.
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
+    
+    The number (e.g., "1." "2." etc.) followed by a space and then text shows an item in a numbered list. Make sure each item is on a separate line. 
+
+    Links are created with the following: [Link text that is displayed on the website](url)
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

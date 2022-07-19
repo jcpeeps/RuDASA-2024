@@ -16,3 +16,16 @@ RuDASA is part of the Eastern Cape Health Crisis Action Coalition (ECHCAC), a gr
 
 ## TAC
 Today the Treatment Action Campaign (TAC) continues to represent users of the public healthcare system in South Africa, and to campaign and litigate on critical issues related to the quality of and access to healthcare.Through its branches and members the TAC monitors thousands of clinics and hospitals. Its members are the people who need the public health system to work, so they are the first to notice when it doesn’t. In addition to the large national campaigns, the local activism of the TAC’s members is the true life-blood of the organisation.
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "title:" title, or the ---. Only change the text inside '' for that section.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The text surrounded by single stars ( * ) with no spaces shows italic text. 
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

@@ -15,4 +15,15 @@ The Stop Stockouts Project (SSP) is a consortium of initiated by Section 27, Mé
 ### SECTION27
 SECTION27 is a public interest law centre that seeks to achieve substantive equality and social justice in South Africa. Guided by the principles and values in the Constitution, SECTION27 uses law, advocacy, legal literacy, research and community mobilisation to achieve access to healthcare services and basic education. SECTION27 aims to achieve structural change and accountability to ensure the dignity and equality of everyone.
 
- 	
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "title:" title, or the ---. Only change the text inside '' for that section.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The text surrounded by double  stars ( ** ) with no spaces shows bold text. 
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

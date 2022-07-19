@@ -28,3 +28,18 @@ The Department of Employment and Labour strives to reduce unemployment, poverty 
 The South African Medical Association (SAMA) employs well trained Labour Relations advisors who advise, represent and engage various employers, on behalf of affected members throughout the country. Their primary role and function is to prevent and resolve employment complaints and disputes; with the following issues: Grievances, Disciplinary matters, Unfair labour practices and dismissals disputes, Unfair discrimination and employment equity matters, and Litigation.
 The Trade Union Task Team addresses conditions of service and remuneration of salaried doctors and is particularly active in representing doctors - collectively and individually - in terms of labour relations legislation and negotiations: Terms and conditions of employment; salaries, benefits and allowances, Policy proposals, reviews and monitoring.  
 [Email](labour@samedical.org) | **Phone 012 481 2160** or **012 481 2075**
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "title:" title, or the ---. Only change the text inside '' for that section.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The text surrounded by double  stars ( ** ) with no spaces shows bold text. 
+
+    Links are created with the following: [Link text that is displayed on the website](url)
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->
