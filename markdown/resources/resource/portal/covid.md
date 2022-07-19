@@ -6,7 +6,7 @@ title: 'COVID-19'
 ## Managing Covid-19 in a Rural District Hospital
 RuDASA is pleased to partner with Tshemba and MRC/Wits-Agincourt Research Unit to host this zoom webinar on Managing COVID-19 in a Rural District
 
-<iframe width="100%" src="https://www.youtube.com/embed/wHB5WIUJENM" title="RuDASA Webinar Managing COVID 19 in a Rural Hospital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/wHB5WIUJENM" title="RuDASA Webinar Managing COVID 19 in a Rural Hospital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### About the Presenters  
 **Dr Jeremy Nel** 

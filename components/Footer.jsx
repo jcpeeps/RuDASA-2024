@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faSprout, faHandHoldingMedical, faShareNodes, faMugSaucer } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
@@ -39,13 +39,11 @@ export default function Footer() {
 					<a href="https://web.facebook.com/ruraldoctors/?_rdc=1&_rdr"><FontAwesomeIcon icon={faFacebook} size="2x" className="text-white p-2"/></a>
 					<a href="https://twitter.com/doctors_rural"><FontAwesomeIcon icon={faTwitter} size="2x" className="text-white p-2"/></a>
 					<a href="https://www.instagram.com/ruraldoctorssa/"><FontAwesomeIcon icon={faInstagram} size="2x" className="text-white p-2"/></a>
+					<a href="https://www.youtube.com/channel/UCvH-hC_ev2oAiCuHaNo6XNg"><FontAwesomeIcon icon={faYoutube} size="2x" className="text-white p-2"/></a>
 					<a href=""><FontAwesomeIcon icon={faHandHoldingMedical} size="2x" className="text-white p-2"/></a>
 				</div>
 				<div className="w-25 d-flex justify-content-center mt-4">
 					<h5 className="text-white">168-404NPO</h5>
-				</div>
-				<div className="w-25 d-flex justify-content-center mt-4">
-					<a href="#" className="text-white small"><p className="text-white">Top</p></a>
 				</div>
 			</div>
 		</footer>

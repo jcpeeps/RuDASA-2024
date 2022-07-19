@@ -1,6 +1,7 @@
 ---
 title: 'Rural Policy & HR'
 ---
+## Rural Policy
 **RuDASA & RHAP submission on NSP**
 <object data="/pdfs/rural-policy-hr/RUDASA_RHAP-submission-on-NSP-Draft-Zero_13-September-20111 (1).pdf" type="application/pdf" width="100%" height="800px">
     <embed src="/pdfs/rural-policy-hr/RUDASA_RHAP-submission-on-NSP-Draft-Zero_13-September-20111 (1).pdf">
@@ -15,6 +16,7 @@ title: 'Rural Policy & HR'
     </embed>
 </object>
 
+## Rural HR
 **WHO Global Policy recommendations for Rural Recruitment**
 <object data="/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf" type="application/pdf" width="100%" height="800px">
     <embed src="/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf">
@@ -33,5 +35,12 @@ title: 'Rural Policy & HR'
 <object data="/pdfs/rural-policy-hr/UnderstandingthefactorsinfluencinghealthworkeremploymentdecisionsinSouthAfrica.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="/pdfs/rural-policy-hr/UnderstandingthefactorsinfluencinghealthworkeremploymentdecisionsinSouthAfrica.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/rural-policy-hr/UnderstandingthefactorsinfluencinghealthworkeremploymentdecisionsinSouthAfrica.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+**WHO - Global Policy Recommendations for Rural Recruitment and Employment**
+<object data="/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf">Download PDF</a>.</p>
     </embed>
 </object>
