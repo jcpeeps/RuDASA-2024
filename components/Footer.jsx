@@ -42,7 +42,7 @@ export default function Footer() {
 					<a href="https://www.youtube.com/channel/UCvH-hC_ev2oAiCuHaNo6XNg"><FontAwesomeIcon icon={faYoutube} size="2x" className="text-white p-2"/></a>
 					<a href=""><FontAwesomeIcon icon={faHandHoldingMedical} size="2x" className="text-white p-2"/></a>
 				</div>
-				<div className="w-25 d-flex justify-content-center mt-4">
+				<div className="w-50 d-flex justify-content-center mt-4">
 					<h5 className="text-white">168-404NPO</h5>
 				</div>
 			</div>

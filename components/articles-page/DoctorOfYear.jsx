@@ -9,13 +9,13 @@ import { Accordion } from 'react-bootstrap'
 export default function DoctorOfYear({ markdown: { frontmatter, content }, prevRecipients }) {
 
     return (
-        <section className="container mb-5 p-5">
+        <section className="container mb-2 mb-lg-5 p-4 p-lg-5">
             <h1 className="dispaly-4 fw-bold text-primary my-5 pt-5">Articles</h1>
             <h3 className="my-4 pb-4 fw-bold">Rural Doctor of the Year {frontmatter.year}</h3>
             <div className="row">
-                <div className="col-sm-12 col-md-5 col-lg-5 d-flex flex-wrap flex-md-nowrap align-items-start">
+                <div className="col-sm-12 col-md-12 col-lg-6 d-flex flex-wrap flex-md-nowrap align-items-start">
                     <Image src={Portrait} width={270} height={270} className="rounded-circle" />
-                    <div className="ms-5 my-3">
+                    <div className="ms-0 ms-md-5 my-3">
                         <h5 className="fw-bold mb-3">Dr {frontmatter.name}</h5>
                         <div className="d-flex mb-2">
                             <FontAwesomeIcon icon={faHouseMedical} className="text-primary me-2" />
@@ -27,12 +27,12 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-12 col-md-6 col-lg-6 mt-md-3">
+                <div className="col-sm-12 col-md-12 col-lg-6 mt-md-3">
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
                 </div>
             </div>
-            <div className="d-flex w-100 justify-content-between align-items-start my-5">
-                <Accordion className="w-50 border-bottom" flush>
+            <div className="d-flex flex-column-reverse flex-md-row w-100 justify-content-between align-items-start my-5">
+                <Accordion className="border-bottom flex-fill" flush>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>View previous recipients</Accordion.Header>
                         <Accordion.Body>
@@ -40,7 +40,7 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-                <div className="text-end hover-button">
+                <div className="text-end hover-button mb-4 mb-md-0 flex-fill">
                     <a href="#" role="button" className="btn btn-lg btn-secondary text-white">Nominate a Doctor</a>
                 </div>
             </div>

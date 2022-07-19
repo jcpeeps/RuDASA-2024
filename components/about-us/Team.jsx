@@ -10,25 +10,25 @@ export default function Team({ executives, portfolios, partners }) {
 
     return (
         <section className="bg-light py-5">
-            <div className="container">
+            <div className="container-lg px-4 px-lg-0">
                 <h3 className="my-4">{executives.content}</h3>
                 <div className="d-flex flex-wrap mb-5">
                     {members.map((member, index) => (
-                        <ContactCard title={member.title} name={member.name} email={`mailto:${member.email}`} />
+                        <ContactCard title={member.title} name={member.name} email={`mailto:${member.email}`} key={index} />
                     ))}
                 </div>
                 <h3 className="my-4">{portfolios.content}</h3>
                 <div className="d-flex flex-wrap">
                     {portfolioArray.map((member, index) => (
-                        <ContactCard title={member.title} name={member.name} email={`mailto:${member.email}`} />
+                        <ContactCard title={member.title} name={member.name} email={`mailto:${member.email}`} key={index} />
                     ))}
                 </div>
-                <div className="my-5 py-3" /> {/*Spacing utility*/}
+                <div className="my-2 my-lg-5 py-3" /> {/*Spacing utility*/}
 
                 <h3 className="my-4 pt-5">{partners.content}</h3>
                 <div className="d-flex flex-wrap">
                     {partnerArray.map((partner, index) => (
-                        <PartnerCard title={partner.title} description={partner.description} link={partner.link} />
+                        <PartnerCard title={partner.title} description={partner.description} link={partner.link} key={index} />
                     ))}
                 </div>
             </div>

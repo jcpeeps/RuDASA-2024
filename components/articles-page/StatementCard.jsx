@@ -4,7 +4,7 @@ import { faClock } from '@fortawesome/free-regular-svg-icons'
 
 export default function StatementCard(props) {
     return (
-        <div className="bg-white shadow rounded-3 p-5 m-4 partner-width">
+        <div className="bg-white shadow rounded-3 p-5 m-2 m-lg-3 partner-width">
             <h5 className="fw-bold mb-3">{props.title}</h5>
             <small className="text-muted mb-4">by {props.author}</small>
             <p>{props.description}</p>

@@ -48,4 +48,4 @@ members: [
 ]
 ---
 
-Executive Committee 2018-2019
+Executive Committee 2022

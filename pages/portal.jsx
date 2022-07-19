@@ -8,23 +8,23 @@ import matter from 'gray-matter'
 import Illustration from '../media/svg/portal.svg'
 import Image from 'next/image'
 
-export default function Portal ({ resources, overview }) {
+export default function Portal({ resources, overview }) {
 
-    return(
-        <Layout pageTitle="RuDASA | Learning Portal" hide="true">
-			<div className="position-absolute team-svg">
-                    <Image src={Illustration} width={700} />
-                </div>
-            <ResourceGroups resources={resources}/>
-            <Hero overview={overview.find(file => file.slug === "overview").content}/>
+	return (
+		<Layout pageTitle="RuDASA | Learning Portal" hide="true">
+			<div className="position-absolute team-svg d-none d-lg-block">
+				<Image src={Illustration} width={700} />
+			</div>
+			<ResourceGroups resources={resources} />
+			<Hero overview={overview.find(file => file.slug === "overview").content} />
 		</Layout>
-    )
+	)
 }
 
 export async function getStaticProps() {
 	// Get files from the markdown sub-directory
 	const resourceFiles = fs.readdirSync(path.join('markdown/resources/resource/portal'))
-    const overviewFiles = fs.readdirSync(path.join('markdown/portal'))
+	const overviewFiles = fs.readdirSync(path.join('markdown/portal'))
 
 	// Get slug and markdown from files
 	const resources = resourceFiles.map((filename) => {
@@ -40,24 +40,24 @@ export async function getStaticProps() {
 		}
 	})
 
-    // Get slug and markdown from files
+	// Get slug and markdown from files
 	const overview = overviewFiles.map((filename) => {
-        const slug = filename.replace('.md', '')
+		const slug = filename.replace('.md', '')
 		const markdown = fs.readFileSync(path.join('markdown/portal', filename), 'utf-8')
 
 		const { data: frontmatter, content } = matter(markdown)
 
 		return {
 			slug,
-            frontmatter,
-            content
+			frontmatter,
+			content
 		}
 	})
 
 	return {
 		props: {
 			resources,
-            overview
+			overview
 		}
 	}
 }

@@ -201,6 +201,12 @@ ul {
 	width: 90%;
 }
 
+@media screen and (max-width: 575px) {
+	.progress-bar {
+		width: 80%;
+	}
+}
+
 .progress-loader {
 	height: 6px;
 	background-color: var(--primary);
@@ -225,9 +231,14 @@ article,
 .column-wrap {
 	column-count: 2;
 	column-gap: 10em;
+	column-width: 400px;
 }
 
 span {
 	color: var(--primary);
 	font-weight: bold;
+}
+
+.benefits-class {
+	min-width: 50%;
 }
