@@ -17,9 +17,9 @@ To **create a Markdown file**, you can use any text editor (such as notepad, not
 
 You will typically use a new markdown file to **create new resource pages**. Please ensure these new files are saved in the *correct* folder in the **resources** or **portal** directories, in order to stay organized and make sure the resource pages are shown correctly on the website. Make sure these files have the **.md extension**.
 
-### Make sure all new resources include these three lines:
+### Make sure all new resource pages include these three lines at the very top of the page:
 ---
-title: "[Change this title to the name of the resource"
+title: "[Change this title to the name of the resource]"
 ---
 
 Otherwise, any other content on the site you want to change, you can **edit in the files directly** by navigating to that file and changing the content, saving your work and reloading the webpage. **Do not move these files around**, as content may be lost or errors may occur!
