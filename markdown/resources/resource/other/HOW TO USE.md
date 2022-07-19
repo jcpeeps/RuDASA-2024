@@ -1,5 +1,5 @@
 ---
-# Markdown Cheat Sheet
+title: 'Markdown Cheat Sheet'
 ---
 # Hi! Welcome to Markdown! This is your extensive cheat-sheet for how to use Markdown
 
@@ -29,17 +29,15 @@ If you would like to **add more resource/portal pages with their own new icons**
 1. Create the markdown file, as explained above. Remember what you named it (we suggest naming it in a similar way to how we have already done with other files).
 2. Download the icon you would like to use.
 3. Save the icon in the "icons" folder (inside the "media" folder).
-4. **Make sure the icon has the EXACT SAME NAME as the markdown file you created.**
+4. **Make sure the icon has the EXACT SAME NAME as the markdown file you created, with "icon-" added to the front.**
 5. Save your work and we do the rest!
 ---
 
 ## The Cheat Sheet
 Now that you know how to create a file, let's run through the Markdown syntax (special symbols we will be using).
 
----
 ### Regular Text
 To copy in/write in regular text, such as a post you want to make, an article or any paragraph text, simply write it in the file like this! No symbols required!
----
 
 ### Headings
 To create a heading, add a certain number of hashtags (#) in front, followed by a space, and then the heading text. Ensure the heading is on its own new line.  
@@ -53,16 +51,14 @@ You can add up to 6 hashtags, but we recommend sticking to 3.
 #This is not a heading
 ### This is a heading, as well as all of this text until the end of the line.
 
----
 ### Bold and italics
-To create text in **bold**, add 2 stars (**) before and after the text you want to make bold. Do not leave a space between the stars and the text.  
-For example:
+To create text in **bold**, add 2 stars ( ** ) before and after the text you want to make bold. Do not leave a space between the stars and the text.   
+For example:  
 **This is bold text** and ** this is not bold text**  
 
-To create text in *italics*, add 1 star (*) before and after the text you want to make italic. Do not leave a space between the stars and the text.  
+To create text in *italics*, add 1 star ( * ) before and after the text you want to make italic. Do not leave a space between the stars and the text.  
 For example:
 *This is italic text* and *this is not italic text *
----
 
 ### Lists 
 To create an **unordered list** (i.e., a list with dots or dashes), add 1 star (*) in front of each item in the list, followed by a space, and then the text. Make sure each item is on its own new line.  
@@ -76,48 +72,41 @@ For example:
 To create an **ordered list** (i.e., a list with numbers or letters) write it as if you were writing a normal numbered list.  
 For example:  
 1. This is a list item
-2. This is another list item
-    i. This is a list item which is indented
-    ii. This is a list item which is indented
+2. This is another list item  
+    i. This is a list item which is indented  
+    ii. This is a list item which is indented  
 3. This is a third list item
 4.This is not a list item
 
----
 ### Links
 To create a link, write the text like this:
 [Text that displays on the page](url)  
 For example: [This is a link to the markdown documentation](https://www.markdownguide.org/cheat-sheet/) 
----
 
 ### Images
 To link an image, write the text like this:
 ![Alternative text to the image](link/path to the image)
-For example: ![This is an image of an eastern yellow robin on wikipedia](https://en.wikipedia.org/wiki/Songbird#/media/File:Eopsaltria_australis_-_Mogo_Campground.jpg)
+For example: ![This is an image of a bird on unsplash](https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)
 
-Or: ![This is one of the icons used for RuDASA's resource pages](/public/icons/covid.svg)
-
----
 ### PDFs
-To link a **PDF on a page in resources**, copy the following text EXACTLY and only change what is indicated in [] (remove the [] when you change it). Please keep all PDFs in the folder called **pdfs** inside **public** to keep organized.
+To link a **PDF on a page in resources**, copy the following text EXACTLY and only change what is indicated in [] (remove the [] when you change it). Please keep all PDFs in the folder called **pdfs** inside **public** to keep organized.  
 <object data="/pdfs/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
     <embed src="/pdfs/[FILE PATH TO YOUR PDF]">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
     </embed>
 </object> 
 
-To link a **PDF on a page on the learning portal**, copy the following text EXACTLY and only change what is indicated in [] (remove the [] when you change it). Please keep all PDFs in the folder called **PORTAL** inside **pdfs** (inside public) to keep organized.
+To link a **PDF on a page on the learning portal**, copy the following text EXACTLY and only change what is indicated in [] (remove the [] when you change it). Please keep all PDFs in the folder called **PORTAL** inside **pdfs** (inside public) to keep organized.  
 <object data="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
     <embed src="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
     </embed>
 </object> 
 
----
 ### Videos
-To link a youtube video, go onto youtube, right click on the video when watching it, and select **"Copy embed code"**, paste what you copied EXACTLY into the markdown file. All done!
+To link a youtube video, go onto youtube, right click on the video when watching it, and select **"Copy embed code"**, paste what you copied EXACTLY into the markdown file. All done!  
 
 For a more detailed explanation, watch this [tutorial](https://www.youtube.com/watch?v=vGHrJDmepI0).
----
 
 ### New Lines
 In order to add a new line, press the spacebar twice (2 times) at the end of your sentence, and then press enter. This tells markdown to start the text that follows on a new line.  
@@ -126,5 +115,5 @@ This is best seen when viewing the file your web browser. For example:
 This is text.  
 This is text that follows on a new line.  
 
-Headings and lists can be placed on a new line normally. Markdown knows to add these on new lines.
----
+This is text.
+This text does not follow on a new line, but follows directly after.
