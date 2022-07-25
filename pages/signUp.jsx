@@ -12,7 +12,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import Link from 'next/link'
 
-export default function signUp({ data }) {
+export default function SignUp({ data }) {
 
     // Object that stores information across all components
     const [formData, setFormData] = useState({
