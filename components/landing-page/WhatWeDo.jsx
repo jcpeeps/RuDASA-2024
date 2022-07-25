@@ -16,7 +16,9 @@ export default function WhatWeDo({ content }) {
                         <h1 className="display-4 fw-bold mb-5">What do we do?</h1>
                         <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
                         <div className="hover-button">
-                            <Link href="/signUp" role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4">Become a member</Link>
+                            <Link href="/signUp">
+                                <a role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4">Become a member</a>
+                            </Link>
                         </div>
                     </div>
                 </div>

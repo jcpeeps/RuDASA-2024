@@ -14,10 +14,14 @@ export default function Hero() {
                     <h1 className="fw-bold mb-5 display-4">Inspiring others towards rural health</h1>
                     <div className="d-flex justify-content-center justify-content-lg-start">
                         <div className="gradient-outline me-3">
-                            <Link href="/signUp" role="button" className="btn btn-primary btn-lg gradient-background text-white fw-bold">Sign Up</Link>
+                            <Link href="/signUp">
+                                <a role="button" className="btn btn-primary btn-lg gradient-background text-white fw-bold">Sign Up</a>
+                            </Link>
                         </div>
                         <div className="gradient-outline">
-                            <Link href="#who-are-we" role="button" className="btn btn-outline-primary btn-lg fw-bold">Learn More</Link>
+                            <Link href="#who-are-we">
+                                <a role="button" className="btn btn-outline-primary btn-lg fw-bold">Learn More</a>
+                            </Link>
                         </div>
                     </div>
                 </div>
