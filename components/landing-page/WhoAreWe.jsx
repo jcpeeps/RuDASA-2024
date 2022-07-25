@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Illustration1 from '../../media/svg/who-are-we.svg'
+import Link from 'next/link'
 
 export default function WhoAreWe({ content }) {
     return (
@@ -17,11 +18,11 @@ export default function WhoAreWe({ content }) {
                             <p>{content.mission}</p>
                         </div>
                         <div className="w-100 text-end hover-button">
-                            <a href="/about" role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4">Meet our team</a>
+                            <Link href="/about" role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4">Meet our team</Link>
                         </div>
                     </div>
                     <div className="col-lg-6 col-xl-6 text-center d-none d-lg-block">
-                        <Image src={Illustration1} />
+                        <Image src={Illustration1} alt="" />
                     </div>
                 </div>
             </div>

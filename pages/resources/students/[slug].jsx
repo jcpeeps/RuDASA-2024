@@ -4,6 +4,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Layout from '../../../components/Layout'
+import Link from 'next/link'
 
 export default function resourcePage({ frontmatter: { title }, content }) {
     return (
@@ -12,7 +13,7 @@ export default function resourcePage({ frontmatter: { title }, content }) {
             <section className="container px-5">
                 <div className="w-100 border-bottom pb-4 mb-5">
                     <div className="hover-button">
-                        <a href="/resources" role="button" className="btn btn-primary text-white">Go back</a>
+                        <Link href="/resources" role="button" className="btn btn-primary text-white">Go back</Link>
                     </div>
                 </div>
                 <h1 className="fw-bold my-5">{title}</h1>

@@ -23,7 +23,7 @@ export default function SnT ({ snt, snts }) {
                     <div className="bg-white rounded shadow p-4 p-md-5 mb-2 w-100">{snts.frontmatter.firstPoint}</div>
                     <div className="bg-white rounded shadow p-4 p-md-5 mt-2 w-100">{snts.frontmatter.secondPoint}</div>
                 </div>
-                <Image src={Illustration4} className="col-12 col-lg-5" width={400}/>
+                <Image src={Illustration4} className="col-12 col-lg-5" width={400} alt="" />
             </div>
         </div>
     )

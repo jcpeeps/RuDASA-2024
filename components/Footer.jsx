@@ -26,7 +26,7 @@ export default function Footer() {
 					<div className="col-sm-12 col-md-12 col-lg-3  text-center text-lg-start">
 						<h5 className="text-white">RuDASA Archive</h5>
 						<ul className="list-unstyled">
-							<li><a href="#" className="text-white text-decoration-none">View RuDASA's Archive</a></li>
+							<li><a href="#" className="text-white text-decoration-none">View RuDASA&apos;s Archive</a></li>
 						</ul>
 					</div>
 					<div className="col d-flex flex-column">

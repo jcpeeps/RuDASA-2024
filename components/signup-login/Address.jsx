@@ -22,8 +22,8 @@ export default function Address({ formData, setFormData }) {
                 <Form className="px-3 px-md-0">
                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                            <label for="country" className="text-primary fw-bold form-label">Country*</label>
-                            <select id="country" class="form-select border-0 border-bottom" aria-label="country" value={formData.country} onChange={(e) => setFormData({ ...formData, country: e.target.value })}>
+                            <label htmlFor="country" className="text-primary fw-bold form-label">Country*</label>
+                            <select id="country" className="form-select border-0 border-bottom" aria-label="country" value={formData.country} onChange={(e) => setFormData({ ...formData, country: e.target.value })}>
                                 <option value="rural-work">Rural work</option>
                                 <option value="information">RHC information</option>
                                 <option value="onboarding">Onboarding programme</option>
@@ -32,8 +32,8 @@ export default function Address({ formData, setFormData }) {
                             </select>
                         </div>
                         <div className="w-auto form-group">
-                            <label for="province" className="text-primary fw-bold form-label">Province*</label>
-                            <select id="province" class="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
+                            <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
+                            <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
                                 <option value="rural-work">Rural work</option>
                                 <option value="information">RHC information</option>
                                 <option value="onboarding">Onboarding programme</option>

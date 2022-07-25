@@ -13,7 +13,7 @@ export default function Portal({ resources, overview }) {
 	return (
 		<Layout pageTitle="RuDASA | Learning Portal" hide="true">
 			<div className="position-absolute team-svg d-none d-lg-block">
-				<Image src={Illustration} width={700} />
+				<Image src={Illustration} width={700} alt="" />
 			</div>
 			<ResourceGroups resources={resources} />
 			<Hero overview={overview.find(file => file.slug === "overview").content} />

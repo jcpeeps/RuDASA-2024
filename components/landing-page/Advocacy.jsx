@@ -1,5 +1,6 @@
 import React from 'react'
 import { marked } from 'marked'
+import Link from 'next/link'
 
 export default function Advocacy({ content, examples }) {
     return (
@@ -15,7 +16,7 @@ export default function Advocacy({ content, examples }) {
                             <div dangerouslySetInnerHTML={{__html: marked(examples)}}/>
                         </div>
                         <div className="w-100 hover-button text-end">
-                            <a href="/resources#events" role="button" className="btn btn-lg btn-secondary text-white mt-4">View events</a>
+                            <Link href="/resources#events" role="button" className="btn btn-lg btn-secondary text-white mt-4">View events</Link>
                         </div>
                     </div>
                 </div>

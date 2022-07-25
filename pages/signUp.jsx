@@ -10,6 +10,7 @@ import Benefits from '../components/signup-login/Benefits'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import Link from 'next/link'
 
 export default function signUp({ data }) {
 
@@ -60,7 +61,7 @@ export default function signUp({ data }) {
                 <div className="py-5 mb-5"></div>
                 <div className="d-flex justify-content-center align-items-start mb-5 pb-5 container">
                     <div className="d-none d-lg-block col-lg-5 col-xl-5">
-                        <Image src={Illustration} width={600} height={600} />
+                        <Image src={Illustration} width={600} height={600} alt="" />
                     </div>
 
                     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
@@ -70,7 +71,7 @@ export default function signUp({ data }) {
                             {stepDisplay()}
                         </div>
                         <div className="w-100 d-flex flex-column flex-sm-row justify-content-sm-end align-items-center">
-                            <small className="pb-4 pb-sm-0">Have an account? <a href="/login">Log in</a></small>
+                            <small className="pb-4 pb-sm-0">Have an account? <Link href="/login">Log in</Link></small>
                             <div className="d-flex">
                                 <button className="btn btn-lg btn-outline"
                                     disabled={step == 0}

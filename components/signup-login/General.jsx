@@ -93,8 +93,8 @@ export default function General({ formData, setFormData }) {
                             />
                         </div>
                         <div className="w-auto form-group">
-                            <label for="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
-                            <select id="reason" class="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
+                            <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
+                            <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
                                 <option value="rural-work">Rural work</option>
                                 <option value="information">RHC information</option>
                                 <option value="onboarding">Onboarding programme</option>

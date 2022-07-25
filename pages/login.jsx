@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Link from 'next/link'
 import Image from 'next/image'
 import Illustration from '../media/svg/login.svg'
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -22,7 +23,7 @@ export default function login() {
                 <div className="py-5 mb-5"></div>
                 <div className="d-flex justify-content-center align-items-center mb-5 pb-5">
                     <div className="d-none d-lg-block col-lg-5 col-xl-5">
-                        <Image src={Illustration} width={600} height={600} />
+                        <Image src={Illustration} width={600} height={600} alt="" />
                     </div>
 
                     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-4 d-flex flex-column align-items-center ms--lg-5">
@@ -70,7 +71,7 @@ export default function login() {
                                         </div>
                                     </div>
                                     <div className="my-4 w-100 d-flex flex-column flex-sm-row justify-content-end align-items-end align-items-sm-center">
-                                        <small className="me-sm-3 mb-4 mb-sm-0">Don't have an account? <a href="/signUp">Sign up</a></small>
+                                        <small className="me-sm-3 mb-4 mb-sm-0">Don&apos;t have an account? <Link href="/signUp">Sign up</Link></small>
                                         <div className="hover-button">
                                             <button
                                                 type="submit"
