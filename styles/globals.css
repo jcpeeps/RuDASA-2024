@@ -159,6 +159,12 @@ ul {
 	transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 440px) {
+	.resc-card-width {
+		width: 46%;
+	}
+}
+
 .resc-card-width:hover {
 	background-color: var(--primary) !important;
 	transform: scale(1.1);
