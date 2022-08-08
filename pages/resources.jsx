@@ -13,10 +13,10 @@ export default function articles({ otherInfo, studentResources, ruralResources, 
 		<Layout pageTitle="RuDASA | Resources">
 			<Hero content={otherInfo.find(file => file.slug === "description")} />
 			<ResourceGroups student={studentResources} rural={ruralResources} other={otherResources} />
-			<Events snt={otherInfo.find(file => file.slug === "survive-and-thrive")}
+			{/* <Events snt={otherInfo.find(file => file.slug === "survive-and-thrive")}
 				snts={otherInfo.find(file => file.slug === "survive-and-thrive-students")}
 				onboarding={otherInfo.find(file => file.slug === "onboarding")}
-				rhc={otherInfo.find(file => file.slug === "rural-health-conference")} />
+				rhc={otherInfo.find(file => file.slug === "rural-health-conference")} /> */}
 		</Layout>
 	)
 }

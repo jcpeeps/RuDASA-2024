@@ -12,8 +12,10 @@ export default function resourcePage({ frontmatter: { title }, content }) {
             <div className="my-5 py-5" />
             <section className="container px-5">
                 <div className="w-100 border-bottom pb-4 mb-5">
-                    <div className="hover-button">
-                        <Link href="/portal" role="button" className="btn btn-primary text-white">Go back</Link>
+                    <div role="button" className="hover-button btn btn-primary">
+                        <Link href="/portal">
+                            <span className='text-decoration-none text-white'>Go back</span>
+                        </Link>
                     </div>
                 </div>
                 <h1 className="fw-bold my-5">{title}</h1>

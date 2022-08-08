@@ -193,6 +193,10 @@ ul {
 	transform: scale(1.05);
 }
 
+.bg-brown {
+	background-color: #744f3c;
+}
+
 /* Navbar */
 
 .navbar-z-index {

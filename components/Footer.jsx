@@ -5,7 +5,7 @@ import { faSprout, faHandHoldingMedical, faShareNodes, faMugSaucer } from '@fort
 
 export default function Footer() {
 	return (
-		<footer className="bg-secondary pt-5 pb-3">
+		<footer className="bg-brown pt-5 pb-3">
 			<div className="container mt-5 mb-3 d-flex flex-column align-items-center">
 				<div className="row w-100 d-flex flex-column flex-md-row justify-content-center align-items-start">
 					<div className="col-sm-12 col-md-12 col-lg-3 text-center text-lg-start">
