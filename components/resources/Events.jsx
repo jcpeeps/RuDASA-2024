@@ -12,11 +12,11 @@ export default function Events({ snt, snts, onboarding, rhc }) {
                     <SnT snt={snt} snts={snts} />
                 </div>
             </section>
-            <section className="bg-white">
+            {/* <section className="bg-white">
                 <div className="container my-3 p-3">
                     <Onboarding content={onboarding} />
                 </div>
-            </section>
+            </section> */}
             <section className="bg-light">
                 <div className="container my-3 p-3">
                     <RHC content={rhc} />
