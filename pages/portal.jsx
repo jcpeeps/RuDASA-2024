@@ -11,11 +11,16 @@ import Image from 'next/image'
 export default function Portal({ resources, overview }) {
 
 	return (
-		<Layout pageTitle="RuDASA | Learning Portal" hide="true">
+		<Layout pageTitle="RuDASA | Rural Onboarding" hide="true">
 			<div className="position-absolute team-svg d-none d-lg-block">
 				<Image src={Illustration} width={700} alt="" />
 			</div>
+			<div className="py-5 mb-5"></div>
+			<div className="container">
+			<h4 className="fw-bold display-6 text-primary mt-5">Rural Onboarding</h4>
 			<ResourceGroups resources={resources} />
+			</div>
+			
 			<Hero overview={overview.find(file => file.slug === "overview").content} />
 		</Layout>
 	)

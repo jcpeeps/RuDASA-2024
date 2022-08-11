@@ -54,7 +54,7 @@ export default function Navigation() {
                     <Nav.Link className={router.pathname == "/contact" ? "active" : ""} href="/contact">Contact Us</Nav.Link>
                     <Nav.Link href="/login">
                         <div className="hover-button">
-                            <Button className="nav-link p-3 text-white gradient-background shadow">Learning Portal</Button>
+                            <Button className="nav-link p-3 text-white gradient-background shadow">Rural Onboarding</Button>
                         </div>
                     </Nav.Link>
                 </Nav>
