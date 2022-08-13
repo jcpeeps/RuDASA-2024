@@ -11,7 +11,7 @@ members: [
         email: 'lungi.hobe@gmail.com'
     },
     {
-        title: 'Chairperson',
+        title: 'asdf',
         name: 'Lungi Hobe',
         email: 'lungi.hobe@gmail.com'
     },

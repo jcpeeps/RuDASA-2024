@@ -7,31 +7,60 @@ import * as Yup from "yup";
 
 export default function login() {
 
-    const LoginSchema = Yup.object().shape({
+    const LoginSchema = Yup.object({
         email: Yup.string()
             .email("Invalid email address")
             .required("Email is required"),
         password: Yup.string()
-            .min(5, "Password must be minimum 5 characters")
+            // .min(5, "Password must be minimum 5 characters")
             .required("Password is required")
     });
+
+    // Called when form submitted to pass data to the sheets.js API
+    const handleLogin = async (vals) => {
+
+        const payload = {
+            type: "login",
+            data: vals
+        }
+
+        const response = await fetch('/api/sheets', {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const content = await response.json();
+        // alert(content.data);
+        // alert(content.data.tableRange);
+
+        console.log(content);
+    }
 
     return (
         <Layout pageTitle="RuDASA | Login" hide="true">
             <section className="container">
                 <div className="py-5 mb-5"></div>
                 <div className="d-flex justify-content-center align-items-center mb-5 pb-5">
-                    <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} />
+                    <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} alt="Illustration"/>
                     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-4 d-flex flex-column align-items-center ms-5">
                         <h1 className="fw-bold w-100 mb-5 text-center text-primary">Login</h1>
+
+                        {/* FORM STARTS HERE */}
                         <Formik
-                            initialValues={{ email: "", password: "" }}
+                            initialValues={{ email: "test@email.com", password: "" }}
                             validationSchema={LoginSchema}
-                            onSubmit={({ setSubmitting, values }) => {
-                                alert("Form is validated! Submitting the form...", values); //THIS IS WHERE YOU USE VALUES FOR BACKEND
+
+                            onSubmit={(values, { setSubmitting }) => {
+                                alert("DEBUG OUTPUT:\n" + JSON.stringify(values));
+                                handleLogin(values); // WHERE WE CONNECT TO SHEETS.JS
                                 setSubmitting(false);
                             }}
                         >
+
                             {({ touched, errors, isSubmitting }) => (
                                 <Form className="mt-3 w-100 ms-5">
                                     <div>
@@ -66,6 +95,8 @@ export default function login() {
                                             />
                                         </div>
                                     </div>
+
+                                    {/* LOGIN BUTTON */}
                                     <div className="w-100 my-4 d-flex justify-content-end align-items-center">
                                         <small className="me-3">Don't have an account? <a href="/signUp">Sign up</a></small>
                                         <div className="hover-button">

@@ -38,7 +38,28 @@ export default function signUp({ data }) {
         contactNo: "",
         contactEmail: "",
         supportName: ""
-    })
+    });
+
+    // Called when form submitted to pass data to the sheets.js API
+    const handleSignup = async (vals) => {
+
+        const payload = {
+            type: "signup",
+            data: vals
+        }
+
+        const response = await fetch('/api/sheets', {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload)
+        });
+        const content = await response.json();
+
+        console.log(content);
+    }
 
     const [step, setStep] = useState(0);
 
@@ -59,7 +80,7 @@ export default function signUp({ data }) {
             <section>
                 <div className="py-5 mb-5 container"></div>
                 <div className="d-flex justify-content-center align-items-start mb-5 pb-5">
-                    <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} />
+                    <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} alt="Illustration"/>
                     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
                         <h1 className="fw-bold w-100 mb-5 text-center text-primary">Sign Up</h1>
                         <ProgressBar step={step} thirdStep={formData.signUpReason === "rhc"} />
@@ -93,8 +114,12 @@ export default function signUp({ data }) {
                             }`}>
                                 <button className="btn btn-lg btn-secondary"
                                     type="submit"
+                                    onClick={() => {
+                                        alert("DEBUG OUTPUT:\n" + JSON.stringify(formData));
+                                        handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
+                                    }}
                                 >
-                                    login
+                                    Sign up
                                 </button>
                             </div>
                         </div>

@@ -4,7 +4,7 @@ import * as Yup from "yup";
 
 export default function General({ formData, setFormData }) {
 
-    const GeneralSchema = Yup.object().shape({
+    const GeneralSchema = Yup.object({
         fullName: Yup.string()
             .matches(
                 /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
@@ -16,8 +16,8 @@ export default function General({ formData, setFormData }) {
             .email("Invalid email address")
             .required("Email is required"),
         password: Yup.string()
-            .min(5, "Password must be minimum 5 characters")
-            .required("Password is required"),
+            .required("Password is required")
+            .min(5, "Password must be minimum 5 characters"),
         cellNo: Yup.string()
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
@@ -77,7 +77,7 @@ export default function General({ formData, setFormData }) {
                         <div className="w-50 me-5 form-group">
                             <label htmlFor="password" className="text-primary fw-bold form-label ms-2">Password*</label>
                             <Field
-                                type="password" 
+                                type="password"
                                 name="password"
                                 placeholder="Password" 
                                 className={`form-control border-0 border-bottom ${
@@ -93,8 +93,8 @@ export default function General({ formData, setFormData }) {
                             />
                         </div>
                         <div className="w-50">
-                            <label for="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
-                            <select id="reason" class="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
+                            <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
+                            <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
                                 <option value="rural-work">Rural work</option>
                                 <option value="information">RHC information</option>
                                 <option value="onboarding">Onboarding programme</option>
