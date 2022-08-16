@@ -7,21 +7,31 @@ import path from 'path'
 import matter from 'gray-matter'
 import Illustration from '../media/svg/portal.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Portal({ resources, overview }) {
 
 	return (
 		<Layout pageTitle="RuDASA | Rural Onboarding" hide="true">
-			<div className="position-absolute team-svg d-none d-lg-block">
+			<div className="position-fixed team-svg d-none d-lg-block">
 				<Image src={Illustration} width={700} alt="" />
 			</div>
 			<div className="py-5 mb-5"></div>
 			<div className="container">
-			<h4 className="fw-bold display-6 text-primary mt-5">Rural Onboarding</h4>
-			<ResourceGroups resources={resources} />
+				<h4 className="fw-bold display-6 text-primary mt-5">Rural Onboarding</h4>
+				<ResourceGroups resources={resources} />
 			</div>
-			
-			<Hero overview={overview.find(file => file.slug === "overview").content} />
+
+			<div id="overview">
+				<Hero overview={overview.find(file => file.slug === "overview").content} />
+			</div>
+
+
+			<div style={{ position: 'fixed', right: '30px', bottom: '30px' }}>
+				<Link href="#overview">
+					<a role="button" className="btn btn-lg btn-primary rounded-pill text-white mt-4">Overview</a>
+				</Link>
+			</div>
 		</Layout>
 	)
 }
