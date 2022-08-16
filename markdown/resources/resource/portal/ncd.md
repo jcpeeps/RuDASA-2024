@@ -1,5 +1,6 @@
 ---
 title: 'NCDs'
+section: '3'
 ---
 ## Internal Medicine emergencies 
 ### Prof Andy Parrish, Physician, HOD Internal medicine CMH, EC 

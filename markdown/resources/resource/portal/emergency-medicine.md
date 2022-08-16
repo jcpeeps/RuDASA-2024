@@ -1,5 +1,6 @@
 ---
 title: 'Emergency Medicine'
+section: '5'
 ---
 ## Triage in Rural: How well do you know the SATS? 
 ### Dr Sian Geraty; Emergency Medicine Physician at Livingston hospital, EC

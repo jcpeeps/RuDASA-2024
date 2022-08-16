@@ -1,5 +1,6 @@
 ---
 title: 'Surgery'
+section: '6'
 ---
 ## District Surgery 
 **Module District Surgery Resource pack**

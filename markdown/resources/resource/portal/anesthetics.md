@@ -1,6 +1,6 @@
 ---
-title: 'Anesthetics'
-section: '1'
+title: 'Anaesthetics'
+section: '6'
 ---
 
 start here
