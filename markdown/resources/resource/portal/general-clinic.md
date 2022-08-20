@@ -72,6 +72,8 @@ English and then isiXhosa) on a recorder (now even easier with recording apps), 
 practice in the care on the way to work.
 I have plenty of resources here for isiXhosa as I am based in the Eastern Cape – and add in my
 recommendations below, but feel free to research resources for the language in your area.
+
+- 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
