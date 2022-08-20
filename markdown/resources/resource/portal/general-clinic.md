@@ -73,7 +73,20 @@ practice in the care on the way to work.
 I have plenty of resources here for isiXhosa as I am based in the Eastern Cape – and add in my
 recommendations below, but feel free to research resources for the language in your area.
 
-- 
+- **Ubuntu bridge**: for isiXhosa and isiZulu. Expensive but first class to get to know the language
+inside out. [Learn Xhosa](https://www.learnxhosa.co.za/)
+
+- **Speak easy Xhosa**: This moodle based online platform has a specific course for health care
+workers and pharmacists made up out of phrase packs. Basic but very well populated with
+phrases commonly used in the consultation room
+
+- **Yandisa training**: this is a course I created with a local isiXhosa teacher, Phelisa Soxujwa. It
+was focusing on teenagers (my own included) and beginner Xhosa speakers and not
+specifically medical. Cheap and very homegrown( R350 per level) with Youtube Grammer
+videos, phrase packs and audio recordings. Contact [Dr Muller](drmullerbz@gmail.com) for more
+information. I’ve included some phrase packs in the google folder
+
+**If you know of any great resources out there on any of the other South Africa languages, please send to me at mentor@rudasa.org.za so that I can add to further packs.**
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
