@@ -1,17 +1,35 @@
 ---
-title: 'NCDs'
+title: 'Non-communicable Diseases'
 section: '3'
 ---
-## Internal Medicine emergencies 
-### Prof Andy Parrish, Physician, HOD Internal medicine CMH, EC 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/HB6BAmTDink" title="RO2022 Internal Medicine Emergencies in Rural Prof Andy Parrish" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Module - NCDs Resource pack.pdf**
-<object data="/pdfs/PORTAL/ncd/RO2022 Module NCDs Resource pack.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/ncd/RO2022 Module NCDs Resource pack.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/ncd/RO2022 Module NCDs Resource pack.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+#### Introduction
+
+Although not as urgent, NCDs will make up a huge part of your OPD work, and will
+result in a certain number of admissions each week. We do have excellent guidelines and can
+provide high quality care for these patients, even in a rural setting, but it requires and in depth
+knowledge of evidence based guidelines.
+
+#### TOP NCD Work Based Activities to focus on this week
+
+##### Make sure you can
+
+- Diagnosis and treating to target of diabetes, hypertension and dyslipidemia.
+
+- Managing acute heart failure in the emergency setting
+
+- Treating chronic heart failure to target. Diagnosis and long term management
+
+- Manage COPD
+
+- Manage Asthma - chronic and acute.
+
+- Referral pathways – up and down
+
+- Manage Epilepsy
+
+#### Key Guidelines
+
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).

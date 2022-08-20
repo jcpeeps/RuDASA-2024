@@ -25,7 +25,7 @@ implications, there are excellent NDOH or NICD guidelines that cover them.
 
 - Rabies
 
-##### Key Guidelines
+#### Key Guidelines
 
 For antibiotic use for any infectious disease: use your **STG/ EML guidelines on your EMG app**.
 
