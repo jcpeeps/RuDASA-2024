@@ -3,7 +3,17 @@ title: 'General Clinic Resources'
 section: '0'
 ---
 
+#### Introduction
 
+    There are several resources useful to have in the back pocket. Make sure that they are
+    all available off line (e.g. save them in PDF format or download them for off line use in the apps).
+    Chat to your colleagues at the hospital about apps they find useful.
+
+#### Key Guidelines
+
+- Your biggest friend is the EMG app: https://emguidance.com/: go to the guidelines tab and
+    add all the guidelines that you want to be able to access off line – internet can be fickle! This
+      includes your all your EMLs as well as ART guidelines etc.
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
