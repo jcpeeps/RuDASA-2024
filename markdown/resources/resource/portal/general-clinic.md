@@ -1,9 +1,9 @@
 ---
-title: 'General Resources'
+title: 'General Clinic Resources'
 section: '0'
 ---
 
-start here
+
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
