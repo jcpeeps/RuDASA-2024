@@ -1,127 +1,99 @@
 ---
-title: 'Maternal & Reproductive Health'
+title: 'Maternal & Women Health'
 section: '2'
 ---
-# Maternal Health
-## CTG Interpretation in the Rural Health Setting 
-### Dr Sibongile Mandondo: DCST O&G Amathole district, EC
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/GLs3BXfHQOo" title="RO2022 CTG interpretation workshop Dr Mandondo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#### Introduction
 
-## Maternal Health PDFs
-**Basic Antenatal Care Handbook ISBN (2007)**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/4. Basic Antenatal Care Handbook ISBN  (2007).PDF" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/4. Basic Antenatal Care Handbook ISBN  (2007).PDF">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/4. Basic Antenatal Care Handbook ISBN  (2007).PDF">Download PDF</a>.</p>
-    </embed>
-</object> 
+One of the most frightening experiences as a new rural clinician is making life and
+death decisions about a mother and her unborn child. We have put together an amazing set of
+resources to help you gain the skills to deal with those high stake scenarios.
 
-**Maternity Care in SA (2007)**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/5. Maternity Care in SA 2007.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/5. Maternity Care in SA 2007.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/5. maternal-health-pediatrics/Maternity Care in SA 2007.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+#### TOP Maternal health Work Based Activities to focus on this week
 
-<!-- **PMTCT Guidelines (2013)**
-<object data="/pdfs/PORTAL/PMTCT Guidelines 2013.docx" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/PMTCT Guidelines 2013.docx">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/PMTCT Guidelines 2013.docx">Download PDF</a>.</p>
-    </embed>
-</object>  -->
+##### Make sure you can
 
-**WHO - Breastfeeding Guideline (2017)**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/breastfeeding-who-bfhi-guideline-2017.zp151446.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/breastfeeding-who-bfhi-guideline-2017.zp151446.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/breastfeeding-who-bfhi-guideline-2017.zp151446.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+- Manage Post-partum haemmorhage & APH
 
-**EPI Schedule**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/EPI SCHEDULE.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/EPI SCHEDULE.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/EPI SCHEDULE.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+- Do a basic obstetric ultrasound
 
-**HIV Worksheet for Clinical Use**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/hie-worksheet-for-clinical-use.pg1-4.zp153256.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/hie-worksheet-for-clinical-use.pg1-4.zp153256.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/hie-worksheet-for-clinical-use.pg1-4.zp153256.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+- Identify and manage puerperal sepsis
 
-**IMCI Chart Booklet (2011)**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/IMCI CHART BOOKLET 2011.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/IMCI CHART BOOKLET 2011.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/IMCI CHART BOOKLET 2011.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+- Manage bleeding in early pregnancy
 
-**Module - Maternal & Women Health**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/RO2022 Module Maternal & Women Health.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/RO2022 Module Maternal & Women Health.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/RO2022 Module Maternal & Women Health.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+- Use of NASG
 
-# Child Health  
-## Identifying Serious Bacterial Infections in Young Infants 
-### Dr Lizelle Keet; DCST Paediatrician, BCM, EC
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/jfrWM_U89fQ" title="RO2022 Identifying the Infant with a serious bacterial infection.  Dr Lizelle Keet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Interpretation of CTG
 
-## A Structured Approach to the Seriously Ill Child 
-### Dr Tintswalo Motimele; paediatric department at Frere hospital, EC
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/Yl7eht7d3uI" title="RO2022 Structured approach to the seriously ill child Dr Motimele" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Management Hypertension / PET in pregnancy
 
-## Child Health PDFs
-**NIMART Peads and Adult Mentoring File Audit Tool**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/4. NIMART peads and Adult mentoring file audit tool.xlsx" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/4. NIMART peads and Adult mentoring file audit tool.xlsx">
-        <p>This browser does not support Excel Spreadsheets. Please download the Excel Spreadsheet to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/4. NIMART peads and Adult mentoring file audit tool.xlsx">Download Excel Spreadsheet</a>.</p>
-    </embed>
-</object>
+- Insertion (and removal) of IUCD & Implanon
 
-**Management of HIV in Children (2010)**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/6. Management of HIV in Children 2010.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/6. Management of HIV in Children 2010.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/6. Management of HIV in Children 2010.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+##### Key Guidelines
 
-**Peadiatric ART Flowchart**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/Peadiatric ART Flowchart.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/Peadiatric ART Flowchart.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/Peadiatric ART Flowchart.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+[Guidelines for maternity care in South Africa](https://www.knowledgehub.org.za/elibrary/guidelines-maternity-care-south-africa-2016)
 
-**Newborn Care Charts - MSSN Vers 1 (2009)**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/NEWBORN CARE CHARTS - MSSN Vers 1 2009 copy.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/NEWBORN CARE CHARTS - MSSN Vers 1 2009 copy.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/NEWBORN CARE CHARTS - MSSN Vers 1 2009 copy.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+[Guideline for the prevention of mother to child transmission of communicable infections, South African Department of health](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-10/PMTCT%20Guideline%2028%20October%20signed.pdf)
 
-**Peadiatric Algorithm**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/Peadiatric_Algorithm_4April.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/Peadiatric_Algorithm_4April.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/Peadiatric_Algorithm_4April.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+[National Guideline: Management of hypertensive disease in pregnancy](http://www.samj.org.za/index.php/samj/article/view/12723)
 
-**Child Health Resource Pack**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/RO2022 Child health Resource pack.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/RO2022 Child health Resource pack.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/RO2022 Child health Resource pack.pdf">Download PDF</a>.</p>
-    </embed>
-</object> 
+[Termination of pregnancy guideline](https://www.knowledgehub.org.za/system/files/elibdownloads/2021-03/Termination%20of%20Pregnancy%20Guideline_Final_2021.pdf)
 
-**Road to Health Book for Boys**
-<object data="/pdfs/PORTAL/maternal-health-pediatrics/ROADTOHEALTHBOOKA4BOYS.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/maternal-health-pediatrics/ROADTOHEALTHBOOKA4BOYS.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/maternal-health-pediatrics/ROADTOHEALTHBOOKA4BOYS.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+##### Reading material / Tutorials/ Webinars / Additional resources
+
+- [ESMOE for interns at Tygerberg hospital](http://www.obstyger.co.za/page7.html)
+
+- [The WHO reproductive health library](https://apps.who.int/iris/bitstream/handle/10665/206006/B0464.pdf?sequence=1&isAllowed=y)
+
+- [Reproductive Health Library YouTube Channel](https://www.youtube.com/channel/UCfYi3MN6-SIzKlTNioY8k4A)
+
+- [Zimbabwean Obstetrician Dr Claudious Verenga covers the basics of obstetric ultrasound for doctors and nurses](https://www.youtube.com/watch?v=GtBLdzr6Ngg&feature=youtu.be)
+
+- [Preventing complications during caesarian section, Prof Hofmeyr](https://youtu.be/b2FMVBCiPso)
+
+- [Post- partum hemorrhage. Prof Hofmeyr](https://youtu.be/SgDp6ANsV1I)
+
+- [Spinal anesthesia for caesarian section webinar, Dr S Le Roux](https://youtu.be/YOlv9xBY5j0)
+
+- [What to have in your obstetric spinal tray](https://youtu.be/mAorYKBv500)
+
+- [Safe caesarian section with IUD insertion, Prof J Hofmeyr](https://youtu.be/9qr5Uqxe61U)
+
+- [Post-partum IUD insertion, Prof J Hofmeyr](https://youtu.be/r98GFTtuRzQ)
+
+- [Active management of third stage of labour](https://youtu.be/_TXv2jGnzhU)
+
+- [Management of early pregnancy loss](https://journals.co.za/doi/epdf/10.10520/EJC63071)
+
+- [Sexual Pleasure, Sexual Health, Sexual rights](https://youtube.com/playlist?list=PL2IvCQAf-vTsyO7PFjM37sj-P5Ue-J19-)
+
+###### Sexual health workshop podcast series
+
+- [Sexual Health workshop Part 1 Pleasure Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-Webinar-Part-1-Pleasure-podcast-e1fdh7c)
+
+- [Sexual Health workshop Part 2 Rights Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-webinar-Part-2-Sexual-Rights-e1fdhg1)
+
+- [Sexual Health workshop Part 3: Health Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-webinar--Part-3-Sexual-Health-e1fdhjc)
+
+###### Google drive folder link with resources
+
+[Click Here](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
+
+###### Including
+
+- The fetus assessment handbook
+
+- Contraception counselling powerpoint with voice over with Prof Hofmeyr
+
+- CTG STAMP protocol tool
+
+- Passive leg raise test (resuscitation)
+
+- CTG interpretation slides Dr Mandondo
+
+- FAQ Maternal health slides Dr Mandondo
+
+There are lots of excellent videos to work through – so organize a video night with your colleagues
+and get out the popcorn…
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
