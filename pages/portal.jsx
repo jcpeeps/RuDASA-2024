@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import Hero from '../components/portal/Hero'
 import ResourceGroups from '../components/portal/ResourceGroups'
@@ -8,8 +8,18 @@ import matter from 'gray-matter'
 import Illustration from '../media/svg/portal.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useInView } from 'react-intersection-observer';
 
 export default function Portal({ resources, overview }) {
+	const [visible, setVisible] = useState(false)
+
+	const { ref, inView } = useInView({
+		threshold: 0.3
+	  });
+
+	useEffect(() => {
+		if (inView) setVisible(true)
+	}, [inView])
 
 	return (
 		<Layout pageTitle="RuDASA | Rural Onboarding" hide="true">
@@ -22,12 +32,11 @@ export default function Portal({ resources, overview }) {
 				<ResourceGroups resources={resources} />
 			</div>
 
-			<div id="overview">
+			<div id="overview" ref={ref}>
 				<Hero overview={overview.find(file => file.slug === "overview").content} />
 			</div>
 
-
-			<div style={{ position: 'fixed', right: '30px', bottom: '30px' }}>
+			<div style={{ position: 'fixed', right: '30px', bottom: '30px' }} className={`${visible ? "d-none" : "d-block"}`}>
 				<Link href="#overview">
 					<a role="button" className="btn btn-lg btn-primary rounded-pill text-white mt-4">Overview</a>
 				</Link>

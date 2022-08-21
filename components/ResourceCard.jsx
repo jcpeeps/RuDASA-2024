@@ -12,9 +12,13 @@ export default function ResourceCard(props) {
 					</div>
 				</a>
 			</div>
-			<div className='text-center mt-3 py-1 rounded-bottom' style={{ backgroundColor: '#e6e6e6' }}>
-				<small className="text-white fw-bold">Section {props.section}</small>
-			</div>
+			{props.section && props.section != "0" ?	
+				<div className='text-center mt-3 py-1 rounded-bottom' style={{ backgroundColor: '#e6e6e6' }}>
+					<small className="text-white fw-bold">Section {props.section}</small>
+				</div>
+					
+				: ""
+			}
 		</div>
 	)
 }
