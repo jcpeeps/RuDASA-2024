@@ -28,7 +28,7 @@ resources to help you gain the skills to deal with those high stake scenarios.
 
 - Insertion (and removal) of IUCD & Implanon
 
-#### Key Guidelines
+##### Key Guidelines
 
 [Guidelines for maternity care in South Africa](https://www.knowledgehub.org.za/elibrary/guidelines-maternity-care-south-africa-2016)
 
@@ -74,7 +74,7 @@ resources to help you gain the skills to deal with those high stake scenarios.
 
 - [Sexual Health workshop Part 3: Health Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-webinar--Part-3-Sexual-Health-e1fdhjc)
 
-###### Google drive folder link with resources
+##### Google drive folder link with resources
 
 [Click Here](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
 
