@@ -1,5 +1,5 @@
 ---
-title: 'Research & Quick Links'
+title: 'Research & Statistics'
 ---
 ## Quick Links &amp; Fast Facts
 Here are a list of stats and quick links to research
