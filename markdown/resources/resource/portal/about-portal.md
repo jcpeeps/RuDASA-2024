@@ -30,3 +30,21 @@ The content of each week’s material includes the following:
 * Tools and relevant websites with additional resources
  
 At the moment the clinical part of the program is heavily focused on doctors and clinical associates, but the orientation package is open to *any* clinician in an EC rural health facility. The sections on employee support, the MDT team, health care worker mental health and patient centred care are particularly relevant to any cadre.
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
+    
+    The number (e.g., "1." "2." etc.) followed by a space and then text shows an item in a numbered list. Make sure each item is on a separate line. 
+
+    Links are created with the following: [Link text that is displayed on the website](url)
+
+    The text surrounded by double stars ( ** ) with no space show bold text.
+
+    The text surrounded by single stars ( * ) with no space show italic text.
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->
