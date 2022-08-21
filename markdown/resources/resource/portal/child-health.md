@@ -30,35 +30,35 @@ Medicine.
 
 ##### Key Guidelines
 
-[Standard treatment guidelines and Essential medicines list for South Africa Hospital level Paediatrics](https://www.knowledgehub.org.za/elibrary/hospital-level-paediatrics-standard-treatment-)
+- [Standard treatment guidelines and Essential medicines list for South Africa Hospital level Paediatrics](https://www.knowledgehub.org.za/elibrary/hospital-level-paediatrics-standard-treatment-)
 
-[Integrated management of childhood illness](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-10/2019%20IMCI%20CHART%20BOOKLET.pdf)
+- [Integrated management of childhood illness](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-10/2019%20IMCI%20CHART%20BOOKLET.pdf)
 
 ##### Reading material / Tutorials/ Webinars / Additional resources
 
-Limpopo Initiative for Newborn care: [Essential Newborn Care package](http://www.lincare.co.za/?page_id=1207) Includes Newborn Care charts, ENC quality improvement kit, and a full MSSN course (Management of Sick and Small newborns)
+- Limpopo Initiative for Newborn care: [Essential Newborn Care package](http://www.lincare.co.za/?page_id=1207) Includes Newborn Care charts, ENC quality improvement kit, and a full MSSN course (Management of Sick and Small newborns)
 
-[Assisting mom and health care workers with newborn care including breastfeeding](https://globalhealthmedia.org/videos/),Great, practical videos for mom and healthcare workers
+- [Assisting mom and health care workers with newborn care including breastfeeding](https://globalhealthmedia.org/videos/),Great, practical videos for mom and healthcare workers
 
-[Identifying serious bacterial infections in young infants Dr Lizelle Keet](https://youtu.be/jfrWM_U89fQ)
+- [Identifying serious bacterial infections in young infants Dr Lizelle Keet](https://youtu.be/jfrWM_U89fQ)
 
-[The structured approach to the seriously ill child, including tips for safe transfer Dr Tintswalo Motimele](https://youtube/Yl7eht7d3uI)
+- [The structured approach to the seriously ill child, including tips for safe transfer Dr Tintswalo Motimele](https://youtube/Yl7eht7d3uI)
 
-[Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include
+- [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include
 SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series
 about how to perform procedures with supplies commonly found in resource-limited settings.
 
-[Bubble CPAP](https://sugarprep.org/videos/#Bubble_CPAP), One of the SUGAR PEARL videos.
+- [Bubble CPAP](https://sugarprep.org/videos/#Bubble_CPAP), One of the SUGAR PEARL videos.
 
-[The Childrens Act Guide](http://www.ci.uct.ac.za/sites/default/files/image_tool/images/367/publication/2013/Childrens%20Act%20Guide%20for%20Health%20Professionals%202013.pdf) This guide makes child health legal aspects much easier to understand, the chapters on consent and abuse and neglect especially relevant.
+- [The Childrens Act Guide](http://www.ci.uct.ac.za/sites/default/files/image_tool/images/367/publication/2013/Childrens%20Act%20Guide%20for%20Health%20Professionals%202013.pdf) This guide makes child health legal aspects much easier to understand, the chapters on consent and abuse and neglect especially relevant.
 
-[Management of severe acute malnutrition](http://www.samj.org.za/index.php/samj/article/view/10072)
+- [Management of severe acute malnutrition](http://www.samj.org.za/index.php/samj/article/view/10072)
 
-[Neonatal Care in Rural Health Dr Michaela Lotz](https://youtu.be/aXqzO7EaDO4)
+- [Neonatal Care in Rural Health Dr Michaela Lotz](https://youtu.be/aXqzO7EaDO4)
 
-[GSH Neonates ‘Purple Book’](https://neonatalguidelines.com)
+- [GSH Neonates ‘Purple Book’](https://neonatalguidelines.com)
 
-[Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
+- [Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
 
 ##### Google drive folder link with resources
 

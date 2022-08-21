@@ -1,5 +1,5 @@
 ---
-title: 'HIV AND TB'
+title: 'HIV & TB'
 section: '1'
 ---
 
@@ -27,26 +27,26 @@ mother to child transmission.
 
 - Managing the patient that presents with an abnormal LFT (TB IRIS VS DILI)
 
-#### Key Guidelines
+##### Key Guidelines
 
-There are excellent, detailed NDOH guidelines that cover all aspects of HIV care. And don’t forget
+- There are excellent, detailed NDOH guidelines that cover all aspects of HIV care. And don’t forget
 your EML and APC! (see the General Resource Pack)
 
-[KnowledgeHub SA National ARV Guidelines](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-05/2019%20ART%20Guideline%2028042020%20pdf.pdf)
+- [KnowledgeHub SA National ARV Guidelines](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-05/2019%20ART%20Guideline%2028042020%20pdf.pdf)
 
-[KnowledgeHub Guideline for the prevention of mother to child transmission of communicable infections, South African Department of health](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-10/PMTCT%20Guideline%2028%20October%20signed.pdf)
+- [KnowledgeHub Guideline for the prevention of mother to child transmission of communicable infections, South African Department of health](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-10/PMTCT%20Guideline%2028%20October%20signed.pdf)
 
-[KnowledgeHub National Tuberculosis management guidelines](https://www.knowledgehub.org.za/elibrary/national-tuberculosis-management-guidelines)
+- [KnowledgeHub National Tuberculosis management guidelines](https://www.knowledgehub.org.za/elibrary/national-tuberculosis-management-guidelines)
 
-[KnowledgeHub National Guidelines for the management of TB in children](https://www.knowledgehub.org.za/elibrary/national-guidelines-management-tuberculosis-children)
+- [KnowledgeHub National Guidelines for the management of TB in children](https://www.knowledgehub.org.za/elibrary/national-guidelines-management-tuberculosis-children)
 
-[Management of Rifampicin Resistant TB](https://www.health.gov.za/wp-content/uploads/2020/11/management-of-rifampicin-resistant-tb-booklet-0220-v11.pdf)
+- [Management of Rifampicin Resistant TB](https://www.health.gov.za/wp-content/uploads/2020/11/management-of-rifampicin-resistant-tb-booklet-0220-v11.pdf)
 
-[Consensus statement: Management of drug-induced liver injury in HIV-positive patients treated for TB](https://sahivsoc.org/Files/Consensus%20Statement_Management%20of%20drug-induced%20liver%20injury%20in%20HIV%20positive%20pts%20treated%20for%20TB%20(Oct%202013).pdf)
+- [Consensus statement: Management of drug-induced liver injury in HIV-positive patients treated for TB](https://sahivsoc.org/Files/Consensus%20Statement_Management%20of%20drug-induced%20liver%20injury%20in%20HIV%20positive%20pts%20treated%20for%20TB%20(Oct%202013).pdf)
 
-[Management of suspected drug-induced rash, kidney injury and liver injury in adult patients on TB treatment and/or antiretroviral treatment](http://www.mic.uct.ac.za/sites/default/files/image_tool/images/51/ADE%20Booklet_July2020_final171120.pdf)
+- [Management of suspected drug-induced rash, kidney injury and liver injury in adult patients on TB treatment and/or antiretroviral treatment](http://www.mic.uct.ac.za/sites/default/files/image_tool/images/51/ADE%20Booklet_July2020_final171120.pdf)
 
-#### Reading material / Tutorials/ Webinars / Additional resources
+##### Reading material / Tutorials/ Webinars / Additional resources
 
 - The NDOH knowledge hub runs a free online training on Advanced Clinical Care (30CPD
 points) which is worthwhile doing.

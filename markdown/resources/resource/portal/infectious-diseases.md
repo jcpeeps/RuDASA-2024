@@ -25,26 +25,26 @@ implications, there are excellent NDOH or NICD guidelines that cover them.
 
 - Rabies
 
-#### Key Guidelines
+##### Key Guidelines
 
 For antibiotic use for any infectious disease: use your **STG/ EML guidelines on your EMG app**.
 
 COVID guidelines are usually found on the NICD guideline – but they do not always seem up to
 date. I have included latest circulars on COVID in the google folder.
 
-[South African guideline for the management of community-acquired pneumonia in adults](https://jtd.amegroups.com/article/view/13850/html)
+- [South African guideline for the management of community-acquired pneumonia in adults](https://jtd.amegroups.com/article/view/13850/html)
 
-[Guidelines for the treatment of malaria](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-07-National%20Guidelines%20for%20Malaria%20-%20SEPTEMBER%202019%20Final%20and%20correct%20-%20WITH%20FRONT.pdf)
+- [Guidelines for the treatment of malaria](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-07-National%20Guidelines%20for%20Malaria%20-%20SEPTEMBER%202019%20Final%20and%20correct%20-%20WITH%20FRONT.pdf)
 
-[National guidelines for the treatment of viral hepatitis](https://sahivsoc.org/Files/SA%20NDOH_Viral%20Hepatitis%20guideilnes%20final_.pdf)
+- [National guidelines for the treatment of viral hepatitis](https://sahivsoc.org/Files/SA%20NDOH_Viral%20Hepatitis%20guideilnes%20final_.pdf)
 
-[Typhoid: NICD recommendations for diagnosis, management and public health response](https://www.nicd.ac.za/assets/files/Guidelines_typhoid_20160125.pdf)
+- [Typhoid: NICD recommendations for diagnosis, management and public health response](https://www.nicd.ac.za/assets/files/Guidelines_typhoid_20160125.pdf)
 
-[National Guidelines for the Prevention of Rabies in Humans](https://www.nicd.ac.za/wp-content/uploads/2021/08/Human-rabies-prophylaxis-guidelines_DRAFT_2021.pdf)
+- [National Guidelines for the Prevention of Rabies in Humans](https://www.nicd.ac.za/wp-content/uploads/2021/08/Human-rabies-prophylaxis-guidelines_DRAFT_2021.pdf)
 
-[Guidelines on the implementation of antimicrobial strategy in South Africa](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-03/Guidelines%20on%20Implementation%20of%20the%20antimicrobial%20strategy%20in%20South%20Africa_0.pdf)
+- [Guidelines on the implementation of antimicrobial strategy in South Africa](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-03/Guidelines%20on%20Implementation%20of%20the%20antimicrobial%20strategy%20in%20South%20Africa_0.pdf)
 
-[The South African Antibiotic Stewardship Programme](https://www.samedical.org/file/946)
+- [The South African Antibiotic Stewardship Programme](https://www.samedical.org/file/946)
 
 ##### Google folder
 
@@ -63,9 +63,9 @@ date. I have included latest circulars on COVID in the google folder.
 - Guidelines on Implementation of the Antimicrobial Strategy in South Africa: One Health
 Approach & Governance
 
-#### Reading material / Tutorials/ Webinars / Additional resources
+##### Reading material / Tutorials/ Webinars / Additional resources
 
-The South African Antibiotic Stewardship Programme (SAASP) : Become an antiobiotic guardian
+- The South African Antibiotic Stewardship Programme (SAASP) : Become an antiobiotic guardian
 [Click Here](https://www.samedical.org/file/946) - and download the app to ensure prudent use of antibiotics.
 [Download Here](https://play.google.com/store/apps/details?id=org.appenberg.saasp&;hl=en_ZA&;gl=US)
 <!--
