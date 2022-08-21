@@ -1,5 +1,5 @@
 ---
-title: 'Community Engagement'
+title: 'Rural Advocacy Partners'
 ---
 *Community engagement is about understanding and working with your local community to improve health services or reducing the barriers to health in that area. This may be through a Clinic or Hospital Committee, the Ward Councillors and Traditional Leaders, Traditional Healers and others active nearby; as well as national organisations representing Patients Rights.*
 

@@ -1,5 +1,5 @@
 ---
-title: 'Rural Contacts'
+title: 'Organisations for Rural Clinicians'
 ---
 We are developing our Rural Champion's and Rural Buddy systems. In the meantime here are some rural specific organisations and journals.
 

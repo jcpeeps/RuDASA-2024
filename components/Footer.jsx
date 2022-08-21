@@ -24,9 +24,10 @@ export default function Footer() {
 						</ul>
 					</div>
 					<div className="col-sm-12 col-md-12 col-lg-3  text-center text-lg-start">
-						<h5 className="text-white">RuDASA Archive</h5>
+						<h5 className="text-white">RuDASA&apos;s Channels</h5>
 						<ul className="list-unstyled">
-							<li><a href="#" className="text-white text-decoration-none">View RuDASA&apos;s Archive</a></li>
+							<li><a href="https://www.youtube.com/channel/UCvH-hC_ev2oAiCuHaNo6XNg" className="text-white text-decoration-none">RuDASA&apos;s Youtube Channel</a></li>
+							<li><a href="https://www.youtube.com/channel/UCpnY1KCZsqrmViLlxYnKlig" className="text-white text-decoration-none">RHC&apos;s Youtube Channel</a></li>
 						</ul>
 					</div>
 					<div className="col d-flex flex-column">
