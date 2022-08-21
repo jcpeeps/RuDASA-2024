@@ -253,3 +253,15 @@ span {
 .benefits-class {
 	min-width: 50%;
 }
+
+#markdown ul {
+	list-style:circle;
+}
+
+#markdown ol {
+	list-style:decimal;
+}
+
+#markdown h1 {
+	color: var(--primary);
+}

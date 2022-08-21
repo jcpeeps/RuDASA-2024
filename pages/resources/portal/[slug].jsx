@@ -18,9 +18,11 @@ export default function resourcePage({ frontmatter: { title }, content }) {
                         </Link>
                     </div>
                 </div>
-                <h1 className="fw-bold my-5">{title}</h1>
-                <div className="mb-5 pb-5">
-                    <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+                <div id="markdown">
+                    <h1 className="fw-bold my-5">{title}</h1>
+                    <div className="mb-5 pb-5">
+                        <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+                    </div>
                 </div>
             </section>
         </Layout>
