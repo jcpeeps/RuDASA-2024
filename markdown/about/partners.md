@@ -2,7 +2,7 @@
 partners: [
     {
         title: 'Rural Health Advocacy Project:',
-        description: 'RHAP is a partnership initiative between the Rural Doctors Association of Southern Africa (RuDASA), the Wits Centre for Rural Health (WCRH) and Section27, incorporating the AIDS Law Project. RHAP’s work revolves around the constitutional right of rural and remote communities to have equitable access to comprehensive, quality health care. The RHAP aims to facilitate self-advocacy, generate debate, monitor implementation of health policies in rural areas, and influence pro-equity decision-making that is in tune with local rural realities. Since the RHAP was established in September 2009, the project started a number of advocacy strategies in partnership with various stakeholders. These include advocacy for rural health workforce recruitment and retention; documenting and reporting health system challenges in rural areas, such as drug-stock outs and moratoria on the filling of posts; and facilitating a consensus building process of rural health care challenges and priorities among a panel of rural health care experts. RHAP’s overall purpose is to advocate for improved health care in and for rural communities. Central to quality rural health care is the primary health care (PHC) approach and the district health system. RHAP moderates the RuDASA Forum mailing-list. RuDASA members may also contact RHAP directly to discuss particular issues affecting rural health care in their areas',
+        description: 'RHAP is a partnership initiative between the Rural Doctors Association of Southern Africa (RuDASA), the Wits Centre for Rural Health (WCRH) and Section27, incorporating the AIDS Law Project. RHAP’s work revolves around the constitutional right of rural and remote communities to have equitable access to comprehensive, quality health care. The RHAP aims to facilitate self-advocacy, generate debate, monitor implementation of health policies in rural areas, and influence pro-equity decision-making that is in tune with local rural realities.',
         link: 'https://www.rhap.org.za/'
     },
     {
@@ -22,7 +22,7 @@ partners: [
     },
     {
         title: 'Professional Association of Clinical Associates South Africa',
-        description: 'Clinical Associates are a new category of health care professionals who will help in the improvement of the health care system and well-being of communities in South Africa. This profession was introduced as one of the government’s strategy to achieve its solution in strengthening health care in South Africa. PACASA was formed to make sure voices of Clinical Associates are heard. The Association was formally formed on the 10th April at the University of Pretoria where Provincial representatives met together with the Twinning Centre and representatives from various universities.',
+        description: 'Clinical Associates are a new category of health care professionals who will help in the improvement of the health care system and well-being of communities in South Africa. This profession was introduced as one of the government’s strategy to achieve its solution in strengthening health care in South Africa. PACASA was formed to make sure voices of Clinical Associates are heard.',
         link: 'https://web.facebook.com/ClinicalAssociatesRSA/?_rdc=1&_rdr'
     },
     {
@@ -32,7 +32,7 @@ partners: [
     },
     {
         title: 'South Africa HIV Clinicians Society',
-        description: 'The Southern African HIV Clinicians Society is a membership organisation of over 3 000 health care workers with an interest in HIV. The Society’s mission is to promote evidence-based, quality HIV healthcare in Southern Africa. The Society’s membership includes doctors, nurses, pharmacists and other health care professionals working in the field of HIV. Members of the Society are amongst the most respected and influential HIV clinicians and policy makers within Southern Africa and hold prestigious positions within academic, public and private organizations in the field of HIV in the region.',
+        description: 'The Southern African HIV Clinicians Society is a membership organisation of over 3 000 health care workers with an interest in HIV. The Society’s mission is to promote evidence-based, quality HIV healthcare in Southern Africa. The Society’s membership includes doctors, nurses, pharmacists and other health care professionals working in the field of HIV.',
         link: 'https://sahivsoc.org/'
     },
     {
