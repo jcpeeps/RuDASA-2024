@@ -2,6 +2,9 @@
 title: 'Orthopaedics'
 section: '6'
 ---
+
+<!-- CHECK WITH TEAM
+
 ## Take a Break in Ortho in Rural health, Part 1-5 
 ### Dr Hans Hendriks, Family Physician, Uitenhage, NC 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/aAG6SVCj2Dc?list=PLBS4k3o3cGeb_e0Kib31LEJdb8uh-VTdh" title="RO2022 Ortho Part 1 Sedation & Open # Dr Hendriks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -14,6 +17,54 @@ section: '6'
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/0VbV0CaJlUc?list=PLBS4k3o3cGeb_e0Kib31LEJdb8uh-VTdh" title="Ro2022 Ortho Part 5 Hip Femur & Pelvis Dr Hendriks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+ -->
+
+# Orthopaedics
+**Introduction:** A regular in your Casualty and OPD setting – and satisfying to manage when you have gained a little confidence. 
+
+## TOP Orthopaedics Work Based Activities to focus on this week. Make sure you can:
+
+* Assess all Fractures – when to refer, when to manage conservatively
+* Know when to do an X-ray
+* Manage Dislocations – skills to reduce, what to look out for.
+
+## Key Guidelines / Textbook:
+
+If you want to invest in a textbook (or perhaps one for the facility): Practical Fracture Treatment; Mcray & Esser. But over R2000 in South Africa! There is a [Kindle version here](https://www.amazon.co.uk/dp/B005BTF4H4/ref=cm_sw_em_r_mt_dp_WK69Q504DYP8BJWBXSZH) for about R600 
+
+## Additional Resources
+
+* Take a break with Ortho Webinar with Hans Hendriks: An excellent overview of all relevant fractures and dislocations: [Go to playlist](https://youtube.com/playlist?list=PLBS4k3o3cGeb_e0Kib31LEJdb8uh-VTdh)
+
+* Go to [UCTeach Ortho YouTube channel](https://www.youtube.com/channel/UCR__mzghDSTLZ32sBJ18Xow) for a collection of YouTube videos on orthopaedics.
+
+* [Assessment and Management of Shoulder pain.](https://safpj.co.za/index.php/safpj/article/view/5279/6642) Kuala, de Vries et al. SAFP. 
+
+* [An overview of the management of backpain.](https://safpj.co.za/index.php/safpj/article/view/4897/5798) SAFP, N Padayachee et. Al 2018
+
+* [Plain Ortho: YouTube channel](https://www.youtube.com/channel/UC3fT2dOXnRnt4ysMTZ3YXdg/featured)  - with an ankle fracture dislocation manipulation, application of improvised femoral traction splint and a distal radius fractur manipulation.
+
+<iframe width="1182" height="702" src="https://www.youtube.com/embed/yST2LGs0AvY" title="Orthopaedic cases in rural health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
