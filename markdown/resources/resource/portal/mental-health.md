@@ -49,14 +49,14 @@ section: '7'
 
 ## Navigating difficult interactions by Dr Madeleine Muller, Family Physician CMH & Senior lecturer WSU, EC
 ### Part 1
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62" title="RO2022 Navigating difficult interactions: Part 1 Anatomy of Stress; Dr Muller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[RO2022 Navigating difficult interactions: Part 1 Anatomy of Stress; Dr Muller](https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62) 
 ### Part 2
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/UYwjqKP9cyY?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62" title="RO2022 Navigating difficult interactions: Part 2 Advanced Tools; Dr Muller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[RO2022 Navigating difficult interactions: Part 2 Advanced Tools; Dr Muller](https://www.youtube.com/embed/UYwjqKP9cyY?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
 
 
 ## Management of an Aggressive / Psychotic / Distressed patient in a Rural facility
 ### Prof Lesley Robertson; HOD psychiatrist Sedibeng District Specialist Mental Health Team in GP & Adjunct professor in the Department of Psychiatry at WITS
-<iframe width="1045" height="521" src="https://www.youtube.com/embed/5lZu53p8uO0" title="RO2022 Approach to the Aggressive patient; Prof Robertson" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[RO2022 Approach to the Aggressive patient; Prof Robertson](https://www.youtube.com/embed/5lZu53p8uO0)
 
 
 ## Mental Health PDFs

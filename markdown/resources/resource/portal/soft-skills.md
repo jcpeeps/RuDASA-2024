@@ -12,11 +12,10 @@ section: '8'
 
 #### Navigating difficult interactions by Dr Madeleine Muller, Family Physician CMH & Senior lecturer WSU, EC
 * Navigating difficult interactions: PART 1 - Anatomy of Stress: Dr Muller: 
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62" title="RO2022 Navigating difficult interactions: Part 1 Anatomy of Stress; Dr Muller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Watch here](https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
 
 * Navigating difficult interactions: PART 2 - Advanced Tools; Dr Muller: 
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/UYwjqKP9cyY?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62" title="RO2022 Navigating difficult interactions: Part 2 Advanced Tools; Dr Muller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+[Watch here](https://www.youtube.com/embed/UYwjqKP9cyY?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
 * [Adherence e-learning module](https://youtube.com/playlist?list=PL2IvCQAf-vTuGfKuE8vpThZ7hA63ttpqP) by Dr Muller
 
 * Mentoring skills workshop [Part 1 & 2](https://youtube.com/playlist?list=PL2IvCQAf-vTsUEgPjZ00PDOaqhW0ELA2J) by Dr Muller (also as podcasts below)

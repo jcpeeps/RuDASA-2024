@@ -45,8 +45,7 @@ If you want to invest in a textbook (or perhaps one for the facility): Practical
 
 * [Plain Ortho: YouTube channel](https://www.youtube.com/channel/UC3fT2dOXnRnt4ysMTZ3YXdg/featured)  - with an ankle fracture dislocation manipulation, application of improvised femoral traction splint and a distal radius fractur manipulation.
 
-<iframe width="1182" height="702" src="https://www.youtube.com/embed/yST2LGs0AvY" title="Orthopaedic cases in rural health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+(Orthopaedic cases in rural health)[https://www.youtube.com/embed/yST2LGs0AvY]
 
 
 
