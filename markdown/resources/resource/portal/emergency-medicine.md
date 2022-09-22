@@ -2,15 +2,12 @@
 title: 'Emergency Medicine'
 section: '5'
 ---
-#### Introduction
 
-You know that when you are on call almost anything can come through that door –
+**Introduction:** You know that when you are on call almost anything can come through that door –
 that is both the joy and terror of working at a frontline district hospital! We look at some practical
 guidance on gaining the skills you need.
 
-#### TOP Emergency Medicine Work Based Activities to focus on this week
-
-##### Make sure you can
+## TOP Emergency Medicine Work Based Activities to focus on this week. How confident are you in
 
 - Triage
 
@@ -30,7 +27,7 @@ guidance on gaining the skills you need.
 
 - Conscious sedation
 
-##### Key Guidelines
+## Key Guidelines
 
 [Emergency Medicine for the Western Cape manual](http://www.emct.info/em-guidance.html): an excellent South African / DOH based manual that used to be available as printed copies
 
@@ -39,7 +36,7 @@ free (but you have to go and fetch). Or you can download and print. [Download He
 
 [SATS Triage manual](https://emssa.org.za/special-interest-groups/the-south-african-triage-scale-sats/)
 
-##### Reading material / Tutorials/ Webinars / Additional resources
+## Reading material / Tutorials / Webinars / Additional resources
 
 - [Emergency Medicine Cape Town YouTube Channel](https://www.youtube.com/channel/UCDP5VfSnQ3AB1xgPbMUTniw), Excellent set of teaching videos including how to insert an ICD, surturing techniques, intubation, shoulder relocation and much more.
 You can also see there website [here](http://www.emct.info/).
@@ -63,9 +60,7 @@ Johannesburg and Potchefstroom, [Check that out Here](https://www.aiem.co.za/pro
 
 - [Rural Life Support group](https://rlsg.org/)
 
-##### Google drive folder link with resources
-
-[Click Here](https://drive.google.com/drive/folders/1GalPw78KvyxrsXWdWWxizt9Qh-6MDjF4?usp=sharing)
+Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1GalPw78KvyxrsXWdWWxizt9Qh-6MDjF4?usp=sharing)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).

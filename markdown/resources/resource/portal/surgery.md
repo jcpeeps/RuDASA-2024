@@ -3,15 +3,15 @@ title: 'Surgery'
 section: '6'
 ---
 
-# Surgery
 **Introduction:** There is a wide range of surgical procedures possibly within a district hospital setting and there is a drive an interest to widen the scope of what is currently available in our rural settings. Limits are partly set by available resources, but also by the confidence of the surgeon. This field is under review at the moment and there are amazing mentors exploring how to introduce a surgical basket of care into district health systems.
 
-## TOP Surgery Work Based Activities to focus on this week. Make sure you can:
+## TOP Surgery Work Based Activities to focus on this week. Make sure you can
+
 * Awareness of potential basket of surgical care that can be developed for your hospital
 * Assess and manage Ectopic pregnancy surgical
 * Basic Amputations  
 * Appendicectomy
-* Small procedures 
+* Small procedures
 
 ## Reading material / Tutorials/ Webinars / Additional resources
 
@@ -25,7 +25,7 @@ section: '6'
 
 South African Urology Association - **Introduction to Urology.** Published by the SAUA - available at R 250 each from Dr Jeff John at [his email.](mailto:jeffveenajohn@gmail.com)
 
-The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting. 
+The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
 
 Find the **Google Folder** [link here](https://drive.google.com/drive/folders/1IES_5-3ribIuHUnZPP45UCvzhXaUCLBB?usp=sharing)
 Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.

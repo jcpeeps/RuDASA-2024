@@ -3,16 +3,12 @@ title: 'Non-communicable Diseases'
 section: '3'
 ---
 
-#### Introduction
-
-Although not as urgent, NCDs will make up a huge part of your OPD work, and will
+**Introduction:** Although not as urgent, NCDs will make up a huge part of your OPD work, and will
 result in a certain number of admissions each week. We do have excellent guidelines and can
 provide high quality care for these patients, even in a rural setting, but it requires and in depth
 knowledge of evidence based guidelines.
 
-#### TOP NCD Work Based Activities to focus on this week
-
-##### Make sure you can
+## TOP NCD Work Based Activities to focus on this week. How confident are you in
 
 - Diagnosis and treating to target of diabetes, hypertension and dyslipidemia.
 
@@ -28,7 +24,7 @@ knowledge of evidence based guidelines.
 
 - Manage Epilepsy
 
-##### Key Guidelines
+## Key Guidelines
 
 - [Essential Resource: Latest hospital and primary health care standard treatment guidelines and EMG app](https://drive.google.com/drive/folders/1voG8dJeKodj6u22JcG1oRrQZLV3f9Njd?usp=sharing)(see general resources)
 
@@ -65,7 +61,7 @@ knowledge of evidence based guidelines.
 - **Chronic Kidney Disease**
 [CKD evaluation and management](https://kdigo.org/guidelines/ckd-evaluation-and-management/)
 
-##### Reading material / Tutorials/ Webinars / Additional resources
+## Reading material / Tutorials / Webinars / Additional resources
 
 - [RO2022 Webinar: Internal Medicine Emergencies Prof A Parrish](https://youtu.be/HB6BAmTDink)
 
@@ -86,11 +82,7 @@ Amathole district:
 
 - [The approach to achieving glycaemic control](https://safpj.co.za/index.php/safpj/article/view/4851/5755) A detailed,but balanced guideline on medical treatment of Type 2 diabetes.
 
-##### Google drive folder link with resources
-
-[Click Here](https://drive.google.com/drive/folders/1dxip3tJDvIMNLa3IPHIisXIb7B8sO2Ns?usp=sharing)
-
-###### Including
+Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1dxip3tJDvIMNLa3IPHIisXIb7B8sO2Ns?usp=sharing)
 
 - Atlas of dermatology
 

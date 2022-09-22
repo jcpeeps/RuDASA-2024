@@ -3,13 +3,11 @@ title: 'General Clinic Resources'
 section: '0'
 ---
 
-#### Introduction
-
-There are several resources useful to have in the back pocket. Make sure that they are
+**Introduction:** There are several resources useful to have in the back pocket. Make sure that they are
 all available off line (e.g. save them in PDF format or download them for off line use in the apps).
 Chat to your colleagues at the hospital about apps they find useful.
 
-#### Key Guidelines
+## Key Guidelines
 
 - Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and
 add all the guidelines that you want to be able to access off line – internet can be fickle! This
@@ -46,9 +44,7 @@ Blanche [Watch Here](https://youtu.be/YI7-1N6qPnM)
 - Medicine information centre (used to be known as the HIV hotline) – great page for
 resources and a hotline for queries of any kind. [Medicine Information centre](http://www.mic.uct.ac.za/)
 
-##### Google drive with resources
-
-[Click Here](https://drive.google.com/drive/folders/1voG8dJeKodj6u22JcG1oRrQZLV3f9Njd?usp=sharing)
+Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1voG8dJeKodj6u22JcG1oRrQZLV3f9Njd?usp=sharing)
 
 - APC ebook
 
@@ -58,7 +54,7 @@ resources and a hotline for queries of any kind. [Medicine Information centre](h
 
 - Yandisa isiChosa phrase packs
 
-#### Do you only speak English?
+## Do you only speak English?
 
 Good communication is essential! And that means becoming acquainted with at least 1 or 2
 additional South African languages over and above English.

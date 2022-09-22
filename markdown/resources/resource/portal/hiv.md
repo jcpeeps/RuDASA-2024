@@ -3,15 +3,11 @@ title: 'HIV & TB'
 section: '1'
 ---
 
-#### Introduction
-
-Infectious diseases still make up a significant bulk of our clinical workload. Although
+**Introduction:** Infectious diseases still make up a significant bulk of our clinical workload. Although
 we have made massive strides in HIV and TB over the last decade, these are still the most common
 infectious diseases you will see – and the landscape is always changing. Are you up to date?
 
-#### 5 HIV / TB Work Based Activities to focus on this week
-
-##### Make sure you can
+## 5 HIV / TB Work Based Activities to focus on this week. How confident are you in
 
 - Identify and manage virological failure in a patient on first and second line treatment – in
 adults and children
@@ -27,7 +23,7 @@ mother to child transmission.
 
 - Managing the patient that presents with an abnormal LFT (TB IRIS VS DILI)
 
-##### Key Guidelines
+## Key Guidelines
 
 - There are excellent, detailed NDOH guidelines that cover all aspects of HIV care. And don’t forget
 your EML and APC! (see the General Resource Pack)
@@ -46,7 +42,7 @@ your EML and APC! (see the General Resource Pack)
 
 - [Management of suspected drug-induced rash, kidney injury and liver injury in adult patients on TB treatment and/or antiretroviral treatment](http://www.mic.uct.ac.za/sites/default/files/image_tool/images/51/ADE%20Booklet_July2020_final171120.pdf)
 
-##### Reading material / Tutorials/ Webinars / Additional resources
+## Reading material / Tutorials / Webinars / Additional resources
 
 - The NDOH knowledge hub runs a free online training on Advanced Clinical Care (30CPD
 points) which is worthwhile doing.
@@ -68,9 +64,7 @@ have a special interest in HIV.
 
 - [DRTB course for clinicians](https://youtube.com/playlist?list=PL2IvCQAf-vTsRnw7WPoKUBL0DXVTnQXjw)
 
-##### Google drive folder link with resources
-
-[Click Here](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
+Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
 
 - PEP poster
 

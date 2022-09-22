@@ -2,15 +2,12 @@
 title: 'Maternal & Reproductive Health'
 section: '2'
 ---
-#### Introduction
 
-One of the most frightening experiences as a new rural clinician is making life and
+**Introduction:** One of the most frightening experiences as a new rural clinician is making life and
 death decisions about a mother and her unborn child. We have put together an amazing set of
 resources to help you gain the skills to deal with those high stake scenarios.
 
-#### TOP Maternal health Work Based Activities to focus on this week
-
-##### Make sure you can
+## TOP Maternal health Work Based Activities to focus on this week. How confident are you in
 
 - Manage Post-partum haemmorhage & APH
 
@@ -28,7 +25,7 @@ resources to help you gain the skills to deal with those high stake scenarios.
 
 - Insertion (and removal) of IUCD & Implanon
 
-##### Key Guidelines
+## Key Guidelines
 
 [Guidelines for maternity care in South Africa](https://www.knowledgehub.org.za/elibrary/guidelines-maternity-care-south-africa-2016)
 
@@ -38,7 +35,7 @@ resources to help you gain the skills to deal with those high stake scenarios.
 
 [Termination of pregnancy guideline](https://www.knowledgehub.org.za/system/files/elibdownloads/2021-03/Termination%20of%20Pregnancy%20Guideline_Final_2021.pdf)
 
-##### Reading material / Tutorials/ Webinars / Additional resources
+## Reading material / Tutorials / Webinars / Additional resources
 
 - [ESMOE for interns at Tygerberg hospital](http://www.obstyger.co.za/page7.html)
 
@@ -66,7 +63,7 @@ resources to help you gain the skills to deal with those high stake scenarios.
 
 - [Sexual Pleasure, Sexual Health, Sexual rights](https://youtube.com/playlist?list=PL2IvCQAf-vTsyO7PFjM37sj-P5Ue-J19-)
 
-###### Sexual health workshop podcast series
+## Sexual health workshop podcast series
 
 - [Sexual Health workshop Part 1 Pleasure Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-Webinar-Part-1-Pleasure-podcast-e1fdh7c)
 
@@ -74,11 +71,7 @@ resources to help you gain the skills to deal with those high stake scenarios.
 
 - [Sexual Health workshop Part 3: Health Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-webinar--Part-3-Sexual-Health-e1fdhjc)
 
-##### Google drive folder link with resources
-
-[Click Here](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
-
-###### Including
+Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
 
 - The fetus assessment handbook
 

@@ -3,14 +3,10 @@ title: 'Child Health'
 section: '4'
 ---
 
-#### Introduction
-
-Children are both challenging and easy to treat. Although they can get very ill very
+**Introduction:** Children are both challenging and easy to treat. Although they can get very ill very
 quickly, they also respond well to early and effective treatment.
 
-#### TOP Child Health Work Based Activities to focus on this week
-
-##### Make sure you can
+## TOP Child Health Work Based Activities to focus on this week. How confident are you in
 
 1. Fluid management in AGE and dehydration, and persistent diarrhoea protocol. (EDL)
 
@@ -28,13 +24,13 @@ quickly, they also respond well to early and effective treatment.
 HIV & TB resources will be find under the Infectious Disease section and triage and SATS under Emergency
 Medicine.
 
-##### Key Guidelines
+## Key Guidelines
 
 - [Standard treatment guidelines and Essential medicines list for South Africa Hospital level Paediatrics](https://www.knowledgehub.org.za/elibrary/hospital-level-paediatrics-standard-treatment-)
 
 - [Integrated management of childhood illness](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-10/2019%20IMCI%20CHART%20BOOKLET.pdf)
 
-##### Reading material / Tutorials/ Webinars / Additional resources
+## Reading material / Tutorials / Webinars / Additional resources
 
 - Limpopo Initiative for Newborn care: [Essential Newborn Care package](http://www.lincare.co.za/?page_id=1207) Includes Newborn Care charts, ENC quality improvement kit, and a full MSSN course (Management of Sick and Small newborns)
 
@@ -60,9 +56,7 @@ about how to perform procedures with supplies commonly found in resource-limited
 
 - [Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
 
-##### Google drive folder link with resources
-
-[Click Here](https://drive.google.com/drive/folders/1OSeEWybfm_FZ3ZJDlnvGGdlXHaZiHcq4?usp=sharing)
+Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1OSeEWybfm_FZ3ZJDlnvGGdlXHaZiHcq4?usp=sharing)
 
 - Union desk guide for diagnosing TB in children
 

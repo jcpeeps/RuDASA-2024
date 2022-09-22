@@ -3,7 +3,9 @@ title: 'How to use'
 section: '0'
 ---
 # How to use the Rural Onboarding Program
+
 ## What is Rural Onboarding?
+
 The rural onboarding program is a set of resources that helps to orientate the clinician new to rural health and are key to clinical areas of patient management. It can be used as a structured program, or the resources can be accessed on an ad hoc basis. 
 
 ## How does it work?

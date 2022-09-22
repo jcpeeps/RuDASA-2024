@@ -3,16 +3,14 @@ title: 'Mental Health'
 section: '7'
 ---
 
-# Mental Health Resources
+**Introduction:** Mental health is often neglected with a huge burden in our rural communities, and yet the average rural hospital has very little access to psychiatric services.
 
-**Introduction:** Mental health is often neglected with a huge burden in our rural communities, and yet the average rural hospital has very little access to psychiatric services. 
-
-## TOP Mental Health Based Activities to focus on this week. Make sure you can:
+## TOP Mental Health Based Activities to focus on this week. Make sure you can
 
 1. Management of the aggressive / psychotic/ distressed (suicidal) patient including 72 hour observation./ escalation of sedation
-2. Able to do a brief intervention for e.g. adherence issues, substance abuse, smoking 
+2. Able to do a brief intervention for e.g. adherence issues, substance abuse, smoking
 
-## Key Guidelines:
+## Key Guidelines
 
 * **Standard treatment guidelines / EML** have excellent protocols. Please see the Google folder below for Word document posters based on the STG that you can adapt for your own facility.
 
@@ -22,7 +20,7 @@ section: '7'
 
 ## Reading material / Tutorials/ Webinars / Additional resources
 
-* Brief Interventions and brief therapy for substance abuse: [article here](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf) 
+* Brief Interventions and brief therapy for substance abuse: [article here](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
 
 * Gain a better understanding of motivational interviewing by watching [this video.](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
 
@@ -40,32 +38,37 @@ section: '7'
 
 * KZN protocols for mental health disorder
 
-* PHQ 9 & PHQ 4 & PHQ2 – screening tools for depression 
+* PHQ 9 & PHQ 4 & PHQ2 – screening tools for depression
 
-* NEMLC bulletin: with all the web addresses for downloading the EML App and the STGs. 
+* NEMLC bulletin: with all the web addresses for downloading the EML App and the STGs.
 
 * Managing the aggressive patient, Australian prescriber
 
-
 ## Navigating difficult interactions by Dr Madeleine Muller, Family Physician CMH & Senior lecturer WSU, EC
+
 ### Part 1
-[RO2022 Navigating difficult interactions: Part 1 Anatomy of Stress; Dr Muller](https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62) 
+
+[RO2022 Navigating difficult interactions: Part 1 Anatomy of Stress; Dr Muller](https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
+
 ### Part 2
+
 [RO2022 Navigating difficult interactions: Part 2 Advanced Tools; Dr Muller](https://www.youtube.com/embed/UYwjqKP9cyY?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
 
-
 ## Management of an Aggressive / Psychotic / Distressed patient in a Rural facility
+
 ### Prof Lesley Robertson; HOD psychiatrist Sedibeng District Specialist Mental Health Team in GP & Adjunct professor in the Department of Psychiatry at WITS
+
 [RO2022 Approach to the Aggressive patient; Prof Robertson](https://www.youtube.com/embed/5lZu53p8uO0)
 
-
 ## Mental Health PDFs
-**Mental Health Resource Pack**
+
+### Mental Health Resource Pack
+
 <object data="/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf" type="application/pdf" width="100%" height="800px">
     <embed src="/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf">Download PDF</a>.</p>
     </embed>
-</object> 
+</object>
 
 
 <!--

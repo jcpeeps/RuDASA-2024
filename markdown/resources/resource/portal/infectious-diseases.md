@@ -3,15 +3,11 @@ title: 'Infectious Diseases (Non HIV/TB)'
 section: '1'
 ---
 
-#### Introduction
-
-We tend to focus disproportionally on HIV & TB, but there are other common and/ or
+**Introduction:** We tend to focus disproportionally on HIV & TB, but there are other common and/ or
 dangerous infections that should not be forgotten. As most of these have public health
 implications, there are excellent NDOH or NICD guidelines that cover them.
 
-#### TOP Infectious Diseases Work Based Activities to focus on this week
-
-##### Make sure you can
+## TOP Infectious Diseases Work Based Activities to focus on this week. How confident are you in
 
 - COVID 19
 
@@ -25,7 +21,7 @@ implications, there are excellent NDOH or NICD guidelines that cover them.
 
 - Rabies
 
-##### Key Guidelines
+## Key Guidelines
 
 For antibiotic use for any infectious disease: use your **STG/ EML guidelines on your EMG app**.
 
@@ -46,9 +42,7 @@ date. I have included latest circulars on COVID in the google folder.
 
 - [The South African Antibiotic Stewardship Programme](https://www.samedical.org/file/946)
 
-##### Google folder
-
-[Click Here](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
+Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
 
 - COVID vaccination circular and latest isolation and quarantine guideline
 
@@ -63,7 +57,7 @@ date. I have included latest circulars on COVID in the google folder.
 - Guidelines on Implementation of the Antimicrobial Strategy in South Africa: One Health
 Approach & Governance
 
-##### Reading material / Tutorials/ Webinars / Additional resources
+## Reading material / Tutorials / Webinars / Additional resources
 
 - The South African Antibiotic Stewardship Programme (SAASP) : Become an antiobiotic guardian
 [Click Here](https://www.samedical.org/file/946) - and download the app to ensure prudent use of antibiotics.
