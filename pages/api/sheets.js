@@ -1,7 +1,8 @@
-import {NextApiRequest, NextApiResponse} from "next";
 import {google} from "googleapis";
 import generateApiKey from "generate-api-key";
-import requestIp from 'request-ip'
+import requestIp from 'request-ip';
+// import { useSession } from 'next-auth/react';
+import { withIronSessionApiRoute } from 'iron-session/next'
 import { faBriefcaseClock } from "@fortawesome/free-solid-svg-icons";
 const bcrypt = require("bcrypt");
 
@@ -42,8 +43,6 @@ const bcrypt = require("bcrypt");
     }
   }
 */
-
-var loginSessions = [];
 
 export default async function handler(req, res)
 {
@@ -92,9 +91,9 @@ export default async function handler(req, res)
         //===== DETERMINE + HANDLE REQUEST TYPE =====
         switch(req.body.type) {
             case "login":
-                return await handleLogin(req.body.data);
+                return await handleLogin(req, req.body.data);
             case "signup":
-                return await handleSignup(req.body.data);
+                return await handleSignup(req, req.body.data);
             default:
                 return res.status(400).json({
                     status: "error",
@@ -168,17 +167,19 @@ export default async function handler(req, res)
             }
         }
 
-        //Gets the password hash for a specified user
+        //Gets the password hash for a specified user, null if not found
         async function getUserPassHash(email) {
             //TODO: Look into sorting sheet by email for faster lookup
-            const q = "=VLOOKUP(?, Users!A2:B, 2, false)";
-            let success = await query(q, [email], "B");
-            console.log("TEST");
-            console.log(success);
+            const q = "=IFNA(VLOOKUP(?, Users!A2:B, 2, false), \"!~FAIL~!\")";
+            let result = await query(q, [email], "B");
+            return (result=="!~FAIL~!"?null:result);
+            //result:
+            //  $2b$10$asdf...    -> if success
+            //  null              -> if not found
         }
 
         //Creates a new user log in session, and returns the temporary apiKey
-        function createUserSession(email) {
+        async function createUserSession(req, email) {
             const apiKey = generateApiKey(APIKEY_GEN_CONFIG);
             const newSession = {
                 email: email,
@@ -187,7 +188,8 @@ export default async function handler(req, res)
                 timestamp: Date.now()
             }
             console.log("USER ADDED TO SESSION:\n" + JSON.stringify(newSession));
-            loginSessions.push(newSession);
+            // loginSessions.push(newSession); //Old system, to be removed
+
             return apiKey;
         }
         async function removeUserSession(email) {
@@ -197,42 +199,61 @@ export default async function handler(req, res)
         }
 
         //====== HANDLE LOGIN =====
-        async function handleLogin(data) {
+        async function handleLogin(req, data) {
             if("email" in data && "password" in data)
             {
                 //== GET PASSWORD HASH FOR USER ==
                 const userHash = await getUserPassHash(data.email);
 
-                let validPass = await bcrypt.compare(data.password, userHash);
+                //== CHECK PASSWORD ==
+                let validPass = "invalidUser";
+                if(userHash !== null)
+                {
+                    // See [https://www.npmjs.com/package/bcrypt]
+                    validPass = (await bcrypt.compare(data.password + process.env.PEPPER, userHash))?"success":"invalidPass";
+                }
 
-                if(validPass) {
-                    //== RETURN SUCCESS ==
+                //== RESPOND ==
+                if(validPass == "success") {
+                    //== LOGIN SUCCESS ==
                     return res.status(200).json({
                         status: "success",
                         code: "loginSuccess",
                         message: "Login successful",
-                        data: { apiKey: createUserSession(data.email) }
+                        data: { apiKey: await createUserSession(data.email) }
                     });
                 }
-                else {
-                    //== LOGIN FAILED ==
+                else if(validPass == "invalidPass") {
+                    //== LOGIN FAILED, INCORRECT PASSWORD ==
                     return res.status(200).json({
                         status: "error",
-                        message: "loginFailed",
-                        data: {} //TODO: Return API key + user data
+                        code: "invalidPass",
+                        message: "An incorrect password was supplied",
+                        data: {}
+                    });
+                }
+                else if(validPass == "invalidUser") {
+                    //== LOGIN FAILED, USER DOES NOT EXIST ==
+                    return res.status(200).json({
+                        status: "error",
+                        code: "invalidUser",
+                        message: "The specified user does not exist",
+                        data: {}
                     });
                 }
             }
 
+            //== LOGIN FAILED, BAD REQUEST ==
             return res.status(400).json({
                 status: "error",
                 code: "invalidLogin",
-                message: "Invalid login request, must contain both an email and a password"
+                message: "Invalid login request, must contain both an email and a password",
+                data: {}
             });
         }
 
         //===== HANDLE SIGNUP =====
-        async function handleSignup(data) {
+        async function handleSignup(req, data) {
             //Check all required fields have been provided in the request
             const REQUIRED_FIELDS = ["email", "password", "fullName", "signUpReason", "cellNo", "workNo", "country", "province", "address1", "address2", "address3", "workPlace", "district"];
             // const REQUIRED_FIELDS = ["email", "password"];
@@ -257,14 +278,16 @@ export default async function handler(req, res)
                     return res.status(400).json({
                         status: "error",
                         code: "dbConnFailed",
-                        message: "There was an error processing your request"
+                        message: "There was an error processing your request",
+                        data: {}
                     });
                 }
                 if(emailExists) {
                     return res.status(400).json({
                         status: "error",
                         code: "emailTaken",
-                        message: "That email already belongs to a registered user"
+                        message: "That email already belongs to a registered user",
+                        data: {}
                     });
                 }
 
@@ -296,22 +319,25 @@ export default async function handler(req, res)
                             requestBody: { values: [ newRowData ] }
                         });
 
-                        //== RETURN SUCCESS ==
+                        //== SIGNUP SUCCESSFUL ==
                         return res.status(200).json({
                             status: "success",
+                            code: "signupSuccess",
                             message: "User successfully added to the database",
                             data: {
-                                apiKey: createUserSession(data.email)
+                                apiKey: await createUserSession(req, data.email)
                             }
                         });
                     });
                 });
             }
 
+            //== SIGNUP FAILED, INVALID REQUEST ==
             return res.status(400).json({
                 status: "error",
                 code: "invalidSignup",
-                message: "Invalid signup request, not all required fields were provided or some were empty"
+                message: "Invalid signup request, not all required fields were provided or some were empty",
+                data: {}
             });
         }
 

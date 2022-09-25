@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { Nav, Button, Navbar } from 'react-bootstrap';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import useUser from '../pages/api/useUser';
 
 export default function Navigation() {
 
@@ -8,6 +9,18 @@ export default function Navigation() {
 
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+
+    //TODO: Show logged in status
+    // const { user, mutateUser } = useUser();
+
+    function getLoginTitle()
+    {
+        // if (status === "authenticated")
+        // {
+        //     return "Logged in"; //TODO: Replace with username
+        // }
+        return "Learning Portal";
+    }
 
     function debounce(func, wait, immediate) {
         var timeout;
@@ -54,7 +67,7 @@ export default function Navigation() {
                     <Nav.Link className={router.pathname == "/contact" ? "active" : ""} href="/contact">Contact Us</Nav.Link>
                     <Nav.Link href="/login">
                         <div className="hover-button">
-                            <Button className="nav-link p-3 text-white gradient-background shadow">Learning Portal</Button>
+                            <Button className="nav-link p-3 text-white gradient-background shadow">{ getLoginTitle() }</Button>
                         </div>
                     </Nav.Link>
                 </Nav>

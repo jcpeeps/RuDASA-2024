@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Layout from '../components/Layout'
 import Image from 'next/image'
+import Link from 'next/link'
 import Illustration from '../media/svg/login.svg'
 import General from '../components/signup-login/General'
 import Address from '../components/signup-login/Address'
@@ -11,7 +12,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-export default function signUp({ data }) {
+export default function SignUp({ data }) {
 
     // Object that stores information across all components
     const [formData, setFormData] = useState({
@@ -88,7 +89,7 @@ export default function signUp({ data }) {
                             {stepDisplay()}
                         </div>
                         <div className="w-100 d-flex justify-content-end align-items-center">
-                            <small>Have an account? <a href="/login">Log in</a></small>
+                            <small>Have an account? <Link href="/login">Log in</Link></small>
                             <button className="btn btn-lg btn-outline"
                                 disabled={step == 0}
                                 onClick={() => {

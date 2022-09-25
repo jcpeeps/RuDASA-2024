@@ -1,11 +1,19 @@
-import React from 'react'
-import Layout from '../components/Layout'
-import Image from 'next/image'
-import Illustration from '../media/svg/login.svg'
+import React, { useState } from 'react';
+import Layout from '../components/Layout';
+import Image from 'next/image';
+import Link from 'next/link';
+import Illustration from '../media/svg/login.svg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import useUser from './api/useUser'
 
-export default function login() {
+export default function Login() {
+
+    const { user, mutateUser } = useUser({ 
+    //Check if user is already logged in, if so redirect to profile page
+        redirectTo: '/profile',
+        redirectIfFound: true
+    });
 
     const LoginSchema = Yup.object({
         email: Yup.string()
@@ -24,20 +32,33 @@ export default function login() {
             data: vals
         }
 
-        const response = await fetch('/api/sheets', {
-            method: "POST",
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(payload)
-        });
+        try
+        {
+            const response = await fetch('/api/login', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(payload)
+            });
 
-        const content = await response.json();
-        // alert(content.data);
-        // alert(content.data.tableRange);
+            //Update session data
+            const content = await response.json();
+            // alert(JSON.stringify(content));
+            if(content.status === "error")
+            {
+                alert(content.message);
+            }
+            else if(content.status === "success")
+            {
+                console.log(content); //TODO: Remove
+            }
+            mutateUser(content);
 
-        console.log(content);
+        } catch (error) {
+            alert("FATAL ERROR\n" + error.data.message); //TODO: Replace
+        }
     }
 
     return (
@@ -54,9 +75,9 @@ export default function login() {
                             initialValues={{ email: "test@email.com", password: "" }}
                             validationSchema={LoginSchema}
 
-                            onSubmit={(values, { setSubmitting }) => {
+                            onSubmit={async (values, { setSubmitting }) => {
                                 alert("DEBUG OUTPUT:\n" + JSON.stringify(values));
-                                handleLogin(values); // WHERE WE CONNECT TO SHEETS.JS
+                                await handleLogin(values); //LOGIN API CALLING ROUTE
                                 setSubmitting(false);
                             }}
                         >
@@ -98,7 +119,7 @@ export default function login() {
 
                                     {/* LOGIN BUTTON */}
                                     <div className="w-100 my-4 d-flex justify-content-end align-items-center">
-                                        <small className="me-3">Don't have an account? <a href="/signUp">Sign up</a></small>
+                                        <small className="me-3">Don&apos;t have an account? <Link href="/signUp">Sign up</Link></small>
                                         <div className="hover-button">
                                             <button
                                                 type="submit"
