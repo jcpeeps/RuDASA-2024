@@ -72,13 +72,14 @@ export default function Login() {
 
                         {/* FORM STARTS HERE */}
                         <Formik
-                            initialValues={{ email: "test@email.com", password: "" }}
+                            initialValues={{ email: "ronald@gmail.com", password: "Password1!" }}
                             validationSchema={LoginSchema}
 
                             onSubmit={async (values, { setSubmitting }) => {
                                 alert("DEBUG OUTPUT:\n" + JSON.stringify(values));
                                 await handleLogin(values); //LOGIN API CALLING ROUTE
                                 setSubmitting(false);
+                                alert("USER: " + JSON.stringify(user));
                             }}
                         >
 

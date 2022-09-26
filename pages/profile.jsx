@@ -6,51 +6,50 @@ export default function Profile() {
     //TODO: Redirect to login if user does not exist
 
     // Fetch the user session client-side
-    const { user } = useUser({ 
+    const { user, mutateUser } = useUser({ 
         redirectTo: '/login',
         redirectIfFound: true
     });
 
-    // let isLoading = false;
+    let isLoading = false;
     // Server-render loading state
-    // if (!user || user.isLoggedIn === false) {
+    if (!user || user.isLoggedIn === false) {
         // Router.push('/login');
-        // isLoading = true;
-    // }
+        isLoading = true;
+    }
 
     // Once the user request finishes, show the user
     return (
         <Layout>
         <br/><br/><br/><br/><br/><br/><br/>
-        {/* <h1>{isLoading?"Loading":"Your Profile"}</h1> */}
+        <h1>{isLoading?"Loading":"Your Profile"}</h1>
         <p>{JSON.stringify(user, null, 2)}</p>
 
         <form
           onSubmit={
             //=============================================================================
             async function handleSubmit(event) {
-            event.preventDefault()
+                event.preventDefault()
 
-            const body = {
-              username: event
+                try {
+                    //SEND DATA TO API (Creates session cookie)
+                    mutateUser({asdf: "aasdf"});
+
+                    let resp = await fetch('/api/user', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({username: event.currentTarget.username.value, password: "PASSWORD"}),
+                    });
+
+                    alert("RESP:" + JSON.stringify(resp) + "\n\n" +
+                    "USER: " + JSON.stringify(user, null, 2)); //GET USER SESSION
+
+                //=============================================================================
+                } catch (error) {
+                    console.error('An unexpected error happened:', error);
+                }
             }
-
-            try {
-                let resp = await fetch('/api/login', { //
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({test: "test"}),
-                });
-
-                // mutateUser(resp);
-                // JSON.stringify(user, null, 2)} //GET USER SESSION
-
-            //=============================================================================
-            } catch (error) {
-                console.error('An unexpected error happened:', error);
-            }
-
-          }}>
+          }>
 
       <label>
         <span>Type your GitHub username</span>

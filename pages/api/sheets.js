@@ -1,9 +1,8 @@
-import {google} from "googleapis";
+import { google } from "googleapis";
 import generateApiKey from "generate-api-key";
 import requestIp from 'request-ip';
 // import { useSession } from 'next-auth/react';
-import { withIronSessionApiRoute } from 'iron-session/next'
-import { faBriefcaseClock } from "@fortawesome/free-solid-svg-icons";
+import { withSessionRoute } from './session'
 const bcrypt = require("bcrypt");
 
 /* Request format:
@@ -44,7 +43,7 @@ const bcrypt = require("bcrypt");
   }
 */
 
-export default async function handler(req, res)
+async function handler(req, res)
 {
     if(req.method !== "POST") //Invalid request
     {
@@ -355,3 +354,5 @@ export default async function handler(req, res)
         });
     }
 }
+
+export default withSessionRoute(handler);
