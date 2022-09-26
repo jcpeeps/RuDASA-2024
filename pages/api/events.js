@@ -1,4 +1,5 @@
-import { withSessionRoute } from 'lib/session'
+/*
+import { withSessionRoute } from './session'
 import { Octokit } from 'octokit'
 
 const octokit = new Octokit() //Github API wrapper
@@ -24,3 +25,4 @@ async function eventsRoute(req, res) {
 }
 
 export default withSessionRoute(eventsRoute)
+*/
