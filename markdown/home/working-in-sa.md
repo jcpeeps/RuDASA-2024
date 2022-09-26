@@ -1,6 +1,5 @@
 RuDASA believes that the long term solution for rural health care in South Africa is adequate and appropriate training of South Africans to meet the needs for health care professionals in underserved rural areas. We are involved in a number of initiatives to lobby for and address these needs. (See elsewhere on this site, including scholarship schemes and electives programmes). We also support the principle of the Melbourne Manifesto with respect to the need for a Code to govern the International Recruitment of Health Care Professionals. Within this context, it is obvious that we in South Africa will remain reliant on the services of foreign qualified doctors to staff our rural health services for many years to come.
 
-
 Much of rural health care in this country has only developed through the input of overseas trained doctors, many of them in the past coming though missionary and philanthropic agencies. We owe a great debt to them. Foreign doctors have continued to provide a very important service during the transition to democracy in South Africa, many of these coming from other African countries, causing great loss of doctors from these countries in turn. The more recent difficulties created for foreign doctors, in an attempt to address this migration southwards, mainly in the form of barriers to Medical Board registration and lack of co-operation from the authorities with regard to issuing work permits to doctors already working here, have both prevented many willing health professionals from coming to South Africa and encouraged many already working here to leave for more developed countries, thus creating crises in rural areas all over the country.
 
 The establishment of community service for all health care professionals and the employment of Cuban doctors on a government-to-government agreement have not been sufficient to address these crises.
@@ -18,3 +17,10 @@ Foreign doctors who apply to the HPCSA for registration will have their qualific
 The examination for registration for public service practice will continue to be held two or three annually for those doctors who do not meet these criteria, and who thus need additional assessment. For more information go to the website of the Health Professions Council. Within the Council, registration of doctors (physicians) falls under the Medical and Dental Professions Board.
 
 Forms for registration of Foreign Qualified Practitioners are obtainable from the HPCSA
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+    
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

@@ -1,13 +1,54 @@
 ---
 title: 'Surgery'
+section: '6'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget felis laoreet, eleifend ligula sed, consequat leo. Integer eros felis, sodales id urna eu, posuere sodales nunc. Praesent ex massa, maximus eu justo at, iaculis sodales dui. Suspendisse aliquam velit ac erat dictum hendrerit. Donec ultrices justo nec metus egestas suscipit. Mauris egestas, risus et accumsan congue, urna ligula porttitor nulla, id semper nisl lorem nec arcu. Maecenas congue fermentum orci id aliquam. Sed quis nisi efficitur, cursus dolor euismod, commodo arcu. In hac habitasse platea dictumst. Donec et nisi molestie, accumsan ex quis, commodo tortor.
+**Introduction:** There is a wide range of surgical procedures possibly within a district hospital setting and there is a drive an interest to widen the scope of what is currently available in our rural settings. Limits are partly set by available resources, but also by the confidence of the surgeon. This field is under review at the moment and there are amazing mentors exploring how to introduce a surgical basket of care into district health systems.
 
-Aliquam congue enim quis nisl laoreet luctus. Fusce at enim quis elit pretium euismod nec non purus. Sed elementum ex justo, ut dignissim enim ultricies ac. Nam in aliquam nisl. Nullam dolor arcu, gravida consequat egestas eget, mollis ac risus. Duis non tellus lectus. Vivamus molestie, risus quis finibus blandit, diam nibh dictum enim, ac luctus ipsum tortor in metus. Morbi vitae dui placerat, condimentum turpis eu, elementum ipsum.
+## TOP Surgery Work Based Activities to focus on this week. Make sure you can
 
-Quisque luctus ultrices tortor et dignissim. Proin at augue at urna porttitor consectetur. Nullam vitae dapibus nibh. Nullam dignissim laoreet sapien quis ultricies. Nam sed risus nec neque vulputate sodales. Maecenas mattis tellus a nulla tristique tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin lacus eros, finibus eget risus id, rutrum suscipit libero. Nullam mollis dui vehicula turpis tincidunt, a mattis massa varius. Suspendisse potenti.
+* Awareness of potential basket of surgical care that can be developed for your hospital
+* Assess and manage Ectopic pregnancy surgical
+* Basic Amputations  
+* Appendicectomy
+* Small procedures
 
-Sed non neque lorem. Phasellus purus libero, feugiat commodo enim ut, hendrerit vestibulum nulla. Nulla feugiat felis a scelerisque varius. Phasellus faucibus, nunc eu hendrerit viverra, risus augue interdum dolor, in feugiat augue urna ac massa. Vestibulum fermentum accumsan ipsum. Nunc vel sollicitudin sem. Morbi hendrerit blandit bibendum. Mauris non lacus a sem ultricies eleifend quis non arcu. Aenean ornare dictum nunc, quis pharetra mi fringilla in. Suspendisse ornare laoreet maximus. Nam porttitor pharetra lacus. Praesent urna risus, interdum ut metus sed, condimentum suscipit ipsum. Phasellus iaculis lacinia mi. Sed pharetra quam in est aliquet, a tempor orci pellentesque. Phasellus libero lorem, varius ut condimentum a, consequat nec ligula. Nullam eleifend metus eget purus lacinia, sed mollis augue hendrerit.
+## Reading material / Tutorials/ Webinars / Additional resources
 
-Duis nulla est, pulvinar at ipsum aliquam, sagittis laoreet orci. Donec tincidunt at metus ac semper. Curabitur molestie imperdiet lorem id volutpat. Cras id mauris ornare, dictum nulla ac, facilisis tortor. Nam vel tincidunt lectus. Fusce eget erat non massa auctor condimentum. Duis vel diam a dui mollis sagittis ut mollis massa. Curabitur feugiat metus in velit convallis, id faucibus quam pellentesque. Morbi tempor est ex, et dictum purus volutpat ac. Ut convallis pretium tellus, vel tempus urna molestie vitae. Suspendisse semper purus quis metus cursus, sed ultrices massa gravida. Praesent massa risus, bibendum ultricies metus sagittis, tempus accumsan augue. Aliquam erat volutpat. Praesent rhoncus et turpis vel accumsan.
+**Surgery Survival Guide** by Dr John Jeff, Frere Hospital. This local publication is a great resource. Send Dr Jeff John an [email here](mailto:jeffveenajohn@gmail.com)
+
+**A practical approach to peri-operative anticoagulation.** SAFP, A Beeton. [Read about it here.](https://safpj.co.za/index.php/safpj/article/view/4990/5897)
+
+**Surgical skills deficiencies and needs of rural general practitioners in South Africa.** Porter et al. [Read article here.](http://www.scielo.org.za/pdf/samj/v108n3/19.pdf)
+
+**Surgical care at rural district hospitals in low- and middle-income countries: an essential component of universal health coverage; Chu et al; Rural and Remote Health. [Read article here.](https://www.rrh.org.au/journal/article/5920)
+
+South African Urology Association - **Introduction to Urology.** Published by the SAUA - available at R 250 each from Dr Jeff John at [his email.](mailto:jeffveenajohn@gmail.com)
+
+The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
+
+Find the **Google Folder** [link here](https://drive.google.com/drive/folders/1IES_5-3ribIuHUnZPP45UCvzhXaUCLBB?usp=sharing)
+Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "title:" title, or the ---. Only change the text inside '' for that section.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The text surrounded by double  stars ( ** ) with no space show bold text.
+
+    <iframe> is the code for a youtube video. To link a youtube video, go onto youtube, right click on the video when watching it, and select **"Copy embed code"**, paste what you copied EXACTLY into the markdown file. OR, watch this tutorial: https://www.youtube.com/watch?v=vGHrJDmepI0 
+
+    PDF of a learning portal page:
+    
+    <object data="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
+        <embed src="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
+        </embed>
+    </object> 
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

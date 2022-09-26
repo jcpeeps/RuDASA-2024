@@ -56,3 +56,22 @@ If you are not a doctor then find out more about the Rural Health Network organi
 
 The Rural Health Advocacy Project provides support on advocacy for all of these groups RHAP
 ---
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    Do not change the "date:", "abstractTitle:" or "abstract:" titles, or the ---. Only change the text inside '' for that section.
+
+    If you see some text directly after --- (e.g. ---weeks), do not change this.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
+    
+    The number (e.g., "1." "2." etc.) followed by a space and then text shows an item in a numbered list. Make sure each item is on a separate line. 
+
+    Links are created with the following: [Link text that is displayed on the website](url)
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

@@ -7,8 +7,8 @@ export default function Events({ snt, snts, onboarding, rhc }) {
     return (
         <>
             <section className="bg-light" id="events">
-                <div className="container my-5 p-5">
-                    <h1 className="display-5 fw-bold text-primary mb-3">Events</h1>
+                <div className="container my-5 py-5">
+                    <h1 className="display-5 fw-bold text-primary mb-3 px-3 p-lg-0">Events</h1>
                     <SnT snt={snt} snts={snts} />
                 </div>
             </section>

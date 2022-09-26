@@ -11,6 +11,7 @@ import Benefits from '../components/signup-login/Benefits'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import Link from 'next/link'
 
 export default function SignUp({ data }) {
 
@@ -85,7 +86,7 @@ export default function SignUp({ data }) {
                     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
                         <h1 className="fw-bold w-100 mb-5 text-center text-primary">Sign Up</h1>
                         <ProgressBar step={step} thirdStep={formData.signUpReason === "rhc"} />
-                        <div className="w-100">
+                        <div className="w-auto">
                             {stepDisplay()}
                         </div>
                         <div className="w-100 d-flex justify-content-end align-items-center">
@@ -104,7 +105,7 @@ export default function SignUp({ data }) {
                                 <button className="btn btn-lg btn-secondary"
                                     disabled={step == 2} //This prevents the third component from being navigatible when not selected
                                     onClick={() => {
-                                        setStep((currStep) => currStep + 1);
+                                        setStep((currStep) => currStep - 1);
                                     }}
                                 >
                                     Next
@@ -122,6 +123,25 @@ export default function SignUp({ data }) {
                                 >
                                     Sign up
                                 </button>
+                                <div className={`hover-button ${submitShow ? "d-none" : ""
+                                    }`}>
+                                    <button className="btn btn-lg btn-secondary"
+                                        disabled={step == 2} //This prevents the third component from being navigatible when not selected
+                                        onClick={() => {
+                                            setStep((currStep) => currStep + 1);
+                                        }}
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                                <div className={`hover-button ${submitShow ? "" : "d-none"
+                                    }`}>
+                                    <button className="btn btn-lg btn-secondary"
+                                        type="submit"
+                                    >
+                                        login
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,34 +153,34 @@ export default function SignUp({ data }) {
 }
 
 export async function getStaticProps() {
-	// Get files from the other information sub-directory
-	const files = fs.readdirSync(path.join('markdown/sign-up'))
+    // Get files from the other information sub-directory
+    const files = fs.readdirSync(path.join('markdown/sign-up'))
 
-	// Get slug and markdown from other information
-	const data = files.map((filename) => {
-		const slug = filename.replace('.md', '')
-		const markdown = fs.readFileSync(path.join('markdown/sign-up', filename), 'utf-8')
+    // Get slug and markdown from other information
+    const data = files.map((filename) => {
+        const slug = filename.replace('.md', '')
+        const markdown = fs.readFileSync(path.join('markdown/sign-up', filename), 'utf-8')
 
-		let { data: frontmatter, content, sections } = matter(markdown, {
-			section: function (section, file) {
-				section.content = section.content.trim() + '\n';
-			}
-		});
+        let { data: frontmatter, content, sections } = matter(markdown, {
+            section: function (section, file) {
+                section.content = section.content.trim() + '\n';
+            }
+        });
 
-		if (sections === undefined) {sections = {};}
+        if (sections === undefined) { sections = {}; }
 
-		return {
-			slug,
-			frontmatter,
-			content,
-			sections
-		}
-	})
+        return {
+            slug,
+            frontmatter,
+            content,
+            sections
+        }
+    })
 
-	return {
-		props: {
-			data
-		}
-	}
+    return {
+        props: {
+            data
+        }
+    }
 }
 

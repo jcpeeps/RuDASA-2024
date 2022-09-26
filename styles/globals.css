@@ -2,9 +2,10 @@ html,
 body {
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
-a {
+a, Link {
 	color: inherit;
 }
 
@@ -159,6 +160,12 @@ ul {
 	transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 440px) {
+	.resc-card-width {
+		width: 46%;
+	}
+}
+
 .resc-card-width:hover {
 	background-color: var(--primary) !important;
 	transform: scale(1.1);
@@ -187,6 +194,10 @@ ul {
 	transform: scale(1.05);
 }
 
+.bg-brown {
+	background-color: #744f3c;
+}
+
 /* Navbar */
 
 .navbar-z-index {
@@ -199,6 +210,12 @@ ul {
 	height: 6px;
 	background-color: #BEBEBE !important;
 	width: 90%;
+}
+
+@media screen and (max-width: 575px) {
+	.progress-bar {
+		width: 80%;
+	}
 }
 
 .progress-loader {
@@ -225,9 +242,26 @@ article,
 .column-wrap {
 	column-count: 2;
 	column-gap: 10em;
+	column-width: 400px;
 }
 
 span {
 	color: var(--primary);
 	font-weight: bold;
+}
+
+.benefits-class {
+	min-width: 50%;
+}
+
+#markdown ul {
+	list-style:circle;
+}
+
+#markdown ol {
+	list-style:decimal;
+}
+
+#markdown h1 {
+	color: var(--primary);
 }

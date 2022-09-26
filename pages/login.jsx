@@ -66,8 +66,11 @@ export default function Login() {
             <section className="container">
                 <div className="py-5 mb-5"></div>
                 <div className="d-flex justify-content-center align-items-center mb-5 pb-5">
-                    <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} alt="Illustration"/>
-                    <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-4 d-flex flex-column align-items-center ms-5">
+                    <div className="d-none d-lg-block col-lg-5 col-xl-5">
+                        <Image src={Illustration} width={600} height={600} alt="" />
+                    </div>
+
+                    <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-4 d-flex flex-column align-items-center ms--lg-5">
                         <h1 className="fw-bold w-100 mb-5 text-center text-primary">Login</h1>
 
                         {/* FORM STARTS HERE */}
@@ -84,7 +87,7 @@ export default function Login() {
                         >
 
                             {({ touched, errors, isSubmitting }) => (
-                                <Form className="mt-3 w-100 ms-5">
+                                <Form className="mt-3 w-100 ms-lg-5">
                                     <div>
                                         <div className="form-group">
                                             <label htmlFor="email" className="text-primary fw-bold form-label ms-2">Email Address</label>
@@ -117,10 +120,8 @@ export default function Login() {
                                             />
                                         </div>
                                     </div>
-
-                                    {/* LOGIN BUTTON */}
-                                    <div className="w-100 my-4 d-flex justify-content-end align-items-center">
-                                        <small className="me-3">Don&apos;t have an account? <Link href="/signUp">Sign up</Link></small>
+                                    <div className="my-4 w-100 d-flex flex-column flex-sm-row justify-content-end align-items-end align-items-sm-center">
+                                        <small className="me-sm-3 mb-4 mb-sm-0">Don&apos;t have an account? <Link href="/signUp">Sign up</Link></small>
                                         <div className="hover-button">
                                             <button
                                                 type="submit"
