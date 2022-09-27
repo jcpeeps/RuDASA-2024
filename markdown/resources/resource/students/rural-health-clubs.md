@@ -17,9 +17,9 @@ Other links are:
 * UKZN students have a clinic project at [Happy Valley](https://web.facebook.com/happyvalleyclinicukzn/?_rdc=1&_rdr)
 
 **Health Systems Trust (HST)** has 3 email discussion groups you may like to join:
-* [Drug Policy & Practice](druginfo-subscribe@lists.hst.org.za) 
-* [Health & Human Rights](hhrnet-subscribe@lists.hst.org.za)
-* [60percent](60percent-subscribe@lists.hst.org.za)
+* [Drug Policy & Practice](mailto:druginfo-subscribe@lists.hst.org.za) 
+* [Health & Human Rights](mailto:hhrnet-subscribe@lists.hst.org.za)
+* [60percent](mailto:60percent-subscribe@lists.hst.org.za)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
