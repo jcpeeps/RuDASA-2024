@@ -13,7 +13,7 @@ Our 4 permanent sub themes are: Building Teams, Health Systems, Community Engage
 ### Best Practice Guidelines Online
 * RuDASA's [Cutting Edge Rural Medicine](/resources)
 * University of Pretoria's [Essential Steps in the Management of Obstetric Emergencies (ESMOE)](https://www.up.ac.za/centre-for-maternal-fetal-newborn-and-child-healthcare/article/2819785/esmoepublic-downloads/)
-* University of Pretoria's [Department of Family Medicine](https://www.up.ac.za/family-medicine/article/2012367/south-african-clinical-guidelines-)
+* University of Pretoria's [Department of Family Medicine](https://www.up.ac.za/family-medicine)
 
 ### Short Courses & eLearning
 * Foundation for Professional Development e-learning's [range of courses](https://www.foundation.co.za/clinical-courses)
@@ -22,16 +22,21 @@ Our 4 permanent sub themes are: Building Teams, Health Systems, Community Engage
 * Short Courses in Emergency Medicine at [UCT & SU](http://www.emct.info/short-courses.html) or at the [Academy of Advanced Life Support (Gauteng)](https://www.advancedlifesupport.co.za/courses/), KwaZulu Natal, NW.
 * Advanced Life Support Training Centres's [Directory](https://resus.co.za/subpages/Training/Advanced_Life_Support_Training_Centres.html#)
 * Diploma with [The Colleges of Medicine of South Africa (CMSA)](https://www.cmsa.co.za/view_exam.aspx?QualificationID=60)
-* Diploma or Masters at [UCT & SU](https://www.sun.ac.za/english/faculty/healthsciences/Emergency%20Medicine/pages/emergency-medicine.aspx) & [WITS](https://www.wits.ac.za/clinicalmed/departments/family-medicine-and-primary-care/emergency-medicine/)
+* Postgraduate programmes at 
+    * [University of Cape Town](http://www.emergencymed.uct.ac.za/em/programmes/pgdip) 
+    * [Stellenbosch University](http://www.sun.ac.za/english/faculty/healthsciences/Emergency%20Medicine/Pages/Postgraduate.aspx) 
+    * [WITS](https://www.wits.ac.za/clinicalmed/departments/family-medicine-and-primary-care/emergency-medicine/)
 
 ### Maternal & Child Health
 * Limpopo Initiative for Newborn Care's eLearning on [Neonates and New Borns](http://www.lincare.co.za/?page_id=1201)
 
 ### Cancer & Palliative Care
-* Diploma or masters: UCT & SU 
+* Diploma or masters: 
+    * [University of Cape Town](http://www.publichealth.uct.ac.za/phfm_postgraduate-diploma-palliative-medicine) 
+    * [Stellenbosch University](http://www.sun.ac.za/english/faculty/healthsciences/Family%20Medicine%20and%20Primary%20Care/short-courses) 
 
 ### Family Medicine
-* Diplomas or masters: [SU](http://www.sun.ac.za/english/faculty/healthsciences/Family%20Medicine%20and%20Primary%20Care/Pages/Postgraduate.aspx), [UCT](http://www.publichealth.uct.ac.za/sites/default/files/image_tool/images/8/PG%20Diploma%20in%20FamMed%20_2018.6.26.pdf), [UFS](https://www.ufs.ac.za/health/departments-and-divisions/family-medicine-home), [UP](https://www.up.ac.za/family-medicine), [WITS](https://www.wits.ac.za/clinicalmed/departments/family-medicine-and-primary-care/), [UKZN](https://familymedicine.ukzn.ac.za/studyopportunities/), [SMU](https://purerims.smu.ac.za/en/organisations/family-medicine-primary-health-care)
+* Diplomas or masters: [Stellenbosch University](http://www.sun.ac.za/english/faculty/healthsciences/Family%20Medicine%20and%20Primary%20Care/Pages/Postgraduate.aspx), [UCT](http://www.publichealth.uct.ac.za/sites/default/files/image_tool/images/8/PG%20Diploma%20in%20FamMed%20_2018.6.26.pdf), [UFS](https://www.ufs.ac.za/health/departments-and-divisions/family-medicine-home), [UP](https://www.up.ac.za/family-medicine), [WITS](https://www.wits.ac.za/clinicalmed/departments/family-medicine-and-primary-care/), [UKZN](https://familymedicine.ukzn.ac.za/studyopportunities/), [SMU](https://purerims.smu.ac.za/en/organisations/family-medicine-primary-health-care)
 
 ### TB/HIV Management  
 * Short courses: [SAHIVSoc]()
