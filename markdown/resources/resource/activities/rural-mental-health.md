@@ -2,7 +2,7 @@
 title: 'Rural Mental Health'
 ---
 **Rural Health Campaign Report (2015)**
-[Rural Health Campaign Report (2015)](/pdfs/rural-mental-health/rural mental health campaign report 2015.pdf)
+[Rural Health Campaign Report (2015)](/public/pdfs/rural-mental-health/rural%20mental%20health%20campaign%20report%202015.pdf)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
