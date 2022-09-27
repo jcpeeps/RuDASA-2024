@@ -3,10 +3,7 @@ title: 'Non-communicable Diseases'
 section: '3'
 ---
 
-**Introduction:** Although not as urgent, NCDs will make up a huge part of your OPD work, and will
-result in a certain number of admissions each week. We do have excellent guidelines and can
-provide high quality care for these patients, even in a rural setting, but it requires and in depth
-knowledge of evidence based guidelines.
+**Introduction:** Although not as urgent, NCDs will make up a huge part of your OPD work, and will result in a certain number of admissions each week. We do have excellent guidelines and can provide high quality care for these patients, even in a rural setting, but it requires and in depth knowledge of evidence based guidelines.
 
 ## TOP NCD Work Based Activities to focus on this week. How confident are you in
 
@@ -26,47 +23,46 @@ knowledge of evidence based guidelines.
 
 ## Key Guidelines
 
-* [Essential Resource: Latest hospital and primary health care standard treatment guidelines and EMG app](https://drive.google.com/drive/folders/1voG8dJeKodj6u22JcG1oRrQZLV3f9Njd?usp=sharing)(see general resources)
+[Essential Resource: Latest hospital and primary health care standard treatment guidelines and EMG app](https://drive.google.com/drive/folders/1voG8dJeKodj6u22JcG1oRrQZLV3f9Njd?usp=sharing)(see general resources)
 
 * **Heart Failure**
-[2020 Heart Failure Society of South Africa perspective on the 2016 European Society of Cardiology Chronic Heart Failure Guidelines](http://www.samj.org.za/index.php/samj/article/view/13057/9549)
+  * [2020 Heart Failure Society of South Africa perspective on the 2016 European Society of Cardiology Chronic Heart Failure Guidelines](http://www.samj.org.za/index.php/samj/article/view/13057/9549)
 
 * **Asthma**
-[GLOBAL STRATEGY FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/wp-content/uploads/2021/04/GINA-2021-Main-Report_FINAL_21_04_28-WMS.pdf)
+  * [GLOBAL STRATEGY FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/wp-content/uploads/2021/04/GINA-2021-Main-Report_FINAL_21_04_28-WMS.pdf)
 
-    [Asthma treatment in children](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
+  * [Asthma treatment in children](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
 
 * **COPD**
-[2022 GOLD COPD Report](https://goldcopd.org/2022-gold-reports-2/)
+  * [2022 GOLD COPD Report](https://goldcopd.org/2022-gold-reports-2/)
 
 * **Hypertension**
-[South African Hypertension Society commentary on the American College of Cardiology/American Heart Association hypertension guidelines](https://www.hypertension.org.za/uploads/files/SAHS-CVJ-Comments-American-Hypertension-Association-guidelines-2019.pdf)
+  * [South African Hypertension Society commentary on the American College of Cardiology/American Heart Association hypertension guidelines](https://www.hypertension.org.za/uploads/files/SAHS-CVJ-Comments-American-Hypertension-Association-guidelines-2019.pdf)
 
-* [Management of chronic obstructive pulmonary disease—A position statement of the South African Thoracic Society: 2019 update Mohamed Sabeer Abdool-Gaffar1](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf)
+  * [Management of chronic obstructive pulmonary disease—A position statement of the South African Thoracic Society: 2019 update Mohamed Sabeer Abdool-Gaffar1](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf)
 
 * **Diabetes**
-[SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf)
+  * [SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf)
 
-* [WSU Family Medicine CMH tutorials: Insulin optimization in T2DM Dr Kabengele Kayembe](https://youtu.be/BsTsySO3Uo4)
+  * [WSU Family Medicine CMH tutorials: Insulin optimization in T2DM Dr Kabengele Kayembe](https://youtu.be/BsTsySO3Uo4)
 
 * **Rheumatoid Arthitis**
-[South African recommendations for the management of Rheumatoid arthritis](http://www.samj.org.za/index.php/samj/article/view/7047/5262)
+  * [South African recommendations for the management of Rheumatoid arthritis](http://www.samj.org.za/index.php/samj/article/view/7047/5262)
 
 * **Dyslipidemia**
-[South African dyslipidaemia guideline consensus statement](http://www.samj.org.za/index.php/samj/article/view/12479/8686)
+  * [South African dyslipidaemia guideline consensus statement](http://www.samj.org.za/index.php/samj/article/view/12479/8686)
 
 * **Stroke**
-[South African guideline for Stroke SAMJ](http://www.samj.org.za/index.php/samj/article/view/4422/3005)
+  * [South African guideline for Stroke SAMJ](http://www.samj.org.za/index.php/samj/article/view/4422/3005)
 
 * **Chronic Kidney Disease**
-[CKD evaluation and management](https://kdigo.org/guidelines/ckd-evaluation-and-management/)
+  * [CKD evaluation and management](https://kdigo.org/guidelines/ckd-evaluation-and-management/)
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
 * [RO2022 Webinar: Internal Medicine Emergencies Prof A Parrish](https://youtu.be/HB6BAmTDink)
 
-* [The BAMSI collaborative with Prof Parrish & Dave Stead’s team from the Eastern Cape](https://medeval.co.za/wp/)      Excellent set of webinars targeting doctors in rural facilities in BCM and
-Amathole district:
+* [The BAMSI collaborative with Prof Parrish & Dave Stead’s team from the Eastern Cape](https://medeval.co.za/wp/) Excellent set of webinars targeting doctors in rural facilities in BCM and Amathole district:
 
 * WSU Life in the slow lane: Cardiology through the lens of the ECG with Dr Kevin Pasio
   * [Part 1](https://youtu.be/DCONVqcY4ZY)

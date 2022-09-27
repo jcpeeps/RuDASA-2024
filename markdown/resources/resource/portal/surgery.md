@@ -15,20 +15,19 @@ section: '6'
 
 ## Reading material / Tutorials/ Webinars / Additional resources
 
-**Surgery Survival Guide** by Dr John Jeff, Frere Hospital. This local publication is a great resource. Send Dr Jeff John an [email here](mailto:jeffveenajohn@gmail.com)
+* **Surgery Survival Guide** by Dr John Jeff, Frere Hospital. This local publication is a great resource. Send Dr Jeff John an [email here](mailto:jeffveenajohn@gmail.com)
 
-**A practical approach to peri-operative anticoagulation.** SAFP, A Beeton. [Read about it here.](https://safpj.co.za/index.php/safpj/article/view/4990/5897)
+* **A practical approach to peri-operative anticoagulation.** SAFP, A Beeton. [Read about it here.](https://safpj.co.za/index.php/safpj/article/view/4990/5897)
 
-**Surgical skills deficiencies and needs of rural general practitioners in South Africa.** Porter et al. [Read article here.](http://www.scielo.org.za/pdf/samj/v108n3/19.pdf)
+* **Surgical skills deficiencies and needs of rural general practitioners in South Africa.** Porter et al. [Read article here.](http://www.scielo.org.za/pdf/samj/v108n3/19.pdf)
 
-**Surgical care at rural district hospitals in low- and middle-income countries: an essential component of universal health coverage; Chu et al; Rural and Remote Health. [Read article here.](https://www.rrh.org.au/journal/article/5920)
+* **Surgical care at rural district hospitals in low- and middle-income countries: an essential component of universal health coverage; Chu et al; Rural and Remote Health. [Read article here.](https://www.rrh.org.au/journal/article/5920)
 
-South African Urology Association - **Introduction to Urology.** Published by the SAUA - available at R 250 each from Dr Jeff John at [his email.](mailto:jeffveenajohn@gmail.com)
+* South African Urology Association - **Introduction to Urology.** Published by the SAUA - available at R 250 each from Dr Jeff John at [his email.](mailto:jeffveenajohn@gmail.com)
 
-The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
+* The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
 
-Find the **Google Folder** [link here](https://drive.google.com/drive/folders/1IES_5-3ribIuHUnZPP45UCvzhXaUCLBB?usp=sharing)
-Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
+* Find the [Google Folder](https://drive.google.com/drive/folders/1IES_5-3ribIuHUnZPP45UCvzhXaUCLBB?usp=sharing). Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).

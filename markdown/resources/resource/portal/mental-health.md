@@ -5,7 +5,9 @@ section: '7'
 
 **Introduction:** Mental health is often neglected with a huge burden in our rural communities, and yet the average rural hospital has very little access to psychiatric services.
 
-## TOP Mental Health Based Activities to focus on this week. Make sure you can
+## TOP Mental Health Based Activities to focus on this week
+
+Make sure you can:
 
 1. Management of the aggressive / psychotic/ distressed (suicidal) patient including 72 hour observation./ escalation of sedation
 2. Able to do a brief intervention for e.g. adherence issues, substance abuse, smoking
@@ -24,7 +26,7 @@ section: '7'
 
 * Gain a better understanding of motivational interviewing by watching [this video.](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
 
-* [Watch this video](https://youtu.be/5GuydLt59vs) on de-escalating aggression in a patient with developmental disorder. 
+* [Watch this video](https://youtu.be/5GuydLt59vs) on de-escalating aggression in a patient with developmental disorder.
 
 * Overcoming the Use of Mechanical Restraints in Psychiatry: A New Challenge in the Everyday Clinical Practice at the Time of COVID-19; De Beradis et al 2020. [Article here.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7700144/pdf/jcm-09-03774.pdf)
 
@@ -63,7 +65,8 @@ section: '7'
 ## Mental Health PDFs
 
 ### Mental Health Resource Pack
-[Mental Health Resource Pack](/public/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf)
+
+[Mental Health Resource Pack](../../../../public/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
