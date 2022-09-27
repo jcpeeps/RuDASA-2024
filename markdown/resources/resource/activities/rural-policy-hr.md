@@ -8,7 +8,7 @@ title: 'Rural Policy & HR'
 **RuDASA & Partners GreenPaper**
 [RuDASA & Partners GreenPaper](/public/pdfs/rural-policy-hr/NHI_GreenPaper-RuDASA%20and%20partners_11%20December%202011.pdf)
 
-## Rural HR
+## Rural Human Resources
 **WHO Global Policy recommendations for Rural Recruitment**
 [WHO Global Policy recommendations for Rural Recruitment](/public/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf)
 
