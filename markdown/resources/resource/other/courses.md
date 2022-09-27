@@ -54,7 +54,7 @@ Our 4 permanent sub themes are: Building Teams, Health Systems, Community Engage
 
     The text surrounded by single stars ( * ) with no spaces shows italic text. 
 
-    Links are created with the following: [Link text that is displayed on the website](url)
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

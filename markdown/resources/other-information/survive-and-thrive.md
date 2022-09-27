@@ -17,10 +17,6 @@ thirdPoint: "SADAG is Africa’s largest mental health support and advocacy grou
     Do not change the "firstPoint:", "secondPoint:" or "thirdPoint:" titles, or the ---. Only change the text inside '' for that section.
 
     The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
-    
-    The number (e.g., "1." "2." etc.) followed by a space and then text shows an item in a numbered list. Make sure each item is on a separate line. 
-
-    Links are created with the following: [Link text that is displayed on the website](url)
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

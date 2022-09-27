@@ -71,7 +71,7 @@ The Rural Health Advocacy Project provides support on advocacy for all of these 
     
     The number (e.g., "1." "2." etc.) followed by a space and then text shows an item in a numbered list. Make sure each item is on a separate line. 
 
-    Links are created with the following: [Link text that is displayed on the website](url)
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->
