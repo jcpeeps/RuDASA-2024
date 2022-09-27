@@ -25,7 +25,7 @@ Foreign Students need to contact these International Offices directly to registe
 * [Sefako Makgatho Health Science University (Gauteng)](http://www.smu.ac.za/students/international-students/)
 * [University of Cape Town (Western Cape)](http://www.healthelectives.uct.ac.za/applications/elective-placements)
 * [University of KZN (KwaZulu Natal)](http://applications.ukzn.ac.za/ApplicationProcedures/International-Applicants/International-Application-Procedures.aspx)
-* [University of Pretoria (Gauteng)]()
+* [University of Pretoria (Gauteng)](https://www.up.ac.za/online-registration/article/2398818/international-students)
 * [University of Stellenbosch (Western Cape)](https://www.sun.ac.za/english/faculty/healthsciences/international-office/international-undergraduate-elective-students)
 * [University of the Witwatersand (Gauteng)](https://www.wits.ac.za/health/faculty-services/elective/)
 
