@@ -3,23 +3,23 @@ title: 'Rural Policy & HR'
 ---
 ## Rural Policy
 **RuDASA & RHAP submission on NSP**
-[RuDASA & RHAP submission on NSP](/pdfs/rural-policy-hr/RUDASA_RHAP-submission-on-NSP-Draft-Zero_13-September-20111 (1).pdf)
+[RuDASA & RHAP submission on NSP](/public/pdfs/rural-policy-hr/RUDASA_RHAP-submission-on-NSP-Draft-Zero_13-September-20111%20(1).pdf)
 
 **RuDASA & Partners GreenPaper**
-[RuDASA & Partners GreenPaper](/pdfs/rural-policy-hr/NHI_GreenPaper-RuDASA and partners_11 December 2011.pdf)
+[RuDASA & Partners GreenPaper](/public/pdfs/rural-policy-hr/NHI_GreenPaper-RuDASA and partners_11%20December%202011.pdf)
 
 ## Rural HR
 **WHO Global Policy recommendations for Rural Recruitment**
-[WHO Global Policy recommendations for Rural Recruitment](/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf)
+[WHO Global Policy recommendations for Rural Recruitment](/public/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf)
 
 **HRH Strategy for Health Sector**
-[HRH Strategy for Health Sector](/pdfs/rural-policy-hr/hrh for sa - strategy for health sector 2012-2017.pdf)
+[HRH Strategy for Health Sector](/public/pdfs/rural-policy-hr/hrh for sa - strategy for health sector 2012-2017.pdf)
 
 **Understanding the Factors Influencing Rural Health Worker Employment in South Africa**
 [Understanding the Factors Influencing Rural Health Worker Employment in South Africa](/pdfs/rural-policy-hr/UnderstandingthefactorsinfluencinghealthworkeremploymentdecisionsinSouthAfrica.pdf)
 
 **WHO - Global Policy Recommendations for Rural Recruitment and Employment**
-[WHO - Global Policy Recommendations for Rural Recruitment and Employment](/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf)
+[WHO - Global Policy Recommendations for Rural Recruitment and Employment](/public/pdfs/rural-policy-hr/WHOGlobalPolicyRecommendationsruralrecruitmentandrete.pdf)
 
 
 <!--
