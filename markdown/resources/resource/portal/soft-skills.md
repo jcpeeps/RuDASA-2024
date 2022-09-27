@@ -44,3 +44,18 @@ The Effective Physician: Motivational Interviewing Demonstration (stop smoking);
 Article ([read here](https://link.springer.com/article/10.1007/s10912-019-09572-y)): **The Good doctor. The Making and the unmaking of the Physician Self in contemporary South Africa;** M Pentecost and T Cousins
 
 Article ([read here](https://safpj.co.za/index.php/safpj/article/view/5166/6263)): **Creating a learning environment in your practice** / facility; B Mash & Jill Edwards
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line.  
+
+    The text surrounded by double stars ( ** ) with no space show bold text.
+
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->
