@@ -13,10 +13,10 @@ title: 'PHC & Guidelines'
 [SAASP Antibiotic Guidelines (2014)](/public/pdfs/phc-guidelines/saasp_antibiotic_guidelines_2014.compressed.pdf)
 
 **National Contraception and Fertility Planning Clinical Guidelines (2012)**
-[National Contraception and Fertility Planning Clinical Guidelines (2012)](/public/pdfs/phc-guidelines/national contraception and fertility planning-clinical-guidelines 2012 .pdf)
+[National Contraception and Fertility Planning Clinical Guidelines (2012)](/public/pdfs/phc-guidelines/national%20contraception%20and%20fertility%20planning-clinical-guidelines%202012%20.pdf)
 
 **PC 101 Guideline v2 (2013-14)**
-[PC 101 Guideline v2 (2013-14)](/public/pdfs/phc-guidelines/PC%20101%20Guideline%20v2%202013 14.pdf)
+[PC 101 Guideline v2 (2013-14)](/public/pdfs/phc-guidelines/PC%20101%20Guideline%20v2%202013%2014.pdf)
 
 **STINDoH Guidelines Book (2008)**
 [STINDoH Guidelines Book (2008)](/public/pdfs/phc-guidelines/STINDoHGuidelinesBook2008Edited.pdf)
@@ -38,7 +38,7 @@ title: 'PHC & Guidelines'
 [NIMART peads and Adult Mentoring File Audit Tool](/public/pdfs/phc-guidelines/5.%20TBHIV%20Register_Audit_Tool_v11.xlsx)
 
 **Register Audit Tool - ITECH SA SURE SOP with Excel Tool**
-[Register Audit Tool - ITECH SA SURE SOP with Excel Tool](/public/pdfs/phc-guidelines/6.%20Register%20Audit%20tool_%20ITECH_SA%20SURE_SOP%20with%20Excel Tool.docx)
+[Register Audit Tool - ITECH SA SURE SOP with Excel Tool](/public/pdfs/phc-guidelines/6.%20Register%20Audit%20tool_%20ITECH_SA%20SURE_SOP%20with%20Excel%20Tool.docx)
 
 ## Drug Supply Management
 **National Drug Policy (1996)**
