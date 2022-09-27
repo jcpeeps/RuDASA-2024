@@ -3,8 +3,7 @@ title: 'Child Health'
 section: '4'
 ---
 
-* * Introduction:* *  Children are both challenging and easy to treat. Although they can get very ill very
-quickly, they also respond well to early and effective treatment.
+**Introduction:**  Children are both challenging and easy to treat. Although they can get very ill very quickly, they also respond well to early and effective treatment.
 
 ## TOP Child Health Work Based Activities to focus on this week. How confident are you in
 
@@ -18,11 +17,9 @@ quickly, they also respond well to early and effective treatment.
 
 5. Management of status epilepticus in children and neonates (EDL, GSH ‘purple book’)
 
-6. Management of sick and healthy prems - common issues (fluids and feeds, KMC protocols, etc)
-(MSSN)
+6. Management of sick and healthy prems - common issues (fluids and feeds, KMC protocols, etc) (MSSN)
 
-HIV & TB resources will be find under the Infectious Disease section and triage and SATS under Emergency
-Medicine.
+HIV & TB resources can be found under the Infectious Diseases section and triage and SATS under Emergency Medicine.
 
 ## Key Guidelines
 
@@ -40,9 +37,7 @@ Medicine.
 
 * [The structured approach to the seriously ill child, including tips for safe transfer Dr Tintswalo Motimele](https://youtube/Yl7eht7d3uI)
 
-* [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include
-SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series
-about how to perform procedures with supplies commonly found in resource-limited settings.
+* [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series about how to perform procedures with supplies commonly found in resource-limited settings.
 
 * [Bubble CPAP](https://sugarprep.org/videos/#Bubble_CPAP), One of the SUGAR PEARL videos.
 

@@ -9,15 +9,13 @@ infectious diseases you will see – and the landscape is always changing. Are y
 
 ## 5 HIV / TB Work Based Activities to focus on this week. How confident are you in
 
-* Identify and manage virological failure in a patient on first and second line treatment – in
-adults and children
+* Identify and manage virological failure in a patient on first and second line treatment in adults and children
 
 * Work up of the sick, immunocompromised patient
 
 * Work-up of the TB suspect with a GeneXpert negative result.
 
-* Key PMTCT intervention in the pregnant women, during labor and in the neonate to prevent
-mother to child transmission.
+* Key PMTCT intervention in the pregnant women, during labor and in the neonate to prevent mother to child transmission.
 
 * Managing the patient with the positive CLAT – including cryptococcal meningitis
 
@@ -25,8 +23,7 @@ mother to child transmission.
 
 ## Key Guidelines
 
-* There are excellent, detailed NDOH guidelines that cover all aspects of HIV care. And don’t forget
-your EML and APC! (see the General Resource Pack)
+* There are excellent, detailed NDOH guidelines that cover all aspects of HIV care. And don’t forget your EML and APC! (see the General Resource Pack)
 
 * [KnowledgeHub SA National ARV Guidelines](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-05/2019%20ART%20Guideline%2028042020%20pdf.pdf)
 
@@ -44,11 +41,9 @@ your EML and APC! (see the General Resource Pack)
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
-* The NDOH knowledge hub runs a free online training on Advanced Clinical Care (30CPD
-points) which is worthwhile doing.
+* The NDOH knowledge hub runs a free online training on Advanced Clinical Care (30CPD points) which is worthwhile doing.
 
-* The HIV clinician Society website has excellent resources – consider joining the society if you
-have a special interest in HIV.
+* The HIV clinician Society website has excellent resources – consider joining the society if you have a special interest in HIV.
 
 * [Basic introduction to ARV guidelines Dr Muller](https://youtu.be/pDK9okgbDP4)
 
@@ -64,7 +59,7 @@ have a special interest in HIV.
 
 * [DRTB course for clinicians](https://youtube.com/playlist?list=PL2IvCQAf-vTsRnw7WPoKUBL0DXVTnQXjw)
 
-Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
+Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
 
 * PEP poster
 

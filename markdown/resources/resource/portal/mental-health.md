@@ -63,7 +63,7 @@ section: '7'
 ## Mental Health PDFs
 
 ### Mental Health Resource Pack
-[Mental Health Resource Pack](/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf)
+[Mental Health Resource Pack](/public/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).

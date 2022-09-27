@@ -3,9 +3,7 @@ title: 'Maternal & Reproductive Health'
 section: '2'
 ---
 
-**Introduction:** One of the most frightening experiences as a new rural clinician is making life and
-death decisions about a mother and her unborn child. We have put together an amazing set of
-resources to help you gain the skills to deal with those high stake scenarios.
+**Introduction:** One of the most frightening experiences as a new rural clinician is making life and death decisions about a mother and her unborn child. We have put together an amazing set of resources to help you gain the skills to deal with those high stake scenarios.
 
 ## TOP Maternal health Work Based Activities to focus on this week. How confident are you in
 
@@ -85,8 +83,7 @@ Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1
 
 * FAQ Maternal health slides Dr Mandondo
 
-There are lots of excellent videos to work through – so organize a video night with your colleagues
-and get out the popcorn…
+There are lots of excellent videos to work through – so organize a video night with your colleagues and get out the popcorn…
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).

@@ -25,8 +25,7 @@ implications, there are excellent NDOH or NICD guidelines that cover them.
 
 For antibiotic use for any infectious disease: use your **STG/ EML guidelines on your EMG app**.
 
-COVID guidelines are usually found on the NICD guideline – but they do not always seem up to
-date. I have included latest circulars on COVID in the google folder.
+COVID guidelines are usually found on the NICD guideline – but they do not always seem up to date. I have included latest circulars on COVID in the [google drive folder](https://drive.google.com/drive/folders/14FCznn2D6BzzfZOcuoZ3e3B4rb8F5qFr).
 
 * [South African guideline for the management of community-acquired pneumonia in adults](https://jtd.amegroups.com/article/view/13850/html)
 
@@ -42,7 +41,7 @@ date. I have included latest circulars on COVID in the google folder.
 
 * [The South African Antibiotic Stewardship Programme](https://www.samedical.org/file/946)
 
-Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
+Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
 
 * COVID vaccination circular and latest isolation and quarantine guideline
 
@@ -54,8 +53,7 @@ Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1
 
 * Malaria season alert.
 
-* Guidelines on Implementation of the Antimicrobial Strategy in South Africa: One Health
-Approach & Governance
+* Guidelines on Implementation of the Antimicrobial Strategy in South Africa: One Health Approach & Governance
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
