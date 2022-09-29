@@ -17,9 +17,9 @@ Other links are:
 * UKZN students have a clinic project at [Happy Valley](https://web.facebook.com/happyvalleyclinicukzn/?_rdc=1&_rdr)
 
 **Health Systems Trust (HST)** has 3 email discussion groups you may like to join:
-* [Drug Policy & Practice](druginfo-subscribe@lists.hst.org.za) 
-* [Health & Human Rights](hhrnet-subscribe@lists.hst.org.za)
-* [60percent](60percent-subscribe@lists.hst.org.za)
+* [Drug Policy & Practice](mailto:druginfo-subscribe@lists.hst.org.za) 
+* [Health & Human Rights](mailto:hhrnet-subscribe@lists.hst.org.za)
+* [60percent](mailto:60percent-subscribe@lists.hst.org.za)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
@@ -31,7 +31,7 @@ Other links are:
 
     The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line.
     
-    Links are created with the following: [Link text that is displayed on the website](url)
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

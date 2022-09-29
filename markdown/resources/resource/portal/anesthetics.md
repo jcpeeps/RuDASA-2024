@@ -17,7 +17,7 @@ section: '6'
 ## Reading material / Tutorials / Webinars / Additional resources
 
 * [District Anaesthesia YouTube channel:](https://www.youtube.com/channel/UC5RyvotEzpFIKFYozpKUgAw).
-*To sign up for the live sessions every couple of weeks on an early Tuesday morning:* email Prof David Bishop: [Contact Us](mailto:davidgbishop@gmail.com)
+* To sign up for the live sessions every couple of weeks on an early Tuesday morning, email Prof David Bishop: [Contact Us](mailto:davidgbishop@gmail.com)
 * An approach to District Anaesthesia; SAFE and SIMPLE. Prof David Bishop Rural Onboarding webinar. [Watch Here](https://youtu.be/Zt8yGgegzHQ)  
 * Suggested guideline in the South African context: [Management of a High Spinal](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiS9s_vmZb2AhVPwAIHHSxMDqoQFnoECAIQAQ&url=http%3A%2F%2Fwww.sajaa.co.za%2Findex.php%2Fsajaa%2Farticle%2Fview%2F1791%2F1771&usg=AOvVaw0n4nzF8k7kymKCjRetT3r_)
 * [Anaesthesia for ruptured ectopic pregnancy at district level.](https://safpj.co.za/index.php/safpj/article/view/5304) SAFP 2021, DG Bishop and SPDP le Roux. A simple approach to the anaesthesia for unstable patients requiring laparotomy for ruptured ectopic pregnancy.
@@ -28,7 +28,7 @@ section: '6'
 * [Anaesthetics video tutorials](https://www.propofology.com/tutorial-list.html) on Propofology, a UK based, UK based, international project created out of the desire to advance the role of the FOAMed (Free Open Access to Medical Education) to everyone involved in anaesthesia, critical care and pain medicine.
 * Ever wondered what to have in your obstetric spinal tray? [Find out here!](https://youtu.be/mAorYKBv500)
 
-Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1l89UkJy6FYh-aAjKLLrT8YmmerK1PfRJ?usp=sharing) with more resources, including:
+Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/1l89UkJy6FYh-aAjKLLrT8YmmerK1PfRJ?usp=sharing) with more resources, including:
 
 * ESMOE posters – airway evaluation, appropriate levels of care, equipment list
 * Poster for anaesthesia for ruptured ectopic pregnancy
@@ -39,3 +39,20 @@ Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1
 ## Other
 
 [The Anaesthetist behind the mask | Anaesthesiology in South Africa](https://youtu.be/Og2zkdFM2nU)
+
+<!--
+    This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
+
+    The text surrounded by double stars ( ** ) with no space show bold text.
+
+    The text surrounded by single stars ( * ) with no space show italic text.
+
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
+
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+ -->

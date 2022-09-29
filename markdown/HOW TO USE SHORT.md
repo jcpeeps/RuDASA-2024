@@ -30,18 +30,12 @@ Normal paragraph text (the majority of your text) is written like this. No symbo
 ![Alternative text for image](url/path to image)
 
 PDF of a resorce page:
-<object data="/pdfs/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/[FILE PATH TO YOUR PDF]">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
-    </embed>
-</object> 
+[PDF Name](/pdfs/FILE PATH TO YOUR PDF)
+
 
 PDF of a learning portal page:
-<object data="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
-    </embed>
-</object> 
+[PDF Name](/pdfs/PORTAL/FILE PATH TO YOUR PDF)
+
 
 To link a youtube video, go onto youtube, right click on the video when watching it, and select **"Copy embed code"**, paste what you copied EXACTLY into the markdown file. OR, watch this [tutorial](https://www.youtube.com/watch?v=vGHrJDmepI0).
 

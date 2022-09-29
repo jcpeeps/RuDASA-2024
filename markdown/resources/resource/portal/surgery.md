@@ -15,40 +15,31 @@ section: '6'
 
 ## Reading material / Tutorials/ Webinars / Additional resources
 
-**Surgery Survival Guide** by Dr John Jeff, Frere Hospital. This local publication is a great resource. Send Dr Jeff John an [email here](mailto:jeffveenajohn@gmail.com)
+* **Surgery Survival Guide** by Dr John Jeff, Frere Hospital. This local publication is a great resource. Send Dr Jeff John an [email here](mailto:jeffveenajohn@gmail.com)
 
-**A practical approach to peri-operative anticoagulation.** SAFP, A Beeton. [Read about it here.](https://safpj.co.za/index.php/safpj/article/view/4990/5897)
+* **A practical approach to peri-operative anticoagulation.** SAFP, A Beeton. [Read about it here.](https://safpj.co.za/index.php/safpj/article/view/4990/5897)
 
-**Surgical skills deficiencies and needs of rural general practitioners in South Africa.** Porter et al. [Read article here.](http://www.scielo.org.za/pdf/samj/v108n3/19.pdf)
+* **Surgical skills deficiencies and needs of rural general practitioners in South Africa.** Porter et al. [Read article here.](http://www.scielo.org.za/pdf/samj/v108n3/19.pdf)
 
-**Surgical care at rural district hospitals in low- and middle-income countries: an essential component of universal health coverage; Chu et al; Rural and Remote Health. [Read article here.](https://www.rrh.org.au/journal/article/5920)
+* **Surgical care at rural district hospitals in low- and middle-income countries: an essential component of universal health coverage; Chu et al; Rural and Remote Health. [Read article here.](https://www.rrh.org.au/journal/article/5920)
 
-South African Urology Association - **Introduction to Urology.** Published by the SAUA - available at R 250 each from Dr Jeff John at [his email.](mailto:jeffveenajohn@gmail.com)
+* South African Urology Association - **Introduction to Urology.** Published by the SAUA - available at R 250 each from Dr Jeff John at [his email.](mailto:jeffveenajohn@gmail.com)
 
-The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
+* The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
 
-Find the **Google Folder** [link here](https://drive.google.com/drive/folders/1IES_5-3ribIuHUnZPP45UCvzhXaUCLBB?usp=sharing)
-Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
+* Find the [Google Folder](https://drive.google.com/drive/folders/1IES_5-3ribIuHUnZPP45UCvzhXaUCLBB?usp=sharing). Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
 
-    Do not change the "title:" title, or the ---. Only change the text inside '' for that section.
-
     The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
 
-    The text surrounded by double  stars ( ** ) with no space show bold text.
+    The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line. 
 
-    <iframe> is the code for a youtube video. To link a youtube video, go onto youtube, right click on the video when watching it, and select **"Copy embed code"**, paste what you copied EXACTLY into the markdown file. OR, watch this tutorial: https://www.youtube.com/watch?v=vGHrJDmepI0 
+    The text surrounded by double stars ( ** ) with no space show bold text.
 
-    PDF of a learning portal page:
-    
-    <object data="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
-        <embed src="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">
-            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
-        </embed>
-    </object> 
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

@@ -14,18 +14,10 @@ Here are a list of stats and quick links to research
 
 ## General Research PDFs
 **WHO - SA Country Health Fact Sheet**
-<object data="/pdfs/research-quick-links/SACountyHealthFactSheet.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/research-quick-links/SACountyHealthFactSheet.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/research-quick-links/SACountyHealthFactSheet.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+[WHO - SA Country Health Fact Sheet](/pdfs/research-quick-links/SACountyHealthFactSheet.pdf)
 
 **WHO - SA Health Profile (2011)**
-<object data="/pdfs/research-quick-links/WHOSAHealthProfile2011.pdf" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/research-quick-links/WHOSAHealthProfile2011.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/research-quick-links/WHOSAHealthProfile2011.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+[WHO - SA Health Profile (2011)](/pdfs/research-quick-links/WHOSAHealthProfile2011.pdf)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
@@ -41,14 +33,9 @@ Here are a list of stats and quick links to research
     The single star ( * ) followed by a space and then text shows an item in a bulleted list. Make sure each item is on a separate line.
     
     PDF of a resorce page:
-
-    <object data="/pdfs/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
-        <embed src="/pdfs/[FILE PATH TO YOUR PDF]">
-            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
-        </embed>
-    </object> 
+    [Resource Title](/pdfs/resource-page.pdf)
     
-    Links are created with the following: [Link text that is displayed on the website](url)
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

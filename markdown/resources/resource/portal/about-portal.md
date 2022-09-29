@@ -42,11 +42,11 @@ At the moment the clinical part of the program is heavily focused on doctors and
     
     The number (e.g., "1." "2." etc.) followed by a space and then text shows an item in a numbered list. Make sure each item is on a separate line. 
 
-    Links are created with the following: [Link text that is displayed on the website](url)
-
     The text surrounded by double stars ( ** ) with no space show bold text.
 
     The text surrounded by single stars ( * ) with no space show italic text.
+
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

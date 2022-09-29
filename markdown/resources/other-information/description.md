@@ -5,7 +5,7 @@ RuDASA members can also check out our [Rural Onboarding](/portal) Section for an
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
     
-    Links are created with the following: [Link text that is displayed on the website](url)
-    
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
+
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

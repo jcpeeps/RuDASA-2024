@@ -12,5 +12,11 @@ A highlight of the conference is the gala Dinner and Award Ceremony in which doc
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
 
+    Do not change the "title:" title, or the ---. Only change the text inside ''
+
+    The hashtag ( # ) symbols followed by a space and then text show a heading. The more #s you have, the smaller/"less important" the heading. You can add up to 6 # but we suggest max 4 #. make sure each heading is on a separate line.
+
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
+
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

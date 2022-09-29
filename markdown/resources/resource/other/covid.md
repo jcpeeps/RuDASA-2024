@@ -4,7 +4,7 @@ title: 'COVID-19'
 ## Public Resources on COVID-19
 *If you would like more information about COVID-19, consider signing up for our [learning portal](/signUp)*
 
-## [Our COVID-19 Public Library](https://drive.google.com/drive/folders/14FCznn2D6BzzfZOcuoZ3e3B4rb8F5qFr)
+###### [Our COVID-19 Public Library](https://drive.google.com/drive/folders/14FCznn2D6BzzfZOcuoZ3e3B4rb8F5qFr)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
@@ -16,7 +16,7 @@ title: 'COVID-19'
 
     The text surrounded by single stars ( * ) with no spaces shows italic text. 
 
-    Links are created with the following: [Link text that is displayed on the website](url)
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

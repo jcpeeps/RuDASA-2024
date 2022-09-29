@@ -39,7 +39,7 @@ The Trade Union Task Team addresses conditions of service and remuneration of sa
 
     The text surrounded by double  stars ( ** ) with no spaces shows bold text. 
 
-    Links are created with the following: [Link text that is displayed on the website](url)
+    Links are created by putting the text you want to show in square brackets ( [] ) followed by the link in round brackets ( () ). For example, [RuReSA](https://ruresa.org.za/) will show as RuReSA and link to the RuReSA website.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->

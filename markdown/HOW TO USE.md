@@ -88,20 +88,12 @@ To link an image, write the text like this:
 ![Alternative text to the image](link/path to the image)
 For example: ![This is an image of a bird on unsplash](https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)
 
-### PDFs
-To link a **PDF on a page in resources**, copy the following text EXACTLY and only change what is indicated in [] (remove the [] when you change it). Please keep all PDFs in the folder called **pdfs** inside **public** to keep organized.  
-<object data="/pdfs/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/[FILE PATH TO YOUR PDF]">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
-    </embed>
-</object> 
+### PDFs  
+To link a **PDF on a page in resources**, write the following and change the text inside () to include a path to your pdf. Please keep all PDFs in the folder called **pdfs** inside **public** to keep organized.  
+[PDF Name](/pdfs/FILE PATH TO YOUR PDF)
 
-To link a **PDF on a page on the learning portal**, copy the following text EXACTLY and only change what is indicated in [] (remove the [] when you change it). Please keep all PDFs in the folder called **PORTAL** inside **pdfs** (inside public) to keep organized.  
-<object data="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
-    <embed src="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/PORTAL/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
-    </embed>
-</object> 
+To link a **PDF on a page on the learning portal**,write the following and change the text inside () to include a path to your pdf. Please keep all PDFs in the folder called **PORTAL** inside **pdfs** (inside public) to keep organized. 
+[PDF Name](/pdfs/PORTAL/FILE PATH TO YOUR PDF)
 
 ### Videos
 To link a youtube video, go onto youtube, right click on the video when watching it, and select **"Copy embed code"**, paste what you copied EXACTLY into the markdown file. All done!  

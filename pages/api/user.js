@@ -1,4 +1,4 @@
-import { withSessionRoute } from 'api/session'
+import { withSessionRoute } from './session'
 
 async function userRoute(req, res) {
   res.send({ user: req.session.user });

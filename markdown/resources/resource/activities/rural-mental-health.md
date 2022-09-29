@@ -2,11 +2,7 @@
 title: 'Rural Mental Health'
 ---
 **Rural Health Campaign Report (2015)**
-<object data="/pdfs/rural-mental-health/rural mental health campaign report 2015.pdf" width="100%" height="800px" type="application/pdf">
-    <embed src="/pdfs/rural-mental-health/rural mental health campaign report 2015.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/rural-mental-health/rural mental health campaign report 2015.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+[Rural Health Campaign Report (2015)](/public/pdfs/rural-mental-health/rural%20mental%20health%20campaign%20report%202015.pdf)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
@@ -17,12 +13,7 @@ title: 'Rural Mental Health'
     The text surrounded by double  stars ( ** ) with no spaces shows bold text. 
     
     PDF of a resorce page:
-
-    <object data="/pdfs/[FILE PATH TO YOUR PDF]" type="application/pdf" width="100%" height="800px">
-        <embed src="/pdfs/[FILE PATH TO YOUR PDF]">
-            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/pdfs/[FILE PATH TO YOUR PDF]">Download PDF</a>.</p>
-        </embed>
-    </object> 
+    [Resource Title](/pdfs/resource-page.pdf)
     
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
  -->
