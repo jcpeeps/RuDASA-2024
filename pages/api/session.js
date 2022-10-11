@@ -11,11 +11,13 @@ const sessionOptions = {
   },
 }
 
+//Use when you want to fetch the session content from the client after a page load
 export function withSessionRoute(handler)
 {
   return withIronSessionApiRoute(handler, sessionOptions);
 }
 
+//Use when you want to server-side render the session content
 export function withSessionSsr(handler)
 {
   return withIronSessionSsr(handler, sessionOptions);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '../components/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,12 +6,12 @@ import Illustration from '../media/svg/login.svg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from './api/useUser'
+import fetchJson from './api/fetchJson'
 
 export default function Login() {
-
-    const { user, mutateUser } = useUser({ 
+    const { mutateUser } = useUser({
     //Check if user is already logged in, if so redirect to profile page
-        redirectTo: '/profile',
+        redirectTo: '/portal',
         redirectIfFound: true
     });
 
@@ -24,40 +24,22 @@ export default function Login() {
             .required("Password is required")
     });
 
-    // Called when form submitted to pass data to the sheets.js API
+    // Called when form submitted
     const handleLogin = async (vals) => {
-
-        const payload = {
-            type: "login",
-            data: vals
-        }
-
         try
         {
-            const response = await fetch('/api/login', {
+            const response = await fetchJson('/api/login', {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify(payload)
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(vals) // vals: { email: "...", password: "..." }
             });
 
-            //Update session data
-            const content = await response.json();
-            // alert(JSON.stringify(content));
-            if(content.status === "error")
-            {
-                alert(content.message);
-            }
-            else if(content.status === "success")
-            {
-                console.log(content); //TODO: Remove
-            }
-            mutateUser(content);
+            console.log(response);
+
+            mutateUser(response);
 
         } catch (error) {
-            alert("FATAL ERROR\n" + error.data.message); //TODO: Replace
+            console.error("FATAL ERROR\n" + error.data.message);
         }
     }
 
@@ -75,14 +57,12 @@ export default function Login() {
 
                         {/* FORM STARTS HERE */}
                         <Formik
-                            initialValues={{ email: "ronald@gmail.com", password: "Password1!" }}
+                            initialValues={{ email: "ronald@gmail.com", password: "Password1!" }} //TODO: Change defaults
                             validationSchema={LoginSchema}
 
                             onSubmit={async (values, { setSubmitting }) => {
-                                alert("DEBUG OUTPUT:\n" + JSON.stringify(values));
                                 await handleLogin(values); //LOGIN API CALLING ROUTE
                                 setSubmitting(false);
-                                alert("USER: " + JSON.stringify(user));
                             }}
                         >
 

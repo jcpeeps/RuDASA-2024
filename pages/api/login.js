@@ -1,20 +1,46 @@
 import { withSessionRoute } from './session'
 
 async function loginRoute(req, res) {
-    //TODO: Get user data from sheets.js
+    const data = await req.body;
+    //data: { email: "...", password: "..." }
+
+    console.log("GOT DATA IN LOGIN.JS:\n" + JSON.stringify(data));
+    
+    //TODO: Perform auth via sheets.js
+    const sheetsPayload = {
+        type: "login",
+        ...data
+    }
+
+    const resp = fetch('./sheets', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(sheetsPayload)
+    }).then(resp => resp.json());
+
+    console.log(resp);
 
     //===== WHERE WE SAVE SESSION DATA =====//
-    const data = await req.body;
-    console.log(JSON.stringify(data));
+    try {
+        //Update session
+        const sessionUser = {
+            status: "success",
+            email: data.email,
+            isLoggedIn: true
+        }
 
-    req.session.user = {
-        status: "success",
-        username: "_" + data.username + "_"
+        //Save user session
+        req.session.user = sessionUser;
+        await req.session.save();
+
+        res.json(sessionUser); //IMPORTANT
+
+    } catch (error) {
+        res.json({
+            status: "failed",
+            isLoggedIn: false
+        });
     }
-    
-    await req.session.save();
-
-    res.send({ ok: true });
 }
 
 export default withSessionRoute(loginRoute);

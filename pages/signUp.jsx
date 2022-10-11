@@ -11,8 +11,14 @@ import Benefits from '../components/signup-login/Benefits'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import useUser from './api/useUser'
 
 export default function SignUp({ data }) {
+    const { mutateUser } = useUser({
+    //Check if user is already logged in, if so redirect to profile page
+        redirectTo: '/portal',
+        redirectIfFound: true
+    });
 
     // Object that stores information across all components
     const [formData, setFormData] = useState({

@@ -9,8 +9,14 @@ import Illustration from '../media/svg/portal.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useInView } from 'react-intersection-observer';
+import useUser from './api/useUser'
 
 export default function Portal({ resources, overview }) {
+    const { user } = useUser({ 
+        redirectTo: '/login',
+        redirectIfFound: false
+    });
+
 	const [visible, setVisible] = useState(false)
 
 	const { ref, inView } = useInView({
@@ -28,7 +34,7 @@ export default function Portal({ resources, overview }) {
 			</div>
 			<div className="py-5 mb-5"></div>
 			<div className="container">
-				<h4 className="fw-bold display-6 text-primary mt-5">Rural Onboarding</h4>
+				<h4 className="fw-bold display-6 text-primary mt-5">Rural Onboarding {user?.email}</h4>
 				<ResourceGroups resources={resources} />
 			</div>
 

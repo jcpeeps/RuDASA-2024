@@ -1,8 +1,6 @@
 import { google } from "googleapis";
-import generateApiKey from "generate-api-key";
-import requestIp from 'request-ip';
-// import { useSession } from 'next-auth/react';
-import { withSessionRoute } from './session'
+// import requestIp from 'request-ip';
+// import generateApiKey from "generate-api-key";
 const bcrypt = require("bcrypt");
 
 /* Request format:
@@ -43,7 +41,7 @@ const bcrypt = require("bcrypt");
   }
 */
 
-async function handler(req, res)
+export default async function handler(req, res)
 {
     if(req.method !== "POST") //Invalid request
     {
@@ -70,11 +68,7 @@ async function handler(req, res)
                 client_email: process.env.GOOGLE_CLIENT_EMAIL,
                 private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n")
             },
-            scopes: [
-                // "https://www.googleapis.com/auth/drive",
-                // "https://www.googleapis.com/auth/drive.file",
-                "https://www.googleapis.com/auth/spreadsheets"
-            ]
+            scopes: [ "https://www.googleapis.com/auth/spreadsheets" ]
         });
 
         const sheets = google.sheets({
@@ -84,7 +78,6 @@ async function handler(req, res)
 
         const SALT_ROUNDS = 10; //Exponential, number of rounds to use when generating salts
         const APIKEY_GEN_CONFIG = { method: "string", length: 32 };
-        const clientIp = requestIp.getClientIp(req);
 
 
         //===== DETERMINE + HANDLE REQUEST TYPE =====
@@ -101,6 +94,7 @@ async function handler(req, res)
                 });
         }
 
+        //DEPRECATED: Left here for extensibility later on
         async function validateApiKey(email, ip, key) {
             bcrypt.genSalt(SALT_ROUNDS, async (err, salt) => {
                 bcrypt.hash((key + process.env.PEPPER), salt, async (err, apiKeyHash) => {
@@ -175,26 +169,6 @@ async function handler(req, res)
             //result:
             //  $2b$10$asdf...    -> if success
             //  null              -> if not found
-        }
-
-        //Creates a new user log in session, and returns the temporary apiKey
-        async function createUserSession(req, email) {
-            const apiKey = generateApiKey(APIKEY_GEN_CONFIG);
-            const newSession = {
-                email: email,
-                ip: clientIp,
-                apiKey: apiKey,
-                timestamp: Date.now()
-            }
-            console.log("USER ADDED TO SESSION:\n" + JSON.stringify(newSession));
-            // loginSessions.push(newSession); //Old system, to be removed
-
-            return apiKey;
-        }
-        async function removeUserSession(email) {
-            loginSessions = loginSessions.filter(sess => {
-                return sess.email === email;
-            });
         }
 
         //====== HANDLE LOGIN =====
@@ -354,5 +328,3 @@ async function handler(req, res)
         });
     }
 }
-
-export default withSessionRoute(handler);

@@ -2,24 +2,43 @@ import React, { useState, useEffect } from 'react';
 import { Nav, Button, Navbar } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import useUser from '../pages/api/useUser';
+import fetchJson from '../pages/api/fetchJson';
 
 export default function Navigation() {
 
+    const { user, mutateUser } = useUser();
     const router = useRouter();
 
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+        
+    //Called when the logout button is pressed
+    const handleLogout = async () => {
+        try
+        {
+            const response = await fetchJson('/api/logout', { method: "POST" });
 
-    //TODO: Show logged in status
-    // const { user, mutateUser } = useUser();
+            mutateUser(response);
+
+        } catch (error) {
+            console.error("FATAL ERROR\n" + error.data.message);
+        }
+    }
 
     function getLoginTitle()
     {
-        // if (status === "authenticated")
-        // {
-        //     return "Logged in"; //TODO: Replace with username
-        // }
-        return "Learning Portal";
+        if(user?.isLoggedIn)
+        {
+            return <>
+                Learning Portal
+                <br/>
+                ( {user.email} )
+            </>;
+        }
+        else
+        {
+            return "Learning Portal";
+        }
     }
 
     function debounce(func, wait, immediate) {
@@ -65,11 +84,23 @@ export default function Navigation() {
                     <Nav.Link className={router.pathname == "/articles" ? "active" : ""} href="/articles">Articles</Nav.Link>
                     <Nav.Link className={router.pathname == "/resources" ? "active" : ""} href="/resources">Resources</Nav.Link>
                     <Nav.Link className={router.pathname == "/contact" ? "active" : ""} href="/contact">Contact Us</Nav.Link>
-                    <Nav.Link href="/login">
+                    <Nav.Link href={(user?.isLoggedIn)?"/portal":"/login"}>
                         <div className="hover-button">
                             <Button className="nav-link p-3 text-white gradient-background shadow">{ getLoginTitle() }</Button>
                         </div>
                     </Nav.Link>
+
+                    { //Show logout button when
+                        (user?.isLoggedIn)?
+                        (
+                            <Nav.Link href="/api/logout" onClick={
+                                async (e) => {
+                                    e.preventDefault();
+                                    handleLogout();
+                                }
+                            }> Log out </Nav.Link>
+                        ):""
+                    }
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

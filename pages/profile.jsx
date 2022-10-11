@@ -1,88 +1,26 @@
 import useUser from './api/useUser'
+import useEvents from './api/useCheckLogin'
 import Layout from '../components/Layout'
-import Router from 'next/router';
 
 export default function Profile() {
-    //TODO: Redirect to login if user does not exist
-
     // Fetch the user session client-side
-    const { user, mutateUser } = useUser({ 
+    const { user } = useUser({ 
         redirectTo: '/login',
-        redirectIfFound: true
+        redirectIfFound: false
     });
 
     let isLoading = false;
     // Server-render loading state
     if (!user || user.isLoggedIn === false) {
-        // Router.push('/login');
         isLoading = true;
     }
 
     // Once the user request finishes, show the user
     return (
         <Layout>
-        <br/><br/><br/><br/><br/><br/><br/>
-        <h1>{isLoading?"Loading":"Your Profile"}</h1>
-        <p>{JSON.stringify(user, null, 2)}</p>
-
-        <form
-          onSubmit={
-            //=============================================================================
-            async function handleSubmit(event) {
-                event.preventDefault()
-
-                try {
-                    //SEND DATA TO API (Creates session cookie)
-                    mutateUser({asdf: "aasdf"});
-
-                    let resp = await fetch('/api/user', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({username: event.currentTarget.username.value, password: "PASSWORD"}),
-                    });
-
-                    alert("RESP:" + JSON.stringify(resp) + "\n\n" +
-                    "USER: " + JSON.stringify(user, null, 2)); //GET USER SESSION
-
-                //=============================================================================
-                } catch (error) {
-                    console.error('An unexpected error happened:', error);
-                }
-            }
-          }>
-
-      <label>
-        <span>Type your GitHub username</span>
-        <input type="text" name="username" required />
-      </label>
-
-      <button type="submit">Login</button>
-
-      <style jsx>{`
-        form,
-        label {
-          display: flex;
-          flex-flow: column;
-          padding-bottom: 30px;
-          max-width: 200px;
-          margin: auto;
-        }
-        label > span {
-          font-weight: 600;
-        }
-        input {
-          padding: 8px;
-          margin: 0.3rem 0 1rem;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          padding-bottom: 30px;
-        }
-        .error {
-          color: brown;
-          margin: 1rem 0 0;
-        }
-      `}</style>
-    </form>
+          <br/><br/><br/><br/><br/><br/><br/>
+          <h1>{ isLoading?"Loading":"Your Profile" }</h1>
+          <code>USER: { JSON.stringify(user, null, 2) }</code>
         </Layout>
     )
 }
