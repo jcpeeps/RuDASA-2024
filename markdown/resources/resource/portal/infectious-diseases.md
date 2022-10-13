@@ -57,7 +57,7 @@ Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
-* The South African Antibiotic Stewardship Programme (SAASP) : Become an antiobiotic guardian
+The South African Antibiotic Stewardship Programme (SAASP) : Become an antiobiotic guardian\
 [Click Here](https://www.samedical.org/file/946) - and download the app to ensure prudent use of antibiotics.
 [Download Here](https://play.google.com/store/apps/details?id=org.appenberg.saasp&;hl=en_ZA&;gl=US)
 <!--
