@@ -6,7 +6,7 @@ import Illustration from '../media/svg/login.svg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from './api/useUser'
-import fetchJson from './api/fetchJson'
+import fetchJson from '../lib/fetchJson'
 
 export default function Login() {
     const { mutateUser } = useUser({

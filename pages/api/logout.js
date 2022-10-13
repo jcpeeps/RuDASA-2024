@@ -1,4 +1,4 @@
-import { withSessionRoute } from './session'
+import { withSessionRoute } from '../../lib/session'
 
 function logoutRoute(req, res)
 {

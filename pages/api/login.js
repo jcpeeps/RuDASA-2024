@@ -1,4 +1,4 @@
-import { withSessionRoute } from './session'
+import { withSessionRoute } from '../../lib/session'
 
 async function loginRoute(req, res) {
     const data = await req.body;
@@ -12,13 +12,14 @@ async function loginRoute(req, res) {
         ...data
     }
 
-    const resp = fetch('./sheets', {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(sheetsPayload)
-    }).then(resp => resp.json());
+    // const resp = await fetch('/api/sheets', {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(sheetsPayload)
+    // });
 
-    console.log(resp);
+    // console.log("TEST");
+    // console.log(JSON.stringify(resp));
 
     //===== WHERE WE SAVE SESSION DATA =====//
     try {

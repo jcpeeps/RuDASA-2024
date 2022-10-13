@@ -1,4 +1,4 @@
-import { withSessionRoute } from './session'
+import { withSessionRoute } from '../../lib/session'
 
 async function userRoute(req, res) {
   if (req.session.user)

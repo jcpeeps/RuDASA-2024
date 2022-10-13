@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import '../styles/bootstrap.css'
 import { SWRConfig } from 'swr'
-import fetchJson from './api/fetchJson'
+import fetchJson from '../lib/fetchJson'
 
 function MyApp({ Component, pageProps }) {
   return (

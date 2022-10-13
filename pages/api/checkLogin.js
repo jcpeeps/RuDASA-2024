@@ -1,4 +1,4 @@
-import { withSessionRoute } from './session'
+import { withSessionRoute } from '../../lib/session'
 
 async function isLoggedIn(req, res)
 {

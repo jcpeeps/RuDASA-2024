@@ -49,7 +49,6 @@ export default function SignUp({ data }) {
 
     // Called when form submitted to pass data to the sheets.js API
     const handleSignup = async (vals) => {
-
         const payload = {
             type: "signup",
             data: vals

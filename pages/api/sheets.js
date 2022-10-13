@@ -162,7 +162,7 @@ export default async function handler(req, res)
 
         //Gets the password hash for a specified user, null if not found
         async function getUserPassHash(email) {
-            //TODO: Look into sorting sheet by email for faster lookup
+            //TODO: Look into sorting sheet by email for faster lookup [https://stackoverflow.com/a/64080877]
             const q = "=IFNA(VLOOKUP(?, Users!A2:B, 2, false), \"!~FAIL~!\")";
             let result = await query(q, [email], "B");
             return (result=="!~FAIL~!"?null:result);

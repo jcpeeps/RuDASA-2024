@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Nav, Button, Navbar } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import useUser from '../pages/api/useUser';
-import fetchJson from '../pages/api/fetchJson';
+import fetchJson from '../lib/fetchJson';
 
 export default function Navigation() {
 
