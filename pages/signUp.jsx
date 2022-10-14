@@ -109,7 +109,7 @@ export default function SignUp({ data }) {
                                 <button className="btn btn-lg btn-secondary"
                                     disabled={step == 2} //This prevents the third component from being navigatible when not selected
                                     onClick={() => {
-                                        setStep((currStep) => currStep - 1);
+                                        setStep((currStep) => currStep + 1);
                                     }}
                                 >
                                     Next
@@ -136,14 +136,6 @@ export default function SignUp({ data }) {
                                         }}
                                     >
                                         Next
-                                    </button>
-                                </div>
-                                <div className={`hover-button ${submitShow ? "" : "d-none"
-                                    }`}>
-                                    <button className="btn btn-lg btn-secondary"
-                                        type="submit"
-                                    >
-                                        login
                                     </button>
                                 </div>
                             </div>
