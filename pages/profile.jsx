@@ -1,12 +1,16 @@
+//This page can be used for debugging user session data
+//or optionally extended to show a users profile information
+//(though functionality to edit profile data will need to be added through sheets.js)
+
 import useUser from './api/useUser'
 import useEvents from './api/useCheckLogin'
 import Layout from '../components/Layout'
 
 export default function Profile() {
     // Fetch the user session client-side
-    const { user } = useUser({ 
+    const { user } = useUser({
         redirectTo: '/login',
-        redirectIfFound: false
+        redirectIfFound: false //Set to true to prevent instant redirect when not signed in
     });
 
     let isLoading = false;
@@ -15,7 +19,7 @@ export default function Profile() {
         isLoading = true;
     }
 
-    // Once the user request finishes, show the user
+    // Once the user request finishes, show the user session object as JSON
     return (
         <Layout>
           <br/><br/><br/><br/><br/><br/><br/>

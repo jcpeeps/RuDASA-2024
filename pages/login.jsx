@@ -7,6 +7,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from './api/useUser'
 import fetchJson from '../lib/fetchJson'
+import { faBriefcaseClock } from '@fortawesome/free-solid-svg-icons';
 
 export default function Login() {
     const { mutateUser } = useUser({
@@ -34,12 +35,25 @@ export default function Login() {
                 body: JSON.stringify(vals) // vals: { email: "...", password: "..." }
             });
 
-            console.log(response);
+            if(response.status == "failed" && ("code" in response))
+            {
+                switch(response.code)
+                {
+                    case "invalidUser":
+                        alert("A user with that email does not exist.");
+                        break;
+
+                    case "invalidPass":
+                        alert("Incorrect password."); //TODO: Replace with neat UI message
+                        break;
+                }
+            }
+            // console.log(response); //DEBUG: Logs user session on client side
 
             mutateUser(response);
 
         } catch (error) {
-            console.error("FATAL ERROR\n" + error.data.message);
+            console.error("FATAL ERROR\n" + error);
         }
     }
 

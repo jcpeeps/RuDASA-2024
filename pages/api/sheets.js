@@ -1,6 +1,9 @@
+//This is the main API endpoint for handling user authentication and signup:
+// - Interfaces with Google Sheets to record user information on signup.
+// - Checks the Google Sheets 'Users' worksheet to verify whether a user
+//   is registered or not.
+
 import { google } from "googleapis";
-// import requestIp from 'request-ip';
-// import generateApiKey from "generate-api-key";
 const bcrypt = require("bcrypt");
 
 /* Request format:
@@ -18,25 +21,17 @@ const bcrypt = require("bcrypt");
      "type": "signup",
      "data": {
          "email": "email@email.com",
-         "password": "password1"
+         "password": "password1",
+         "fullName": "Some Full Name",
      }
- }
-
- Logout:
- {
-    "type": "logout",
-    "data": {
-        "email": "email@email.com",
-        "apiKey": "a1b2c3d4e5f6g7h8i9j0"
-    }
  }
 */
 /* Response format:
   {
     "status": "success",
     "data": {
-        "email": "yourEmail@email.com"
-        "apiKey": "yourApiKeyHere"
+        "email": "yourEmail@email.com",
+        "fullName": "Some Full Name"
     }
   }
 */
@@ -53,6 +48,8 @@ export default async function handler(req, res)
     }
 
     try {
+        console.log("RECEIVED IN SHEETS.JS:");
+        console.log(req.body);
 
         if(!("type" in req.body)) { //Invalid request
             return res.status(400).json({
@@ -77,7 +74,7 @@ export default async function handler(req, res)
         });
 
         const SALT_ROUNDS = 10; //Exponential, number of rounds to use when generating salts
-        const APIKEY_GEN_CONFIG = { method: "string", length: 32 };
+        // const APIKEY_GEN_CONFIG = { method: "string", length: 32 };
 
 
         //===== DETERMINE + HANDLE REQUEST TYPE =====
@@ -115,7 +112,7 @@ export default async function handler(req, res)
         //  q:      "=IF(ISERROR(MATCH(?,Users!A1:A,0)),FALSE, TRUE)"
         //  fields: ["email@email.com"]
         //  row:    "A" //Where to append the query
-        async function query(q, fields, row) {
+        async function query(q, fields, row) { //IMPORTANT
 
             for (let field of fields)
             {
@@ -193,7 +190,7 @@ export default async function handler(req, res)
                         status: "success",
                         code: "loginSuccess",
                         message: "Login successful",
-                        data: { apiKey: await createUserSession(data.email) }
+                        data: {}
                     });
                 }
                 else if(validPass == "invalidPass") {
@@ -276,19 +273,28 @@ export default async function handler(req, res)
                             data.signUpReason,
                             data.cellNo,
                             data.workNo,
+
                             data.country,
                             data.province,
                             data.address1,
                             data.address2,
                             data.address3,
                             data.workPlace,
-                            data.district
+                            data.district,
+
+                            clubName,
+                            uniName,
+                            externalSupport,
+                            contactName,
+                            contactRole,
+                            contactNo,
+                            supportName
                         ];
 
                         const response = await sheets.spreadsheets.values.append({
                             spreadsheetId: process.env.GOOGLE_SHEET_ID,
                             range: "Users!A2:B2", //First row is the attribute titles
-                            valueInputOption: "RAW",
+                            valueInputOption: "RAW", //Ensure the data does not get misinterpreted as formulae or anything else
                             requestBody: { values: [ newRowData ] }
                         });
 
@@ -297,9 +303,7 @@ export default async function handler(req, res)
                             status: "success",
                             code: "signupSuccess",
                             message: "User successfully added to the database",
-                            data: {
-                                apiKey: await createUserSession(req, data.email)
-                            }
+                            data: {}
                         });
                     });
                 });

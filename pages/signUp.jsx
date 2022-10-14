@@ -20,7 +20,7 @@ export default function SignUp({ data }) {
         redirectIfFound: true
     });
 
-    // Object that stores information across all components
+    // Object that stores information across all components/stages of the form
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
@@ -49,22 +49,22 @@ export default function SignUp({ data }) {
 
     // Called when form submitted to pass data to the sheets.js API
     const handleSignup = async (vals) => {
-        const payload = {
-            type: "signup",
-            data: vals
-        }
+        // const payload = {
+        //     type: "signup",
+        //     data: vals
+        // }
 
-        const response = await fetch('/api/sheets', {
-            method: "POST",
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(payload)
-        });
-        const content = await response.json();
+        // const response = await fetch('/api/sheets', {
+        //     method: "POST",
+        //     headers: {
+        //         "Accept": "application/json",
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify(payload)
+        // });
+        // const content = await response.json();
 
-        console.log(content);
+        // console.log(content);
     }
 
     const [step, setStep] = useState(0);
