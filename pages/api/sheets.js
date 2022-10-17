@@ -282,13 +282,13 @@ export default async function handler(req, res)
                             data.workPlace,
                             data.district,
 
-                            clubName,
-                            uniName,
-                            externalSupport,
-                            contactName,
-                            contactRole,
-                            contactNo,
-                            supportName
+                            data.clubName,
+                            data.uniName,
+                            data.externalSupport,
+                            data.contactName,
+                            data.contactRole,
+                            data.contactNo,
+                            data.supportName
                         ];
 
                         const response = await sheets.spreadsheets.values.append({

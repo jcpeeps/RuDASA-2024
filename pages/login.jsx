@@ -26,7 +26,7 @@ export default function Login() {
     });
 
     // Called when form submitted
-    const handleLogin = async (vals) => {
+    const handleLogin = async (setFieldError, vals) => {
         try
         {
             const response = await fetchJson('/api/login', {
@@ -40,11 +40,11 @@ export default function Login() {
                 switch(response.code)
                 {
                     case "invalidUser":
-                        alert("A user with that email does not exist.");
+                        setFieldError("email", "A user with that email does not exist.");
                         break;
 
                     case "invalidPass":
-                        alert("Incorrect password."); //TODO: Replace with neat UI message
+                        setFieldError("password", "Incorrect password");
                         break;
                 }
             }
@@ -74,8 +74,8 @@ export default function Login() {
                             initialValues={{ email: "ronald@gmail.com", password: "Password1!" }} //TODO: Change defaults
                             validationSchema={LoginSchema}
 
-                            onSubmit={async (values, { setSubmitting }) => {
-                                await handleLogin(values); //LOGIN API CALLING ROUTE
+                            onSubmit={async (values, { setFieldError, setSubmitting }) => {
+                                await handleLogin(setFieldError, values); //LOGIN API CALLING ROUTE
                                 setSubmitting(false);
                             }}
                         >
