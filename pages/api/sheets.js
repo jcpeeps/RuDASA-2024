@@ -314,7 +314,7 @@ export default async function handler(req, res)
             return res.status(400).json({
                 status: "error",
                 code: "invalidSignup",
-                message: "Invalid signup request, not all required fields were provided or some were empty",
+                message: "Invalid signup, some required fields were empty",
                 data: {}
             });
         }
@@ -329,7 +329,8 @@ export default async function handler(req, res)
         return res.status(500).send({
             status: "error",
             code: "servErr",
-            message: e.message ?? "Internal Server Error"
+            message: e.message ?? "Internal Server Error",
+            data: {}
         });
     }
 }

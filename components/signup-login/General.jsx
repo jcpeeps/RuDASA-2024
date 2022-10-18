@@ -2,7 +2,7 @@ import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-export default function General({ formData, setFormData }) {
+export default function General({ formData, setFormData, setFormSubmitErr }) {
 
     const GeneralSchema = Yup.object({
         fullName: Yup.string()
@@ -70,6 +70,7 @@ export default function General({ formData, setFormData }) {
                                 value={formData.email}
                                 onChange={ (e) => {
                                         setFormData({ ...formData, email: e.target.value });
+                                        setFormSubmitErr("");
                                         handleChange(e);
                                 }}
                             />

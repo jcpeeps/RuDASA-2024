@@ -47,6 +47,9 @@ export default function SignUp({ data }) {
         supportName: ""
     });
 
+    //Get/update the main signup form error box for when something goes wrong while submitting
+    const [formSubmitErr, setFormSubmitErr] = useState("");
+
     // Called when form submitted to pass data to the sheets.js API
     const handleSignup = async (vals) => {
         const payload = {
@@ -54,24 +57,62 @@ export default function SignUp({ data }) {
             data: vals
         }
 
-        const response = await fetch('/api/sheets', {
-            method: "POST",
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(payload)
-        });
-        const content = await response.json();
+        try {
+            const response = await fetch('/api/sheets', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
+            }).then(resp => resp.json());
 
-        console.log(content);
+            if(response.status == "error" && ("code" in response))
+            {
+                switch (response.code)
+                {
+                    case "emailTaken":
+                    case "invalidSignup":
+                        setFormSubmitErr(response.message);
+                        break;
+
+                    case "default":
+                        setFormSubmitErr("Something went wrong while trying to sign up. Please try again later.");
+                        break;
+                }
+            }
+            else //Sign-up successful, login
+            {
+                const loginVals = {
+                    email: vals.email,
+                    password: vals.password
+                }
+                const response = await fetchJson('/api/login', {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(loginVals)
+                });
+
+                if(response.status == "failed" && ("code" in response))
+                {
+                    setFormSubmitErr("Something went wrong while trying to log into your new account.\n" +
+                                     "Please login manually via the Learning Portal.");
+                }
+
+                mutateUser(response);
+            }
+
+            console.log(response);
+
+        } catch (error) {
+            console.error("FATAL ERROR\n" + error);
+        }
     }
 
     const [step, setStep] = useState(0);
 
     const stepDisplay = () => {
         switch (step) {
-            case 0: return <General formData={formData} setFormData={setFormData} />
+            case 0: return <General formData={formData} setFormData={setFormData} setFormSubmitErr={setFormSubmitErr} />
             case 1: return <Address formData={formData} setFormData={setFormData} />
             case 2: return <Club formData={formData} setFormData={setFormData} />
         }
@@ -121,25 +162,17 @@ export default function SignUp({ data }) {
                                 <button className="btn btn-lg btn-secondary"
                                     type="submit"
                                     onClick={() => {
-                                        alert("DEBUG OUTPUT:\n" + JSON.stringify(formData));
+                                        // alert("DEBUG OUTPUT:\n" + JSON.stringify(formData));
                                         handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
                                     }}
                                 >
                                     Sign up
                                 </button>
-                                <div className={`hover-button ${submitShow ? "d-none" : ""
-                                    }`}>
-                                    <button className="btn btn-lg btn-secondary"
-                                        disabled={step == 2} //This prevents the third component from being navigatible when not selected
-                                        onClick={() => {
-                                            setStep((currStep) => currStep + 1);
-                                        }}
-                                    >
-                                        Next
-                                    </button>
-                                </div>
                             </div>
                         </div>
+                        <p className="d-flex justify-content-end invalid-feedback">
+                            {formSubmitErr}
+                        </p>
                     </div>
                 </div>
                 <Benefits content={data.find(file => file.slug === "offers")} />
