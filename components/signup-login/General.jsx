@@ -21,7 +21,8 @@ export default function General({ formData, setFormData }) {
         cellNo: Yup.string()
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-                'Invalid phone number'),
+                'Invalid phone number')
+                .required("Cell no. is required"),
         workNo: Yup.string()
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
@@ -33,7 +34,7 @@ export default function General({ formData, setFormData }) {
             initialValues={{ fullName: "", email: "", password: "", cellNo: "", workNo: "" }}
             validationSchema={GeneralSchema}
         >
-            {({ touched, errors }) => (
+            {({ touched, errors, handleChange }) => (
                 <Form className="px-3 px-md-0">
                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
@@ -46,7 +47,10 @@ export default function General({ formData, setFormData }) {
                                     touched.fullName && errors.fullName ? "is-invalid" : ""
                                 }`}
                                 value={formData.fullName}
-                                onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, fullName: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -64,7 +68,10 @@ export default function General({ formData, setFormData }) {
                                     touched.email && errors.email ? "is-invalid" : ""
                                 }`} 
                                 value={formData.email}
-                                onChange={(e) => setFormData({ ...formData, email: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, email: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -84,7 +91,10 @@ export default function General({ formData, setFormData }) {
                                     touched.password && errors.password ? "is-invalid" : ""
                                 }`}  
                                 value={formData.password}
-                                onChange={(e) => setFormData({ ...formData, password: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, password: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -114,7 +124,10 @@ export default function General({ formData, setFormData }) {
                                     touched.cellNo && errors.cellNo ? "is-invalid" : ""
                                 }`} 
                                 value={formData.cellNo}
-                                onChange={(e) => setFormData({ ...formData, cellNo: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, cellNo: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -132,7 +145,10 @@ export default function General({ formData, setFormData }) {
                                     touched.workNo && errors.workNo ? "is-invalid" : ""
                                 }`}  
                                 value={formData.workNo}
-                                onChange={(e) => setFormData({ ...formData, workNo: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, workNo: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"

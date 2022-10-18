@@ -18,7 +18,7 @@ export default function Address({ formData, setFormData }) {
             initialValues={{ address: "", pow: "", district: "" }}
             validationSchema={AddressSchema}
         >
-            {({ touched, errors }) => (
+            {({ touched, errors, handleChange }) => (
                 <Form className="px-3 px-md-0">
                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
@@ -52,7 +52,11 @@ export default function Address({ formData, setFormData }) {
                                 className={`form-control border-0 border-bottom ${touched.address && errors.address ? "is-invalid" : ""
                                     }`}
                                 value={formData.address1}
-                                onChange={(e) => setFormData({ ...formData, address1: e.target.value })} />
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, address1: e.target.value });
+                                        handleChange(e);
+                                }}
+                                />
                             <ErrorMessage
                                 component="div"
                                 name="address"
@@ -60,10 +64,18 @@ export default function Address({ formData, setFormData }) {
                             />
                             <Field className="form-control border-0 border-bottom my-2" type="text" placeholder="Line 2"
                                 value={formData.address2}
-                                onChange={(e) => setFormData({ ...formData, address2: e.target.value })} />
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, address2: e.target.value });
+                                        handleChange(e);
+                                }}
+                                />
                             <Field className="form-control border-0 border-bottom" type="text" placeholder="Line 3"
                                 value={formData.address3}
-                                onChange={(e) => setFormData({ ...formData, address3: e.target.value })} />
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, address3: e.target.value });
+                                        handleChange(e);
+                                }}
+                                />
                         </div>
                         <div className="w-auto">
                             <div className="mb-4 form-group">
@@ -75,7 +87,10 @@ export default function Address({ formData, setFormData }) {
                                     className={`form-control border-0 border-bottom ${touched.pow && errors.pow ? "is-invalid" : ""
                                         }`}
                                     value={formData.workPlace}
-                                    onChange={(e) => setFormData({ ...formData, workPlace: e.target.value })}
+                                    onChange={ (e) => {
+                                            setFormData({ ...formData, workPlace: e.target.value });
+                                            handleChange(e);
+                                    }}
                                 />
                                 <ErrorMessage
                                     component="div"
@@ -93,7 +108,10 @@ export default function Address({ formData, setFormData }) {
                                         touched.district && errors.district ? "is-invalid" : ""
                                     }`} 
                                     value={formData.district}
-                                    onChange={(e) => setFormData({ ...formData, district: e.target.value })} 
+                                    onChange={ (e) => {
+                                            setFormData({ ...formData, district: e.target.value });
+                                            handleChange(e);
+                                    }}
                                 />
                                 <ErrorMessage
                                     component="div"

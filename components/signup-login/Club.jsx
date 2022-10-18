@@ -49,7 +49,7 @@ export default function Club({ formData, setFormData }) {
             initialValues={{ clubName: "", uniName: "", contactName: "", contactRole: "", contactNo: "", contactEmail: "", contactNo: "", supportName: "" }}
             validationSchema={ClubSchema}
         >
-            {({ touched, errors }) => (
+            {({ touched, errors, handleChange }) => (
                 <Form className="px-3 px-md-0">
                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
@@ -62,7 +62,10 @@ export default function Club({ formData, setFormData }) {
                                     touched.clubName && errors.clubName ? "is-invalid" : ""
                                 }`}
                                 value={formData.clubName}
-                                onChange={(e) => setFormData({ ...formData, clubName: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, clubName: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -77,7 +80,10 @@ export default function Club({ formData, setFormData }) {
                                     touched.uniName && errors.uniName ? "is-invalid" : ""
                                 }`}
                                 value={formData.uniName}
-                                onChange={(e) => setFormData({ ...formData, uniName: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, uniName: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -112,7 +118,10 @@ export default function Club({ formData, setFormData }) {
                                     touched.contactName && errors.contactName ? "is-invalid" : ""
                                 }`}  
                                 value={formData.contactName}
-                                onChange={(e) => setFormData({ ...formData, contactName: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, contactName: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -127,7 +136,10 @@ export default function Club({ formData, setFormData }) {
                                     touched.contactRole && errors.contactRole ? "is-invalid" : ""
                                 }`}  
                                 value={formData.contactRole}
-                                onChange={(e) => setFormData({ ...formData, contactRole: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, contactRole: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -142,7 +154,10 @@ export default function Club({ formData, setFormData }) {
                                     touched.contactNo && errors.contactNo ? "is-invalid" : ""
                                 }`}  
                                 value={formData.contactNo} 
-                                onChange={(e) => setFormData({ ...formData, contactNo: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, contactNo: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -157,7 +172,10 @@ export default function Club({ formData, setFormData }) {
                                     touched.contactEmail && errors.contactEmail ? "is-invalid" : ""
                                 }`}  
                                 value={formData.contactEmail} 
-                                onChange={(e) => setFormData({ ...formData, contactEmail: e.target.value })}    
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, contactEmail: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"
@@ -175,7 +193,10 @@ export default function Club({ formData, setFormData }) {
                                     touched.supportName && errors.supportName ? "is-invalid" : ""
                                 }`} 
                                 value={formData.supportName}
-                                onChange={(e) => setFormData({ ...formData, supportName: e.target.value })} 
+                                onChange={ (e) => {
+                                        setFormData({ ...formData, supportName: e.target.value });
+                                        handleChange(e);
+                                }}
                             />
                             <ErrorMessage
                                 component="div"

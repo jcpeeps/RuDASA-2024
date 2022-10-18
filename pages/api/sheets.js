@@ -23,6 +23,7 @@ const bcrypt = require("bcrypt");
          "email": "email@email.com",
          "password": "password1",
          "fullName": "Some Full Name",
+         ...
      }
  }
 */
