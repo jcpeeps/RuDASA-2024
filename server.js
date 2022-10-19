@@ -3,7 +3,7 @@ const { parse } = require('url')
 const next = require('next')
 
 const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'localhost'
+const hostname = 'rudasa.org.za'
 const port = process.env.PORT || 3000
 
 const app = next({ dev, hostname, port })
@@ -15,10 +15,10 @@ app.prepare().then(() => {
       const parsedUrl = parse(req.url, true)
       const { pathname, query } = parsedUrl
 
-      if (pathname === '/a') {
-        await app.render(req, res, '/a', query)
-      } else if (pathname === '/b') {
-        await app.render(req, res, '/b', query)
+      if (pathname === '/') {
+        await app.render(req, res, '/', query)
+    //   } else if (pathname === '/b') {
+        // await app.render(req, res, '/b', query)
       } else {
         await handle(req, res, parsedUrl)
       }
