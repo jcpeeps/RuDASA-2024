@@ -3,7 +3,6 @@
 //(though functionality to edit profile data will need to be added through sheets.js)
 
 import useUser from './api/useUser'
-import useEvents from './api/useCheckLogin'
 import Layout from '../components/Layout'
 
 export default function Profile() {

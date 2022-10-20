@@ -71,7 +71,7 @@ export default function Login() {
 
                         {/* FORM STARTS HERE */}
                         <Formik
-                            initialValues={{ email: "ronald@gmail.com", password: "Password1!" }} //TODO: Change defaults
+                            initialValues={{ email: "", password: "" }}
                             validationSchema={LoginSchema}
 
                             onSubmit={async (values, { setFieldError, setSubmitting }) => {
