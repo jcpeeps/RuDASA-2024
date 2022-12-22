@@ -19,8 +19,7 @@ export default function SignUp({ data }) {
         redirectIfFound: true
     });
 
-    // Object that stores information across all components/stages of the form
-    const [formData, setFormData] = useState({
+    const initVals = {
         fullName: "",
         email: "",
         password: "",
@@ -44,7 +43,10 @@ export default function SignUp({ data }) {
         contactNo: "",
         contactEmail: "",
         supportName: ""
-    });
+    };
+
+    // Object that stores information across all components/stages of the form
+    const [formData, setFormData] = useState({... initVals});
 
     //Get/update the main signup form error box for when something goes wrong while submitting
     const [formSubmitErr, setFormSubmitErr] = useState("");
@@ -56,6 +58,8 @@ export default function SignUp({ data }) {
             type: "signup",
             data: vals
         }
+
+        //TODO: Check data is valid before sending to sheets.js
 
         try {
             const response = await fetch('/api/sheets', {
@@ -70,10 +74,10 @@ export default function SignUp({ data }) {
                 switch (response.code) {
                     case "emailTaken":
                     case "invalidSignup":
-                        setFormSubmitErr(response.message);
+                        setFormSubmitErr(response.message); //Messages are set in sheets.js
                         break;
 
-                    case "default":
+                    default:
                         setFormSubmitErr("Something went wrong while trying to sign up. Please try again later.");
                         break;
                 }
@@ -109,7 +113,8 @@ export default function SignUp({ data }) {
     if (step == 2 || (step == 1 && formData.signUpReason !== "rhc"))
         submitShow = true;
 
-    const Schema = Yup.object({
+    //The validation schema that checks input is correct on the client side
+    const Schema = Yup.object().shape({
         fullName: Yup.string()
             .matches(
                 /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
@@ -188,12 +193,15 @@ export default function SignUp({ data }) {
                         <ProgressBar step={step} thirdStep={formData.signUpReason === "rhc"} />
                         <div className="w-auto">
                             <Formik
-                                initialValues={{ fullName: "", email: "", password: "", cellNo: "", workNo: "", address: "", pow: "", district: "", clubName: "", uniName: "", contactName: "", contactRole: "", contactNo: "", contactEmail: "", contactNo: "", supportName: "" }}
+                                initialValues={{... initVals}}
                                 validationSchema={Schema}
+                                onSubmit={(values) => {}}
                             >
-                                {({ errors, touched }) => (
+                                {({ errors, touched, handleChange }) => (
                                     <Form className="px-3 px-md-0">
-                                        {step == 0 ?
+                                        {
+                                        //========== FORM STEP 0 ===========//
+                                        step == 0 ?
                                             <div>
                                                 <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                     <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
@@ -202,11 +210,11 @@ export default function SignUp({ data }) {
                                                             type="text"
                                                             name="fullName"
                                                             placeholder="Name"
-                                                            className={`form-control border-0 border-bottom ${touched.fullName && errors.fullName ? "is-invalid" : ""
-                                                                }`}
+                                                            className={`form-control border-0 border-bottom ${touched.fullName && errors.fullName ? "is-invalid" : ""}`}
                                                             value={formData.fullName}
                                                             onChange={(e) => {
                                                                 setFormData({ ...formData, fullName: e.target.value });
+                                                                touched.fullName = false;
                                                                 handleChange(e);
                                                             }}
                                                         />
@@ -222,8 +230,7 @@ export default function SignUp({ data }) {
                                                             type="email"
                                                             name="email"
                                                             placeholder="Email"
-                                                            className={`form-control border-0 border-bottom ${touched.email && errors.email ? "is-invalid" : ""
-                                                                }`}
+                                                            className={`form-control border-0 border-bottom ${touched.email && errors.email ? "is-invalid" : ""}`}
                                                             value={formData.email}
                                                             onChange={(e) => {
                                                                 setFormData({ ...formData, email: e.target.value });
@@ -245,8 +252,7 @@ export default function SignUp({ data }) {
                                                             type="password"
                                                             name="password"
                                                             placeholder="Password"
-                                                            className={`form-control border-0 border-bottom ${touched.password && errors.password ? "is-invalid" : ""
-                                                                }`}
+                                                            className={`form-control border-0 border-bottom ${touched.password && errors.password ? "is-invalid" : ""}`}
                                                             value={formData.password}
                                                             onChange={(e) => {
                                                                 setFormData({ ...formData, password: e.target.value });
@@ -277,8 +283,7 @@ export default function SignUp({ data }) {
                                                             type="tel"
                                                             name="cellNo"
                                                             placeholder="Number"
-                                                            className={`form-control border-0 border-bottom ${touched.cellNo && errors.cellNo ? "is-invalid" : ""
-                                                                }`}
+                                                            className={`form-control border-0 border-bottom ${touched.cellNo && errors.cellNo ? "is-invalid" : ""}`}
                                                             value={formData.cellNo}
                                                             onChange={(e) => {
                                                                 setFormData({ ...formData, cellNo: e.target.value });
@@ -297,8 +302,7 @@ export default function SignUp({ data }) {
                                                             type="tel"
                                                             name="workNo"
                                                             placeholder="Number"
-                                                            className={`form-control border-0 border-bottom ${touched.workNo && errors.workNo ? "is-invalid" : ""
-                                                                }`}
+                                                            className={`form-control border-0 border-bottom ${touched.workNo && errors.workNo ? "is-invalid" : ""}`}
                                                             value={formData.workNo}
                                                             onChange={(e) => {
                                                                 setFormData({ ...formData, workNo: e.target.value });
@@ -313,6 +317,7 @@ export default function SignUp({ data }) {
                                                     </div>
                                                 </div>
                                             </div>
+                                            //========== FORM STEP 1 ===========//
                                             : step == 1 ?
                                                 <div>
                                                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
@@ -344,8 +349,7 @@ export default function SignUp({ data }) {
                                                                 type="text"
                                                                 name="address"
                                                                 placeholder="Line 1"
-                                                                className={`form-control border-0 border-bottom ${touched.address && errors.address ? "is-invalid" : ""
-                                                                    }`}
+                                                                className={`form-control border-0 border-bottom ${touched.address && errors.address ? "is-invalid" : ""}`}
                                                                 value={formData.address1}
                                                                 onChange={(e) => {
                                                                     setFormData({ ...formData, address1: e.target.value });
@@ -379,8 +383,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="pow"
                                                                     placeholder="Work name"
-                                                                    className={`form-control border-0 border-bottom ${touched.pow && errors.pow ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.pow && errors.pow ? "is-invalid" : ""}`}
                                                                     value={formData.workPlace}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, workPlace: e.target.value });
@@ -399,8 +402,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="district"
                                                                     placeholder="District name"
-                                                                    className={`form-control border-0 border-bottom ${touched.district && errors.district ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.district && errors.district ? "is-invalid" : ""}`}
                                                                     value={formData.district}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, district: e.target.value });
@@ -416,6 +418,7 @@ export default function SignUp({ data }) {
                                                         </div>
                                                     </div>
                                                 </div>
+                                                //========== FORM STEP 2 ===========//
                                                 : step == 2 ?
                                                     <div>
                                                         <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
@@ -425,8 +428,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="clubName"
                                                                     placeholder="Student club name"
-                                                                    className={`form-control border-0 border-bottom ${touched.clubName && errors.clubName ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.clubName && errors.clubName ? "is-invalid" : ""}`}
                                                                     value={formData.clubName}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, clubName: e.target.value });
@@ -442,8 +444,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="uniName"
                                                                     placeholder="University name"
-                                                                    className={`form-control border-0 border-bottom ${touched.uniName && errors.uniName ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.uniName && errors.uniName ? "is-invalid" : ""}`}
                                                                     value={formData.uniName}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, uniName: e.target.value });
@@ -479,8 +480,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="contactName"
                                                                     placeholder="Name"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactName && errors.contactName ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.contactName && errors.contactName ? "is-invalid" : ""}`}
                                                                     value={formData.contactName}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, contactName: e.target.value });
@@ -496,8 +496,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="contactRole"
                                                                     placeholder="Role"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactRole && errors.contactRole ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.contactRole && errors.contactRole ? "is-invalid" : ""}`}
                                                                     value={formData.contactRole}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, contactRole: e.target.value });
@@ -513,8 +512,7 @@ export default function SignUp({ data }) {
                                                                     type="tel"
                                                                     name="contactNo"
                                                                     placeholder="Cellphone number"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactNo && errors.contactNo ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.contactNo && errors.contactNo ? "is-invalid" : ""}`}
                                                                     value={formData.contactNo}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, contactNo: e.target.value });
@@ -530,8 +528,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="contactEmail"
                                                                     placeholder="Email"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactEmail && errors.contactEmail ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.contactEmail && errors.contactEmail ? "is-invalid" : ""}`}
                                                                     value={formData.contactEmail}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, contactEmail: e.target.value });
@@ -550,8 +547,7 @@ export default function SignUp({ data }) {
                                                                     type="text"
                                                                     name="supportName"
                                                                     placeholder="Name"
-                                                                    className={`form-control border-0 border-bottom ${touched.supportName && errors.supportName ? "is-invalid" : ""
-                                                                        }`}
+                                                                    className={`form-control border-0 border-bottom ${touched.supportName && errors.supportName ? "is-invalid" : ""}`}
                                                                     value={formData.supportName}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, supportName: e.target.value });
@@ -566,6 +562,8 @@ export default function SignUp({ data }) {
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    //========== INVALID FORM STEP ===========//
                                                     : ''
                                         }
                                     </Form>
@@ -598,7 +596,6 @@ export default function SignUp({ data }) {
                                 <button className="btn btn-lg btn-secondary"
                                     type="submit"
                                     onClick={() => {
-                                        // alert("DEBUG OUTPUT:\n" + JSON.stringify(formData));
                                         handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
                                     }}
                                 >

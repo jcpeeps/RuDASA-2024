@@ -5,6 +5,7 @@
 
 import { google } from "googleapis";
 const bcrypt = require("bcrypt");
+const debugOutput = true; //IMPORTANT: DO NOT ENABLE ON PRODUCTION BUILD
 
 /* Request format:
  Login:
@@ -49,8 +50,11 @@ export default async function handler(req, res)
     }
 
     try {
-        console.log("RECEIVED IN SHEETS.JS:");
-        console.log(req.body);
+        if(debugOutput)
+        {
+            console.log("RECEIVED IN SHEETS.JS:");
+            console.log(req.body);
+        }
 
         if(!("type" in req.body)) { //Invalid request
             return res.status(400).json({
@@ -232,11 +236,11 @@ export default async function handler(req, res)
             let allFieldsProvided = true;
             for (let f of REQUIRED_FIELDS)
             {
-                if(!(f in data) || f.trim() == "")
+                if(!(f in data) || data[f].trim() == "")
                 {
-                    console.log(f + " NOT PROVIDED");
                     allFieldsProvided = false;
-                    break;
+                    if(debugOutput) { console.log(f + " NOT PROVIDED"); }
+                    else { break; }
                 }
             }
 
@@ -244,7 +248,7 @@ export default async function handler(req, res)
 
                 //== CHECK EMAIL NOT TAKEN ==
                 const emailExists = await checkEmailInDatabase(data.email);
-                console.log(emailExists)
+
                 if(emailExists == null) {
                     return res.status(400).json({
                         status: "error",
