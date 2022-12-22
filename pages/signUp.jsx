@@ -12,6 +12,10 @@ import useUser from './api/useUser'
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
+//Get a list of all countries sorted by name
+const { getData: getCountryData } = require('country-list');
+const countries = getCountryData().sort((a, b) => a.name.localeCompare(b.name));
+
 export default function SignUp({ data }) {
     const { mutateUser } = useUser({
         //Check if user is already logged in, if so redirect to profile page
@@ -27,7 +31,7 @@ export default function SignUp({ data }) {
         cellNo: "",
         workNo: "",
 
-        country: "",
+        country: "ZA",
         province: "",
         address1: "",
         address2: "",
@@ -324,21 +328,31 @@ export default function SignUp({ data }) {
                                                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                             <label htmlFor="country" className="text-primary fw-bold form-label">Country*</label>
                                                             <select id="country" className="form-select border-0 border-bottom" aria-label="country" value={formData.country} onChange={(e) => setFormData({ ...formData, country: e.target.value })}>
-                                                                <option value="rural-work">Rural work</option>
-                                                                <option value="information">RHC information</option>
-                                                                <option value="onboarding">Onboarding programme</option>
-                                                                <option value="rhc">Rural Health Club</option>
-                                                                <option value="event">Events</option>
+                                                                {
+                                                                    countries.map(c => (
+                                                                        <option key={c.code} value={c.code}>{c.name}</option>
+                                                                    ))
+                                                                }
                                                             </select>
                                                         </div>
                                                         <div className="w-auto form-group">
                                                             <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
                                                             <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
-                                                                <option value="rural-work">Rural work</option>
-                                                                <option value="information">RHC information</option>
-                                                                <option value="onboarding">Onboarding programme</option>
-                                                                <option value="rhc">Rural Health Club</option>
-                                                                <option value="event">Events</option>
+                                                                {
+                                                                    [
+                                                                        ["EC",  "Eastern Cape"],
+                                                                        ["FS",  "Free State"],
+                                                                        ["GP",  "Gauteng"],
+                                                                        ["KZN", "KwaZulu-Natal"],
+                                                                        ["LP",  "Limpopo"],
+                                                                        ["MP",  "Mpumalanga"],
+                                                                        ["NC",  "Northern Cape"],
+                                                                        ["NW",  "North West"],
+                                                                        ["WC",  "Western Cape"]
+                                                                    ].map(([code, name]) => (
+                                                                        <option key={code} value={code}>{name}</option>
+                                                                    ))
+                                                                }
                                                             </select>
                                                         </div>
                                                     </div>
@@ -462,11 +476,19 @@ export default function SignUp({ data }) {
                                                                     <label className="text-primary fw-bold form-label ms-2">Does Your Club Recieve External Support?</label>
                                                                     <div className="d-flex ms-3">
                                                                         <div className="form-check me-4">
-                                                                            <input id="support-yes" className="form-check-input" type="radio" onChange={() => setFormData({ ...formData, externalSupport: "true" })} />
+                                                                            <input id="support-yes" className="form-check-input" type="radio"
+                                                                            onChange={(e) => { //TODO: FIX!
+                                                                                setFormData({ ...formData, externalSupport: "true" });
+                                                                                handleChange(e);
+                                                                            }} />
                                                                             <label id="support-yes" className="form-check-label ms-2">Yes</label>
                                                                         </div>
                                                                         <div className="form-check">
-                                                                            <input id="support-no" className="form-check-input" type="radio" onChange={() => setFormData({ ...formData, externalSupport: "false" })} />
+                                                                            <input id="support-no" className="form-check-input" type="radio"
+                                                                            onChange={(e) => { //TODO: FIX!
+                                                                                setFormData({ ...formData, externalSupport: "false" });
+                                                                                handleChange(e);
+                                                                            }} />
                                                                             <label id="support-no" className="form-check-label ms-2 checked">No</label>
                                                                         </div>
                                                                     </div>
