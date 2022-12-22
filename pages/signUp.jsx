@@ -15,6 +15,17 @@ import * as Yup from "yup";
 //Get a list of all countries sorted by name
 const { getData: getCountryData } = require('country-list');
 const countries = getCountryData().sort((a, b) => a.name.localeCompare(b.name));
+const provinces = [
+    ["EC",  "Eastern Cape"],
+    ["FS",  "Free State"],
+    ["GP",  "Gauteng"],
+    ["KZN", "KwaZulu-Natal"],
+    ["LP",  "Limpopo"],
+    ["MP",  "Mpumalanga"],
+    ["NC",  "Northern Cape"],
+    ["NW",  "North West"],
+    ["WC",  "Western Cape"],
+];
 
 export default function SignUp({ data }) {
     const { mutateUser } = useUser({
@@ -24,15 +35,16 @@ export default function SignUp({ data }) {
     });
 
     const initVals = {
-        fullName: "",
+        firstName: "",
+        surname: "",
         email: "",
         password: "",
-        signUpReason: "",
+        signUpReason: "health-interest",
         cellNo: "",
         workNo: "",
 
         country: "ZA",
-        province: "",
+        province: "EC",
         address1: "",
         address2: "",
         address3: "",
@@ -41,7 +53,7 @@ export default function SignUp({ data }) {
 
         clubName: "",
         uniName: "",
-        externalSupport: "",
+        externalSupport: "false",
         contactName: "",
         contactRole: "",
         contactNo: "",
@@ -119,19 +131,26 @@ export default function SignUp({ data }) {
 
     //The validation schema that checks input is correct on the client side
     const Schema = Yup.object().shape({
-        fullName: Yup.string()
+        //===== GENERAL =====//
+        firstName: Yup.string()
             .matches(
-                /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
-                'Name can only contain letters.'
+                /^([a-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff]*)$/gi,
+                'First name can only contain letters'
             )
-            .matches(/^\s*[\S]+(\s[\S]+)+\s*$/gms, 'Please enter your full name.')
-            .required("Please enter your full name"),
+            .required("Please enter your first name"),
+        surname: Yup.string()
+            .matches(
+                /^([a-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff]*)$/gi,
+                'Surname can only contain letters'
+            )
+            .required("Please enter your surname"),
         email: Yup.string()
             .email("Invalid email address")
             .required("Email is required"),
         password: Yup.string()
             .required("Password is required")
             .min(5, "Password must be minimum 5 characters"),
+        signUpReason: Yup.string(),
         cellNo: Yup.string()
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
@@ -141,49 +160,82 @@ export default function SignUp({ data }) {
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
                 'Invalid phone number'),
-        clubName: Yup.string()
-            .matches(
-                /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
-                'Club name can only contain letters.'
-            )
-            .required("Please enter your club name"),
-        uniName: Yup.string()
-            .matches(
-                /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
-                'University name can only contain letters.'
-            )
-            .required("University is required"),
-        contactName: Yup.string()
-            .matches(
-                /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
-                'Contact name can only contain letters.'
-            )
-            .required("Name is required"),
-        contactRole: Yup.string()
-            .matches(
-                /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
-                'Contact role can only contain letters.'
-            )
-            .required("Role is required"),
-        contactNo: Yup.string()
-            .matches(
-                /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-                'Invalid phone number'),
-        contactEmail: Yup.string()
-            .email("Invalid email address")
-            .required("Email is required"),
-        supportName: Yup.string()
-            .matches(
-                /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
-                'Name can only contain letters.'
-            )
-            .required("Name is required"),
-        address: Yup.string()
+
+        //===== ADDRESS =====//
+        address1: Yup.string()
             .required("Please provide an address"),
-        pow: Yup.string()
+        workPlace: Yup.string()
             .required("Place of work is required"),
         district: Yup.string()
-            .required("District is required")
+            .required("District is required"),
+
+        //===== HEALTH CLUB =====//
+        clubName: Yup.string()
+            .when("signUpReason", {
+                is: "rhc",
+                then: Yup.string()
+                    .matches(
+                        /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
+                        'Club name can only contain letters'
+                    )
+                    .required("Please enter your club name")
+            }),
+
+        uniName: Yup.string()
+            .when("signUpReason", {
+                is: "rhc",
+                then: Yup.string()
+                    .matches(
+                        /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
+                        'University name can only contain letters'
+                    )
+                    .required("University is required")
+            }),
+        contactName: Yup.string()
+            .when("signUpReason", {
+                is: "rhc",
+                then: Yup.string()
+                    .matches(
+                        /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
+                        'Contact name can only contain letters'
+                    )
+                    .required("Name is required")
+            }),
+        contactRole: Yup.string()
+            .when("signUpReason", {
+                is: "rhc",
+                then: Yup.string()
+                    .matches(
+                        /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
+                        'Contact role can only contain letters'
+                    )
+                    .required("Role is required")
+            }),
+        contactNo: Yup.string()
+            .when("signUpReason", {
+                is: "rhc",
+                then: Yup.string()
+                    .matches(
+                        /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+                        'Invalid phone number')
+            }),
+        contactEmail: Yup.string()
+            .when("signUpReason", {
+                is: "rhc",
+                then: Yup.string()
+                    .email("Invalid email address")
+                    .required("Email is required")
+            }),
+        supportName: Yup.string()
+            .when("signUpReason", {
+                is: "rhc",
+                then: Yup.string()
+                    .matches(
+                        /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
+                        'Name can only contain letters'
+                    )
+                    .required("Name is required")
+            })
     });
 
     return (
@@ -201,7 +253,7 @@ export default function SignUp({ data }) {
                                 validationSchema={Schema}
                                 onSubmit={(values) => {}}
                             >
-                                {({ errors, touched, handleChange }) => (
+                                {({ errors, touched, handleChange, isValid }) => (
                                     <Form className="px-3 px-md-0">
                                         {
                                         //========== FORM STEP 0 ===========//
@@ -209,22 +261,40 @@ export default function SignUp({ data }) {
                                             <div>
                                                 <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                     <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                        <label htmlFor="fullName" className="text-primary fw-bold form-label ms-2">Full Name*</label>
+                                                        <label htmlFor="firstName" className="text-primary fw-bold form-label ms-2">Name*</label>
                                                         <Field
                                                             type="text"
-                                                            name="fullName"
-                                                            placeholder="Name"
-                                                            className={`form-control border-0 border-bottom ${touched.fullName && errors.fullName ? "is-invalid" : ""}`}
-                                                            value={formData.fullName}
+                                                            name="firstName"
+                                                            placeholder="First Name"
+                                                            className={`form-control border-0 border-bottom ${touched.firstName && errors.firstName ? "is-invalid" : ""}`}
+                                                            value={formData.firstName}
                                                             onChange={(e) => {
-                                                                setFormData({ ...formData, fullName: e.target.value });
-                                                                touched.fullName = false;
+                                                                setFormData({ ...formData, firstName: e.target.value });
                                                                 handleChange(e);
                                                             }}
                                                         />
                                                         <ErrorMessage
                                                             component="div"
-                                                            name="fullName"
+                                                            name="firstName"
+                                                            className="invalid-feedback"
+                                                        />
+                                                    </div>
+                                                    <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                        <label htmlFor="surname" className="text-primary fw-bold form-label ms-2">Surname*</label>
+                                                        <Field
+                                                            type="text"
+                                                            name="surname"
+                                                            placeholder="Name"
+                                                            className={`form-control border-0 border-bottom ${touched.surname && errors.surname ? "is-invalid" : ""}`}
+                                                            value={formData.surname}
+                                                            onChange={(e) => {
+                                                                setFormData({ ...formData, surname: e.target.value });
+                                                                handleChange(e);
+                                                            }}
+                                                        />
+                                                        <ErrorMessage
+                                                            component="div"
+                                                            name="surname"
                                                             className="invalid-feedback"
                                                         />
                                                     </div>
@@ -272,10 +342,10 @@ export default function SignUp({ data }) {
                                                     <div className="w-auto form-group">
                                                         <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
                                                         <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
-                                                            <option value="rural-work">Rural work</option>
-                                                            <option value="information">RHC information</option>
+                                                            <option value="health-interest">Interest in rural health</option>
+                                                            <option value="information">Information</option>
                                                             <option value="onboarding">Onboarding programme</option>
-                                                            <option value="rhc">Rural Health Club</option>
+                                                            <option value="rhc">Rural Health Club (Students)</option>
                                                             <option value="event">Events</option>
                                                         </select>
                                                     </div>
@@ -335,35 +405,27 @@ export default function SignUp({ data }) {
                                                                 }
                                                             </select>
                                                         </div>
-                                                        <div className="w-auto form-group">
-                                                            <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
-                                                            <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
-                                                                {
-                                                                    [
-                                                                        ["EC",  "Eastern Cape"],
-                                                                        ["FS",  "Free State"],
-                                                                        ["GP",  "Gauteng"],
-                                                                        ["KZN", "KwaZulu-Natal"],
-                                                                        ["LP",  "Limpopo"],
-                                                                        ["MP",  "Mpumalanga"],
-                                                                        ["NC",  "Northern Cape"],
-                                                                        ["NW",  "North West"],
-                                                                        ["WC",  "Western Cape"]
-                                                                    ].map(([code, name]) => (
-                                                                        <option key={code} value={code}>{name}</option>
-                                                                    ))
-                                                                }
-                                                            </select>
-                                                        </div>
+                                                        {formData.country=="ZA"? //Hide province when ZA not selected
+                                                            <div className="w-auto form-group">
+                                                                <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
+                                                                <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
+                                                                    {
+                                                                        provinces.map(([code, name]) => (
+                                                                            <option key={code} value={code}>{name}</option>
+                                                                        ))
+                                                                    }
+                                                                </select>
+                                                            </div>
+                                                        :""}
                                                     </div>
                                                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                            <label htmlFor="address" className="text-primary fw-bold form-label ms-2">Address*</label>
+                                                            <label htmlFor="address1" className="text-primary fw-bold form-label ms-2">Address*</label>
                                                             <Field
                                                                 type="text"
-                                                                name="address"
+                                                                name="address1"
                                                                 placeholder="Line 1"
-                                                                className={`form-control border-0 border-bottom ${touched.address && errors.address ? "is-invalid" : ""}`}
+                                                                className={`form-control border-0 border-bottom ${touched.address1 && errors.address1 ? "is-invalid" : ""}`}
                                                                 value={formData.address1}
                                                                 onChange={(e) => {
                                                                     setFormData({ ...formData, address1: e.target.value });
@@ -372,7 +434,7 @@ export default function SignUp({ data }) {
                                                             />
                                                             <ErrorMessage
                                                                 component="div"
-                                                                name="address"
+                                                                name="address1"
                                                                 className="invalid-feedback"
                                                             />
                                                             <Field className="form-control border-0 border-bottom my-2" type="text" placeholder="Line 2"
@@ -392,12 +454,12 @@ export default function SignUp({ data }) {
                                                         </div>
                                                         <div className="w-auto">
                                                             <div className="mb-4 form-group">
-                                                                <label htmlFor="pow" className="text-primary fw-bold form-label ms-2">Place of work*</label>
+                                                                <label htmlFor="workPlace" className="text-primary fw-bold form-label ms-2">Place of work*</label>
                                                                 <Field
                                                                     type="text"
-                                                                    name="pow"
+                                                                    name="workPlace"
                                                                     placeholder="Work name"
-                                                                    className={`form-control border-0 border-bottom ${touched.pow && errors.pow ? "is-invalid" : ""}`}
+                                                                    className={`form-control border-0 border-bottom ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
                                                                     value={formData.workPlace}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, workPlace: e.target.value });
@@ -406,7 +468,7 @@ export default function SignUp({ data }) {
                                                                 />
                                                                 <ErrorMessage
                                                                     component="div"
-                                                                    name="pow"
+                                                                    name="workPlace"
                                                                     className="invalid-feedback"
                                                                 />
                                                             </div>
@@ -588,46 +650,48 @@ export default function SignUp({ data }) {
                                                     //========== INVALID FORM STEP ===========//
                                                     : ''
                                         }
+
+                                        <div className="w-100 d-flex justify-content-end align-items-center">
+                                            <small>Have an account? <Link href="/login">Log in</Link></small>
+                                            <button className="btn btn-lg btn-outline"
+                                                disabled={step == 0}
+                                                onClick={() => {
+                                                    setStep((currStep) => currStep - 1);
+                                                }}
+                                            >
+                                                Back
+                                            </button>
+                                            <div className={`hover-button ${submitShow ? "d-none" : ""
+                                                }`}>
+                                                <button className="btn btn-lg btn-secondary"
+                                                    disabled={step == 2} //This prevents the third component from being navigatible when not selected
+                                                    onClick={() => {
+                                                        setStep((currStep) => currStep + 1);
+                                                    }}
+                                                >
+                                                    Next
+                                                </button>
+                                            </div>
+                                            <div className={`hover-button ${submitShow ? "" : "d-none"
+                                                }`}>
+                                                <button className="btn btn-lg btn-secondary"
+                                                    type="submit"
+                                                    disabled={!isValid}
+                                                    onClick={() => {
+                                                        handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
+                                                    }}
+                                                >
+                                                    Sign up
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <p className="d-flex justify-content-end invalid-feedback">
+                                            {formSubmitErr}
+                                        </p>
                                     </Form>
                                 )}
                             </Formik>
                         </div>
-                        <div className="w-100 d-flex justify-content-end align-items-center">
-                            <small>Have an account? <Link href="/login">Log in</Link></small>
-                            <button className="btn btn-lg btn-outline"
-                                disabled={step == 0}
-                                onClick={() => {
-                                    setStep((currStep) => currStep - 1);
-                                }}
-                            >
-                                Back
-                            </button>
-                            <div className={`hover-button ${submitShow ? "d-none" : ""
-                                }`}>
-                                <button className="btn btn-lg btn-secondary"
-                                    disabled={step == 2} //This prevents the third component from being navigatible when not selected
-                                    onClick={() => {
-                                        setStep((currStep) => currStep + 1);
-                                    }}
-                                >
-                                    Next
-                                </button>
-                            </div>
-                            <div className={`hover-button ${submitShow ? "" : "d-none"
-                                }`}>
-                                <button className="btn btn-lg btn-secondary"
-                                    type="submit"
-                                    onClick={() => {
-                                        handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
-                                    }}
-                                >
-                                    Sign up
-                                </button>
-                            </div>
-                        </div>
-                        <p className="d-flex justify-content-end invalid-feedback">
-                            {formSubmitErr}
-                        </p>
                     </div>
                 </div>
                 <Benefits content={data.find(file => file.slug === "offers")} />

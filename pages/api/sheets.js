@@ -230,7 +230,7 @@ export default async function handler(req, res)
         //===== HANDLE SIGNUP =====
         async function handleSignup(req, data) {
             //Check all required fields have been provided in the request
-            const REQUIRED_FIELDS = ["email", "password", "fullName", "signUpReason", "cellNo", "workNo", "country", "province", "address1", "address2", "address3", "workPlace", "district"];
+            const REQUIRED_FIELDS = ["email", "password", "firstName", "surname", "signUpReason", "cellNo", "country", "province", "address1", "workPlace", "district"];
             // const REQUIRED_FIELDS = ["email", "password"];
 
             let allFieldsProvided = true;
@@ -274,7 +274,7 @@ export default async function handler(req, res)
                         const newRowData = [
                             data.email,
                             passHash,
-                            data.fullName,
+                            data.firstName + " " + data.surname,
                             data.signUpReason,
                             data.cellNo,
                             data.workNo,
@@ -296,6 +296,7 @@ export default async function handler(req, res)
                             data.supportName
                         ];
 
+                        //TODO: Handle error response
                         const response = await sheets.spreadsheets.values.append({
                             spreadsheetId: process.env.GOOGLE_SHEET_ID,
                             range: "Users!A2:B2", //First row is the attribute titles
@@ -313,14 +314,17 @@ export default async function handler(req, res)
                     });
                 });
             }
+            else
+            {
+                //== SIGNUP FAILED, INVALID REQUEST ==
+                return res.status(400).json({
+                    status: "error",
+                    code: "invalidSignup",
+                    message: "Invalid signup, some required fields were empty",
+                    data: {}
+                });
+            }
 
-            //== SIGNUP FAILED, INVALID REQUEST ==
-            return res.status(400).json({
-                status: "error",
-                code: "invalidSignup",
-                message: "Invalid signup, some required fields were empty",
-                data: {}
-            });
         }
 
         //===== HANDLE LOGOUT =====
