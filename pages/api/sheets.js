@@ -274,7 +274,8 @@ export default async function handler(req, res)
                         const newRowData = [
                             data.email,
                             passHash,
-                            data.firstName + " " + data.surname,
+                            data.firstName,
+                            data.surname,
                             data.signUpReason,
                             data.cellNo,
                             data.workNo,
