@@ -65,7 +65,9 @@ export default function SignUp({ data }) {
         contactRole: "",
         contactNo: "",
         contactEmail: "",
-        supportName: ""
+        supportName: "",
+
+        privacyPolicy: false,
     };
 
     // Object that stores information across all components/stages of the form
@@ -252,7 +254,10 @@ export default function SignUp({ data }) {
                         'Name can only contain letters'
                     )
                     .required("Name is required")
-            })
+            }),
+
+        privacyPolicy: Yup.boolean()
+            .oneOf([true], "Please accept our policies")
     });
 
     return (
@@ -778,6 +783,35 @@ export default function SignUp({ data }) {
                                                             : ''
                                         }
 
+                                        {/* Privacy policy checkbox */}
+                                        {
+                                            submitShow &&
+                                            <div className="w-100 d-flex justify-content-center my-5">
+                                                <div className="form-check">
+                                                    <Field
+                                                        type="checkbox"
+                                                        name="privacyPolicy"
+                                                        className={`form-check-input ${touched.privacyPolicy && errors.privacyPolicy ? "is-invalid" : ""}`}
+                                                        value={formData.privacyPolicy}
+                                                        onChange={(e) => {
+                                                            setFormData({ ...formData, privacyPolicy: e.target.value });
+                                                            handleChange(e);
+                                                        }}
+                                                    />
+                                                    <label className="form-check-label" htmlFor="privacyPolicy">
+                                                        I agree to the <a href="/pdfs/value-statement.pdf" target="_blank">Value Statement</a> and <a href="/pdfs/code-of-conduct.pdf" target="_blank">Code of Conduct</a>
+                                                    </label>
+                                                    <ErrorMessage
+                                                        component="div"
+                                                        name="privacyPolicy"
+                                                        className="invalid-feedback"
+                                                    />
+                                                </div>
+                                            </div>
+                                        }
+
+
+                                        {/* ========== SUBMIT STEP =========== */}
                                         <div className="w-100 d-flex justify-content-end align-items-center">
                                             <small>Have an account? <Link href="/login">Log in</Link></small>
                                             <button className="btn btn-lg btn-outline"
@@ -799,8 +833,7 @@ export default function SignUp({ data }) {
                                                     Next
                                                 </button>
                                             </div>
-                                            <div className={`hover-button ${submitShow ? "" : "d-none"
-                                                }`}>
+                                            <div className={`hover-button ${submitShow ? "" : "d-none"}`}>
                                                 <button className="btn btn-lg btn-secondary"
                                                     type="submit"
                                                     disabled={!isValid}
