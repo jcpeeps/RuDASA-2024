@@ -44,6 +44,7 @@ export default function SignUp({ data }) {
         signUpReason: "health-interest",
         cellNo: "",
         workNo: "",
+        jobDescription: "",
 
         country: "ZA",
         province: "EC",
@@ -245,8 +246,8 @@ export default function SignUp({ data }) {
             <section>
                 <div className="py-5 mb-5 container"></div>
                 <div className="d-flex justify-content-center align-items-start mb-5 pb-5">
-                    <Image src={Illustration} className="col-sm-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} alt="Illustration" />
-                    <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
+                    <Image src={Illustration} className="col-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} alt="Illustration" />
+                    <div className="col-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
                         <h1 className="fw-bold w-100 mb-5 text-center text-primary">Sign Up</h1>
                         <ProgressBar step={step} thirdStep={formData.signUpReason === "rhc"} />
                         <div className="w-auto">
@@ -393,7 +394,7 @@ export default function SignUp({ data }) {
                                                         </div>
                                                     </div>
                                                     <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                        <div className="w-auto form-group">
+                                                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                             <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
                                                             <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
                                                                 <option value="health-interest">Interest in rural health</option>
@@ -401,6 +402,20 @@ export default function SignUp({ data }) {
                                                                 <option value="onboarding">Onboarding programme</option>
                                                                 <option value="rhc">Rural Health Club (Students)</option>
                                                                 <option value="event">Events</option>
+                                                            </select>
+                                                        </div>
+                                                        <div className="w-auto form-group">
+                                                            <label htmlFor="jobDesc" className="text-primary fw-bold form-label ms-2">Job Description*</label>
+                                                            <select id="jobDesc" className="form-select border-0 border-bottom" aria-label="jobDesc" value={formData.jobDescription} onChange={(e) => setFormData({ ...formData, jobDescription: e.target.value })}>
+                                                                <option value="medical-officer">Medical officer/GP</option>
+                                                                <option value="community-service">Community service</option>
+                                                                <option value="intern">Intern</option>
+                                                                <option value="medical-student">Medical student</option>
+                                                                <option value="academic">Academic/lecturer/trainer</option>
+                                                                <option value="registrar">Registrar</option>
+                                                                <option value="consultant">Consultant</option>
+                                                                <option value="other-health-professional">Other health professional</option>
+                                                                <option value="non-health-professional">Non health professional</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -420,7 +435,7 @@ export default function SignUp({ data }) {
                                                                 </select>
                                                             </div>
                                                             {formData.country == "ZA" ? //Hide province when ZA not selected
-                                                                <div className="w-auto form-group">
+                                                                <div className="w-auto form-group" style={{minWidth: '45%'}}>
                                                                     <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
                                                                     <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
                                                                         {
@@ -497,7 +512,7 @@ export default function SignUp({ data }) {
                                                                     />
                                                                 </div>
                                                                 <div className="form-group">
-                                                                    <label htmlFor="district" className="text-primary fw-bold form-label ms-2">District</label>
+                                                                    <label htmlFor="district" className="text-primary fw-bold form-label ms-2">District*</label>
                                                                     <Field
                                                                         type="text"
                                                                         name="district"
