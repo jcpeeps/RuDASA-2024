@@ -16,15 +16,15 @@ import * as Yup from "yup";
 const { getData: getCountryData } = require('country-list');
 const countries = getCountryData().sort((a, b) => a.name.localeCompare(b.name));
 const provinces = [
-    ["EC",  "Eastern Cape"],
-    ["FS",  "Free State"],
-    ["GP",  "Gauteng"],
+    ["EC", "Eastern Cape"],
+    ["FS", "Free State"],
+    ["GP", "Gauteng"],
     ["KZN", "KwaZulu-Natal"],
-    ["LP",  "Limpopo"],
-    ["MP",  "Mpumalanga"],
-    ["NC",  "Northern Cape"],
-    ["NW",  "North West"],
-    ["WC",  "Western Cape"],
+    ["LP", "Limpopo"],
+    ["MP", "Mpumalanga"],
+    ["NC", "Northern Cape"],
+    ["NW", "North West"],
+    ["WC", "Western Cape"],
 ];
 
 export default function SignUp({ data }) {
@@ -62,7 +62,7 @@ export default function SignUp({ data }) {
     };
 
     // Object that stores information across all components/stages of the form
-    const [formData, setFormData] = useState({... initVals});
+    const [formData, setFormData] = useState({ ...initVals });
 
     //Get/update the main signup form error box for when something goes wrong while submitting
     const [formSubmitErr, setFormSubmitErr] = useState("");
@@ -249,406 +249,408 @@ export default function SignUp({ data }) {
                         <ProgressBar step={step} thirdStep={formData.signUpReason === "rhc"} />
                         <div className="w-auto">
                             <Formik
-                                initialValues={{... initVals}}
+                                initialValues={{ ...initVals }}
                                 validationSchema={Schema}
-                                onSubmit={(values) => {}}
+                                onSubmit={(values) => { }}
                             >
                                 {({ errors, touched, handleChange, isValid }) => (
                                     <Form className="px-3 px-md-0">
                                         {
-                                        //========== FORM STEP 0 ===========//
-                                        step == 0 ?
-                                            <div>
-                                                <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                    <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                        <label htmlFor="firstName" className="text-primary fw-bold form-label ms-2">Name*</label>
-                                                        <Field
-                                                            type="text"
-                                                            name="firstName"
-                                                            placeholder="First Name"
-                                                            className={`form-control border-0 border-bottom ${touched.firstName && errors.firstName ? "is-invalid" : ""}`}
-                                                            value={formData.firstName}
-                                                            onChange={(e) => {
-                                                                setFormData({ ...formData, firstName: e.target.value });
-                                                                handleChange(e);
-                                                            }}
-                                                        />
-                                                        <ErrorMessage
-                                                            component="div"
-                                                            name="firstName"
-                                                            className="invalid-feedback"
-                                                        />
-                                                    </div>
-                                                    <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                        <label htmlFor="surname" className="text-primary fw-bold form-label ms-2">Surname*</label>
-                                                        <Field
-                                                            type="text"
-                                                            name="surname"
-                                                            placeholder="Name"
-                                                            className={`form-control border-0 border-bottom ${touched.surname && errors.surname ? "is-invalid" : ""}`}
-                                                            value={formData.surname}
-                                                            onChange={(e) => {
-                                                                setFormData({ ...formData, surname: e.target.value });
-                                                                handleChange(e);
-                                                            }}
-                                                        />
-                                                        <ErrorMessage
-                                                            component="div"
-                                                            name="surname"
-                                                            className="invalid-feedback"
-                                                        />
-                                                    </div>
-                                                    <div className="w-auto form-group">
-                                                        <label htmlFor="email" className="text-primary fw-bold form-label ms-2">Email Address*</label>
-                                                        <Field
-                                                            type="email"
-                                                            name="email"
-                                                            placeholder="Email"
-                                                            className={`form-control border-0 border-bottom ${touched.email && errors.email ? "is-invalid" : ""}`}
-                                                            value={formData.email}
-                                                            onChange={(e) => {
-                                                                setFormData({ ...formData, email: e.target.value });
-                                                                setFormSubmitErr("");
-                                                                handleChange(e);
-                                                            }}
-                                                        />
-                                                        <ErrorMessage
-                                                            component="div"
-                                                            name="email"
-                                                            className="invalid-feedback"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                    <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                        <label htmlFor="password" className="text-primary fw-bold form-label ms-2">Password*</label>
-                                                        <Field
-                                                            type="password"
-                                                            name="password"
-                                                            placeholder="Password"
-                                                            className={`form-control border-0 border-bottom ${touched.password && errors.password ? "is-invalid" : ""}`}
-                                                            value={formData.password}
-                                                            onChange={(e) => {
-                                                                setFormData({ ...formData, password: e.target.value });
-                                                                handleChange(e);
-                                                            }}
-                                                        />
-                                                        <ErrorMessage
-                                                            component="div"
-                                                            name="password"
-                                                            className="invalid-feedback"
-                                                        />
-                                                    </div>
-                                                    <div className="w-auto form-group">
-                                                        <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
-                                                        <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
-                                                            <option value="health-interest">Interest in rural health</option>
-                                                            <option value="information">Information</option>
-                                                            <option value="onboarding">Onboarding programme</option>
-                                                            <option value="rhc">Rural Health Club (Students)</option>
-                                                            <option value="event">Events</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                    <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                        <label htmlFor="cellNo" className="text-primary fw-bold form-label ms-2">Cellphone number*</label>
-                                                        <Field
-                                                            type="tel"
-                                                            name="cellNo"
-                                                            placeholder="Number"
-                                                            className={`form-control border-0 border-bottom ${touched.cellNo && errors.cellNo ? "is-invalid" : ""}`}
-                                                            value={formData.cellNo}
-                                                            onChange={(e) => {
-                                                                setFormData({ ...formData, cellNo: e.target.value });
-                                                                handleChange(e);
-                                                            }}
-                                                        />
-                                                        <ErrorMessage
-                                                            component="div"
-                                                            name="cellNo"
-                                                            className="invalid-feedback"
-                                                        />
-                                                    </div>
-                                                    <div className="w-auto form-group">
-                                                        <label htmlFor="workNo" className="text-primary fw-bold form-label ms-2">Work Telephone</label>
-                                                        <Field
-                                                            type="tel"
-                                                            name="workNo"
-                                                            placeholder="Number"
-                                                            className={`form-control border-0 border-bottom ${touched.workNo && errors.workNo ? "is-invalid" : ""}`}
-                                                            value={formData.workNo}
-                                                            onChange={(e) => {
-                                                                setFormData({ ...formData, workNo: e.target.value });
-                                                                handleChange(e);
-                                                            }}
-                                                        />
-                                                        <ErrorMessage
-                                                            component="div"
-                                                            name="workNo"
-                                                            className="invalid-feedback"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            //========== FORM STEP 1 ===========//
-                                            : step == 1 ?
+                                            //========== FORM STEP 0 ===========//
+                                            step == 0 ?
                                                 <div>
                                                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                            <label htmlFor="country" className="text-primary fw-bold form-label">Country*</label>
-                                                            <select id="country" className="form-select border-0 border-bottom" aria-label="country" value={formData.country} onChange={(e) => setFormData({ ...formData, country: e.target.value })}>
-                                                                {
-                                                                    countries.map(c => (
-                                                                        <option key={c.code} value={c.code}>{c.name}</option>
-                                                                    ))
-                                                                }
-                                                            </select>
-                                                        </div>
-                                                        {formData.country=="ZA"? //Hide province when ZA not selected
-                                                            <div className="w-auto form-group">
-                                                                <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
-                                                                <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
-                                                                    {
-                                                                        provinces.map(([code, name]) => (
-                                                                            <option key={code} value={code}>{name}</option>
-                                                                        ))
-                                                                    }
-                                                                </select>
-                                                            </div>
-                                                        :""}
-                                                    </div>
-                                                    <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                            <label htmlFor="address1" className="text-primary fw-bold form-label ms-2">Address*</label>
+                                                            <label htmlFor="firstName" className="text-primary fw-bold form-label ms-2">Name*</label>
                                                             <Field
                                                                 type="text"
-                                                                name="address1"
-                                                                placeholder="Line 1"
-                                                                className={`form-control border-0 border-bottom ${touched.address1 && errors.address1 ? "is-invalid" : ""}`}
-                                                                value={formData.address1}
+                                                                name="firstName"
+                                                                placeholder="First Name"
+                                                                className={`form-control border-0 border-bottom ${touched.firstName && errors.firstName ? "is-invalid" : ""}`}
+                                                                value={formData.firstName}
                                                                 onChange={(e) => {
-                                                                    setFormData({ ...formData, address1: e.target.value });
+                                                                    setFormData({ ...formData, firstName: e.target.value });
                                                                     handleChange(e);
                                                                 }}
                                                             />
                                                             <ErrorMessage
                                                                 component="div"
-                                                                name="address1"
+                                                                name="firstName"
                                                                 className="invalid-feedback"
                                                             />
-                                                            <Field className="form-control border-0 border-bottom my-2" type="text" placeholder="Line 2"
-                                                                value={formData.address2}
+                                                        </div>
+                                                        <div className="w-auto form-group">
+                                                            <label htmlFor="surname" className="text-primary fw-bold form-label ms-2">Surname*</label>
+                                                            <Field
+                                                                type="text"
+                                                                name="surname"
+                                                                placeholder="Name"
+                                                                className={`form-control border-0 border-bottom ${touched.surname && errors.surname ? "is-invalid" : ""}`}
+                                                                value={formData.surname}
                                                                 onChange={(e) => {
-                                                                    setFormData({ ...formData, address2: e.target.value });
+                                                                    setFormData({ ...formData, surname: e.target.value });
                                                                     handleChange(e);
                                                                 }}
                                                             />
-                                                            <Field className="form-control border-0 border-bottom" type="text" placeholder="Line 3"
-                                                                value={formData.address3}
-                                                                onChange={(e) => {
-                                                                    setFormData({ ...formData, address3: e.target.value });
-                                                                    handleChange(e);
-                                                                }}
+                                                            <ErrorMessage
+                                                                component="div"
+                                                                name="surname"
+                                                                className="invalid-feedback"
                                                             />
                                                         </div>
-                                                        <div className="w-auto">
-                                                            <div className="mb-4 form-group">
-                                                                <label htmlFor="workPlace" className="text-primary fw-bold form-label ms-2">Place of work*</label>
-                                                                <Field
-                                                                    type="text"
-                                                                    name="workPlace"
-                                                                    placeholder="Work name"
-                                                                    className={`form-control border-0 border-bottom ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
-                                                                    value={formData.workPlace}
-                                                                    onChange={(e) => {
-                                                                        setFormData({ ...formData, workPlace: e.target.value });
-                                                                        handleChange(e);
-                                                                    }}
-                                                                />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="workPlace"
-                                                                    className="invalid-feedback"
-                                                                />
-                                                            </div>
-                                                            <div className="form-group">
-                                                                <label htmlFor="district" className="text-primary fw-bold form-label ms-2">District</label>
-                                                                <Field
-                                                                    type="text"
-                                                                    name="district"
-                                                                    placeholder="District name"
-                                                                    className={`form-control border-0 border-bottom ${touched.district && errors.district ? "is-invalid" : ""}`}
-                                                                    value={formData.district}
-                                                                    onChange={(e) => {
-                                                                        setFormData({ ...formData, district: e.target.value });
-                                                                        handleChange(e);
-                                                                    }}
-                                                                />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="district"
-                                                                    className="invalid-feedback"
-                                                                />
-                                                            </div>
+                                                    </div>
+                                                    <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                            <label htmlFor="email" className="text-primary fw-bold form-label ms-2">Email Address*</label>
+                                                            <Field
+                                                                type="email"
+                                                                name="email"
+                                                                placeholder="Email"
+                                                                className={`form-control border-0 border-bottom ${touched.email && errors.email ? "is-invalid" : ""}`}
+                                                                value={formData.email}
+                                                                onChange={(e) => {
+                                                                    setFormData({ ...formData, email: e.target.value });
+                                                                    setFormSubmitErr("");
+                                                                    handleChange(e);
+                                                                }}
+                                                            />
+                                                            <ErrorMessage
+                                                                component="div"
+                                                                name="email"
+                                                                className="invalid-feedback"
+                                                            />
+                                                        </div>
+                                                        <div className="w-auto form-group">
+                                                            <label htmlFor="password" className="text-primary fw-bold form-label ms-2">Password*</label>
+                                                            <Field
+                                                                type="password"
+                                                                name="password"
+                                                                placeholder="Password"
+                                                                className={`form-control border-0 border-bottom ${touched.password && errors.password ? "is-invalid" : ""}`}
+                                                                value={formData.password}
+                                                                onChange={(e) => {
+                                                                    setFormData({ ...formData, password: e.target.value });
+                                                                    handleChange(e);
+                                                                }}
+                                                            />
+                                                            <ErrorMessage
+                                                                component="div"
+                                                                name="password"
+                                                                className="invalid-feedback"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                            <label htmlFor="cellNo" className="text-primary fw-bold form-label ms-2">Cellphone number*</label>
+                                                            <Field
+                                                                type="tel"
+                                                                name="cellNo"
+                                                                placeholder="Number"
+                                                                className={`form-control border-0 border-bottom ${touched.cellNo && errors.cellNo ? "is-invalid" : ""}`}
+                                                                value={formData.cellNo}
+                                                                onChange={(e) => {
+                                                                    setFormData({ ...formData, cellNo: e.target.value });
+                                                                    handleChange(e);
+                                                                }}
+                                                            />
+                                                            <ErrorMessage
+                                                                component="div"
+                                                                name="cellNo"
+                                                                className="invalid-feedback"
+                                                            />
+                                                        </div>
+                                                        <div className="w-auto form-group">
+                                                            <label htmlFor="workNo" className="text-primary fw-bold form-label ms-2">Work Telephone</label>
+                                                            <Field
+                                                                type="tel"
+                                                                name="workNo"
+                                                                placeholder="Number"
+                                                                className={`form-control border-0 border-bottom ${touched.workNo && errors.workNo ? "is-invalid" : ""}`}
+                                                                value={formData.workNo}
+                                                                onChange={(e) => {
+                                                                    setFormData({ ...formData, workNo: e.target.value });
+                                                                    handleChange(e);
+                                                                }}
+                                                            />
+                                                            <ErrorMessage
+                                                                component="div"
+                                                                name="workNo"
+                                                                className="invalid-feedback"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                    <div className="w-auto form-group">
+                                                            <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
+                                                            <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
+                                                                <option value="health-interest">Interest in rural health</option>
+                                                                <option value="information">Information</option>
+                                                                <option value="onboarding">Onboarding programme</option>
+                                                                <option value="rhc">Rural Health Club (Students)</option>
+                                                                <option value="event">Events</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                //========== FORM STEP 2 ===========//
-                                                : step == 2 ?
+                                                //========== FORM STEP 1 ===========//
+                                                : step == 1 ?
                                                     <div>
                                                         <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                             <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                                <label htmlFor="clubName" className="text-primary fw-bold form-label ms-2">Student Club*</label>
+                                                                <label htmlFor="country" className="text-primary fw-bold form-label">Country*</label>
+                                                                <select id="country" className="form-select border-0 border-bottom" aria-label="country" value={formData.country} onChange={(e) => setFormData({ ...formData, country: e.target.value })}>
+                                                                    {
+                                                                        countries.map(c => (
+                                                                            <option key={c.code} value={c.code}>{c.name}</option>
+                                                                        ))
+                                                                    }
+                                                                </select>
+                                                            </div>
+                                                            {formData.country == "ZA" ? //Hide province when ZA not selected
+                                                                <div className="w-auto form-group">
+                                                                    <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
+                                                                    <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
+                                                                        {
+                                                                            provinces.map(([code, name]) => (
+                                                                                <option key={code} value={code}>{name}</option>
+                                                                            ))
+                                                                        }
+                                                                    </select>
+                                                                </div>
+                                                                : ""}
+                                                        </div>
+                                                        <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                            <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                                <label htmlFor="address1" className="text-primary fw-bold form-label ms-2">Address*</label>
                                                                 <Field
                                                                     type="text"
-                                                                    name="clubName"
-                                                                    placeholder="Student club name"
-                                                                    className={`form-control border-0 border-bottom ${touched.clubName && errors.clubName ? "is-invalid" : ""}`}
-                                                                    value={formData.clubName}
+                                                                    name="address1"
+                                                                    placeholder="Line 1"
+                                                                    className={`form-control border-0 border-bottom ${touched.address1 && errors.address1 ? "is-invalid" : ""}`}
+                                                                    value={formData.address1}
                                                                     onChange={(e) => {
-                                                                        setFormData({ ...formData, clubName: e.target.value });
+                                                                        setFormData({ ...formData, address1: e.target.value });
                                                                         handleChange(e);
                                                                     }}
                                                                 />
                                                                 <ErrorMessage
                                                                     component="div"
-                                                                    name="clubName"
+                                                                    name="address1"
                                                                     className="invalid-feedback"
                                                                 />
-                                                                <Field
-                                                                    type="text"
-                                                                    name="uniName"
-                                                                    placeholder="University name"
-                                                                    className={`form-control border-0 border-bottom ${touched.uniName && errors.uniName ? "is-invalid" : ""}`}
-                                                                    value={formData.uniName}
+                                                                <Field className="form-control border-0 border-bottom my-2" type="text" placeholder="Line 2"
+                                                                    value={formData.address2}
                                                                     onChange={(e) => {
-                                                                        setFormData({ ...formData, uniName: e.target.value });
+                                                                        setFormData({ ...formData, address2: e.target.value });
                                                                         handleChange(e);
                                                                     }}
                                                                 />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="uniName"
-                                                                    className="invalid-feedback"
+                                                                <Field className="form-control border-0 border-bottom" type="text" placeholder="Line 3"
+                                                                    value={formData.address3}
+                                                                    onChange={(e) => {
+                                                                        setFormData({ ...formData, address3: e.target.value });
+                                                                        handleChange(e);
+                                                                    }}
                                                                 />
                                                             </div>
-                                                            <div className="w-auto form-group">
+                                                            <div className="w-auto">
                                                                 <div className="mb-4 form-group">
-                                                                    <label className="text-primary fw-bold form-label ms-2">Does Your Club Recieve External Support?</label>
-                                                                    <div className="d-flex ms-3">
-                                                                        <div className="form-check me-4">
-                                                                            <input id="support-yes" className="form-check-input" type="radio"
-                                                                            onChange={(e) => { //TODO: FIX!
-                                                                                setFormData({ ...formData, externalSupport: "true" });
-                                                                                handleChange(e);
-                                                                            }} />
-                                                                            <label id="support-yes" className="form-check-label ms-2">Yes</label>
-                                                                        </div>
-                                                                        <div className="form-check">
-                                                                            <input id="support-no" className="form-check-input" type="radio"
-                                                                            onChange={(e) => { //TODO: FIX!
-                                                                                setFormData({ ...formData, externalSupport: "false" });
-                                                                                handleChange(e);
-                                                                            }} />
-                                                                            <label id="support-no" className="form-check-label ms-2 checked">No</label>
+                                                                    <label htmlFor="workPlace" className="text-primary fw-bold form-label ms-2">Place of work*</label>
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="workPlace"
+                                                                        placeholder="Work name"
+                                                                        className={`form-control border-0 border-bottom ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
+                                                                        value={formData.workPlace}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, workPlace: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="workPlace"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                </div>
+                                                                <div className="form-group">
+                                                                    <label htmlFor="district" className="text-primary fw-bold form-label ms-2">District</label>
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="district"
+                                                                        placeholder="District name"
+                                                                        className={`form-control border-0 border-bottom ${touched.district && errors.district ? "is-invalid" : ""}`}
+                                                                        value={formData.district}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, district: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="district"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    //========== FORM STEP 2 ===========//
+                                                    : step == 2 ?
+                                                        <div>
+                                                            <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                                <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                                    <label htmlFor="clubName" className="text-primary fw-bold form-label ms-2">Student Club*</label>
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="clubName"
+                                                                        placeholder="Student club name"
+                                                                        className={`form-control border-0 border-bottom ${touched.clubName && errors.clubName ? "is-invalid" : ""}`}
+                                                                        value={formData.clubName}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, clubName: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="clubName"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="uniName"
+                                                                        placeholder="University name"
+                                                                        className={`form-control border-0 border-bottom ${touched.uniName && errors.uniName ? "is-invalid" : ""}`}
+                                                                        value={formData.uniName}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, uniName: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="uniName"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                </div>
+                                                                <div className="w-auto form-group">
+                                                                    <div className="mb-4 form-group">
+                                                                        <label className="text-primary fw-bold form-label ms-2">Does Your Club Recieve External Support?</label>
+                                                                        <div className="d-flex ms-3">
+                                                                            <div className="form-check me-4">
+                                                                                <input id="support-yes" className="form-check-input" type="radio"
+                                                                                    onChange={(e) => { //TODO: FIX!
+                                                                                        setFormData({ ...formData, externalSupport: "true" });
+                                                                                        handleChange(e);
+                                                                                    }} />
+                                                                                <label id="support-yes" className="form-check-label ms-2">Yes</label>
+                                                                            </div>
+                                                                            <div className="form-check">
+                                                                                <input id="support-no" className="form-check-input" type="radio"
+                                                                                    onChange={(e) => { //TODO: FIX!
+                                                                                        setFormData({ ...formData, externalSupport: "false" });
+                                                                                        handleChange(e);
+                                                                                    }} />
+                                                                                <label id="support-no" className="form-check-label ms-2 checked">No</label>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                            <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                                <label htmlFor="contactName" className="text-primary fw-bold form-label ms-2">Contact Person*</label>
-                                                                <Field
-                                                                    type="text"
-                                                                    name="contactName"
-                                                                    placeholder="Name"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactName && errors.contactName ? "is-invalid" : ""}`}
-                                                                    value={formData.contactName}
-                                                                    onChange={(e) => {
-                                                                        setFormData({ ...formData, contactName: e.target.value });
-                                                                        handleChange(e);
-                                                                    }}
-                                                                />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="contactName"
-                                                                    className="invalid-feedback"
-                                                                />
-                                                                <Field
-                                                                    type="text"
-                                                                    name="contactRole"
-                                                                    placeholder="Role"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactRole && errors.contactRole ? "is-invalid" : ""}`}
-                                                                    value={formData.contactRole}
-                                                                    onChange={(e) => {
-                                                                        setFormData({ ...formData, contactRole: e.target.value });
-                                                                        handleChange(e);
-                                                                    }}
-                                                                />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="contactRole"
-                                                                    className="invalid-feedback"
-                                                                />
-                                                                <Field
-                                                                    type="tel"
-                                                                    name="contactNo"
-                                                                    placeholder="Cellphone number"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactNo && errors.contactNo ? "is-invalid" : ""}`}
-                                                                    value={formData.contactNo}
-                                                                    onChange={(e) => {
-                                                                        setFormData({ ...formData, contactNo: e.target.value });
-                                                                        handleChange(e);
-                                                                    }}
-                                                                />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="contactNo"
-                                                                    className="invalid-feedback"
-                                                                />
-                                                                <Field
-                                                                    type="text"
-                                                                    name="contactEmail"
-                                                                    placeholder="Email"
-                                                                    className={`form-control border-0 border-bottom ${touched.contactEmail && errors.contactEmail ? "is-invalid" : ""}`}
-                                                                    value={formData.contactEmail}
-                                                                    onChange={(e) => {
-                                                                        setFormData({ ...formData, contactEmail: e.target.value });
-                                                                        handleChange(e);
-                                                                    }}
-                                                                />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="contactEmail"
-                                                                    className="invalid-feedback"
-                                                                />
+                                                            <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                                <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                                    <label htmlFor="contactName" className="text-primary fw-bold form-label ms-2">Contact Person*</label>
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="contactName"
+                                                                        placeholder="Name"
+                                                                        className={`form-control border-0 border-bottom ${touched.contactName && errors.contactName ? "is-invalid" : ""}`}
+                                                                        value={formData.contactName}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, contactName: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="contactName"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="contactRole"
+                                                                        placeholder="Role"
+                                                                        className={`form-control border-0 border-bottom ${touched.contactRole && errors.contactRole ? "is-invalid" : ""}`}
+                                                                        value={formData.contactRole}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, contactRole: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="contactRole"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                    <Field
+                                                                        type="tel"
+                                                                        name="contactNo"
+                                                                        placeholder="Cellphone number"
+                                                                        className={`form-control border-0 border-bottom ${touched.contactNo && errors.contactNo ? "is-invalid" : ""}`}
+                                                                        value={formData.contactNo}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, contactNo: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="contactNo"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="contactEmail"
+                                                                        placeholder="Email"
+                                                                        className={`form-control border-0 border-bottom ${touched.contactEmail && errors.contactEmail ? "is-invalid" : ""}`}
+                                                                        value={formData.contactEmail}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, contactEmail: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="contactEmail"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                </div>
+                                                                <div className="w-auto form-group">
+                                                                    <label htmlFor="supportName" className="text-primary fw-bold form-label ms-2">Person Giving Support*</label>
+                                                                    <Field
+                                                                        type="text"
+                                                                        name="supportName"
+                                                                        placeholder="Name"
+                                                                        className={`form-control border-0 border-bottom ${touched.supportName && errors.supportName ? "is-invalid" : ""}`}
+                                                                        value={formData.supportName}
+                                                                        onChange={(e) => {
+                                                                            setFormData({ ...formData, supportName: e.target.value });
+                                                                            handleChange(e);
+                                                                        }}
+                                                                    />
+                                                                    <ErrorMessage
+                                                                        component="div"
+                                                                        name="supportName"
+                                                                        className="invalid-feedback"
+                                                                    />
+                                                                </div>
                                                             </div>
-                                                            <div className="w-auto form-group">
-                                                                <label htmlFor="supportName" className="text-primary fw-bold form-label ms-2">Person Giving Support*</label>
-                                                                <Field
-                                                                    type="text"
-                                                                    name="supportName"
-                                                                    placeholder="Name"
-                                                                    className={`form-control border-0 border-bottom ${touched.supportName && errors.supportName ? "is-invalid" : ""}`}
-                                                                    value={formData.supportName}
-                                                                    onChange={(e) => {
-                                                                        setFormData({ ...formData, supportName: e.target.value });
-                                                                        handleChange(e);
-                                                                    }}
-                                                                />
-                                                                <ErrorMessage
-                                                                    component="div"
-                                                                    name="supportName"
-                                                                    className="invalid-feedback"
-                                                                />
-                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    //========== INVALID FORM STEP ===========//
-                                                    : ''
+                                                        //========== INVALID FORM STEP ===========//
+                                                        : ''
                                         }
 
                                         <div className="w-100 d-flex justify-content-end align-items-center">

@@ -45,11 +45,11 @@
 
 
 # Non-urgent work
-- [ ] About Us: These say "Dr Dr"
+- [x] About Us: These say "Dr Dr"
 
 ## Articles:
 - [ ] Rural Doctor of the Year: The Photo is of Pierre Jacques -the award is named after him.  The Doctor of the Year 2022 hasn’t been put on yet as I didn’t know how to add
-- [ ] Nominate a doctor - once on the page you can’t  go back to RuDASA
+- [x] Nominate a doctor - once on the page you can’t  go back to RuDASA
 - [ ] Press Statements - 1 old statement. Its about Dr Jenny Nash a previous Award winer - not about Clinical Associates. The "read more" doesn’t work
 
 ## Resources:

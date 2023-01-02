@@ -7,12 +7,12 @@ members: [
     },
     {
         title: 'Stop Stock Outs Project',
-        name: 'Dr. Indira Govender',
+        name: 'Indira Govender',
         email: ''
     },
     {
         title: 'Rural Mental Health',
-        name: 'Dr. Meba Kanda',
+        name: 'Meba Kanda',
         email: 'lungi.hobe@gmail.com'
     },
     {

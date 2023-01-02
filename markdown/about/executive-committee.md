@@ -2,27 +2,27 @@
 members: [
     {
         title: 'Chairperson',
-        name: 'Dr. Lungi Hobe',
+        name: Lungi Hobe,
         email: 'chair@rudasa.org.za'
     },
     {
         title: 'Vice Chair',
-        name: 'Dr. Adam Ashgar',
+        name: 'Adam Ashgar',
         email: 'vicechair@rudasa.org.za'
     },
     {
         title: 'Treasurer',
-        name: 'Dr. Ndiviwe Mphothulo',
+        name: 'Ndiviwe Mphothulo',
         email: 'treasurer@rudasa.org.za'
     },
     {
         title: 'Secretary',
-        name: 'Dr. Jayne Bezuidenhout',
+        name: 'Jayne Bezuidenhout',
         email: 'secretary@rudasa.org.za'
     },
     {
         title: 'Rural Health Conference',
-        name: 'Dr. Jayne Bezuidenhout',
+        name: 'Jayne Bezuidenhout',
         email: 'info@ruralhealthconference.org.za'
     },
     {
@@ -32,7 +32,7 @@ members: [
     },
     {
         title: 'Mentoring',
-        name: 'Dr. Madeleine Muller',
+        name: 'Madeleine Muller',
         email: 'mentor@rudasa.org.za'
     },
     {
@@ -52,4 +52,4 @@ members: [
 # You can also change the text below if you need by simply retyping it as normal (like you would in any text/word document).
 ---
 
-Executive Committee 2022
+Executive Committee 2023
