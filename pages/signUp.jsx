@@ -11,6 +11,8 @@ import matter from 'gray-matter'
 import useUser from './api/useUser'
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 //Get a list of all countries sorted by name
 const { getData: getCountryData } = require('country-list');
@@ -284,7 +286,7 @@ export default function SignUp({ data }) {
                                                             <Field
                                                                 type="text"
                                                                 name="surname"
-                                                                placeholder="Name"
+                                                                placeholder="Surname"
                                                                 className={`form-control border-0 border-bottom ${touched.surname && errors.surname ? "is-invalid" : ""}`}
                                                                 value={formData.surname}
                                                                 onChange={(e) => {
@@ -321,7 +323,17 @@ export default function SignUp({ data }) {
                                                             />
                                                         </div>
                                                         <div className="w-auto form-group">
-                                                            <label htmlFor="password" className="text-primary fw-bold form-label ms-2">Password*</label>
+                                                            <label htmlFor="password" id="password-tooltip" className="text-primary fw-bold form-label ms-2">
+                                                                Password*
+                                                                <span className="text-muted fw-normal ms-2 tooltip-text">
+                                                                    ?
+                                                                    <ReactTooltip
+                                                                        anchorId="password-tooltip"
+                                                                        place="right"
+                                                                        content="For the members-only portal"
+                                                                    />
+                                                                </span>
+                                                            </label>
                                                             <Field
                                                                 type="password"
                                                                 name="password"
@@ -381,7 +393,7 @@ export default function SignUp({ data }) {
                                                         </div>
                                                     </div>
                                                     <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                    <div className="w-auto form-group">
+                                                        <div className="w-auto form-group">
                                                             <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
                                                             <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
                                                                 <option value="health-interest">Interest in rural health</option>
@@ -422,7 +434,17 @@ export default function SignUp({ data }) {
                                                         </div>
                                                         <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                             <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                                <label htmlFor="address1" className="text-primary fw-bold form-label ms-2">Address*</label>
+                                                                <label htmlFor="address1" id="address-tooltip" className="text-primary fw-bold form-label ms-2">
+                                                                    Work Address*
+                                                                    <span className="text-muted fw-normal ms-2 tooltip-text">
+                                                                        ?
+                                                                        <ReactTooltip
+                                                                            anchorId="address-tooltip"
+                                                                            place="right"
+                                                                            content="Place of study if student"
+                                                                        />
+                                                                    </span>
+                                                                </label>
                                                                 <Field
                                                                     type="text"
                                                                     name="address1"

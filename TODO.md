@@ -1,12 +1,12 @@
 # URGENT: Sign Up Form: https://rudasa.org.za/signUp
-- [ ] Name & Surname should be separate
+- [x] Name & Surname should be separate
 - [ ] Fix signup form data
     - *Email*
     - *Work Place*
     - *Address* = work address
     - *District*
-    - *Province*: EC, FS, GP, KZN, LP, MP, NC, NW, WC, other
-    - *Country*: Needs actual countries
+    - [x] *Province*: EC, FS, GP, KZN, LP, MP, NC, NW, WC, other
+    - [x] *Country*: Needs actual countries
     - *Work number*
     - *Cellphone number*
     - *Employment area*: (so we can find people for different tasks)
@@ -27,11 +27,11 @@
         - Non health professional eg Health advocate
     - *Work area*: open for individual comment
     - *Professional Number* (eg HPCSA) - I need for CPD certificates
-    - *Reason for sign up*:
+    - [x] *Reason for sign up*:
         - Rural work - I’m a bit worried people may think we have posts. Rather say “ interest in rural health”.
         - Rural Health Club (students) - otherwise people may think it is something else
 
-    - [ ] Password needs explanation: “for member only pages”. Also can this move right to the end.
+    - [x] Password needs explanation: “for member only pages”. Also can this move right to the end.
     - [ ] A tick box for “I have read the Value Statement  & Code of Conduct and agree to uphold these terms”. This is so we can remove people that do not behave professionally - never done but we need it as an option.
 
 

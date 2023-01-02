@@ -265,3 +265,7 @@ span {
 #markdown h1 {
 	color: var(--primary);
 }
+
+.tooltip-text {
+	font-size: 0.6rem;
+}
