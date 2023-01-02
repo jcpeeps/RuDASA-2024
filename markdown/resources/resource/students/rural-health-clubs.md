@@ -16,10 +16,19 @@ Other links are:
 * [UFS Medical Students Association](https://web.facebook.com/ufsmsa/?_rdc=1&_rdr)
 * UKZN students have a clinic project at [Happy Valley](https://web.facebook.com/happyvalleyclinicukzn/?_rdc=1&_rdr)
 
-**Health Systems Trust (HST)** has 3 email discussion groups you may like to join:
+**Health Systems Trust (HST)**  
+
+HST provides an electronic health information service by hosting electronic discussion forums and mailing lists to facilitate information sharing, communication, and networking around broad and strategic public health issues, locally and internationally.
+
+has 2 email discussion groups you may like to join:
 * [Drug Policy & Practice](mailto:druginfo-subscribe@lists.hst.org.za) 
 * [Health & Human Rights](mailto:hhrnet-subscribe@lists.hst.org.za)
-* [60percent](mailto:60percent-subscribe@lists.hst.org.za)
+
+**60 percent**  
+
+Within the southern African context it is believed that those infected by HIV are 60% women. 60percent endeavours to share relevant information related to HIV/AIDS within a gender, women's rights and sexual and reproductive health and rights lens through the continuum of prevention, treatment and care. This is the discussion link:  
+* [60percent](http://lists.hst.org.za/mailman/listinfo/60percent)
+* [email us](mailto:60percent-subscribe@lists.hst.org.za)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).

@@ -8,12 +8,12 @@ title: 'Courses'
 This annual conference is a vibrant event that focuses on rural issues, rural advocacy and rural best practice.  
 
 Our 4 permanent sub themes are: Building Teams, Health Systems, Community Engagement, and Policy and Practice. The conference is unique as it is multidisciplinary and we all learn from each other. Go to one conference and you will keep coming back.
-**[Find out more](/resources)**
+**[Find out more](/resources/activities/rural-health-conference)**
 ---
 ### Best Practice Guidelines Online
 * RuDASA's [Cutting Edge Rural Medicine](/resources)
 * University of Pretoria's [Essential Steps in the Management of Obstetric Emergencies (ESMOE)](https://www.up.ac.za/centre-for-maternal-fetal-newborn-and-child-healthcare/article/2819785/esmoepublic-downloads/)
-* University of Pretoria's [Department of Family Medicine](https://www.up.ac.za/family-medicine)
+* University of Pretoria's [Department of Family Medicine](https://www.up.ac.za/family-medicine/article/2714809/postgraduate)
 
 ### Short Courses & eLearning
 * Foundation for Professional Development e-learning's [range of courses](https://www.foundation.co.za/clinical-courses)
@@ -28,7 +28,7 @@ Our 4 permanent sub themes are: Building Teams, Health Systems, Community Engage
     * [WITS](https://www.wits.ac.za/clinicalmed/departments/family-medicine-and-primary-care/emergency-medicine/)
 
 ### Maternal & Child Health
-* Limpopo Initiative for Newborn Care's eLearning on [Neonates and New Borns](http://www.lincare.co.za/?page_id=1201)
+* Limpopo Initiative for Newborn Care's eLearning on [Neonates and New Borns](http://www.lincare.co.za/)
 
 ### Cancer & Palliative Care
 * Diploma or masters: 
@@ -36,14 +36,14 @@ Our 4 permanent sub themes are: Building Teams, Health Systems, Community Engage
     * [Stellenbosch University](http://www.sun.ac.za/english/faculty/healthsciences/Family%20Medicine%20and%20Primary%20Care/short-courses) 
 
 ### Family Medicine
-* Diplomas or masters: [Stellenbosch University](http://www.sun.ac.za/english/faculty/healthsciences/Family%20Medicine%20and%20Primary%20Care/Pages/Postgraduate.aspx), [UCT](http://www.publichealth.uct.ac.za/sites/default/files/image_tool/images/8/PG%20Diploma%20in%20FamMed%20_2018.6.26.pdf), [UFS](https://www.ufs.ac.za/health/departments-and-divisions/family-medicine-home), [UP](https://www.up.ac.za/family-medicine), [WITS](https://www.wits.ac.za/clinicalmed/departments/family-medicine-and-primary-care/), [UKZN](https://familymedicine.ukzn.ac.za/studyopportunities/), [SMU](https://purerims.smu.ac.za/en/organisations/family-medicine-primary-health-care)
+* Diplomas or masters: [Stellenbosch University](http://www.sun.ac.za/english/faculty/healthsciences/Family%20Medicine%20and%20Primary%20Care/Pages/Postgraduate.aspx), [UCT](http://www.publichealth.uct.ac.za/sites/default/files/image_tool/images/8/PG%20Diploma%20in%20FamMed%20_2018.6.26.pdf), [UFS](https://www.ufs.ac.za/health/departments-and-divisions/family-medicine-home), [UP](https://www.up.ac.za/family-medicine), [WITS](https://www.wits.ac.za/clinicalmed/departments/family-medicine-and-primary-care/), [UKZN](https://familymedicine.ukzn.ac.za/studyopportunities/), [SMU](https://www.smu.ac.za/schools/medicine/school-of-medicine-academic-programmes/)
 
 ### TB/HIV Management  
-* Short courses: [SAHIVSoc]()
+* Short courses: [SAHIVSoc](https://sahivsoc.org/#!)
 * Diploma in HIV Management: CMSA, SU  UCT, UP
 
 ### Public Health
-* Public Resources: [UWC](https://soph.uwc.ac.za/resources/open-education-resources/)
+* Public Resources: [UWC](https://www.uwc.ac.za/study/faculties-and-programmes/)
 * Short courses: Winter or Summer School UWC, [SU](http://www0.sun.ac.za/summerschools/ipsu/public-health/)
 * Short courses and Masters: [WITS](https://www.wits.ac.za/publichealth/), [UP](https://www.up.ac.za/school-of-health-systems-and-public-health), [UNISA](https://www.unisa.ac.za/sites/corporate/default/Register-to-study-through-Unisa/Subjects-&-modules/All-subjects/PUBLIC-HEALTH), [UWC](https://www.uwc.ac.za/), [UL](https://www.ul.ac.za/index.php?Entity=Public%20Health), [UFH](https://www.ufh.ac.za/faculties/healthsciences/public-health)
 
