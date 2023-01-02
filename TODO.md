@@ -32,7 +32,7 @@
         - Rural Health Club (students) - otherwise people may think it is something else
 
     - [x] Password needs explanation: “for member only pages”. Also can this move right to the end.
-    - [ ] A tick box for “I have read the Value Statement  & Code of Conduct and agree to uphold these terms”. This is so we can remove people that do not behave professionally - never done but we need it as an option.
+    - [x] A tick box for “I have read the Value Statement  & Code of Conduct and agree to uphold these terms”. This is so we can remove people that do not behave professionally - never done but we need it as an option.
 
 
 ## Once the Sign Up Form is completed the following should happen:
@@ -50,7 +50,7 @@
 ## Articles:
 - [ ] Rural Doctor of the Year: The Photo is of Pierre Jacques -the award is named after him.  The Doctor of the Year 2022 hasn’t been put on yet as I didn’t know how to add
 - [x] Nominate a doctor - once on the page you can’t  go back to RuDASA
-- [ ] Press Statements - 1 old statement. Its about Dr Jenny Nash a previous Award winer - not about Clinical Associates. The "read more" doesn’t work
+- [x] Press Statements - 1 old statement. Its about Dr Jenny Nash a previous Award winer - not about Clinical Associates. The "read more" doesn’t work
 
 ## Resources:
 ### https://rudasa.org.za/resources/other/courses
