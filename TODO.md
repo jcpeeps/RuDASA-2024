@@ -9,13 +9,13 @@
     - [x] *Country*: Needs actual countries
     - *Work number*
     - *Cellphone number*
-    - *Employment area*: (so we can find people for different tasks)
+    - *Employment area*: (so we can find people for different tasks) - **Connect to backend**
         - Private sector
         - public sector
         - training institute
         - NGO
         - Student 
-    - *Job description*:
+    - *Job description*: - **Connect to backend**
         - Medical officer/GP
         - Community service
         - Intern
@@ -25,8 +25,8 @@
         - Consultant
         - Other health professional
         - Non health professional eg Health advocate
-    - *Work area*: open for individual comment
-    - *Professional Number* (eg HPCSA) - I need for CPD certificates
+    - *Work area*: open for individual comment - **Connect to backend**
+    - *Professional Number* (eg HPCSA) - I need for CPD certificates - **Connect to backend**
     - [x] *Reason for sign up*:
         - Rural work - I’m a bit worried people may think we have posts. Rather say “ interest in rural health”.
         - Rural Health Club (students) - otherwise people may think it is something else

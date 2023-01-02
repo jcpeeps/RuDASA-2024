@@ -41,11 +41,9 @@ export default function SignUp({ data }) {
         surname: "",
         email: "",
         password: "",
-        signUpReason: "health-interest",
+
         cellNo: "",
         workNo: "",
-        jobDescription: "",
-
         country: "ZA",
         province: "EC",
         address1: "",
@@ -53,6 +51,12 @@ export default function SignUp({ data }) {
         address3: "",
         workPlace: "",
         district: "",
+
+        signUpReason: "health-interest",
+        jobDescription: "",
+        employmentArea: 'private-sector',
+        workArea: '',
+        professionalNumber: '',
 
         clubName: "",
         uniName: "",
@@ -129,7 +133,7 @@ export default function SignUp({ data }) {
     }
 
     let submitShow = false;
-    if (step == 2 || (step == 1 && formData.signUpReason !== "rhc"))
+    if (step == 3 || (step == 2 && formData.signUpReason !== "rhc"))
         submitShow = true;
 
     //The validation schema that checks input is correct on the client side
@@ -153,7 +157,15 @@ export default function SignUp({ data }) {
         password: Yup.string()
             .required("Password is required")
             .min(5, "Password must be minimum 5 characters"),
-        signUpReason: Yup.string(),
+
+
+        //===== ADDRESS =====//
+        address1: Yup.string()
+            .required("Please provide an address"),
+        workPlace: Yup.string()
+            .required("Place of work is required"),
+        district: Yup.string()
+            .required("District is required"),
         cellNo: Yup.string()
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
@@ -164,13 +176,15 @@ export default function SignUp({ data }) {
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
                 'Invalid phone number'),
 
-        //===== ADDRESS =====//
-        address1: Yup.string()
-            .required("Please provide an address"),
-        workPlace: Yup.string()
-            .required("Place of work is required"),
-        district: Yup.string()
-            .required("District is required"),
+
+        // ===== ROLE ===== //
+        signUpReason: Yup.string(),
+        jobDesc: Yup.string(),
+        employmentArea: Yup.string(),
+        workArea: Yup.string()
+            .max(100, "Work area must be less than 100 characters"),
+        professionalNumber: Yup.string(),
+
 
         //===== HEALTH CLUB =====//
         clubName: Yup.string()
@@ -249,7 +263,7 @@ export default function SignUp({ data }) {
                     <Image src={Illustration} className="col-12 col-md-12 col-lg-5 col-xl-5" width={600} height={600} alt="Illustration" />
                     <div className="col-12 col-md-12 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 d-flex flex-column align-items-center">
                         <h1 className="fw-bold w-100 mb-5 text-center text-primary">Sign Up</h1>
-                        <ProgressBar step={step} thirdStep={formData.signUpReason === "rhc"} />
+                        <ProgressBar step={step} rhc={formData.signUpReason === "rhc"} />
                         <div className="w-auto">
                             <Formik
                                 initialValues={{ ...initVals }}
@@ -259,9 +273,10 @@ export default function SignUp({ data }) {
                                 {({ errors, touched, handleChange, isValid }) => (
                                     <Form className="px-3 px-md-0">
                                         {
-                                            //========== FORM STEP 0 ===========//
+                                            //========== FORM STEP 0 - GENERAL ===========//
                                             step == 0 ?
                                                 <div>
+                                                    {/* Name and Surname */}
                                                     <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                             <label htmlFor="firstName" className="text-primary fw-bold form-label ms-2">Name*</label>
@@ -302,6 +317,8 @@ export default function SignUp({ data }) {
                                                             />
                                                         </div>
                                                     </div>
+
+                                                    {/* Email and Password */}
                                                     <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                         <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                             <label htmlFor="email" className="text-primary fw-bold form-label ms-2">Email Address*</label>
@@ -353,76 +370,11 @@ export default function SignUp({ data }) {
                                                             />
                                                         </div>
                                                     </div>
-                                                    <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                            <label htmlFor="cellNo" className="text-primary fw-bold form-label ms-2">Cellphone number*</label>
-                                                            <Field
-                                                                type="tel"
-                                                                name="cellNo"
-                                                                placeholder="Number"
-                                                                className={`form-control border-0 border-bottom ${touched.cellNo && errors.cellNo ? "is-invalid" : ""}`}
-                                                                value={formData.cellNo}
-                                                                onChange={(e) => {
-                                                                    setFormData({ ...formData, cellNo: e.target.value });
-                                                                    handleChange(e);
-                                                                }}
-                                                            />
-                                                            <ErrorMessage
-                                                                component="div"
-                                                                name="cellNo"
-                                                                className="invalid-feedback"
-                                                            />
-                                                        </div>
-                                                        <div className="w-auto form-group">
-                                                            <label htmlFor="workNo" className="text-primary fw-bold form-label ms-2">Work Telephone</label>
-                                                            <Field
-                                                                type="tel"
-                                                                name="workNo"
-                                                                placeholder="Number"
-                                                                className={`form-control border-0 border-bottom ${touched.workNo && errors.workNo ? "is-invalid" : ""}`}
-                                                                value={formData.workNo}
-                                                                onChange={(e) => {
-                                                                    setFormData({ ...formData, workNo: e.target.value });
-                                                                    handleChange(e);
-                                                                }}
-                                                            />
-                                                            <ErrorMessage
-                                                                component="div"
-                                                                name="workNo"
-                                                                className="invalid-feedback"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
-                                                        <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                            <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
-                                                            <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
-                                                                <option value="health-interest">Interest in rural health</option>
-                                                                <option value="information">Information</option>
-                                                                <option value="onboarding">Onboarding programme</option>
-                                                                <option value="rhc">Rural Health Club (Students)</option>
-                                                                <option value="event">Events</option>
-                                                            </select>
-                                                        </div>
-                                                        <div className="w-auto form-group">
-                                                            <label htmlFor="jobDesc" className="text-primary fw-bold form-label ms-2">Job Description*</label>
-                                                            <select id="jobDesc" className="form-select border-0 border-bottom" aria-label="jobDesc" value={formData.jobDescription} onChange={(e) => setFormData({ ...formData, jobDescription: e.target.value })}>
-                                                                <option value="medical-officer">Medical officer/GP</option>
-                                                                <option value="community-service">Community service</option>
-                                                                <option value="intern">Intern</option>
-                                                                <option value="medical-student">Medical student</option>
-                                                                <option value="academic">Academic/lecturer/trainer</option>
-                                                                <option value="registrar">Registrar</option>
-                                                                <option value="consultant">Consultant</option>
-                                                                <option value="other-health-professional">Other health professional</option>
-                                                                <option value="non-health-professional">Non health professional</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                                //========== FORM STEP 1 ===========//
+                                                //========== FORM STEP 1 - ADDRESS ===========//
                                                 : step == 1 ?
                                                     <div>
+                                                        {/* Country and Province */}
                                                         <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                             <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                                 <label htmlFor="country" className="text-primary fw-bold form-label">Country*</label>
@@ -435,7 +387,7 @@ export default function SignUp({ data }) {
                                                                 </select>
                                                             </div>
                                                             {formData.country == "ZA" ? //Hide province when ZA not selected
-                                                                <div className="w-auto form-group" style={{minWidth: '45%'}}>
+                                                                <div className="w-auto form-group" style={{ minWidth: '45%' }}>
                                                                     <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
                                                                     <select id="province" className="form-select border-0 border-bottom" aria-label="province" value={formData.province} onChange={(e) => setFormData({ ...formData, province: e.target.value })}>
                                                                         {
@@ -447,6 +399,50 @@ export default function SignUp({ data }) {
                                                                 </div>
                                                                 : ""}
                                                         </div>
+
+                                                        {/* Phone numbers */}
+                                                        <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                            <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                                <label htmlFor="cellNo" className="text-primary fw-bold form-label ms-2">Cellphone number*</label>
+                                                                <Field
+                                                                    type="tel"
+                                                                    name="cellNo"
+                                                                    placeholder="Number"
+                                                                    className={`form-control border-0 border-bottom ${touched.cellNo && errors.cellNo ? "is-invalid" : ""}`}
+                                                                    value={formData.cellNo}
+                                                                    onChange={(e) => {
+                                                                        setFormData({ ...formData, cellNo: e.target.value });
+                                                                        handleChange(e);
+                                                                    }}
+                                                                />
+                                                                <ErrorMessage
+                                                                    component="div"
+                                                                    name="cellNo"
+                                                                    className="invalid-feedback"
+                                                                />
+                                                            </div>
+                                                            <div className="w-auto form-group">
+                                                                <label htmlFor="workNo" className="text-primary fw-bold form-label ms-2">Work Telephone</label>
+                                                                <Field
+                                                                    type="tel"
+                                                                    name="workNo"
+                                                                    placeholder="Number"
+                                                                    className={`form-control border-0 border-bottom ${touched.workNo && errors.workNo ? "is-invalid" : ""}`}
+                                                                    value={formData.workNo}
+                                                                    onChange={(e) => {
+                                                                        setFormData({ ...formData, workNo: e.target.value });
+                                                                        handleChange(e);
+                                                                    }}
+                                                                />
+                                                                <ErrorMessage
+                                                                    component="div"
+                                                                    name="workNo"
+                                                                    className="invalid-feedback"
+                                                                />
+                                                            </div>
+                                                        </div>
+
+                                                        {/* Address */}
                                                         <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                             <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                                 <label htmlFor="address1" id="address-tooltip" className="text-primary fw-bold form-label ms-2">
@@ -533,161 +529,253 @@ export default function SignUp({ data }) {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    //========== FORM STEP 2 ===========//
+                                                    //========== FORM STEP 2 - ROLE ===========//
                                                     : step == 2 ?
                                                         <div>
-                                                            <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                            {/* Sign up reason and Job Description */}
+                                                            <div className="my-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                                 <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                                    <label htmlFor="clubName" className="text-primary fw-bold form-label ms-2">Student Club*</label>
-                                                                    <Field
-                                                                        type="text"
-                                                                        name="clubName"
-                                                                        placeholder="Student club name"
-                                                                        className={`form-control border-0 border-bottom ${touched.clubName && errors.clubName ? "is-invalid" : ""}`}
-                                                                        value={formData.clubName}
-                                                                        onChange={(e) => {
-                                                                            setFormData({ ...formData, clubName: e.target.value });
-                                                                            handleChange(e);
-                                                                        }}
-                                                                    />
-                                                                    <ErrorMessage
-                                                                        component="div"
-                                                                        name="clubName"
-                                                                        className="invalid-feedback"
-                                                                    />
-                                                                    <Field
-                                                                        type="text"
-                                                                        name="uniName"
-                                                                        placeholder="University name"
-                                                                        className={`form-control border-0 border-bottom ${touched.uniName && errors.uniName ? "is-invalid" : ""}`}
-                                                                        value={formData.uniName}
-                                                                        onChange={(e) => {
-                                                                            setFormData({ ...formData, uniName: e.target.value });
-                                                                            handleChange(e);
-                                                                        }}
-                                                                    />
-                                                                    <ErrorMessage
-                                                                        component="div"
-                                                                        name="uniName"
-                                                                        className="invalid-feedback"
-                                                                    />
+                                                                    <label htmlFor="reason" className="text-primary fw-bold form-label ms-2">Reason for sign up*</label>
+                                                                    <select id="reason" className="form-select border-0 border-bottom" aria-label="reason" value={formData.signUpReason} onChange={(e) => setFormData({ ...formData, signUpReason: e.target.value })}>
+                                                                        <option value="health-interest">Interest in rural health</option>
+                                                                        <option value="information">Information</option>
+                                                                        <option value="onboarding">Onboarding programme</option>
+                                                                        <option value="rhc">Rural Health Club (Students)</option>
+                                                                        <option value="event">Events</option>
+                                                                    </select>
                                                                 </div>
                                                                 <div className="w-auto form-group">
-                                                                    <div className="mb-4 form-group">
-                                                                        <label className="text-primary fw-bold form-label ms-2">Does Your Club Recieve External Support?</label>
-                                                                        <div className="d-flex ms-3">
-                                                                            <div className="form-check me-4">
-                                                                                <input id="support-yes" className="form-check-input" type="radio"
-                                                                                    onChange={(e) => { //TODO: FIX!
-                                                                                        setFormData({ ...formData, externalSupport: "true" });
-                                                                                        handleChange(e);
-                                                                                    }} />
-                                                                                <label id="support-yes" className="form-check-label ms-2">Yes</label>
-                                                                            </div>
-                                                                            <div className="form-check">
-                                                                                <input id="support-no" className="form-check-input" type="radio"
-                                                                                    onChange={(e) => { //TODO: FIX!
-                                                                                        setFormData({ ...formData, externalSupport: "false" });
-                                                                                        handleChange(e);
-                                                                                    }} />
-                                                                                <label id="support-no" className="form-check-label ms-2 checked">No</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                    <label htmlFor="jobDesc" className="text-primary fw-bold form-label ms-2">Job Description*</label>
+                                                                    <select id="jobDesc" className="form-select border-0 border-bottom" aria-label="jobDesc" value={formData.jobDescription} onChange={(e) => setFormData({ ...formData, jobDescription: e.target.value })}>
+                                                                        <option value="medical-officer">Medical officer/GP</option>
+                                                                        <option value="community-service">Community service</option>
+                                                                        <option value="intern">Intern</option>
+                                                                        <option value="medical-student">Medical student</option>
+                                                                        <option value="academic">Academic/lecturer/trainer</option>
+                                                                        <option value="registrar">Registrar</option>
+                                                                        <option value="consultant">Consultant</option>
+                                                                        <option value="other-health-professional">Other health professional</option>
+                                                                        <option value="non-health-professional">Non health professional</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
-                                                            <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+
+                                                            {/* Employment Area and Work Area */}
+                                                            <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                                 <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
-                                                                    <label htmlFor="contactName" className="text-primary fw-bold form-label ms-2">Contact Person*</label>
+                                                                    <label htmlFor="employmentArea" className="text-primary fw-bold form-label ms-2">Employment Area*</label>
+                                                                    <select id="employmentArea" className="form-select border-0 border-bottom" aria-label="reason" value={formData.employmentArea} onChange={(e) => setFormData({ ...formData, employmentArea: e.target.value })}>
+                                                                        <option value="private-sector">Private sector</option>
+                                                                        <option value="public-sector">Public sector</option>
+                                                                        <option value="training-institute">Training institute</option>
+                                                                        <option value="ngo">NGO</option>
+                                                                        <option value="student">Student</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div className="w-auto form-group">
+                                                                    <label htmlFor="workArea" className="text-primary fw-bold form-label ms-2">Work Area</label>
                                                                     <Field
                                                                         type="text"
-                                                                        name="contactName"
-                                                                        placeholder="Name"
-                                                                        className={`form-control border-0 border-bottom ${touched.contactName && errors.contactName ? "is-invalid" : ""}`}
-                                                                        value={formData.contactName}
+                                                                        name="workArea"
+                                                                        placeholder="Work Area"
+                                                                        className={`form-control border-0 border-bottom ${touched.workArea && errors.workArea ? "is-invalid" : ""}`}
+                                                                        value={formData.workArea}
                                                                         onChange={(e) => {
-                                                                            setFormData({ ...formData, contactName: e.target.value });
+                                                                            setFormData({ ...formData, workArea: e.target.value });
                                                                             handleChange(e);
                                                                         }}
                                                                     />
                                                                     <ErrorMessage
                                                                         component="div"
-                                                                        name="contactName"
-                                                                        className="invalid-feedback"
-                                                                    />
-                                                                    <Field
-                                                                        type="text"
-                                                                        name="contactRole"
-                                                                        placeholder="Role"
-                                                                        className={`form-control border-0 border-bottom ${touched.contactRole && errors.contactRole ? "is-invalid" : ""}`}
-                                                                        value={formData.contactRole}
-                                                                        onChange={(e) => {
-                                                                            setFormData({ ...formData, contactRole: e.target.value });
-                                                                            handleChange(e);
-                                                                        }}
-                                                                    />
-                                                                    <ErrorMessage
-                                                                        component="div"
-                                                                        name="contactRole"
-                                                                        className="invalid-feedback"
-                                                                    />
-                                                                    <Field
-                                                                        type="tel"
-                                                                        name="contactNo"
-                                                                        placeholder="Cellphone number"
-                                                                        className={`form-control border-0 border-bottom ${touched.contactNo && errors.contactNo ? "is-invalid" : ""}`}
-                                                                        value={formData.contactNo}
-                                                                        onChange={(e) => {
-                                                                            setFormData({ ...formData, contactNo: e.target.value });
-                                                                            handleChange(e);
-                                                                        }}
-                                                                    />
-                                                                    <ErrorMessage
-                                                                        component="div"
-                                                                        name="contactNo"
-                                                                        className="invalid-feedback"
-                                                                    />
-                                                                    <Field
-                                                                        type="text"
-                                                                        name="contactEmail"
-                                                                        placeholder="Email"
-                                                                        className={`form-control border-0 border-bottom ${touched.contactEmail && errors.contactEmail ? "is-invalid" : ""}`}
-                                                                        value={formData.contactEmail}
-                                                                        onChange={(e) => {
-                                                                            setFormData({ ...formData, contactEmail: e.target.value });
-                                                                            handleChange(e);
-                                                                        }}
-                                                                    />
-                                                                    <ErrorMessage
-                                                                        component="div"
-                                                                        name="contactEmail"
+                                                                        name="workArea"
                                                                         className="invalid-feedback"
                                                                     />
                                                                 </div>
+                                                            </div>
+
+                                                            {/* Work Area and Professional number */}
+                                                            <div className="mb-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                                 <div className="w-auto form-group">
-                                                                    <label htmlFor="supportName" className="text-primary fw-bold form-label ms-2">Person Giving Support*</label>
+                                                                    <label htmlFor="professionalNumber" className="text-primary fw-bold form-label ms-2">Professional Number</label>
                                                                     <Field
                                                                         type="text"
-                                                                        name="supportName"
-                                                                        placeholder="Name"
-                                                                        className={`form-control border-0 border-bottom ${touched.supportName && errors.supportName ? "is-invalid" : ""}`}
-                                                                        value={formData.supportName}
+                                                                        name="professionalNumber"
+                                                                        placeholder="Professional Number"
+                                                                        className={`form-control border-0 border-bottom ${touched.professionalNumber && errors.professionalNumber ? "is-invalid" : ""}`}
+                                                                        value={formData.professionalNumber}
                                                                         onChange={(e) => {
-                                                                            setFormData({ ...formData, supportName: e.target.value });
+                                                                            setFormData({ ...formData, professionalNumber: e.target.value });
                                                                             handleChange(e);
                                                                         }}
                                                                     />
                                                                     <ErrorMessage
                                                                         component="div"
-                                                                        name="supportName"
+                                                                        name="professionalNumber"
                                                                         className="invalid-feedback"
                                                                     />
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                        //========== INVALID FORM STEP ===========//
-                                                        : ''
+                                                        //========== FORM STEP 3 - CLUB ===========//
+                                                        : step == 3 ?
+                                                            <div>
+                                                                {/* Student Club and Support */}
+                                                                <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                                    <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                                        <label htmlFor="clubName" className="text-primary fw-bold form-label ms-2">Student Club*</label>
+                                                                        <Field
+                                                                            type="text"
+                                                                            name="clubName"
+                                                                            placeholder="Student club name"
+                                                                            className={`form-control border-0 border-bottom ${touched.clubName && errors.clubName ? "is-invalid" : ""}`}
+                                                                            value={formData.clubName}
+                                                                            onChange={(e) => {
+                                                                                setFormData({ ...formData, clubName: e.target.value });
+                                                                                handleChange(e);
+                                                                            }}
+                                                                        />
+                                                                        <ErrorMessage
+                                                                            component="div"
+                                                                            name="clubName"
+                                                                            className="invalid-feedback"
+                                                                        />
+                                                                        <Field
+                                                                            type="text"
+                                                                            name="uniName"
+                                                                            placeholder="University name"
+                                                                            className={`form-control border-0 border-bottom ${touched.uniName && errors.uniName ? "is-invalid" : ""}`}
+                                                                            value={formData.uniName}
+                                                                            onChange={(e) => {
+                                                                                setFormData({ ...formData, uniName: e.target.value });
+                                                                                handleChange(e);
+                                                                            }}
+                                                                        />
+                                                                        <ErrorMessage
+                                                                            component="div"
+                                                                            name="uniName"
+                                                                            className="invalid-feedback"
+                                                                        />
+                                                                    </div>
+                                                                    <div className="w-auto form-group">
+                                                                        <div className="mb-4 form-group">
+                                                                            <label className="text-primary fw-bold form-label ms-2">Does Your Club Recieve External Support?</label>
+                                                                            <div className="d-flex ms-3">
+                                                                                <div className="form-check me-4">
+                                                                                    <input id="support-yes" className="form-check-input" type="radio"
+                                                                                        onChange={(e) => { //TODO: FIX!
+                                                                                            setFormData({ ...formData, externalSupport: "true" });
+                                                                                            handleChange(e);
+                                                                                        }} />
+                                                                                    <label id="support-yes" className="form-check-label ms-2">Yes</label>
+                                                                                </div>
+                                                                                <div className="form-check">
+                                                                                    <input id="support-no" className="form-check-input" type="radio"
+                                                                                        onChange={(e) => { //TODO: FIX!
+                                                                                            setFormData({ ...formData, externalSupport: "false" });
+                                                                                            handleChange(e);
+                                                                                        }} />
+                                                                                    <label id="support-no" className="form-check-label ms-2 checked">No</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                {/* Other contacts */}
+                                                                <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
+                                                                    <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
+                                                                        <label htmlFor="contactName" className="text-primary fw-bold form-label ms-2">Contact Person*</label>
+                                                                        <Field
+                                                                            type="text"
+                                                                            name="contactName"
+                                                                            placeholder="Name"
+                                                                            className={`form-control border-0 border-bottom ${touched.contactName && errors.contactName ? "is-invalid" : ""}`}
+                                                                            value={formData.contactName}
+                                                                            onChange={(e) => {
+                                                                                setFormData({ ...formData, contactName: e.target.value });
+                                                                                handleChange(e);
+                                                                            }}
+                                                                        />
+                                                                        <ErrorMessage
+                                                                            component="div"
+                                                                            name="contactName"
+                                                                            className="invalid-feedback"
+                                                                        />
+                                                                        <Field
+                                                                            type="text"
+                                                                            name="contactRole"
+                                                                            placeholder="Role"
+                                                                            className={`form-control border-0 border-bottom ${touched.contactRole && errors.contactRole ? "is-invalid" : ""}`}
+                                                                            value={formData.contactRole}
+                                                                            onChange={(e) => {
+                                                                                setFormData({ ...formData, contactRole: e.target.value });
+                                                                                handleChange(e);
+                                                                            }}
+                                                                        />
+                                                                        <ErrorMessage
+                                                                            component="div"
+                                                                            name="contactRole"
+                                                                            className="invalid-feedback"
+                                                                        />
+                                                                        <Field
+                                                                            type="tel"
+                                                                            name="contactNo"
+                                                                            placeholder="Cellphone number"
+                                                                            className={`form-control border-0 border-bottom ${touched.contactNo && errors.contactNo ? "is-invalid" : ""}`}
+                                                                            value={formData.contactNo}
+                                                                            onChange={(e) => {
+                                                                                setFormData({ ...formData, contactNo: e.target.value });
+                                                                                handleChange(e);
+                                                                            }}
+                                                                        />
+                                                                        <ErrorMessage
+                                                                            component="div"
+                                                                            name="contactNo"
+                                                                            className="invalid-feedback"
+                                                                        />
+                                                                        <Field
+                                                                            type="text"
+                                                                            name="contactEmail"
+                                                                            placeholder="Email"
+                                                                            className={`form-control border-0 border-bottom ${touched.contactEmail && errors.contactEmail ? "is-invalid" : ""}`}
+                                                                            value={formData.contactEmail}
+                                                                            onChange={(e) => {
+                                                                                setFormData({ ...formData, contactEmail: e.target.value });
+                                                                                handleChange(e);
+                                                                            }}
+                                                                        />
+                                                                        <ErrorMessage
+                                                                            component="div"
+                                                                            name="contactEmail"
+                                                                            className="invalid-feedback"
+                                                                        />
+                                                                    </div>
+                                                                    <div className="w-auto form-group">
+                                                                        <label htmlFor="supportName" className="text-primary fw-bold form-label ms-2">Person Giving Support*</label>
+                                                                        <Field
+                                                                            type="text"
+                                                                            name="supportName"
+                                                                            placeholder="Name"
+                                                                            className={`form-control border-0 border-bottom ${touched.supportName && errors.supportName ? "is-invalid" : ""}`}
+                                                                            value={formData.supportName}
+                                                                            onChange={(e) => {
+                                                                                setFormData({ ...formData, supportName: e.target.value });
+                                                                                handleChange(e);
+                                                                            }}
+                                                                        />
+                                                                        <ErrorMessage
+                                                                            component="div"
+                                                                            name="supportName"
+                                                                            className="invalid-feedback"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            // ========== INVALID FORM STEP ===========//
+                                                            : ''
                                         }
 
                                         <div className="w-100 d-flex justify-content-end align-items-center">
@@ -703,7 +791,7 @@ export default function SignUp({ data }) {
                                             <div className={`hover-button ${submitShow ? "d-none" : ""
                                                 }`}>
                                                 <button className="btn btn-lg btn-secondary"
-                                                    disabled={step == 2} //This prevents the third component from being navigatible when not selected
+                                                    disabled={step === 3} //This prevents the third component from being navigatible when not selected
                                                     onClick={() => {
                                                         setStep((currStep) => currStep + 1);
                                                     }}
