@@ -792,7 +792,6 @@ export default function SignUp({ data }) {
                                                         type="checkbox"
                                                         name="privacyPolicy"
                                                         className={`form-check-input ${touched.privacyPolicy && errors.privacyPolicy ? "is-invalid" : ""}`}
-                                                        value={formData.privacyPolicy}
                                                         onChange={(e) => {
                                                             setFormData({ ...formData, privacyPolicy: e.target.value });
                                                             handleChange(e);
