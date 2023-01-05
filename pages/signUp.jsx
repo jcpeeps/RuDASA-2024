@@ -139,7 +139,7 @@ export default function SignUp({ data }) {
         submitShow = true;
 
     //The validation schema that checks input is correct on the client side
-    const Schema = Yup.object().shape({
+    const GeneralSchema = Yup.object().shape({
         //===== GENERAL =====//
         firstName: Yup.string()
             .matches(
@@ -159,8 +159,9 @@ export default function SignUp({ data }) {
         password: Yup.string()
             .required("Password is required")
             .min(5, "Password must be minimum 5 characters"),
+    });
 
-
+    const AddressSchema = Yup.object().shape({
         //===== ADDRESS =====//
         address1: Yup.string()
             .required("Please provide an address"),
@@ -177,8 +178,9 @@ export default function SignUp({ data }) {
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
                 'Invalid phone number'),
+    });
 
-
+    const RoleSchema = Yup.object().shape({
         // ===== ROLE ===== //
         signUpReason: Yup.string(),
         jobDesc: Yup.string(),
@@ -186,8 +188,11 @@ export default function SignUp({ data }) {
         workArea: Yup.string()
             .max(100, "Work area must be less than 100 characters"),
         professionalNumber: Yup.string(),
+        privacyPolicy: Yup.boolean()
+            .oneOf([true], "Please accept our policies")
+    });
 
-
+    const ClubSchema = Yup.object().shape({
         //===== HEALTH CLUB =====//
         clubName: Yup.string()
             .when("signUpReason", {
@@ -260,6 +265,8 @@ export default function SignUp({ data }) {
             .oneOf([true], "Please accept our policies")
     });
 
+    const Schema = [GeneralSchema, AddressSchema, RoleSchema, ClubSchema];
+
     return (
         <Layout pageTitle="RuDASA | Sign up" hide="true">
             <section>
@@ -272,7 +279,7 @@ export default function SignUp({ data }) {
                         <div className="w-auto">
                             <Formik
                                 initialValues={{ ...initVals }}
-                                validationSchema={Schema}
+                                validationSchema={Schema[step]}
                                 onSubmit={(values) => { }}
                             >
                                 {({ errors, touched, handleChange, isValid }) => (
@@ -824,7 +831,7 @@ export default function SignUp({ data }) {
                                             <div className={`hover-button ${submitShow ? "d-none" : ""
                                                 }`}>
                                                 <button className="btn btn-lg btn-secondary"
-                                                    disabled={step === 3} //This prevents the third component from being navigatible when not selected
+                                                    disabled={!isValid} 
                                                     onClick={() => {
                                                         setStep((currStep) => currStep + 1);
                                                     }}
