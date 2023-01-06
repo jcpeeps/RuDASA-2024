@@ -9,10 +9,11 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import useUser from './api/useUser'
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, setNestedObjectValues } from "formik";
 import * as Yup from "yup";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { useEffect } from 'react'
 
 //Get a list of all countries sorted by name
 const { getData: getCountryData } = require('country-list');
@@ -174,6 +175,17 @@ export default function SignUp({ data }) {
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
                 'Invalid phone number')
             .required("Cell no. is required"),
+            // .when(
+            //     "$other",
+            //     {
+            //         is: () => true,
+            //         then: Yup.string().matches(
+            //             /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+            //             'Invalid phone number')
+            //             .required("Cell no. is required"),
+            //         otherwise: Yup.string()
+            //     }
+            // ),
         workNo: Yup.string()
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
@@ -181,7 +193,7 @@ export default function SignUp({ data }) {
     });
 
     const RoleSchema = Yup.object().shape({
-        // ===== ROLE ===== //
+        //===== ROLE =====//
         signUpReason: Yup.string(),
         jobDesc: Yup.string(),
         employmentArea: Yup.string(),
@@ -281,8 +293,24 @@ export default function SignUp({ data }) {
                                 initialValues={{ ...initVals }}
                                 validationSchema={Schema[step]}
                                 onSubmit={(values) => { }}
+
+                                enableReinitialize
+                                // validateOnBlur={false}
+                                // validateOnChange={false}
+                                validateOnMount
+                                isInitialValid={false}
+                                // validate={() => {}}
+                                // onSubmit={() => {
+                                //     handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
+                                // }}
                             >
-                                {({ errors, touched, handleChange, isValid }) => (
+                                {({ errors, touched, handleChange, isValid, validateForm }) => {
+
+                                    useEffect(() => {
+                                        validateForm();
+                                    }, [step]);
+
+                                    return (
                                     <Form className="px-3 px-md-0">
                                         {
                                             //========== FORM STEP 0 - GENERAL ===========//
@@ -805,7 +833,7 @@ export default function SignUp({ data }) {
                                                         }}
                                                     />
                                                     <label className="form-check-label" htmlFor="privacyPolicy">
-                                                        I agree to the <a href="/pdfs/value-statement.pdf" target="_blank">Value Statement</a> and <a href="/pdfs/code-of-conduct.pdf" target="_blank">Code of Conduct</a>
+                                                        I agree to the <a href="/pdfs/value-statement.pdf" target="_blank">Value Statement</a> and <a href="/pdfs/code-of-conduct.pdf" target="_blank">Code of Conduct</a><label className="text-primary fw-bold form-label ms-2">*</label>
                                                     </label>
                                                     <ErrorMessage
                                                         component="div"
@@ -824,6 +852,9 @@ export default function SignUp({ data }) {
                                                 disabled={step == 0}
                                                 onClick={() => {
                                                     setStep((currStep) => currStep - 1);
+                                                    // setTimeout(() => {
+                                                    //     setTouched({}, false);
+                                                    // }, 0);
                                                 }}
                                             >
                                                 Back
@@ -834,6 +865,9 @@ export default function SignUp({ data }) {
                                                     disabled={!isValid} 
                                                     onClick={() => {
                                                         setStep((currStep) => currStep + 1);
+                                                        // setTimeout(() => {
+                                                        //     setTouched({}, false);
+                                                        // }, 0);
                                                     }}
                                                 >
                                                     Next
@@ -855,7 +889,7 @@ export default function SignUp({ data }) {
                                             {formSubmitErr}
                                         </p>
                                     </Form>
-                                )}
+                                ) }}
                             </Formik>
                         </div>
                     </div>
