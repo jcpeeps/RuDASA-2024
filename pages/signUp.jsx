@@ -99,6 +99,7 @@ export default function SignUp({ data }) {
             if (response.status == "error" && ("code" in response)) {
                 switch (response.code) {
                     case "emailTaken":
+                    case "policyRejected":
                     case "invalidSignup":
                         setFormSubmitErr(response.message); //Messages are set in sheets.js
                         break;
@@ -201,77 +202,53 @@ export default function SignUp({ data }) {
             .max(100, "Work area must be less than 100 characters"),
         professionalNumber: Yup.string(),
         privacyPolicy: Yup.boolean()
-            .oneOf([true], "Please accept our policies")
+            .when("other", {
+                is: () => { return submitShow; }, //Don't validate privacyPolicy unless the "Sign up" button is visible
+                then: Yup.boolean()
+                    .oneOf([true], "Please accept our policies"),
+            })
     });
 
     const ClubSchema = Yup.object().shape({
         //===== HEALTH CLUB =====//
         clubName: Yup.string()
-            .when("signUpReason", {
-                is: "rhc",
-                then: Yup.string()
                     .matches(
                         /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
                         'Club name can only contain letters'
                     )
-                    .required("Please enter your club name")
-            }),
+                    .required("Please enter your club name"),
 
         uniName: Yup.string()
-            .when("signUpReason", {
-                is: "rhc",
-                then: Yup.string()
                     .matches(
                         /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
                         'University name can only contain letters'
                     )
-                    .required("University is required")
-            }),
+                    .required("University is required"),
         contactName: Yup.string()
-            .when("signUpReason", {
-                is: "rhc",
-                then: Yup.string()
                     .matches(
                         /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
                         'Contact name can only contain letters'
                     )
-                    .required("Name is required")
-            }),
+                    .required("Name is required"),
         contactRole: Yup.string()
-            .when("signUpReason", {
-                is: "rhc",
-                then: Yup.string()
                     .matches(
                         /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
                         'Contact role can only contain letters'
                     )
-                    .required("Role is required")
-            }),
+                    .required("Role is required"),
         contactNo: Yup.string()
-            .when("signUpReason", {
-                is: "rhc",
-                then: Yup.string()
                     .matches(
                         /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-                        'Invalid phone number')
-            }),
+                        'Invalid phone number'),
         contactEmail: Yup.string()
-            .when("signUpReason", {
-                is: "rhc",
-                then: Yup.string()
                     .email("Invalid email address")
-                    .required("Email is required")
-            }),
+                    .required("Email is required"),
         supportName: Yup.string()
-            .when("signUpReason", {
-                is: "rhc",
-                then: Yup.string()
                     .matches(
                         /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/gi,
                         'Name can only contain letters'
                     )
-                    .required("Name is required")
-            }),
+                    .required("Name is required"),
 
         privacyPolicy: Yup.boolean()
             .oneOf([true], "Please accept our policies")
@@ -299,7 +276,6 @@ export default function SignUp({ data }) {
                                 // validateOnChange={false}
                                 validateOnMount
                                 isInitialValid={false}
-                                // validate={() => {}}
                                 // onSubmit={() => {
                                 //     handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
                                 // }}
@@ -308,7 +284,7 @@ export default function SignUp({ data }) {
 
                                     useEffect(() => {
                                         validateForm();
-                                    }, [step]);
+                                    }, [step, submitShow]); //Must validate when submitShow changes for privacyPolicy
 
                                     return (
                                     <Form className="px-3 px-md-0">

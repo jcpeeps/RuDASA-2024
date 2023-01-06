@@ -231,6 +231,36 @@ export default async function handler(req, res)
         async function handleSignup(req, data) {
             //Check all required fields have been provided in the request
             const REQUIRED_FIELDS = ["email", "password", "firstName", "surname", "signUpReason", "cellNo", "country", "province", "address1", "workPlace", "district"];
+            [
+                "firstName",
+                "surname",
+                "email",
+                "password",
+                "cellNo",
+                "workNo",
+                "country",
+                "province",
+                "address1",
+                "address2",
+                "address3",
+                "workPlace",
+                "district",
+                "signUpReason",
+                "jobDescription",
+                "employmentArea",
+                "workArea",
+                "professionalNumber",
+                "clubName",
+                "uniName",
+                "externalSupport",
+                "contactName",
+                "contactRole",
+                "contactNo",
+                "contactEmail",
+                "supportName",
+                "privacyPolicy"
+            ]
+
             // const REQUIRED_FIELDS = ["email", "password"];
 
             let allFieldsProvided = true;
@@ -262,6 +292,17 @@ export default async function handler(req, res)
                         status: "error",
                         code: "emailTaken",
                         message: "That email already belongs to a registered user",
+                        data: {}
+                    });
+                }
+
+                //== CHECK T&C's ACCEPTED ==//
+                if(data["privacyPolicy"] !== true)
+                {
+                    return res.status(400).json({
+                        status: "error",
+                        code: "policyRejected",
+                        message: "You must accept our value statement and code of conduct to sign up",
                         data: {}
                     });
                 }
