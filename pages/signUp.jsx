@@ -664,16 +664,16 @@ export default function SignUp({ data }) {
                                                                             <label className="text-primary fw-bold form-label ms-2">Does Your Club Recieve External Support?</label>
                                                                             <div className="d-flex ms-3">
                                                                                 <div className="form-check me-4">
-                                                                                    <input id="support-yes" className="form-check-input" type="radio"
-                                                                                        onChange={(e) => { //TODO: FIX!
+                                                                                    <input id="support-yes" className="form-check-input" type="radio" name="support"
+                                                                                        onChange={(e) => { 
                                                                                             setFormData({ ...formData, externalSupport: "true" });
                                                                                             handleChange(e);
                                                                                         }} />
                                                                                     <label id="support-yes" className="form-check-label ms-2">Yes</label>
                                                                                 </div>
                                                                                 <div className="form-check">
-                                                                                    <input id="support-no" className="form-check-input" type="radio"
-                                                                                        onChange={(e) => { //TODO: FIX!
+                                                                                    <input id="support-no" className="form-check-input" type="radio" name="support"
+                                                                                        onChange={(e) => { 
                                                                                             setFormData({ ...formData, externalSupport: "false" });
                                                                                             handleChange(e);
                                                                                         }} />
