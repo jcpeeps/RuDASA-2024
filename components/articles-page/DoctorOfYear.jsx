@@ -48,7 +48,7 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
                     </Accordion.Item>
                 </Accordion>
                 <div className="text-end hover-button mb-4 mb-md-0 flex-fill">
-                    <a href="https://forms.gle/8pvSMjo1HTw2eqKd9" target="_blank" role="button" className="btn btn-lg btn-secondary text-white">Nominate a Doctor</a>
+                    <a href="https://forms.gle/8pvSMjo1HTw2eqKd9" target="_blank" rel="noreferrer" role="button" className="btn btn-lg btn-secondary text-white">Nominate a Doctor</a>
                 </div>
             </div>
         </section>

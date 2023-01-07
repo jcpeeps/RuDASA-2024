@@ -269,6 +269,7 @@ export default function SignUp({ data }) {
                                     //eslint-disable-next-line react-hooks/rules-of-hooks
                                     useEffect(() => {
                                         validateForm();
+                                    //eslint-disable-next-line react-hooks/exhaustive-deps
                                     }, [step, submitShow]); //Must validate when submitShow changes for privacyPolicy
 
                                     return (
