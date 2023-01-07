@@ -230,36 +230,49 @@ export default async function handler(req, res)
         //===== HANDLE SIGNUP =====
         async function handleSignup(req, data) {
             //Check all required fields have been provided in the request
-            const REQUIRED_FIELDS = ["email", "password", "firstName", "surname", "signUpReason", "cellNo", "country", "province", "address1", "workPlace", "district"];
-            [
-                "firstName",
-                "surname",
+            const REQUIRED_FIELDS = [
                 "email",
                 "password",
+                "firstName",
+                "surname",
+                "signUpReason",
                 "cellNo",
-                "workNo",
                 "country",
                 "province",
                 "address1",
-                "address2",
-                "address3",
                 "workPlace",
-                "district",
-                "signUpReason",
-                "jobDescription",
-                "employmentArea",
-                "workArea",
-                "professionalNumber",
-                "clubName",
-                "uniName",
-                "externalSupport",
-                "contactName",
-                "contactRole",
-                "contactNo",
-                "contactEmail",
-                "supportName",
-                "privacyPolicy"
-            ]
+                "district"
+            ];
+
+            // [
+            //     "firstName",
+            //     "surname",
+            //     "email",
+            //     "password",
+            //     "cellNo",
+            //     "workNo",
+            //     "country",
+            //     "province",
+            //     "address1",
+            //     "address2",
+            //     "address3",
+            //     "workPlace",
+            //     "district",
+            //     "signUpReason",
+            //     "jobDescription",
+            //     "employmentArea",
+            //     "workArea",
+            //     "professionalNumber",
+            //     "clubName",
+            //     "uniName",
+            //     "externalSupport",
+            //     "contactName",
+            //     "contactRole",
+            //     "contactNo",
+            //     "contactEmail",
+            //     "supportName",
+            //     "privacyPolicy"
+            // ]
 
             // const REQUIRED_FIELDS = ["email", "password"];
 

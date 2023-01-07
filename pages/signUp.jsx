@@ -9,7 +9,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import useUser from './api/useUser'
-import { Formik, Form, Field, ErrorMessage, setNestedObjectValues } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
@@ -68,7 +68,7 @@ export default function SignUp({ data }) {
         contactEmail: "",
         supportName: "",
 
-        privacyPolicy: false,
+        privacyPolicy: false
     };
 
     // Object that stores information across all components/stages of the form
@@ -84,8 +84,6 @@ export default function SignUp({ data }) {
             type: "signup",
             data: vals
         }
-
-        //TODO: Check data is valid before sending to sheets.js
 
         try {
             const response = await fetch('/api/sheets', {
@@ -176,17 +174,6 @@ export default function SignUp({ data }) {
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
                 'Invalid phone number')
             .required("Cell no. is required"),
-            // .when(
-            //     "$other",
-            //     {
-            //         is: () => true,
-            //         then: Yup.string().matches(
-            //             /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-            //             'Invalid phone number')
-            //             .required("Cell no. is required"),
-            //         otherwise: Yup.string()
-            //     }
-            // ),
         workNo: Yup.string()
             .matches(
                 /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
@@ -205,7 +192,7 @@ export default function SignUp({ data }) {
             .when("other", {
                 is: () => { return submitShow; }, //Don't validate privacyPolicy unless the "Sign up" button is visible
                 then: Yup.boolean()
-                    .oneOf([true], "Please accept our policies"),
+                    .isTrue("Please accept our policies")
             })
     });
 
@@ -251,7 +238,7 @@ export default function SignUp({ data }) {
                     .required("Name is required"),
 
         privacyPolicy: Yup.boolean()
-            .oneOf([true], "Please accept our policies")
+            .isTrue("Please accept our policies"),
     });
 
     const Schema = [GeneralSchema, AddressSchema, RoleSchema, ClubSchema];
@@ -269,19 +256,17 @@ export default function SignUp({ data }) {
                             <Formik
                                 initialValues={{ ...initVals }}
                                 validationSchema={Schema[step]}
-                                onSubmit={(values) => { }}
 
                                 enableReinitialize
-                                // validateOnBlur={false}
-                                // validateOnChange={false}
                                 validateOnMount
                                 isInitialValid={false}
-                                // onSubmit={() => {
-                                //     handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
-                                // }}
+                                onSubmit={() => {
+                                    handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
+                                }}
                             >
                                 {({ errors, touched, handleChange, isValid, validateForm }) => {
 
+                                    //eslint-disable-next-line react-hooks/rules-of-hooks
                                     useEffect(() => {
                                         validateForm();
                                     }, [step, submitShow]); //Must validate when submitShow changes for privacyPolicy
@@ -803,8 +788,9 @@ export default function SignUp({ data }) {
                                                         type="checkbox"
                                                         name="privacyPolicy"
                                                         className={`form-check-input ${touched.privacyPolicy && errors.privacyPolicy ? "is-invalid" : ""}`}
+                                                        checked={formData.privacyPolicy}
                                                         onChange={(e) => {
-                                                            setFormData({ ...formData, privacyPolicy: e.target.value });
+                                                            setFormData({ ...formData, privacyPolicy: !formData.privacyPolicy });
                                                             handleChange(e);
                                                         }}
                                                     />
@@ -828,9 +814,6 @@ export default function SignUp({ data }) {
                                                 disabled={step == 0}
                                                 onClick={() => {
                                                     setStep((currStep) => currStep - 1);
-                                                    // setTimeout(() => {
-                                                    //     setTouched({}, false);
-                                                    // }, 0);
                                                 }}
                                             >
                                                 Back
@@ -841,9 +824,6 @@ export default function SignUp({ data }) {
                                                     disabled={!isValid} 
                                                     onClick={() => {
                                                         setStep((currStep) => currStep + 1);
-                                                        // setTimeout(() => {
-                                                        //     setTouched({}, false);
-                                                        // }, 0);
                                                     }}
                                                 >
                                                     Next
@@ -853,9 +833,6 @@ export default function SignUp({ data }) {
                                                 <button className="btn btn-lg btn-secondary"
                                                     type="submit"
                                                     disabled={!isValid}
-                                                    onClick={() => {
-                                                        handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
-                                                    }}
                                                 >
                                                     Sign up
                                                 </button>
