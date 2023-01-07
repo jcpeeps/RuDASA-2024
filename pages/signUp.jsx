@@ -260,9 +260,6 @@ export default function SignUp({ data }) {
                                 enableReinitialize
                                 validateOnMount
                                 isInitialValid={false}
-                                onSubmit={() => {
-                                    handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
-                                }}
                             >
                                 {({ errors, touched, handleChange, isValid, validateForm }) => {
 
@@ -834,6 +831,9 @@ export default function SignUp({ data }) {
                                                 <button className="btn btn-lg btn-secondary"
                                                     type="submit"
                                                     disabled={!isValid}
+                                                    onClick={() => {
+                                                        handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
+                                                    }}
                                                 >
                                                     Sign up
                                                 </button>
