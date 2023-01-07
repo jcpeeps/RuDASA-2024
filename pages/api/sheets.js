@@ -5,7 +5,7 @@
 
 import { google } from "googleapis";
 const bcrypt = require("bcrypt");
-const debugOutput = true; //IMPORTANT: DO NOT ENABLE ON PRODUCTION BUILD
+const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 
 /* Request format:
  Login:
