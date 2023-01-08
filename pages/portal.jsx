@@ -17,6 +17,12 @@ export default function Portal({ resources, overview }) {
         redirectIfFound: false
     });
 
+    let isLoading = false;
+    // Server-render loading state
+    if (!user || user.isLoggedIn === false) {
+        isLoading = true;
+    }
+
 	const [visible, setVisible] = useState(false)
 
 	const { ref, inView } = useInView({
@@ -27,7 +33,8 @@ export default function Portal({ resources, overview }) {
 		if (inView) setVisible(true)
 	}, [inView])
 
-	return (
+	return isLoading ||
+	(
 		<Layout pageTitle="RuDASA | Rural Onboarding" hide="true">
 			<div className="position-fixed team-svg d-none d-lg-block">
 				<Image src={Illustration} width={700} alt="" />

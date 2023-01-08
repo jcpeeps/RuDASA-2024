@@ -5,9 +5,22 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Layout from '../../../components/Layout'
 import Link from 'next/link'
+import useUser from '../../api/useUser'
 
-export default function resourcePage({ frontmatter: { title }, content }) {
-    return (
+export default function ResourcePage({ frontmatter: { title }, content }) {
+    const { user } = useUser({ 
+        redirectTo: '/login',
+        redirectIfFound: false
+    });
+
+    let isLoading = false;
+    // Server-render loading state
+    if (!user || user.isLoggedIn === false) {
+        isLoading = true;
+    }
+
+    return isLoading ||
+    (
         <Layout pageTitle={`RuDASA | ${title}`}>
             <div className="my-5 py-5" />
             <section className="container px-5">

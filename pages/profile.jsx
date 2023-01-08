@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 export default function Profile() {
     // Fetch the user session client-side
     const { user } = useUser({
-        redirectTo: '/login',
+        redirectTo: '/',
         redirectIfFound: false //Set to true to prevent instant redirect when not signed in
     });
 
@@ -23,7 +23,7 @@ export default function Profile() {
         <Layout>
           <br/><br/><br/><br/><br/><br/><br/>
           <h1>{ isLoading?"Loading":"Your Profile" }</h1>
-          <code>USER: { JSON.stringify(user, null, 2) }</code>
+          { isLoading || <code>USER: { JSON.stringify(user, null, 2) }</code> }
         </Layout>
     )
 }
