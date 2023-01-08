@@ -12,6 +12,44 @@ export default function ContactForm() {
         msg: "",
     };
 
+    const handleSubmit = async (vals) => {
+        const payload = {
+            type: "contact",
+            data: vals
+        }
+
+        try {
+            const response = await fetch('/api/sheets', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
+            }).then(resp => resp.json());
+
+            if (response.status == "error" && ("code" in response)) {
+                switch (response.code) {
+                    case "invalidContact":
+                        setFormSubmitErr(response.message); //Messages are set in sheets.js
+                        break;
+
+                    default:
+                        setFormSubmitErr("Something went wrong while trying to send your message. Please try again later.");
+                        break;
+                }
+            }
+            else //Contact form submission was successful
+            {
+                // NOT SURE WHAT TO DO HERE, ALL YOURS
+            }
+
+            console.log(response);
+
+        } catch (error) {
+            console.error("FATAL ERROR\n" + error);
+        }
+    }
+
     const Schema = Yup.object({
         fullName: Yup.string()
             .required("Please enter your full name"),
@@ -44,8 +82,11 @@ export default function ContactForm() {
                         enableReinitialize
                         validateOnMount
                         isInitialValid={false}
-                        onSubmit={() => {
-                            handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
+                        onSubmit={(values, { setSubmitting, resetForm }) => {
+                            setSubmitting(true);
+                            handleSubmit(values);
+                            resetForm();
+                            setSubmitting(false);
                         }}
                     >
                         {({ errors, touched, handleChange, isValid, validateForm }) => {
@@ -116,7 +157,13 @@ export default function ContactForm() {
                                         </div>
                                     </div>
                                     <div className="text-end w-100 my-4 hover-button">
-                                        <input className="btn btn-secondary btn-lg" type="submit" value="Send" />
+                                        <button 
+                                            type="submit" 
+                                            className="btn btn-secondary btn-lg" 
+                                            disabled={!isValid}
+                                        >
+                                            Send
+                                        </button>
                                     </div>
                                 </Form>
                             )
