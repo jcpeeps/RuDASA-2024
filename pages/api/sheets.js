@@ -5,7 +5,7 @@
 
 import { google } from "googleapis";
 const bcrypt = require("bcrypt");
-const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
+const debugOutput = false && process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 
 /* Request format:
  Login:
@@ -241,40 +241,9 @@ export default async function handler(req, res)
                 "province",
                 "address1",
                 "workPlace",
-                "district"
+                "district",
+                "privacyPolicy"
             ];
-
-            // [
-            //     "firstName",
-            //     "surname",
-            //     "email",
-            //     "password",
-            //     "cellNo",
-            //     "workNo",
-            //     "country",
-            //     "province",
-            //     "address1",
-            //     "address2",
-            //     "address3",
-            //     "workPlace",
-            //     "district",
-            //     "signUpReason",
-            //     "jobDescription",
-            //     "employmentArea",
-            //     "workArea",
-            //     "professionalNumber",
-            //     "clubName",
-            //     "uniName",
-            //     "externalSupport",
-            //     "contactName",
-            //     "contactRole",
-            //     "contactNo",
-            //     "contactEmail",
-            //     "supportName",
-            //     "privacyPolicy"
-            // ]
-
-            // const REQUIRED_FIELDS = ["email", "password"];
 
             let allFieldsProvided = true;
             for (let f of REQUIRED_FIELDS)
@@ -326,14 +295,17 @@ export default async function handler(req, res)
 
                         // The values that will be passed into each column in the new row
                         const newRowData = [
+                            //General
                             data.email,
                             passHash,
                             data.firstName,
                             data.surname,
+
                             data.signUpReason,
                             data.cellNo,
                             data.workNo,
 
+                            //Address
                             data.country,
                             data.province,
                             data.address1,
@@ -342,14 +314,23 @@ export default async function handler(req, res)
                             data.workPlace,
                             data.district,
 
+                            //Role
+                            data.jobDescription,
+                            data.employmentArea,
+                            data.workArea,
+                            data.professionalNumber,
+
+                            //Club
                             data.clubName,
                             data.uniName,
                             data.externalSupport,
                             data.contactName,
                             data.contactRole,
                             data.contactNo,
-                            data.supportName
-                        ];
+                            data.contactEmail,
+                            data.supportName,
+                            data.privacyPolicy
+                        ]
 
                         //TODO: Handle error response
                         const response = await sheets.spreadsheets.values.append({
@@ -392,7 +373,7 @@ export default async function handler(req, res)
         return res.status(500).send({
             status: "error",
             code: "servErr",
-            message: e.message ?? "Internal Server Error",
+            message: debugOutput? (e.message ?? "Internal Server Error") : "Internal Server Error (details suppressed)",
             data: {}
         });
     }

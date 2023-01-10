@@ -473,6 +473,7 @@ export default function SignUp({ data }) {
                                                                     className="invalid-feedback"
                                                                 />
                                                                 <Field className="form-control border-0 border-bottom my-2" type="text" placeholder="Line 2"
+                                                                name="address2"
                                                                     value={formData.address2}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, address2: e.target.value });
@@ -480,6 +481,7 @@ export default function SignUp({ data }) {
                                                                     }}
                                                                 />
                                                                 <Field className="form-control border-0 border-bottom" type="text" placeholder="Line 3"
+                                                                name="address3"
                                                                     value={formData.address3}
                                                                     onChange={(e) => {
                                                                         setFormData({ ...formData, address3: e.target.value });
