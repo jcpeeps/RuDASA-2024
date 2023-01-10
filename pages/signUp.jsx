@@ -14,6 +14,7 @@ import * as Yup from "yup";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useEffect } from 'react'
+import fetchJson from '../lib/fetchJson'
 
 //Get a list of all countries sorted by name
 const { getData: getCountryData } = require('country-list');
