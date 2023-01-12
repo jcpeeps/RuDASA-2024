@@ -5,7 +5,7 @@
 
 import { google } from "googleapis";
 const bcrypt = require("bcrypt");
-const debugOutput = false && process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
+const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 
 /* Request format:
  Login:
@@ -248,7 +248,7 @@ export default async function handler(req, res)
             let allFieldsProvided = true;
             for (let f of REQUIRED_FIELDS)
             {
-                if(!(f in data) || data[f].trim() == "")
+                if(!(f in data) || toString(data[f]).trim() === "")
                 {
                     allFieldsProvided = false;
                     if(debugOutput) { console.log(f + " NOT PROVIDED"); }
