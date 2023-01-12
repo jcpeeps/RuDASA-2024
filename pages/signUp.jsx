@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,7 +13,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
-import { useEffect } from 'react'
 import fetchJson from '../lib/fetchJson'
 
 //Get a list of all countries sorted by name
