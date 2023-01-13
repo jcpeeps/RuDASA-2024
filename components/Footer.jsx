@@ -34,7 +34,7 @@ export default function Footer() {
 						<div className="bg-white rounded p-2 my-1 w-100"><a href="https://www.ruralhealthconference.org.za/" className="text-black text-decoration-none"><FontAwesomeIcon icon={faShareNodes}/> Rural Health Conference</a></div>
 						<div className="bg-white rounded p-2 p my-1 w-100"><a href="https://web.facebook.com/groups/121981078714?_rdc=2&_rdr" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> RuDASA Students Facebook</a></div>
 						<h5 className='text-white mt-4'>Donate to us here:</h5>
-						<div className="btn btn-primary rounded p-2 p my-1 w-100"><a href="https://www.payfast.co.za/donate/go/ruraldoctorsassociationofsouthernafrica" className="text-white text-decoration-none" target="_blank"><FontAwesomeIcon icon={faHandHoldingHeart} className="pe-2"/>Lend a hand</a></div>
+						<div className="btn btn-primary rounded p-2 p my-1 w-100"><a href="https://www.payfast.co.za/donate/go/ruraldoctorsassociationofsouthernafrica" className="text-white text-decoration-none" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faHandHoldingHeart} className="pe-2"/>Lend a hand</a></div>
 					</div>
 				</div>
 				<div className="w-25 d-flex justify-content-center mt-4">
