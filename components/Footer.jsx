@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faSprout, faHandHoldingMedical, faShareNodes, faMugSaucer } from '@fortawesome/free-solid-svg-icons'
+import { faSprout, faHandHoldingHeart, faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
 	return (
@@ -34,7 +34,7 @@ export default function Footer() {
 						<div className="bg-white rounded p-2 my-1 w-100"><a href="https://www.ruralhealthconference.org.za/" className="text-black text-decoration-none"><FontAwesomeIcon icon={faShareNodes}/> Rural Health Conference</a></div>
 						<div className="bg-white rounded p-2 p my-1 w-100"><a href="https://web.facebook.com/groups/121981078714?_rdc=2&_rdr" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> RuDASA Students Facebook</a></div>
 						<h5 className='text-white mt-4'>Donate to us here:</h5>
-						<div className="bg-warning rounded p-2 p my-1 w-100"><a href="https://ko-fi.com/" className="text-black text-decoration-none"><FontAwesomeIcon icon={faMugSaucer}/> Buy me a coffee</a></div>
+						<div className="btn btn-primary rounded p-2 p my-1 w-100"><a href="https://www.payfast.co.za/donate/go/ruraldoctorsassociationofsouthernafrica" className="text-white text-decoration-none" target="_blank"><FontAwesomeIcon icon={faHandHoldingHeart} className="pe-2"/>Lend a hand</a></div>
 					</div>
 				</div>
 				<div className="w-25 d-flex justify-content-center mt-4">
@@ -42,7 +42,6 @@ export default function Footer() {
 					<a href="https://twitter.com/doctors_rural"><FontAwesomeIcon icon={faTwitter} size="2x" className="text-white p-2"/></a>
 					<a href="https://www.instagram.com/ruraldoctorssa/"><FontAwesomeIcon icon={faInstagram} size="2x" className="text-white p-2"/></a>
 					<a href="https://www.youtube.com/channel/UCvH-hC_ev2oAiCuHaNo6XNg"><FontAwesomeIcon icon={faYoutube} size="2x" className="text-white p-2"/></a>
-					<a href=""><FontAwesomeIcon icon={faHandHoldingMedical} size="2x" className="text-white p-2"/></a>
 				</div>
 				<div className="w-50 d-flex justify-content-center mt-4">
 					<h5 className="text-white">168-404NPO</h5>
