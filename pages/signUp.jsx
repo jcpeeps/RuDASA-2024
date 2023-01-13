@@ -94,17 +94,20 @@ export default function SignUp({ data }) {
                 body: JSON.stringify(payload)
             }).then(resp => resp.json());
 
-            if (response.status == "error" && ("code" in response)) {
-                switch (response.code) {
-                    case "emailTaken":
-                    case "policyRejected":
-                    case "invalidSignup":
-                        setFormSubmitErr(response.message); //Messages are set in sheets.js
-                        break;
+            if (response.status == "error") {
+                if ("code" in response)
+                {
+                    switch (response.code) {
+                        case "emailTaken":
+                        case "policyRejected":
+                        case "invalidSignup":
+                            setFormSubmitErr(response.message); //Messages are set in sheets.js
+                            break;
 
-                    default:
-                        setFormSubmitErr("Something went wrong while trying to sign up. Please try again later.");
-                        break;
+                        default:
+                            setFormSubmitErr("Something went wrong while trying to sign up. Please try again later.");
+                            break;
+                    }
                 }
             }
             else //Sign-up successful, login

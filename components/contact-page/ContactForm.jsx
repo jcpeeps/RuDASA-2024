@@ -3,7 +3,22 @@ import Image from 'next/image'
 import Illustration3 from '../../media/svg/contact.svg'
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import useUser from '../../pages/api/useUser';
+import fetchJson from '../../lib/fetchJson'
+
 export default function ContactForm() {
+
+    // Fetch the user session client-side
+    const { user } = useUser({
+        redirectTo: '/',
+        redirectIfFound: true //Set to true to prevent instant redirect when not signed in
+    });
+
+    let isLoading = false;
+    // Server-render loading state
+    if (!user || user.isLoggedIn === false) {
+        isLoading = true;
+    }
 
     const initVals = {
         fullName: "",
@@ -12,35 +27,44 @@ export default function ContactForm() {
         msg: "",
     };
 
-    const handleSubmit = async (vals) => {
+    const handleContact = async (vals) => {
+
         const payload = {
             type: "contact",
             data: vals
         }
 
         try {
-            const response = await fetch('/api/sheets', {
+            const response = await fetch('/api/contact', {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
                 },
                 body: JSON.stringify(payload)
             }).then(resp => resp.json());
 
-            if (response.status == "error" && ("code" in response)) {
-                switch (response.code) {
-                    case "invalidContact":
-                        setFormSubmitErr(response.message); //Messages are set in sheets.js
-                        break;
+            if (response.status == "error") {
+                if ("code" in response)
+                {
+                    switch (response.code) {
+                        case "invalidContact":
+                            setFormSubmitErr(response.message); //Messages are set in contact.js
+                            break;
 
-                    default:
-                        setFormSubmitErr("Something went wrong while trying to send your message. Please try again later.");
-                        break;
+                        default:
+                            setFormSubmitErr("Something went wrong while trying to send your message. Please try again later.");
+                            break;
+                    }
                 }
             }
             else //Contact form submission was successful
             {
-                // NOT SURE WHAT TO DO HERE, ALL YOURS
+                // const response = await fetchJson('/api/login', {
+                //     method: "POST",
+                //     headers: { "Content-Type": "application/json" },
+                //     body: JSON.stringify(loginVals)
+                // });
             }
 
             console.log(response);
@@ -84,7 +108,7 @@ export default function ContactForm() {
                         isInitialValid={false}
                         onSubmit={(values, { setSubmitting, resetForm }) => {
                             setSubmitting(true);
-                            handleSubmit(values);
+                            handleContact(values);
                             resetForm();
                             setSubmitting(false);
                         }}

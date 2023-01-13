@@ -352,7 +352,7 @@ export default async function handler(req, res)
             }
             else
             {
-                //== SIGNUP FAILED, INVALID REQUEST ==
+                //== SIGNUP FAILED, INVALID REQUEST ==//
                 return res.status(400).json({
                     status: "error",
                     code: "invalidSignup",
