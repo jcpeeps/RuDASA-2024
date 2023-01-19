@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,7 +13,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
-import { useEffect } from 'react'
 import fetchJson from '../lib/fetchJson'
 
 //Get a list of all countries sorted by name
@@ -95,17 +94,20 @@ export default function SignUp({ data }) {
                 body: JSON.stringify(payload)
             }).then(resp => resp.json());
 
-            if (response.status == "error" && ("code" in response)) {
-                switch (response.code) {
-                    case "emailTaken":
-                    case "policyRejected":
-                    case "invalidSignup":
-                        setFormSubmitErr(response.message); //Messages are set in sheets.js
-                        break;
+            if (response.status == "error") {
+                if ("code" in response)
+                {
+                    switch (response.code) {
+                        case "emailTaken":
+                        case "policyRejected":
+                        case "invalidSignup":
+                            setFormSubmitErr(response.message); //Messages are set in sheets.js
+                            break;
 
-                    default:
-                        setFormSubmitErr("Something went wrong while trying to sign up. Please try again later.");
-                        break;
+                        default:
+                            setFormSubmitErr("Something went wrong while trying to sign up. Please try again later.");
+                            break;
+                    }
                 }
             }
             else //Sign-up successful, login

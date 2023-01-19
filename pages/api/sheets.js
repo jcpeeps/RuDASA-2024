@@ -6,6 +6,7 @@
 import { google } from "googleapis";
 const bcrypt = require("bcrypt");
 const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
+import { transporter, mailerAddress } from '../../config/mailer';
 
 /* Request format:
  Login:
@@ -340,7 +341,12 @@ export default async function handler(req, res)
                             requestBody: { values: [ newRowData ] }
                         });
 
-                        //== SIGNUP SUCCESSFUL ==
+                        //==SEND NOTIFICATION + WELCOME EMAILS==//
+                        sendRudasaNotificationEmail(data);
+                        sendSignupEmail(data.email, data.signUpReason);
+
+
+                        //== SIGNUP SUCCESSFUL ==//
                         return res.status(200).json({
                             status: "success",
                             code: "signupSuccess",
@@ -352,7 +358,7 @@ export default async function handler(req, res)
             }
             else
             {
-                //== SIGNUP FAILED, INVALID REQUEST ==
+                //== SIGNUP FAILED, INVALID REQUEST ==//
                 return res.status(400).json({
                     status: "error",
                     code: "invalidSignup",
@@ -376,5 +382,218 @@ export default async function handler(req, res)
             message: debugOutput? (e.message ?? "Internal Server Error") : "Internal Server Error (details suppressed)",
             data: {}
         });
+    }
+
+    //Sends the notification to Rudasa that a new person has signed up
+    async function sendRudasaNotificationEmail(data)
+    {
+        try
+        {
+            var mailOptions = {
+                from: mailerAddress,
+                to: process.env.RUDASA_NOTIFICATION_EMAIL,
+                subject: "New member signup",
+                text: `
+                A new member signed up on the site!\n
+                Name:\n
+                ${data.firstName} ${data.surname}\n
+                Email:\n
+                ${data.email}\n
+                Cell No.:\n
+                ${data.cellNo}\n
+                Signup Reason:\n
+                ${data.signUpReason}
+                `,
+                html: `
+                <!doctype html>
+                <html lang="en">
+                    <head>
+                        <meta name="format-detection" content="email=no"/>
+                    </head>
+                    <body>
+                        <div style="margin: auto; width: 300px; padding: 30px; background-color: white; border: 2px solid #3CD28A; border-radius: 5px">
+
+                            <a href="https://rudasa.org.za">
+                                <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RUDASA Logo" />
+                            </a>
+
+                            <h1 style="text-align: center">A new member signed up on the site!</h1>
+
+                            <p>
+                                <b>Full name:</b><br />
+                                <i>${data.firstName} ${data.surname}</i><br />
+                                <b>Email:</b><br />
+                                <i>${data.email}</i><br />
+                                <b>Cell No.:</b><br />
+                                <i>${data.cellNo}</i><br />
+                                <b>Signup Reason:</b><br />
+                                <i>${data.signUpReason}</i><br />
+                            </p>
+
+                        </div>
+                    </body>
+                </html>
+                `,
+            };
+
+            await transporter.sendMail(mailOptions);
+
+            //== MAIL SENT SUCCESSFULLY ==//
+            return {
+                status: "success",
+                code: "notificationEmailSuccess",
+                message: "The notification email was successfully sent",
+                data: {}
+            };
+        }
+        catch (e)
+        {
+            console.log(e);
+            return {
+                status: "error",
+                code: "notificationEmailErr",
+                message: debugOutput? (e.message ?? "Notification email failed to send") : "Internal Server Error (details suppressed)",
+                data: {}
+            };
+        }
+    }
+
+    async function sendSignupEmail(toEmail, signUpReason)
+    {
+        try
+        {
+            var mailOptions = {
+                from: mailerAddress,
+                to: toEmail.trim(),
+                subject: "Welcome to RuDASA!",
+                text: `
+Welcome to RuDASA!
+
+We are thrilled that you have decided to join our mission of improving the health and well-being of rural communities.
+
+As a member of our organization, you will have access to a wealth of resources and information designed to aid you in all your rural health endeavours:
+    ∙ Access to the Google Group Forum which receives daily updates. This is our primary form of communication with members.
+    ∙ Access to a provincial Whatsapp Group.
+    ∙ Access to the RuDASA Learning Portal [https://rudasa.org.za/portal], filled with useful content covering a wide range of health-related topics.
+    ${ signUpReason == "rhc" ?
+        `∙ As a registered Rural Health Club student you will be linked to our student reps and student-exclusive Facebook page.` : ""
+    }
+    ${ signUpReason == "onboarding" ?
+        `∙ We'll connect you to our Onboarding for Community Service social media groups (programme runs from January to March).` : ""
+    }
+
+Thank you for your support and for being a part of our mission to support the health and vitality of rural communities. We look forward to working with you!
+
+Best,
+RuDASA Team
+
+
+Check out our socials:
+    > Facebook: https://www.facebook.com/ruraldoctors
+    > Twitter: https://twitter.com/doctors_rural
+    > Instagram: https://www.instagram.com/ruraldoctorssa
+
+As a requirement of the POPI Act we are informing you that your contact details will be on the social media groups. Occasionally we share your contact details with other RuDASA members, or in response to requests from our rural partners (RuReSA, RuNurSA, and PACASA) for a contact for a specific rural health issue. We will not give out contact details to people who are not part of these organisations without getting your permission first.
+
+For anymore assistance please contact the Office Co-ordinator at info@rudasa.org.za
+                `,
+                html: `
+                <!doctype html>
+                <html lang="en">
+                    <head>
+                    </head>
+                    <body>
+                        <div style="margin: auto; width: 300px; padding: 30px; background-color: white; border: 2px solid #3CD28A; border-radius: 5px">
+
+                            <a href="https://rudasa.org.za">
+                                <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RuDASA Logo" />
+                            </a>
+
+                            <h1 style="text-align: center">Welcome to RuDASA!</h1>
+
+                            <p>
+                                We are thrilled that you have decided to join our mission of improving the health and well-being of rural communities.
+                            <p>
+
+                            <p>
+                                As a member of our organization, you will have access to a wealth of resources and information designed to aid you in all your rural health endeavours:
+                                <ul style="padding: 0px; margin: 0px;">
+                                    <li> Access to the <i>Google Group Forum</i> which receives daily updates. This is our primary form of communication with members. </li>
+                                    <li> Access to a provincial Whatsapp Group. </li>
+                                    <li> Access to the RuDASA <a href="https://rudasa.org.za/portal">Learning Portal</a>, filled with useful content covering a wide range of health-related topics.</li>
+                                    ${ signUpReason == "rhc" ?
+                                        `<li> As a registered <i>Rural Health Club</i> student you will be linked to our student reps and student-exclusive Facebook page. </li>` : ""
+                                    }
+                                    ${ signUpReason == "onboarding" ?
+                                        `<li> We'll connect you to our <i>Onboarding for Community Service</i> social media groups (programme runs from January to March). </li>` : ""
+                                    }
+                                </ul>
+                            </p>
+
+
+                            <p>
+                                Thank you for your support and for being a part of our mission to support the health and vitality of rural communities. We look forward to working with you!
+                            </p>
+
+                            <br />
+
+                            Best,<br />
+                            <i>RuDASA Team</i>
+                            <p><br />
+
+                            <table style="border: none;">
+                                <tr>
+                                    <td>
+                                        <a href="https://www.facebook.com/ruraldoctors">
+                                            <img src="https://rudasa.org.za/icons/facebook_small.png" style="display: block; margin: auto; width: 40px" alt="Facebook" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://twitter.com/doctors_rural">
+                                            <img src="https://rudasa.org.za/icons/twitter_small.png" style="display: block; margin: auto; width: 40px" alt="Twitter" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.instagram.com/ruraldoctorssa">
+                                            <img src="https://rudasa.org.za/icons/instagram_small.png" style="display: block; margin: auto; width: 40px" alt="Instagram" />
+                                        </a>
+                                    </td>
+                                <tr>
+                            </table>
+
+                            <br />
+                            <i style="font-size: 8px; color: grey;">
+                            As a requirement of the POPI Act we are informing you that your contact details will be on the social media groups. Occasionally we share your contact details with other RuDASA members, or in response to requests from our rural partners (RuReSA, RuNurSA, and PACASA) for a contact for a specific rural health issue. We will not give out contact details to people who are not part of these organisations without getting your permission first.<br/>
+
+                            For anymore assistance please contact the Office Co-ordinator at info@rudasa.org.za
+                            </i>
+
+
+                        </div>
+                    </body>
+                </html>
+                `,
+            };
+
+            await transporter.sendMail(mailOptions);
+
+            //== MAIL SENT SUCCESSFULLY ==//
+            return {
+                status: "success",
+                code: "signupEmailSuccess",
+                message: "The signup email was successfully sent",
+                data: {}
+            };
+        }
+        catch (e)
+        {
+            console.log(e);
+            return {
+                status: "error",
+                code: "signupEmailErr",
+                message: debugOutput? (e.message ?? "Signup email failed to send") : "Internal Server Error (details suppressed)",
+                data: {}
+            };
+        }
     }
 }
