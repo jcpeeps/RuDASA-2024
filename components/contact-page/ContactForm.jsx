@@ -6,6 +6,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from '../../pages/api/useUser';
 import fetchJson from '../../lib/fetchJson'
+import ClipLoader from "react-spinners/ClipLoader";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
 
@@ -48,8 +51,7 @@ export default function ContactForm() {
             })//.then(resp => resp.json());
 
             if (response.status == "error") {
-                if ("code" in response)
-                {
+                if ("code" in response) {
                     alert(response.code);
                     switch (response.code) {
                         case "invalidContact":
@@ -93,9 +95,20 @@ export default function ContactForm() {
             .required("Please enter a message"),
     });
 
-
     return (
         <section>
+            <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable
+                pauseOnHover={false}
+                theme="light"
+            />
             <div className="py-5 mb-5"></div>
             <div className="container d-flex justify-content-center align-items-center mb-5 pb-5">
                 <div className="d-none d-lg-block">
@@ -116,9 +129,19 @@ export default function ContactForm() {
                             handleContact(values);
                             resetForm();
                             setSubmitting(false);
+                            toast.success('Message sent successfully!', {
+                                position: "top-right",
+                                autoClose: 2000,
+                                hideProgressBar: true,
+                                closeOnClick: true,
+                                pauseOnHover: false,
+                                draggable: true,
+                                progress: undefined,
+                                theme: "light",
+                            });
                         }}
                     >
-                        {({ errors, touched, handleChange, isValid, validateForm }) => {
+                        {({ errors, touched, handleChange, isValid, validateForm, isSubmitting }) => {
 
                             return (
                                 <Form>
@@ -186,12 +209,16 @@ export default function ContactForm() {
                                         </div>
                                     </div>
                                     <div className="text-end w-100 my-4 hover-button">
-                                        <button 
-                                            type="submit" 
-                                            className="btn btn-secondary btn-lg" 
+                                        <button
+                                            type="submit"
+                                            className="btn btn-secondary btn-lg"
                                             disabled={!isValid}
                                         >
-                                            Send
+                                            {
+                                                isSubmitting
+                                                    ? <ClipLoader color="#fff" size={20} cssOverride={{ margin: "0 15px" }} />
+                                                    : "Send"
+                                            }
                                         </button>
                                         <p className="d-flex justify-content-end invalid-feedback">
                                             {formSubmitErr}

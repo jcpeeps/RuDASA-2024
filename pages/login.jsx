@@ -7,11 +7,11 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from './api/useUser'
 import fetchJson from '../lib/fetchJson'
-import { faBriefcaseClock } from '@fortawesome/free-solid-svg-icons';
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Login() {
     const { mutateUser } = useUser({
-    //Check if user is already logged in, if so redirect to profile page
+        //Check if user is already logged in, if so redirect to profile page
         redirectTo: '/portal',
         redirectIfFound: true
     });
@@ -27,18 +27,15 @@ export default function Login() {
 
     // Called when form submitted
     const handleLogin = async (setFieldError, vals) => {
-        try
-        {
+        try {
             const response = await fetchJson('/api/login', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(vals) // vals: { email: "...", password: "..." }
             });
 
-            if(response.status == "failed" && ("code" in response))
-            {
-                switch(response.code)
-                {
+            if (response.status == "failed" && ("code" in response)) {
+                switch (response.code) {
                     case "invalidUser":
                         setFieldError("email", "A user with that email does not exist.");
                         break;
@@ -75,6 +72,7 @@ export default function Login() {
                             validationSchema={LoginSchema}
 
                             onSubmit={async (values, { setFieldError, setSubmitting }) => {
+                                setSubmitting(true);
                                 await handleLogin(setFieldError, values); //LOGIN API CALLING ROUTE
                                 setSubmitting(false);
                             }}
@@ -122,7 +120,11 @@ export default function Login() {
                                                 className="btn btn-secondary btn-lg"
                                                 disabled={isSubmitting}
                                             >
-                                                {isSubmitting ? "Please wait..." : "Login"}
+                                                {
+                                                    isSubmitting
+                                                        ? <ClipLoader color="#fff" size={20} cssOverride={{ margin: "0 15px" }} />
+                                                        : "Login"
+                                                }
                                             </button>
                                         </div>
                                     </div>
