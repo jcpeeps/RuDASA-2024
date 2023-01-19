@@ -1,5 +1,6 @@
-const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 import { transporter, mailerAddress } from '../../config/mailer';
+
+const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 
 export default async function handler(req, res)
 {
@@ -14,7 +15,7 @@ export default async function handler(req, res)
     }
 
     //type parameter is optional, but if defined, must be "contact"
-    if ( !(req.body?.type in [undefined, "contact"]) )
+    if ("type" in req.body && req.body.type != "contact")
     {
         return res.status(400).json({
             status: "error",
@@ -66,39 +67,119 @@ export default async function handler(req, res)
         });
     }
 
+    let textContactSummary = `
+    Full name:\n
+    ${data.fullName}\n
+    Email:\n
+    ${data.email}\n
+    Subject:\n
+    ${data.subject}\n
+    Message:\n
+    ${data.msg}\n
+    `;
+
+    let contactSummary = `
+    <b>Full name:</b><br />
+    <i>${data.fullName}</i><br />
+    <b>Email:</b><br />
+    <i>${data.email}</i><br />
+    <b>Subject:</b><br />
+    <i>${data.subject}</i><br />
+    <b>Message:</b><br />
+    <i>${data.msg}</i><br />
+    `;
+
     //== TRY SEND MAIL ==//
     try
     {
-        var mailOptions = {
+        //== SEND TO RUDASA ==//
+        var rudasaMailOptions = {
             from: mailerAddress,
-            to: mailerAddress, //TODO: Replace with client email
-            subject: "Thanks for contacting us!",
-            text: "Test email",
-            html: `<h1>Hello</h1><p>world<p><br /><code>${JSON.stringify(data)}</code>`
+            to: process.env.RUDASA_NOTIFICATION_EMAIL, //TODO: Replace with rudasa email
+            subject: "RUDASA.ORG.ZA CONTACT FORM: " + data.fullName,
+            text: `Message received from ${data.fullName}:\n${textContactSummary}`,
+            html: `
+            <!doctype html>
+            <html lang="en">
+                <head>
+                    <meta name="format-detection" content="email=no"/>
+                </head>
+                <body>
+                    <div style="margin: auto; width: 300px; padding: 30px; background-color: white; border: 2px solid #3CD28A; border-radius: 5px">
+                        <a href="https://rudasa.org.za">
+                            <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RUDASA Logo" />
+                        </a>
+                            <h1>Message received from ${data.fullName}:</h1><br />
+                            ${contactSummary}
+                    </div>
+                </body>
+            </html>
+            `,
         };
 
-        await transporter.sendMail(mailOptions);
+        await transporter.sendMail(rudasaMailOptions);
 
-        //== MAIL SENT SUCCESSFULLY ==//
-        return res.status(200).json({
-            status: "success",
-            code: "contactSuccess",
-            message: "The contact form was successfully submitted",
-            data: {}
-        });
+        try
+        {
+            //== SEND RECEIPT TO MESSAGER ==//
+            var receiptMailOptions = {
+                from: mailerAddress,
+                to: data.email.trim(),
+                subject: "Thanks for contacting us!",
+                text: `Thanks for getting in touch! We'll get back to you shortly.\n${textContactSummary}`,
+                html: `
+                <!doctype html>
+                <html lang="en">
+                    <head>
+                        <meta name="format-detection" content="email=no"/>
+                    </head>
+                    <body>
+                        <div style="margin: auto; width: 300px; padding: 30px; background-color: white; border: 2px solid #3CD28A; border-radius: 5px">
+                        <a href="https://rudasa.org.za">
+                            <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RUDASA Logo" />
+                        </a>
+
+                        <h1 style="text-align: center">Thanks for getting in touch!</h1>
+                        <p style="text-align: center">We'll get back to you shortly.<p><br />
+                            ${contactSummary}
+                        </div>
+                    </body>
+                </html>
+                `,
+            };
+
+            await transporter.sendMail(receiptMailOptions);
+
+            //== MAIL SENT SUCCESSFULLY ==//
+            return res.status(200).json({
+                status: "success",
+                code: "contactSuccess",
+                message: "The contact form was successfully submitted",
+                data: {}
+            });
+        }
+        catch (e)
+        {
+            console.log(e);
+            return res.status(500).json({
+                status: "error",
+                code: "receiptErr",
+                message: debugOutput? (e.message ?? "Receipt message failed to send") : "Internal Server Error (details suppressed)",
+                data: {}
+            });
+        }
     }
     catch (e)
     {
-        console.log(err);
-        return res.status(400).json({
+        console.log(e);
+        return res.status(500).json({
             status: "error",
-            code: "servErr",
-            message: debugOutput? (e.message ?? "Internal Server Error") : "Internal Server Error (details suppressed)",
+            code: "transportErr",
+            message: debugOutput? (e.message ?? "Message failed to send to RUDASA") : "Internal Server Error (details suppressed)",
             data: {}
         });
     }
 
     //TODO:
-    //Email info@rudasa.org.za
     //Save message to google sheet
 }

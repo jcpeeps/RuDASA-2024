@@ -1,6 +1,7 @@
-import React from 'react'
-import Image from 'next/image'
-import Illustration3 from '../../media/svg/contact.svg'
+import { React, useState } from 'react';
+import Router from "next/router";
+import Image from 'next/image';
+import Illustration3 from '../../media/svg/contact.svg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from '../../pages/api/useUser';
@@ -20,6 +21,8 @@ export default function ContactForm() {
         isLoading = true;
     }
 
+    const [formSubmitErr, setFormSubmitErr] = useState("");
+
     const initVals = {
         fullName: "",
         email: "",
@@ -35,21 +38,27 @@ export default function ContactForm() {
         }
 
         try {
-            const response = await fetch('/api/contact', {
+            const response = await fetchJson('/api/contact', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 },
                 body: JSON.stringify(payload)
-            }).then(resp => resp.json());
+            })//.then(resp => resp.json());
 
             if (response.status == "error") {
                 if ("code" in response)
                 {
+                    alert(response.code);
                     switch (response.code) {
                         case "invalidContact":
+                        case "transportErr":
                             setFormSubmitErr(response.message); //Messages are set in contact.js
+                            break;
+
+                        case "receiptTransportErr": //Ignore when receipt message fails
+                            Router.push("contactSuccess");
                             break;
 
                         default:
@@ -60,11 +69,7 @@ export default function ContactForm() {
             }
             else //Contact form submission was successful
             {
-                // const response = await fetchJson('/api/login', {
-                //     method: "POST",
-                //     headers: { "Content-Type": "application/json" },
-                //     body: JSON.stringify(loginVals)
-                // });
+                Router.push("contactSuccess");
             }
 
             console.log(response);
@@ -188,6 +193,9 @@ export default function ContactForm() {
                                         >
                                             Send
                                         </button>
+                                        <p className="d-flex justify-content-end invalid-feedback">
+                                            {formSubmitErr}
+                                        </p>
                                     </div>
                                 </Form>
                             )
