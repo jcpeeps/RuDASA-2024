@@ -37,20 +37,24 @@ export default function Login() {
             if (response.status == "failed" && ("code" in response)) {
                 switch (response.code) {
                     case "invalidUser":
-                        setFieldError("email", "A user with that email does not exist.");
+                        setFieldError("email", "A user with that email does not exist");
                         break;
 
                     case "invalidPass":
                         setFieldError("password", "Incorrect password");
                         break;
+                    
+                    case "servErr":
+                        setFieldError("email", "Failed to connect to server");
+                        break;
                 }
             }
-            console.log(response); //DEBUG: Logs user session on client side
+            // console.log(response); //DEBUG: Logs user session on client side
 
             mutateUser(response);
 
         } catch (error) {
-            console.error("FATAL ERROR\n" + error);
+            setFieldError("email", "Failed to connect to server");
         }
     }
 

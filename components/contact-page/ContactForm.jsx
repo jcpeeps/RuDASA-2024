@@ -37,7 +37,7 @@ export default function ContactForm() {
                     "Accept": "application/json"
                 },
                 body: JSON.stringify(payload)
-            })//.then(resp => resp.json());
+            })
 
             if (response.status == "error") {
                 if ("code" in response) {
@@ -62,10 +62,10 @@ export default function ContactForm() {
                 return true;
             }
 
-            console.log(response);
+            // console.log(response);
 
         } catch (error) {
-            console.error("FATAL ERROR\n" + error);
+            setFormSubmitErr("Failed to connect to server");
         }
     }
 
@@ -114,11 +114,12 @@ export default function ContactForm() {
                         isInitialValid={false}
                         onSubmit={async (values, { setSubmitting, resetForm }) => {
                             setSubmitting(true);
+                            let submitSuccess = await handleContact(values);
+                            setSubmitting(false);
 
-                            if(await handleContact(values)) //If successful
+                            if(submitSuccess) //If successful
                             {
                                 resetForm();
-                                setSubmitting(false);
                                 toast.success('Message sent successfully!', {
                                     position: "top-right",
                                     autoClose: 2000,
