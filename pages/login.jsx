@@ -45,7 +45,7 @@ export default function Login() {
                         break;
                 }
             }
-            // console.log(response); //DEBUG: Logs user session on client side
+            console.log(response); //DEBUG: Logs user session on client side
 
             mutateUser(response);
 
