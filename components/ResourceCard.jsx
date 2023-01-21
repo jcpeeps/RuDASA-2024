@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 export default function ResourceCard(props) {
+	
 	return (
 		<div className='resc-card-width bg-white shadow rounded m-1 m-md-3 d-flex flex-column justify-content-between'>
 			<div className="p-3 d-flex flex-column align-items-center justify-content-center">

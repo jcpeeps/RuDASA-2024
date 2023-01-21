@@ -4,6 +4,7 @@ import Illustration1 from '../../media/svg/who-are-we.svg'
 import Link from 'next/link'
 
 export default function WhoAreWe({ content }) {
+    
     return (
         <section className="bg-light px-3" id="who-are-we">
             <div className="container py-2 py-lg-5">
@@ -23,6 +24,7 @@ export default function WhoAreWe({ content }) {
                             </Link>
                         </div>
                     </div>
+
                     <div className="col-lg-6 col-xl-6 text-center d-none d-lg-block">
                         <Image src={Illustration1} alt="" />
                     </div>

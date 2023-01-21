@@ -10,6 +10,7 @@ import fetchJson from '../lib/fetchJson'
 import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Login() {
+    
     const { mutateUser } = useUser({
         //Check if user is already logged in, if so redirect to profile page
         redirectTo: '/portal',

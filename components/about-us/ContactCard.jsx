@@ -4,6 +4,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import Link from 'next/link'
 
 export default function ContactCard(props) {
+    
     return (
         <Link href={props.email} target="_blank" rel="noreferrer" className="text-decoration-none text-black">
             <div className="bg-white rounded-3 shadow d-flex justify-content-between align-items-center p-4 card-width m-1 m-lg-2 contact-card">

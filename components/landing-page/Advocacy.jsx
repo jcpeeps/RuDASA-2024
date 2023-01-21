@@ -1,8 +1,8 @@
 import React from 'react'
 import { marked } from 'marked'
-import Link from 'next/link'
 
 export default function Advocacy({ content, examples }) {
+
     return (
         <section className="bg-brown w-100">
             <div className="container py-2 py-lg-5">
