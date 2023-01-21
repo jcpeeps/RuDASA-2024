@@ -8,7 +8,7 @@ async function loginRoute(req, res) {
     const { origin } = absoluteUrl(req);
     //origin: "http://localhost:3000" OR "https://rudasa.org.za"
 
-    console.log("GOT DATA IN LOGIN.JS:\n" + JSON.stringify(data));
+    // console.log("GOT DATA IN LOGIN.JS:\n" + JSON.stringify(data));
     
     //===== PERFORM AUTHENTICATION VIA SHEETS.JS =====//
     const sheetsPayload = {
@@ -20,7 +20,7 @@ async function loginRoute(req, res) {
         }
     }
 
-    console.log(origin);
+    // console.log(origin);
 
     const resp = await fetch(`${origin}/api/sheets`, {
         method: "POST",
@@ -28,8 +28,8 @@ async function loginRoute(req, res) {
         body: JSON.stringify(sheetsPayload)
     }).then(resp => resp.json());
 
-    console.log("RESPONSE FROM SHEETS.JS:");
-    console.log(JSON.stringify(resp));
+    // console.log("RESPONSE FROM SHEETS.JS:");
+    // console.log(JSON.stringify(resp));
 
     //===== SAVE SESSION DATA IF VALID LOGIN =====//
     try {

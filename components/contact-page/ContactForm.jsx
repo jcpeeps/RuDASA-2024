@@ -12,18 +12,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
 
-    // Fetch the user session client-side
-    const { user } = useUser({
-        redirectTo: '/',
-        redirectIfFound: true //Set to true to prevent instant redirect when not signed in
-    });
-
-    let isLoading = false;
-    // Server-render loading state
-    if (!user || user.isLoggedIn === false) {
-        isLoading = true;
-    }
-
     const [formSubmitErr, setFormSubmitErr] = useState("");
 
     const initVals = {
@@ -33,6 +21,7 @@ export default function ContactForm() {
         msg: "",
     };
 
+    //Returns true if contact form submitted successfully, false otherwise
     const handleContact = async (vals) => {
 
         const payload = {
@@ -48,7 +37,7 @@ export default function ContactForm() {
                     "Accept": "application/json"
                 },
                 body: JSON.stringify(payload)
-            })//.then(resp => resp.json());
+            })
 
             if (response.status == "error") {
                 if ("code" in response) {
@@ -57,27 +46,26 @@ export default function ContactForm() {
                         case "invalidContact":
                         case "transportErr":
                             setFormSubmitErr(response.message); //Messages are set in contact.js
-                            break;
+                            return false;
 
                         case "receiptTransportErr": //Ignore when receipt message fails
-                            Router.push("contactSuccess");
-                            break;
+                            return true;
 
                         default:
                             setFormSubmitErr("Something went wrong while trying to send your message. Please try again later.");
-                            break;
+                            return false;
                     }
                 }
             }
             else //Contact form submission was successful
             {
-                Router.push("contactSuccess");
+                return true;
             }
 
-            console.log(response);
+            // console.log(response);
 
         } catch (error) {
-            console.error("FATAL ERROR\n" + error);
+            setFormSubmitErr("Failed to connect to server");
         }
     }
 
@@ -124,21 +112,25 @@ export default function ContactForm() {
                         enableReinitialize
                         validateOnMount
                         isInitialValid={false}
-                        onSubmit={(values, { setSubmitting, resetForm }) => {
+                        onSubmit={async (values, { setSubmitting, resetForm }) => {
                             setSubmitting(true);
-                            handleContact(values);
-                            resetForm();
+                            let submitSuccess = await handleContact(values);
                             setSubmitting(false);
-                            toast.success('Message sent successfully!', {
-                                position: "top-right",
-                                autoClose: 2000,
-                                hideProgressBar: true,
-                                closeOnClick: true,
-                                pauseOnHover: false,
-                                draggable: true,
-                                progress: undefined,
-                                theme: "light",
-                            });
+
+                            if(submitSuccess) //If successful
+                            {
+                                resetForm();
+                                toast.success('Message sent successfully!', {
+                                    position: "top-right",
+                                    autoClose: 2000,
+                                    hideProgressBar: true,
+                                    closeOnClick: true,
+                                    pauseOnHover: false,
+                                    draggable: true,
+                                    progress: undefined,
+                                    theme: "light",
+                                });
+                            }
                         }}
                     >
                         {({ errors, touched, handleChange, isValid, validateForm, isSubmitting }) => {

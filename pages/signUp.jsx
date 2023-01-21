@@ -130,10 +130,10 @@ export default function SignUp({ data }) {
                 mutateUser(response);
             }
 
-            console.log(response);
+            // console.log(response);
 
         } catch (error) {
-            console.error("FATAL ERROR\n" + error);
+            setFormSubmitErr("Failed to connect to server");
         }
     }
 
@@ -263,9 +263,9 @@ export default function SignUp({ data }) {
                                 enableReinitialize
                                 validateOnMount
                                 isInitialValid={false}
-                                onSubmit={(values, { setSubmitting }) => {
+                                onSubmit={async (values, { setSubmitting }) => {
                                     setSubmitting(true);
-                                    handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
+                                    await handleSignup(formData); //WHERE WE CONNECT TO SHEET.JS
                                     setSubmitting(false);
                                 }}
                             >
