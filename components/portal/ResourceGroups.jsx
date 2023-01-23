@@ -2,6 +2,7 @@ import React from 'react'
 import ResourceCard from '../ResourceCard'
 
 export default function ResourceGroups({ resources }) {
+	
 	return (
 		<section>
 			<div>

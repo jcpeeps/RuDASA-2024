@@ -12,6 +12,7 @@ import { useInView } from 'react-intersection-observer';
 import useUser from './api/useUser'
 
 export default function Portal({ resources, overview }) {
+
     const { user } = useUser({ 
         redirectTo: '/login',
         redirectIfFound: false
@@ -39,7 +40,9 @@ export default function Portal({ resources, overview }) {
 			<div className="position-fixed team-svg d-none d-lg-block">
 				<Image src={Illustration} width={700} alt="" />
 			</div>
+
 			<div className="py-5 mb-5"></div>
+			
 			<div className="container">
 				<h4 className="fw-bold display-6 text-primary mt-5">Rural Onboarding {user?.email}</h4>
 				<ResourceGroups resources={resources} />

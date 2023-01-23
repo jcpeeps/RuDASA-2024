@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Hero from '../components/resources/Hero'
 import ResourceGroups from '../components/resources/ResourceGroups'
-import Events from '../components/resources/Events'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -13,10 +12,6 @@ export default function articles({ otherInfo, studentResources, ruralResources, 
 		<Layout pageTitle="RuDASA | Resources">
 			<Hero content={otherInfo.find(file => file.slug === "description")} />
 			<ResourceGroups student={studentResources} rural={ruralResources} other={otherResources} thrive={thriveResources} activities={activitiesResources} />
-			{/* <Events snt={otherInfo.find(file => file.slug === "survive-and-thrive")}
-				snts={otherInfo.find(file => file.slug === "survive-and-thrive-students")}
-				onboarding={otherInfo.find(file => file.slug === "onboarding")}
-				rhc={otherInfo.find(file => file.slug === "rural-health-conference")} /> */}
 		</Layout>
 	)
 }

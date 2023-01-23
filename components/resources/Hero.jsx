@@ -2,6 +2,7 @@ import React from 'react'
 import { marked } from 'marked'
 
 export default function Hero ({ content }) {
+    
     return (
         <section>
             <div className="py-5 mb-5"></div>

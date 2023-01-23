@@ -4,6 +4,7 @@ import TeamSvg from '../../media/svg/team.svg'
 import { marked } from 'marked'
 
 export default function Hero({ content }) {
+    
     return (
         <section className="meet-team-height">
             <div className="py-4 py-lg-5 mb-5"></div>

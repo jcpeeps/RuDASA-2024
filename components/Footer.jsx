@@ -4,6 +4,7 @@ import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free
 import { faSprout, faHandHoldingHeart, faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
+	
 	return (
 		<footer className="bg-brown pt-5 pb-3">
 			<div className="container mt-5 mb-3 d-flex flex-column align-items-center">
