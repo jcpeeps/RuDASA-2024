@@ -4,7 +4,7 @@ import PassReset from '../components/password-reset/PassReset'
 
 export default function articles() {
   return (
-    <Layout pageTitle="RuDASA | Contact Us">
+    <Layout pageTitle="RuDASA | Reset Your Password">
       <PassReset/>
 		</Layout>
   )
