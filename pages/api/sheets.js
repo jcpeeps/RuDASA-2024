@@ -4,6 +4,7 @@
 //   is registered or not.
 
 import { google } from "googleapis";
+import { boolean } from "yup";
 const bcrypt = require("bcrypt");
 const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 import { transporter, mailerAddress } from '../../config/mailer';
@@ -89,6 +90,8 @@ export default async function handler(req, res)
                 return await handleLogin(req, req.body.data);
             case "signup":
                 return await handleSignup(req, req.body.data);
+            case "checkUser":
+                return await handleCheckUser(req, req.body.data.email);
             default:
                 return res.status(400).json({
                     status: "error",
@@ -225,6 +228,32 @@ export default async function handler(req, res)
                 code: "invalidLogin",
                 message: "Invalid login request, must contain both an email and a password",
                 data: {}
+            });
+        }
+
+        //====== HANDLE CHECK USER =====
+        //Returns whether the specified user exists
+        async function handleCheckUser(req, email) {
+            //== CHECK EMAIL EXISTS ==
+            const emailExists = await checkEmailInDatabase(email);
+
+            if(emailExists == null) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "dbConnFailed",
+                    message: "There was an error processing your request",
+                    data: {}
+                });
+            }
+
+            return res.status(400).json({
+                status: "success",
+                code: emailExists ? "userExists" : "userNotFound",
+                message: emailExists ? "That email belongs to a registered user" : "No existing user has that email",
+                data: {
+                    email: email,
+                    userExists: !!emailExists
+                }
             });
         }
 
