@@ -8,17 +8,17 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function PassReset() {
+export default function PassChange() {
 
     const [formSubmitErr, setFormSubmitErr] = useState("");
 
     const initVals = { email: "" };
 
-    //Returns true if password reset form submitted successfully, false otherwise
-    const handleReset = async (vals) => {
+    //Returns true if password change form submitted successfully, false otherwise
+    const handleChange = async (vals) => {
 
         const payload = {
-            type: "passReset",
+            type: "passChange",
             data: vals
         }
 
@@ -26,7 +26,7 @@ export default function PassReset() {
         console.log(payload);
 
         try {
-            const response = await fetchJson('/api/passReset', {
+            const response = await fetchJson('/api/passChange', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -42,13 +42,13 @@ export default function PassReset() {
                 if ("code" in response) {
                     alert(response.code);
                     switch (response.code) {
-                        case "invalidEmail":
+                        case "invalidPassword":
                         case "transportErr":
                             setFormSubmitErr(response.message); //Messages are set in contact.js
                             return false;
 
                         default:
-                            setFormSubmitErr("Something went wrong while trying to reset your password. Please try again later.");
+                            setFormSubmitErr("Something went wrong while trying to update your password. Please try again later.");
                             return false;
                     }
                 }
@@ -69,9 +69,13 @@ export default function PassReset() {
     }
 
     const Schema = Yup.object({
-        email: Yup.string()
-            .email("That's not a valid email address")
-            .required("Please enter your email address"),
+        password: Yup.string()
+            .required("Password is required")
+            .min(8, "Password must be at least 8 characters long")
+            .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/, "Password must contain at least one uppercase letter, one lowercase letter, and one number"),
+        passwordConfirm: Yup.string()
+            .required("Password confirmation is required")
+            .oneOf([Yup.ref("password"), null], "Passwords must match")
     });
 
     return (
@@ -95,7 +99,7 @@ export default function PassReset() {
                 </div>
 
                 <div className="px-2 px-lg-4 d-flex flex-column align-items-center ms-lg-5">
-                    <h3 className="fw-bold w-100 mb-4">Reset your password</h3>
+                    <h3 className="fw-bold w-100 mb-4">Update your password</h3>
                     <Formik
                         initialValues={{ ...initVals }}
                         validationSchema={Schema}
@@ -111,7 +115,7 @@ export default function PassReset() {
                             if(submitSuccess) //If successful send
                             {
                                 resetForm();
-                                toast.success('Reset link sent successfully', {
+                                toast.success('Password updated successfully', {
                                     position: "top-right",
                                     autoClose: 2000,
                                     hideProgressBar: true,
@@ -128,18 +132,33 @@ export default function PassReset() {
 
                             return (
                                 <Form>
-                                    <div className="mt-3 w-100 d-flex flex-column flex-md-row justify-content-between">
+                                    <div className="mt-3 w-100 d-flex flex-column justify-content-between">
                                         <div className="w-auto form-group">
-                                            <label htmlFor="email" className="text-primary fw-bold form-label ms-2">Email Address</label>
+                                            <label htmlFor="password" className="text-primary fw-bold form-label ms-2">New Password</label>
                                             <Field
-                                                type="email"
-                                                name="email"
-                                                placeholder="Email Address"
-                                                className={`form-control border-0 border-bottom ${touched.email && errors.email ? "is-invalid" : ""}`}
+                                                type="password"
+                                                name="password"
+                                                placeholder="New Password"
+                                                className={`form-control border-0 border-bottom ${touched.password && errors.password ? "is-invalid" : ""}`}
                                             />
                                             <ErrorMessage
                                                 component="div"
-                                                name="email"
+                                                name="password"
+                                                className="invalid-feedback"
+                                            />
+                                        </div>
+
+                                        <div className="w-auto form-group mt-5">
+                                            <label htmlFor="passwordConfirm" className="text-primary fw-bold form-label ms-2">Confirm Password</label>
+                                            <Field
+                                                type="password"
+                                                name="passwordConfirm"
+                                                placeholder="Confirm Password"
+                                                className={`form-control border-0 border-bottom ${touched.passwordConfirm && errors.passwordConfirm ? "is-invalid" : ""}`}
+                                            />
+                                            <ErrorMessage
+                                                component="div"
+                                                name="passwordConfirm"
                                                 className="invalid-feedback"
                                             />
                                         </div>
@@ -154,7 +173,7 @@ export default function PassReset() {
                                             {
                                                 isSubmitting
                                                     ? <ClipLoader color="#fff" size={20} cssOverride={{ margin: "0 15px" }} />
-                                                    : "Reset"
+                                                    : "Update"
                                             }
                                         </button>
                                         <p className="d-flex justify-content-end invalid-feedback">

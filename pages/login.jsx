@@ -10,7 +10,7 @@ import fetchJson from '../lib/fetchJson'
 import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Login() {
-    
+
     const { mutateUser } = useUser({
         //Check if user is already logged in, if so redirect to profile page
         redirectTo: '/portal',
@@ -44,7 +44,7 @@ export default function Login() {
                     case "invalidPass":
                         setFieldError("password", "Incorrect password");
                         break;
-                    
+
                     case "servErr":
                         setFieldError("email", "Failed to connect to server");
                         break;
@@ -119,6 +119,9 @@ export default function Login() {
                                     </div>
                                     <div className="my-4 w-100 d-flex flex-column flex-sm-row justify-content-end align-items-end align-items-sm-center">
                                         <small className="me-sm-3 mb-4 mb-sm-0">Don&apos;t have an account? <Link href="/signUp">Sign up</Link></small>
+                                        <small className="me-sm-3 mb-4 mb-sm-0"><Link href="/passReset">Forgot password?</Link></small>
+                                    </div>
+                                    <div className="my-4 w-100 d-flex flex-column flex-sm-row justify-content-end align-items-end align-items-sm-center">
                                         <div className="hover-button">
                                             <button
                                                 type="submit"
