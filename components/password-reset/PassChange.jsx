@@ -40,9 +40,6 @@ export default function PassChange() {
             }
         }
 
-        console.log("SENDING PAYLOAD:");
-        console.log(payload);
-
         try {
             const response = await fetch('/api/passChange', {
                 method: "POST",
@@ -52,9 +49,6 @@ export default function PassChange() {
                 },
                 body: JSON.stringify(payload)
             }).then(resp => resp.json());
-
-            console.log("RESPONSE FROM PASSCHANGE:");
-            console.log(response);
 
             setFormSubmitErr("");
 
@@ -78,11 +72,9 @@ export default function PassChange() {
                 return true;
             }
 
-            console.log(response);
+            // console.log(response);
 
         } catch (error) {
-            console.log("ERROR THROWN IN PASSCHANGE.JSX:");
-            console.log(error);
             setFormSubmitErr("Failed to connect to server");
         }
     }

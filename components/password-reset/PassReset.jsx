@@ -21,9 +21,6 @@ export default function PassReset() {
             data: vals
         }
 
-        console.log("SENDING PAYLOAD:");
-        console.log(payload);
-
         try {
             const response = await fetch('/api/passReset', {
                 method: "POST",
@@ -33,9 +30,6 @@ export default function PassReset() {
                 },
                 body: JSON.stringify(payload)
             }).then(resp => resp.json())
-
-            console.log("RESPONSE FROM PASSRESET:");
-            console.log(response);
 
             setFormSubmitErr("");
 
@@ -62,8 +56,6 @@ export default function PassReset() {
             // console.log(response);
 
         } catch (error) {
-            console.log("ERROR THROWN IN PASSRESET.JSX:");
-            console.log(JSON.stringify(error));
             setFormSubmitErr("Failed to connect to server");
         }
     }

@@ -491,10 +491,6 @@ export default async function handler(req, res)
                 process.env.PASSWORD_RESET_TOKEN_PEPPER
             ).digest("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/.$/, "");
 
-            console.log("HASH // TOKEN:");
-            console.log(hash);
-            console.log(token);
-
             return (hash === token) ? "success" : "fail";
         }
 
@@ -509,9 +505,6 @@ export default async function handler(req, res)
                 "entropy",
                 "newPassword"
             ];
-
-            console.log("ALL FIELDS:");
-            console.log(data);
 
             if(checkAllFieldsProvided(data, REQUIRED_FIELDS)) {
 
