@@ -558,11 +558,29 @@ export default async function handler(req, res)
                 }
                 else if (tokenValid === "success")
                 {
-                    //== CHANGE PASSWORD IN DATABASE ==//
-                    return res.status(400).json({
+                    //== HASH NEW PASSWORD ==//
+                    bcrypt.genSalt(SALT_ROUNDS, async (err, salt) => {
+                        bcrypt.hash((data.newPassword + process.env.PEPPER), salt, async (err, passHash) => {
+
+                            //== CHANGE PASSWORD IN DATABASE ==//
+                            const passwordColLetter = 'B'; //The column where the passwords are stored in the table
+                            const cellIndex = passwordColLetter + userRow.toString();
+                            const cellRange = `Users!${cellIndex}:${cellIndex}`
+
+                            //TODO: Handle error
+                            const response = await sheets.spreadsheets.values.update({
+                                    spreadsheetId: process.env.GOOGLE_SHEET_ID,
+                                    range: cellRange,
+                                    valueInputOption: "RAW",
+                                    requestBody: { range: cellRange, majorDimension: "ROWS", values: [[passHash]] },
+                            });
+                        });
+                    });
+
+                    return res.status(200).json({
                         status: "success",
                         code: "passChangeSuccess",
-                        message: "Your password was successfully changed " + userRow,
+                        message: "Your password was successfully changed",
                         data: {}
                     });
                 }

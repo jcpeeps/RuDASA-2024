@@ -56,6 +56,8 @@ export default function PassChange() {
             console.log("RESPONSE FROM PASSCHANGE:");
             console.log(response);
 
+            setFormSubmitErr("");
+
             if (response.status == "error") {
                 if ("code" in response) {
                     switch (response.code) {
@@ -143,8 +145,8 @@ export default function PassChange() {
                                     theme: "light",
                                 });
                                 setTimeout(() => {
-                                    router.push("/");
-                                }, 3000);
+                                    router.push("/login");
+                                }, 4000);
                             }
                         }}
                     >
