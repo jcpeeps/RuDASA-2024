@@ -7,43 +7,61 @@ import fetchJson from '../../lib/fetchJson'
 import ClipLoader from "react-spinners/ClipLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from 'next/router';
 
 export default function PassChange() {
+    const router = useRouter();
 
     const [formSubmitErr, setFormSubmitErr] = useState("");
 
-    const initVals = { email: "" };
+    const initVals = {
+        password: "",
+        passwordConfirm: ""
+    };
 
     //Returns true if password change form submitted successfully, false otherwise
-    const handleChange = async (vals) => {
+    const handlePassChange = async (vals) => {
+
+        //== CHECK QUERY HAS ALL REQUIRED TOKEN PARAMS ==//
+        if(!["em", "tk", "ts", "et"].every(x => x in router.query))
+        {
+            setFormSubmitErr("Invalid URL token. Please ensure you copied the link in its entirety.");
+            return false;
+        }
 
         const payload = {
             type: "passChange",
-            data: vals
+            data: {
+                newPassword: vals.password,
+                email: router.query.em,
+                token: router.query.tk,
+                timestamp: router.query.ts,
+                entropy: router.query.et,
+            }
         }
 
         console.log("SENDING PAYLOAD:");
         console.log(payload);
 
         try {
-            const response = await fetchJson('/api/passChange', {
+            const response = await fetch('/api/passChange', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 },
                 body: JSON.stringify(payload)
-            });
+            }).then(resp => resp.json());
 
-            console.log("RESPONSE FROM PASSRESET:");
+            console.log("RESPONSE FROM PASSCHANGE:");
             console.log(response);
 
             if (response.status == "error") {
                 if ("code" in response) {
-                    alert(response.code);
                     switch (response.code) {
-                        case "invalidPassword":
-                        case "transportErr":
+                        // case "invalidPassword":
+                        case "tokenExpired":
+                        case "tokenAuthFailed":
                             setFormSubmitErr(response.message); //Messages are set in contact.js
                             return false;
 
@@ -55,14 +73,13 @@ export default function PassChange() {
             }
             else //Contact form submission was successful
             {
-                // case "resetRequestSuccess":
                 return true;
             }
 
-            // console.log(response);
+            console.log(response);
 
         } catch (error) {
-            console.log("ERROR THROWN IN PASSRESET.JSX:");
+            console.log("ERROR THROWN IN PASSCHANGE.JSX:");
             console.log(error);
             setFormSubmitErr("Failed to connect to server");
         }
@@ -72,7 +89,7 @@ export default function PassChange() {
         password: Yup.string()
             .required("Password is required")
             .min(8, "Password must be at least 8 characters long")
-            .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/, "Password must contain at least one uppercase letter, one lowercase letter, and one number"),
+            .matches(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$/, "Password must contain an uppercase and lowercase letter and a number"),
         passwordConfirm: Yup.string()
             .required("Password confirmation is required")
             .oneOf([Yup.ref("password"), null], "Passwords must match")
@@ -109,7 +126,7 @@ export default function PassChange() {
                         isInitialValid={false}
                         onSubmit={async (values, { setSubmitting, resetForm }) => {
                             setSubmitting(true);
-                            let submitSuccess = await handleReset(values);
+                            let submitSuccess = await handlePassChange(values);
                             setSubmitting(false);
 
                             if(submitSuccess) //If successful send
@@ -125,11 +142,13 @@ export default function PassChange() {
                                     progress: undefined,
                                     theme: "light",
                                 });
+                                setTimeout(() => {
+                                    router.push("/");
+                                }, 3000);
                             }
                         }}
                     >
                         {({ errors, touched, isValid, isSubmitting }) => {
-
                             return (
                                 <Form>
                                     <div className="mt-3 w-100 d-flex flex-column justify-content-between">

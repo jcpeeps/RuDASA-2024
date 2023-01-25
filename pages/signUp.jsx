@@ -161,7 +161,8 @@ export default function SignUp({ data }) {
             .required("Email is required"),
         password: Yup.string()
             .required("Password is required")
-            .min(5, "Password must be minimum 5 characters"),
+            .min(8, "Password must be at least 8 characters long")
+            .matches(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$/, "Password must contain an uppercase and lowercase letter and a number"),
     });
 
     const AddressSchema = Yup.object().shape({

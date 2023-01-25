@@ -4,10 +4,13 @@
 //   is registered or not.
 
 import { google } from "googleapis";
+import { times } from "lodash";
+import { decode } from "punycode";
 import { boolean } from "yup";
-const bcrypt = require("bcrypt");
-const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 import { transporter, mailerAddress } from '../../config/mailer';
+const bcrypt = require("bcrypt");
+const crypto = require("crypto");
+const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 
 /* Request format:
  Login:
@@ -91,7 +94,11 @@ export default async function handler(req, res)
             case "signup":
                 return await handleSignup(req, req.body.data);
             case "checkUser":
-                return await handleCheckUser(req, req.body.data.email);
+                return await handleCheckUser(req, req.body.data?.email);
+            case "getPassResetToken":
+                return await handleGetPassResetToken(req, req.body.data?.email);
+            case "changePassword":
+                return await handleChangePassword(req, req.body.data);
             default:
                 return res.status(400).json({
                     status: "error",
@@ -157,7 +164,7 @@ export default async function handler(req, res)
 
         //Checks if the specified email address is already in the database
         async function checkEmailInDatabase(email) {
-            const q = "=IF(ISERROR(MATCH(?,Users!A1:A,0)),FALSE, TRUE)";
+            const q = "=IF(ISERROR(MATCH(?,Users!A2:A,0)),FALSE, TRUE)";
             let emailFound = await query(q, [email], "A");
             switch(emailFound) {
                 case "TRUE":    return true;
@@ -166,9 +173,16 @@ export default async function handler(req, res)
             }
         }
 
+        async function getEmailRowInDatabase(email) {
+            const q = "=IFERROR(MATCH(?, Users!A2:A, 0)+1, \"!~FAIL~!\")";
+            let row = await query(q, [email], "A");
+            return (row=="!~FAIL~!"?-1:row);
+        }
+
         //Gets the password hash for a specified user, null if not found
         async function getUserPassHash(email) {
             //TODO: Look into sorting sheet by email for faster lookup [https://stackoverflow.com/a/64080877]
+            //See: [https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets/request#sortrangerequest]
             const q = "=IFNA(VLOOKUP(?, Users!A2:B, 2, false), \"!~FAIL~!\")";
             let result = await query(q, [email], "B");
             return (result=="!~FAIL~!"?null:result);
@@ -231,30 +245,21 @@ export default async function handler(req, res)
             });
         }
 
-        //====== HANDLE CHECK USER =====
-        //Returns whether the specified user exists
-        async function handleCheckUser(req, email) {
-            //== CHECK EMAIL EXISTS ==
-            const emailExists = await checkEmailInDatabase(email);
-
-            if(emailExists == null) {
-                return res.status(400).json({
-                    status: "error",
-                    code: "dbConnFailed",
-                    message: "There was an error processing your request",
-                    data: {}
-                });
+        //Verifies that an object contains all fields listed with values
+        function checkAllFieldsProvided(dataObj, requiredFields)
+        {
+            let allFieldsProvided = true;
+            for (let f of requiredFields)
+            {
+                if(!(f in dataObj) || (dataObj[f])?.toString()?.trim() === "")
+                {
+                    allFieldsProvided = false;
+                    if(debugOutput) { console.log(f + " NOT PROVIDED"); }
+                    else { break; }
+                }
             }
 
-            return res.status(400).json({
-                status: "success",
-                code: emailExists ? "userExists" : "userNotFound",
-                message: emailExists ? "That email belongs to a registered user" : "No existing user has that email",
-                data: {
-                    email: email,
-                    userExists: !!emailExists
-                }
-            });
+            return allFieldsProvided;
         }
 
         //===== HANDLE SIGNUP =====
@@ -275,18 +280,7 @@ export default async function handler(req, res)
                 "privacyPolicy"
             ];
 
-            let allFieldsProvided = true;
-            for (let f of REQUIRED_FIELDS)
-            {
-                if(!(f in data) || toString(data[f]).trim() === "")
-                {
-                    allFieldsProvided = false;
-                    if(debugOutput) { console.log(f + " NOT PROVIDED"); }
-                    else { break; }
-                }
-            }
-
-            if(allFieldsProvided) {
+            if(checkAllFieldsProvided(data, REQUIRED_FIELDS)) {
 
                 //== CHECK EMAIL NOT TAKEN ==
                 const emailExists = await checkEmailInDatabase(data.email);
@@ -396,6 +390,201 @@ export default async function handler(req, res)
                 });
             }
 
+        }
+
+        //====== HANDLE CHECK USER =====
+        //Returns whether the specified user exists
+        async function handleCheckUser(req, email) {
+            //== CHECK EMAIL EXISTS ==
+            const emailExists = await checkEmailInDatabase(email);
+
+            if(emailExists == null) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "dbConnFailed",
+                    message: "There was an error processing your request",
+                    data: {}
+                });
+            }
+
+            return res.status(200).json({
+                status: "success",
+                code: emailExists ? "userExists" : "userNotFound",
+                message: emailExists ? "That email belongs to a registered user" : "No existing user has that email",
+                data: {
+                    email: email,
+                    userExists: !!emailExists
+                }
+            });
+        }
+
+        //====== HANDLE GET PASS RESET TOKEN =====
+        async function handleGetPassResetToken(req, email) {
+
+            const [token, timestamp, entropy] = generatePassResetToken(email);
+
+            if(token === "failed")
+            {
+                return res.status(400).json({
+                    status: "error",
+                    code: "tokenGenFailed",
+                    message: "Something went wrong while trying to generate the token.",
+                    data: {}
+                });
+            }
+
+            return res.status(200).json({
+                status: "success",
+                code: "tokenGenSuccess",
+                message: "The password reset token was successfully generated",
+                data: {
+                    email: email,
+                    token: token,
+                    timestamp: timestamp,
+                    entropy: entropy
+                }
+            });
+        }
+
+        //A unique one-way hash function used to generate password reset authentication tokens statelessly
+        function generatePassResetToken(userEmail)
+        {
+            //Hash email + time + entropy + global password
+            //TODO: Consider hashing the current password hash from the DB as well,
+            //      to prevent multiple subsequent password resets using the same token
+            const timestamp = Date.now().toString(16);
+            const entropy = crypto.randomBytes(8).toString("hex"); //Effectively a one-time salt
+
+            try
+            {
+                const hash = crypto.createHash("sha256").update(
+                    userEmail.toString() +
+                    timestamp +
+                    entropy +
+                    process.env.PASSWORD_RESET_TOKEN_PEPPER
+                ).digest("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/.$/, ""); //Make token URL-friendly
+
+                return [hash, timestamp, entropy];
+            }
+            catch (e)
+            {
+                return ["failed", timestamp, 0];
+            }
+        }
+
+        //Checks a given password reset token to see whether it is valid
+        function checkPassResetToken(token, userEmail, timestamp, entropy)
+        {
+            const TOKEN_EXPIRY_LIFETIME = 20 * 60 * 1000; //20 minutes
+
+            //Check timestamp has not expired
+            if(Date.now() - Number("0x" + timestamp) > TOKEN_EXPIRY_LIFETIME)
+            {
+                return "tokenExpired";
+            }
+
+            //Validate timestamp (See generatePassResetToken())
+            const hash = crypto.createHash("sha256").update(
+                userEmail +
+                timestamp +
+                entropy +
+                process.env.PASSWORD_RESET_TOKEN_PEPPER
+            ).digest("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/.$/, "");
+
+            console.log("HASH // TOKEN:");
+            console.log(hash);
+            console.log(token);
+
+            return (hash === token) ? "success" : "fail";
+        }
+
+        //====== HANDLE CHANGE PASSWORD =====
+        //Returns whether the specified user exists
+        async function handleChangePassword(req, data) {
+            //Check all required fields have been provided in the request
+            const REQUIRED_FIELDS = [
+                "email",
+                "token",
+                "timestamp",
+                "entropy",
+                "newPassword"
+            ];
+
+            console.log("ALL FIELDS:");
+            console.log(data);
+
+            if(checkAllFieldsProvided(data, REQUIRED_FIELDS)) {
+
+                //== CHECK USER EXISTS + GET ROW IN DB ==//
+                const userRow = await getEmailRowInDatabase(data.email);
+
+                if(userRow === null) {
+                    return res.status(400).json({
+                        status: "error",
+                        code: "dbConnFailed",
+                        message: "There was an error processing your request",
+                        data: {}
+                    });
+                }
+
+                if(userRow === -1) {
+                    return res.status(400).json({
+                        status: "error",
+                        code: "userNotFound",
+                        message: "That email does not correspond to a registered user",
+                        data: {}
+                    });
+                }
+
+                //== AUTHENTICATE TOKEN ==//
+                const tokenValid = checkPassResetToken(data.token, data.email, data.timestamp, data.entropy);
+                if (tokenValid === "tokenExpired")
+                {
+                    return res.status(400).json({
+                        status: "error",
+                        code: "tokenExpired",
+                        message: "Sorry! The password reset token has expired. Please submit a new password reset request via the form",
+                        data: {}
+                    });
+                }
+                else if (tokenValid === "fail")
+                {
+                    return res.status(400).json({
+                        status: "error",
+                        code: "tokenAuthFailed",
+                        message: "It seems the supplied password reset token is invalid. Please generate a new one via the password reset form",
+                        data: {}
+                    });
+                }
+                else if (tokenValid === "success")
+                {
+                    //== CHANGE PASSWORD IN DATABASE ==//
+                    return res.status(400).json({
+                        status: "success",
+                        code: "passChangeSuccess",
+                        message: "Your password was successfully changed " + userRow,
+                        data: {}
+                    });
+                }
+            }
+            else
+            {
+                //== PASS CHANGE FAILED, INVALID REQUEST ==//
+                return res.status(400).json({
+                    status: "error",
+                    code: "invalidPasswordChange",
+                    message: "Invalid password change request, some required fields were empty",
+                    data: {}
+                });
+            }
+
+            //== PASS CHANGE FAILED, INVALID REQUEST ==//
+            return res.status(400).json({
+                status: "error",
+                code: "servError",
+                message: "Something went wrong while resetting your password. Please try again later",
+                data: {}
+            });
         }
 
         //===== HANDLE LOGOUT =====

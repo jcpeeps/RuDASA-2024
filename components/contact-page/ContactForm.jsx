@@ -5,7 +5,6 @@ import Illustration3 from '../../media/svg/contact.svg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from '../../pages/api/useUser';
-import fetchJson from '../../lib/fetchJson'
 import ClipLoader from "react-spinners/ClipLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -30,18 +29,18 @@ export default function ContactForm() {
         }
 
         try {
-            const response = await fetchJson('/api/contact', {
+            const response = await fetch('/api/contact', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 },
                 body: JSON.stringify(payload)
-            })
+            }).then(resp => resp.json())
 
             if (response.status == "error") {
                 if ("code" in response) {
-                    alert(response.code);
+                    // alert(response.code);
                     switch (response.code) {
                         case "invalidContact":
                         case "transportErr":

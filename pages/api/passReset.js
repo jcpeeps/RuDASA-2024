@@ -3,6 +3,7 @@ import absoluteUrl from 'next-absolute-url'
 
 const debugOutput = process && process.env.NODE_ENV === "development"; //ONLY SHOW DEBUG INFO ON DEVELOPMENT BUILD
 
+//This API route allows a user to request a password reset, and sends them the necessary authentication token link to do so
 export default async function handler(req, res)
 {
     //== CHECK REQUEST IS VALID ==//
@@ -54,21 +55,21 @@ export default async function handler(req, res)
     //== CHECK USER ACCOUNT EXISTS VIA SHEETS.JS ==//
     const { origin } = absoluteUrl(req);
 
-    const sheetsPayload = {
+    const sheetsPayload_checkUser = {
         type: "checkUser",
         data: { email: userEmail }
     }
 
-    const resp = await fetch(`${origin}/api/sheets`, {
+    const resp_checkUser = await fetch(`${origin}/api/sheets`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(sheetsPayload)
+        body: JSON.stringify(sheetsPayload_checkUser)
     }).then(resp => resp.json());
 
     console.log("RESPONSE FROM SHEETS AFTER PASS RESET REQUEST:");
-    console.log(resp);
+    console.log(resp_checkUser);
 
-    if(resp.data.code !== "userExists")
+    if(resp_checkUser.code !== "userExists")
     {
         return res.status(400).json({
             status: "error",
@@ -77,7 +78,43 @@ export default async function handler(req, res)
         });
     }
 
-    const resetLink = "https://example.com"
+
+    //== GET PASSWORD RESET TOKEN FROM SHEETS.JS ==//
+    const sheetsPayload_getResetToken = {
+        type: "getPassResetToken",
+        data: { email: userEmail }
+    }
+
+    const resp_getResetToken = await fetch(`${origin}/api/sheets`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(sheetsPayload_getResetToken)
+    }).then(resp => resp.json());
+
+    console.log("RESPONSE FROM SHEETS AFTER GET RESET TOKEN REQUEST:");
+    console.log(resp_getResetToken);
+
+    if (resp_getResetToken.code !== "tokenGenSuccess")
+    {
+        return res.status(400).json({
+            status: "error",
+            code: "servErr",
+            message: "Internal server error (details suppressed)."
+        });
+    }
+
+    const tokenData = resp_getResetToken.data;
+
+    //== CONSTRUCT PASSWORD RESET LINK ==//
+    const resetLink = origin + "/passChange?" + [
+        "em=" + encodeURIComponent(tokenData.email),
+        "tk=" + tokenData.token,
+        "ts=" + tokenData.timestamp,
+        "et=" + tokenData.entropy
+    ].join("&");
+
+    console.log("RESET LINK GENERATED:");
+    console.log(resetLink);
 
     //== TRY SEND RESET LINK ==//
     try

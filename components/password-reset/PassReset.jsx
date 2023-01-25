@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Illustration3 from '../../media/svg/reset-password.svg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import fetchJson from '../../lib/fetchJson'
 import ClipLoader from "react-spinners/ClipLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -26,21 +25,22 @@ export default function PassReset() {
         console.log(payload);
 
         try {
-            const response = await fetchJson('/api/passReset', {
+            const response = await fetch('/api/passReset', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 },
                 body: JSON.stringify(payload)
-            });
+            }).then(resp => resp.json())
 
             console.log("RESPONSE FROM PASSRESET:");
             console.log(response);
 
+            setFormSubmitErr("");
+
             if (response.status == "error") {
                 if ("code" in response) {
-                    alert(response.code);
                     switch (response.code) {
                         case "invalidEmail":
                         case "transportErr":
@@ -63,7 +63,7 @@ export default function PassReset() {
 
         } catch (error) {
             console.log("ERROR THROWN IN PASSRESET.JSX:");
-            console.log(error);
+            console.log(JSON.stringify(error));
             setFormSubmitErr("Failed to connect to server");
         }
     }
@@ -111,9 +111,9 @@ export default function PassReset() {
                             if(submitSuccess) //If successful send
                             {
                                 resetForm();
-                                toast.success('Reset link sent successfully', {
+                                toast.success('Reset link sent successfully.\nPlease check your email.', {
                                     position: "top-right",
-                                    autoClose: 2000,
+                                    autoClose: 4000,
                                     hideProgressBar: true,
                                     closeOnClick: true,
                                     pauseOnHover: false,
