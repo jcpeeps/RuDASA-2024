@@ -117,7 +117,7 @@ export default function Login() {
                                             />
                                         </div>
                                     </div>
-                                    <div className="my-4 w-100 d-flex flex-column flex-sm-row justify-content-end align-items-end align-items-sm-center">
+                                    <div className="my-4 w-100 d-flex flex-column flex-xl-row justify-content-end align-items-end align-items-xl-center">
                                         <small className="me-sm-3 mb-4 mb-sm-0">Don&apos;t have an account? <Link href="/signUp">Sign up</Link></small>
                                         <small className="me-sm-3 mb-4 mb-sm-0"><Link href="/passReset">Forgot password?</Link></small>
                                     </div>
