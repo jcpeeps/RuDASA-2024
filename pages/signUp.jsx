@@ -817,38 +817,40 @@ export default function SignUp({ data }) {
 
 
                                             {/* ========== SUBMIT STEP =========== */}
-                                            <div className="w-100 d-flex justify-content-end align-items-center">
+                                            <div className="w-100 d-flex flex-column flex-sm-row justify-content-end align-items-end align-items-sm-center">
                                                 <small>Have an account? <Link href="/login">Log in</Link></small>
-                                                <button className="btn btn-lg btn-outline"
-                                                    disabled={step == 0}
-                                                    onClick={() => {
-                                                        setStep((currStep) => currStep - 1);
-                                                    }}
-                                                >
-                                                    Back
-                                                </button>
-                                                <div className={`hover-button ${submitShow ? "d-none" : ""
-                                                    }`}>
-                                                    <button className="btn btn-lg btn-secondary"
-                                                        disabled={!isValid}
+                                                <div className='d-flex mt-4 mt-sm-0'>
+                                                    <button className="btn btn-lg btn-outline"
+                                                        disabled={step == 0}
                                                         onClick={() => {
-                                                            setStep((currStep) => currStep + 1);
+                                                            setStep((currStep) => currStep - 1);
                                                         }}
                                                     >
-                                                        Next
+                                                        Back
                                                     </button>
-                                                </div>
-                                                <div className={`hover-button ${submitShow ? "" : "d-none"}`}>
-                                                    <button className="btn btn-lg btn-secondary"
-                                                        type="submit"
-                                                        disabled={!isValid}
-                                                    >
-                                                        {
-                                                            isSubmitting
-                                                                ? <ClipLoader color="#fff" size={20} cssOverride={{ margin: "0 15px" }} />
-                                                                : "Sign Up"
-                                                        }
-                                                    </button>
+                                                    <div className={`hover-button ${submitShow ? "d-none" : ""
+                                                        }`}>
+                                                        <button className="btn btn-lg btn-secondary"
+                                                            disabled={!isValid}
+                                                            onClick={() => {
+                                                                setStep((currStep) => currStep + 1);
+                                                            }}
+                                                        >
+                                                            Next
+                                                        </button>
+                                                    </div>
+                                                    <div className={`hover-button ${submitShow ? "" : "d-none"}`}>
+                                                        <button className="btn btn-lg btn-secondary"
+                                                            type="submit"
+                                                            disabled={!isValid}
+                                                        >
+                                                            {
+                                                                isSubmitting
+                                                                    ? <ClipLoader color="#fff" size={20} cssOverride={{ margin: "0 15px" }} />
+                                                                    : "Sign Up"
+                                                            }
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <p className="d-flex justify-content-end invalid-feedback">
