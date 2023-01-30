@@ -804,7 +804,7 @@ export default function SignUp({ data }) {
                                                             }}
                                                         />
                                                         <label className="form-check-label" htmlFor="privacyPolicy">
-                                                            I agree to the <a href="/pdfs/value-statement.pdf" target="_blank">Value Statement</a> and <a href="/pdfs/code-of-conduct.pdf" target="_blank">Code of Conduct</a><label className="text-primary fw-bold form-label ms-2">*</label>
+                                                            I agree to the <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>, <a href="/pdfs/value-statement.pdf" target="_blank">Value Statement</a> and <a href="/pdfs/code-of-conduct.pdf" target="_blank">Code of Conduct</a><label className="text-primary fw-bold form-label ms-2">*</label>
                                                         </label>
                                                         <ErrorMessage
                                                             component="div"
