@@ -1,12 +1,12 @@
 ---
-date: "31st January to 13th March 2022"
+date: "30th January to 24th March 2023"
 abstractTitle: "Learn how to thrive, not just survive, in rural health!"
 abstract: "Welcome to RuDASA's  comprehensive online package for new clinicians joining rural health facilities in South Africa. COVID has transformed our training landscape and we are now able to offer an orientation program that can fit in with a clinician’s busy program, and still give them access to all the knowledge and resources they need to thrive in rural health care. Although focused on new clinicians we welcome any clinician keen to update their knowledge. 
 "
 ---
 
 ---structure
-A 6-week curriculum, structured into six broad categories, using a hybrid teaching methodology. Each Monday you will be sent the program for the coming week, including the links to the relevant zoom meetings; as well as links to relevant webinars, video tutorials, and related guidelines, protocols and tools useful to your daily work. These  can be studied at home at a time that suits you and clinicians can tailor their learning according to their needs. Clinicians are encouraged to attend the interactive Zoom sessions on Monday evenings (with additional sessions later in the week depending on facilitator availability). These will Introduce key mentors and experts that can provide ongoing support as the course progresses. We will cover FAQ and top tips on the materials you have received.
+A 8-week curriculum, structured into six broad categories, using a hybrid teaching methodology. Each Monday you will be sent the program for the coming week, including the links to the relevant zoom meetings; as well as links to relevant webinars, video tutorials, and related guidelines, protocols and tools useful to your daily work. These  can be studied at home at a time that suits you and clinicians can tailor their learning according to their needs. Clinicians are encouraged to attend the interactive Zoom sessions on Monday evenings (with additional sessions later in the week depending on facilitator availability). These will Introduce key mentors and experts that can provide ongoing support as the course progresses. We will cover FAQ and top tips on the materials you have received.
 ---
 
 ---overview
@@ -20,13 +20,16 @@ This course is a work in progress Follow us on Facebook, Instagram or Twitter to
 We are receiving excellent feedback from our rural network of clinicians on useful information to add. We will be updating our materials and links on a weekly bases. We are also open to requests, input and feedback.
 ---
 
----weeks
-* Infectious Diseases
-* Maternal health
-* Non-communicable disease care and Emergency Medicine
-* Anaesthetics, Orthopaedics & Surgery
-* Neonatal Health and Paediatrics
-* Patient centred care. Thriving in rural health. Mental Health
+---weeks  
+Week 1 : Infectious Diseases  
+Week 2: Maternal Medicine  
+Week 3: Adult Medicine  
+Week 4: Child Health  
+Week 5: Emergency Medicine  
+Week 6: Trauma, Anaesthetics and Surgery  
+Week 7: Mental health  
+Week 8: Family medicine Skills and navigating the NDOH  
+
 ---
 
 ---attendance
