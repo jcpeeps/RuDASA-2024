@@ -107,22 +107,6 @@ export default async function handler(req, res)
                 });
         }
 
-        //DEPRECATED: Left here for extensibility later on
-        async function validateApiKey(email, ip, key) {
-            bcrypt.genSalt(SALT_ROUNDS, async (err, salt) => {
-                bcrypt.hash((key + process.env.PEPPER), salt, async (err, apiKeyHash) => {
-
-                    //== CHECK FOR KEY HASH IN DB ==
-                    const response = await sheets.spreadsheets.values.get({
-                        spreadsheetId: process.env.GOOGLE_SHEET_ID,
-                        range: "Users!A:A" // Access the entire Users sheet
-                    });
-
-                    // See [https://developers.google.com/sheets/api/guides/concepts] for range notation
-                });
-            });
-        }
-        
         //Executes an *atomic* Sheets query and returns its result
         //?'s in q are replaced with the fields
         //  q:      "=IF(ISERROR(MATCH(?,Users!A1:A,0)),FALSE, TRUE)"
@@ -138,28 +122,27 @@ export default async function handler(req, res)
                 q = q.replace(/\?/, '"' + sanitizedField + '"');
             }
 
-            //== GENERATE QUERY CELL ==
-            const response = await sheets.spreadsheets.values.append({
-                spreadsheetId: process.env.GOOGLE_SHEET_ID,
-                includeValuesInResponse: true,
-                range: "Aggregation!" + row + ":" + row,
-                valueInputOption: "USER_ENTERED",
-                requestBody: { values: [[ q ]] }
-            });
-
-            //== CLEAR CELL ==
             try {
+                //== GENERATE QUERY CELL ==
+                const response = await sheets.spreadsheets.values.append({
+                    spreadsheetId: process.env.GOOGLE_SHEET_ID,
+                    includeValuesInResponse: true,
+                    range: "Aggregation!" + row + ":" + row,
+                    valueInputOption: "USER_ENTERED",
+                    requestBody: { values: [[ q ]] }
+                });
+
+                //== CLEAR CELL ==
                 const clearResponse = await sheets.spreadsheets.values.clear({
                     spreadsheetId: process.env.GOOGLE_SHEET_ID,
                     range: response.data.updates.updatedRange,
                     requestBody: {}
                 });
-            } catch {}
 
-            //== RETURN ==
-            try {
+                //== RETURN ==
                 return response.data.updates.updatedData.values[0][0];
-            } catch { return null; }
+            }
+            catch { return null; }
         }
 
         //Checks if the specified email address is already in the database

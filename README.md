@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Notes for future development
 
-## Getting Started
+## Getting Started:
+The site hosted on *https://rudasa.org.za* is hosted on Vercel (here)[https://vercel.com/jcpeeps/rudasa-7khp].
 
-First, run the development server:
+Some info on environment variables:
+- `RUDASA_NOTIFICATION_EMAIL` The email address to receive signup and contact form notifications from site users. (You can change this).
+- `MAILER_GMAIL_ADDRESS` The Gmail address controlling the mailer app (DON'T CHANGE THIS).
+- `MAILER_FROM_ADDRESS` The email address to send messages from (access to this address must be granted in the settings menu in `MAILER_GMAIL_ADDRESS`'s Gmail webclient)
 
+To run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
+(Make sure to copy any important environment variables from Vercel to a `.env.local` if you're working on the backend)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+See (here)[https://youtu.be/7N0OcQZFm3Q] for how the Google Sheets API was set up in *pages/api/sheets.js*.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## In the event of `MAILER_REFRESH_TOKEN` expiry:
+> If the site contact form or login page ever stops working with the reason "Failed to connect to server" this is the most likely cause.
+> This should only ever happen if the site exceeds the token request limit (10 000 req/day), which is unlikely for the time being
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Steps:
+1) Log into *admin@rudasa.org.za*'s (Google Account)[https://accounts.google.com]
+2) Copy the `MAILER_CLIENT_ID` and `MAILER_CLIENT_SECRET` from the server environment variables.
+3) Visit the (Google OAuth 2.0 playground)[https://developers.google.com/oauthplayground]
+4) Click the ⚙️ (gear/settings) icon on the top right
+5) Check the *User your own OAuth credentials* box
+6) Paste in the `MAILER_CLIENT_ID` and `MAILER_CLIENT_SECRET` into their respective boxes
+7) On the left hand side panel, under *Step 1*, enter `https://mail.google.com` in the *Input your own scopes* textbox and hit **Authorize APIs**.
+8) Proceed through the steps to authorize *Rudasa Mailer*'s access to the *admin@rudasa.org.za*'s Gmail scope.
+9) If necessary hit the **Exchange authorization code for tokens** button to generate a new *Refresh token*.
+10) Once you've returned to the *OAuth 2.0 Playground* menu, copy the *Refresh token* from *Step 2* or from the *Request/Response* JSON response.
+11) Replace the existing `MAILER_REFRESH_TOKEN` variable in Vercel with the newly generated token and redeploy the latest deployment.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Other useful info:
+- The *Rudasa Mailer* Client ID, as well as the Google Sheets service account can be accessed and configured (here)[https://console.cloud.google.com/apis/credentials?project=rudasa-user-system]
+- For further info please see (this StackOverflow question)[https://stackoverflow.com/q/66058279]
