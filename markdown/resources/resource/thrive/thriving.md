@@ -2,7 +2,8 @@
 title: 'Thriving Resources'
 section: '0'
 ---
-
+**Taking Care** is a group of doctors (2 are rural doctors) that run a variety of wellness workshops , online and at venues, to prevent Burnout & depression in health care workers. You can do a quick check on the site to see if you have Burnout. There are a number of good resources on the web.
+ https://www.takingcare.co.za
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.

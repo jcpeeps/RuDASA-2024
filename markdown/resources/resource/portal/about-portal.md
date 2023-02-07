@@ -31,7 +31,7 @@ The content of each week’s material includes the following:
 * Relevant articles 
 * Tools and relevant websites with additional resources
  
-At the moment the clinical part of the program is heavily focused on doctors and clinical associates, but the orientation package is open to *any* clinician in an EC rural health facility. The sections on employee support, the MDT team, health care worker mental health and patient centred care are particularly relevant to any cadre.
+At the moment the clinical part of the program is heavily focused on doctors and clinical associates, but the orientation package is open to *any* clinician. The sections on employee support, the MDT team, health care worker mental health and patient centred care are particularly relevant to any cadre.
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.

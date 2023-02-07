@@ -55,7 +55,7 @@ export default function SignUp({ data }) {
         district: "",
 
         signUpReason: "health-interest",
-        jobDescription: "",
+        jobDescription: "medical-officer",
         employmentArea: 'private-sector',
         workArea: '',
         professionalNumber: '',
@@ -190,7 +190,8 @@ export default function SignUp({ data }) {
         jobDesc: Yup.string(),
         employmentArea: Yup.string(),
         workArea: Yup.string()
-            .max(100, "Work area must be less than 100 characters"),
+            .max(100, "Work area must be less than 100 characters")
+            .required("Work area is required"),
         professionalNumber: Yup.string(),
         privacyPolicy: Yup.boolean()
             .when("other", {
@@ -584,7 +585,7 @@ export default function SignUp({ data }) {
                                                                     </div>
 
                                                                     <div className="w-auto form-group">
-                                                                        <label htmlFor="workArea" className="text-primary fw-bold form-label ms-2">Work Area</label>
+                                                                        <label htmlFor="workArea" className="text-primary fw-bold form-label ms-2">Work Area*</label>
                                                                         <Field
                                                                             type="text"
                                                                             name="workArea"
