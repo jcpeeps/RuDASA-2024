@@ -41,7 +41,9 @@ section: '2'
 
 * [Reproductive Health Library YouTube Channel](https://www.youtube.com/channel/UCfYi3MN6-SIzKlTNioY8k4A)
 
-* [Zimbabwean Obstetrician Dr Claudious Verenga covers the basics of obstetric ultrasound for doctors and nurses](https://www.youtube.com/watch?v=GtBLdzr6Ngg&feature=youtu.be)
+* [Maternal Health in Rural: Pitfalls and FAQ, Dr Mandondo](https://www.youtube.com/watch?v=VcRgel8BqOc)
+
+* [Basic Practical Ultrasound for doctors and nurses, Dr Claudious Verenga Zimbabwean Obstetrician](https://www.youtube.com/watch?v=GtBLdzr6Ngg&feature=youtu.be)
 
 * [Preventing complications during caesarian section, Prof Hofmeyr](https://youtu.be/b2FMVBCiPso)
 
@@ -58,6 +60,8 @@ section: '2'
 * [Active management of third stage of labour](https://youtu.be/_TXv2jGnzhU)
 
 * [Management of early pregnancy loss](https://journals.co.za/doi/epdf/10.10520/EJC63071)
+
+* [Perinatal care for trans and non-binary people](https://www.bsuh.nhs.uk/maternity/wp-content/uploads/sites/7/2021/01/MP005-Perinatal-Care-for-Trans-and-Non-Binary-People.pdf)
 
 * [Sexual Pleasure, Sexual Health, Sexual rights](https://youtube.com/playlist?list=PL2IvCQAf-vTsyO7PFjM37sj-P5Ue-J19-)
 
