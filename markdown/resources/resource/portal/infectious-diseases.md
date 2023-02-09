@@ -60,6 +60,18 @@ Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders
 The South African Antibiotic Stewardship Programme (SAASP) : Become an antiobiotic guardian\
 [Click Here](https://www.samedical.org/file/946) - and download the app to ensure prudent use of antibiotics.
 [Download Here](https://play.google.com/store/apps/details?id=org.appenberg.saasp&;hl=en_ZA&;gl=US)
+
+Webinars:
+
+[Malaria Dr Dave Stead](https://www.youtube.com/watch?v=BaStBGnbNt8)
+
+[Antibiotic stewardship in UTI](https://www.youtube.com/watch?v=3R4aVZkgIm8&feature=youtu.be)
+
+[CXR & Antibiotic stewardship in COVID19 Dr Dave Stead](https://www.youtube.com/watch?v=3R4aVZkgIm8&feature=youtu.be) 
+
+[COVID19 Diagnostics and Management Prof Parrish](https://www.youtube.com/watch?v=HcBWeOT42Lk&feature=youtu.be)
+
+[Rabies Dr Dave Stead](https://www.youtube.com/watch?v=WoqRrIHHuvg&feature=youtu.be)
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
