@@ -7,22 +7,22 @@ members: [
     },
     {
         title: 'Vice Chair',
-        name: 'Adam Ashgar',
+        name: 'Asafika Mbangata',
         email: 'vicechair@rudasa.org.za'
     },
     {
         title: 'Treasurer',
-        name: 'Ndiviwe Mphothulo',
+        name: 'Dr Gumede',
         email: 'treasurer@rudasa.org.za'
     },
     {
         title: 'Secretary',
-        name: 'Jayne Bezuidenhout',
+        name: 'John D Lotz',
         email: 'secretary@rudasa.org.za'
     },
     {
         title: 'Rural Health Conference',
-        name: 'Jayne Bezuidenhout',
+        name: 'Asafika Mbangata',
         email: 'info@ruralhealthconference.org.za'
     },
     {
@@ -38,11 +38,11 @@ members: [
     {
         title: 'Young Professionals',
         name: 'Anna Jacobs',
-        email: ''
+        email: 'youngprofessionals@rudasa.org.za'
     },
     {
         title: 'Students',
-        name: 'Fatouma Lo',
+        name: 'Vuthlhari Shirindza',
         email: 'students@rudasa.org.za'
     },
 ]
