@@ -43,7 +43,7 @@ infectious diseases you will see – and the landscape is always changing. Are y
 
 * The NDOH knowledge hub runs a free online training on Advanced Clinical Care (30CPD points) which is worthwhile doing.
 
-* The HIV clinician Society website has excellent resources – consider joining the society if you have a special interest in HIV.
+* The SA HIV Clinicians Society website has excellent resources – consider [joining the society](https://sahivsoc.org/Subheader/Index/join) if you have a special interest in HIV.
 
 * [Basic introduction to ARV guidelines Dr Muller](https://youtu.be/pDK9okgbDP4)
 
@@ -71,6 +71,12 @@ Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders
 * EML ARV interaction table
 
 * DRTB summary posters
+
+Whatsapp advise by ID specialists (IDSSA):
+
+[Infecious Disease Specialist Whatsapp Group](https://chat.whatsapp.com/Dt2jnrPafPO5Yq5Cb2anMr)
+
+[Paediatric ID Whatsapp Group](https://chat.whatsapp.com/KZX2OiPxQwsIrsMSr4cIqX)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
