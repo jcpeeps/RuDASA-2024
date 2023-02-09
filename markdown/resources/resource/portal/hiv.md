@@ -48,6 +48,7 @@ infectious diseases you will see – and the landscape is always changing. Are y
 * [Basic introduction to ARV guidelines Dr Muller](https://youtu.be/pDK9okgbDP4)
 
 * [A structured approach to the Ill immunocompromised patient. Dr Madeleine Muller](https://youtu.be/DcfCE0hS_gI)
+* [Diagnosing TB at the District Level Jan 2023 Dr Dave Stead Jan 2023](https://www.youtube.com/watch?v=jNqp8tJa8CY)
 
 * [An overview of Rifampicin Resistant guidelines SAFP Dr Muller](https://safpj.co.za/index.php/safpj/article/view/5092/6017)
 
