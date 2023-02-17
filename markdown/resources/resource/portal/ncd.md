@@ -64,6 +64,10 @@ section: '3'
 
 * **Dyslipidemia**
   * [South African dyslipidaemia guideline consensus statement](http://www.samj.org.za/index.php/samj/article/view/12479/8686)
+  
+  * [Dyslipidemia Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=WMsRscfTwnw&feature=youtu.be)
+  
+  * [Dyslipidemia - Advanced Management Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISyy3z4TwJI-GCAyAxkutYfY9)
 
 * **Stroke**
   * [South African guideline for Stroke SAMJ](http://www.samj.org.za/index.php/samj/article/view/4422/3005)
@@ -87,9 +91,13 @@ section: '3'
 
 * [Guidelines for the diagnosis and treatment of acute and chronic heart failure](http://www.hefssa.org/images/uploads/2016_ESC_Guidelines_for_the_diagnosis_and_treatment_of_acute_and_chronic_heart_failure.pdf)
 
-* [International Society of Hypertension Global Hypertension Practice Guidelines](guideline:https://www.ahajournals.org/doi/epub/10.1161/HYPERTENSIONAHA.120.15026) Good for background reading but thresholds for treatment as per the South African guideline:
+* [International Society of Hypertension Global Hypertension Practice Guidelines](guideline:https://www.ahajournals.org/doi/epub/10.1161/HYPERTENSIONAHA.120.15026) Good for background reading but thresholds for treatment as per the South African guideline
+
+* [Cardiac Arrhythmia Part 1 Tachy arrhythmia Dr Adeniyi](https://www.youtube.com/watch?v=2TejX0EQkvA) [Part 2](https://www.youtube.com/watch?v=1uP2_mKo6Ok)
 
 * [The approach to achieving glycaemic control](https://safpj.co.za/index.php/safpj/article/view/4851/5755) A detailed,but balanced guideline on medical treatment of Type 2 diabetes.
+
+* [CMH FM Gout et al Case Series](https://www.youtube.com/playlist?list=PLaMWnazLISyzxayOgon3RDsX8iS1l3L9X)
 
 Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1dxip3tJDvIMNLa3IPHIisXIb7B8sO2Ns?usp=sharing)
 
