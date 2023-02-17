@@ -91,13 +91,23 @@ section: '3'
 
 * [Guidelines for the diagnosis and treatment of acute and chronic heart failure](http://www.hefssa.org/images/uploads/2016_ESC_Guidelines_for_the_diagnosis_and_treatment_of_acute_and_chronic_heart_failure.pdf)
 
-* [International Society of Hypertension Global Hypertension Practice Guidelines](guideline:https://www.ahajournals.org/doi/epub/10.1161/HYPERTENSIONAHA.120.15026) Good for background reading but thresholds for treatment as per the South African guideline
+* [International Society of Hypertension Global Hypertension Practice Guidelines](guideline:https://www.ahajournals.org/doi/epub/10.1161/HYPERTENSIONAHA.120.15026)Good for background reading but thresholds for treatment as per the South African guideline.
 
 * [Cardiac Arrhythmia Part 1 Tachy arrhythmia Dr Adeniyi](https://www.youtube.com/watch?v=2TejX0EQkvA) [Part 2](https://www.youtube.com/watch?v=1uP2_mKo6Ok)
 
 * [The approach to achieving glycaemic control](https://safpj.co.za/index.php/safpj/article/view/4851/5755) A detailed,but balanced guideline on medical treatment of Type 2 diabetes.
 
 * [CMH FM Gout et al Case Series](https://www.youtube.com/playlist?list=PLaMWnazLISyzxayOgon3RDsX8iS1l3L9X)
+
+* [Radiopedia is an excellent reference and training website](https://radiopaedia.org)
+
+* [Allergy Foundation resources on Eczema](https://www.allergyfoundation.co.za/wp-content/uploads/2018/09/28-b-excema-AFSA.pdf)
+
+* [Allergy Foundation resources on nasal sprays and washouts](https://www.allergyfoundation.co.za/wp-content/uploads/2016/11/6-nasal-spray-and-washout.pdf)
+
+* [I Change for Health website with patient education](https://www.ichange4health.co.za) Includes diet, exercise, and smoking cessation, with free cookbooks for the South African setting
+
+* [15 minute exercise video](https://www.youtube.com/watch?v=C_rKOIJTB6A&feature=youtu.be)
 
 Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1dxip3tJDvIMNLa3IPHIisXIb7B8sO2Ns?usp=sharing)
 
@@ -108,6 +118,10 @@ Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1
 * Tobacco cessation guideline
 
 * Renal booklet
+
+* WHO Acute Care
+
+* [CMH Family Medicine Handy Reference Tools](https://drive.google.com/drive/folders/1hHhrTctSAUgJ7PKWZSIC5QZhl7ivCl3u) These are a set of drab quick reference tools on diabetes, hypertension, asthma, COPD, mental health, rheumatoid arthritis, heart failure, CVS risk assessment and more. You will see that they are all still a work in progress and regularly revised. Based on EML and a practical EBM.
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
