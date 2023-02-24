@@ -27,9 +27,15 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Integrated management of childhood illness](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-10/2019%20IMCI%20CHART%20BOOKLET.pdf)
 
+* [Paediatric ID Whatsapp Group](https://chat.whatsapp.com/KZX2OiPxQwsIrsMSr4cIqX)
+
+* [WHO Paediatric emergency triage, assessment and treatment Care of critically ill children](https://apps.who.int/iris/bitstream/handle/10665/204463/9789241510219_eng.pdf)
+
 ## Reading material / Tutorials / Webinars / Additional resources
 
 * Limpopo Initiative for Newborn care: [Essential Newborn Care package](http://www.lincare.co.za/?page_id=1207) Includes Newborn Care charts, ENC quality improvement kit, and a full MSSN course (Management of Sick and Small newborns)
+
+* [Neonatal Essential Package of Care (EPOC) resource page. KZN DOH](http://www.kznhealth.gov.za/neonates/ess-pack/essential-package.htm)
 
 * [Assisting mom and health care workers with newborn care including breastfeeding](https://globalhealthmedia.org/videos/),Great, practical videos for mom and healthcare workers
 
