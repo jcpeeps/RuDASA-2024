@@ -33,15 +33,21 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
-* Limpopo Initiative for Newborn care: [Essential Newborn Care package](http://www.lincare.co.za/?page_id=1207) Includes Newborn Care charts, ENC quality improvement kit, and a full MSSN course (Management of Sick and Small newborns)
+* Limpopo Initiative for Newborn care: [Essential Newborn Care package](http://www.lincare.co.za/?page_id=1207) Includes Newborn Care charts, ENC quality improvement kit, and a full MSSN course (Management of Sick and Small newborns). [LINC Newborn care videos](https://www.youtube.com/@limpopoinitiativefornewbor511/featured)
+
+* [Newborn transition and neonatal resuscitation LINC eLearning course](http://www.lincare.co.za/?page_id=1201)
 
 * [Neonatal Essential Package of Care (EPOC) resource page. KZN DOH](http://www.kznhealth.gov.za/neonates/ess-pack/essential-package.htm)
 
 * [Assisting mom and health care workers with newborn care including breastfeeding](https://globalhealthmedia.org/videos/),Great, practical videos for mom and healthcare workers
 
+* [Breast Feeding tutorial health care workers Global Health Media](https://globalhealthmedia.org/videos/the-breastfeeding-method/)
+
 * [Identifying serious bacterial infections in young infants Dr Lizelle Keet](https://youtu.be/jfrWM_U89fQ)
 
 * [The structured approach to the seriously ill child, including tips for safe transfer Dr Tintswalo Motimele](https://youtube/Yl7eht7d3uI)
+
+* [Revisiting fluid management in children with acute diarrhoea - a rural review Dr Lotz](https://www.youtube.com/watch?v=F_YGxnIlLog)
 
 * [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series about how to perform procedures with supplies commonly found in resource-limited settings.
 
@@ -56,6 +62,8 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 * [GSH Neonates ‘Purple Book’](https://neonatalguidelines.com)
 
 * [Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
+
+* [Intraosseous_Needle_Placement In resource limited setting](https://sugarprep.org/videos/#Intraosseous_Needle_Placement)
 
 Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1OSeEWybfm_FZ3ZJDlnvGGdlXHaZiHcq4?usp=sharing)
 
