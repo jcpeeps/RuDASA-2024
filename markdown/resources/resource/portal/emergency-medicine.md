@@ -29,23 +29,33 @@ section: '5'
 
 [Emergency Medicine for the Western Cape manual](http://www.emct.info/em-guidance.html): an excellent South African / DOH based manual that used to be available as printed copies
 
+[Fundamentals of Emergency Care 2016 (Emergency Medicine Cape Town)](https://www.emct.info/uploads/1/4/1/7/14175478/fec_manual_contents.pdf)
+
 For all your posters / algorithms: The Resuscitation council of South Africa make them available for free (but you have to go and fetch). Or you can [download and print here](https://resus.co.za/subpages/RCSA_Information/Resources/Algorithms.html)
 
 [SATS Triage manual](https://emssa.org.za/special-interest-groups/the-south-african-triage-scale-sats/)
+
+[EMSSA practice guidelines](https://emssa.org.za/practice-guidelines/)
+
+[Primary management of burn injuries](https://safpj.co.za/index.php/safpj/article/view/5202/6319)
+
+[Life in the fast lane: Hypothermia associated toxidromes](https://litfl.com/hyperthermia-associated-toxidromes/)
+
+[African Snakebite Institute APP](https://www.africansnakebiteinstitute.com/app/)
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
 * [Emergency Medicine Cape Town YouTube Channel](https://www.youtube.com/channel/UCDP5VfSnQ3AB1xgPbMUTniw), Excellent set of teaching videos including how to insert an ICD, surturing techniques, intubation, shoulder relocation and much more. You can also see their website [here](http://www.emct.info/).
 
-* [Primary management of burn injuries](https://safpj.co.za/index.php/safpj/article/view/5202/6319)
-
 * [A guide to the management of common medical emergencies in adults 2020](https://mdinc.co.za/store/products/books/a-guide-to-the-management-of-common-medical-emergencies-in-adults-12th-edition-2020/), This you have to buy for R200.
 
-* [EMSSA practice guidelines](https://emssa.org.za/practice-guidelines/)
+* [RO2022 Standardised approach to any emergency, Dr Jurgens Staats](https://youtu.be/aFzyQs64Z9Y)
 
-* [Standardised approach to any emergency, Dr Jurgens Staats](https://youtu.be/aFzyQs64Z9Y)
+* [RO2022 Triage: How well do you know your SATS? Dr Sian Geraty](https://youtu.be/TgEYKoyWub4)
 
-* [Triage: How well do you know your SATS? Dr Sian Geraty](https://youtu.be/TgEYKoyWub4)
+* [RO2022 Internal Medicine Emergencies Prof Andy Parrish](https://www.youtube.com/watch?v=HB6BAmTDink&feature=youtu.be)
+
+* [RO2023 Just Breathe: All about the airway Dr Hoffe & Dr McCreesh](https://www.youtube.com/watch?v=gpZqH2-AVGE)
 
 * [Life in the fast Lane](https://litfl.com/library/), Includes great resources on ECG interpretation and ultrasound, acid base interpretation etc.
 
@@ -54,6 +64,8 @@ For all your posters / algorithms: The Resuscitation council of South Africa mak
 * [POCUS point of care ultrasound certification](https://www.pocus.org/corp-point-of-care-ultrasound-fundamentals-certificate/)
 
 * [Rural Life Support group](https://rlsg.org/)
+
+* [EMGuidance App Google Play](https://play.google.com/store/apps/details?id=emguidance.tompsa&hl=en&gl=US) [EMGuidance App ITunes](https://apps.apple.com/za/app/emguidance-medicines-info/id789625087)
 
 Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/1GalPw78KvyxrsXWdWWxizt9Qh-6MDjF4?usp=sharing)
 
