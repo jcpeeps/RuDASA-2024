@@ -16,17 +16,19 @@ section: '6'
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
-* [District Anaesthesia YouTube channel:](https://www.youtube.com/channel/UC5RyvotEzpFIKFYozpKUgAw).
-* To sign up for the live sessions every couple of weeks on an early Tuesday morning, email Prof David Bishop: [Contact Us](mailto:davidgbishop@gmail.com)
-* An approach to District Anaesthesia; SAFE and SIMPLE. Prof David Bishop Rural Onboarding webinar. [Watch Here](https://youtu.be/Zt8yGgegzHQ)  
-* Suggested guideline in the South African context: [Management of a High Spinal](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiS9s_vmZb2AhVPwAIHHSxMDqoQFnoECAIQAQ&url=http%3A%2F%2Fwww.sajaa.co.za%2Findex.php%2Fsajaa%2Farticle%2Fview%2F1791%2F1771&usg=AOvVaw0n4nzF8k7kymKCjRetT3r_)
+* [District Anaesthesia YouTube channel](https://www.youtube.com/channel/UC5RyvotEzpFIKFYozpKUgAw).Sign up for the live sessions every couple of weeks on an early Tuesday morning [Here](https://ukzn.zoom.us/meeting/register/tJwvcuugqjktHtVW4FPW26n1J7wGKiPscn2x) 
+* RO2022 An approach to District Anaesthesia; SAFE and SIMPLE. Prof David Bishop Rural Onboarding webinar. [Watch Here](https://youtu.be/Zt8yGgegzHQ)  
+* Suggested guideline in the South African context: [Management of a High Spinal Anaesthesia in Obstetrics](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiS9s_vmZb2AhVPwAIHHSxMDqoQFnoECAIQAQ&url=http%3A%2F%2Fwww.sajaa.co.za%2Findex.php%2Fsajaa%2Farticle%2Fview%2F1791%2F1771&usg=AOvVaw0n4nzF8k7kymKCjRetT3r_)
+* [RO2023 Things that go wrong in Anaesthesia & how to avoid them. Prof Dave Bishop](https://github.com/jcpeeps/rudasa/edit/main/markdown/resources/resource/portal/anesthetics.md)
 * [Anaesthesia for ruptured ectopic pregnancy at district level.](https://safpj.co.za/index.php/safpj/article/view/5304) SAFP 2021, DG Bishop and SPDP le Roux. A simple approach to the anaesthesia for unstable patients requiring laparotomy for ruptured ectopic pregnancy.
 * Patient sedation and analgesia Dr Joyce Gibson, Anaesthetist Frere hospital. Dr Joyce Gibson takes us through the paces of safe patient sedation and analgesia. [Watch a video on it!](https://youtu.be/kZskjzS35bk)
 * Safe Anaesthetics and Safe Sedation. Zithulele hospital. A [great PowerPoint presentation](http://www.zithulele.org/uploads/4/1/4/2/4142372/rural_sedation___anaesthetics_2021.pdf) on safe anaesthetics in a rural district hospital.
 * Obstetric spinal anaesthesia. Dr Le Roux. A [practical zoom webinar](https://youtu.be/YOlv9xBY5j0) on spinal anaesthesia in your obstetric patients.
 * Opioid-Free Anaesthesia. A paradigm shift. SAFP , PC Anamourlis. A [thought provoking 2019 article](https://safpj.co.za/index.php/safpj/article/view/4993/5900) in the SAFP regarding use of opoids.
-* [Anaesthetics video tutorials](https://www.propofology.com/tutorial-list.html) on Propofology, a UK based, UK based, international project created out of the desire to advance the role of the FOAMed (Free Open Access to Medical Education) to everyone involved in anaesthesia, critical care and pain medicine.
+* [Troubleshooting Obstetric Spinal anaesthesia at a district hospital](https://www.researchgate.net/publication/362393961_Troubleshooting_obstetric_spinal_anaesthesia_at_district_hospital_level)
+* [Propofology Anaesthetics video tutorials](https://www.propofology.com/tutorial-list.html) on Propofology, a UK based, UK based, international project created out of the desire to advance the role of the FOAMed (Free Open Access to Medical Education) to everyone involved in anaesthesia, critical care and pain medicine.
 * Ever wondered what to have in your obstetric spinal tray? [Find out here!](https://youtu.be/mAorYKBv500)
+* [The Anaethetist behind the mask](https://www.youtube.com/watch?v=Og2zkdFM2nU)
 
 Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/1l89UkJy6FYh-aAjKLLrT8YmmerK1PfRJ?usp=sharing) with more resources, including:
 
