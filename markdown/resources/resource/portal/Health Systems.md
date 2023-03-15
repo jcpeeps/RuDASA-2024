@@ -8,7 +8,7 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 # Reading material / Tutorials / Webinars / Additional resources
 
-## Department of Health Programmes
+### Department of Health Programmes
 
 * [Quality Improvement Guide](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-07/2.%2520Quality%2520Improvement%2520Guide%25202012-3.pdf) The key to providing improved Quality of Care (QoC). Department of Health 2012
 
@@ -20,7 +20,7 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 * Handbook for District Clinical Specialist Teams [DCST](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-07/Handbook%2520for%2520DCSTs%25202014.pdf)
 
-## Medico-Legal Resources
+### Medico-Legal Resources
 
 * RO2023 How not to get trampled by the medico-legal stampede. Dr Ben Gaunt [Webinar](https://www.youtube.com/watch?v=BurjV1XXv7A)
 
