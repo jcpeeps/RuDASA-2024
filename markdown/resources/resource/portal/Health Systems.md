@@ -4,7 +4,7 @@ section: '0'
 ---
 # Introduction
 
-This includes information covered by the Rural OnBoarding programme since 2021. For more policies and guideliens from teh Department of Health refer to the Acts & Policies section of the Resource pages.
+This includes information covered by the Rural OnBoarding programme since 2021. For more policies and guideliens from teh Department of Health refer to the Acts & Policies section of the [Resource pages](https://rudasa.org.za/resources/other/acts-policies)
 
 # Reading material / Tutorials / Webinars / Additional resources
 
