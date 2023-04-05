@@ -18,19 +18,32 @@ Make sure you can:
 
 * Find KZN protocols for mental health disorders & MHCA forms [here](http://www.kznhealth.gov.za/townhill/forms.htm)
 
-* [See policy guidelines](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-07/Policy%2520guideline%2520on%252072-hour%2520assessment%2520of%2520involuntary%2520mental%2520health%2520care%2520users.pdf) on 72-hour assessment of involuntary mental health care users.
+* [See policy guidelines](https://knowledgehub.health.gov.za/system/files/elibdownloads/2019-07/Policy%2520guideline%2520on%252072-hour%2520assessment%2520of%2520involuntary%2520mental%2520health%2520care%2520users.pdf) on 72-hour assessment of involuntary mental health care users.
 
-## Reading material / Tutorials/ Webinars / Additional resources
+## Reading material
 
-* Brief Interventions and brief therapy for substance abuse: [article here](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
+* Brief Interventions and brief therapy for substance abuse [Article here](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
 
-* Gain a better understanding of motivational interviewing by watching [this video.](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
+* Overcoming the Use of Mechanical Restraints in Psychiatry: A New Challenge in the Everyday Clinical Practice at the Time of COVID-19; De Beradis et al 2020. [Article here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7700144/pdf/jcm-09-03774.pdf)
 
-* [Watch this video](https://youtu.be/5GuydLt59vs) on de-escalating aggression in a patient with developmental disorder.
+* Patient leaflets and self-help guides:
+NHS Mental Health Patient Leaflets and Self-help Guides, including the Anxiety self-help guide (using CBT) for patients. [Patient guide](https://www.nhsinform.scot/illnesses-and-conditions/mental-health), 
+[Anxiety guide](https://www.nhsinform.scot/illnesses-and-conditions/mental-health/mental-health-self-help-guides/anxiety-self-help-guide)
 
-* Overcoming the Use of Mechanical Restraints in Psychiatry: A New Challenge in the Everyday Clinical Practice at the Time of COVID-19; De Beradis et al 2020. [Article here.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7700144/pdf/jcm-09-03774.pdf)
+## Tutorials/ Webinars 
+* RO2022 managing the aggressive, psychotic patient in your rurlal facility. Prof Lesley Robertson; HOD psychiatrist Sedibeng District Specialist Mental Health Team in GP & Adjunct professor in the Department of Psychiatry at WITS [Webinar](https://www.youtube.com/embed/5lZu53p8uO0)
 
-## Google Drive folder - [link here](https://drive.google.com/drive/folders/1tK_mI1fNGUvh6o1BCKztkndY4jQqo3On?usp=sharing)
+* RO2023 Mood disorders in the district setting. Dr M Kanda [Webinar](https://www.youtube.com/watch?v=oTlnAL2UDe4)
+
+* D e-escalating aggression in a patient with developmental disorder[Tutorial video](https://youtu.be/5GuydLt59vs) 
+
+* Beginner's Guide to MHCA Forms Dr G Atkinson BAMSI [Webinar](https://www.youtube.com/watch?v=B8Q5QNEXH8E)
+
+* How to do a Brief intervention Dr Madeleine Muller [Tutorial webinar](https://www.youtube.com/watch?v=HWEbGsPsaMw)
+
+
+## Additional resources
+Google Drive Resource folder - [link here](https://drive.google.com/drive/u/1/folders/1fFGjRcJGla5k8DfI-WZt55SUph6FaAOJ)
 
 * Haloperidol circular
 
@@ -48,6 +61,8 @@ Make sure you can:
 
 ## Navigating difficult interactions by Dr Madeleine Muller, Family Physician CMH & Senior lecturer WSU, EC
 
+Gain a better understanding of motivational interviewing by watching [this video.](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
+
 ### Part 1
 
 [RO2022 Navigating difficult interactions: Part 1 Anatomy of Stress; Dr Muller](https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
@@ -56,17 +71,7 @@ Make sure you can:
 
 [RO2022 Navigating difficult interactions: Part 2 Advanced Tools; Dr Muller](https://www.youtube.com/embed/UYwjqKP9cyY?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
 
-## Management of an Aggressive / Psychotic / Distressed patient in a Rural facility
 
-### Prof Lesley Robertson; HOD psychiatrist Sedibeng District Specialist Mental Health Team in GP & Adjunct professor in the Department of Psychiatry at WITS
-
-[RO2022 Approach to the Aggressive patient; Prof Robertson](https://www.youtube.com/embed/5lZu53p8uO0)
-
-## Mental Health PDFs
-
-### Mental Health Resource Pack
-
-[Mental Health Resource Pack](../../../../public/pdfs/PORTAL/mental-health/RO2022 Mental Health Resource Pack.pdf)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
