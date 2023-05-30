@@ -12,7 +12,7 @@ members: [
     },
     {
         title: 'Treasurer',
-        name: 'Dr Gumede',
+        name: 'Nhlakanipho Gumede',
         email: 'treasurer@rudasa.org.za'
     },
     {
