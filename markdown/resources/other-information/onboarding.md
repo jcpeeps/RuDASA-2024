@@ -1,15 +1,14 @@
----
-date: "30th January to 24th March 2023"
-abstractTitle: "Learn how to thrive, not just survive, in rural health!"
-abstract: "Welcome to RuDASA's  comprehensive online package for new clinicians joining rural health facilities in South Africa. COVID has transformed our training landscape and we are now able to offer an orientation program that can fit in with a clinician’s busy program, and still give them access to all the knowledge and resources they need to thrive in rural health care. Although focused on new clinicians we welcome any clinician keen to update their knowledge. 
-"
----
 
----structure
+**Rural OnBoarding Annual programme late January to March: "Learn how to thrive, not just survive, in rural health!"**
+
+Welcome to RuDASA's  comprehensive online package for new clinicians joining rural health facilities in South Africa. COVID has transformed our training landscape and we are now able to offer an orientation program that can fit in with a clinician’s busy program, and still give them access to all the knowledge and resources they need to thrive in rural health care. Although focused on new clinicians we welcome any clinician keen to update their knowledge. 
+
 A 8-week curriculum, structured into six broad categories, using a hybrid teaching methodology. Each Monday you will be sent the program for the coming week, including the links to the relevant zoom meetings; as well as links to relevant webinars, video tutorials, and related guidelines, protocols and tools useful to your daily work. These  can be studied at home at a time that suits you and clinicians can tailor their learning according to their needs. Clinicians are encouraged to attend the interactive Zoom sessions on Monday evenings (with additional sessions later in the week depending on facilitator availability). These will Introduce key mentors and experts that can provide ongoing support as the course progresses. We will cover FAQ and top tips on the materials you have received.
----
 
----overview
+Sessions are on a Monday or Tuesday at 18.00 using Zoom.
+
+**Overview**
+
 There are three “types” of orientation topics: 
 1. Understanding the DOH working environment skills pertaining to team work, mental well being & patient centred care (all cadres)
 2. Top tips for Medical cadres, and FAQ on fields such as HIV, TB, Obstetrics, neonatal and paediatric care, anaesthetics, orthopaedics and trauma and much more. 
@@ -17,10 +16,6 @@ There are three “types” of orientation topics:
 
 This course is a work in progress Follow us on Facebook, Instagram or Twitter to get noice of upcoming On-Boarding sessions.
 
-We are receiving excellent feedback from our rural network of clinicians on useful information to add. We will be updating our materials and links on a weekly bases. We are also open to requests, input and feedback.
----
-
----weeks  
 Week 1 : Infectious Diseases  
 Week 2: Maternal Medicine  
 Week 3: Adult Medicine  
@@ -30,25 +25,25 @@ Week 6: Trauma, Anaesthetics and Surgery
 Week 7: Mental health  
 Week 8: Family medicine Skills and navigating the NDOH  
 
----
-
----attendance
 At the moment the clinical part of the program is heavily focused on doctors and clinical associates, but the orientation package is open to any new clinician in South Africa. The sections on employee support, the MDT team, health care worker mental health and patient centred care are particularly relevant to any new health care worker, but feel free to attend other sessions. Although this program caters for new professionals we are very happy for existing colleagues to participate in topics they feel would be useful (including interns and students). We are applying for CPD points for the webinars.
+
+We are receiving excellent feedback from our rural network of clinicians on useful information to add. We will be updating our materials and links on a weekly bases. We are also open to requests, input and feedback.
 ---
 
----getStarted
+**Get Started**
 **FREE for members of RuDASA, RuReSA, RuNurSA and PACASA**
-We are privileged in South Africa to have a large network of clinicians passionate about rural health care.  One can easily feel isolated working in a small peripheral facility and yet there may be a clinician at the next hospital happy to give advice or support. All doctors that join our Rural Onboarding Training will be automatically signed up to the RuDASA membership. Membership is free and gives access to a community of or rural health clinicians. Please click on the Our Values box on this page and read both statements before proceeding to register.
 
-**Register for the On-Boarding Programme (and RuDASA membership)**
-Once registered you will be sent sent the Zoom link for each session and an invitation to join our **Telegram** Rural Onboarding group (it functions like WhatsApp but has better functionality). Download the app from Google Play store or Apple store.
+We recomend that you join RuDASA as you will get the links to every session and the additional resources via our Forum emails and Provincial Rural Buddy WhtsApp groups.  RuDASA is privileged to have a large network of clinicians passionate about rural health care.  One can easily feel isolated working in a small peripheral facility and yet there may be a clinician at the next hospital happy to give advice or support. Membership is free and gives access to a community of or rural health clinicians. [Sign Up for RuDASA](https://rudasa.org.za/signUp) Please click on the Our Values box on the Sign UP page and read both statements before submitting. 
+
+**Register for the On-Boarding Programme)**
+
+**However anyone can register for OnBoarding just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [Twitter](https://twitter.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
+Once registered you will be sent sent the Zoom link for the session. 
 
 For more information on the programme content contact : 
 * Dr Madeleine Muller **mentor@rudasa.org.za**
 * Problems registering? Contact our Office Co-ordinator: **info@rudasa.org.za**
----
 
----orgs
 If you are not a doctor then find out more about the Rural Health Network organisations that have been created out of a need for networking, support and advocacy amongst different cadres of clinicians. Click on the links below.
 
 **RuNurSA** Rural nurses advocating for better rural nursing services
