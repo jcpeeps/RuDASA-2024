@@ -46,14 +46,13 @@ For more information on the programme content contact :
 
 If you are not a doctor then find out more about the Rural Health Network organisations that have been created out of a need for networking, support and advocacy amongst different cadres of clinicians. Click on the links below.
 
-**RuNurSA** Rural nurses advocating for better rural nursing services
+[**RuNurSA**](https://web.facebook.com/RuralNursingSA/?_rdc=1&_rdr) Rural nurses advocating for better rural nursing services
 
-**RuReSA** A network of rehabilitation therapists working, advocating or researching rural rehab. All allied health staff are welcome to join
+[**RuReSA**](https://ruresa.org.za) A network of rehabilitation therapists working, advocating or researching rural rehab. All allied health staff are welcome to join
 
-**PACASA** A network of Clinical Associates throughout South Africa advocating for the profession
+[**PACASA**](https://web.facebook.com/ClinicalAssociatesRSA/?_rdc=1&_rdr) A network of Clinical Associates throughout South Africa advocating for the profession
 
-The Rural Health Advocacy Project provides support on advocacy for all of these groups RHAP
----
+The Rural Health Advocacy Project provides support on advocacy for all of these groups [**RHAP**](https://rhap.org.za)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
