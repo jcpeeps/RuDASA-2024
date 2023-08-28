@@ -12,6 +12,10 @@ RHC2016 Saturday 6th - 9th August 2016, Grahamstown, Eastern Cape.
 **Theme :** Rural Health 20/20: through the looking glass of the past, the present and the future.      
 **link to the conference programme :** [Programme](https://drive.google.com/file/d/1nNcLC3XHPaehRqavtGvW8exaCQOTW7Xa/view?usp=sharing)  
 
+RHC2015 23-26 September 2015 – Dunkeld Country Estate, Dullstroom, Mpumalanga.  
+**Theme :** Humane Health Care 'Bringing the heart back into health care practice'  
+**link to the conference programme :** [Programme](https://drive.google.com/file/d/1J8Agdu1yAMh4uF08CX8801SU4CJPrhJN/view?usp=sharing)
+
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
