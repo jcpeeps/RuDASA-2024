@@ -13,7 +13,7 @@ RHC2016 Saturday 6th - 9th August 2016, Grahamstown, Eastern Cape.
 **link to the conference programme :** [Programme](https://drive.google.com/file/d/1nNcLC3XHPaehRqavtGvW8exaCQOTW7Xa/view?usp=sharing)  
 
 RHC2015 23-26 September 2015 – Dunkeld Country Estate, Dullstroom, Mpumalanga.  
-**Theme :** Humane Health Care 'Bringing the heart back into health care practice'  
+**Theme :** Humane Health Care 'Bringing the heart back into health care practice'.  
 **link to the conference programme :** [Programme](https://drive.google.com/file/d/1J8Agdu1yAMh4uF08CX8801SU4CJPrhJN/view?usp=sharing)
 
 <!--
