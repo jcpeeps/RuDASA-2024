@@ -11,8 +11,8 @@ A highlight of the conference is the gala Dinner and Award Ceremony in which doc
 **Date of conference :** Saturday 6th - 9th August 2016.  
 **Theme :** Rural Health 20/20: through the looking glass of the past, the present and the future.    
 **Place :** Grahamstown, Eastern Cape.  
-**link to the conference programme :** https://drive.google.com/file/d/1nNcLC3XHPaehRqavtGvW8exaCQOTW7Xa/view?usp=sharing  
-**Link to the conference abstracts :** https://drive.google.com/file/d/1nHSqGU4HGk9hgZ2IzVA73cjGbXjnGo1B/view?usp=sharing  
+**link to the conference programme :** [Programme final print](https://drive.google.com/file/d/1nNcLC3XHPaehRqavtGvW8exaCQOTW7Xa/view?usp=sharing)  
+**Link to the conference abstracts :** [Abstract list](https://drive.google.com/file/d/1nHSqGU4HGk9hgZ2IzVA73cjGbXjnGo1B/view?usp=sharing)  
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
