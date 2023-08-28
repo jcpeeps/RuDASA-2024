@@ -9,8 +9,7 @@ The conference is a much-anticipated, vibrant forum which combines a mixture of 
 A highlight of the conference is the gala Dinner and Award Ceremony in which doctors, nurses, clinical associates and therapists are recognised for their outstanding role in rural health. 
 
 **Date of conference :** Saturday 6th - 9th August 2016.  
-**Theme :** Workshp summaries- Inspiring diversity in the rural health movement, Rural-proofing the NHI, the future of surgery and
-mental health in district hospitals, RHAP strategic framework 2017-2021, HCW advocacy, elevating 1000 day awareness.  
+**Theme :** Rural Health 20/20: through the looking glass of the past, the present and the future.    
 **Place :** Grahamstown, Eastern Cape.  
 **link to the conference programme :** https://drive.google.com/file/d/1nNcLC3XHPaehRqavtGvW8exaCQOTW7Xa/view?usp=sharing  
 **Link to the conference abstracts :** https://drive.google.com/file/d/1nHSqGU4HGk9hgZ2IzVA73cjGbXjnGo1B/view?usp=sharing  
