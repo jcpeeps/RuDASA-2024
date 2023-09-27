@@ -1,4 +1,4 @@
-2022: Dr Craig Parker, Umoya, Eastern Cape [Dr Parker's nomination](https://github.com/jcpeeps/rudasa/blob/main/public/pdfs/Doctor%20of%20the%20Year/Craig%20Parker%202022)
+2022: Dr Craig Parker, Umoya, Eastern Cape [Dr Parker's nomination](https://github.com/jcpeeps/rudasa/blob/adb9ce8704ead258e41de64c4d5fa0989a38ea04/public/pdfs/Doctor%20of%20the%20Year/Craig%20Parker%202022)
 
 2009: Dr JJ Ogole from Piet Retief Hospital, Mpumalanga
 
