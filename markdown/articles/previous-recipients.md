@@ -1,4 +1,4 @@
-2022: [Dr Craig Parker](https://rudasa/public/pdfs/Doctor of the Year/RuDASA Award winner 2022.pdf), Umoya, Eastern Cape 
+2022: [Dr Craig Parker] (https://rudasa.org.za/public/pdfs/Doctor of the Year/RuDASA Award winner 2022.pdf), Umoya, Eastern Cape 
 
 2009: Dr JJ Ogole from Piet Retief Hospital, Mpumalanga
 
