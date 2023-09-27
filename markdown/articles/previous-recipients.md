@@ -1,16 +1,18 @@
-2003: Dr Victor Fredlund, from Mseleni Hospital in northern KwaZulu-Natal
+2022: Dr Craig Parker, Umoya, Eastern Cape 
 
-2004: Dr Hermann Reuter, from MSF in Lusikisiki in the Eastern Cape
-
-2005: Dr Nigel Hoffman from Rietvlei Hospital in the Eastern Cape
-
-2006: Dr Vanga Siwisa from Taung, North West Province
-
-2007: Dr Gert Marincowitz from Tzaneen, Limpopo Province
+2009: Dr JJ Ogole from Piet Retief Hospital, Mpumalanga
 
 2008: Dr Munyadziwa Kwinda, from Donald Fraser Hospital, Limpopo Province
 
-2009: Dr JJ Ogole from Piet Retief Hospital, Mpumalanga
+2007: Dr Gert Marincowitz from Tzaneen, Limpopo Province
+
+2006: Dr Vanga Siwisa from Taung, North West Province
+
+2005: Dr Nigel Hoffman from Rietvlei Hospital in the Eastern Cape
+
+2004: Dr Hermann Reuter, from MSF in Lusikisiki in the Eastern Cape
+
+2003: Dr Victor Fredlund, from Mseleni Hospital in northern KwaZulu-Natal
 
 <!-- This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document. 
