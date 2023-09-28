@@ -2,11 +2,11 @@
 
 2009: Dr JJ Ogole from Piet Retief Hospital, Mpumalanga
 
-2008: Dr Munyadziwa Kwinda, from Donald Fraser Hospital, Limpopo Province
+2008: Dr Munyadziwa Kwinda, from Donald Fraser Hospital, Limpopo 
 
-2007: Dr Gert Marincowitz from Tzaneen, Limpopo Province
+2007: Dr Gert Marincowitz from Tzaneen, Limpopo
 
-2006: Dr Vanga Siwisa from Taung, North West Province
+2006: Dr Vanga Siwisa from Taung, North West
 
 2005: Dr Nigel Hoffman from Rietvlei Hospital in the Eastern Cape
 
