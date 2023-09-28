@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Portrait from '../../media/doctor-of-the-year/portrait.jpg'
+import Portrait from '../../media/doctor-of-the-year/Dr Bukiwe Spondo 2023.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseMedical, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { marked } from 'marked'
