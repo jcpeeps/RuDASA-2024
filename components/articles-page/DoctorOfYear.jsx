@@ -54,7 +54,15 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
                             <p className="m-0">{frontmatter.location}</p>
                         </div>
                     </div>
-        
+         <div className="col-sm-12 col-md-12 col-lg-6 mt-md-3">
+                    <div dangerouslySetInnerHTML={{
+                        __html: marked(
+                            readMore ? content : content.substring(0, 500) + '...'
+                        )
+                    }} />
+
+                    <span onClick={() => setReadMore(!readMore)} className="mt-4 pointer" style={{cursor: 'pointer'}}>{readMore ? 'Read less' : 'Read more'}</span>
+                </div>
                 
             </div>
             <div className="d-flex flex-column-reverse flex-md-row w-100 justify-content-between align-items-start my-5">
