@@ -37,6 +37,18 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
 
                     <span onClick={() => setReadMore(!readMore)} className="mt-4 pointer" style={{cursor: 'pointer'}}>{readMore ? 'Read less' : 'Read more'}</span>
                 </div>
+import React, { useState } from 'react'
+import Image from 'next/image'
+import Portrait from '../../media/doctor-of-the-year/Dr Bukiwe Spondo 2023.jpeg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouseMedical, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { marked } from 'marked'
+import { Accordion } from 'react-bootstrap'
+
+export default function DoctorOfYear({ markdown: { frontmatter, content }, prevRecipients }) {
+    const [readMore, setReadMore] = useState(false)
+
+    return (
   <section className="container mb-2 mb-lg-5 p-4 p-lg-5">
             <h1 className="dispaly-4 fw-bold text-primary my-5 pt-5">Articles</h1>
             <h3 className="my-4 pb-4 fw-bold">Special Award 2023 {frontmatter.year}</h3>
