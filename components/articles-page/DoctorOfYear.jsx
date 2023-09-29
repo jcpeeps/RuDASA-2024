@@ -37,6 +37,8 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
 
                     <span onClick={() => setReadMore(!readMore)} className="mt-4 pointer" style={{cursor: 'pointer'}}>{readMore ? 'Read less' : 'Read more'}</span>
                 </div>
+import Image from 'next/image'
+import Portrait from '../../media/doctor-of-the-year/Rural Health Matters.jpeg'
 
             </div>
             <div className="d-flex flex-column-reverse flex-md-row w-100 justify-content-between align-items-start my-5">
