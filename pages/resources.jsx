@@ -11,7 +11,7 @@ export default function articles({ otherInfo, studentResources, ruralResources, 
 	return (
 		<Layout pageTitle="RuDASA | Resources">
 			<Hero content={otherInfo.find(file => file.slug === "description")} />
-			<ResourceGroups student={studentResources} rural={ruralResources} other={otherResources} thrive={thriveResources} activities={activitiesResources} />
+			<ResourceGroups otherInfo={otherInfo} student={studentResources} rural={ruralResources} other={otherResources} thrive={thriveResources} activities={activitiesResources} />
 		</Layout>
 	)
 }
