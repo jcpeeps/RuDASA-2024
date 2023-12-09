@@ -11,7 +11,7 @@ export default function articles({ otherInfo, studentResources, ruralResources, 
 	return (
 		<Layout pageTitle="RuDASA | Resources">
 			<Hero content={otherInfo.find(file => file.slug === "description")} />
-			<ResourceGroups otherInfo={otherInfo} student={studentResources} rural={ruralResources} other={otherResources} thrive={thriveResources} activities={activitiesResources} />
+			<ResourceGroups student={studentResources} rural={ruralResources} other={otherResources} thrive={thriveResources} activities={activitiesResources} />
 		</Layout>
 	)
 }
@@ -48,10 +48,10 @@ export async function getStaticProps() {
 		}
 	})
 
-	// Get slug and markdown from student resource
-	const studentResources = student.map((filename) => {
+	// Get slug and markdown from each resource
+	const createResourcesGroup = (resources, resourcesFolderName) => resources.map((filename) => {
 		const slug = filename.replace('.md', '')
-		const markdown = fs.readFileSync(path.join('markdown/resources/resource/students', filename), 'utf-8')
+		const markdown = fs.readFileSync(path.join(`markdown/resources/resource/${resourcesFolderName}`, filename), 'utf-8')
 
 		const { data: frontmatter, content } = matter(markdown)
 
@@ -60,63 +60,13 @@ export async function getStaticProps() {
 			frontmatter,
 			content
 		}
-	})
+	});
 
-	// Get slug and markdown from rural resource
-	const ruralResources = rural.map((filename) => {
-		const slug = filename.replace('.md', '')
-		const markdown = fs.readFileSync(path.join('markdown/resources/resource/rural', filename), 'utf-8')
-
-		const { data: frontmatter, content } = matter(markdown)
-
-		return {
-			slug,
-			frontmatter,
-			content
-		}
-	})
-
-	// Get slug and markdown from other resource
-	const otherResources = other.map((filename) => {
-		const slug = filename.replace('.md', '')
-		const markdown = fs.readFileSync(path.join('markdown/resources/resource/other', filename), 'utf-8')
-
-		const { data: frontmatter, content } = matter(markdown)
-
-		return {
-			slug,
-			frontmatter,
-			content
-		}
-	})
-
-	// Get slug and markdown from thrive resource
-	const thriveResources = thrive.map((filename) => {
-		const slug = filename.replace('.md', '')
-		const markdown = fs.readFileSync(path.join('markdown/resources/resource/thrive', filename), 'utf-8')
-
-		const { data: frontmatter, content } = matter(markdown)
-
-		return {
-			slug,
-			frontmatter,
-			content
-		}
-	})
-
-	// Get slug and markdown from thrive resource
-	const activitiesResources = activities.map((filename) => {
-		const slug = filename.replace('.md', '')
-		const markdown = fs.readFileSync(path.join('markdown/resources/resource/activities', filename), 'utf-8')
-
-		const { data: frontmatter, content } = matter(markdown)
-
-		return {
-			slug,
-			frontmatter,
-			content
-		}
-	})
+	const studentResources = createResourcesGroup(student, 'students');
+	const ruralResources = createResourcesGroup(rural, 'rural');
+	const otherResources = createResourcesGroup(other, 'other');
+	const thriveResources = createResourcesGroup(thrive, 'thrive');
+	const activitiesResources = createResourcesGroup(activities, 'activities');
 
 	return {
 		props: {
