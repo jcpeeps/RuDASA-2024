@@ -27,7 +27,7 @@ section: '6'
 
 * The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
 
-* Find the [Google Folder](https://drive.google.com/drive/folders/1IES_5-3ribIuHUnZPP45UCvzhXaUCLBB?usp=sharing). Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
+* Find the [RuDASA Library Surgery Folder](https://drive.google.com/drive/u/0/folders/1spuQQvXfRxC_P3ejXDTIuYpZ_ikpfote). Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
