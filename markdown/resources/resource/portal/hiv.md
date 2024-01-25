@@ -60,7 +60,7 @@ infectious diseases you will see – and the landscape is always changing. Are y
 
 * [DRTB course for clinicians](https://youtube.com/playlist?list=PL2IvCQAf-vTsRnw7WPoKUBL0DXVTnQXjw)
 
-Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
+Here is [RuDASA Library Infectious Disease folder](https://drive.google.com/drive/u/0/folders/1srm7TP_1OQcGF41JuRHEkn0SQipRgNUf)
 
 * PEP poster
 
