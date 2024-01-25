@@ -41,7 +41,7 @@ COVID guidelines are usually found on the NICD guideline – but they do not alw
 
 * [The South African Antibiotic Stewardship Programme](https://www.samedical.org/file/946)
 
-Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/16Cvo67UoIKuehd_hrzHhaYQ1kcehk8h_?usp=sharing)
+Here is [RuDASA Library Infectious Disease Other folder](https://drive.google.com/drive/u/0/folders/1tJv7bvUDHE9aWS41F0AsX_0REguCM5fF)
 
 * COVID vaccination circular and latest isolation and quarantine guideline
 
