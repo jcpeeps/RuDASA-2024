@@ -109,7 +109,7 @@ section: '3'
 
 * [15 minute exercise video](https://www.youtube.com/watch?v=C_rKOIJTB6A&feature=youtu.be)
 
-Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1dxip3tJDvIMNLa3IPHIisXIb7B8sO2Ns?usp=sharing)
+Here is [RuDASA Library NCD folder](https://drive.google.com/drive/u/0/folders/1t27YQ4A_-zqVBLcFfrhAPLNfGkPXhuXv)
 
 * Atlas of dermatology
 
