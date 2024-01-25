@@ -43,7 +43,7 @@ NHS Mental Health Patient Leaflets and Self-help Guides, including the Anxiety s
 
 
 ## Additional resources
-Google Drive Resource folder - [link here](https://drive.google.com/drive/u/1/folders/1fFGjRcJGla5k8DfI-WZt55SUph6FaAOJ)
+[RuDASA Library Mental Health folder](https://drive.google.com/drive/u/0/folders/1smNs8STVctvXynP4UReLEhKfBmKyCM1G)
 
 * Haloperidol circular
 
