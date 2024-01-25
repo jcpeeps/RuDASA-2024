@@ -30,7 +30,7 @@ section: '6'
 * Ever wondered what to have in your obstetric spinal tray? [Find out here!](https://youtu.be/mAorYKBv500)
 * [The Anaethetist behind the mask](https://www.youtube.com/watch?v=Og2zkdFM2nU)
 
-Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/1l89UkJy6FYh-aAjKLLrT8YmmerK1PfRJ?usp=sharing) with more resources, including:
+Here is [a link to a Google Drive folder](https://drive.google.com/drive/u/0/folders/1snyyhqjtJaYfNRMEA0ohwVJLxr8ecpXY) with more resources, including:
 
 * ESMOE posters – airway evaluation, appropriate levels of care, equipment list
 * Poster for anaesthesia for ruptured ectopic pregnancy
