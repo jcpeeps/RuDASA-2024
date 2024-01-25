@@ -27,7 +27,7 @@ section: '0'
 
 * Medicine information centre (used to be known as the HIV hotline) – great page for resources and a hotline for queries of any kind. [Medicine Information centre](http://www.mic.uct.ac.za/)
 
-Here is [a link to a Google Drive folder](https://drive.google.com/drive/folders/1voG8dJeKodj6u22JcG1oRrQZLV3f9Njd?usp=sharing)
+Here is [RuDASA Library General Resource Pack] (https://drive.google.com/drive/u/0/folders/1srnPoOjfkWm7UFMTxTL-PyRhEF93oAC-)
 
 * APC ebook
 
