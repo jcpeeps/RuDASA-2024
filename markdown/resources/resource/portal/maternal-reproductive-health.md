@@ -73,7 +73,7 @@ section: '2'
 
 * [Sexual Health workshop Part 3: Health Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-webinar--Part-3-Sexual-Health-e1fdhjc)
 
-Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
+Here is the link to [RuDASA Maternal Health Library folder](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
 
 * The fetus assessment handbook
 
