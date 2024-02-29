@@ -21,36 +21,53 @@ section: '3'
 
 * Manage Epilepsy
 
+* Managing patients with CKD
+
 ## Key Guidelines
 
-[Essential Resource: Latest hospital and primary health care standard treatment guidelines and EMG app](https://drive.google.com/drive/folders/1voG8dJeKodj6u22JcG1oRrQZLV3f9Njd?usp=sharing)(see general resources)
+[Standard Treatment Guidelines and Essential Medicines List for South Africa
+Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/files/elibdownloads/2023-04/Hospital%2520Level%2520%2528Adult%2529%25202019_v2.0.pdf)
 
 * **Heart Failure**
   * [2020 Heart Failure Society of South Africa perspective on the 2016 European Society of Cardiology Chronic Heart Failure Guidelines](http://www.samj.org.za/index.php/samj/article/view/13057/9549)
   
   * [Heart Failure Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=1Y38nGT6nRY)
 
-* **Asthma**
-  * [GLOBAL STRATEGY FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/wp-content/uploads/2021/04/GINA-2021-Main-Report_FINAL_21_04_28-WMS.pdf)
-
-  * [Allergy Foundation for excellent resources, training and education leaflets](https://www.allergyfoundation.co.za)
-  
-  * [Asthma treatment in children](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
-
-  * [Asthma Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=My2F3PHDZwQ)
-
-* **COPD**
-  * [2022 GOLD COPD Report](https://goldcopd.org/2022-gold-reports-2/)
-  
-  * [Management of chronic obstructive pulmonary disease—A position statement of the South African Thoracic Society: 2019 update Mohamed Sabeer Abdool-Gaffar](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf)
-  
-  * [COPD Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISywz5CLQXgqMbyiJzR-6z-6F) 
-
-
 * **Hypertension**
   * [South African Hypertension Society commentary on the American College of Cardiology/American Heart Association hypertension guidelines](https://www.hypertension.org.za/uploads/files/SAHS-CVJ-Comments-American-Hypertension-Association-guidelines-2019.pdf)
 
   * [Hypertension Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=rlTwFQvC-Fc&feature=youtu.be)
+
+* **Asthma**
+  * [GLOBAL STRATEGY FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/wp-content/uploads/2021/04/GINA-2021-Main-Report_FINAL_21_04_28-WMS.pdf)
+ 
+  * [POCKET GUIDE FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/pocket-guide-for-asthma-management-and-prevention/)
+
+  * [Allergy Foundation for excellent resources, training and education leaflets](https://www.allergyfoundation.co.za)
+  
+  * [Asthma treatment in children](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
+ 
+  * [HOW TO USE YOUR INHALER DEVICE](https://www.allergyfoundation.co.za/wp-content/uploads/2023/02/41-using-asthma-devices.pdf)
+ 
+  * [ASTHMA ACTION PLAN](https://www.allergyfoundation.co.za/wp-content/uploads/2016/11/38-asthma-action-plan.pdf) for patients
+ 
+  * [ANAPHYLAXIS ACTION PLAN](https://www.allergyfoundation.co.za/wp-content/uploads/2016/10/27-anaphylaxis-action-plan.pdf) for patients
+ 
+  *Webinars*
+
+  * [Asthma Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=My2F3PHDZwQ)
+ 
+  * [Rural Health webinar - Effective Asthma Control. Prof Mike Levin](https://www.youtube.com/watch?v=vzbD54GHSVQ)
+ 
+  * [Asthma In Primary Care PART 1 Dr Staats WSU FAM MED TUTORIAL](https://www.youtube.com/watch?v=BsTsySO3Uo4)
+
+* **COPD**
+  * [GLOBAL STRATEGY FOR PREVENTION, DIAGNOSIS AND MANAGEMENT OF COPD: 2024 Report](https://goldcopd.org/2024-gold-report/)
+  
+  * [Management of chronic obstructive pulmonary disease 2019 update Mohamed Sabeer Abdool-Gaffar](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf) A position statement of the South African Thoracic Society
+  
+  * [COPD Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISywz5CLQXgqMbyiJzR-6z-6F) 
+
   
 * **Diabetes**
   * [SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf)
@@ -58,6 +75,10 @@ section: '3'
   * [WSU Family Medicine CMH tutorials: Insulin optimization in T2DM Dr Kabengele Kayembe](https://youtu.be/BsTsySO3Uo4)
 
   * [T2DM Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=C9K5gVLdHrQ)
+ 
+  * [T2DM & Insulin webinar series Dr K Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISyz0CXaxPGgLxd45G-mgdkmO)
+ 
+  * [Chapter 11: The approach to achieving glycaemic control](https://safpj.co.za/index.php/safpj/article/view/4851/5755) A useful article in SAAFP
 
 * **Rheumatoid Arthitis**
   * [South African recommendations for the management of Rheumatoid arthritis](http://www.samj.org.za/index.php/samj/article/view/7047/5262)
