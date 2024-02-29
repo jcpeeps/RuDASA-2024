@@ -25,21 +25,29 @@ section: '2'
 
 ## Key Guidelines
 
-[Guidelines for maternity care in South Africa](https://www.knowledgehub.org.za/elibrary/guidelines-maternity-care-south-africa-2016)
+[Guidelines for maternity care in South Africa 2016](https://www.knowledgehub.org.za/elibrary/guidelines-maternity-care-south-africa-2016)
 
 [Guideline for the prevention of mother to child transmission of communicable infections, South African Department of health](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-10/PMTCT%20Guideline%2028%20October%20signed.pdf)
+
+[Guideline for the Prevention of Vertical Transmission of Communicable Infections (HIV, Hepatitis, Listeriosis, Malaria, Syphilis and TB) 2023](https://knowledgehub.health.gov.za/system/files/elibdownloads/2023-09/2023%20Vertical%20Transmission%20Prevention%20Guideline%2004092023%20signed%20WEB_1.pdf)
 
 [National Guideline: Management of hypertensive disease in pregnancy](http://www.samj.org.za/index.php/samj/article/view/12723)
 
 [Termination of pregnancy guideline](https://www.knowledgehub.org.za/system/files/elibdownloads/2021-03/Termination%20of%20Pregnancy%20Guideline_Final_2021.pdf)
 
+[Cervical Screening Cancer Prevention and Control Policy](https://knowledgehub.health.gov.za/elibrary/cervical-cancer-prevention-and-control-policy)
+
 ## Reading material / Tutorials / Webinars / Additional resources
+
+# Web Resource Portals
 
 * [ESMOE for interns at Tygerberg hospital](http://www.obstyger.co.za/page7.html)
 
 * [The WHO reproductive health library](https://apps.who.int/iris/bitstream/handle/10665/206006/B0464.pdf?sequence=1&isAllowed=y)
 
 * [Reproductive Health Library YouTube Channel](https://www.youtube.com/channel/UCfYi3MN6-SIzKlTNioY8k4A)
+
+# Webinars and additional resources
 
 * [Maternal Health in Rural: Pitfalls and FAQ, Dr Mandondo](https://www.youtube.com/watch?v=VcRgel8BqOc)
 
@@ -65,6 +73,14 @@ section: '2'
 
 * [Sexual Pleasure, Sexual Health, Sexual rights](https://youtube.com/playlist?list=PL2IvCQAf-vTsyO7PFjM37sj-P5Ue-J19-)
 
+* [Prevention and Early detection of cervical screening in the district. Dr Sibongile Mandondo](https://www.youtube.com/watch?v=MtpxzGI1NBk)
+
+* [CHAI - How to take a pap smear](https://www.youtube.com/watch?v=UAu7xT9183M)
+
+* [BASIC PRACTICAL ULTRASOUND TRAINING FOR BOTH DOCTORS AND NURSES ( PART 1)](https://www.youtube.com/watch?v=GtBLdzr6Ngg)
+
+* [ Loop /LLetz demonstra1on (1.2GB)](https://drive.google.com/file/d/1l_UKy1kYHwDYOm5qBBvbBtNVhqxMeFfH/view)
+
 ## Sexual health workshop podcast series
 
 * [Sexual Health workshop Part 1 Pleasure Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-Webinar-Part-1-Pleasure-podcast-e1fdh7c)
@@ -73,7 +89,9 @@ section: '2'
 
 * [Sexual Health workshop Part 3: Health Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-webinar--Part-3-Sexual-Health-e1fdhjc)
 
-Here is the link to [RuDASA Maternal Health Library folder](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
+* [Sexual & Gender diversity in intimate rela1onships Dr Muller](https://www.youtube.com/playlist?list=PL2IvCQAf-vTvQDd8ifno3HnKYVsBK7wSU)
+
+Here is the link to [RuDASA Women and Maternal Health folder](https://drive.google.com/drive/folders/1QfoE0sZX33XB21YmcLxRQvpfv4aE2hma?usp=sharing)
 
 * The fetus assessment handbook
 
