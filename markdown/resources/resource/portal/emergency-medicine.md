@@ -21,7 +21,7 @@ section: '5'
 
 * The unstable patient – golden hour
 
-* The Polytrauma patient.
+* The Polytrauma patient/Managing Burns
 
 * Conscious sedation
 
@@ -29,9 +29,7 @@ section: '5'
 
 [Emergency Medicine for the Western Cape manual](http://www.emct.info/em-guidance.html): an excellent South African / DOH based manual that used to be available as printed copies
 
-[Fundamentals of Emergency Care 2016 (Emergency Medicine Cape Town)](https://www.emct.info/uploads/1/4/1/7/14175478/fec_manual_contents.pdf)
-
-For all your posters / algorithms: The Resuscitation council of South Africa make them available for free (but you have to go and fetch). Or you can [download and print here](https://resus.co.za/subpages/RCSA_Information/Resources/Algorithms.html)
+[Fundamentals of Emergency Care 2016 (Emergency Medicine Cape Town)](https://www.emct.info/uploads/1/4/1/7/14175478/fec_manual_contents.pdf) For all your posters / algorithms: The Resuscitation council of South Africa make them available for free (but you have to go and fetch). Or you can [download and print here](https://resus.co.za/subpages/RCSA_Information/Resources/Algorithms.html)
 
 [SATS Triage manual](https://emssa.org.za/special-interest-groups/the-south-african-triage-scale-sats/)
 
@@ -45,7 +43,7 @@ For all your posters / algorithms: The Resuscitation council of South Africa mak
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
-* [Emergency Medicine Cape Town YouTube Channel](https://www.youtube.com/channel/UCDP5VfSnQ3AB1xgPbMUTniw), Excellent set of teaching videos including how to insert an ICD, surturing techniques, intubation, shoulder relocation and much more. You can also see their website [here](http://www.emct.info/).
+* [Emergency Medicine Cape Town YouTube Channel](https://www.youtube.com/channel/UCDP5VfSnQ3AB1xgPbMUTniw), Excellent set of teaching videos including how to insert an ICD, surturing techniques, intubation, shoulder relocation and much more. You can also see their website
 
 * [A guide to the management of common medical emergencies in adults 2020](https://mdinc.co.za/store/products/books/a-guide-to-the-management-of-common-medical-emergencies-in-adults-12th-edition-2020/), This you have to buy for R200.
 
@@ -56,6 +54,10 @@ For all your posters / algorithms: The Resuscitation council of South Africa mak
 * [RO2022 Internal Medicine Emergencies Prof Andy Parrish](https://www.youtube.com/watch?v=HB6BAmTDink&feature=youtu.be)
 
 * [RO2023 Just Breathe: All about the airway Dr Hoffe & Dr McCreesh](https://www.youtube.com/watch?v=gpZqH2-AVGE)
+
+* [RO2024 Managing Burns in the District Setting](https://www.youtube.com/watch?v=6wZfVB9rNrY)
+
+* [Anaesthesia for Burns webinar:A brief overview of some of the principles of perioperative burns care at district hospital level by Dr Dave Bishop](https://www.youtube.com/watch?v=uJdC2S3SbpY&t=144s)
 
 * [Life in the fast Lane](https://litfl.com/library/), Includes great resources on ECG interpretation and ultrasound, acid base interpretation etc.
 
