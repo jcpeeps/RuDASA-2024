@@ -25,7 +25,7 @@ section: '3'
 
 ## Key Guidelines
 
-[Standard Treatment Guidelines and Essential Medicines List for South Africa
+* [Standard Treatment Guidelines and Essential Medicines List for South Africa
 Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/files/elibdownloads/2023-04/Hospital%2520Level%2520%2528Adult%2529%25202019_v2.0.pdf)
 
 * **Heart Failure**
@@ -67,7 +67,6 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
   * [Management of chronic obstructive pulmonary disease 2019 update Mohamed Sabeer Abdool-Gaffar](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf) A position statement of the South African Thoracic Society
   
   * [COPD Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISywz5CLQXgqMbyiJzR-6z-6F) 
-
   
 * **Diabetes**
   * [SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf)
@@ -100,6 +99,13 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 
 * [RO2022 Webinar: Internal Medicine Emergencies Prof A Parrish](https://youtu.be/HB6BAmTDink)
 
+* [RO2023 Cardiac Arrhythmia Part 1 Tachy arrhythmia Dr Adeniyi](https://www.youtube.com/watch?v=2TejX0EQkvA)
+
+* [RO2023 Cardiac Arrhythmia Part 2 Brady Arrhythmia Dr Adeneyi](https://www.youtube.com/watch?v=1uP2_mKo6Ok)
+
+
+* [RO2024 Internal Medicine: Clinical Care Tips for 2024. Prof Parrish](https://www.youtube.com/watch?v=lTDKRawlpVY)
+
 * [The BAMSI collaborative with Prof Parrish & Dave Stead’s team from the Eastern Cape](https://medeval.co.za/wp/) Excellent set of webinars targeting doctors in rural facilities in BCM and Amathole district:
 
 * WSU Life in the slow lane: Cardiology through the lens of the ECG with Dr Kevin Pasio
@@ -130,7 +136,7 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 
 * [15 minute exercise video](https://www.youtube.com/watch?v=C_rKOIJTB6A&feature=youtu.be)
 
-Here is [RuDASA Library NCD folder](https://drive.google.com/drive/u/0/folders/1t27YQ4A_-zqVBLcFfrhAPLNfGkPXhuXv)
+Here is [RuDASA Library NCD folder](https://drive.google.com/drive/folders/1t27YQ4A_-zqVBLcFfrhAPLNfGkPXhuXv?usp=sharing)
 
 * Atlas of dermatology
 
