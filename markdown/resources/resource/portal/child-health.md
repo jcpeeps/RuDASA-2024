@@ -25,7 +25,7 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Standard treatment guidelines and Essential medicines list for South Africa Hospital level Paediatrics](https://www.knowledgehub.org.za/elibrary/hospital-level-paediatrics-standard-treatment-)
 
-* [Integrated management of childhood illness](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-10/2019%20IMCI%20CHART%20BOOKLET.pdf)
+* [Integrated management of childhood illness 2022](https://knowledgehub.health.gov.za/elibrary/integrated-management-childhood-illness-2022)
 
 * [Paediatric ID Whatsapp Group](https://chat.whatsapp.com/KZX2OiPxQwsIrsMSr4cIqX)
 
@@ -43,7 +43,7 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Breast Feeding tutorial health care workers Global Health Media](https://globalhealthmedia.org/videos/the-breastfeeding-method/)
 
-* [Identifying serious bacterial infections in young infants Dr Lizelle Keet](https://youtu.be/jfrWM_U89fQ)
+* [Identifying serious bacterial infections in young infants Dr Lizelle Keet - DCST Paediatrician Webinar 22](https://youtu.be/jfrWM_U89fQ)
 
 * [The structured approach to the seriously ill child, including tips for safe transfer Dr Tintswalo Motimele](https://youtube/Yl7eht7d3uI)
 
@@ -51,21 +51,25 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series about how to perform procedures with supplies commonly found in resource-limited settings.
 
+* [RO2024 webinar Ambulatory conditions in children: Anaemia, Headache & UTI Dr Naidoo](https://www.youtube.com/watch?v=xNwi25JhO_0)
+
 * [Bubble CPAP](https://sugarprep.org/videos/#Bubble_CPAP), One of the SUGAR PEARL videos.
 
 * [The Childrens Act Guide](http://www.ci.uct.ac.za/sites/default/files/image_tool/images/367/publication/2013/Childrens%20Act%20Guide%20for%20Health%20Professionals%202013.pdf) This guide makes child health legal aspects much easier to understand, the chapters on consent and abuse and neglect especially relevant.
 
 * [Management of severe acute malnutrition](http://www.samj.org.za/index.php/samj/article/view/10072)
 
-* [Neonatal Care in Rural Health Dr Michaela Lotz](https://youtu.be/aXqzO7EaDO4)
+* [Neonatal Care in Rural Health. Pitfalls and FAQ Dr M Lotz. Webinar 2021](https://youtu.be/aXqzO7EaDO4)
 
 * [GSH Neonates ‘Purple Book’](https://neonatalguidelines.com)
 
 * [Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
 
+* [Nationl Asthma Treatmetn Programme](https://www.asthmasa.org)
+
 * [Intraosseous_Needle_Placement In resource limited setting](https://sugarprep.org/videos/#Intraosseous_Needle_Placement)
 
-Here is [link to a Google Drive folder](https://drive.google.com/drive/folders/1OSeEWybfm_FZ3ZJDlnvGGdlXHaZiHcq4?usp=sharing)
+Here is [link to RuDASA Google Drive folder on Child Health](https://drive.google.com/drive/folders/1OSeEWybfm_FZ3ZJDlnvGGdlXHaZiHcq4?usp=sharing)
 
 * Union desk guide for diagnosing TB in children
 
