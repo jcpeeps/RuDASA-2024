@@ -11,12 +11,13 @@ Make sure you can:
 
 1. Management of the aggressive / psychotic/ distressed (suicidal) patient including 72 hour observation./ escalation of sedation
 2. Able to do a brief intervention for e.g. adherence issues, substance abuse, smoking
+3. Screen and Manage Depression and Anxiety disorders in a district settng
 
 ## Key Guidelines
 
 * **Standard treatment guidelines / EML** have excellent protocols. Please see the Google folder below for Word document posters based on the STG that you can adapt for your own facility.
 
-* Find KZN protocols for mental health disorders & MHCA forms [here](http://www.kznhealth.gov.za/townhill/forms.htm)
+* [Find KZN protocols for mental health disorders & MHCA forms](http://www.kznhealth.gov.za/townhill/forms.htm)
 
 * [See policy guidelines](https://knowledgehub.health.gov.za/system/files/elibdownloads/2019-07/Policy%2520guideline%2520on%252072-hour%2520assessment%2520of%2520involuntary%2520mental%2520health%2520care%2520users.pdf) on 72-hour assessment of involuntary mental health care users.
 
