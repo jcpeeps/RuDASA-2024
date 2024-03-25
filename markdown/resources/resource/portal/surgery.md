@@ -7,7 +7,7 @@ section: '6'
 
 ## TOP Surgery Work Based Activities to focus on this week. Make sure you can
 
-* Awareness of potential basket of surgical care that can be developed for your hospital
+* How confident are you in surgical procedures relevant to a rural health settng (see list in google folder)
 * Assess and manage Ectopic pregnancy surgical
 * Basic Amputations  
 * Appendicectomy
@@ -17,15 +17,23 @@ section: '6'
 
 * **Surgery Survival Guide** by Dr John Jeff, Frere Hospital. This local publication is a great resource. Send Dr Jeff John an [email here](mailto:jeffveenajohn@gmail.com)
 
-* **A practical approach to peri-operative anticoagulation.** SAFP, A Beeton. [Read about it here.](https://safpj.co.za/index.php/safpj/article/view/4990/5897)
+* [A practical approach to peri-operative anticoagulation. SAFP, A Beeton](https://safpj.co.za/index.php/safpj/article/view/4990/5897)
 
-* **Surgical skills deficiencies and needs of rural general practitioners in South Africa.** Porter et al. [Read article here.](http://www.scielo.org.za/pdf/samj/v108n3/19.pdf)
+* [Surgical skills deficiencies and needs of rural general practitioners in South Africa. Porter et al.](http://www.scielo.org.za/pdf/samj/v108n3/19.pdf)
 
-* **Surgical care at rural district hospitals in low- and middle-income countries: an essential component of universal health coverage; Chu et al; Rural and Remote Health. [Read article here.](https://www.rrh.org.au/journal/article/5920)
+* [Surgical care at rural district hospitals in low- and middle-income countries: an essential component of universal health coverage; Chu et al; Rural and Remote Health](https://www.rrh.org.au/journal/article/5920)
 
 * South African Urology Association - **Introduction to Urology.** Published by the SAUA - available at R 250 each from Dr Jeff John at [his email.](mailto:jeffveenajohn@gmail.com)
 
-* The **South African Family Practice Manual** has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
+* [The South African Family Practice Manual 4th Edition. Mash & Naidoo](https://saafp.org/about-us-2/publications-2/)has some excellent sections on small procedures such as removing toenails and draining an abscess as well as some of the bigger procedures done in a district hospital setting.
+
+*  Mayo Clinic Webinar: [Basic surgical technique](https://www.youtube.com/watch?v=osgndmRBjsM)
+
+*  Journal of Medical Insight (JOMI)[Masterclass Surgical Education Videos](https://jomi.com)
+
+*  SALALI series: [FNA "How do you do it?" Dr Francois Malherbe](https://www.youtube.com/watch?v=ESkTCrLj_Dc)
+
+*  Emergency Medicine Cape Town Series [Intercostal Chest Drain Insertion](https://www.youtube.com/watch?v=anb0q5QdESs)
 
 * Find the [RuDASA Library Surgery Folder](https://drive.google.com/drive/u/0/folders/1spuQQvXfRxC_P3ejXDTIuYpZ_ikpfote). Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
 
