@@ -1,20 +1,49 @@
-2022: [Dr Craig Parker](https://rudasa.org.za/ruresa/markdown/public/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202022.pdf) Umoya, Eastern Cape 
+2022: [Dr Craig Parker](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202022.pdf) Umoya, Eastern Cape 
 
-2009: Dr JJ Ogole from Piet Retief Hospital, Mpumalanga
+2021: [Dr Michaela Lotz and Dr John-D Lotz](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202021.pdf) Madwaleni Hospital, Eastern Cape
 
-2008: Dr Munyadziwa Kwinda, from Donald Fraser Hospital, Limpopo 
+2020: [Dr Angela Hartwig](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202020.pdf) Amathole, Eastern Cape
 
-2007: Dr Gert Marincowitz from Tzaneen, Limpopo
+2018: [Dr Mikail Gurland](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202018.pdf) Tintswalo Hospital, Mpumalanga
 
-2006: Dr Vanga Siwisa from Taung, North West
+2017: [Dr Lushiku Nkombua](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202017.pdf) Middleburg Hospital, Mpumalanga
 
-2005: Dr Nigel Hoffman from Rietvlei Hospital in the Eastern Cape
+2016: [Dr Nomlindo Makubalo](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202016.pdf) Nelson Mandela Bay, Eastern Cape
 
-2004: Dr Hermann Reuter, from MSF in Lusikisiki in the Eastern Cape
+2015: [Dr Ndiviwe Mphothulo](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202015.pdf) Taung, Mpumalanga
 
-2003: Dr Victor Fredlund, from Mseleni Hospital in northern KwaZulu-Natal
+2014: Dr Jenny Nash Mseleni Hospital, northern KwaZulu-Natal
+
+2013: [Dr ben Gaunt and Dr Taryn Gaunt](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202013.pdf) Zithulele Hostpital, Eastern Cape
+
+2012: [Dr Kelly Gate](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202012.pdf) Bethesda hospital, Kwazulu-Natal
+
+2011: [Dr. KR Adigun](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202011.pdf) Bethal Hospital, Mpumalanga
+
+2010: [Dr Mabatho Kekana](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202010.pdf) Hlabisa Hospital, KwaZulu-Natal
+
+2009: [Dr JJ Ogole](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202009.pdf) Piet Retief Hospital, Mpumalanga
+
+2008: Dr Munyadziwa Kwinda Donald Fraser Hospital, Limpopo 
+
+2007: [Dr Gert Marincowitz](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202007.pdf) Tzaneen, Limpopo
+
+2006: [Dr Vanga Siwisa](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202006.pdf) Taung, North West
+
+2005: [Dr Nigel Hoffman](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202005.pdf) Rietvlei Hospital, Eastern Cape
+
+2004: [Dr Hermann Reuter](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202004.pdf) MSF in Lusikisiki, Eastern Cape
+
+2003: [Dr Victor Fredlund](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202003.pdf) Mseleni Hospital, northern KwaZulu-Natal
 
 <!-- This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document. 
 
-    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information. -->
+    Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
+
+    Steps to add an entry:
+    1. Save the article/press release statement as a pdf in the folder "public/pdfs/Doctor of the year/", the pdf should have the name "RuDASA Award winner [YEAR OF AWARD].pdf"
+    2. Add an entry to the list above with the format:
+        YEAR: [NAME](https://rudasa.org.za/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%20[YEAR].pdf) LOCATION
+        * Remember to replace "[YEAR]" at the end of the URL with the year the award was given
+ -->
