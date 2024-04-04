@@ -1,10 +1,10 @@
 import React from 'react'
 import {useState} from 'react';
 import {useEffect} from 'react';
-import StatementCard from './StatementCard'
 import SpecialAwardCard from './SpecialAwardCard';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import fetchJson from '../../lib/fetchJson';
 export default function SpecialAwards({ files }) {
     const [awards, setAwards] = useState(files.slice(0, 5));
     const [page, setPage] = useState(0);
@@ -21,12 +21,12 @@ export default function SpecialAwards({ files }) {
     }, [page])
     useEffect(() => {
         if (awards[0].frontmatter) return;
-        const response = fetch(`/api/getSpecialAwards`, {
+        const response = fetchJson(`/api/getSpecialAwards`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({files: awards})
         })
-        .then(res => res.json())
+        // .then(res => res.json())
         .then(json => {
             setAwards(json.message ?? [])
         });

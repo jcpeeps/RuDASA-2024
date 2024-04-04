@@ -2,7 +2,13 @@ import fs from 'fs';
 import path from 'path'
 import matter from 'gray-matter'
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
+    if (req.method !== "POST")
+        return res.status(405).send({
+            status: "error",
+            code: "notPost",
+            message:"Only POST requests allowed"
+        });
     let deny = false;
     const awards = req.body.files.map(filename => {
         if (filename.includes("../")) {
