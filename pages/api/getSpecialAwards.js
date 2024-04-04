@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path'
 import matter from 'gray-matter'
 
-export default async function handler(req, res) {
+export default async function POST(req, res) {
     if (req.method !== "POST")
         return res.status(405).send({
             status: "error",
