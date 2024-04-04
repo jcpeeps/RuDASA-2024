@@ -134,17 +134,21 @@ This is text.
 This text does not follow on a new line, but follows directly after.
 
 ### Special Awards
-Add a markdown file to the directory `markdown/articles/special-awards`, it is recommended to add the date at the start of the file name for organisational purposes, because the directory can then easily be sorted by date.  
+Add a markdown file to the directory `markdown/articles/special-awards`, 
+For the awards to be ordered from newest to oldest, the name of the markdown file must begin with the date on which the file was added to the website (Not the original date of the award) in the format `yyyy-mm-dd`
+For example, a file named `special-award.md` will be saved as `2024-03-24-special-award.md` if it was added on `2024-03-24`, regardless of when the actual award was given to the recipient
 
-The markdown file should contain the following:  
+The markdown file should contain the following, but the `image` entry is optional:  
 ```
 ---
 year: 'year'
 name: 'Award Name'
 hospital: 'hospital(s)'
 location: 'Province/Country'
+image: '/media/special-awards/image-name.jpeg' 
+date: 'yyyy-mm-dd'
 ---
 Description of the award
 ```
-
-If you want to link to a pdf, then the pdf must by stored in the directory `public/pdfs/`
+Images (if needed) must be stored in the directory `public/media/special-awards/`
+Note that the path of the image in the markdown document **must** start with `/media/special-awards/`

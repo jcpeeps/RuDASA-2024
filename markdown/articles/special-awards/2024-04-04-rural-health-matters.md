@@ -3,6 +3,8 @@ year: '2023'
 name: 'Rural Health Matters'
 hospital: '41 Hospitals'
 location: 'Limpopo'
+image: '/media/special-awards/Rural Health Matters for social media.jpeg'
+date: '2024-04-04'
 ---
 Rural Health Matters outreach campaign is a surgical outreach project initiated in 2020 aimed at reduction of surgical backlog within the province. The project was inspired by a wish of Limpopo DOH MEC Dr P.C Ramathuba to have ophthalmic patient operated and have their sight restored at Elim Hospital (her birthplace) on her birthday. During her remarks following a successful implementation of the project, The MEC coined a phrase "Rural health does matter". 
 

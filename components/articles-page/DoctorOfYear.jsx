@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Portrait from '../../media/doctor-of-the-year/Dr Bukiwe Spondo 2023.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseMedical, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { marked } from 'marked'
@@ -15,7 +14,7 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
             <h3 className="my-4 pb-4 fw-bold">Rural Doctor of the Year {frontmatter.year}</h3>
             <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-6 d-flex flex-wrap flex-md-nowrap align-items-start">
-                    <Image src={Portrait} width={270} height={270} className="rounded-circle image-crop" alt="" />
+                    <Image src={'/media/doctor-of-the-year/Dr Bukiwe Spondo 2023.jpeg'} width={270} height={270} className="rounded-circle image-crop" alt="" />
                     <div className="ms-0 ms-md-5 my-3">
                         <h5 className="fw-bold mb-3">Dr {frontmatter.name}</h5>
                         <div className="d-flex mb-2">

@@ -8,8 +8,8 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default function articles({ data }) {
-	// console.log(data);
 	const specialAwards = data.find(file => file.slug === "special-awards");
+	specialAwards.content.sort().reverse();
 	return (
 		<Layout pageTitle="RuDASA | Articles">
 			<DoctorOfYear markdown={data.find(file => file.slug === "doctor-of-the-year")} prevRecipients={data.find(file => file.slug === "previous-recipients")}/>

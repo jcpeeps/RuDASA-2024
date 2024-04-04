@@ -3,7 +3,6 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default function handler(req, res) {
-    console.log("getSpecialAwards: ", req.body);
     let deny = false;
     const awards = req.body.files.map(filename => {
         if (filename.includes("../")) {
