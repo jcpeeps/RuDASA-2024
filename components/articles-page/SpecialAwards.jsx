@@ -21,12 +21,15 @@ export default function SpecialAwards({ files }) {
     }, [page])
     useEffect(() => {
         if (awards[0].frontmatter) return;
-        const response = fetchJson(`/api/getSpecialAwards`, {
+        const response = fetch(`/api/getSpecialAwards`, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json" 
+            },
             body: JSON.stringify({files: awards})
         })
-        // .then(res => res.json())
+        .then(res => res.json())
         .then(json => {
             setAwards(json.message ?? [])
         });
@@ -37,7 +40,7 @@ export default function SpecialAwards({ files }) {
             <div className="container px-4 px-lg-0 py-2 py-lg-4">
                 <h3 className="my-4 pb-4 fw-bold mt-5">Special Awards</h3>
                 <div className="d-flex flex-wrap">
-                    {awards.map((award, index) => awards[0].frontmatter != undefined && (
+                    {awards.map((award, index) => awards[0]?.frontmatter != undefined && (
                         <SpecialAwardCard 
                             key={index} 
                             name={award?.frontmatter?.name} 
