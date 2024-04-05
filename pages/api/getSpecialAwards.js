@@ -10,6 +10,7 @@ export default async function POST(req, res) {
             message:"Only POST requests allowed"
         });
     let deny = false;
+        const specAwardsDir = path.join(process.cwd(),'markdown/articles/special-awards');
     const awards = req.body.files.map(filename => {
         if (filename.includes("../")) {
             deny = true;
@@ -20,7 +21,7 @@ export default async function POST(req, res) {
             }
         }
         const slug = filename.replace('.md', '')
-        const markdown = fs.readFileSync(path.join('markdown/articles/special-awards', filename), 'utf-8')
+        const markdown = fs.readFileSync(path.join(specAwardsDir, filename), 'utf-8');
 
         const { data: frontmatter, content } = matter(markdown)
 
