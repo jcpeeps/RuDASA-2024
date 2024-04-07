@@ -37,7 +37,7 @@ infectious diseases you will see – and the landscape is always changing. Are y
 
 * [Consensus statement: Management of drug-induced liver injury in HIV-positive patients treated for TB](https://sahivsoc.org/Files/Consensus%20Statement_Management%20of%20drug-induced%20liver%20injury%20in%20HIV%20positive%20pts%20treated%20for%20TB%20(Oct%202013).pdf)
 
-* [Management of suspected drug-induced rash, kidney injury and liver injury in adult patients on TB treatment and/or antiretroviral treatment](http://www.mic.uct.ac.za/sites/default/files/image_tool/images/51/ADE%20Booklet_July2020_final171120.pdf)
+* [Management of suspected drug-induced rash, kidney injury and liver injury in adult patients on TB treatment and/or antiretroviral treatment (Broken Link)](http://www.mic.uct.ac.za/sites/default/files/image_tool/images/51/ADE%20Booklet_July2020_final171120.pdf)
 
 ## Reading material / Tutorials / Webinars / Additional resources
 

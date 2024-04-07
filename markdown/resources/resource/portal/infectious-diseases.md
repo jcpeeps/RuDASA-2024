@@ -33,7 +33,7 @@ For antibiotic use for any infectious disease: use your **STG/ EML guidelines on
 
 * [South African guideline for the management of community-acquired pneumonia in adults](https://jtd.amegroups.com/article/view/13850/html)
 
-* [Guidelines for the treatment of malaria](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-07-National%20Guidelines%20for%20Malaria%20-%20SEPTEMBER%202019%20Final%20and%20correct%20-%20WITH%20FRONT.pdf)
+* [Guidelines for the treatment of malaria (Broken Link)](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-07-National%20Guidelines%20for%20Malaria%20-%20SEPTEMBER%202019%20Final%20and%20correct%20-%20WITH%20FRONT.pdf)
 
 * [National guidelines for the treatment of viral hepatitis](https://sahivsoc.org/Files/SA%20NDOH_Viral%20Hepatitis%20guideilnes%20final_.pdf)
 
@@ -52,7 +52,7 @@ For antibiotic use for any infectious disease: use your **STG/ EML guidelines on
 
 The South African Antibiotic Stewardship Programme (SAASP) : [Become an antiobiotic guardian](https://www.samedical.org/file/946) 
 
-[Download Here](https://play.google.com/store/apps/details?id=org.appenberg.saasp&;hl=en_ZA&;gl=US)
+[Download Here (Broken Link)](https://play.google.com/store/apps/details?id=org.appenberg.saasp&;hl=en_ZA&;gl=US)
 
 [A POCKET GUIDE TO ANTIBIOTIC PRESCRIBING FOR ADULTS IN SOUTH AFRICA, 2015](https://cct.mycpd.co.za/fidssa/SAASP_Antibiotic_Guidelines_2015.pdf)
 

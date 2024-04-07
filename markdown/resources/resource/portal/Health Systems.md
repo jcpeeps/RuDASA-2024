@@ -10,7 +10,7 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 ### Department of Health Programmes
 
-* [Quality Improvement Guide](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-07/2.%2520Quality%2520Improvement%2520Guide%25202012-3.pdf) The key to providing improved Quality of Care (QoC). Department of Health 2012
+* [Quality Improvement Guide](/pdfs/phc-guidelines/2.%20Quality%20Improvement%20Guide%202012.pdf) The key to providing improved Quality of Care (QoC). Department of Health 2012
 
 * [National Core Standards for Health Establishments in South Africa. Abridged version National Department of Health 2011](https://static.pmg.org.za/docs/120215abridge_0.pdf)
 
@@ -18,7 +18,7 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 * Ideal Clinic South Africa monitoring programme [website](https://www.idealhealthfacility.org.za)
 
-* Handbook for District Clinical Specialist Teams [DCST](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-07/Handbook%2520for%2520DCSTs%25202014.pdf)
+* Handbook for District Clinical Specialist Teams [DCST (Broken Link)](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-07/Handbook%2520for%2520DCSTs%25202014.pdf)
 
 ### Medico-Legal Resources
 
@@ -28,7 +28,7 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 * Guidelines for Medical Disability Grant (DG) assessments. Zithulele  [Read here](http://www.zithulele.org/uploads/4/1/4/2/4142372/guidelines_for_medical_dg_assessments.pdf)
 
-* A Guide for comple1ng the Death Notification Form (DNF) – BI-1663. Pieterse et al. [DNF](https://www.samrc.ac.za/sites/default/files/files/2017-07-03/codcapril09.pdf)
+* A Guide for completing the Death Notification Form (DNF) – BI-1663. Pieterse et al. [DNF](https://www.samrc.ac.za/sites/default/files/files/2017-07-03/codcapril09.pdf)
 
 * RO2023 Medico Legal Resource Pack Includes a series of excellent articles in SAFPJ that covers varies aspects of filling in the J88, drunken driving and sexual assault [RuDASA Library](https://drive.google.com/drive/u/1/folders/1NseulsA6vVh4ZhsHoYME5vPVyG3eZJv1)
 

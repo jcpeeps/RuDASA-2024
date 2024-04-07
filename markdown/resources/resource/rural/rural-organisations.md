@@ -12,7 +12,7 @@ For support on specific conditions go to the Clinical Resources to find associat
 ## Centres for Rural Health
 
 ### Ukwanda Centre for Rural Health
-The [Ukwanda Centre for Rural Health](https://blogs.sun.ac.za/ukwanda/) vision is to train health care professionals with applicable knowledge and hands on experience of the health issues facing rural and underserved communities. Ukwanda’s mission is to focus on making a difference to rural health care through empowering students, health workers and communities for wellness.
+The [Ukwanda Centre for Rural Health (Broken Link)](https://blogs.sun.ac.za/ukwanda/) vision is to train health care professionals with applicable knowledge and hands on experience of the health issues facing rural and underserved communities. Ukwanda’s mission is to focus on making a difference to rural health care through empowering students, health workers and communities for wellness.
 
 ### Wits Centre for Rural Health
 The [Wits Centre for Rural Health (CRH)](https://www.wits.ac.za/health/research-entities/centre-for-rural-health/about-us/about-us/) is an academic centre with a particular focus on 4 key areas of rural health advocacy, teaching, research and policy through support and sustainability. Together with partnerships and communities, the CRH aims to foster high quality rural health care through:Service Training Advocacy Research, and Sustainable growth.

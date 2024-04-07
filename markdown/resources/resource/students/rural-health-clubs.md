@@ -20,14 +20,14 @@ Other links are:
 
 HST provides an electronic health information service by hosting electronic discussion forums and mailing lists to facilitate information sharing, communication, and networking around broad and strategic public health issues, locally and internationally.
 
-has 2 email discussion groups you may like to join:
+HST has two email discussion groups you may like to join:
 * [Drug Policy & Practice](mailto:druginfo-subscribe@lists.hst.org.za) 
 * [Health & Human Rights](mailto:hhrnet-subscribe@lists.hst.org.za)
 
 **60 percent**  
 
 Within the southern African context it is believed that those infected by HIV are 60% women. 60percent endeavours to share relevant information related to HIV/AIDS within a gender, women's rights and sexual and reproductive health and rights lens through the continuum of prevention, treatment and care. This is the discussion link:  
-* [60percent](http://lists.hst.org.za/mailman/listinfo/60percent)
+* [60percent (Broken Link)](http://lists.hst.org.za/mailman/listinfo/60percent)
 * [email us](mailto:60percent-subscribe@lists.hst.org.za)
 
 <!--

@@ -69,7 +69,7 @@ section: '2'
 
 * [Management of early pregnancy loss](https://journals.co.za/doi/epdf/10.10520/EJC63071)
 
-* [Perinatal care for trans and non-binary people](https://www.bsuh.nhs.uk/maternity/wp-content/uploads/sites/7/2021/01/MP005-Perinatal-Care-for-Trans-and-Non-Binary-People.pdf)
+* [Perinatal care for trans and non-binary people (Broken Link)](https://www.bsuh.nhs.uk/maternity/wp-content/uploads/sites/7/2021/01/MP005-Perinatal-Care-for-Trans-and-Non-Binary-People.pdf)
 
 * [Sexual Pleasure, Sexual Health, Sexual rights](https://youtube.com/playlist?list=PL2IvCQAf-vTsyO7PFjM37sj-P5Ue-J19-)
 

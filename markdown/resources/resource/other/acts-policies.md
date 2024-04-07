@@ -2,7 +2,7 @@
 title: 'Acts & Policies'
 ---
 **National Health Act (2004)**  
-[National Health Act (2004)](/public/pdfs/acts-policies/1.%20national%20health%20act%202004.pdf)
+[National Health Act (2004)](/pdfs/acts-policies/1.%20national%20health%20act%202004.pdf)
 
 **National Health Act Booklet Summary (2013)**  
 [National Health Act Booklet Summary (2013)](/pdfs/acts-policies/2.%20National%20Health%20Act%20Booklet_Summary%202013.pdf)

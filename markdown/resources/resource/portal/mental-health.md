@@ -23,7 +23,7 @@ Make sure you can:
 
 ## Reading material
 
-* Brief Interventions and brief therapy for substance abuse [Article here](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
+* Brief Interventions and brief therapy for substance abuse [Article here (Broken Link)](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
 
 * Overcoming the Use of Mechanical Restraints in Psychiatry: A New Challenge in the Everyday Clinical Practice at the Time of COVID-19; De Beradis et al 2020. [Article here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7700144/pdf/jcm-09-03774.pdf)
 

@@ -34,15 +34,15 @@ section: '8'
 
 * Skills for communicating severe acute respiratory syndrome-coronavirus-2 result to patients and/or relatives; 2021 Oladele V. Adeniyi, Dominique K. Kayembe: [Read here](https://safpj.co.za/index.php/safpj/article/view/5221/6729)
 
-* Brief Interventions and brief therapy for substance abuse: [article here](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
+* Brief Interventions and brief therapy for substance abuse: [article here (Broken Link)](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
 
 * Understanding Motivational interviewing: [find out more here](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
 
 * The Effective Physician: Motivational Interviewing Demonstration (stop smoking); [watch here](https://www.youtube.com/watch?v=URiKA7CKtfc)
 
-* [Article](https://link.springer.com/article/10.1007/s10912-019-09572-y)): **The Good doctor. The Making and the unmaking of the Physician Self in contemporary South Africa;** M Pentecost and T Cousins
+* [Article](https://link.springer.com/article/10.1007/s10912-019-09572-y): **The Good doctor. The Making and the unmaking of the Physician Self in contemporary South Africa;** M Pentecost and T Cousins
 
-* [Article](https://safpj.co.za/index.php/safpj/article/view/5166/6263)): **Creating a learning environment in your practice** / facility; B Mash & Jill Edwards
+* [Article](https://safpj.co.za/index.php/safpj/article/view/5166/6263): **Creating a learning environment in your practice / facility;** B Mash & Jill Edwards
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).

@@ -8,13 +8,13 @@ title: 'Labour Relations'
 ### Commission for Conciliation, Mediation and Arbitration
 The Commission for Conciliation, Mediation and Arbitration (CCMA) is a dispute resolution body established in terms of the Labour Relations Act, 66 of 1995 (LRA). It is an independent body, does not belong to and is not controlled by any political party, trade union or business. It was established to provide the country with an accessible, user-friendly and, above all, inexpensive labour dispute resolution system. Workers who have allegedly been unfairly dismissed or the victims of various unfair labour practices are able to approach the CCMA alone or with certain categories of recognised representatives in order to seek redress for workplace wrongs.
 
-[Email](info@ccma.org.za) | **Phone (011) 377-6650**
+[Email](mailto:info@ccma.org.za) | **Phone (011) 377-6650**
 
 
 ### Public Service Commission
 The Public Service Commission (PSC) covers personnel procedures relating to recruitment, transfers, promotions and dismissals, investigates grievances of employees in the public service concerning official acts or omissions and advises national and provincial organs of state regarding personnel practices in the public service.
 
-[Email](info@opsc.gov.za) | **Phone 012 352 1000**
+[Email](mailto:info@opsc.gov.za) | **Phone 012 352 1000**
 
 ### Public Service Coordinating Bargaining Council
 Public service bargaining councils, namely, the Public service coordinating bargaining council (PSCBC) and the Public health and social development sectoral bargaining council (PHSDSBC) are the fora for negotiating salaries for public service employees. SAMA is the official organisation representing doctors on these councils.  
@@ -27,7 +27,7 @@ The Department of Employment and Labour strives to reduce unemployment, poverty 
 ### South African Medical Association
 The South African Medical Association (SAMA) employs well trained Labour Relations advisors who advise, represent and engage various employers, on behalf of affected members throughout the country. Their primary role and function is to prevent and resolve employment complaints and disputes; with the following issues: Grievances, Disciplinary matters, Unfair labour practices and dismissals disputes, Unfair discrimination and employment equity matters, and Litigation.
 The Trade Union Task Team addresses conditions of service and remuneration of salaried doctors and is particularly active in representing doctors - collectively and individually - in terms of labour relations legislation and negotiations: Terms and conditions of employment; salaries, benefits and allowances, Policy proposals, reviews and monitoring.  
-[Email](labour@samedical.org) | **Phone 012 481 2160** or **012 481 2075**
+[Email](mailto:labour@samedical.org) | **Phone 012 481 2160** or **012 481 2075**
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
