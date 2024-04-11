@@ -33,7 +33,7 @@ For antibiotic use for any infectious disease: use your **STG/ EML guidelines on
 
 * [South African guideline for the management of community-acquired pneumonia in adults](https://jtd.amegroups.com/article/view/13850/html)
 
-* [Guidelines for the treatment of malaria (Broken Link)](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-07-National%20Guidelines%20for%20Malaria%20-%20SEPTEMBER%202019%20Final%20and%20correct%20-%20WITH%20FRONT.pdf)
+* [Guidelines for the treatment of malaria](https://www.nicd.ac.za/wp-content/uploads/2017/03/National-Guidelines-for-Malaria-Treatment-SEPTEMBER-2019-Update-WITH-FRONT.pdf)
 
 * [National guidelines for the treatment of viral hepatitis](https://sahivsoc.org/Files/SA%20NDOH_Viral%20Hepatitis%20guideilnes%20final_.pdf)
 

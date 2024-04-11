@@ -18,7 +18,7 @@ section: '6'
 
 * [District Anaesthesia YouTube channel](https://www.youtube.com/channel/UC5RyvotEzpFIKFYozpKUgAw).Sign up for the live sessions every couple of weeks on an early Tuesday morning [Here](https://ukzn.zoom.us/meeting/register/tJwvcuugqjktHtVW4FPW26n1J7wGKiPscn2x) 
 * RO2022 An approach to District Anaesthesia; SAFE and SIMPLE. Prof David Bishop Rural Onboarding webinar. [Watch Here](https://youtu.be/Zt8yGgegzHQ)  
-* Suggested guideline in the South African context: [Management of a High Spinal Anaesthesia in Obstetrics (Broken Link)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiS9s_vmZb2AhVPwAIHHSxMDqoQFnoECAIQAQ&url=http%3A%2F%2Fwww.sajaa.co.za%2Findex.php%2Fsajaa%2Farticle%2Fview%2F1791%2F1771&usg=AOvVaw0n4nzF8k7kymKCjRetT3r_)
+* Suggested guideline in the South African context: [Management of a High Spinal Anaesthesia in Obstetrics](https://www.sajaa.co.za/index.php/sajaa/article/view/1791)
 * RO2023 [Things that go wrong in Anaesthesia & how to avoid them. Prof Dave Bishop](https://youtu.be/6ZwJxZjSlio?si=5C1de73MWtu1G-jQ)
 * [Anaesthesia for ruptured ectopic pregnancy at district level.](https://safpj.co.za/index.php/safpj/article/view/5304) SAFP 2021, DG Bishop and SPDP le Roux. A simple approach to the anaesthesia for unstable patients requiring laparotomy for ruptured ectopic pregnancy.
 * Patient sedation and analgesia Dr Joyce Gibson, Anaesthetist Frere hospital. Dr Joyce Gibson takes us through the paces of safe patient sedation and analgesia. [Watch a video on it!](https://youtu.be/kZskjzS35bk)

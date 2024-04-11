@@ -34,7 +34,7 @@ section: '8'
 
 * Skills for communicating severe acute respiratory syndrome-coronavirus-2 result to patients and/or relatives; 2021 Oladele V. Adeniyi, Dominique K. Kayembe: [Read here](https://safpj.co.za/index.php/safpj/article/view/5221/6729)
 
-* Brief Interventions and brief therapy for substance abuse: [article here (Broken Link)](https://store.samhsa.gov/sites/default/files/d7/priv/sma12-3952.pdf)
+* Brief Interventions and brief therapy for substance abuse: [article here](https://store.samhsa.gov/product/tip-34-brief-interventions-and-brief-therapies-substance-abuse/sma12-3952)
 
 * Understanding Motivational interviewing: [find out more here](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
 

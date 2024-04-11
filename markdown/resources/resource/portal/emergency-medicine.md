@@ -27,7 +27,7 @@ section: '5'
 
 ## Key Guidelines
 
-[Emergency Medicine for the Western Cape manual (Broken Link)](http://www.emct.info/em-guidance.html): an excellent South African / DOH based manual that used to be available as printed copies
+[Emergency Medicine for the Western Cape manual](https://mdinc.co.za/store/products/books/emergency-medicine-guidance-western-cape-4th-edition/): an excellent South African / DOH based manual that used to be available as printed copies
 
 [Fundamentals of Emergency Care 2016 (Emergency Medicine Cape Town)](https://www.emct.info/uploads/1/4/1/7/14175478/fec_manual_contents.pdf) For all your posters / algorithms: The Resuscitation council of South Africa make them available for free (but you have to go and fetch). Or you can [download and print here](https://resus.co.za/subpages/RCSA_Information/Resources/Algorithms.html)
 

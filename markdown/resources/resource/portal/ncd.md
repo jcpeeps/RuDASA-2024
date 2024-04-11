@@ -106,7 +106,7 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 
 * [RO2024 Internal Medicine: Clinical Care Tips for 2024. Prof Parrish](https://www.youtube.com/watch?v=lTDKRawlpVY)
 
-* [The BAMSI collaborative with Prof Parrish & Dave Stead’s team from the Eastern Cape (Broken Link)](https://medeval.co.za/wp/) Excellent set of webinars targeting doctors in rural facilities in BCM and Amathole district:
+* [The BAMSI collaborative with Prof Parrish & Dave Stead’s team from the Eastern Cape](https://medeval.co.za/lp-profile/) Excellent set of webinars targeting doctors in rural facilities in BCM and Amathole district:
 
 * WSU Life in the slow lane: Cardiology through the lens of the ECG with Dr Kevin Pasio
   * [Part 1](https://youtu.be/DCONVqcY4ZY)
@@ -118,7 +118,7 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 
 * [Guidelines for the diagnosis and treatment of acute and chronic heart failure](http://www.hefssa.org/images/uploads/2016_ESC_Guidelines_for_the_diagnosis_and_treatment_of_acute_and_chronic_heart_failure.pdf)
 
-* [International Society of Hypertension Global Hypertension Practice Guidelines (Broken Link)](https://www.ahajournals.org/doi/epub/10.1161/HYPERTENSIONAHA.120.15026) Good for background reading but thresholds for treatment as per the South African guideline.
+* [International Society of Hypertension Global Hypertension Practice Guidelines](https://www.ahajournals.org/doi/epub/10.1161/HYPERTENSIONAHA.120.15026) Good for background reading but thresholds for treatment as per the South African guideline.
 
 * [Cardiac Arrhythmia Part 1 Tachy arrhythmia Dr Adeniyi](https://www.youtube.com/watch?v=2TejX0EQkvA) [Part 2](https://www.youtube.com/watch?v=1uP2_mKo6Ok)
 

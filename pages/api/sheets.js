@@ -707,7 +707,7 @@ Check out our socials:
 
 As a requirement of the POPI Act we are informing you that your contact details will be on the social media groups. Occasionally we share your contact details with other RuDASA members, or in response to requests from our rural partners (RuReSA, RuNurSA, and PACASA) for a contact for a specific rural health issue. We will not give out contact details to people who are not part of these organisations without getting your permission first.
 
-For anymore assistance please contact the Office Co-ordinator at info@rudasa.org.za
+For more assistance please contact the Office Co-ordinator at info@rudasa.org.za
                 `,
                 html: `
                 <!doctype html>
@@ -777,7 +777,7 @@ For anymore assistance please contact the Office Co-ordinator at info@rudasa.org
                             <i style="font-size: 8px; color: grey;">
                             As a requirement of the POPI Act we are informing you that your contact details will be on the social media groups. Occasionally we share your contact details with other RuDASA members, or in response to requests from our rural partners (RuReSA, RuNurSA, and PACASA) for a contact for a specific rural health issue. We will not give out contact details to people who are not part of these organisations without getting your permission first.<br/>
 
-                            For anymore assistance please contact the Office Co-ordinator at info@rudasa.org.za
+                            For more assistance please contact the Office Co-ordinator at info@rudasa.org.za
                             </i>
 
 

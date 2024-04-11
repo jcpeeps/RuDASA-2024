@@ -55,7 +55,7 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Bubble CPAP](https://sugarprep.org/videos/#Bubble_CPAP), One of the SUGAR PEARL videos.
 
-* [The Childrens Act Guide (Broken Link)](http://www.ci.uct.ac.za/sites/default/files/image_tool/images/367/publication/2013/Childrens%20Act%20Guide%20for%20Health%20Professionals%202013.pdf) This guide makes child health legal aspects much easier to understand, the chapters on consent and abuse and neglect especially relevant.
+* [The Childrens Act Guide](https://ci.uct.ac.za/media/99107) This guide makes child health legal aspects much easier to understand, the chapters on consent and abuse and neglect especially relevant.
 
 * [Management of severe acute malnutrition](http://www.samj.org.za/index.php/samj/article/view/10072)
 
