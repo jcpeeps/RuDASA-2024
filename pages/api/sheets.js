@@ -606,46 +606,184 @@ export default async function handler(req, res)
                 to: process.env.RUDASA_NOTIFICATION_EMAIL,
                 subject: "New member signup",
                 text: `
-                A new member signed up on the site!\n
-                Name:\n
-                ${data.firstName} ${data.surname}\n
-                Email:\n
-                ${data.email}\n
-                Cell No.:\n
-                ${data.cellNo}\n
-                Signup Reason:\n
-                ${data.signUpReason}
-                `,
+                    A new member signed up on the site!
+                    Name: ${data.firstName} ${data.surname}
+                    Email: ${data.email}
+                    Cell No.: ${data.cellNo}
+                    Country: ${data.country}
+                    Province: ${data.province}
+                    District: ${data.district}
+                    Work Place: ${data.workPlace}
+                    Work No.: ${data.workNo ?? "Not Provided"}
+                    Employment Area:${
+                        data.employmentArea == "private-sector"
+                            ? "Private sector"
+                        : data.employmentArea == "public-sector"
+                            ? "Public sector"
+                        : data.employmentArea == "training-institute"
+                            ? "Training institute"
+                        : data.employmentArea == "ngo"
+                            ? "NGO"
+                        : data.employmentArea == "student"
+                            ? "Student"
+                        : data.employmentArea ?? "Not Provided"
+                    }
+                    Job Description: ${
+                        data.jobDescription == "medical-officer"
+                            ? "Medical officer/GP"
+                        : data.jobDescription == "community-service"
+                            ? "Community Service"
+                        : data.jobDescription == "intern"
+                            ? "Intern"
+                        : data.jobDescription == "medical-student"
+                            ? "Medical Student"
+                        : data.jobDescription == "academic"
+                            ? "Academic/lecturer/trainer"
+                        : data.jobDescription == "registrar"
+                            ? "Registrar"
+                        : data.jobDescription == "consultant"
+                            ? "Consultant"
+                        : data.jobDescription == "other-health-professional"
+                            ? "Other health professional"
+                        : data.jobDescription == "non-health-professional"
+                            ? "Non health professional"
+                        : data.jobDescription ?? "Not Provided"
+                    }
+                    Professional Number: ${data.professionalNumber ?? "Not Provided"}
+                    Signup Reason: ${
+                        data.signUpReason == "health-interest"
+                            ? "Interest in Rural Health"
+                        : data.signUpReason == "information"
+                            ? "Information"
+                        : data.signUpReason == "onboarding"
+                            ? "Onboarding"
+                        : data.signUpReason == "rhc"
+                            ? "Rural Health Club"
+                        : data.signUpReason == "event"
+                            ? "Events"
+                        : data.signUpReason == "renew-membership"
+                            ? "Renew Membership"
+                        : data.signUpReason ?? "Not Provided"
+                    }${data.signUpReason === "rhc" ? `
+                        Club Name: ${data.clubName ?? "Not Provided"}
+                        University Name: ${data.uniName ?? "Not Provided"}
+                        External Support: ${data.externalSupport ?? "Not Provided"}
+                        Contact Name: ${data.contactName ?? "Not Provided"}
+                        Contact Role: ${data.contactRole ?? "Not Provided"}
+                        Contact No.: ${data.contactNo ?? "Not Provided"}
+                        Contact Email: ${data.contactEmail ?? "Not Provided"}
+                        Support Name: ${data.supportName ?? "Not Provided"}`
+                        : ""}`,
                 html: `
-                <!doctype html>
-                <html lang="en">
-                    <head>
-                        <meta name="format-detection" content="email=no"/>
-                    </head>
-                    <body>
-                        <div style="margin: auto; width: 300px; padding: 30px; background-color: white; border: 2px solid #3CD28A; border-radius: 5px">
+                    <!doctype html>
+                    <html lang="en">
+                        <head>
+                            <meta name="format-detection" content="email=no"/>
+                        </head>
+                        <body>
+                            <div style="margin: auto; width: 300px; padding: 30px; background-color: white; border: 2px solid #3CD28A; border-radius: 5px">
 
-                            <a href="https://rudasa.org.za">
-                                <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RUDASA Logo" />
-                            </a>
+                                <a href="https://rudasa.org.za">
+                                    <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RUDASA Logo" />
+                                </a>
 
-                            <h1 style="text-align: center">A new member signed up on the site!</h1>
+                                <h1 style="text-align: center">A new member signed up on the site!</h1>
 
-                            <p>
-                                <b>Full name:</b><br />
-                                <i>${data.firstName} ${data.surname}</i><br />
-                                <b>Email:</b><br />
-                                <i>${data.email}</i><br />
-                                <b>Cell No.:</b><br />
-                                <i>${data.cellNo}</i><br />
-                                <b>Signup Reason:</b><br />
-                                <i>${data.signUpReason}</i><br />
-                            </p>
+                                <p>
+                                    <b>Full name:</b><br />
+                                    <i>${data.firstName} ${data.surname}</i><br />
+                                    <b>Email:</b><br />
+                                    <i>${data.email}</i><br />
+                                    <b>Cell No.:</b><br />
+                                    <i>${data.cellNo}</i><br />
+                                    <b>Country:</b><br />
+                                    <i>${data.country}</i><br />
+                                    <b>Province:</b><br />
+                                    <i>${data.province}</i><br />
+                                    <b>District:</b><br />
+                                    <i>${data.district}</i><br />
+                                    <b>Work Place:</b><br />
+                                    <i>${data.workPlace}</i><br />
+                                    <b>Work No.:</b><br />
+                                    <i>${data.workNo ?? "Not Provided"}</i><br />
+                                    <b>Employment Area:</b><br />
+                                    <i>
+                                    ${data.employmentArea == "private-sector"
+                                        ? "Private sector"
+                                    : data.employmentArea == "public-sector"
+                                        ? "Public sector"
+                                    : data.employmentArea == "training-institute"
+                                        ? "Training institute"
+                                    : data.employmentArea == "ngo"
+                                        ? "NGO"
+                                    : data.employmentArea == "student"
+                                        ? "Student"
+                                    : data.employmentArea ?? "Not Provided"
+                                    }</i><br />
+                                    <b>Job Description:</b><br />
+                                    <i>
+                                    ${data.jobDescription == "medical-officer"
+                                        ? "Medical officer/GP"
+                                    : data.jobDescription == "community-service"
+                                        ? "Community Service"
+                                    : data.jobDescription == "intern"
+                                        ? "Intern"
+                                    : data.jobDescription == "medical-student"
+                                        ? "Medical Student"
+                                    : data.jobDescription == "academic"
+                                        ? "Academic/lecturer/trainer"
+                                    : data.jobDescription == "registrar"
+                                        ? "Registrar"
+                                    : data.jobDescription == "consultant"
+                                        ? "Consultant"
+                                    : data.jobDescription == "other-health-professional"
+                                        ? "Other health professional"
+                                    : data.jobDescription == "non-health-professional"
+                                        ? "Non health professional"
+                                    : data.jobDescription ?? "Not Provided"
+                                    }</i><br />
+                                    <b>Professional Number:</b><br />
+                                    <i>${data.professionalNumber ?? "Not Provided"}</i><br />
+                                    <b>Signup Reason:</b><br />
+                                    <i>
+                                    ${data.signUpReason == "health-interest"
+                                        ? "Interest in Rural Health"
+                                    : data.signUpReason == "information"
+                                        ? "Information"
+                                    : data.signUpReason == "onboarding"
+                                        ? "Onboarding"
+                                    : data.signUpReason == "rhc"
+                                        ? "Rural Health Club"
+                                    : data.signUpReason == "event"
+                                        ? "Events"
+                                    : data.signUpReason == "renew-membership"
+                                        ? "Renew Membership"
+                                    : data.signUpReason ?? "Not Provided"
+                                    }</i><br />
+                                    ${data.signUpReason === "rhc" 
+                                        ? `<b>Club Name:</b><br />
+                                        <i>${data.clubName ?? "Not Provided"}</i><br />
+                                        <b>University Name:</b><br />
+                                        <i>${data.uniName ?? "Not Provided"}</i><br />
+                                        <b>External Support:</b><br />
+                                        <i>${data.externalSupport ?? "Not Provided"}</i><br />
+                                        <b>Contact Name:</b><br />
+                                        <i>${data.contactName ?? "Not Provided"}</i><br />
+                                        <b>Contact Role:</b><br />
+                                        <i>${data.contactRole ?? "Not Provided"}</i><br />
+                                        <b>Contact No.:</b><br />
+                                        <i>${data.contactNo ?? "Not Provided"}</i><br />
+                                        <b>Contact Email:</b><br />
+                                        <i>${data.contactEmail ?? "Not Provided"}</i><br />
+                                        <b>Support Name:</b><br />
+                                        <i>${data.supportName ?? "Not Provided"}</i><br />`
+                                        : ""
+                                    }
+                                </p>
 
-                        </div>
-                    </body>
-                </html>
-                `,
+                            </div>
+                        </body>
+                    </html>`,
             };
 
             await transporter.sendMail(mailOptions);

@@ -553,6 +553,7 @@ export default function SignUp({ data }) {
                                                                             <option value="onboarding">Onboarding programme</option>
                                                                             <option value="rhc">Rural Health Club (Students)</option>
                                                                             <option value="event">Events</option>
+                                                                            <option value="renew-membership">Renew membership</option>
                                                                         </select>
                                                                     </div>
                                                                     <div className="w-auto form-group">
