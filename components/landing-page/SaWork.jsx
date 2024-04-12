@@ -1,5 +1,6 @@
 import React from 'react'
 import { marked } from 'marked'
+import Link from 'next/link'
 
 export default function SaWork({ content }) {
 
