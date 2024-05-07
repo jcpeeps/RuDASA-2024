@@ -9,6 +9,11 @@ If you are an intern about to take up a community service post in a rural hospit
 
 **Taking Care** is a group of doctors (2 are rural doctors) that run a variety of wellness workshops , online and at venues, to prevent Burnout & depression in health care workers. You can do a quick check on the site to see if you have Burnout. There are a number of good resources on the web.
  https://www.takingcare.co.za
+
+
+**The Rural Doctor Handbook:**
+A very useful handbook filled with information compiled by Dr Ben Gaunt, a veteran rural doctor, and the Zithulele Hospital team. A trove of information made available for your access to thrive!
+[Access it here.](https://1drv.ms/b/s!AoNj5Y6vuxgchbAWqEXmy25s2Yrn8Q?e=ybDxcZ)
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
