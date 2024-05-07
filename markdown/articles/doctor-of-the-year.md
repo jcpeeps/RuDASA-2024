@@ -3,6 +3,7 @@ year: '2023'
 name: 'Bukiwe Spondo'
 hospital: 'Tafalofefe'
 location: 'Eastern Cape'
+nomination_link: 'https://forms.gle/cL3xXJ4AUC3wMUEG9'
 ---
 
 Dr Bukiwe Spondo worked at Tafalofefe Distrcit Hospital, Eastern Cape from 2007. The hospital is in a deeply impoverished , if beautiful area, of Centane village. It is not easily accessible due to the poor condition of the roads, and with rains even staff have difficulty going to work because of the mud. She was nominated for the Award by the CEO and her co-workers who highlighted her dedication, hard work and caring for people in their community. 
