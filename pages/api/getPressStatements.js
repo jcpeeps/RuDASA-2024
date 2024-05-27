@@ -1,0 +1,44 @@
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+export default async function POST(req, res) {
+  if (req.method !== "POST")
+    return res.status(405).send({
+      status: "error",
+      code: "notPost",
+      message: "Only POST requests allowed",
+    });
+  let deny = false;
+  const specAwardsDir = path.join(
+    process.cwd(),
+    "markdown/articles/press-statements"
+  );
+  const statements = req.body.files.map((filename) => {
+    if (filename.includes("../")) {
+      deny = true;
+      return {
+        slug: null,
+        frontmatter: null,
+        content: null,
+      };
+    }
+    const slug = filename.replace(".md", "");
+    const markdown = fs.readFileSync(
+      path.join(specAwardsDir, filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter, content } = matter(markdown);
+
+    return {
+      slug,
+      frontmatter,
+      content,
+    };
+  });
+  if (deny || statements.length == 0) {
+    res.status(404).json({ message: "The requested statements do not exist" });
+  }
+  res.status(200).json({ message: statements });
+}
