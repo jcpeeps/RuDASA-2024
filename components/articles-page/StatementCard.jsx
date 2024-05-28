@@ -2,59 +2,52 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 export default function StatementCard(props) {
-  function openModal() {
-    props.modal.setContent({
-      title: props.title,
-      body: props.content,
-    });
-    props.modal.open();
-  }
-  function openModalPDF() {
-    props.modal.setContent({
-      title: "",
-      body: (
-        <embed
-          src={props.link}
-          type="application/pdf"
-          width="100%"
-          height="95%"
-        />
-      ),
-    });
-    props.modal.open();
-  }
+  const [showModal, setShowModal] = useState(false);
+  const modal = {
+    open: () => setShowModal(true),
+    close: () => {
+      console.log("Close Modal");
+      setShowModal(false);
+    },
+  };
   return (
-    <section className="mb-2 mb-lg-5 p-4 p-lg-5 bg-white shadow rounded-3">
+    <section className="mb-1 w-70 p-1 p-lg-2 bg-white shadow rounded-3">
+      <Modal
+        show={showModal}
+        onHide={modal.close}
+        fullscreen={true}
+        dialogClassName="modal-90w"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Full Statement</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <embed
+            src={props.link}
+            type="application/pdf"
+            width="100%"
+            height="95%"
+          />
+        </Modal.Body>
+        <Modal.Footer>
+          <button className="btn btn-secondary" onClick={modal.close}>
+            Close
+          </button>
+        </Modal.Footer>
+      </Modal>
       {/* <div className="bg-white shadow rounded-3 p-5 m-2 m-lg-3 partner-width"> */}
-      <h5 className="fw-bold mb-3">{props.title}</h5>
-      <small className="text-muted mb-4">by {props.author}</small>
-      <p>{props.description}</p>
-      <div className="d-flex justify-content-between align-items-end">
-        {/* <div className="hover-button">
-                    <a href={props.link} target="_blank" role="button" className="btn btn-primary text-white mt-4">Read</a>
-                </div> */}
+      {/* <small className="text-muted mb-4">by {props.author}</small> */}
+      {/* <p>{props.description}</p> */}
+      <div className="p-1" role="button" onClick={modal.open}>
+        <h5 className="fw-bold mb-0 press-statement-title">{props.title}</h5>
         <div className="d-flex align-items-center">
           <FontAwesomeIcon icon={faClock} className="me-2 text-muted" />
           <p className="text-muted m-0">{props.date}</p>
         </div>
       </div>
-      {props.content && (
-        <button
-          onClick={openModal}
-          className="btn btn-primary text-white mt-4 me-4"
-        >
-          Read More
-        </button>
-      )}
-      {props?.link?.includes("pdfs/press-statements") && (
-        <button
-          onClick={openModalPDF}
-          className="btn btn-primary text-white mt-4"
-        >
-          View Full PDF
-        </button>
-      )}
       {/* </div> */}
     </section>
   );
