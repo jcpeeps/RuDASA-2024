@@ -33,7 +33,7 @@ export default function ResourceGroups({ thrive, activities, student, rural, oth
 			<h3 className="fw-bold mb-4 mb-md-0">Students</h3>
 			<div className="d-flex flex-wrap p-1 p-md-3">
 				{student.map((card, index) => (
-					<ResourceCard icon={`/icons/${card.slug}.svg`} title={card.frontmatter.title} link={`/resources/students/${card.slug}`} key={index} />
+					<ResourceCard icon={`/icons/${card.slug}.svg`} title={card.frontmatter.title} link={`/resources/students/${card.slug}`} key={index} externalLink={card.frontmatter.externalLink}/>
 				))}
 			</div>
 		</div>
