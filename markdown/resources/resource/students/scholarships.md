@@ -10,6 +10,8 @@ RuDASA supports the concept of scholarship schemes for health sciences students 
 
 Should you wish to develop a similar programme or support these scholarship schemes through direct contributions or assistance with fundraising efforts, please [contact us](/contact).
 
+### The Rural Education Access Programme (REAP)
+[REAP](https://reap.org.za/what-we-do/) assists young people from low income households in marginalised rural communities in South Africa to access and succeed in post-school education and training opportunities.
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
