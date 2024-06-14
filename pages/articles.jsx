@@ -20,7 +20,7 @@ export default function articles({ data }) {
         )}
       />
       <SpecialAwards files={specialAwards.content} />
-      <Statements files={pressStatements.content} />
+      {/* <Statements files={pressStatements.content} /> */}
     </Layout>
   );
 }

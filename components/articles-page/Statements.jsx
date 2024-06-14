@@ -38,8 +38,7 @@ export default function PressStatements(props) {
   }, [statements]);
   return (
     <section className="bg-light">
-      <div className="container px-4 px-lg-0 py-2 py-lg-4">
-        <h3 className="my-2 pb-2 fw-bold mt-5">Press Statements</h3>
+      <div className="container">
         <div>
           {statements?.map(
             (statement, index) =>
@@ -57,7 +56,7 @@ export default function PressStatements(props) {
           )}
         </div>
       </div>
-      <div className="pagination-controls d-flex justify-content-center align-items-center">
+      <div className="pagination-controls d-flex justify-content-center align-items-center my-3">
         <div className="d-flex justify-content-center align-items-center shadow">
           <button onClick={prev} className="border-0 border-white">
             <FontAwesomeIcon
