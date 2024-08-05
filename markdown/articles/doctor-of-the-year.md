@@ -1,23 +1,20 @@
 ---
-year: '2023'
-name: 'Bukiwe Spondo'
-hospital: 'Tafalofefe'
-location: 'Eastern Cape'
+year: '2024'
+name: 'Mark Blaylock'
+hospital: 'Manguzi'
+location: 'KwaZulu-Natal'
 nomination_link: 'https://forms.gle/cL3xXJ4AUC3wMUEG9'
 ---
 
-Dr Bukiwe Spondo worked at Tafalofefe Distrcit Hospital, Eastern Cape from 2007. The hospital is in a deeply impoverished , if beautiful area, of Centane village. It is not easily accessible due to the poor condition of the roads, and with rains even staff have difficulty going to work because of the mud. She was nominated for the Award by the CEO and her co-workers who highlighted her dedication, hard work and caring for people in their community. 
+Mark has worked at Manguzi Hospital since 2002. Firstly as a medical doctor , then chief medical officer, and now as medical manager since 2016. There was a gap in service in 2008 , when he left after a disagreement with the province following his roll out of dual therapy for PMTCT in 2007, the era of official AIDS denial. During these times of crisis “I have given my heart and soul” to this hospital  - working “far beyond my designated duties”. 
 
-Bukiwe started at the Masibambane ARV Clinic.  To make life easier for patients she started prepacking medication to take to the clinics for patients to collect, previously these patients had to travel to Butterworth for treatment. When this clinic closed she opened a CHAMP (Clinical HIV /AIDS Management Programme) site at Tafalofefe Hospital to see the complicated cases from the clinics. Later she started multidisciplinary outreach visits for the 9 clinics in Centane, firstly on a monthly basis but later on a twice weekly basis and from here refers people with poor viral load to the hospital for admission and counselling. As the nearest TB hospital is over 160km away she developed a MDR Review clinic with the support of the Amatole District Team and Butterworth Hospital. Her working day starts at 7.00 and only finishes once all the patients have been seen both at the hospital and the clinics. For patients at the clinics she refers directly to Frere Hospital or Cecelia Mahkiwane Hospital as needed rather than Tafalofefe, thus saving them transport money. For the nurses she does weekly in service teaching. After noticing the high teenage preganancy rate she identified 2 schools that needed awareness raising and has organised health awareness days for them.
+Mark has consistently delivered high quality clinical services, and his untiring dedication towards teaching and mentoring younger doctors have contributed to the overall quality of care delivered at Manguzi as well as the recruitment and retention of community service and junior doctors alike. He regularly spends entire evenings whilst not on call, in theatre assisting with difficult procedures or mentoring younger doctors. His approachability, sense of humour and consistent emphasis on holistic 'patient first' care has helped maintain shared work ethic and values in an often junior multi-disciplinary team over the years. 
 
-She adopted the HIV- AIDS orphan NGO Phakamisanani , paying school fees for those in need and supporting many of the orphans to train as nurses. Overall she has improved the health of those living in the area and has a special rapport with her patients and that is why we nominate her for Doctor of the Year.
+Mark took on the post of medical manager in 2016 after long term stalwart Dr Immelman retired. Mark has always maintained he is a clinician and not an administrator, and took on this post purely to ensure that team practices and values were sustained, in the absence of another suitable candidate. This is not the position that gets him up in the morning, and he tries to maintain his sanity through twice weekly theatre lists and assisting other doctors in managing difficult cases (and still spends evenings in theatre helping doctors on call with difficult cases). Despite his insistence of not being an administrator, he has made an immeasurable difference. Clinical care at Manguzi continues to be of high quality. Manguzi offers surgical services that are not routinely available at district hospital level. Mark has pushed the multi-disciplinary clinical risk meetings and follows up proposed implementations judiciously. He spends time weekly with the Stores department staff, guiding, mentoring and supporting them to try to ensure that appropriate stock is routinely available. He has taken considerable interest in allied health services and performance, and has assisted in advocating for more staff and budget. Last year, in response to one tenth of the budget requested being allocated to wheelchairs and wheelchair consumables, he personally drove down to provincial offices and persuaded the chief financial officer to allocate the full amount- and won. He has personally written numerous post motivations for allied health professionals and fought hard at numerous levels to try and open and fund them. He has promoted and supported human resource development across medical and allied health staff, and assisted in identifying and bringing up specialists to assist in MDT staff training, including the monthly services of a hand surgeon from the large provincial central hospital. 
 
-Mr Madlebe CEO
-Dr S Ntamo CMO
-Mrs Msutu A-D Nursing
+Mark has always been an activist and a vocal advocate, previously landing him in political hot water but increasingly now within recognised health structures to excellent effect. His encouragement, guidance and support of other team members in advocating effectively for improved access to quality health services has made Manguzi the dynamic, passionate, stable and well resourced team it is. He has been pivotal in ensuring Manguzi's community has sustained access to high quality health services delivered by a competent multi-disciplinary team with a high work ethic despite tough times within the Department of Health and South Africa as a whole.
 
-
-
+Nominated by Maryke Bezuidenhout (Rehab)
 
 <!-- 
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
