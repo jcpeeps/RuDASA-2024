@@ -1,7 +1,8 @@
 ---
-year: '2016'
-name: 'Lifetime Achievement: Dr V. Fredlund'
-date: '2024-08-05'
+year: "2016"
+name: "Lifetime Achievement: Dr V. Fredlund"
+date: "2024-08-05"
+image: "/media/special-awards/Dr_V_Fredlund.jpeg"
 ---
 
 Harry Truman- former US president famously said “It’s amazing what you can accomplish if you don’t mind who gets the credit”
@@ -16,6 +17,6 @@ Victor connects himself to people a lot through music. His guitar travels everyw
 
 Victor is of course also known for the hospital he runs. Mseleni has been the place where he has poured his heart out in medicine. He is one of the most capable and competent clinicians in rural medicine in South Africa. Apart from a few pet likes like cardiology ; he has a knack for surgery, and with that, the guts to go for it. He famously did his first hysterectomy from a book, and has sometimes to the consternation of surgeons, had to phone them during operations to ask advice, for example “Where should I implant the ureter?”. He is brave (with a capital B) and has nerves of steel. I know he must have panicked on occasion but I have never seen it affect his surgery. “Ectomies” and “Otomies”- he’s probably done most of them. He does regular lists of Hernias, Hysterectomies and Total Hip Replacements; but has also done from the phenomenal to the outrageous! How about a trauma craniotomy with a Trephine for lack of Burrs! Who else can brag three full term extra-uterine deliveries of which the incidence is estimated at 1 in 30 000? We have known him as a passionate medical intellectual, for whom only the latest “Up to Date” will do, balanced with the maturity of experience that only comes from years of experience.
 
-When I said he “poured out his heart” I really meant that! He will be the first to tell you that his life at Mseleni has been an adventure, but he has also had to face some incredibly difficult times. He is a friend of his Saviour who is a “man of sorrows and acquainted with grief”. Yet you will hear him talk of HOPE! He lives with a determination to do good and often says he’ll do something out of his way because “I came here to help”. 
+When I said he “poured out his heart” I really meant that! He will be the first to tell you that his life at Mseleni has been an adventure, but he has also had to face some incredibly difficult times. He is a friend of his Saviour who is a “man of sorrows and acquainted with grief”. Yet you will hear him talk of HOPE! He lives with a determination to do good and often says he’ll do something out of his way because “I came here to help”.
 
 The epitomisation of humble, loving service - that’s Victor Fredlund.

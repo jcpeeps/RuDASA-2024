@@ -1,4 +1,6 @@
-2022: [Dr Craig Parker](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202022.pdf) Umoya, Eastern Cape 
+2023: [Dr Bukiwe Spondo](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202023.pdf) Tafalofefe Distrcit Hospital, Eastern Cape
+
+2022: [Dr Craig Parker](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202022.pdf) Umoya, Eastern Cape
 
 2021: [Dr Michaela Lotz and Dr John-D Lotz](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202021.pdf) Madwaleni Hospital, Eastern Cape
 
@@ -26,7 +28,7 @@
 
 2009: [Dr JJ Ogole](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202009.pdf) Piet Retief Hospital, Mpumalanga
 
-2008: Dr Munyadziwa Kwinda Donald Fraser Hospital, Limpopo 
+2008: Dr Munyadziwa Kwinda Donald Fraser Hospital, Limpopo
 
 2007: [Dr Gert Marincowitz](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202007.pdf) Tzaneen, Limpopo
 
@@ -39,7 +41,7 @@
 2003: [Dr Victor Fredlund](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202003.pdf) Mseleni Hospital, northern KwaZulu-Natal
 
 <!-- This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
-    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document. 
+    To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
 
     Please refer to the "HOW TO USE" or "HOW TO USE SHORT" files for more information.
 
