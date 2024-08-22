@@ -10,7 +10,7 @@ export default function DoctorOfYear({ markdown: { frontmatter, content }, prevR
 
     return (
         <section className="container mb-2 mb-lg-5 p-4 p-lg-5">
-            <h1 className="dispaly-4 fw-bold text-primary my-5 pt-5">Articles</h1>
+            <h1 className="display-4 fw-bold text-primary my-5 pt-5">Articles</h1>
             <h3 className="my-4 pb-4 fw-bold">Rural Doctor of the Year {frontmatter.year}</h3>
             <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-6 d-flex flex-wrap flex-md-nowrap align-items-start">
