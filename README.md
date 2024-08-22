@@ -45,3 +45,11 @@ See [here](https://youtu.be/7N0OcQZFm3Q) for how the Google Sheets API was set u
 ### Other useful info:
 - The *Rudasa Mailer* Client ID, as well as the Google Sheets service account, can be accessed and configured [here](https://console.cloud.google.com/apis/credentials?project=rudasa-user-system)
 - For further info please see [this StackOverflow question](https://stackoverflow.com/q/66058279)
+
+  ### Version History
+
+> Please record the version of the website below for RuDASA TEAM to easily access it.
+
+## Version List:
+
+- 2024: A new version starting from *6b52446458db061d093d11535a80b83afe75ed6d* has been issued.
