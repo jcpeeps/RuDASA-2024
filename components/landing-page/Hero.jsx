@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../../media/svg/logo.svg'
+import Logo from "/public/media/svg/logo.svg";
 import Link from 'next/link'
 
 export default function Hero() {

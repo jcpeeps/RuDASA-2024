@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import TeamSvg from '../../media/svg/team.svg'
+import TeamSvg from "/public/media/svg/team.svg";
 import { marked } from 'marked'
 
 export default function Hero({ content }) {

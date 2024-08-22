@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Illustration2 from '../../media/svg/what-we-do.svg'
+import Illustration2 from "/public/media/svg/what-we-do.svg";
 import { marked } from 'marked'
 import Link from 'next/link'
 

@@ -5,7 +5,7 @@ import ResourceGroups from '../components/portal/ResourceGroups'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Illustration from '../media/svg/portal.svg'
+import Illustration from "/public/media/svg/portal.svg";
 import Image from 'next/image'
 import Link from 'next/link'
 import { useInView } from 'react-intersection-observer';

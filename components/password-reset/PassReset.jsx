@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import Image from 'next/image';
-import Illustration3 from '../../media/svg/reset-password.svg';
+import Illustration3 from '/public/media/svg/reset-password.svg';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import ClipLoader from "react-spinners/ClipLoader";

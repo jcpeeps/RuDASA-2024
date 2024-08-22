@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Illustration1 from '../../media/svg/who-are-we.svg'
+import Illustration1 from "/public/media/svg/who-are-we.svg";
 import Link from 'next/link'
 
 export default function WhoAreWe({ content }) {

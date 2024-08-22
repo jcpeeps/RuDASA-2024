@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
-import Illustration from '../media/svg/login.svg';
+import Illustration from "/public/media/svg/login.svg";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import useUser from './api/useUser'
