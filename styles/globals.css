@@ -339,29 +339,20 @@ div:hover > .press-statement-title {
 	left: 0;
 }
 
-.masonry-container {
-	display: block;
-	height: 350px;
-	overflow-x: auto;
-	overflow-y: hidden;
-	white-space: nowrap;
-	.masonry-image {
-		height: 50%;
-		object-fit: cover;
-		display: inline-block;
-	}
-} 
-
-#masonry-container {
+#scroll-container {
 	height: 450px;
 	/* width: 80%; */
 	overflow-y: hidden;
 	overflow-x: hidden;
+}
+#masonry-container {
+	width: 100% !important;
 	margin: auto;
 	/* white-space: nowrap; */
 	img {
-		height: 250px;
-		margin: 5px;
+		width: 200px;
+		margin-bottom: 10px;
+		/* margin: 5px; */
 		object-fit: cover;
 	}
 }

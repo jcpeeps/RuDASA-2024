@@ -8,6 +8,7 @@ import Hero from '../components/landing-page/Hero'
 import SaWork from '../components/landing-page/SaWork'
 import WhatWeDo from '../components/landing-page/WhatWeDo'
 import WhoAreWe from '../components/landing-page/WhoAreWe'
+import Script from 'next/script';
 
 export default function Home({ data }) {
 
