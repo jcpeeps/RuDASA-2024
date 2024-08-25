@@ -1,12 +1,13 @@
-import Layout from '../components/Layout'
-import Hero from '../components/landing-page/Hero'
-import WhoAreWe from '../components/landing-page/WhoAreWe'
-import WhatWeDo from '../components/landing-page/WhatWeDo'
-import Advocacy from '../components/landing-page/Advocacy'
-import SaWork from '../components/landing-page/SaWork'
-import fs from 'fs' 
-import path from 'path'
+import fs from 'fs'
 import matter from 'gray-matter'
+import path from 'path'
+import Layout from '../components/Layout'
+import CelebrateRuralMontage from '../components/celebrate-rural-montage/CelebrateRuralMontage'
+import Advocacy from '../components/landing-page/Advocacy'
+import Hero from '../components/landing-page/Hero'
+import SaWork from '../components/landing-page/SaWork'
+import WhatWeDo from '../components/landing-page/WhatWeDo'
+import WhoAreWe from '../components/landing-page/WhoAreWe'
 
 export default function Home({ data }) {
 
@@ -15,6 +16,7 @@ export default function Home({ data }) {
 			<Hero/>
 			<WhoAreWe content={data.find(file => file.slug === "who-are-we").frontmatter}/>
 			<WhatWeDo content={data.find(file => file.slug === "what-we-do").content}/>
+			<CelebrateRuralMontage images={data.find(file => file.slug === "celebrate-rural").content}/>
 			<Advocacy content={data.find(file => file.slug === "advocacy-work").content} examples={data.find(file => file.slug === "advocacy-work-examples").content} />
 			<SaWork content={data.find(file => file.slug === "working-in-sa").content} />
 		</Layout>
@@ -38,6 +40,15 @@ export async function getStaticProps() {
 			content
 		}
 	})
+	
+	// get images from public/media/celebrate-rural/
+	const images = fs.readdirSync(path.join('public/media/celebrate-rural'));
+	// prepend /media/celebrate-rural/ to each image
+	images.forEach((image, index) => {
+		images[index] = "/media/celebrate-rural/" + image;
+	});
+	// add images to data
+	data.push({ slug: "celebrate-rural", frontmatter : "", content: images });
 
     return {
         props: {
