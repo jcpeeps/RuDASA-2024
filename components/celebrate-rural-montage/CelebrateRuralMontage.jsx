@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export default function CelebrateRuralMontage({images}) {
   const masonryContainer = useRef(null);
-  const [direction, setDirection] = useState(0);
+  const [direction, setDirection] = useState(1);
   const [scrollInterval, setScrollInterval] = useState(null);
   const [loadedImages, setLoadedImages] = useState(0);
   let scrollAmount = 0;
@@ -13,7 +13,6 @@ export default function CelebrateRuralMontage({images}) {
   useEffect(() => {
     const layout = () => {
       if (window.Masonry) {
-        console.log("Masonry", window.Masonry);
         let msnry = new window.Masonry('.grid', {
           itemSelector: '.grid-item',
           percentPosition: true
@@ -32,7 +31,6 @@ export default function CelebrateRuralMontage({images}) {
     script.async = true;
     script.crossOrigin = "anonymous";
     document.body.appendChild(script);
-    console.log("Masonry", window.Masonry);
     return () => {
       document.body.removeChild(script);
     };
@@ -40,14 +38,19 @@ export default function CelebrateRuralMontage({images}) {
 
   useEffect(() => {
     const autoScroll = () => {
-      scrollAmount = masonryContainer.current.scrollTop;
-      if (scrollAmount === 0) {
-        setDirection(1);
+      if (masonryContainer?.current) {
+        if (direction === 0) {
+          masonryContainer.current.scrollTop = 0;
+        }
+        scrollAmount = masonryContainer.current.scrollTop;
+        if (scrollAmount === 0) {
+          setDirection(1);
+        }
+        if (scrollAmount >= masonryContainer.current.scrollHeight - masonryContainer.current.clientHeight) {
+          setDirection(-1);
+        }
+        masonryContainer.current.scrollTop = masonryContainer.current.scrollTop + direction;
       }
-      if (scrollAmount >= masonryContainer.current.scrollHeight - masonryContainer.current.clientHeight) {
-        setDirection(-1);
-      }
-      masonryContainer.current.scrollTop = masonryContainer.current.scrollTop + direction;
     }
     if (scrollInterval) {
       clearInterval(scrollInterval);

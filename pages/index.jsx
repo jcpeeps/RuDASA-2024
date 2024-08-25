@@ -16,7 +16,7 @@ export default function Home({ data }) {
 			<Hero/>
 			<WhoAreWe content={data.find(file => file.slug === "who-are-we").frontmatter}/>
 			<WhatWeDo content={data.find(file => file.slug === "what-we-do").content}/>
-			{/* <CelebrateRuralMontage images={data.find(file => file.slug === "celebrate-rural").content}/> */}
+			<CelebrateRuralMontage images={data.find(file => file.slug === "celebrate-rural").content}/>
 			<Advocacy content={data.find(file => file.slug === "advocacy-work").content} examples={data.find(file => file.slug === "advocacy-work-examples").content} />
 			<SaWork content={data.find(file => file.slug === "working-in-sa").content} />
 		</Layout>
