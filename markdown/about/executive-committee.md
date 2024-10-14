@@ -68,4 +68,4 @@ members:
 # You can also change the text below if you need by simply retyping it as normal (like you would in any text/word document).
 ---
 
-Executive Committee 2023
+Executive Committee 2024-2025
