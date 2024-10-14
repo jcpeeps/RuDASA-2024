@@ -4,13 +4,13 @@ members:
     {
       role: "Chairperson",
       title: "Dr.",
-      name: "Lungi Hobe",
+      name: "Asafika Mbangata",
       email: "chair@rudasa.org.za",
     },
     {
       role: "Vice Chair",
       title: "Dr.",
-      name: "Asafika Mbangata",
+      name: ,
       email: "vicechair@rudasa.org.za",
     },
     {
@@ -25,10 +25,16 @@ members:
       name: "John D Lotz",
       email: "secretary@rudasa.org.za",
     },
+        {
+      role: "Past Chairperson",
+      title: "Dr.",
+      name: "Lungi Hobe",
+      email: "chair@rudasa.org.za",
+    },
     {
       role: "Rural Health Conference",
       title: "Dr.",
-      name: "Asafika Mbangata",
+      name: ,
       email: "info@ruralhealthconference.org.za",
     },
     {
@@ -46,13 +52,13 @@ members:
     {
       role: "Young Professionals",
       title: "Dr.",
-      name: "Anna Jacobs",
+      name: "Thapelo Molotsi and Caroline Gwangwa",
       email: "youngprofessionals@rudasa.org.za",
     },
     {
       role: "Students",
       title: "",
-      name: "Vuthlhari Shirindza",
+      name: "Joshua Gaunt",
       email: "students@rudasa.org.za",
     },
   ]
