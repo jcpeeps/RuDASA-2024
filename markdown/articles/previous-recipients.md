@@ -6,7 +6,7 @@
 
 2020: [Dr Angela Hartwig](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202020.pdf) Amathole, Eastern Cape
 
-2019: Dr Andrew Miller Madwaleni Hospital, Eastern Cape
+2019: [Dr Andrew Miller](/pdfs/Doctor%20of%20the%20Year/Andrew%20Miller%202019.pdf) Madwaleni Hospital, Eastern Cape
 
 2018: [Dr Mikail Gurland](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202018.pdf) Tintswalo Hospital, Mpumalanga
 
