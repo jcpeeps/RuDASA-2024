@@ -4,9 +4,6 @@
 //   is registered or not.
 
 import { google } from "googleapis";
-import { times } from "lodash";
-import { decode } from "punycode";
-import { boolean } from "yup";
 import { transporter, mailerAddress } from '../../config/mailer';
 const bcrypt = require("bcrypt");
 const crypto = require("crypto");
@@ -300,6 +297,8 @@ export default async function handler(req, res)
                 bcrypt.genSalt(SALT_ROUNDS, async (err, salt) => {
                     bcrypt.hash((data.password + process.env.PEPPER), salt, async (err, passHash) => {
 
+                        const currTime = new Date().toISOString().split('.')[0];
+
                         // The values that will be passed into each column in the new row
                         const newRowData = [
                             //General
@@ -336,8 +335,11 @@ export default async function handler(req, res)
                             data.contactNo,
                             data.contactEmail,
                             data.supportName,
-                            data.privacyPolicy
-                        ]
+                            data.privacyPolicy,
+
+                            //Timestamp
+                            currTime
+                        ];
 
                         //TODO: Handle error response
                         const response = await sheets.spreadsheets.values.append({
@@ -348,7 +350,7 @@ export default async function handler(req, res)
                         });
 
                         //==SEND NOTIFICATION + WELCOME EMAILS==//
-                        sendRudasaNotificationEmail(data);
+                        sendRudasaNotificationEmail(data, currTime);
                         sendSignupEmail(data.email, data.signUpReason);
 
 
@@ -597,8 +599,9 @@ export default async function handler(req, res)
     }
 
     //Sends the notification to Rudasa that a new person has signed up
-    async function sendRudasaNotificationEmail(data)
+    async function sendRudasaNotificationEmail(data, signUpTime)
     {
+        const fmtSignUpTime = signUpTime.replace('T', ' ');
         try
         {
             var mailOptions = {
@@ -606,7 +609,7 @@ export default async function handler(req, res)
                 to: process.env.RUDASA_NOTIFICATION_EMAIL,
                 subject: "New member signup",
                 text: `
-                    A new member signed up on the site!
+                    A new member signed up on the site at ${fmtSignUpTime}!
                     Name: ${data.firstName} ${data.surname}
                     Email: ${data.email}
                     Cell No.: ${data.cellNo}
@@ -687,7 +690,7 @@ export default async function handler(req, res)
                                     <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RUDASA Logo" />
                                 </a>
 
-                                <h1 style="text-align: center">A new member signed up on the site!</h1>
+                                <h1 style="text-align: center">A new member signed up on the site at <i>${fmtSignUpTime}</i>!</h1>
 
                                 <p>
                                     <b>Full name:</b><br />
