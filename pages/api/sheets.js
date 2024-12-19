@@ -297,7 +297,7 @@ export default async function handler(req, res)
                 bcrypt.genSalt(SALT_ROUNDS, async (err, salt) => {
                     bcrypt.hash((data.password + process.env.PEPPER), salt, async (err, passHash) => {
 
-                        const currTime = new Date().toISOString().split('.')[0];
+                        const currTime = new Date();
 
                         // The values that will be passed into each column in the new row
                         const newRowData = [
@@ -601,7 +601,7 @@ export default async function handler(req, res)
     //Sends the notification to Rudasa that a new person has signed up
     async function sendRudasaNotificationEmail(data, signUpTime)
     {
-        const fmtSignUpTime = signUpTime.replace('T', ' ');
+        const fmtSignUpTime = signUpTime.toISOString().split('.')[0].replace('T', ' ');
         try
         {
             var mailOptions = {
