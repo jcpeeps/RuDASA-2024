@@ -297,7 +297,7 @@ export default async function handler(req, res)
                 bcrypt.genSalt(SALT_ROUNDS, async (err, salt) => {
                     bcrypt.hash((data.password + process.env.PEPPER), salt, async (err, passHash) => {
 
-                        const currTime = new Date();
+                        const currTimeZA = new Date().toLocaleString("en-GB", { timeZone: "Africa/Johannesburg" });
 
                         // The values that will be passed into each column in the new row
                         const newRowData = [
@@ -338,7 +338,7 @@ export default async function handler(req, res)
                             data.privacyPolicy,
 
                             //Timestamp
-                            currTime
+                            currTimeZA
                         ];
 
                         //TODO: Handle error response
@@ -350,7 +350,7 @@ export default async function handler(req, res)
                         });
 
                         //==SEND NOTIFICATION + WELCOME EMAILS==//
-                        sendRudasaNotificationEmail(data, currTime);
+                        sendRudasaNotificationEmail(data, currTimeZA);
                         sendSignupEmail(data.email, data.signUpReason);
 
 
@@ -601,7 +601,6 @@ export default async function handler(req, res)
     //Sends the notification to Rudasa that a new person has signed up
     async function sendRudasaNotificationEmail(data, signUpTime)
     {
-        const fmtSignUpTime = signUpTime.toISOString().split('.')[0].replace('T', ' ');
         try
         {
             var mailOptions = {
@@ -609,7 +608,7 @@ export default async function handler(req, res)
                 to: process.env.RUDASA_NOTIFICATION_EMAIL,
                 subject: "New member signup",
                 text: `
-                    A new member signed up on the site at ${fmtSignUpTime}!
+                    A new member signed up on the site at ${signUpTime}!
                     Name: ${data.firstName} ${data.surname}
                     Email: ${data.email}
                     Cell No.: ${data.cellNo}
@@ -690,7 +689,7 @@ export default async function handler(req, res)
                                     <img src="https://rudasa.org.za/icons/logo.png" style="display: block; margin: auto; width: 200px" alt="RUDASA Logo" />
                                 </a>
 
-                                <h1 style="text-align: center">A new member signed up on the site at <i>${fmtSignUpTime}</i>!</h1>
+                                <h1 style="text-align: center">A new member signed up on the site at <i>${signUpTime}</i>!</h1>
 
                                 <p>
                                     <b>Full name:</b><br />
