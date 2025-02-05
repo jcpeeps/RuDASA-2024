@@ -42,7 +42,7 @@ We recomend that you join RuDASA as you will get the links to every session and 
 
 **Register for the On-Boarding Programme)**
 
-**However anyone can register for OnBoarding just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [Twitter](https://x.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
+**However anyone can register for OnBoarding just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [X](https://x.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
 Once registered you will be sent sent the Zoom link for the session. 
 If you do notwant to join RuDASA but do want the CPD points then there is a small fee 
 <form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
