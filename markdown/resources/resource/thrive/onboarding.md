@@ -6,11 +6,11 @@ section: '0'
 
 **Rural OnBoarding Annual programme late January to March: "Learn how to thrive, not just survive, in rural health!"**
 
-Welcome to RuDASA's  comprehensive online package for new clinicians joining rural health facilities in South Africa. COVID has transformed our training landscape and we are now able to offer an orientation program that can fit in with a clinician’s busy program, and still give them access to all the knowledge and resources they need to thrive in rural health care. Although focused on new clinicians we welcome any clinician keen to update their knowledge. 
+Welcome to RuDASA's  comprehensive online package for new clinicians joining rural health facilities in South Africa. We offer an orientation program that can fit in with a clinician’s busy program, and still give them access to all the knowledge and resources they need to thrive in rural health care. Although focused on new clinicians we welcome any clinician keen to update their knowledge. 
 
-A 8-week curriculum, structured into six broad categories, using a hybrid teaching methodology. Each Monday you will be sent the program for the coming week, including the links to the relevant zoom meetings; as well as links to relevant webinars, video tutorials, and related guidelines, protocols and tools useful to your daily work. These  can be studied at home at a time that suits you and clinicians can tailor their learning according to their needs. Clinicians are encouraged to attend the interactive Zoom sessions on Monday evenings (with additional sessions later in the week depending on facilitator availability). These will Introduce key mentors and experts that can provide ongoing support as the course progresses. We will cover FAQ and top tips on the materials you have received.
+A 8-week curriculum, structured into six broad categories, using a hybrid teaching methodology. Each Monday you will be sent the webinar advert for that week, via our RuDASA Buddies WhatsApp group, including the links to the relevant zoom meetings; as well as links to relevant webinars, video tutorials, and related guidelines, protocols and tools useful to your daily work. These  can be studied at home at a time that suits you and clinicians can tailor their learning according to their needs. Clinicians are encouraged to attend the interactive Zoom sessions. These will Introduce key mentors and experts that can provide ongoing support as the course progresses. We will cover FAQ and top tips on the materials you have received.
 
-Sessions are on a Monday or Tuesday at 18.00 using Zoom.
+Sessions are on a Tuesday or Wednesday at 18.00 using Zoom.
 
 **Overview**
 
@@ -38,12 +38,30 @@ We are receiving excellent feedback from our rural network of clinicians on usef
 **Get Started**
 **FREE for members of RuDASA, RuReSA, RuNurSA and PACASA**
 
-We recomend that you join RuDASA as you will get the links to every session and the additional resources via our Forum emails and Provincial Rural Buddy WhtsApp groups.  RuDASA is privileged to have a large network of clinicians passionate about rural health care.  One can easily feel isolated working in a small peripheral facility and yet there may be a clinician at the next hospital happy to give advice or support. Membership is free and gives access to a community of or rural health clinicians. [Sign Up for RuDASA](https://rudasa.org.za/signUp) Please click on the Our Values box on the Sign UP page and read both statements before submitting. 
+We recomend that you join RuDASA as you will get the links to every session and the additional resources via our Forum emails and Provincial Rural Buddy WhatsApp groups.  RuDASA is privileged to have a large network of clinicians passionate about rural health care.  One can easily feel isolated working in a small peripheral facility and yet there may be a clinician at the next hospital happy to give advice or support. Membership is free and gives access to a community of or rural health clinicians. [Sign Up for RuDASA](https://rudasa.org.za/signUp) Please click on the Our Values box on the Sign UP page and read both statements before submitting. 
 
 **Register for the On-Boarding Programme)**
 
-**However anyone can register for OnBoarding just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [Twitter](https://twitter.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
+**However anyone can register for OnBoarding just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [Twitter](https://x.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
 Once registered you will be sent sent the Zoom link for the session. 
+If you do notwant to join RuDASA but do want the CPD points then there is a small fee 
+<form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
+<input required type="hidden" name="cmd" value="_paynow">
+<input required type="hidden" name="receiver" pattern="[0-9]" value="10127539">
+<input type="hidden" name="return_url" value="https://rudasa.org.za/resources/thrive/onboarding">
+<input type="hidden" name="cancel_url" value="https://rudasa.org.za/resources/thrive/onboarding">
+<input type="hidden" name="notify_url" value="https://mailto:info@rudasa.org.za">
+<input required type="hidden" name="amount" value="50.00">
+<input required type="hidden" name="item_name" maxlength="255" value="OnBoarding">
+<input type="hidden" name="item_description" maxlength="255" value="OnBoarding fee For CPD points for non-members">
+<table>
+<tr>
+<td colspan=2 align=center>
+<input type="image" src="https://my.payfast.io/images/buttons/PayNow/Primary-Large-PayNow.png" alt="Pay Now" title="Pay Now with Payfast">
+</td>
+</tr>
+</table>
+</form>
 
 For more information on the programme content contact : 
 * Dr Madeleine Muller **mentor@rudasa.org.za**
