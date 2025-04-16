@@ -819,64 +819,7 @@ export default async function handler(req, res)
                 to: toEmail.trim(),
                 subject: "Welcome to RuDASA!",
                 text: `
-Welcome to RuDASA!
 
-We are thrilled that you have decided to join our mission of improving the health and well-being of rural communities.
-
-As a member of our organization, you will have access to a wealth of resources and information designed to aid you in all your rural health endeavours:
-    ∙ Access to the Google Group Forum which receives daily updates. This is our primary form of communication with members.
-      The RuDASA Forum’s Daily Digest is a group email system that comes through about 23.00 each day.
-      To access details on a topic, or get attachments, just click on the blue header to go to the Google Group webpage. 
-      You have to use your email and create a password to enter if you do not have a Google account.
-      To add to the topic choose "Reply All".
-      To post a new topic, email to: rudasa-forum@googlegroups.com
-      To access previous topics go to: https://groups.google.com/g/rudasa-forum .  You can then search the previous mails.
-
-      Not getting the Forum mail? 
-      Check your Junk/Spam mail and server settings to allow mail from:  rudasa-forum@googlegroups.com
-
-    ∙ Access to a provincial Whatsapp Group.
-      Join your Provincial Buddies WhatsApp Group here - only join 1 Province as this is how you share information about 
-      what is available in your province. If you are an international member choose any province.
-      If items are of interest to all Buddies the RuDASA Office will forward to all Buddies.
-
-      EC Buddies https://chat.whatsapp.com/DUOBoGcMjmt4sCQUulkDHs
-      FS Buddies https://chat.whatsapp.com/G4P4Fueui5IBaESVcz1sHK
-      GP Buddies https://chat.whatsapp.com/K76An8wjXkj4vlLJxamQDx
-      KZN Buddies https://chat.whatsapp.com/LR8jHTGcKdpC7dsNtSbUiM
-      LP Buddies https://chat.whatsapp.com/DlYiKdCtOcQEJ9WF3jqWsn
-      MP Buddies https://chat.whatsapp.com/Ep54jmADlWNAfLG51OYcCL
-      NC Buddies https://chat.whatsapp.com/LqgYskajrGlC4YIWOOmV59
-      NW Buddies https://chat.whatsapp.com/JT9aIk4UEOcAdaLyo5ZJTz
-      WC Buddies https://chat.whatsapp.com/LUKIXvJBy7GI0e4PxbaG45
-
-
-      Once you use the link we get a message to approve you joining the group. Please introduce yourself and say where you are 
-      working so that you can immediately link to others in the area. 
-      You are welcome to post questions and requests and any interesting information you have.
-
-    ∙ Access to the RuDASA Learning Portal [https://rudasa.org.za/portal], filled with useful content covering a wide range of health-related topics.
-    ${ signUpReason == "rhc" ?
-        `∙ As a registered Rural Health Club student you will be linked to our student reps and student-exclusive Facebook page.` : ""
-    }
-    ${ signUpReason == "onboarding" ?
-        `∙ We'll connect you to our Onboarding for Community Service via the Rural Buddy groups (programme runs from February to March).` : ""
-    }
-
-Thank you for your support and for being a part of our mission to support the health and vitality of rural communities. We look forward to working with you!
-
-Best,
-RuDASA Team
-
-
-Check out our socials:
-    > Facebook: https://www.facebook.com/ruraldoctors
-    > Twitter: https://twitter.com/doctors_rural
-    > Instagram: https://www.instagram.com/ruraldoctorssa
-
-As a requirement of the POPI Act we are informing you that your contact details will be on the social media groups. Occasionally we share your contact details with other RuDASA members, or in response to requests from our rural partners (RuReSA, RuNurSA, and PACASA) for a contact for a specific rural health issue. We will not give out contact details to people who are not part of these organisations without getting your permission first.
-
-For more assistance please contact the Office Co-ordinator at info@rudasa.org.za
                 `,
                 html: `
                 <!doctype html>
@@ -899,8 +842,34 @@ For more assistance please contact the Office Co-ordinator at info@rudasa.org.za
                             <p>
                                 As a member of our organization, you will have access to a wealth of resources and information designed to aid you in all your rural health endeavours:
                                 <ul style="padding: 0px; margin: 0px;">
-                                    <li> Access to the <i>Google Group Forum</i> which receives daily updates. This is our primary form of communication with members. </li>
-                                    <li> Access to a provincial Whatsapp Group. </li>
+                                    <li> Access to the <i>Google Group Forum</i> which receives daily updates. This is our primary form of communication with members.
+                                    The RuDASA Forum’s Daily Digest is a group email system that comes through about 23.00 each day.
+                                    To access details on a topic, or get attachments, just click on the blue header to go to the Google Group webpage. 
+                                    You have to use your email and create a password to enter if you do not have a Google account.
+                                    To add to the topic choose "Reply All".
+                                    To post a new topic, email to: rudasa-forum@googlegroups.com
+                                    To access previous topics go to: https://groups.google.com/g/rudasa-forum .  You can then search the previous mails.
+                              <p>
+                                    Not getting the Forum mail? 
+                                    Check your Junk/Spam mail and server settings to allow mail from:  rudasa-forum@googlegroups.com </li> <p>
+                                    <li> Access to a provincial Whatsapp Group.
+                                    Join your Provincial Buddies WhatsApp Group here - only join 1 Province as this is how you share information about 
+                                    what is available in your province. If you are an international member choose any province.
+                                    If items are of interest to all Buddies the RuDASA Office will forward to all Buddies.
+                               <p>
+                                    EC Buddies https://chat.whatsapp.com/DUOBoGcMjmt4sCQUulkDHs
+                                    FS Buddies https://chat.whatsapp.com/G4P4Fueui5IBaESVcz1sHK
+                                    GP Buddies https://chat.whatsapp.com/K76An8wjXkj4vlLJxamQDx
+                                    KZN Buddies https://chat.whatsapp.com/LR8jHTGcKdpC7dsNtSbUiM
+                                    LP Buddies https://chat.whatsapp.com/DlYiKdCtOcQEJ9WF3jqWsn
+                                    MP Buddies https://chat.whatsapp.com/Ep54jmADlWNAfLG51OYcCL
+                                    NC Buddies https://chat.whatsapp.com/LqgYskajrGlC4YIWOOmV59
+                                    NW Buddies https://chat.whatsapp.com/JT9aIk4UEOcAdaLyo5ZJTz
+                                    WC Buddies https://chat.whatsapp.com/LUKIXvJBy7GI0e4PxbaG45    
+                            <p>
+                                    Once you use the link we get a message to approve you joining the group. Please introduce yourself and say where you are 
+                                    working so that you can immediately link to others in the area. 
+                                    You are welcome to post questions and requests and any interesting information you have. </li><p>
                                     <li> Access to the RuDASA <a href="https://rudasa.org.za/portal">Learning Portal</a>, filled with useful content covering a wide range of health-related topics.</li>
                                     ${ signUpReason == "rhc" ?
                                         `<li> As a registered <i>Rural Health Club</i> student you will be linked to our student reps and student-exclusive Facebook page. </li>` : ""
