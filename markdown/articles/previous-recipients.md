@@ -16,7 +16,7 @@
 
 2015: [Dr Ndiviwe Mphothulo](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202015.pdf) Taung, Mpumalanga
 
-2014: Dr Jenny Nash Mseleni Hospital, northern KwaZulu-Natal
+2014: [Dr Jenny Nash](/pdfs/Doctor%20of%20the%20Year/Rural%20Doctor%20of%20the%20Year%20award%202014%20Jenny%20Nash%20.pdf Amatole District Team, Eastern Cape
 
 2013: [Dr ben Gaunt and Dr Taryn Gaunt](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202013.pdf) Zithulele Hostpital, Eastern Cape
 
