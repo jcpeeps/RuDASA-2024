@@ -28,7 +28,7 @@
 
 2009: [Dr JJ Ogole](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202009.pdf) Piet Retief Hospital, Mpumalanga
 
-2008: Dr Munyadziwa Kwinda Donald Fraser Hospital, Limpopo
+2008: [Dr Munyadziwa Kwinda]( Donald Fraser Hospital, Limpopo
 
 2007: [Dr Gert Marincowitz](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202007.pdf) Tzaneen, Limpopo
 
