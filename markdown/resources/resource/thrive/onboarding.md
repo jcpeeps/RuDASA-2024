@@ -39,12 +39,14 @@ We are receiving excellent feedback from our rural network of clinicians on usef
 **FREE for members of RuDASA, RuReSA, RuNurSA and PACASA**
 
 We recomend that you join RuDASA as you will get the links to every session and the additional resources via our Forum emails and Provincial Rural Buddy WhatsApp groups.  RuDASA is privileged to have a large network of clinicians passionate about rural health care.  One can easily feel isolated working in a small peripheral facility and yet there may be a clinician at the next hospital happy to give advice or support. Membership is free and gives access to a community of or rural health clinicians. [Sign Up for RuDASA](https://rudasa.org.za/signUp) Please click on the Our Values box on the Sign UP page and read both statements before submitting. 
+Once you have Signed Up you will get the links for each webinar via the Rural Buddies WhatsApp groups and the RuDASA Forum emails. You still have to register for each webinar so we can provide you with the CPD points.
 
-**Register for the On-Boarding Programme)**
+**Register for the On-Boarding Programme**
 
-**However anyone can register for OnBoarding just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [X](https://x.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
+**However anyone can join OnBoarding, without joining RuDASA, just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [X](https://x.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
 Once registered you will be sent sent the Zoom link for the session. 
-If you do notwant to join RuDASA but do want the CPD points then there is a small fee 
+
+If you do not want to join RuDASA but do want the CPD points then there is a small fee. Click on "Pay Now".
 <form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
 <input required type="hidden" name="cmd" value="_paynow">
 <input required type="hidden" name="receiver" pattern="[0-9]" value="10127539">
