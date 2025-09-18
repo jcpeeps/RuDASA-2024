@@ -1,3 +1,5 @@
+2024:[Dr Mark Blaylock] 
+
 2023: [Dr Bukiwe Spondo](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202023.pdf) Tafalofefe Distrcit Hospital, Eastern Cape
 
 2022: [Dr Craig Parker](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202022.pdf) Umoya, Eastern Cape
