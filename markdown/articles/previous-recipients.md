@@ -1,6 +1,6 @@
-2024:[Dr Mark Blaylock] 
+2024:[Dr Mark Blaylock] (public/pdfs/Doctor of the Year/Mark Blaylock Doctor of the Year 2025.pdf) Manguzi Hospital, KwaZulu-Natal
 
-2023: [Dr Bukiwe Spondo](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202023.pdf) Tafalofefe Distrcit Hospital, Eastern Cape
+2023: [Dr Bukiwe Spondo](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202023.pdf) Tafalofefe District Hospital, Eastern Cape
 
 2022: [Dr Craig Parker](/pdfs/Doctor%20of%20the%20Year/RuDASA%20Award%20winner%202022.pdf) Umoya, Eastern Cape
 
