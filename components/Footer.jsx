@@ -35,6 +35,29 @@ export default function Footer() {
 						<div className="bg-white rounded p-2 my-1 w-100"><a href="https://www.ruralhealthconference.org.za/" className="text-black text-decoration-none"><FontAwesomeIcon icon={faShareNodes}/> Rural Health Conference</a></div>
 						<div className="bg-white rounded p-2 p my-1 w-100"><a href="https://web.facebook.com/groups/121981078714?_rdc=2&_rdr" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> RuDASA Students Facebook</a></div>
 						<h5 className='text-white mt-4'>Donate to us here:</h5>
+						<form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
+<input required type="hidden" name="cmd" value="_paynow">
+<input required type="hidden" name="receiver" pattern="[0-9]" value="10127539">
+<input type="hidden" name="return_url" value="https://rudasa.org.za">
+<input type="hidden" name="cancel_url" value="https://rudasa.org.za">
+<input type="hidden" name="notify_url" value="https://rudasa.org.za/notify/mailto:info">
+<table>
+<tr>
+<td><label id="PayFastAmountLabel" for="PayFastAmount">Amount: </label></td>
+<td><input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="100.00"></td>
+</tr>
+</table>
+
+<input required type="hidden" name="item_name" maxlength="255" value="Donate to RuDASA">
+<input type="hidden" name="item_description" maxlength="255" value="You can donate any amount">
+<table>
+<tr>
+<td colspan=2 align=center>
+<input type="image" src="https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png" alt="Donate Now" title="Donate Now with Payfast">
+</td>
+</tr>
+</table>
+</form>
 						<div className="btn btn-primary rounded p-2 p my-1 w-100"><a href="https://www.payfast.co.za/donate/go/ruraldoctorsassociationofsouthernafrica" className="text-white text-decoration-none" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faHandHoldingHeart} className="pe-2"/>Lend a hand</a></div>
 					</div>
 				</div>
