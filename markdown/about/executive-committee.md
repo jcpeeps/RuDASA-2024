@@ -10,36 +10,36 @@ members:
     {
       role: "Vice Chair",
       title: "Dr.",
-      name: ,
+      name: "Nhlakanipho Gumede",
       email: "vicechair@rudasa.org.za",
     },
     {
       role: "Treasurer",
       title: "Dr.",
-      name: "Nhlakanipho Gumede",
+      name: ,
       email: "treasurer@rudasa.org.za",
     },
     {
       role: "Secretary",
       title: "Dr.",
-      name: "John D Lotz",
+      name: ,
       email: "secretary@rudasa.org.za",
     },
         {
       role: "Past Chairperson",
       title: "Dr.",
-      name: "Lungi Hobe",
-      email: "chair@rudasa.org.za",
+      name: "Lungi Hobe-Nxumalo",
+      email: "pastchair@rudasa.org.za",
     },
     {
       role: "Rural Health Conference",
       title: "Dr.",
-      name: ,
+      name: "Nhlakanipho Gumede",
       email: "info@ruralhealthconference.org.za",
     },
     {
       role: "RHAP",
-      title: "Dr.",
+      title: "Mr",
       name: "Russell van Rensburg",
       email: "info@rhap.org.za",
     },
@@ -52,7 +52,7 @@ members:
     {
       role: "Young Professionals",
       title: "Dr.",
-      name: "Thapelo Molotsi and Caroline Gwangwa",
+      name: ,
       email: "youngprofessionals@rudasa.org.za",
     },
     {
