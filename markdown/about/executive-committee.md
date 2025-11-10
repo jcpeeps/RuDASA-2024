@@ -52,7 +52,7 @@ members:
     {
       role: "Young Professionals",
       title: "Dr.",
-      name: ,
+      name:"Mxolisi Xulu" ,
       email: "youngprofessionals@rudasa.org.za",
     },
     {
