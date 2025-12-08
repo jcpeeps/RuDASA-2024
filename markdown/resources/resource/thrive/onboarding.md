@@ -45,10 +45,9 @@ Once you have Signed Up you will get the links for each webinar via the Rural Bu
 
 **However anyone can join OnBoarding, without joining RuDASA, just by following us on** [Facebook](https://web.facebook.com/ruraldoctors) or [X](https://x.com/doctors_rural) and looking out for the advertsied sessions. Click on the link on the advert to register.
 Once registered you will be sent sent the Zoom link for the session. 
+NOTE: CPD points will only be offered to members
 
-If you do not want to join RuDASA but do want the CPD points then there is a small fee. Click on "Pay Now".
-<form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
-<input required type="hidden" name="cmd" value="_paynow">
+
 <input required type="hidden" name="receiver" pattern="[0-9]" value="10127539">
 <input type="hidden" name="return_url" value="https://rudasa.org.za/resources/thrive/onboarding">
 <input type="hidden" name="cancel_url" value="https://rudasa.org.za/resources/thrive/onboarding">
