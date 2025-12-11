@@ -875,7 +875,7 @@ export default async function handler(req, res)
                                         `<li> As a registered <i>Rural Health Club</i> student you will be linked to our student reps and student-exclusive Facebook page. </li>` : ""
                                     }
                                     ${ signUpReason == "onboarding" ?
-                                        `<li> We'll connect you to our <i>Onboarding for Community Service</i> social media groups (programme runs from January to March). </li>` : ""
+                                        `<li> We'll connect you to our <i>Onboarding for Community Service</i> social media groups (programme runs from January to March). Previous webinars are available on RuDASA's YouTube account @ruraldoctorssa</li>` : ""
                                     }
                                 </ul>
                             </p>
