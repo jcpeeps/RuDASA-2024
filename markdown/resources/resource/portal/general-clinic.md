@@ -36,11 +36,11 @@ section: '0'
 
 * Medicine information centre (used to be known as the HIV hotline) – great page for resources and a hotline for queries of any kind. [Medicine Information centre](http://www.mic.uct.ac.za/)
 
-* [SA HIV/TB Hotline App] (https://play.google.com/store/apps/details?id=com.mk.uct.aviromic&hl=en&pli=1)
+* [SA HIV/TB Hotline App](https://play.google.com/store/apps/details?id=com.mk.uct.aviromic&hl=en&pli=1)
 
 * [Medscape Drug Interaction Checker](https://reference.medscape.com/drug-interactionchecker)
 
-* [Hospice Palliative Care Association for SA Guidelines] (https://apcc.org.za/wp-content/uploads/2020/04/HPCA_Clinical_guidelines_2012-1.pdf)
+* [Hospice Palliative Care Association for SA Guidelines](https://apcc.org.za/wp-content/uploads/2020/04/HPCA_Clinical_guidelines_2012-1.pdf)
 
 * [Speakeasy Xhosa](https://learn.speakeasyxhosa.co.za)moodle based online platform with
 400 phrases relevant for the primary care South Africa
