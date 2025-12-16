@@ -31,6 +31,8 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [WHO Paediatric emergency triage, assessment and treatment Care of critically ill children](https://apps.who.int/iris/bitstream/handle/10665/204463/9789241510219_eng.pdf)
 
+* See the Infectious Diseases and Emergency Medicine Resource Packs for paeds related guidelines and tools
+
 ## Reading material / Tutorials / Webinars / Additional resources
 
 * Limpopo Initiative for Newborn care: [Essential Newborn Care package](http://www.lincare.co.za/?page_id=1207) Includes Newborn Care charts, ENC quality improvement kit, and a full MSSN course (Management of Sick and Small newborns). [LINC Newborn care videos](https://www.youtube.com/@limpopoinitiativefornewbor511/featured)
@@ -43,11 +45,15 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Breast Feeding tutorial health care workers Global Health Media](https://globalhealthmedia.org/videos/the-breastfeeding-method/)
 
-* [Identifying serious bacterial infections in young infants Dr Lizelle Keet - DCST Paediatrician Webinar 22](https://youtu.be/jfrWM_U89fQ)
+* [RO2022 Identifying serious bacterial infections in young infants Dr Lizelle Keet - DCST Paediatrician](https://youtu.be/jfrWM_U89fQ)
 
-* [The structured approach to the seriously ill child, including tips for safe transfer Dr Tintswalo Motimele](https://youtu.be/Yl7eht7d3uI)
+* [RO2022 The structured approach to the seriously ill child, including tips for safe transfer Dr Tintswalo Motimele](https://youtu.be/Yl7eht7d3uI)
 
-* [Revisiting fluid management in children with acute diarrhoea - a rural review Dr Lotz](https://www.youtube.com/watch?v=F_YGxnIlLog)
+* [RO2023 Revisiting fluid management in children with acute diarrhoea - a rural review Dr Lotz](https://www.youtube.com/watch?v=F_YGxnIlLog)
+
+* [RO2025 Childhood TB in rural settings - what you ACTUALLY need to know. Dr Juli Switala](Childhood TB in rural settings - what you ACTUALLY need to know. Dr Juli Switala)
+
+* [Management of TB in children and adolecents Guideline](https://knowledgehub.health.gov.za/elibrary/management-tuberculosis-children-and-adolescents)
 
 * [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series about how to perform procedures with supplies commonly found in resource-limited settings.
 
@@ -65,7 +71,9 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
 
-* [Nationl Asthma Treatmetn Programme](https://www.asthmasa.org)
+* [Nationl Asthma Treatment Programme](https://www.asthmasa.org)
+
+* [WHO Emergency Triage Assessment and Treatment(ETAT) Participants Manual](https://iris.who.int/server/api/core/bitstreams/defcbf2b-9d70-4610-b5a3-dd6d46301994/content)
 
 * [Intraosseous_Needle_Placement In resource limited setting](https://sugarprep.org/videos/#Intraosseous_Needle_Placement)
 
