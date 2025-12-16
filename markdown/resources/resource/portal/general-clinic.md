@@ -7,11 +7,17 @@ section: '0'
 
 ## Key Guidelines
 
+*[DoH Knowledge Hub](https://knowledgehub.health.gov.za/e-library) for all guidelines and training webinars
+
 * Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and add all the guidelines that you want to be able to access off line – internet can be fickle! This includes your all your EMLs as well as ART guidelines etc.
 
-* A great resource is the Zithulele handbook – curated yearly! Free to download (with some other great resources) – this is worthwhile to having access to
+* A great resource is the [Zithulele Rural Doctors Handbook](https://www.ruraldoc.info) Free to download (with some other great resources) – this is worthwhile to having access to
+
+* [Adult Primary Health Care Pack Clinical Tool 2023](Adult Primary Care (APC) Clinical Tool (2023))
 
 * PHC EML 2020 [Knowledgehub-Primary Health](https://knowledgehub.health.gov.za/elibrary/primary-healthcare-phc-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
+
+*[DOH Standard Treatment Guidleines](https://www.health.gov.za/nhi-edp-stgs-eml/)access to all levels for adults and paeds
 
 * Adults hospital STG and EML 2019: [Knowledgehub-Adults Hospital](https://knowledgehub.health.gov.za/elibrary/hospital-level-adults-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
 
@@ -19,13 +25,25 @@ section: '0'
 
 * APC (adult primary care guide) 2019/2020 is a great primary care resource often useful in a outpatient setting. Download the ebook version – where you can click on page / tab numbers for quick access. Great for quick reminders on e.g. STI syndromic treatments - [Knowledgehub-Adult Primary Care](https://knowledgehub.health.gov.za/elibrary/adult-primary-care-apc-guide-20192020-updated)
 
-* IMCI is the child version of the APC. If you are not confident on managing the ill child in primary care – this is a great resource. [Knowledgehub-IMCI](https://knowledgehub.health.gov.za/elibrary/integrated-management-childhood-illness-imci-2019-updated)
+* IMCI[Integrated Management of Childhood Illness 2022] is the child version of the APC. If you are not confident on managing the ill child in primary care – this is a great resource. (https://knowledgehub.health.gov.za/elibrary/integrated-management-childhood-illness-2022)
 
 * Calculate by QxMD - a great collection of tools for all your calculations including eGFR, QT intervals, BMI, scores of every kind, DAS28, etc. etc. [QxMD Calculate](https://qxmd.com/calculate/) There is also an app.
-  * VULA app: an app to refer and discuss cases and is being used by more and more consultants and hospitals. Vula&#39;s team is dedicated to improving communication challenges, especially in the public health sector, see the feature on Carte Blanche [Watch Here](https://youtu.be/YI7-1N6qPnM)
+
+* [MD Calc App](https://www.mdcalc.com)
+  
+  * [VULA app](https://www.vulamedical.com/features): an app to refer and discuss cases and is being used by more and more consultants and hospitals. Vula&#39;s team is dedicated to improving communication challenges, especially in the public health sector, see the feature on Carte Blanche [Watch Here](https://youtu.be/YI7-1N6qPnM)
   * If you would like your department to use Vula just complete the form on this page: [Vula Form](https://bit.ly/3s3WqYT)
 
 * Medicine information centre (used to be known as the HIV hotline) – great page for resources and a hotline for queries of any kind. [Medicine Information centre](http://www.mic.uct.ac.za/)
+
+* [SA HIV/TB Hotline App] (https://play.google.com/store/apps/details?id=com.mk.uct.aviromic&hl=en&pli=1)
+
+* [Medscape Drug Interaction Checker](https://reference.medscape.com/drug-interactionchecker)
+
+* [Hospice Palliative Care Association for SA Guidelines] (https://apcc.org.za/wp-content/uploads/2020/04/HPCA_Clinical_guidelines_2012-1.pdf)
+
+* [Speakeasy Xhosa](https://learn.speakeasyxhosa.co.za)moodle based online platform with
+400 phrases relevant for the primary care South Africa
 
 Here is [RuDASA Library General Resource Pack](https://drive.google.com/drive/u/0/folders/1srnPoOjfkWm7UFMTxTL-PyRhEF93oAC-)
 
