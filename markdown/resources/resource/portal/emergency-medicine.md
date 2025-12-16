@@ -31,15 +31,19 @@ section: '5'
 
 [Fundamentals of Emergency Care 2016 (Emergency Medicine Cape Town)](https://www.emct.info/uploads/1/4/1/7/14175478/fec_manual_contents.pdf) For all your posters / algorithms: The Resuscitation council of South Africa make them available for free (but you have to go and fetch). Or you can [download and print here](https://resus.co.za/subpages/RCSA_Information/Resources/Algorithms.html)
 
-[SATS Triage manual](https://emssa.org.za/special-interest-groups/the-south-african-triage-scale-sats/)
+[SATS South African Triage Scale manual](https://emssa.org.za/special-interest-groups/the-south-african-triage-scale-sats/)
 
 [EMSSA practice guidelines](https://emssa.org.za/practice-guidelines/)
 
 [Primary management of burn injuries](https://safpj.co.za/index.php/safpj/article/view/5202/6319)
 
+[Basics of Burn Care](https://basicsofburncare.org)
+
 [Life in the fast lane: Hypothermia associated toxidromes](https://litfl.com/hyperthermia-associated-toxidromes/)
 
 [African Snakebite Institute APP](https://www.africansnakebiteinstitute.com/app/)
+
+[A Guide to the Management of Common Medical Emergencies in Adults 13th Edition, 2023](https://mdinc.co.za/store/products/books/a-guide-to-the-management-of-common-medical-emergencies-in-adults-13th-edition-2023/)
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
@@ -61,7 +65,7 @@ section: '5'
 
 * [Life in the fast Lane](https://litfl.com/library/), Includes great resources on ECG interpretation and ultrasound, acid base interpretation etc.
 
-* AEIM does a paid crash course on emergency ultrasound – dates coming up in March 2022 in Johannesburg and Potchefstroom, [Check that out Here (Broken Link)](https://www.aiem.co.za/product/ultrasound-crash-course/)
+* AEIM does a paid crash course on emergency ultrasound [Check that out Here (Broken Link)](https://www.aiem.co.za/product/ultrasound-crash-course/)
 
 * [POCUS point of care ultrasound certification](https://www.pocus.org/corp-point-of-care-ultrasound-fundamentals-certificate/)
 
@@ -69,7 +73,7 @@ section: '5'
 
 * [EMGuidance App Google Play](https://play.google.com/store/apps/details?id=emguidance.tompsa&hl=en&gl=US) [EMGuidance App ITunes](https://apps.apple.com/za/app/emguidance-medicines-info/id789625087)
 
-Here is [RuDASA Library EMS Folder (Broken Link)](https://drive.google.com/drive/u/0/folders/1sqO8sCHppFVDnbGvqLiLi1MOK6lgY7zS)
+Here is [RuDASA Library EMS Folder](https://drive.google.com/drive/folders/1Hk6fHM9wjqDogs9gCToCn72vn1CJgALK)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
