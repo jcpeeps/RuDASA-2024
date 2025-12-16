@@ -17,7 +17,7 @@ section: '0'
 
 * PHC EML 2020 [Knowledgehub-Primary Health](https://knowledgehub.health.gov.za/elibrary/primary-healthcare-phc-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
 
-*[DOH Standard Treatment Guidleines](https://www.health.gov.za/nhi-edp-stgs-eml/)access to all levels for adults and paeds
+*[DOH Standard Treatment Guidleines](https://www.health.gov.za/nhi-edp-stgs-eml/) access to all levels for adults and paeds
 
 * Adults hospital STG and EML 2019: [Knowledgehub-Adults Hospital](https://knowledgehub.health.gov.za/elibrary/hospital-level-adults-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
 
@@ -31,7 +31,7 @@ section: '0'
 
 * [MD Calc App](https://www.mdcalc.com)
   
-  * [VULA app](https://www.vulamedical.com/features): an app to refer and discuss cases and is being used by more and more consultants and hospitals. Vula&#39;s team is dedicated to improving communication challenges, especially in the public health sector, see the feature on Carte Blanche [Watch Here](https://youtu.be/YI7-1N6qPnM)
+* [VULA app](https://www.vulamedical.com/features): an app to refer and discuss cases and is being used by more and more consultants and hospitals. Vula&#39;s team is dedicated to improving communication challenges, especially in the public health sector, see the feature on Carte Blanche [Watch Here](https://youtu.be/YI7-1N6qPnM)
   * If you would like your department to use Vula just complete the form on this page: [Vula Form](https://bit.ly/3s3WqYT)
 
 * Medicine information centre (used to be known as the HIV hotline) – great page for resources and a hotline for queries of any kind. [Medicine Information centre](http://www.mic.uct.ac.za/)
