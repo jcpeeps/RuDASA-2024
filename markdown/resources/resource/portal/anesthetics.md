@@ -7,7 +7,7 @@ section: '6'
 
 ## TOP Anaesthetic Work Based Activities to focus on this week. How confident are you in
 
-* Conscious sedation
+* Procedural sedation
 * ESMOE spinal
 * Preparing your spinal station.
 * Checking machines  
@@ -20,12 +20,15 @@ section: '6'
 * RO2022 An approach to District Anaesthesia; SAFE and SIMPLE. Prof David Bishop Rural Onboarding webinar. [Watch Here](https://youtu.be/Zt8yGgegzHQ)  
 * Suggested guideline in the South African context: [Management of a High Spinal Anaesthesia in Obstetrics](https://www.sajaa.co.za/index.php/sajaa/article/view/1791)
 * RO2023 [Things that go wrong in Anaesthesia & how to avoid them. Prof Dave Bishop](https://youtu.be/6ZwJxZjSlio?si=5C1de73MWtu1G-jQ)
+* RO2024 [Conscious Sedation Techniques for District Hospitals. Dr Hans Hendricks](https://www.youtube.com/watch?v=VmdlYEZBPO8)
 * [Anaesthesia for ruptured ectopic pregnancy at district level.](https://safpj.co.za/index.php/safpj/article/view/5304) SAFP 2021, DG Bishop and SPDP le Roux. A simple approach to the anaesthesia for unstable patients requiring laparotomy for ruptured ectopic pregnancy.
 * Patient sedation and analgesia Dr Joyce Gibson, Anaesthetist Frere hospital. Dr Joyce Gibson takes us through the paces of safe patient sedation and analgesia. [Watch a video on it!](https://youtu.be/kZskjzS35bk)
 * Safe Anaesthetics and Safe Sedation. Zithulele hospital. A [great PowerPoint presentation](http://www.zithulele.org/uploads/4/1/4/2/4142372/rural_sedation___anaesthetics_2021.pdf) on safe anaesthetics in a rural district hospital.
 * Obstetric spinal anaesthesia. Dr Le Roux. A [practical zoom webinar](https://youtu.be/YOlv9xBY5j0) on spinal anaesthesia in your obstetric patients.
+* [Tranexamic acid at cesarean delivery: drug‐error deaths. Moran et al](https://pmc.ncbi.nlm.nih.gov/articles/PMC10092362/)
 * Opioid-Free Anaesthesia. A paradigm shift. SAFP , PC Anamourlis. A [thought provoking 2019 article](https://safpj.co.za/index.php/safpj/article/view/4993/5900) in the SAFP regarding use of opoids.
 * [Troubleshooting Obstetric Spinal anaesthesia at a district hospital](https://www.researchgate.net/publication/362393961_Troubleshooting_obstetric_spinal_anaesthesia_at_district_hospital_level)
+* [SASA Guidelines for the safe use of procedural sedation 2020-2025)[https://www.sada.co.za/sites/default/files/content-files/Clinical%20Information%20%26%20Articles%20of%20Interest/SASA%20adult%20sedation%20guidelines.pdf]
 * [Propofology Anaesthetics video tutorials](https://www.propofology.com/tutorial-list.html) on Propofology, a UK based, UK based, international project created out of the desire to advance the role of the FOAMed (Free Open Access to Medical Education) to everyone involved in anaesthesia, critical care and pain medicine.
 * Ever wondered what to have in your obstetric spinal tray? [Find out here!](https://youtu.be/mAorYKBv500)
 * [The Anaethetist behind the mask](https://www.youtube.com/watch?v=Og2zkdFM2nU)
