@@ -18,7 +18,9 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 * Ideal Clinic South Africa monitoring programme [website](https://www.idealhealthfacility.org.za)
 
-* Handbook for District Clinical Specialist Teams [DCST (Broken Link)](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-07/Handbook%2520for%2520DCSTs%25202014.pdf)
+* [Ideal Hospital Realisation and Maintenance Framework Manual 2022](https://knowledgehub.health.gov.za/elibrary/ideal-hospital-realisation-and-maintenance-framework-manual-july-2022)
+
+* [Handbook for District Clinical Specialist Teams] (https://knowledgehub.health.gov.za/elibrary/handbook-district-clinical-specialist-teams-dcst)
 
 ### Medico-Legal Resources
 
@@ -30,7 +32,37 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 * A Guide for completing the Death Notification Form (DNF) – BI-1663. Pieterse et al. [DNF](https://www.samrc.ac.za/sites/default/files/files/2017-07-03/codcapril09.pdf)
 
-* RO2023 Medico Legal Resource Pack Includes a series of excellent articles in SAFPJ that covers varies aspects of filling in the J88, drunken driving and sexual assault [RuDASA Library](https://drive.google.com/drive/u/1/folders/1NseulsA6vVh4ZhsHoYME5vPVyG3eZJv1)
+* [WHO Towards eliminating avoidable harm in health care 2022](https://knowledgehub.health.gov.za/elibrary/towards-eliminating-avoidable-harm-health-care)
+
+* [National Guideline to Manage Complaints, Compliments and Suggestions in the Health Sector of South Africa - 2022] (https://knowledgehub.health.gov.za/elibrary/national-guideline-manage-complaints-compliments-and-suggestions-health-sector-south)
+
+* [National Guideline for Patient Safety Incident Reporting and Learning in the Health Sector of South Africa - 2022] (https://knowledgehub.health.gov.za/elibrary/national-guideline-patient-safety-incident-reporting-and-learning-health-sector-south)
+
+* [Capacity Building on Reporting of cases of child abuse and Part B of the National Child Protection Register](Capacity Building on Reporting of cases of child abuse and Part B of the National Child Protection Register)
+
+* [The South African Journal of Bioethics and law](https://samajournals.co.za/index.php/sajbl/index)
+
+* RuDASA's Medico Legal Resource Pack Includes a series of excellent articles in SAFPJ that covers varies aspects of filling in the J88, drunken driving,sexual assault, consent [RuDASA Library](https://drive.google.com/drive/u/1/folders/1NseulsA6vVh4ZhsHoYME5vPVyG3eZJv1)
+
+
+### Research resources
+* [RO2024 Research in a rural district setting. Dr Victor Adeniyi](https://www.youtube.com/watch?v=GpL7Gz9KwaE)
+
+* [Guidelines for the Provincial Health Research Committees (PHRCs)](https://knowledgehub.health.gov.za/elibrary/guidelines-provincial-health-research-committees-phrcs)
+
+* [2022 National Health Research Summit Report]9https://knowledgehub.health.gov.za/elibrary/2022-national-health-research-summit-report)
+
+### Policy/SOPS/Plans
+* [Section 21 Alert List](https://knowledgehub.health.gov.za/elibrary/section-21-alert-list)
+
+* [Affordable Medicines Circulars 2022 - 2025] (https://knowledgehub.health.gov.za/elibrary/affordable-medicines-circulars-2022-2025)
+
+* [DIFFERENTIATED MODELS OF CARE STANDARD OPERATING PROCEDURES](https://knowledgehub.health.gov.za/system/files/elibdownloads/2023-06/WEB%20VERSION_South%20African%20National%20Differentiated%20Models%20of%20Care%20SOPs%202023_FINAL07062023.pdf)
+
+* [The National Strategic Plan for HIV, TB, and STIs 2023-2028](https://knowledgehub.health.gov.za/elibrary/national-strategic-plan-hiv-tb-and-stis-2023-2028)
+
+* [Climate change and health 2025 webinar](https://knowledgehub.health.gov.za/webinar/climate-change-and-health-0)
+
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
