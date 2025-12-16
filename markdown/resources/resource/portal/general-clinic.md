@@ -9,7 +9,7 @@ section: '0'
 
 *[DoH Knowledge Hub](https://knowledgehub.health.gov.za/e-library) for all guidelines and training webinars
 
-* Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and add all the guidelines that you want to be able to access off line – internet can be fickle! This includes your all your EMLs as well as ART guidelines etc.
+*Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and add all the guidelines that you want to be able to access off line – internet can be fickle! This includes your all your EMLs as well as ART guidelines etc.
 
 * A great resource is the [Zithulele Rural Doctors Handbook](https://www.ruraldoc.info) Free to download (with some other great resources) – this is worthwhile to having access to
 
@@ -25,7 +25,7 @@ section: '0'
 
 * APC (adult primary care guide) 2019/2020 is a great primary care resource often useful in a outpatient setting. Download the ebook version – where you can click on page / tab numbers for quick access. Great for quick reminders on e.g. STI syndromic treatments - [Knowledgehub-Adult Primary Care](https://knowledgehub.health.gov.za/elibrary/adult-primary-care-apc-guide-20192020-updated)
 
-* IMCI[Integrated Management of Childhood Illness 2022] is the child version of the APC. If you are not confident on managing the ill child in primary care – this is a great resource. (https://knowledgehub.health.gov.za/elibrary/integrated-management-childhood-illness-2022)
+* IMCI[Integrated Management of Childhood Illness 2022](https://knowledgehub.health.gov.za/elibrary/integrated-management-childhood-illness-2022) is the child version of the APC. If you are not confident on managing the ill child in primary care – this is a great resource. 
 
 * Calculate by QxMD - a great collection of tools for all your calculations including eGFR, QT intervals, BMI, scores of every kind, DAS28, etc. etc. [QxMD Calculate](https://qxmd.com/calculate/) There is also an app.
 
