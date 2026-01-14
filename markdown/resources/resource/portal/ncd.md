@@ -32,8 +32,6 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
   * [2020 Heart Failure Society of South Africa perspective on the 2016 European Society of Cardiology Chronic Heart Failure Guidelines](http://www.samj.org.za/index.php/samj/article/view/13057/9549)
  
   * [National User Guide on HT for Primary care](https://knowledgehub.health.gov.za/elibrary/national-user-guide-prevention-and-treatment-hypertension-adults-primary-health-care-level)
-  
-  * [Heart Failure Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=1Y38nGT6nRY)
 
 * **Hypertension**
   * [South African Hypertension Society commentary on the American College of Cardiology/American Heart Association hypertension guidelines](https://www.hypertension.org.za/uploads/files/SAHS-CVJ-Comments-American-Hypertension-Association-guidelines-2019.pdf)
@@ -55,29 +53,13 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
  
   * [ANAPHYLAXIS ACTION PLAN](https://www.allergyfoundation.co.za/wp-content/uploads/2016/10/27-anaphylaxis-action-plan.pdf) for patients
  
-  *Webinars*
-
-  * [Asthma Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=My2F3PHDZwQ)
- 
-  * [Rural Health webinar - Effective Asthma Control. Prof Mike Levin](https://www.youtube.com/watch?v=vzbD54GHSVQ)
- 
-  * [Asthma In Primary Care PART 1 Dr Staats WSU FAM MED TUTORIAL](https://www.youtube.com/watch?v=BsTsySO3Uo4)
-
 * **COPD**
   * [GLOBAL STRATEGY FOR PREVENTION, DIAGNOSIS AND MANAGEMENT OF COPD: 2025 Report](https://goldcopd.org/2025-gold-report/)
   
   * [Management of chronic obstructive pulmonary disease 2019 update Mohamed Sabeer Abdool-Gaffar](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf) A position statement of the South African Thoracic Society
   
-  * [COPD Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISywz5CLQXgqMbyiJzR-6z-6F) 
-  
 * **Diabetes**
-  * [SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf)
-
-  * [WSU Family Medicine CMH tutorials: Insulin optimization in T2DM Dr Kabengele Kayembe](https://youtu.be/BsTsySO3Uo4)
-
-  * [T2DM Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=C9K5gVLdHrQ)
- 
-  * [T2DM & Insulin webinar series Dr K Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISyz0CXaxPGgLxd45G-mgdkmO)
+  * [SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf
  
   * [Chapter 11: The approach to achieving glycaemic control](https://safpj.co.za/index.php/safpj/article/view/4851/5755) A useful article in SAAFP
 
@@ -86,12 +68,6 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 
 * **Dyslipidemia**
   * [South African dyslipidaemia guideline consensus statement](http://www.samj.org.za/index.php/samj/article/view/12479/8686)
- 
-  * [FUNDA Friday:Assessing CVS risk and management dislipidemia. Dr Madeleine Muller](https://www.youtube.com/playlist?list=PLaMWnazLISyx7CsJscKKoQWvnHHgFFLMC)
-
-  * [Dyslipidemia Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=WMsRscfTwnw&feature=youtu.be)
-  
-  * [Dyslipidemia - Advanced Management Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISyy3z4TwJI-GCAyAxkutYfY9)
 
 * **Stroke**
   * [South African guideline for Stroke SAMJ](http://www.samj.org.za/index.php/samj/article/view/4422/3005)
@@ -99,7 +75,7 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 * **Chronic Kidney Disease**
   * [CKD evaluation and management](https://kdigo.org/guidelines/ckd-evaluation-and-management/)
 
-## Reading material / Tutorials / Webinars / Additional resources
+## Webinars 
 
 * [RO2022 Webinar: Internal Medicine Emergencies Prof A Parrish](https://youtu.be/HB6BAmTDink)
 
@@ -107,9 +83,35 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 
 * [RO2023 Cardiac Arrhythmia Part 2 Brady Arrhythmia Dr Adeneyi](https://www.youtube.com/watch?v=1uP2_mKo6Ok)
 
+* [Heart Failure Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=1Y38nGT6nRY)
+
 * [RO2024 Internal Medicine: Clinical Care Tips for 2024. Prof Parrish](https://www.youtube.com/watch?v=lTDKRawlpVY)
   
-* [RAMP2025 How to manage astham when resources are tight. Dr Naidoo](https://www.youtube.com/watch?v=I1WyHDPeKZ0&t=13s)
+* [RAMP2023 Effective Asthma Control. Prof Mike Levin](https://www.youtube.com/watch?v=vzbD54GHSVQ)
+
+* [RAMP2025 How to manage asthma when resources are tight. Dr Naidoo](https://www.youtube.com/watch?v=I1WyHDPeKZ0&t=13s)
+
+* [Asthma Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=My2F3PHDZwQ)
+ 
+* [Asthma In Primary Care PART 1 Dr Staats WSU FAM MED TUTORIAL](https://www.youtube.com/watch?v=BsTsySO3Uo4)
+
+* [WSU Life in the slow lane: Asthma in Primary Care Dr Staats](https://youtu.be/BsTsySO3Uo4)
+
+* [COPD Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISywz5CLQXgqMbyiJzR-6z-6F)
+
+* [WSU Family Medicine CMH tutorials: Insulin optimization in T2DM Dr Kabengele Kayembe](https://youtu.be/BsTsySO3Uo4)
+
+* [T2DM Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=C9K5gVLdHrQ)
+
+* [T2DM & Insulin webinar series Dr K Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISyz0CXaxPGgLxd45G-mgdkmO)
+
+* [FUNDA Friday:Assessing CVS risk and management dislipidemia. Dr Madeleine Muller](https://www.youtube.com/playlist?list=PLaMWnazLISyx7CsJscKKoQWvnHHgFFLMC)
+
+* [Dyslipidemia Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=WMsRscfTwnw&feature=youtu.be)
+  
+* [Dyslipidemia - Advanced Management Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISyy3z4TwJI-GCAyAxkutYfY9)
+
+* [CMH FM Gout et al Case Series](https://www.youtube.com/playlist?list=PLaMWnazLISyzxayOgon3RDsX8iS1l3L9X)
 
 * [The BAMSI collaborative with Prof Parrish & Dave Stead’s team from the Eastern Cape](https://medeval.co.za/lp-profile/) Excellent set of webinars targeting doctors in rural facilities in BCM and Amathole district:
 
@@ -117,20 +119,21 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
   * [Part 1](https://youtu.be/DCONVqcY4ZY)
   * [Part 2](https://youtu.be/27uQWafWf4Y)
 
-* [WSU Life in the slow lane: Asthma in Primary Care Dr Staats](https://youtu.be/BsTsySO3Uo4)
-
 * [WSU Family Medicine CMH Tutorials on YouTube](https://youtube.com/playlist?list=PLaMWnazLISyxXMkVQCNwdWQLvAuSmNYL3) Short tutorials covering everything you need to know about diagnosing, prescribing and monitoring.
+
+* [15 minute exercise video](https://www.youtube.com/watch?v=C_rKOIJTB6A&feature=youtu.be)
+
+* [CMH Family Medicine Prevention and Lifestyle Tutorials](https://www.youtube.com/playlist?list=PLaMWnazLISyynDnXSyADZFa8LfsWTHc4h)
+
+
+## Additional resources
 
 * [Guidelines for the diagnosis and treatment of acute and chronic heart failure](http://www.hefssa.org/images/uploads/2016_ESC_Guidelines_for_the_diagnosis_and_treatment_of_acute_and_chronic_heart_failure.pdf)
 
 * [International Society of Hypertension Global Hypertension Practice Guidelines](https://www.ahajournals.org/doi/epub/10.1161/HYPERTENSIONAHA.120.15026) Good for background reading but thresholds for treatment as per the South African guideline.
 
-* [Cardiac Arrhythmia Part 1 Tachy arrhythmia Dr Adeniyi](https://www.youtube.com/watch?v=2TejX0EQkvA) [Part 2](https://www.youtube.com/watch?v=1uP2_mKo6Ok)
-
 * [The approach to achieving glycaemic control](https://safpj.co.za/index.php/safpj/article/view/4851/5755) A detailed,but balanced guideline on medical treatment of Type 2 diabetes.
-
-* [CMH FM Gout et al Case Series](https://www.youtube.com/playlist?list=PLaMWnazLISyzxayOgon3RDsX8iS1l3L9X)
-
+  
 * [CMH Family Medicine Handy Reference Tools (English & Xhosa)](https://drive.google.com/drive/folders/1hHhrTctSAUgJ7PKWZSIC5QZhl7ivCl3u)
 
 * [Radiopedia is an excellent reference and training website](https://radiopaedia.org)
@@ -140,10 +143,6 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 * [Allergy Foundation resources on nasal sprays and washouts](https://www.allergyfoundation.co.za/wp-content/uploads/2016/11/6-nasal-spray-and-washout.pdf)
 
 * [I Change for Health website with patient education](https://www.ichange4health.co.za) Includes diet, exercise, and smoking cessation, with free cookbooks for the South African setting
-
-* [15 minute exercise video](https://www.youtube.com/watch?v=C_rKOIJTB6A&feature=youtu.be)
-
-* [CMH Family Medicine Prevention and Lifestyle Tutorials](https://www.youtube.com/playlist?list=PLaMWnazLISyynDnXSyADZFa8LfsWTHc4h)
 
 Here is [RuDASA Library NCD folder](https://drive.google.com/drive/folders/1t27YQ4A_-zqVBLcFfrhAPLNfGkPXhuXv?usp=sharing)
 
