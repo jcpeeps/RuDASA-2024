@@ -34,9 +34,9 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 * [WHO Towards eliminating avoidable harm in health care 2022](https://knowledgehub.health.gov.za/elibrary/towards-eliminating-avoidable-harm-health-care)
 
-* [National Guideline to Manage Complaints, Compliments and Suggestions in the Health Sector of South Africa - 2022] (https://knowledgehub.health.gov.za/elibrary/national-guideline-manage-complaints-compliments-and-suggestions-health-sector-south)
+* [National Guideline to Manage Complaints, Compliments and Suggestions in the Health Sector of South Africa - 2022](https://knowledgehub.health.gov.za/elibrary/national-guideline-manage-complaints-compliments-and-suggestions-health-sector-south)
 
-* [National Guideline for Patient Safety Incident Reporting and Learning in the Health Sector of South Africa - 2022] (https://knowledgehub.health.gov.za/elibrary/national-guideline-patient-safety-incident-reporting-and-learning-health-sector-south)
+* [National Guideline for Patient Safety Incident Reporting and Learning in the Health Sector of South Africa - 2022](https://knowledgehub.health.gov.za/elibrary/national-guideline-patient-safety-incident-reporting-and-learning-health-sector-south)
 
 * [Capacity Building on Reporting of cases of child abuse and Part B of the National Child Protection Register](Capacity Building on Reporting of cases of child abuse and Part B of the National Child Protection Register)
 
@@ -50,12 +50,12 @@ This includes information covered by the Rural OnBoarding programme since 2021. 
 
 * [Guidelines for the Provincial Health Research Committees (PHRCs)](https://knowledgehub.health.gov.za/elibrary/guidelines-provincial-health-research-committees-phrcs)
 
-* [2022 National Health Research Summit Report]9https://knowledgehub.health.gov.za/elibrary/2022-national-health-research-summit-report)
+* [2022 National Health Research Summit Report](https://knowledgehub.health.gov.za/elibrary/2022-national-health-research-summit-report)
 
 ### Policy/SOPS/Plans
 * [Section 21 Alert List](https://knowledgehub.health.gov.za/elibrary/section-21-alert-list)
 
-* [Affordable Medicines Circulars 2022 - 2025] (https://knowledgehub.health.gov.za/elibrary/affordable-medicines-circulars-2022-2025)
+* [Affordable Medicines Circulars 2022 - 2025](https://knowledgehub.health.gov.za/elibrary/affordable-medicines-circulars-2022-2025)
 
 * [DIFFERENTIATED MODELS OF CARE STANDARD OPERATING PROCEDURES](https://knowledgehub.health.gov.za/system/files/elibdownloads/2023-06/WEB%20VERSION_South%20African%20National%20Differentiated%20Models%20of%20Care%20SOPs%202023_FINAL07062023.pdf)
 
