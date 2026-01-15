@@ -58,7 +58,7 @@ members:
     {
       role: "Young Professionals",
       title: "Dr.",
-      name:"Mamello Khitleli" ,
+      name:"Mamello Khitleli",
       email: "youngprofessionals@rudasa.org.za",
     },
     {
