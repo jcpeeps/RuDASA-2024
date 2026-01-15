@@ -54,6 +54,7 @@ members:
       title: "Dr.",
       name: "Shamira Kara",
       email: "info@rudasa.org.za",
+      },
     {
       role: "Young Professionals",
       title: "Dr.",
