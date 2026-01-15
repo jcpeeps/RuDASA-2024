@@ -16,13 +16,13 @@ members:
     {
       role: "Treasurer",
       title: "Dr.",
-      name: ,
+      name: "Mxolisi Xulu",
       email: "treasurer@rudasa.org.za",
     },
     {
       role: "Secretary",
       title: "Dr.",
-      name: ,
+      name: "James Pitt" ,
       email: "secretary@rudasa.org.za",
     },
         {
@@ -49,16 +49,21 @@ members:
       name: "Madeleine Muller",
       email: "mentor@rudasa.org.za",
     },
+        {
+      role: "Complementary Medicine",
+      title: "Dr.",
+      name: "Shamira Kara",
+      email: "info@rudasa.org.za",
     {
       role: "Young Professionals",
       title: "Dr.",
-      name:"Mxolisi Xulu" ,
+      name:"Mamello Khitleli" ,
       email: "youngprofessionals@rudasa.org.za",
     },
     {
       role: "Students",
       title: "",
-      name: "Joshua Gaunt",
+      name: "Joshua Gaunt RSN and Phiwokuhle Langa UKZN",
       email: "students@rudasa.org.za",
     },
   ]
