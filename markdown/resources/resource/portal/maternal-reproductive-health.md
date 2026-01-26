@@ -1,4 +1,4 @@
----
+<img width="161" height="52" alt="image" src="https://github.com/user-attachments/assets/dad789f6-72a9-4152-bebe-bad3ba650d37" />---
 title: 'Maternal & Reproductive Health'
 section: '2'
 ---
@@ -25,7 +25,7 @@ section: '2'
 
 ## Key Guidelines
 
-[Guidelines for maternity care in South Africa 2016](https://www.knowledgehub.org.za/elibrary/guidelines-maternity-care-south-africa-2016)
+[National Integrated Maternal and Perinatal Guidelines SA 2024](https://knowledgehub.health.gov.za/elibrary/national-integrated-maternal-and-perinatal-care-guidelines-south-africa)
 
 [Guideline for the prevention of mother to child transmission of communicable infections, South African Department of health](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-10/PMTCT%20Guideline%2028%20October%20signed.pdf)
 
@@ -38,9 +38,12 @@ section: '2'
 [Cervical Screening Cancer Prevention and Control Policy](https://knowledgehub.health.gov.za/elibrary/cervical-cancer-prevention-and-control-policy)
 
 ## Reading material / Tutorials / Webinars / Additional resources
+[Bagratee J.S. Management of early pregnancy loss CME Vol24	Issue 11	p643-646](https://journals.co.za/doi/epdf/10.10520/EJC63071)
+
+[Perinatal care for trans and non-binary people](https://journals.sagepub.com/doi/pdf/10.1177/08912432221138086)
 
 # Web Resource Portals
-
+ 
 * [ESMOE for interns at Tygerberg hospital](http://www.obstyger.co.za/page7.html)
 
 * [The WHO reproductive health library](https://apps.who.int/iris/bitstream/handle/10665/206006/B0464.pdf?sequence=1&isAllowed=y)
@@ -49,39 +52,32 @@ section: '2'
 
 # Webinars and additional resources
 
-* [Maternal Health in Rural: Pitfalls and FAQ, Dr Mandondo](https://www.youtube.com/watch?v=VcRgel8BqOc)
-
-* [Basic Practical Ultrasound for doctors and nurses, Dr Claudious Verenga Zimbabwean Obstetrician](https://www.youtube.com/watch?v=GtBLdzr6Ngg&feature=youtu.be)
-
-* [Preventing complications during caesarian section, Prof Hofmeyr](https://youtu.be/b2FMVBCiPso)
-
-* [Post- partum hemorrhage. Prof Hofmeyr](https://youtu.be/SgDp6ANsV1I)
-
-* [Spinal anesthesia for caesarian section webinar, Dr S Le Roux](https://youtu.be/YOlv9xBY5j0)
-
-* [What to have in your obstetric spinal tray](https://youtu.be/mAorYKBv500)
-
-* [Safe caesarian section with IUD insertion, Prof J Hofmeyr](https://youtu.be/9qr5Uqxe61U)
-
-* [Post-partum IUD insertion, Prof J Hofmeyr](https://youtu.be/r98GFTtuRzQ)
-
-* [Active management of third stage of labour](https://youtu.be/_TXv2jGnzhU)
-
-* [Management of early pregnancy loss](https://journals.co.za/doi/epdf/10.10520/EJC63071)
-
-* [Perinatal care for trans and non-binary people (Broken Link)](https://www.bsuh.nhs.uk/maternity/wp-content/uploads/sites/7/2021/01/MP005-Perinatal-Care-for-Trans-and-Non-Binary-People.pdf)
-
-* [Sexual Pleasure, Sexual Health, Sexual rights](https://youtube.com/playlist?list=PL2IvCQAf-vTsyO7PFjM37sj-P5Ue-J19-)
-
-* [Prevention and Early detection of cervical screening in the district. Dr Sibongile Mandondo](https://www.youtube.com/watch?v=MtpxzGI1NBk)
+* [RO2021 Maternal Health in Rural: Pitfalls and FAQ, Dr Mandondo](https://www.youtube.com/watch?v=VcRgel8BqOc)
 
 * [CHAI - How to take a pap smear](https://www.youtube.com/watch?v=UAu7xT9183M)
 
-* [BASIC PRACTICAL ULTRASOUND TRAINING FOR BOTH DOCTORS AND NURSES ( PART 1)](https://www.youtube.com/watch?v=GtBLdzr6Ngg)
+* [Basic Practical Ultrasound for doctors and nurses, Dr Claudious Verenga Zimbabwean Obstetrician](https://www.youtube.com/watch?v=GtBLdzr6Ngg&feature=youtu.be)
 
-* [ Loop /LLetz demonstra1on (1.2GB)](https://drive.google.com/file/d/1l_UKy1kYHwDYOm5qBBvbBtNVhqxMeFfH/view)
+* [Active management of third stage of labour. Reproductive Health Library](https://youtu.be/_TXv2jGnzhU)
+
+* [WSU Spinal anesthesia for caesarian section webinar, Dr S Le Roux 2021](https://youtu.be/YOlv9xBY5j0)
+
+* [What to have in your obstetric spinal tray Dr Madeleine Muller](https://youtu.be/mAorYKBv500)
+
+* [Safe caesarian section with IUD insertion, Prof J Hofmeyr](https://youtu.be/9qr5Uqxe61U)
+
+* [WSU Preventing complications during caesarian section, Prof Hofmeyr 2021](https://youtu.be/b2FMVBCiPso)
+
+* [WSU Post- partum hemorrhage. Prof Hofmeyr 2021](https://youtu.be/SgDp6ANsV1I)
+
+* [Post-partum IUD insertion, Prof J Hofmeyr 2021](https://youtu.be/r98GFTtuRzQ)
+  
+* [RO2023 Early pregnancy sepsis related to self induced Termination of Pregnancy. Dr Dr Sibongile Mandondo](https://www.youtube.com/watch?v=jNqp8tJa8CY&list=PLBS4k3o3cGeb73yyFoc5SL9q_8aMi3j_T&index=3)
+* [RO2024 Prevention and Early detection of cervical cancer in the district. Dr Sibongile Mandondo](https://www.youtube.com/watch?v=MtpxzGI1NBk)
 
 ## Sexual health workshop podcast series
+
+[Sexual Pleasure, Sexual Health, Sexual rights](https://youtube.com/playlist?list=PL2IvCQAf-vTsyO7PFjM37sj-P5Ue-J19-)
 
 * [Sexual Health workshop Part 1 Pleasure Podcast](https://anchor.fm/cliniciancoach/episodes/Sexual-Health--Sexual-Pleasure--Sexual-Rights-Webinar-Part-1-Pleasure-podcast-e1fdh7c)
 
