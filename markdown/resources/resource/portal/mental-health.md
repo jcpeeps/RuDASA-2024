@@ -17,9 +17,11 @@ Make sure you can:
 
 * **Standard treatment guidelines / EML** have excellent protocols. Please see the Google folder below for Word document posters based on the STG that you can adapt for your own facility.
 
-* [Find KZN protocols for mental health disorders & MHCA forms](http://www.kznhealth.gov.za/townhill/forms.htm)
+* [Find KZN protocols for mental health disorders & MHCA forms](https://www.studocu.com/uk/document/vinnitsa-national-medical-university/psychiatry/university-of-kwa-zulu-natal-treatment-protocols-for-mental-health-disorders-psychiatry/16437413)
 
-* [NDoH policy guidelines](https://knowledgehub.health.gov.za/system/files/elibdownloads/2019-07/Policy%2520guideline%2520on%252072-hour%2520assessment%2520of%2520involuntary%2520mental%2520health%2520care%2520users.pdf) on 72-hour assessment of involuntary mental health care users.
+* [NDoH policy guidelines](https://knowledgehub.health.gov.za/elibrary/policy-guideline-72-hour-assessment-involuntary-mental-health-care-users) on 72-hour assessment of involuntary mental health care users.
+
+[Use the MDCalc calculator app to all the mental health screening tools](https://www.mdcalc.com). 
 
 ## Reading material
 
@@ -28,8 +30,7 @@ Make sure you can:
 * Overcoming the Use of Mechanical Restraints in Psychiatry: A New Challenge in the Everyday Clinical Practice at the Time of COVID-19; De Beradis et al 2020. [Article here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7700144/pdf/jcm-09-03774.pdf)
 
 * Patient leaflets and self-help guides:
-NHS Mental Health Patient Leaflets and Self-help Guides, including the Anxiety self-help guide (using CBT) for patients. [Patient guide](https://www.nhsinform.scot/illnesses-and-conditions/mental-health), 
-[Anxiety guide](https://www.nhsinform.scot/illnesses-and-conditions/mental-health/mental-health-self-help-guides/anxiety-self-help-guide)
+[NHS Mental Health Patient Leaflets and Self-help Guides](https://www.nhsinform.scot/illnesses-and-conditions/mental-health), including the Anxiety self-help guide (using CBT) for patients.[Anxiety guide](https://www.nhsinform.scot/illnesses-and-conditions/mental-health/mental-health-self-help-guides/anxiety-self-help-guide)
 
 ## Tutorials/ Webinars 
 * [RO2022 Webinar](https://www.youtube.com/embed/5lZu53p8uO0): Managing the aggressive, psychotic patient in your rurlal facility. Prof Lesley Robertson; HOD psychiatrist Sedibeng District Specialist Mental Health Team in GP & Adjunct professor in the Department of Psychiatry at WITS
@@ -41,15 +42,18 @@ NHS Mental Health Patient Leaflets and Self-help Guides, including the Anxiety s
 * [Tutorial video](https://youtu.be/5GuydLt59vs) De-escalating aggression in a patient with developmental disorder 
 
 * [BAMSI Webinar](https://www.youtube.com/watch?v=B8Q5QNEXH8E)
-Beginner's Guide to MHCA Forms Dr G Atkinson BAMSI 
+Beginner's Guide to MHCA Forms Dr G Atkinson BAMSI
+
 * [Tutorial webinar](https://www.youtube.com/watch?v=HWEbGsPsaMw) How to do a Brief intervention Dr Madeleine Muller 
 
+[CMH Family Medicine Mental Health Tutorials  on mood disorders, schizophrenia, adult ADHD, Adult Autism, Alcohol Substance Disorder, Sexual Attraction](https://www.youtube.com/playlist?list=PLaMWnazLISyzdHXlQLhwvyDKt5N18RrVQ)
 
 ## Additional resources
 [RuDASA Library Mental Health folder](https://drive.google.com/drive/u/0/folders/1smNs8STVctvXynP4UReLEhKfBmKyCM1G)
 
 * Haloperidol circular
 
+* Brief Interventions and Brief Therapy Substance abuse guideline
 * Hospital EML Approach to Aggressive Disruptive behavior – editable for use at your facility
 
 * PHC EML Approach to aggressive disruptive behavior - editable
