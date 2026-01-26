@@ -14,16 +14,19 @@ partners: [
         title: 'Rural Nursing South Africa',
         description: 'RuNurSA aims to strengthen rural nursing leadership to influence change and improve rural health equitable access and quality nursing care in South Africa.',
         link: 'https://web.facebook.com/RuralNursingSA/?_rdc=1&_rdr'
+        Link: 'ruralnursingsa@gmail.com'
     },
     {
         title: 'Rural Rehab South Africa',
         description: 'RuReSA is a network of rehabilitation professionals who are passionate about supporting and developing rural services. Members have the chance to input on policy and best practice models, give and receive personal and professional support, work with universities to promote rural-friendly curricula and encourage students to go rural. ',
-        link: 'https://www.ruresa.com/'
+        link: 'https://www.ruresa.org.za/'
+        Link: 'info@ruresa.org.za'
     },
     {
         title: 'Professional Association of Clinical Associates South Africa',
         description: 'Clinical Associates are a new category of health care professionals who will help in the improvement of the health care system and well-being of communities in South Africa. This profession was introduced as one of the government’s strategy to achieve its solution in strengthening health care in South Africa. PACASA was formed to make sure voices of Clinical Associates are heard.',
         link: 'https://web.facebook.com/ClinicalAssociatesRSA/?_rdc=1&_rdr'
+        Link: 'https://mypacasa.com'
     },
     {
         title: 'Section 27',
@@ -43,7 +46,7 @@ partners: [
     {
         title: 'Ukwanda Centre for Rural Health',
         description: 'The Ukwanda Centre for Rural Health, at the University of Stellenbosch, coordinates and supports training and research initiatives in rural and underserved communities.',
-        link: 'http://blogs.sun.ac.za/ukwanda/ukwanda-rural-clinical-school/'
+        link: 'https://www.su.ac.za/en/faculties/medicine/departments/global-health/division-of-rural-health-ukwanda/'
     },
     {
         title: 'Wits Centre for Rural Health',
@@ -53,7 +56,7 @@ partners: [
     {
         title: 'UKZN Centre for Rural Health',
         description: 'The UKZN Centre for Rural Health, at the University of Kwazulu-Natal, works to improve the health of rural communities through research, capacity building and advocacy.',
-        link: 'http://crh.ukzn.ac.za/Home.aspx'
+        link: 'https://crh.ukzn.ac.za'
     },
     {
         title: 'Rural Health Support Network',
