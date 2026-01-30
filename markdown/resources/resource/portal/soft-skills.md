@@ -7,18 +7,45 @@ section: '8'
 **Introduction:** This resource pack will look at a variety of self-management skills to improve your patient skills. I also some information on mentoring – a key skill as a clinician in any facility.
 
 ## Resources & Links
+*[Skills for communicating severe acute respiratory syndrome-coronavirus-2 result to patients and/or relatives; 2021 Oladele V. Adeniyi, Dominique K. Kayembe(https://safpj.co.za/index.php/safpj/article/view/5221/6729)
 
-### Rural Onboarding Webinars
+*[Brief Interventions and brief therapy for substance abuse](https://store.samhsa.gov/product/tip-34-brief-interventions-and-brief-therapies-substance-abuse/sma12-3952)
 
-#### Navigating difficult interactions by Dr Madeleine Muller, Family Physician CMH & Senior lecturer WSU, EC
+* [Understanding Motivational interviewing](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
+
+* [The Good doctor. The Making and the unmaking of the Physician Self in contemporary South Africa;** M Pentecost and T Cousins](https://link.springer.com/article/10.1007/s10912-019-09572-y)
+
+* [Creating a learning environment in your practice / facility;** B Mash & Jill Edwards](https://safpj.co.za/index.php/safpj/article/view/5166/6263)
+
+* [Skills for communicating severe acute respiratory syndrome-coronavirus-2 result to patients and/or relatives Adeniyi O & Kayembe K](https://safpj.co.za/index.php/safpj/article/view/5221/6729)
+
+* [The Effective Physician: Motivational Interviewing Demonstration (stop smoking)(https://www.youtube.com/watch?v=URiKA7CKtfc)
+
+* [The Positive Intelligence self-assessment Tool: Shirzad Chamine](https://positiveintelligence.com/saboteurs/)Free online self-
+assessment to identify behaviour patterns used to reduce stress.
+
+* [WSU Tutorial: Reflection on Unconscious Bias and Powerdynamics in clinical care](https://www.youtube.com/watch?v=rpCJckWZ9f0)
+
+## Rural Onboarding Webinars
+
+[RO2023 The Outstanding Rural Clinician Part 1 - 3. Dr Madeleine Muller](https://www.youtube.com/playlist?list=PLBS4k3o3cGeYK6yTgQAViDuNMLq8JtaIl)
+
+[RO2023 Doctor am I dying? end of life decision conversation with your patient](https://www.youtube.com/watch?v=uEJ0yZ3YpR0)
+
+## Clinican Coaching by Dr Madeleine Muller, Family Physician CMH & Senior lecturer WSU, EC
 
 * Navigating difficult interactions: PART 1 - Anatomy of Stress: Dr Muller: [Watch here](https://www.youtube.com/embed/JgylbNttvCI?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
 
 * Navigating difficult interactions: PART 2 - Advanced Tools; Dr Muller: [Watch here](https://www.youtube.com/embed/UYwjqKP9cyY?list=PLBS4k3o3cGeYG5uyRuaD9W5rt6JWzWJ62)
 
-* [Adherence e-learning module](https://youtube.com/playlist?list=PL2IvCQAf-vTuGfKuE8vpThZ7hA63ttpqP) by Dr Muller
+* [Adherence e-learning module Module 1 - 3  Dr Muller](https://youtube.com/playlist?list=PL2IvCQAf-vTuGfKuE8vpThZ7hA63ttpqP)
 
-* Mentoring skills workshop [Part 1 & 2](https://youtube.com/playlist?list=PL2IvCQAf-vTsUEgPjZ00PDOaqhW0ELA2J) by Dr Muller (also as podcasts below)
+* [Mentoring skills workshop Part 1 & 2 by Dr Muller](https://youtube.com/playlist?list=PL2IvCQAf-vTsUEgPjZ00PDOaqhW0ELA2J)  (also as podcasts below)
+
+* [Advanced Skills in Emotional Competence Tutorials Dr Muller](https://www.youtube.com/playlist?list=PLaMWnazLISywc-CGxn_E0jO0BmogZkfYy)
+  
+* [The Neuroscience of relationships: Dr Madeleine Muller](https://www.youtube.com/watch?v=zsyNDJ60xLQ)
+
 
 ### The Clinician Coach podcast series with Dr Madeleine Muller :
 
@@ -30,19 +57,19 @@ section: '8'
 
 * Navigating difficult interactions: PART 2 - Advanced Tools; Dr Muller [PODCAST HERE](https://anchor.fm/cliniciancoach/episodes/Navigating-difficult-interactions-PART-2---Advanced-Tools-e1fdgr9)
 
-<!-- SITE NOT FOUND 404 * [**Breaking bad news**](https://www.aafp.org/afp/2001/1215/afp20011215p1975.pdf) by GREGG K. VANDEKIEFT -->
 
-* Skills for communicating severe acute respiratory syndrome-coronavirus-2 result to patients and/or relatives; 2021 Oladele V. Adeniyi, Dominique K. Kayembe: [Read here](https://safpj.co.za/index.php/safpj/article/view/5221/6729)
 
-* Brief Interventions and brief therapy for substance abuse: [article here](https://store.samhsa.gov/product/tip-34-brief-interventions-and-brief-therapies-substance-abuse/sma12-3952)
 
-* Understanding Motivational interviewing: [find out more here](https://en.motivationalinterviewing.org/understanding-motivational-interviewing)
 
-* The Effective Physician: Motivational Interviewing Demonstration (stop smoking); [watch here](https://www.youtube.com/watch?v=URiKA7CKtfc)
+## Diversity:
+* [ Key Population Sensitisation orientation Knowledgehub](https://knowledgehub.health.gov.za/webinar/manage-key-population-sensitization-orientation)
+  
+* [Sexual & Gender Diversity: Talking about sex in the consulting room Dr Muller](https://www.youtube.com/watch?v=Po7KyTICHbo)
 
-* [Article](https://link.springer.com/article/10.1007/s10912-019-09572-y): **The Good doctor. The Making and the unmaking of the Physician Self in contemporary South Africa;** M Pentecost and T Cousins
 
-* [Article](https://safpj.co.za/index.php/safpj/article/view/5166/6263): **Creating a learning environment in your practice / facility;** B Mash & Jill Edwards
+
+
+  
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
