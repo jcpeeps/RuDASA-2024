@@ -13,12 +13,6 @@ section: '6'
 * Appendicectomy
 * Small procedures
 
-## Orthopaedics key capacities
-* Assess all Fractures – when to refer, when to manage conservatively
-* Know when to do an X-ray
-* Manage Dislocations – skills to reduce, what to look out for.
-* Clean out a long bone fracture
-  
 ## Surgery Reading material / Tutorials/ Webinars / Additional resources
 
 **Surgery Survival Guide** by Dr John Jeff, Frere Hospital. This local publication is a great resource. Send Dr Jeff John an [email here](mailto:jeffveenajohn@gmail.com)
@@ -49,29 +43,8 @@ section: '6'
 
 * [Burn care the PMB way](https://burncare.co.za) - Register for great protocols (Free)
 
-## Orthopaedics Reading material / Tutorials/ Webinars / Additional resources
-
-* [Assessment and Management of Shoulder pain. Kuala, de Vries et al. SAFPJ](https://safpj.co.za/index.php/safpj/article/view/5279/6642)
-
-* [An overview of the management of backpain: SAFP, N Padayachee et. Al 2018 SAFPJ](https://safpj.co.za/index.php/safpj/article/view/4897/5798)
-
-* UCT Orthopaedic website with Free Ortho textbook [Orthopaedics for Primary Health Care](https://www.ortho.capetown/primary-care-orthopaedics)
-
-* [RO2022 Take a break with Ortho: Webinar with Hans Hendriks](https://www.youtube.com/playlist?list=PLBS4k3o3cGeb_e0Kib31LEJdb8uh-VTdh) Overview of key fractures and dislocations
-
-* [UCTeach Ortho YouTube channel](https://www.youtube.com/channel/UCR__mzghDSTLZ32sBJ18Xow)
-
-* [Plain Ortho: YouTube channel](https://www.youtube.com/channel/UC3fT2dOXnRnt4ysMTZ3YXdg/featured)  Great videos
-
-* [WSU Orthopedic Case series: Weber and Colle's fractures including reduction techniques.
-Webinar. Prof Norrie Gibson](https://www.youtube.com/watch?v=lT2YlGLk2MY)
-
-* [WSU Orthopedic Case series: Backache, Open fractures, Child not walking (new presentation),
-Swollen knee & More](https://www.youtube.com/watch?v=yST2LGs0AvY)
-
-
   
-**Find the [RuDASA Library Surgery & Orthpaedics Folder](https://drive.google.com/drive/u/0/folders/1spuQQvXfRxC_P3ejXDTIuYpZ_ikpfote).** Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
+**Find the [RuDASA Library Surgery Folder](https://drive.google.com/drive/u/0/folders/1spuQQvXfRxC_P3ejXDTIuYpZ_ikpfote).** Contains information from: Surgical skills deficiencies and needs of rural general practitioners in South Africa.  Porter et al.
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
