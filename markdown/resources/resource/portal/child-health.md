@@ -51,7 +51,7 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [RO2023 Revisiting fluid management in children with acute diarrhoea - a rural review Dr Lotz](https://www.youtube.com/watch?v=F_YGxnIlLog)
 
-* [RO2025 Childhood TB in rural settings - what you ACTUALLY need to know. Dr Juli Switala](Childhood TB in rural settings - what you ACTUALLY need to know. Dr Juli Switala)
+* [RO2025 Childhood TB in rural settings - what you ACTUALLY need to know. Dr Juli Switala](https://www.youtube.com/watch?v=NsNMFxaJVtY&list=PLBS4k3o3cGeZSbsoMm8qsUcZ2T5Cr0g2J)
 
 * [Management of TB in children and adolecents Guideline](https://knowledgehub.health.gov.za/elibrary/management-tuberculosis-children-and-adolescents)
 
