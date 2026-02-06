@@ -59,7 +59,7 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
   * [Management of chronic obstructive pulmonary disease 2019 update Mohamed Sabeer Abdool-Gaffar](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf) A position statement of the South African Thoracic Society
   
 * **Diabetes**
-  * [SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf
+  * [SEMSDA Guidelines for T2DM](https://docs.mymembership.co.za/docmanager/d7a3ded1-2f30-4ff2-b566-b69abe5d7a8e/00150685.pdf)
  
   * [Chapter 11: The approach to achieving glycaemic control](https://safpj.co.za/index.php/safpj/article/view/4851/5755) A useful article in SAAFP
 
