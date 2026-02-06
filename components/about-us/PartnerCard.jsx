@@ -10,6 +10,16 @@ export default function PartnerCard(props) {
                 <div className="hover-button">
                     <a href={props.link} role="button" className="btn btn-primary text-white mt-4">Learn more</a>
                 </div>
+                {props.email && (
+                    <div className="hover-button mt-2">
+                        <a href={`mailto:${props.email}`} role="button" className="btn btn-outline-primary mt-2">Email</a>
+                    </div>
+                )}
+                {props.link2 && (
+                    <div className="hover-button mt-2">
+                        <a href={props.link2} role="button" className="btn btn-outline-primary mt-2">Visit site</a>
+                    </div>
+                )}
             </div>
         </div>
     )

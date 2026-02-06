@@ -42,6 +42,8 @@ export default function Team({ executives, portfolios, partners }) {
               title={partner.title}
               description={partner.description}
               link={partner.link}
+              email={partner.email}
+              link2={partner.link2}
               key={index}
             />
           ))}
