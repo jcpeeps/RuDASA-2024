@@ -7,7 +7,7 @@ section: '8'
 **Introduction:** This resource pack will look at a variety of self-management skills to improve your patient skills. I also some information on mentoring – a key skill as a clinician in any facility.
 
 ## Resources & Links
-*[Skills for communicating severe acute respiratory syndrome-coronavirus-2 result to patients and/or relatives; 2021 Oladele V. Adeniyi, Dominique K. Kayembe(https://safpj.co.za/index.php/safpj/article/view/5221/6729)
+*[Skills for communicating severe acute respiratory syndrome-coronavirus-2 result to patients and/or relatives; 2021 Oladele V. Adeniyi, Dominique K.Kayembe](https://safpj.co.za/index.php/safpj/article/view/5221/6729)
 
 *[Brief Interventions and brief therapy for substance abuse](https://store.samhsa.gov/product/tip-34-brief-interventions-and-brief-therapies-substance-abuse/sma12-3952)
 
