@@ -1,4 +1,4 @@
-<img width="161" height="52" alt="image" src="https://github.com/user-attachments/assets/dad789f6-72a9-4152-bebe-bad3ba650d37" />---
+---
 title: 'Maternal & Reproductive Health'
 section: '2'
 ---
