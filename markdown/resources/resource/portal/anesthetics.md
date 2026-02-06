@@ -21,7 +21,7 @@ section: '6'
 * [Tranexamic acid at cesarean delivery: drug‐error deaths. Moran et al](https://pmc.ncbi.nlm.nih.gov/articles/PMC10092362/)
 * [Opioid-Free Anaesthesia. A paradigm shift. SAFP , PC Anamourlis](https://safpj.co.za/index.php/safpj/article/view/4993/5900) A thought provoking 2019 article in the SAFP regarding use of opoids.
 * [Troubleshooting Obstetric Spinal anaesthesia at a district hospital](https://www.researchgate.net/publication/362393961_Troubleshooting_obstetric_spinal_anaesthesia_at_district_hospital_level)
-* [SASA Guidelines for the safe use of procedural sedation 2020-2025](https://www.sada.co.za/sites/default/files/content-files/Clinical%20Information%20%26%20Articles%20of%20Interest/SASA%20adult%20sedation%20guidelines.pdf]
+* [SASA Guidelines for the safe use of procedural sedation 2020-2025](https://www.sada.co.za/sites/default/files/content-files/Clinical%20Information%20%26%20Articles%20of%20Interest/SASA%20adult%20sedation%20guidelines.pdf)
 * [Safe Anaesthetics and Safe Sedation. Zithulele hospital.](http://www.zithulele.org/uploads/4/1/4/2/4142372/rural_sedation___anaesthetics_2021.pdf) A great PowerPoint presentation on safe anaesthetics in a rural district hospital.
 
 ** Webinars
