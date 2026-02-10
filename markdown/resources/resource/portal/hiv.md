@@ -25,41 +25,76 @@ infectious diseases you will see – and the landscape is always changing. Are y
 
 * There are excellent, detailed NDOH guidelines that cover all aspects of HIV care. And don’t forget your EML and APC! (see the General Resource Pack)
 
-* [KnowledgeHub SA National ARV Guidelines](https://www.knowledgehub.org.za/system/files/elibdownloads/2020-05/2019%20ART%20Guideline%2028042020%20pdf.pdf)
+* [2023 NDOH ART Clinical Guidelines for the Management of HIV in Adults, Pregnancy and Breastfeeding, Adolescents, Children, Infants and Neonates](https://knowledgehub.health.gov.za/elibrary/2023-art-clinical-guidelines-management-hiv-adults-pregnancy-and-breastfeeding-adolescents)
 
-* [KnowledgeHub Guideline for the prevention of mother to child transmission of communicable infections, South African Department of health](https://www.knowledgehub.org.za/system/files/elibdownloads/2019-10/PMTCT%20Guideline%2028%20October%20signed.pdf)
+* [SOUTHERN AFRICAN HIV CLINICIANS SOCIETY CLINICAL GUIDELINES FOR
+HOSPITALISED ADULTS WITH ADVANCED HIV DISEASE 2022
+](https://sahivsoc.org/Files/SAHCS%202022%20Adult%20AHD%20Guidelines_20220506.pdf)
 
-* [KnowledgeHub National Tuberculosis management guidelines](https://www.knowledgehub.org.za/elibrary/national-tuberculosis-management-guidelines)
+* [Department of Health 2023. Guideline for Vertical Transmission Prevention of Communicable Infections South African National  August 2023](https://knowledgehub.health.gov.za/system/files/elibdownloads/2023-09/2023%20Vertical%20Transmission%20Prevention%20Guideline%2004092023%20signed%20WEB_1.pdf)
 
+* [KnowledgeHub National Tuberculosis management guidelines 2013](https://knowledgehub.health.gov.za/elibrary/national-tuberculosis-management-guidelines)
+  
+* [NDoH National Guidelines on the Treatment of Tuberculosis Infection 2023](https://knowledgehub.health.gov.za/elibrary/national-guidelines-treatment-tuberculosis-infection)
+
+* [MANAGEMENT OF TUBERCULOSIS IN CHILDREN AND ADOLESCENTS 2024](https://knowledgehub.health.gov.za/elibrary/management-tuberculosis-children-and-adolescents)
+ 
 * [KnowledgeHub National Guidelines for the management of TB in children](https://www.knowledgehub.org.za/elibrary/national-guidelines-management-tuberculosis-children)
 
-* [Management of Rifampicin Resistant TB](https://www.health.gov.za/wp-content/uploads/2020/11/management-of-rifampicin-resistant-tb-booklet-0220-v11.pdf)
+* [NDoH Clinicial Management of Rifampicin Resistant TB. Updated clincal reference guide. Sept 2023](https://www.health.gov.za/wp-content/uploads/2023/10/Updated-RR-TB-Clinical-Guidelines-September-2023.pdf)
 
-* [Consensus statement: Management of drug-induced liver injury in HIV-positive patients treated for TB](https://sahivsoc.org/Files/Consensus%20Statement_Management%20of%20drug-induced%20liver%20injury%20in%20HIV%20positive%20pts%20treated%20for%20TB%20(Oct%202013).pdf)
+* [Boyles T, Berhanu RH, Gogela N, et al. Management of drug-induced liver injury in people with HIV treated for tuberculosis: 2024 update. S Afr J HIV Med. 2024;25(1), a1558 https://doi.org/10.4102/sajhivmed.v25i1.1558Copyright:© 2024.](https://sajhivmed.org.za/index.php/hivmed/article/view/1558/3231)
 
-* [Management of suspected drug-induced rash, kidney injury and liver injury in adult patients on TB treatment and/or antiretroviral treatment (Broken Link)](http://www.mic.uct.ac.za/sites/default/files/image_tool/images/51/ADE%20Booklet_July2020_final171120.pdf)
+* [Jong et al: Consensus statement: Management of drug-induced liver injury in HIV-positive patients treated for TB 2013](https://sahivsoc.org/Files/Consensus%20Statement_Management%20of%20drug-induced%20liver%20injury%20in%20HIV%20positive%20pts%20treated%20for%20TB%20(Oct%202013).pdf)
+
+* [Palmer et al: DIAGNOSTIC CXR ATLAS FOR TUBERCULOSIS IN CHILDREN. A guide to chest X-ray interpretation 2nd edition. 2022](https://theunion.org/sites/default/files/2022-03/The%20Union_Diagnostic%20Atlas%20for%20TB%20in%20Children_2022.pdf)
+
+* [Management of suspected drug-induced rash, kidney injury and liver injury in adult patients on TB treatment and/or antiretroviral treatment November 2024 3rd edition](https://mic.uct.ac.za/sites/default/files/media/documents/mic_uct_ac_za/2157/ade-booklet.pdf)
 
 ## Reading material / Tutorials / Webinars / Additional resources
 
+## HIV Webinars
 * The NDOH knowledge hub runs a free online training on Advanced Clinical Care (30CPD points) which is worthwhile doing.
 
-* The SA HIV Clinicians Society website has excellent resources – consider [joining the society](https://sahivsoc.org/Subheader/Index/join) if you have a special interest in HIV.
+* [Management of HIV/TB Tutorials. Dr Madeleine Muller.2023](https://www.youtube.com/playlist?list=PLaMWnazLISyyHpJVEUpU2jBocmwXh9qxW)
+
+* [A structured approach to the Ill immunocompromised patient. Dr Madeleine Muller](https://youtu.be/DcfCE0hS_gI)
 
 * [Basic introduction to ARV guidelines Dr Muller](https://youtu.be/pDK9okgbDP4)
 
-* [A structured approach to the Ill immunocompromised patient. Dr Madeleine Muller](https://youtu.be/DcfCE0hS_gI)
-* [Diagnosing TB at the District Level Jan 2023 Dr Dave Stead Jan 2023](https://www.youtube.com/watch?v=jNqp8tJa8CY)
+* [NDOH 2023 Vertical Transmission Guidelines (PMTCT) Dr Madeleine Muller Oct 23](https://www.youtube.com/watch?v=DuD9gI_Zlpo)
 
-* [An overview of Rifampicin Resistant guidelines SAFP Dr Muller](https://safpj.co.za/index.php/safpj/article/view/5092/6017)
+* [WSU NDOH ART 2023 Guidelines Children <10 years Dr Madeleine Muller June 2023](https://www.youtube.com/watch?v=8_oOX9B5vPc)
 
-* [Drug induced liver injury Dr Muller](https://youtu.be/WDBi7GD8F3Y)
+* [WSU Advanced HIV disease - the workup of the ill patient Dr Madeleine Muller Dec 2022)(https://www.youtube.com/watch?v=emS1Y-Jj73I)
 
-* [HIV treatment interruption with Dr John Black webinar](https://youtu.be/wu_tnQTsWcY)
+* [HIV treatment interruption with Dr John Black webinar](https://www.youtube.com/watch?v=wu_tnQTsWcY)
 
-* [TB spine with Prof Norrie Gibson, Dr Madeleine Muller & Karen Galloway webinar](https://youtu.be/5MbfoiWJ9wU)
+## TB webinars
+* [RO2023 Diagnosing TB at the District Level Jan 2023 Dr Dave Stead](https://www.youtube.com/watch?v=jNqp8tJa8CY)
+
+* [NDOH Guideline on Rx of TB infection (TPT) Dr M Muller Nov 23](https://www.youtube.com/watch?v=emS1Y-Jj73I)
+
+* [Drug induced liver injury in DSTB and DRTB Dr Muller](https://www.youtube.com/watch?v=WDBi7GD8F3Y)
+  
+* [TB spine and the multidisciplinary team. Prof Norrie Gibson, Dr Madeleine Muller & Karen Galloway webinar](https://youtu.be/5MbfoiWJ9wU)
 
 * [DRTB course for clinicians](https://youtube.com/playlist?list=PL2IvCQAf-vTsRnw7WPoKUBL0DXVTnQXjw)
 
+* [An overview of Rifampicin Resistant guidelines SAFP Dr Muller 2020](https://safpj.co.za/index.php/safpj/article/view/5092/6017)
+
+## Key Resources
+
+* [The SA HIV Clinicians Society website has excellent resources - see the main menu](https://sahivsoc.org/#!) [Join SA HIVSOC](https://sahivsoc.org/Subheader/Index/join) if you have a special interest in HIV.
+
+* [Medicine Information Centre at UCT has excellent resources and posters](https://mic.uct.ac.za/resources)
+
+* Whatsapp advise by ID specialists (IDSSA):
+
+    [Infecious Disease Specialist Whatsapp Group](https://chat.whatsapp.com/Dt2jnrPafPO5Yq5Cb2anMr)
+
+    [Paediatric ID Whatsapp Group](https://chat.whatsapp.com/KZX2OiPxQwsIrsMSr4cIqX)
+ 
 Here is [RuDASA Library Infectious Disease folder](https://drive.google.com/drive/u/0/folders/1srm7TP_1OQcGF41JuRHEkn0SQipRgNUf)
 
 * PEP poster
@@ -72,11 +107,6 @@ Here is [RuDASA Library Infectious Disease folder](https://drive.google.com/driv
 
 * DRTB summary posters
 
-Whatsapp advise by ID specialists (IDSSA):
-
-[Infecious Disease Specialist Whatsapp Group](https://chat.whatsapp.com/Dt2jnrPafPO5Yq5Cb2anMr)
-
-[Paediatric ID Whatsapp Group](https://chat.whatsapp.com/KZX2OiPxQwsIrsMSr4cIqX)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
