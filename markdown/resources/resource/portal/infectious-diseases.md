@@ -33,26 +33,24 @@ For antibiotic use for any infectious disease: use your **STG/ EML guidelines on
 
 * [South African guideline for the management of community-acquired pneumonia in adults](https://jtd.amegroups.com/article/view/13850/html)
 
-* [Guidelines for the treatment of malaria](https://www.nicd.ac.za/wp-content/uploads/2017/03/National-Guidelines-for-Malaria-Treatment-SEPTEMBER-2019-Update-WITH-FRONT.pdf)
+* [Guidelines for the treatment of malaria 2019/2020](https://www.nicd.ac.za/wp-content/uploads/2017/03/National-Guidelines-for-Malaria-Treatment-SEPTEMBER-2019-Update-WITH-FRONT.pdf)
 
-* [National guidelines for the treatment of viral hepatitis](https://sahivsoc.org/Files/SA%20NDOH_Viral%20Hepatitis%20guideilnes%20final_.pdf)
+* [National guidelines for the treatment of viral hepatitis 2019](https://sahivsoc.org/Files/SA%20NDOH_Viral%20Hepatitis%20guideilnes%20final_.pdf)
 
-* [Typhoid: NICD recommendations for diagnosis, management and public health response](https://www.nicd.ac.za/assets/files/Guidelines_typhoid_20160125.pdf)
+* [Typhoid: NICD recommendations for diagnosis, management and public health response 2016](https://www.nicd.ac.za/assets/files/Guidelines_typhoid_20160125.pdf)
 
-* [National Guidelines for the Prevention of Rabies in Humans](https://www.nicd.ac.za/wp-content/uploads/2021/08/Human-rabies-prophylaxis-guidelines_DRAFT_2021.pdf)
+* [National Guidelines for the Prevention of Rabies in Humans 2021](https://www.nicd.ac.za/wp-content/uploads/2021/08/Human-rabies-prophylaxis-guidelines_DRAFT_2021.pdf)
 
-* [Guidelines for the prevention and containment of Antimicrobial Resistance in South African Hospitals](https://knowledgehub.health.gov.za/system/files/elibdownloads/2020-03/Guidelines%20for%20the%20prevention%20and%20containment%20of%20AMR%20in%20SA%20hospitals.pdf)
+* [Guidelines for the prevention and containment of Antimicrobial Resistance in South African Hospitals 2018](https://knowledgehub.health.gov.za/system/files/elibdownloads/2020-03/Guidelines%20for%20the%20prevention%20and%20containment%20of%20AMR%20in%20SA%20hospitals.pdf)
 
 * [The South African Antibiotic Stewardship Programme](https://www.fidssa.co.za/federation-members/saasp-mission)
 
-* [NATIONAL GUIDELINES FOR CHOLERA CONTROL](https://www.nicd.ac.za/assets/files/2014%20SA%20Cholera%20Guidelines.pdf)
+* [NATIONAL GUIDELINES FOR CHOLERA CONTROL 2014](https://www.nicd.ac.za/assets/files/2014%20SA%20Cholera%20Guidelines.pdf)
 
 
-## Reading material / Tutorials / Webinars / Additional resources
+## Reading material / Tutorials / Additional resources
 
-The South African Antibiotic Stewardship Programme (SAASP) : [Become an antiobiotic guardian](https://www.samedical.org/file/946) 
-
-[Download Here (Broken Link)](https://play.google.com/store/apps/details?id=org.appenberg.saasp&;hl=en_ZA&;gl=US)
+The South African Antibiotic Stewardship Programme (SAASP) : [Become an antiobiotic guardian](https://www.fidssa.co.za/federation-members/saasp-mission) 
 
 [A POCKET GUIDE TO ANTIBIOTIC PRESCRIBING FOR ADULTS IN SOUTH AFRICA, 2015](https://cct.mycpd.co.za/fidssa/SAASP_Antibiotic_Guidelines_2015.pdf)
 
@@ -64,19 +62,21 @@ Infectious Disease WhatsApp groups Whatsapp advise by ID specialists (IDSSA):
 
 # Webinars:
 
-[Malaria Dr Dave Stead](https://www.youtube.com/watch?v=BaStBGnbNt8)
-
-[Antibiotic stewardship in UTI](https://www.youtube.com/watch?v=3R4aVZkgIm8&feature=youtu.be)
-
-[CXR & Antibiotic stewardship in COVID19 Dr Dave Stead](https://www.youtube.com/watch?v=3R4aVZkgIm8&feature=youtu.be) 
-
-[COVID19 Diagnostics and Management Prof Parrish](https://www.youtube.com/watch?v=HcBWeOT42Lk&feature=youtu.be)
-
-[Rabies Dr Dave Stead](https://www.youtube.com/watch?v=WoqRrIHHuvg&feature=youtu.be)
-
 [RO2024 Meningitis in the district hospital setting. Dr Tom Boyles](https://www.youtube.com/watch?v=ZwLCCVDnHeg)
 
-[Cholera Medical Management Dr Luzanne Grundling](https://www.youtube.com/watch?v=rlteIVkYYiY)
+[RAMP Monthly Webinars 2025 Rabies prevention and post exposure prophylaxis Dr Sian Geraty](https://www.youtube.com/watch?v=mGouMms9lBU&list=PLBS4k3o3cGeaVPZWmyO7YYbCi595lBqOD&index=2)
+
+[BAMSI Malaria Dr Dave Stead](https://www.youtube.com/watch?v=BaStBGnbNt8)
+
+[WSU Antibiotic stewardship in UTI](https://www.youtube.com/watch?v=3R4aVZkgIm8&feature=youtu.be)
+
+[BAMSI CXR & Antibiotic stewardship in COVID19 Dr Dave Stead](https://www.youtube.com/watch?v=3R4aVZkgIm8&feature=youtu.be) 
+
+[BAMSI COVID19 Diagnostics and Management Prof Parrish](https://www.youtube.com/watch?v=HcBWeOT42Lk&feature=youtu.be)
+
+[BAMSI Rabies Dr Dave Stead](https://www.youtube.com/watch?v=WoqRrIHHuvg&feature=youtu.be)
+
+[MedTalkz Cholera Medical Management Dr Luzanne Grundling](https://www.youtube.com/watch?v=rlteIVkYYiY)
 
 Here is [RuDASA Library Infectious Disease (Other) folder](https://drive.google.com/drive/folders/1tJv7bvUDHE9aWS41F0AsX_0REguCM5fF)
 
