@@ -23,7 +23,7 @@ export default function SaWork({ content }) {
                         </Link>
                     </div>
                     <div className="hover-button">
-                        <Link href="http://hpcsa.co.za/?contentId=0&menuSubId=5&actionName=Core%20Operations" className="mx-5">
+                        <Link href="https://hpcsaonline.custhelp.com/app/answers/detail/a_id/117/kw/foreign%20qualification" className="mx-5">
                             <a role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4 mx-3" target="_blank">Info for Foreign Grads</a>
                         </Link>
                     </div>
