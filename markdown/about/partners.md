@@ -29,6 +29,11 @@ partners: [
         link2: 'https://mypacasa.com'
     },
     {
+        title: 'South African Academy of Family Physicians',
+        description: 'The SAAFP is the national association of family doctors, representing South Africa on the World Organisation of Family Doctors (WONCA). The aim of the SAAFP is to develop the discipline and body of knowledge of family medicine through research, education and training, provide for the professional needs of its members such as continuing professional development, and to represent the opinion of the profession on national and international forums.',
+        link: 'https://saafp.org/'
+    },
+    {
         title: 'Section 27',
         description: 'SECTION27 is a public interest law centre that seeks to influence, develop and use the law to protect, promote and advance human rights. Their activities include research, advocacy and legal action to change the socio-economic conditions that undermine human dignity and development, prevent poor people from reaching their full potential and lead to the spread of diseases that have a disproportionate impact on vulnerable and marginalised people.',
         link: 'http://section27.org.za/'
@@ -62,6 +67,11 @@ partners: [
         title: 'Rural Health Support Network',
         description: 'The Rural Health Support Network, at the University of Cape Town, aims to recruit and retain healthcare workers in rural communities, both by recruiting students from rural communities and by also arranging placements of UCT health science students in rural health facilities to promote their interest in rural healthcare.',
         link: 'http://www.health.uct.ac.za/fhs/students/societies/ruralnetwork'
+    },
+    {
+        title: 'Southern African Alcohol Policy Alliance ',
+        description: 'Guided by health promotion principles, SAAPA actively engages and mobilises civil society organisations from the children’s rights, development, environment, gender, health, road safety, violence prevention sectors to support and integrate evidence-based alcohol policy advocacy as part of their mandate for development and social justice.',
+        link: 'https://saapa.africa/about-saapa/'
     },
 ]
 # This is a comment and is not displayed on the website. Do not alter this text between hashes(#). 
