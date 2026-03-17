@@ -29,6 +29,12 @@ Foreign Students need to contact these International Offices directly to registe
 * [University of Stellenbosch (Western Cape)](https://www.sun.ac.za/english/faculty/healthsciences/international-office/international-undergraduate-elective-students)
 * [University of the Witwatersand (Gauteng)](https://www.wits.ac.za/health/faculty-services/elective/)
 
+
+## Hospitals willing to have students for electives
+If you are willing to have elective students at your hospital please complete the form. The length of elective placements can vary with the training institution. Local electives can range from 2  to 4 weeks. For foreign students they also need to register with a local university to be eligible for an elective placement and the universities say 4 - 8 weeks. 
+
+* [We want to have Rural Elective students at our hospital](https://forms.gle/wHGrZfSfQTDHHv9r8)
+
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
