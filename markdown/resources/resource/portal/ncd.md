@@ -26,7 +26,7 @@ section: '3'
 ## Key Guidelines
 
 * [Standard Treatment Guidelines and Essential Medicines List for South Africa
-Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/files/elibdownloads/2023-04/Hospital%2520Level%2520%2528Adult%2529%25202019_v2.0.pdf)
+Hospital Level](https://www.health.gov.za/nhi-edp-stgs-eml/)
 
 * **Heart Failure**
   * [2020 Heart Failure Society of South Africa perspective on the 2016 European Society of Cardiology Chronic Heart Failure Guidelines](http://www.samj.org.za/index.php/samj/article/view/13057/9549)
@@ -39,7 +39,7 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
   * [Hypertension Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=rlTwFQvC-Fc&feature=youtu.be)
 
 * **Asthma**
-  * [GINA: GLOBAL STRATEGY FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/wp-content/uploads/2021/04/GINA-2021-Main-Report_FINAL_21_04_28-WMS.pdf)
+  * [GINA: GLOBAL STRATEGY FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/2025-gina-strategy-report/)
  
   * [POCKET GUIDE FOR ASTHMA MANAGEMENT AND PREVENTION](https://ginasthma.org/pocket-guide-for-asthma-management-and-prevention/)
 
@@ -54,7 +54,7 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
   * [ANAPHYLAXIS ACTION PLAN](https://www.allergyfoundation.co.za/wp-content/uploads/2016/10/27-anaphylaxis-action-plan.pdf) for patients
  
 * **COPD**
-  * [GLOBAL STRATEGY FOR PREVENTION, DIAGNOSIS AND MANAGEMENT OF COPD: 2025 Report](https://goldcopd.org/2025-gold-report/)
+  * [GLOBAL STRATEGY FOR PREVENTION, DIAGNOSIS AND MANAGEMENT OF COPD: 2026 Report](https://goldcopd.org/2026-gold-report-and-pocket-guide/)
   
   * [Management of chronic obstructive pulmonary disease 2019 update Mohamed Sabeer Abdool-Gaffar](https://pulmonology.co.za/wp-content/uploads/2020/02/Management-of-chronic-obstructive-pulmonary-disease.pdf) A position statement of the South African Thoracic Society
   
@@ -99,6 +99,8 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 
 * [COPD Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISywz5CLQXgqMbyiJzR-6z-6F)
 
+* [RO2026 Insulin use in people with diabetes](https://www.youtube.com/watch?v=JWruN-6XZ9k)Prof Joel Dave
+
 * [WSU Family Medicine CMH tutorials: Insulin optimization in T2DM Dr Kabengele Kayembe](https://youtu.be/BsTsySO3Uo4)
 
 * [T2DM Treat to Target Dr Madeleine Muller](https://www.youtube.com/watch?v=C9K5gVLdHrQ)
@@ -112,6 +114,8 @@ Hospital Level, Adults 2019 Edition](https://knowledgehub.health.gov.za/system/f
 * [Dyslipidemia - Advanced Management Webinar Series Dr Kabengele Kayembe](https://www.youtube.com/playlist?list=PLaMWnazLISyy3z4TwJI-GCAyAxkutYfY9)
 
 * [CMH FM Gout et al Case Series](https://www.youtube.com/playlist?list=PLaMWnazLISyzxayOgon3RDsX8iS1l3L9X)
+
+* [RAMP2025 Allergies: Chronic Urticaria Dr C Day](https://www.youtube.com/watch?v=AS-viRymUVQ)
 
 * [The BAMSI collaborative with Prof Parrish & Dave Stead’s team from the Eastern Cape](https://medeval.co.za/lp-profile/) Excellent set of webinars targeting doctors in rural facilities in BCM and Amathole district:
 
