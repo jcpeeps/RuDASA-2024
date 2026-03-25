@@ -7,29 +7,32 @@ section: '0'
 
 ## Key Guidelines
 
-*[DoH Knowledge Hub](https://knowledgehub.health.gov.za/e-library) for all guidelines and training webinars
+* [DoH Knowledge Hub](https://knowledgehub.health.gov.za/e-library) for all guidelines and training webinars
+  
+* [DOH Standard Treatment Guidleines](https://www.health.gov.za/nhi-edp-stgs-eml/) access to all levels for adults and paeds
 
-*Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and add all the guidelines that you want to be able to access off line – internet can be fickle! This includes your all your EMLs as well as ART guidelines etc.
+  * Adults hospital STG and EML 2019: [Knowledgehub-Adults Hospital](https://knowledgehub.health.gov.za/elibrary/hospital-level-adults-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
 
-* A great resource is the [Zithulele Rural Doctors Handbook](https://www.ruraldoc.info) Free to download (with some other great resources) – this is worthwhile to having access to
+  * Paeds hospital STG and EML 2023: [Knowledgehub-Paediatrics](https://knowledgehub.health.gov.za/elibrary/hospital-level-paediatric-standard-treatment-guidelines-stgs-and-essential-medicines-list)
 
-* [Adult Primary Health Care Pack Clinical Tool 2023](Adult Primary Care (APC) Clinical Tool (2023))
+  * [Adult Primary Health Care Pack Clinical Tool 2023](https://knowledgehub.health.gov.za/elibrary/adult-primary-care-apc-clinical-tool-2023) is a great primary care resource often useful in a outpatient setting. Download the ebook version – where you can click on page / tab numbers for quick access. Great for quick reminders on e.g. STI syndromic treatments 
+   
+  * PHC EML 2020 [Knowledgehub-Primary Health](https://knowledgehub.health.gov.za/elibrary/primary-healthcare-phc-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
 
-* PHC EML 2020 [Knowledgehub-Primary Health](https://knowledgehub.health.gov.za/elibrary/primary-healthcare-phc-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
+  * IMCI [Integrated Management of Childhood Illness 2022](https://knowledgehub.health.gov.za/elibrary/integrated-management-childhood-illness-2022) is the child version of the APC. If you are not confident on managing the ill child in primary care – this is a great resource. 
 
-*[DOH Standard Treatment Guidleines](https://www.health.gov.za/nhi-edp-stgs-eml/) access to all levels for adults and paeds
+ * [PACK Resources 2026](https://knowledgetranslation.co.za/resources/#wc-downloads)
 
-* Adults hospital STG and EML 2019: [Knowledgehub-Adults Hospital](https://knowledgehub.health.gov.za/elibrary/hospital-level-adults-standard-treatment-guidelines-stgs-and-essential-medicines-list-eml)
+ * [Hospice Palliative Care Association for SA Guidelines](https://apcc.org.za/wp-content/uploads/2020/04/HPCA_Clinical_guidelines_2012-1.pdf)
 
-* Paeds hospital STG and EML 2023: [Knowledgehub-Paediatrics](https://knowledgehub.health.gov.za/elibrary/hospital-level-paediatric-standard-treatment-guidelines-stgs-and-essential-medicines-list)
+ * A great resource is the [Zithulele Rural Doctors Handbook](https://www.ruraldoc.info) Free to download (with some other great resources) – this is worthwhile to having access to
 
-* APC (adult primary care guide) 2019/2020 is a great primary care resource often useful in a outpatient setting. Download the ebook version – where you can click on page / tab numbers for quick access. Great for quick reminders on e.g. STI syndromic treatments - [Knowledgehub-Adult Primary Care](https://knowledgehub.health.gov.za/elibrary/adult-primary-care-apc-guide-20192020-updated)
-
-* IMCI[Integrated Management of Childhood Illness 2022](https://knowledgehub.health.gov.za/elibrary/integrated-management-childhood-illness-2022) is the child version of the APC. If you are not confident on managing the ill child in primary care – this is a great resource. 
+## Applications for your phone
+* Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and add all the guidelines that you want to be able to access off line – internet can be fickle! This includes your all your EMLs as well as ART guidelines etc.
 
 * Calculate by QxMD - a great collection of tools for all your calculations including eGFR, QT intervals, BMI, scores of every kind, DAS28, etc. etc. [QxMD Calculate](https://qxmd.com/calculate/) There is also an app.
 
-* [MD Calc App](https://www.mdcalc.com)
+* [MD Calc App](https://www.mdcalc.com) like QxMD
   
 * [VULA app](https://www.vulamedical.com/features): an app to refer and discuss cases and is being used by more and more consultants and hospitals. Vula&#39;s team is dedicated to improving communication challenges, especially in the public health sector, see the feature on Carte Blanche [Watch Here](https://youtu.be/YI7-1N6qPnM)
   * If you would like your department to use Vula just complete the form on this page: [Vula Form](https://bit.ly/3s3WqYT)
@@ -40,10 +43,8 @@ section: '0'
 
 * [Medscape Drug Interaction Checker](https://reference.medscape.com/drug-interactionchecker)
 
-* [Hospice Palliative Care Association for SA Guidelines](https://apcc.org.za/wp-content/uploads/2020/04/HPCA_Clinical_guidelines_2012-1.pdf)
-
-* [Speakeasy Xhosa](https://learn.speakeasyxhosa.co.za)moodle based online platform with
-400 phrases relevant for the primary care South Africa
+* [Better Evidence Uptodate programme](https://www.better-evidence.org) Working in a resource-restrained setting provides you with free access
+to Up To Date. Application details here.
 
 Here is [RuDASA Library General Resource Pack](https://drive.google.com/drive/u/0/folders/1srnPoOjfkWm7UFMTxTL-PyRhEF93oAC-)
 
@@ -67,8 +68,8 @@ I have plenty of resources here for isiXhosa as I am based in the Eastern Cape �
 
 * **Ubuntu bridge**: for isiXhosa and isiZulu. Expensive but first class to get to know the language inside out. [Learn Xhosa](https://www.learnxhosa.co.za/)
 
-* **Speak easy Xhosa**: This moodle based online platform has a specific course for health care workers and pharmacists made up out of phrase packs. Basic but very well populated with phrases commonly used in the consultation room
-
+* [Speakeasy Xhosa](https://learn.speakeasyxhosa.co.za) moodle based online platform with 400 phrases relevant for the primary care South Africa
+  
 * **Yandisa training**: this is a course I created with a local isiXhosa teacher, Phelisa Soxujwa. It was focusing on teenagers (my own included) and beginner Xhosa speakers and not specifically medical. Cheap and very homegrown( R350 per level) with Youtube Grammer videos, phrase packs and audio recordings. Contact [Dr Muller](mailto:drmullerbz@gmail.com) for more information. I’ve included some phrase packs in the google folder
 
 **If you know of any great resources out there on any of the other South Africa languages, please send to me at mentor@rudasa.org.za so that I can add to further packs.**
