@@ -25,7 +25,7 @@ infectious diseases you will see – and the landscape is always changing. Are y
 
 * There are excellent, detailed NDOH guidelines that cover all aspects of HIV care. And don’t forget your EML and APC! (see the General Resource Pack)
 
-* [2023 NDOH ART Clinical Guidelines for the Management of HIV in Adults, Pregnancy and Breastfeeding, Adolescents, Children, Infants and Neonates](https://knowledgehub.health.gov.za/elibrary/2023-art-clinical-guidelines-management-hiv-adults-pregnancy-and-breastfeeding-adolescents)
+* [National Consolidated Guidelines: Prevention and Management of HIV 2026](https://www.sahivsoc.org/Files/National%20Consolidated%20Guidelines%2004-03-2026.pdf)
 
 * [SOUTHERN AFRICAN HIV CLINICIANS SOCIETY CLINICAL GUIDELINES FOR
 HOSPITALISED ADULTS WITH ADVANCED HIV DISEASE 2022
@@ -66,9 +66,13 @@ HOSPITALISED ADULTS WITH ADVANCED HIV DISEASE 2022
 
 * [WSU NDOH ART 2023 Guidelines Children <10 years Dr Madeleine Muller June 2023](https://www.youtube.com/watch?v=8_oOX9B5vPc)
 
-* [WSU Advanced HIV disease - the workup of the ill patient Dr Madeleine Muller Dec 2022)(https://www.youtube.com/watch?v=emS1Y-Jj73I)
+* [WSU Advanced HIV disease - the workup of the ill patient Dr Madeleine Muller Dec 2022](https://www.youtube.com/watch?v=emS1Y-Jj73I)
 
 * [HIV treatment interruption with Dr John Black webinar](https://www.youtube.com/watch?v=wu_tnQTsWcY)
+
+* [RO2026 Update on prevention of HIV and HIV testing Dr Adeniyi](https://www.youtube.com/watch?v=ojbHbQanx0o)
+
+* [WSU Funda Friday HIV Webinar series 2026](https://www.youtube.com/playlist?list=PLaMWnazLISywDang7IMY9Le9sHxeNUEfq)
 
 ## TB webinars
 * [RO2023 Diagnosing TB at the District Level Jan 2023 Dr Dave Stead](https://www.youtube.com/watch?v=jNqp8tJa8CY)
@@ -87,7 +91,7 @@ HOSPITALISED ADULTS WITH ADVANCED HIV DISEASE 2022
 
 * [The SA HIV Clinicians Society website has excellent resources - see the main menu](https://sahivsoc.org/#!) [Join SA HIVSOC](https://sahivsoc.org/Subheader/Index/join) if you have a special interest in HIV.
 
-* [Medicine Information Centre at UCT has excellent resources and posters](https://mic.uct.ac.za/resources)
+* [Medicine Information Centre at UCT has excellent resources and posters. Including the SA HIV/TB Hotline](https://mic.uct.ac.za/resources)
 
 * Whatsapp advise by ID specialists (IDSSA):
 
