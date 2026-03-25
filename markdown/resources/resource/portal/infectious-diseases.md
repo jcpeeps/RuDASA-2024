@@ -31,7 +31,7 @@ For antibiotic use for any infectious disease: use your **STG/ EML guidelines on
 
 * [Clinical Management of suspected or confirmed COVID-19 Disease](https://knowledgehub.health.gov.za/elibrary/clinical-management-suspected-or-confirmed-covid-19-disease) Published insections in 2021, it is updated as needed.
 
-* [South African guideline for the management of community-acquired pneumonia in adults](https://jtd.amegroups.com/article/view/13850/html)
+* [South African guideline for the management of community-acquired pneumonia in adults 2017](https://jtd.amegroups.com/article/view/13850/html)
 
 * [Guidelines for the treatment of malaria 2019/2020](https://www.nicd.ac.za/wp-content/uploads/2017/03/National-Guidelines-for-Malaria-Treatment-SEPTEMBER-2019-Update-WITH-FRONT.pdf)
 
@@ -62,6 +62,8 @@ Infectious Disease WhatsApp groups Whatsapp advise by ID specialists (IDSSA):
 
 # Webinars:
 
+[RO2025 Patients who don't follow the script by Dr Tom Boyles](https://www.youtube.com/watch?v=DZ9SczHSGq8)
+
 [RO2024 Meningitis in the district hospital setting. Dr Tom Boyles](https://www.youtube.com/watch?v=ZwLCCVDnHeg)
 
 [RAMP Monthly Webinars 2025 Rabies prevention and post exposure prophylaxis Dr Sian Geraty](https://www.youtube.com/watch?v=mGouMms9lBU&list=PLBS4k3o3cGeaVPZWmyO7YYbCi595lBqOD&index=2)
@@ -77,6 +79,8 @@ Infectious Disease WhatsApp groups Whatsapp advise by ID specialists (IDSSA):
 [BAMSI Rabies Dr Dave Stead](https://www.youtube.com/watch?v=WoqRrIHHuvg&feature=youtu.be)
 
 [MedTalkz Cholera Medical Management Dr Luzanne Grundling](https://www.youtube.com/watch?v=rlteIVkYYiY)
+
+[Funda Friday 2024: Diagnosis and Management of Hepatitis B infection. Dr M Muller](https://www.youtube.com/watch?v=gaOdX_Gah3Q)
 
 Here is [RuDASA Library Infectious Disease (Other) folder](https://drive.google.com/drive/folders/1tJv7bvUDHE9aWS41F0AsX_0REguCM5fF)
 
