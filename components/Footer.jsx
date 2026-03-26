@@ -36,7 +36,6 @@ export default function Footer() {
 						<div className="bg-white rounded p-2 p my-1 w-100"><a href="https://web.facebook.com/groups/121981078714?_rdc=2&_rdr" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> RuDASA Students Facebook</a></div>
 						<h5 className='text-white mt-4'>Donate to us here:</h5><a href="https://payf.st/4c8zd" className="text-white text-decoration-none">Lend a hand</a></div>
 					</div
-</div>
 					
 				</div>
 				<div className="w-25 d-flex justify-content-center mt-4">
