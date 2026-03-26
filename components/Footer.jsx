@@ -37,7 +37,7 @@ export default function Footer() {
 						<h5 className='text-white mt-4'>Donate to us here:</h5><a href="https://payf.st/4c8zd" className="text-white text-decoration-none">Lend a hand</a></div>
 					</div
 </div>
-					</div>
+					
 				</div>
 				<div className="w-25 d-flex justify-content-center mt-4">
 					<a href="https://web.facebook.com/ruraldoctors/?_rdc=1&_rdr"><FontAwesomeIcon icon={faFacebook} size="2x" className="text-white p-2"/></a>
