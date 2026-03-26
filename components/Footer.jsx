@@ -34,9 +34,8 @@ export default function Footer() {
 					<div className="col d-flex flex-column">
 						<div className="bg-white rounded p-2 my-1 w-100"><a href="https://www.ruralhealthconference.org.za/" className="text-black text-decoration-none"><FontAwesomeIcon icon={faShareNodes}/> Rural Health Conference</a></div>
 						<div className="bg-white rounded p-2 p my-1 w-100"><a href="https://web.facebook.com/groups/121981078714?_rdc=2&_rdr" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> RuDASA Students Facebook</a></div>
-						<div className="bg-white rounded p-2 p my-1 w-100"><a href="https://payf.st/4c8zd" className="text-black text-decoration-none"><FontAwesomeIcon icon={faSprout}/> Lend a hand</a></div>
 					</div
-	</div>				
+	  </div>				
 				</div>
 				<div className="w-25 d-flex justify-content-center mt-4">
 					<a href="https://web.facebook.com/ruraldoctors/?_rdc=1&_rdr"><FontAwesomeIcon icon={faFacebook} size="2x" className="text-white p-2"/></a>
