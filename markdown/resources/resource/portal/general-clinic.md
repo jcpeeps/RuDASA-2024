@@ -30,10 +30,8 @@ section: '0'
 ## Applications for your phone
 * Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and add all the guidelines that you want to be able to access off line – internet can be fickle! This includes your all your EMLs as well as ART guidelines etc.
 
-* Calculate by QxMD - a great collection of tools for all your calculations including eGFR, QT intervals, BMI, scores of every kind, DAS28, etc. etc. [QxMD Calculate](https://qxmd.com/calculate/) There is also an app.
+*  [MD Calc App](https://www.mdcalc.com) - a great collection of tools for all your calculations including eGFR, QT intervals, BMI, scores of every kind, DAS28, etc. etc. 
 
-* [MD Calc App](https://www.mdcalc.com) like QxMD
-  
 * [VULA app](https://www.vulamedical.com/features): an app to refer and discuss cases and is being used by more and more consultants and hospitals. Vula&#39;s team is dedicated to improving communication challenges, especially in the public health sector, see the feature on Carte Blanche [Watch Here](https://youtu.be/YI7-1N6qPnM)
   * If you would like your department to use Vula just complete the form on this page: [Vula Form](https://bit.ly/3s3WqYT)
 
