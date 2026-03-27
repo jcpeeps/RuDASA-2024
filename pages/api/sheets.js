@@ -883,8 +883,11 @@ export default async function handler(req, res)
 
                             <p>
                                 Thank you for your support and for being a part of our mission to support the health and vitality of rural communities. We look forward to working with you!
+                         
                             </p>
-
+                            <p>
+                            If you would like to donate to RuDASA please go to: https://payf.st/vifjr
+                            </p>
                             <br />
 
                             Best,<br />
