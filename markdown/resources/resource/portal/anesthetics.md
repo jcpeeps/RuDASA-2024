@@ -25,14 +25,14 @@ section: '6'
 * [Safe Anaesthetics and Safe Sedation. Zithulele hospital.](http://www.zithulele.org/uploads/4/1/4/2/4142372/rural_sedation___anaesthetics_2021.pdf) A great PowerPoint presentation on safe anaesthetics in a rural district hospital.
 
 ** Webinars
-* [District Anaesthesia YouTube channel](https://www.youtube.com/channel/UC5RyvotEzpFIKFYozpKUgAw).Sign up for the live sessions every couple of weeks on an early Tuesday morning [Here](https://ukzn.zoom.us/meeting/register/tJwvcuugqjktHtVW4FPW26n1J7wGKiPscn2x) 
+* [District Anaesthesia YouTube channel with Prof Bishop](https://www.youtube.com/channel/UC5RyvotEzpFIKFYozpKUgAw).Sign up for the live sessions every couple of weeks on an early Tuesday morning [Here](https://ukzn.zoom.us/meeting/register/tJwvcuugqjktHtVW4FPW26n1J7wGKiPscn2x) 
 * [RO2022 An approach to District Anaesthesia; SAFE and SIMPLE. Prof David Bishop](https://youtu.be/Zt8yGgegzHQ)  
-* RO2023 [Things that go wrong in Anaesthesia & how to avoid them. Prof Dave Bishop](https://youtu.be/6ZwJxZjSlio?si=5C1de73MWtu1G-jQ)
-* RO2024 [Conscious Sedation Techniques for District Hospitals. Dr Hans Hendricks](https://www.youtube.com/watch?v=VmdlYEZBPO8)
+* [RO2023 Things that go wrong in Anaesthesia & how to avoid them. Prof Dave Bishop](https://youtu.be/6ZwJxZjSlio?si=5C1de73MWtu1G-jQ)
+* [RO2024 Conscious Sedation Techniques for District Hospitals. Dr Hans Hendricks](https://www.youtube.com/watch?v=VmdlYEZBPO8)
 * [Patient sedation and analgesia Dr Joyce Gibson, Anaesthetist Frere hospital.](https://youtu.be/kZskjzS35bk) Dr Joyce Gibson takes us through the paces of safe patient sedation and analgesia.
 * [Propofology Anaesthetics video tutorials](https://www.propofology.com/tutorial-list.html) on Propofology, a UK based, UK based, international project created out of the desire to advance the role of the FOAMed (Free Open Access to Medical Education) to everyone involved in anaesthesia, critical care and pain medicine.
 * [Obstetric spinal anaesthesia. Dr Le Roux](https://youtu.be/YOlv9xBY5j0) A practical zoom webinaron spinal anaesthesia in your obstetric patients.
-* Ever wondered what to have in your obstetric spinal tray? [Find out here!](https://youtu.be/mAorYKBv500)
+* Ever wondered [what to have in your obstetric spinal tray?](https://youtu.be/mAorYKBv500)
 * [The Anaethetist behind the mask](https://www.youtube.com/watch?v=Og2zkdFM2nU)
 
 Here is [a link to a Google Drive folder](https://drive.google.com/drive/u/0/folders/1snyyhqjtJaYfNRMEA0ohwVJLxr8ecpXY) with more resources, including:
