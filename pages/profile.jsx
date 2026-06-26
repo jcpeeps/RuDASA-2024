@@ -200,7 +200,7 @@ export default function Profile() {
 
     return (
         <Layout pageTitle="RuDASA | My Profile">
-            <section className="container py-5">
+            <section className="container py-5" style={{ paddingTop: '140px' }}>
                 <div className="d-flex flex-column align-items-center" style={{ maxWidth: '700px', margin: '0 auto' }}>
                     <h1 className="fw-bold text-primary mb-2">My Profile</h1>
 
@@ -214,7 +214,7 @@ export default function Profile() {
                         <p className="text-danger">{loadError}</p>
                     ) : (
                         <>
-                            <p className="text-muted mb-4 text-center">
+                            <p className="mb-4 text-center" style={{ color: '#555' }}>
                                 Update your workplace details below. Changed jobs, moved facilities, or your role has
                                 changed since you signed up? Keep your record accurate so RuDASA can support you correctly.
                             </p>
