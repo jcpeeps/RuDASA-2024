@@ -84,6 +84,15 @@ export default function Navigation() {
                     <Nav.Link className={router.pathname == "/articles" ? "active" : ""} href="/articles">Articles</Nav.Link>
                     <Nav.Link className={router.pathname == "/resources" ? "active" : ""} href="/resources">Resources</Nav.Link>
                     <Nav.Link className={router.pathname == "/contact" ? "active" : ""} href="/contact">Contact Us</Nav.Link>
+
+                    { //Only show "Update your details" link when logged in, since /profile
+                      //redirects to /login otherwise — no point showing it to logged-out visitors
+                        (user?.isLoggedIn)?
+                        (
+                            <Nav.Link className={router.pathname == "/profile" ? "active" : ""} href="/profile">Update your details</Nav.Link>
+                        ):""
+                    }
+
                     <Nav.Link href={(user?.isLoggedIn)?"/portal":"/login"}>
                         <div className="hover-button">
                             <Button className="nav-link p-3 text-white gradient-background shadow">{ getLoginTitle() }</Button>
