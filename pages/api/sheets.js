@@ -588,7 +588,9 @@ export default async function handler(req, res)
         }
 
         // ====== HANDLE GET PROFILE =====
-        // Returns the member's current province, district, workPlace, jobDescription
+        // Returns the member's current editable profile fields:
+        // firstName, surname, cellNo, workNo, province, district,
+        // workPlace, jobDescription, employmentArea, workArea, professionalNumber
         async function handleGetProfile(req, email) {
             if (!email) {
                 return res.status(400).json({
@@ -620,18 +622,31 @@ export default async function handler(req, res)
             }
 
             // Fetch the row's current values for the editable fields
-            const range = `Users!I${userRow}:O${userRow}`; // covers I (province) through O (jobDescription)
+            // Single contiguous range from C (firstName) through R (professionalNumber)
+            // covers everything we need in one API call
+            const range = `Users!C${userRow}:R${userRow}`;
             const response = await sheets.spreadsheets.values.get({
                 spreadsheetId: process.env.GOOGLE_SHEET_ID,
                 range: range,
             });
 
             const row = response.data.values?.[0] || [];
-            // Since range starts at I, offsets are: I=0, J=1, K=2, L=3, M=4, N=5, O=6
-            const province       = row[0] || "";
-            const workPlace       = row[4] || "";
-            const district         = row[5] || "";
-            const jobDescription = row[6] || "";
+            // Range starts at C, so offsets are:
+            // C=0 firstName, D=1 surname, E=2 signUpReason, F=3 cellNo, G=4 workNo,
+            // H=5 country, I=6 province, J=7 address1, K=8 address2, L=9 address3,
+            // M=10 workPlace, N=11 district, O=12 jobDescription, P=13 employmentArea,
+            // Q=14 workArea, R=15 professionalNumber
+            const firstName         = row[0]  || "";
+            const surname            = row[1]  || "";
+            const cellNo             = row[3]  || "";
+            const workNo             = row[4]  || "";
+            const province           = row[6]  || "";
+            const workPlace          = row[10] || "";
+            const district            = row[11] || "";
+            const jobDescription     = row[12] || "";
+            const employmentArea     = row[13] || "";
+            const workArea           = row[14] || "";
+            const professionalNumber = row[15] || "";
 
             return res.status(200).json({
                 status: "success",
@@ -639,18 +654,31 @@ export default async function handler(req, res)
                 message: "Profile fetched successfully",
                 data: {
                     email,
+                    firstName,
+                    surname,
+                    cellNo,
+                    workNo,
                     province,
                     district,
                     workPlace,
-                    jobDescription
+                    jobDescription,
+                    employmentArea,
+                    workArea,
+                    professionalNumber
                 }
             });
         }
 
         // ====== HANDLE UPDATE PROFILE =====
-        // Updates province, district, workPlace, jobDescription for the given email
+        // Updates firstName, surname, cellNo, workNo, province, district,
+        // workPlace, jobDescription, employmentArea, workArea, professionalNumber
         async function handleUpdateProfile(req, data) {
-            const REQUIRED_FIELDS = ["email", "province", "district", "workPlace", "jobDescription"];
+            const REQUIRED_FIELDS = [
+                "email", "firstName", "surname", "cellNo",
+                "province", "district", "workPlace", "jobDescription", "employmentArea"
+            ];
+            // Note: workNo, workArea, professionalNumber are optional —
+            // matches the same optionality as the original signup form
 
             if (!checkAllFieldsProvided(data, REQUIRED_FIELDS)) {
                 return res.status(400).json({
@@ -681,10 +709,24 @@ export default async function handler(req, res)
                 });
             }
 
-            // Write the 4 editable fields back to their respective columns
-            // I=province, M=workPlace, N=district, O=jobDescription
-            // These aren't contiguous (I is separate from M:O), so two update calls
             try {
+                // Write firstName, surname (C:D)
+                await sheets.spreadsheets.values.update({
+                    spreadsheetId: process.env.GOOGLE_SHEET_ID,
+                    range: `Users!C${userRow}:D${userRow}`,
+                    valueInputOption: "RAW",
+                    requestBody: { values: [[data.firstName, data.surname]] },
+                });
+
+                // Write cellNo, workNo (F:G)
+                await sheets.spreadsheets.values.update({
+                    spreadsheetId: process.env.GOOGLE_SHEET_ID,
+                    range: `Users!F${userRow}:G${userRow}`,
+                    valueInputOption: "RAW",
+                    requestBody: { values: [[data.cellNo, data.workNo || ""]] },
+                });
+
+                // Write province (I)
                 await sheets.spreadsheets.values.update({
                     spreadsheetId: process.env.GOOGLE_SHEET_ID,
                     range: `Users!I${userRow}`,
@@ -692,11 +734,19 @@ export default async function handler(req, res)
                     requestBody: { values: [[data.province]] },
                 });
 
+                // Write workPlace, district, jobDescription, employmentArea, workArea, professionalNumber (M:R)
                 await sheets.spreadsheets.values.update({
                     spreadsheetId: process.env.GOOGLE_SHEET_ID,
-                    range: `Users!M${userRow}:O${userRow}`,
+                    range: `Users!M${userRow}:R${userRow}`,
                     valueInputOption: "RAW",
-                    requestBody: { values: [[data.workPlace, data.district, data.jobDescription]] },
+                    requestBody: { values: [[
+                        data.workPlace,
+                        data.district,
+                        data.jobDescription,
+                        data.employmentArea,
+                        data.workArea || "",
+                        data.professionalNumber || ""
+                    ]] },
                 });
 
                 return res.status(200).json({
