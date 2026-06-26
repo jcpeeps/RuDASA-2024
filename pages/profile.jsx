@@ -94,10 +94,17 @@ export default function Profile() {
     const [manualFacility, setManualFacility] = useState(false);
 
     const [formData, setFormData] = useState({
-        province:       "",
-        district:       "",
-        workPlace:      "",
-        jobDescription: "medical-officer",
+        firstName:         "",
+        surname:            "",
+        cellNo:             "",
+        workNo:             "",
+        province:           "",
+        district:           "",
+        workPlace:          "",
+        jobDescription:     "medical-officer",
+        employmentArea:     "private-sector",
+        workArea:           "",
+        professionalNumber: "",
     });
 
     // Fetch current profile values once we know who's logged in
@@ -114,10 +121,17 @@ export default function Profile() {
 
                 if (response.status === "success") {
                     setFormData({
-                        province:       response.data.province       || "",
-                        district:       response.data.district       || "",
-                        workPlace:      response.data.workPlace      || "",
-                        jobDescription: response.data.jobDescription || "medical-officer",
+                        firstName:         response.data.firstName         || "",
+                        surname:            response.data.surname            || "",
+                        cellNo:             response.data.cellNo             || "",
+                        workNo:             response.data.workNo             || "",
+                        province:           response.data.province           || "",
+                        district:           response.data.district           || "",
+                        workPlace:          response.data.workPlace          || "",
+                        jobDescription:     response.data.jobDescription     || "medical-officer",
+                        employmentArea:     response.data.employmentArea     || "private-sector",
+                        workArea:           response.data.workArea           || "",
+                        professionalNumber: response.data.professionalNumber || "",
                     });
                     // If the district isn't in our hierarchy under this province,
                     // or workPlace isn't in the list, fall back to manual entry mode
@@ -162,8 +176,10 @@ export default function Profile() {
         setSubmitMsg("");
         setSubmitErr("");
 
-        if (!formData.province || !formData.district || !formData.workPlace || !formData.jobDescription) {
-            setSubmitErr("Please fill in all fields before saving.");
+        if (!formData.firstName || !formData.surname || !formData.cellNo ||
+            !formData.province || !formData.district || !formData.workPlace ||
+            !formData.jobDescription || !formData.employmentArea) {
+            setSubmitErr("Please fill in all required fields before saving.");
             return;
         }
 
@@ -176,10 +192,17 @@ export default function Profile() {
                     type: "updateProfile",
                     data: {
                         email: user.email,
+                        firstName: formData.firstName,
+                        surname: formData.surname,
+                        cellNo: formData.cellNo,
+                        workNo: formData.workNo,
                         province: formData.province,
                         district: formData.district,
                         workPlace: formData.workPlace,
                         jobDescription: formData.jobDescription,
+                        employmentArea: formData.employmentArea,
+                        workArea: formData.workArea,
+                        professionalNumber: formData.professionalNumber,
                     }
                 })
             }).then(r => r.json());
@@ -224,6 +247,40 @@ export default function Profile() {
                                 <div className="mb-4">
                                     <label className="text-primary fw-bold form-label">Email</label>
                                     <input type="text" className="form-control border-0 border-bottom" value={user.email} disabled />
+                                </div>
+
+                                <div className="row mb-4">
+                                    <div className="col-12 col-md-6 mb-3 mb-md-0">
+                                        <label className="text-primary fw-bold form-label">First Name*</label>
+                                        <input type="text" className="form-control border-0 border-bottom"
+                                            value={formData.firstName}
+                                            onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                                        />
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <label className="text-primary fw-bold form-label">Surname*</label>
+                                        <input type="text" className="form-control border-0 border-bottom"
+                                            value={formData.surname}
+                                            onChange={(e) => setFormData({ ...formData, surname: e.target.value })}
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="row mb-4">
+                                    <div className="col-12 col-md-6 mb-3 mb-md-0">
+                                        <label className="text-primary fw-bold form-label">Cellphone Number*</label>
+                                        <input type="tel" className="form-control border-0 border-bottom"
+                                            value={formData.cellNo}
+                                            onChange={(e) => setFormData({ ...formData, cellNo: e.target.value })}
+                                        />
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <label className="text-primary fw-bold form-label">Work Telephone</label>
+                                        <input type="tel" className="form-control border-0 border-bottom"
+                                            value={formData.workNo}
+                                            onChange={(e) => setFormData({ ...formData, workNo: e.target.value })}
+                                        />
+                                    </div>
                                 </div>
 
                                 <div className="row mb-4">
@@ -308,6 +365,35 @@ export default function Profile() {
                                         <option value="other-health-professional">Other health professional</option>
                                         <option value="non-health-professional">Non health professional</option>
                                     </select>
+                                </div>
+
+                                <div className="row mb-4">
+                                    <div className="col-12 col-md-6 mb-3 mb-md-0">
+                                        <label className="text-primary fw-bold form-label">Employment Area*</label>
+                                        <select className="form-select border-0 border-bottom" value={formData.employmentArea}
+                                            onChange={(e) => setFormData({ ...formData, employmentArea: e.target.value })}>
+                                            <option value="private-sector">Private sector</option>
+                                            <option value="public-sector">Public sector</option>
+                                            <option value="training-institute">Training institute</option>
+                                            <option value="ngo">NGO</option>
+                                            <option value="student">Student</option>
+                                        </select>
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <label className="text-primary fw-bold form-label">Work Area</label>
+                                        <input type="text" className="form-control border-0 border-bottom" placeholder="e.g. Family Medicine"
+                                            value={formData.workArea}
+                                            onChange={(e) => setFormData({ ...formData, workArea: e.target.value })}
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="mb-4">
+                                    <label className="text-primary fw-bold form-label">Professional Number</label>
+                                    <input type="text" className="form-control border-0 border-bottom"
+                                        value={formData.professionalNumber}
+                                        onChange={(e) => setFormData({ ...formData, professionalNumber: e.target.value })}
+                                    />
                                 </div>
 
                                 {submitMsg && <p className="text-success fw-bold">{submitMsg}</p>}
