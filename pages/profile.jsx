@@ -200,7 +200,7 @@ export default function Profile() {
 
     return (
         <Layout pageTitle="RuDASA | My Profile">
-            <section className="container py-5" style={{ paddingTop: '140px' }}>
+            <section className="container py-5" style={{ paddingTop: '180px' }}>
                 <div className="d-flex flex-column align-items-center" style={{ maxWidth: '700px', margin: '0 auto' }}>
                     <h1 className="fw-bold text-primary mb-2">My Profile</h1>
 
