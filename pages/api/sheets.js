@@ -96,6 +96,10 @@ export default async function handler(req, res)
                 return await handleGetPassResetToken(req, req.body.data?.email);
             case "changePassword":
                 return await handleChangePassword(req, req.body.data);
+            case "getProfile":
+                return await handleGetProfile(req, req.body.data?.email);
+            case "updateProfile":
+                return await handleUpdateProfile(req, req.body.data);
             default:
                 return res.status(400).json({
                     status: "error",
@@ -581,6 +585,135 @@ export default async function handler(req, res)
                 message: "Something went wrong while resetting your password. Please try again later",
                 data: {}
             });
+        }
+
+        // ====== HANDLE GET PROFILE =====
+        // Returns the member's current province, district, workPlace, jobDescription
+        async function handleGetProfile(req, email) {
+            if (!email) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "missingEmail",
+                    message: "Email is required",
+                    data: {}
+                });
+            }
+
+            const userRow = await getEmailRowInDatabase(email);
+
+            if (userRow === null) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "dbConnFailed",
+                    message: "There was an error processing your request",
+                    data: {}
+                });
+            }
+
+            if (userRow === -1) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "userNotFound",
+                    message: "That email does not correspond to a registered user",
+                    data: {}
+                });
+            }
+
+            // Fetch the row's current values for the editable fields
+            const range = `Users!I${userRow}:O${userRow}`; // covers I (province) through O (jobDescription)
+            const response = await sheets.spreadsheets.values.get({
+                spreadsheetId: process.env.GOOGLE_SHEET_ID,
+                range: range,
+            });
+
+            const row = response.data.values?.[0] || [];
+            // Since range starts at I, offsets are: I=0, J=1, K=2, L=3, M=4, N=5, O=6
+            const province       = row[0] || "";
+            const workPlace       = row[4] || "";
+            const district         = row[5] || "";
+            const jobDescription = row[6] || "";
+
+            return res.status(200).json({
+                status: "success",
+                code: "getProfileSuccess",
+                message: "Profile fetched successfully",
+                data: {
+                    email,
+                    province,
+                    district,
+                    workPlace,
+                    jobDescription
+                }
+            });
+        }
+
+        // ====== HANDLE UPDATE PROFILE =====
+        // Updates province, district, workPlace, jobDescription for the given email
+        async function handleUpdateProfile(req, data) {
+            const REQUIRED_FIELDS = ["email", "province", "district", "workPlace", "jobDescription"];
+
+            if (!checkAllFieldsProvided(data, REQUIRED_FIELDS)) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "invalidUpdate",
+                    message: "Invalid update request, some required fields were empty",
+                    data: {}
+                });
+            }
+
+            const userRow = await getEmailRowInDatabase(data.email);
+
+            if (userRow === null) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "dbConnFailed",
+                    message: "There was an error processing your request",
+                    data: {}
+                });
+            }
+
+            if (userRow === -1) {
+                return res.status(400).json({
+                    status: "error",
+                    code: "userNotFound",
+                    message: "That email does not correspond to a registered user",
+                    data: {}
+                });
+            }
+
+            // Write the 4 editable fields back to their respective columns
+            // I=province, M=workPlace, N=district, O=jobDescription
+            // These aren't contiguous (I is separate from M:O), so two update calls
+            try {
+                await sheets.spreadsheets.values.update({
+                    spreadsheetId: process.env.GOOGLE_SHEET_ID,
+                    range: `Users!I${userRow}`,
+                    valueInputOption: "RAW",
+                    requestBody: { values: [[data.province]] },
+                });
+
+                await sheets.spreadsheets.values.update({
+                    spreadsheetId: process.env.GOOGLE_SHEET_ID,
+                    range: `Users!M${userRow}:O${userRow}`,
+                    valueInputOption: "RAW",
+                    requestBody: { values: [[data.workPlace, data.district, data.jobDescription]] },
+                });
+
+                return res.status(200).json({
+                    status: "success",
+                    code: "updateProfileSuccess",
+                    message: "Your profile was successfully updated",
+                    data: {}
+                });
+
+            } catch (e) {
+                return res.status(500).json({
+                    status: "error",
+                    code: "updateFailed",
+                    message: "Something went wrong while updating your profile. Please try again later.",
+                    data: {}
+                });
+            }
         }
 
         //===== HANDLE LOGOUT =====
