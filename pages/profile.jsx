@@ -107,6 +107,17 @@ export default function Profile() {
         professionalNumber: "",
     });
 
+    // Treats known "placeholder junk" values as if the field were empty.
+    // Prevents members from seeing the literal word "Unknown" (written by
+    // the Lookup cleaning scripts for unmatched values) displayed back to
+    // them as if it were their real data.
+    const PLACEHOLDER_VALUES = ["unknown", "undefined", "null", "n/a", "-"];
+    const cleanValue = (val) => {
+        if (!val) return "";
+        const trimmed = String(val).trim();
+        return PLACEHOLDER_VALUES.includes(trimmed.toLowerCase()) ? "" : trimmed;
+    };
+
     // Fetch current profile values once we know who's logged in
     useEffect(() => {
         if (!user || !user.isLoggedIn || !user.email) return;
@@ -120,26 +131,32 @@ export default function Profile() {
                 }).then(r => r.json());
 
                 if (response.status === "success") {
+                    const cleanedDistrict  = cleanValue(response.data.district);
+                    const cleanedWorkPlace = cleanValue(response.data.workPlace);
+
                     setFormData({
-                        firstName:         response.data.firstName         || "",
-                        surname:            response.data.surname            || "",
-                        cellNo:             response.data.cellNo             || "",
-                        workNo:             response.data.workNo             || "",
-                        province:           response.data.province           || "",
-                        district:           response.data.district           || "",
-                        workPlace:          response.data.workPlace          || "",
-                        jobDescription:     response.data.jobDescription     || "medical-officer",
-                        employmentArea:     response.data.employmentArea     || "private-sector",
-                        workArea:           response.data.workArea           || "",
-                        professionalNumber: response.data.professionalNumber || "",
+                        firstName:         cleanValue(response.data.firstName),
+                        surname:            cleanValue(response.data.surname),
+                        cellNo:             cleanValue(response.data.cellNo),
+                        workNo:             cleanValue(response.data.workNo),
+                        province:           cleanValue(response.data.province),
+                        district:           cleanedDistrict,
+                        workPlace:          cleanedWorkPlace,
+                        jobDescription:     cleanValue(response.data.jobDescription)     || "medical-officer",
+                        employmentArea:     cleanValue(response.data.employmentArea)     || "private-sector",
+                        workArea:           cleanValue(response.data.workArea),
+                        professionalNumber: cleanValue(response.data.professionalNumber),
                     });
                     // If the district isn't in our hierarchy under this province,
-                    // or workPlace isn't in the list, fall back to manual entry mode
+                    // or workPlace isn't in the list, fall back to manual entry mode.
+                    // An empty/sanitized district (was "Unknown") also lands here,
+                    // correctly showing a blank field for the member to fill in themselves.
                     const districtList = HIERARCHY[response.data.province]
                         ? Object.keys(HIERARCHY[response.data.province])
                         : [];
-                    if (!districtList.includes(response.data.district)) {
+                    if (!districtList.includes(cleanedDistrict)) {
                         setManualFacility(true);
+
                     }
                 } else {
                     setLoadError(response.message || "Could not load your profile.");
@@ -335,10 +352,13 @@ export default function Profile() {
                                         </>
                                     ) : (
                                         <>
-                                            <input type="text" className="form-control border-0 border-bottom" placeholder="Facility name"
+                                            <input type="text" className="form-control border-0 border-bottom" placeholder="Type full facility name"
                                                 value={formData.workPlace}
                                                 onChange={(e) => setFormData({ ...formData, workPlace: e.target.value })}
                                             />
+                                            <small className="text-muted mt-1 d-block">
+                                                This must be the facility you are working in, e.g. Rob Ferreira Hospital, eDumbe CHC, Green Point Clinic.
+                                            </small>
                                             {availableFacilities.length > 0 && (
                                                 <small className="text-muted mt-1 d-block">
                                                     <span className="text-primary" style={{ cursor: 'pointer', textDecoration: 'underline' }}
