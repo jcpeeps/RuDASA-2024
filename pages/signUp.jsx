@@ -497,11 +497,16 @@ export default function SignUp({ data }) {
                                                                                 </small>
                                                                             )}
                                                                             {manualFacility && (
-                                                                                <Field type="text" name="workPlace" placeholder="Type facility name"
-                                                                                    className={`form-control border-0 border-bottom mt-2 ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
-                                                                                    value={formData.workPlace}
-                                                                                    onChange={(e) => { setFormData({ ...formData, workPlace: e.target.value }); handleChange(e); }}
-                                                                                />
+                                                                                <>
+                                                                                    <Field type="text" name="workPlace" placeholder="Type full facility name"
+                                                                                        className={`form-control border-0 border-bottom mt-2 ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
+                                                                                        value={formData.workPlace}
+                                                                                        onChange={(e) => { setFormData({ ...formData, workPlace: e.target.value }); handleChange(e); }}
+                                                                                    />
+                                                                                    <small className="text-muted mt-1 d-block">
+                                                                                        This must be the facility you are working in, e.g. Rob Ferreira Hospital, eDumbe CHC, Green Point Clinic.
+                                                                                    </small>
+                                                                                </>
                                                                             )}
                                                                         </>
                                                                     ) : (
