@@ -464,51 +464,66 @@ export default function SignUp({ data }) {
                                                                 <div className="form-group">
                                                                     <label htmlFor="workPlace" className="text-primary fw-bold form-label ms-2">Place of work*</label>
                                                                     {isSouthAfrica ? (
-                                                                        <>
-                                                                            <select id="workPlace" name="workPlace"
-                                                                                className={`form-select border-0 border-bottom ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
-                                                                                value={formData.workPlace}
-                                                                                disabled={!formData.district}
-                                                                                onChange={(e) => {
-                                                                                    setFormData({ ...formData, workPlace: e.target.value });
-                                                                                    handleChange(e);
-                                                                                }}>
-                                                                                <option value="">
-                                                                                    {formData.district ? `— Select Facility (${availableFacilities.length}) —` : "— Select District first —"}
-                                                                                </option>
-                                                                                {availableFacilities.map(f => (
-                                                                                    <option key={f} value={f}>{f}</option>
-                                                                                ))}
-                                                                            </select>
-                                                                            {/* Allow manual entry if facility not in list */}
-                                                                            {!manualFacility && (
-                                                                                <small className="text-muted ms-2 mt-1 d-block">
-                                                                                    Not in the list?{' '}
-                                                                                    <span
-                                                                                        className="text-primary"
-                                                                                        style={{ cursor: 'pointer', textDecoration: 'underline' }}
-                                                                                        onClick={() => {
-                                                                                            setManualFacility(true);
-                                                                                            setFormData({ ...formData, workPlace: '' });
-                                                                                        }}
-                                                                                    >
-                                                                                        Type it below
-                                                                                    </span>
-                                                                                </small>
-                                                                            )}
-                                                                            {manualFacility && (
-                                                                                <>
-                                                                                    <Field type="text" name="workPlace" placeholder="Type full facility name"
-                                                                                        className={`form-control border-0 border-bottom mt-2 ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
-                                                                                        value={formData.workPlace}
-                                                                                        onChange={(e) => { setFormData({ ...formData, workPlace: e.target.value }); handleChange(e); }}
-                                                                                    />
-                                                                                    <small className="text-muted mt-1 d-block">
-                                                                                        This must be the facility you are working in, e.g. Rob Ferreira Hospital, eDumbe CHC, Green Point Clinic.
+                                                                        !manualFacility ? (
+                                                                            <>
+                                                                                <select id="workPlace" name="workPlace"
+                                                                                    className={`form-select border-0 border-bottom ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
+                                                                                    value={formData.workPlace}
+                                                                                    disabled={!formData.district}
+                                                                                    onChange={(e) => {
+                                                                                        setFormData({ ...formData, workPlace: e.target.value });
+                                                                                        handleChange(e);
+                                                                                    }}>
+                                                                                    <option value="">
+                                                                                        {formData.district ? `— Select Facility (${availableFacilities.length}) —` : "— Select District first —"}
+                                                                                    </option>
+                                                                                    {availableFacilities.map(f => (
+                                                                                        <option key={f} value={f}>{f}</option>
+                                                                                    ))}
+                                                                                </select>
+                                                                                {/* Allow manual entry if facility not in list */}
+                                                                                {formData.district && (
+                                                                                    <small className="text-muted ms-2 mt-1 d-block">
+                                                                                        Not in the list?{' '}
+                                                                                        <span
+                                                                                            className="text-primary"
+                                                                                            style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                                                                                            onClick={() => {
+                                                                                                setManualFacility(true);
+                                                                                                setFormData({ ...formData, workPlace: '' });
+                                                                                            }}
+                                                                                        >
+                                                                                            Type it below
+                                                                                        </span>
                                                                                     </small>
-                                                                                </>
-                                                                            )}
-                                                                        </>
+                                                                                )}
+                                                                            </>
+                                                                        ) : (
+                                                                            <>
+                                                                                <Field type="text" name="workPlace" placeholder="Type full facility name"
+                                                                                    className={`form-control border-0 border-bottom ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
+                                                                                    value={formData.workPlace}
+                                                                                    onChange={(e) => { setFormData({ ...formData, workPlace: e.target.value }); handleChange(e); }}
+                                                                                />
+                                                                                <small className="text-muted mt-1 d-block">
+                                                                                    This must be the facility you are working in, e.g. Rob Ferreira Hospital, eDumbe CHC, Green Point Clinic.
+                                                                                </small>
+                                                                                {availableFacilities.length > 0 && (
+                                                                                    <small className="text-muted mt-1 d-block">
+                                                                                        <span
+                                                                                            className="text-primary"
+                                                                                            style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                                                                                            onClick={() => {
+                                                                                                setManualFacility(false);
+                                                                                                setFormData({ ...formData, workPlace: '' });
+                                                                                            }}
+                                                                                        >
+                                                                                            Choose from list instead
+                                                                                        </span>
+                                                                                    </small>
+                                                                                )}
+                                                                            </>
+                                                                        )
                                                                     ) : (
                                                                         <Field type="text" name="workPlace" placeholder="Work name"
                                                                             className={`form-control border-0 border-bottom ${touched.workPlace && errors.workPlace ? "is-invalid" : ""}`}
