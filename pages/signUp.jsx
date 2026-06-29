@@ -120,7 +120,7 @@ export default function SignUp({ data }) {
         cellNo: "",
         workNo: "",
         country: "South Africa",    // full name now
-        province: "Eastern Cape",   // full name now
+        province: "",   // no default — member must actively choose
         address1: "",
         address2: "",
         address3: "",
@@ -229,6 +229,11 @@ export default function SignUp({ data }) {
         address1: Yup.string().required("Please provide an address"),
         workPlace: Yup.string().required("Place of work is required"),
         district: Yup.string().required("District is required"),
+        province: Yup.string()
+            .when("other", {
+                is: () => isSouthAfrica, // only required when South Africa is the selected country
+                then: Yup.string().required("Please select a province")
+            }),
         cellNo: Yup.string()
             .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/, 'Invalid phone number')
             .required("Cell no. is required"),
@@ -366,7 +371,7 @@ export default function SignUp({ data }) {
                                                             <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                                 <label htmlFor="country" className="text-primary fw-bold form-label">Country*</label>
                                                                 <select id="country" className="form-select border-0 border-bottom" value={formData.country}
-                                                                    onChange={(e) => setFormData({ ...formData, country: e.target.value, province: "Eastern Cape", district: "", workPlace: "" })}>
+                                                                    onChange={(e) => setFormData({ ...formData, country: e.target.value, province: "", district: "", workPlace: "" })}>
                                                                     {countries.map(c => (
                                                                         <option key={c.code} value={c.name}>{c.name}</option>
                                                                     ))}
@@ -377,6 +382,7 @@ export default function SignUp({ data }) {
                                                                     <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
                                                                     <select id="province" className="form-select border-0 border-bottom" value={formData.province}
                                                                         onChange={(e) => handleProvinceChange(e.target.value)}>
+                                                                        <option value="">— Select Province —</option>
                                                                         {provinces.map(name => (
                                                                             <option key={name} value={name}>{name}</option>
                                                                         ))}
