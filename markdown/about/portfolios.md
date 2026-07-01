@@ -4,7 +4,7 @@ members:
     {
       role: "RuDASA Office Coordinator",
       title: "",
-      name: "Stephanie Homer",
+      name: "Lou Billet",
       email: "info@rudasa.org.za",
     },
     {
@@ -22,7 +22,7 @@ members:
     {
       role: "Rural Doctor of the Year",
       title: "",
-      name: "Stephanie Homer",
+      name: "Lou Billet",
       email: "award@rudasa.org.za",
     },
   ]
