@@ -31,6 +31,8 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [WHO Paediatric emergency triage, assessment and treatment Care of critically ill children](https://apps.who.int/iris/bitstream/handle/10665/204463/9789241510219_eng.pdf)
 
+* [PACK Western Cape CHILD 2026](https://knowledgetranslation.co.za/resources/#wc-downloads)
+
 * See the Infectious Diseases and Emergency Medicine Resource Packs for paeds related guidelines and tools
 
 ## Reading material / Tutorials / Webinars / Additional resources
@@ -41,9 +43,25 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [Neonatal Essential Package of Care (EPOC) resource page. KZN DOH](http://www.kznhealth.gov.za/neonates/ess-pack/essential-package.htm)
 
+* [Neonatal Care in Rural Health. Pitfalls and FAQ Dr M Lotz. Webinar 2021](https://youtu.be/aXqzO7EaDO4)
+
+* [GSH Neonates ‘Purple Book’](https://neonatalguidelines.com)
+  
 * [Assisting mom and health care workers with newborn care including breastfeeding](https://globalhealthmedia.org/videos/),Great, practical videos for mom and healthcare workers
 
 * [Breast Feeding tutorial health care workers Global Health Media](https://globalhealthmedia.org/videos/the-breastfeeding-method/)
+
+*  [Management of severe acute malnutrition](http://www.samj.org.za/index.php/samj/article/view/10072)
+  
+* [The Childrens Act Guide](https://ci.uct.ac.za/media/99107) This guide makes child health legal aspects much easier to understand, the chapters on consent and abuse and neglect especially relevant.
+
+* [Management of TB in children and adolecents Guideline 2024](https://knowledgehub.health.gov.za/elibrary/management-tuberculosis-children-and-adolescents)
+
+* [Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
+
+* [Nationl Asthma Treatment Programme](https://www.asthmasa.org)
+
+* [WHO Emergency Triage Assessment and Treatment(ETAT) Participants Manual](https://iris.who.int/server/api/core/bitstreams/defcbf2b-9d70-4610-b5a3-dd6d46301994/content)
 
 * [RO2022 Identifying serious bacterial infections in young infants Dr Lizelle Keet - DCST Paediatrician](https://youtu.be/jfrWM_U89fQ)
 
@@ -53,27 +71,12 @@ HIV & TB resources can be found under the Infectious Diseases section and triage
 
 * [RO2025 Childhood TB in rural settings - what you ACTUALLY need to know. Dr Juli Switala](https://www.youtube.com/watch?v=NsNMFxaJVtY&list=PLBS4k3o3cGeZSbsoMm8qsUcZ2T5Cr0g2J)
 
-* [Management of TB in children and adolecents Guideline](https://knowledgehub.health.gov.za/elibrary/management-tuberculosis-children-and-adolescents)
-
-* [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series about how to perform procedures with supplies commonly found in resource-limited settings.
-
 * [RO2024 webinar Ambulatory conditions in children: Anaemia, Headache & UTI Dr Naidoo](https://www.youtube.com/watch?v=xNwi25JhO_0)
 
+## Key Procedures
+* [Common procedures on children adapted for resource limited areas](https://sugarprep.org/videos/) USA based procedure videos for resource limited settings. SUGAR (Simulation Use for Global Away Rotations) curriculum include SUGAR PEARLS (Procedural Education for Adaptation to Resource limited Settings. A video series about how to perform procedures with supplies commonly found in resource-limited settings.
+
 * [Bubble CPAP](https://sugarprep.org/videos/#Bubble_CPAP), One of the SUGAR PEARL videos.
-
-* [The Childrens Act Guide](https://ci.uct.ac.za/media/99107) This guide makes child health legal aspects much easier to understand, the chapters on consent and abuse and neglect especially relevant.
-
-* [Management of severe acute malnutrition](http://www.samj.org.za/index.php/samj/article/view/10072)
-
-* [Neonatal Care in Rural Health. Pitfalls and FAQ Dr M Lotz. Webinar 2021](https://youtu.be/aXqzO7EaDO4)
-
-* [GSH Neonates ‘Purple Book’](https://neonatalguidelines.com)
-
-* [Asthma treatment in children: A pragmatic approach](https://allsa.org/wp-content/uploads/2019/03/Asthma-treatment-in-children-a-pragatic-approach.pdf)
-
-* [Nationl Asthma Treatment Programme](https://www.asthmasa.org)
-
-* [WHO Emergency Triage Assessment and Treatment(ETAT) Participants Manual](https://iris.who.int/server/api/core/bitstreams/defcbf2b-9d70-4610-b5a3-dd6d46301994/content)
 
 * [Intraosseous_Needle_Placement In resource limited setting](https://sugarprep.org/videos/#Intraosseous_Needle_Placement)
 
