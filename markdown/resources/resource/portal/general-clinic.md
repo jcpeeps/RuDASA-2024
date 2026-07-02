@@ -27,6 +27,8 @@ section: '0'
 
  * A great resource is the [Zithulele Rural Doctors Handbook](https://www.ruraldoc.info) Free to download (with some other great resources) – this is worthwhile to having access to
 
+*[Carte Blanche on the Vula App](https://www.youtube.com/watch?v=YI7-1N6qPnM)
+
 ## Applications for your phone
 * Your biggest friend is the EMG app: [Emguidance](https://emguidance.com/): go to the guidelines tab and add all the guidelines that you want to be able to access off line – internet can be fickle! This includes your all your EMLs as well as ART guidelines etc.
 
