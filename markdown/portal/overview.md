@@ -6,10 +6,13 @@ RuDASA has created a **comprehensive online package** to help orientate clinicia
 
 If you use our resources please consider donating to RuDASA to help us keep you up to date
 
-| Donate R100.00 to RuDASA   |  Donate R1,000.00 to RuDASA   |  Donate another amount
-| :-----: | :-----: |  :-----:  |
-|[![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/95bur) | [![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/9e72r) |  [![Donate to bank](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://drive.google.com/file/d/1jrEei9p7MX1JZ8Zky8KU1fN27DL0qBDM/view?usp=sharing)
-
+|  Donate R100.00 to RuDASA | 
+|  :-----:  |
+|[![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/95bur)|
+|  Donate R1000.00 to RuDASA |
+|[![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/9e72r) |
+| Donate another amount |
+[![Donate to bank](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://drive.google.com/file/d/1jrEei9p7MX1JZ8Zky8KU1fN27DL0qBDM/view?usp=sharing)
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document.
