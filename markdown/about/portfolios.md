@@ -4,7 +4,7 @@ members:
     {
       role: "RuDASA Office Coordinator",
       title: "",
-      name: "Lou Billet",
+      name: "Lou Billett",
       email: "info@rudasa.org.za",
     },
     {
@@ -22,7 +22,7 @@ members:
     {
       role: "Rural Doctor of the Year",
       title: "",
-      name: "Lou Billet",
+      name: "Lou Billett",
       email: "award@rudasa.org.za",
     },
   ]
