@@ -2,6 +2,12 @@ RuDASA is a network of rural health care professionals, and provides numerous op
 
 RuDASA also aims to be a resource of rural expertise for the South African Government and other stakeholders. We have become involved in a number of initiatives to lobby for and address the needs of rural doctors and other health professionals. RuDASA has taken on a prominent advocacy role in terms of pushing for improved health in rural areas in general, as well as addressing specific topics, such as the availability of posts in rural hospitals and drug shortages. From time to time, RuDASA has issued open letters and press statements, often with partner organizations, to create public awareness of the plight, challenges and successes of rural health care professionals.
 
+If you think our work is important for improving health in rural areas please donate to RuDASA
+
+| Donate R100.00 to RuDASA |  Donate R1,000.00 to RuDASA |
+| :---: | :---: |
+|[![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/95bur) | [![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/9e72r) |
+
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
     To change the content in this file, simply retype/ copy+paste any text above, as you would in a normal text file/ word document. 
