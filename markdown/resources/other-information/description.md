@@ -2,9 +2,10 @@ A major part of RuDASA's function is to provide support for doctors working in r
 RuDASA members can also check out our [Rural Onboarding](https://rudasa.org.za/resources/thrive/onboarding) Section for an online, structured orientation program with complete resources  for clinical rural health care. 
 
 If you use our resources please consider donating to RuDASA to help us keep you up to date
-| Donate R100.00 to RuDASA |  Donate R1,000.00 to RuDASA |
-| :---: | :---: |
-|[![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/95bur) | [![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/9e72r) |
+
+| Donate R100.00 to RuDASA |  Donate R1,000.00 to RuDASA |  Donate another amount
+| :---: | :---: |  :---:  |
+|[![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/95bur) | [![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/9e72r) |  [![Donate to bank](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://drive.google.com/file/d/1jrEei9p7MX1JZ8Zky8KU1fN27DL0qBDM/view?usp=sharing)
 
 <!--
     This is a comment and is not displayed on the website. Do not alter this text between arrows (->).
