@@ -3,8 +3,8 @@ RuDASA members can also check out our [Rural Onboarding](https://rudasa.org.za/r
 
 If you use our resources please consider donating to RuDASA to help us keep you up to date
 
-| Donate R100.00 to RuDASA |  Donate R1,000.00 to RuDASA |  Donate another amount
-| :---: | :---: |  :---:  |
+| Donate R100.00 to RuDASA   |  Donate R1,000.00 to RuDASA   |  Donate another amount
+| :-----: | :-----: |  :-----:  |
 |[![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/95bur) | [![Donate Now with PayFast](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://payf.st/9e72r) |  [![Donate to bank](https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png)](https://drive.google.com/file/d/1jrEei9p7MX1JZ8Zky8KU1fN27DL0qBDM/view?usp=sharing)
 
 <!--
