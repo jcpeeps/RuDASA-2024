@@ -371,8 +371,11 @@ export default function SignUp({ data }) {
                                                         <div className="my-4 my-lg-5 w-100 d-flex flex-column flex-sm-row justify-content-center justify-content-md-between">
                                                             <div className="w-auto me-sm-5 mb-4 mb-sm-0 form-group">
                                                                 <label htmlFor="country" className="text-primary fw-bold form-label">Country*</label>
-                                                                <select id="country" className="form-select border-0 border-bottom" value={formData.country}
-                                                                    onChange={(e) => setFormData({ ...formData, country: e.target.value, province: "", district: "", workPlace: "" })}>
+                                                                <select id="country" name="country" className="form-select border-0 border-bottom" value={formData.country}
+                                                                    onChange={(e) => {
+                                                                        setFormData({ ...formData, country: e.target.value, province: "", district: "", workPlace: "" });
+                                                                        handleChange(e);
+                                                                    }}>
                                                                     {countries.map(c => (
                                                                         <option key={c.code} value={c.name}>{c.name}</option>
                                                                     ))}
@@ -381,8 +384,11 @@ export default function SignUp({ data }) {
                                                             {isSouthAfrica &&
                                                                 <div className="w-auto form-group" style={{ minWidth: '45%' }}>
                                                                     <label htmlFor="province" className="text-primary fw-bold form-label">Province*</label>
-                                                                    <select id="province" className="form-select border-0 border-bottom" value={formData.province}
-                                                                        onChange={(e) => handleProvinceChange(e.target.value)}>
+                                                                    <select id="province" name="province" className="form-select border-0 border-bottom" value={formData.province}
+                                                                        onChange={(e) => {
+                                                                            handleProvinceChange(e.target.value);
+                                                                            handleChange(e);
+                                                                        }}>
                                                                         <option value="">— Select Province —</option>
                                                                         {provinces.map(name => (
                                                                             <option key={name} value={name}>{name}</option>
