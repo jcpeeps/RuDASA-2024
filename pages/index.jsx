@@ -8,6 +8,7 @@ import Hero from '../components/landing-page/Hero'
 import SaWork from '../components/landing-page/SaWork'
 import WhatWeDo from '../components/landing-page/WhatWeDo'
 import WhoAreWe from '../components/landing-page/WhoAreWe'
+import MemberMap from '../components/landing-page/MemberMap'
 import Script from 'next/script';
 
 export default function Home({ data }) {
@@ -16,6 +17,7 @@ export default function Home({ data }) {
 		<Layout pageTitle="RuDASA | Home">
 			<Hero/>
 			<WhoAreWe content={data.find(file => file.slug === "who-are-we").frontmatter}/>
+			<MemberMap />
 			<WhatWeDo content={data.find(file => file.slug === "what-we-do").content}/>
 			<CelebrateRuralMontage images={data.find(file => file.slug === "celebrate-rural").content}/>
 			<Advocacy content={data.find(file => file.slug === "advocacy-work").content} examples={data.find(file => file.slug === "advocacy-work-examples").content} />
