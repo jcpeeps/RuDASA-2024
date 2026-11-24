@@ -12,7 +12,8 @@ export default async function handler(req, res) {
         const data = await upstream.json();
         if (data.error) throw new Error(data.error);
 
-        res.setHeader("Cache-Control", "s-maxage=3600, stale-while-revalidate=86400");
+        // Cache for 5 minutes, then serve stale data for up to 10 more minutes while refreshing
+        res.setHeader("Cache-Control", "s-maxage=300, stale-while-revalidate=600");
         return res.status(200).json(data);
     } catch (err) {
         return res.status(502).json({ error: "Could not load member map data" });
