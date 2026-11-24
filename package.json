@@ -24,6 +24,7 @@
     "gray-matter": "^4.0.3",
     "iron-session": "^6.2.1",
     "jquery": "^3.6.1",
+    "leaflet": "^1.9.4",
     "marked": "^4.1.0",
     "next": "12.2.0",
     "next-absolute-url": "^1.2.2",
