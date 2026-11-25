@@ -12,6 +12,8 @@ const PROVINCE_COLOURS = {
     "North West":    "#d2691e",
     "Western Cape":  "#f59e0b"
 }
+// Full Looker Studio report (opens in a new tab)
+const FULL_REPORT_URL = "https://lookerstudio.google.com/reporting/03a387dc-5b5b-4bf7-ada7-9d952d863615/page/xe1yF"
 const SA_BOUNDS = [[-35.0, 16.3], [-22.0, 33.0]]
 const PIN_PATH = "M18 45C18 45 3 28 3 17a15 15 0 0 1 30 0c0 11-15 28-15 28z"
 
@@ -237,85 +239,4 @@ export default function MemberMap() {
                                     value={province}
                                     onChange={(e) => setProvince(e.target.value)}
                                 >
-                                    <option value="All">All provinces</option>
-                                    {provinceList.map(name => (
-                                        <option key={name} value={name}>{name} ({provinceTotals[name]})</option>
-                                    ))}
-                                </select>
-                                <button
-                                    type="button"
-                                    className="btn btn-outline-secondary bg-white text-dark fw-semibold"
-                                    onClick={() => setSatellite(s => !s)}
-                                >
-                                    {satellite ? "Street view" : "Satellite view"}
-                                </button>
-                            </div>
-
-                            <div className="d-flex flex-wrap gap-4 mb-3">
-                                <div className="form-check">
-                                    <input
-                                        id="mm-facilities" type="checkbox" className="form-check-input"
-                                        checked={showFacilities} onChange={(e) => setShowFacilities(e.target.checked)}
-                                    />
-                                    <label htmlFor="mm-facilities" className="form-check-label">Facilities with 5+ members</label>
-                                </div>
-                                <div className="form-check">
-                                    <input
-                                        id="mm-grouped" type="checkbox" className="form-check-input"
-                                        checked={showGrouped} onChange={(e) => setShowGrouped(e.target.checked)}
-                                    />
-                                    <label htmlFor="mm-grouped" className="form-check-label">Smaller facilities (grouped by district)</label>
-                                </div>
-                            </div>
-
-                            {/* Map with key overlay */}
-                            <div style={{ position: "relative", maxWidth: "100%", overflow: "hidden", borderRadius: 12, isolation: "isolate", contain: "paint" }}>
-                                <div
-                                    ref={mapEl}
-                                    style={{
-                                        width: "100%",
-                                        height: "clamp(420px, 65vh, 620px)",
-                                        borderRadius: 12,
-                                        overflow: "hidden",
-                                        maxWidth: "100%",
-                                        boxShadow: "0 4px 16px rgba(0,0,0,0.12)",
-                                        isolation: "isolate",
-                                        zIndex: 0
-                                    }}
-                                />
-                                <div
-                                    className="d-none d-md-block"
-                                    style={{
-                                        position: "absolute", top: 12, right: 12, zIndex: 1000,
-                                        background: "#fff", borderRadius: 12, padding: "14px 18px",
-                                        boxShadow: "0 2px 12px rgba(0,0,0,0.18)", fontSize: "0.9rem",
-                                        maxHeight: "calc(100% - 24px)", overflowY: "auto"
-                                    }}
-                                >
-                                    <div className="fw-bold text-muted mb-2" style={{ letterSpacing: 1, fontSize: "0.75rem" }}>KEY</div>
-                                    <div className="d-flex flex-column" style={{ gap: 8 }}>{keyRows}</div>
-                                    <div className="text-muted mt-3" style={{ fontSize: "0.75rem", maxWidth: 190 }}>
-                                        The number on each pin is the member count. Smaller pins group facilities with fewer than 5 members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Key for phones, below the map */}
-                            <div className="d-md-none mt-3">
-                                <div className="fw-bold text-muted mb-2" style={{ letterSpacing: 1, fontSize: "0.75rem" }}>KEY</div>
-                                <div className="d-flex flex-wrap" style={{ gap: "8px 16px", fontSize: "0.9rem" }}>{keyRows}</div>
-                                <div className="text-muted mt-2" style={{ fontSize: "0.75rem" }}>
-                                    The number on each pin is the member count. Smaller pins group facilities with fewer than 5 members.
-                                </div>
-                            </div>
-
-                            <p className="text-center text-muted small mt-3 mb-0">
-                                Facilities with fewer than 5 members are grouped by district to protect member privacy.
-                            </p>
-                        </>
-                    )}
-                </div>
-            </div>
-        </section>
-    )
-}
+                                    <option value="All">All
