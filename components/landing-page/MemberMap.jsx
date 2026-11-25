@@ -202,7 +202,7 @@ export default function MemberMap() {
     )
 
     return (
-        <section className="px-3" id="member-map">
+        <section className="px-3" id="member-map" style={{ overflow: "hidden", maxWidth: "100%" }}>
             <div className="container py-2 py-lg-5">
                 <div className="my-5 py-2 py-lg-5">
                     <h1 className="display-4 fw-bold mb-4 text-center">Where our members work</h1>
@@ -232,6 +232,7 @@ export default function MemberMap() {
                             <div className="d-flex flex-wrap align-items-center gap-3 mb-3">
                                 <select
                                     className="form-select w-auto"
+                                    style={{ maxWidth: "100%" }}
                                     aria-label="Filter by province"
                                     value={province}
                                     onChange={(e) => setProvince(e.target.value)}
@@ -268,7 +269,7 @@ export default function MemberMap() {
                             </div>
 
                             {/* Map with key overlay */}
-                            <div style={{ position: "relative" }}>
+                            <div style={{ position: "relative", maxWidth: "100%", overflow: "hidden", borderRadius: 12, isolation: "isolate", contain: "paint" }}>
                                 <div
                                     ref={mapEl}
                                     style={{
@@ -276,7 +277,9 @@ export default function MemberMap() {
                                         height: "clamp(420px, 65vh, 620px)",
                                         borderRadius: 12,
                                         overflow: "hidden",
+                                        maxWidth: "100%",
                                         boxShadow: "0 4px 16px rgba(0,0,0,0.12)",
+                                        isolation: "isolate",
                                         zIndex: 0
                                     }}
                                 />
