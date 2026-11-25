@@ -239,4 +239,16 @@ export default function MemberMap() {
                                     value={province}
                                     onChange={(e) => setProvince(e.target.value)}
                                 >
-                                    <option value="All">All
+                                    <option value="All">All provinces</option>
+                                    {provinceList.map(name => (
+                                        <option key={name} value={name}>{name} ({provinceTotals[name]})</option>
+                                    ))}
+                                </select>
+                                <button
+                                    type="button"
+                                    className="btn btn-outline-secondary bg-white text-dark fw-semibold"
+                                    onClick={() => setSatellite(s => !s)}
+                                >
+                                    {satellite ? "Street view" : "Satellite view"}
+                                </button>
+                            </div>
