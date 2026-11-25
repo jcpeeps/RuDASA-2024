@@ -26,13 +26,14 @@ export default function WhatWeDo({ content }) {
                 </div>
             </div>
 
-            {/* Donate buttons: on phones each amount stacks above its button instead of running off the screen */}
+            {/* Donate buttons: where three columns do not fit (phones and narrow laptop columns),
+                each amount stacks above its button. Everywhere else the original table is untouched. */}
             <style jsx global>{`
-                .what-we-do-content img {
-                    max-width: 100%;
-                    height: auto;
-                }
-                @media (max-width: 767.98px) {
+                @media (max-width: 767.98px), (min-width: 992px) and (max-width: 1199.98px) {
+                    .what-we-do-content img {
+                        max-width: 100%;
+                        height: auto;
+                    }
                     .what-we-do-content table {
                         display: grid;
                         grid-template-columns: 1fr;
