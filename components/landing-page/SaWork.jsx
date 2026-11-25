@@ -11,7 +11,7 @@ export default function SaWork({ content }) {
                 <article>
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
                 </article>
-                <div className="w-100 text-end d-flex justify-content-center">
+                <div className="w-100 d-flex flex-wrap justify-content-center">
                     <div className="hover-button">
                         <Link href="https://www.dpsa.gov.za/newsroom/psvc/" className="mx-5">
                             <a role="button" className="btn btn-lg btn-primary gradient-background text-white mt-4 mx-3" target="_blank">Government Jobs</a>
