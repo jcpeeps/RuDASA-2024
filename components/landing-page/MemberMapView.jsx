@@ -1,23 +1,14 @@
 import React from 'react'
-import { FULL_REPORT_URL } from './memberMapParts'
+import { fmt } from './memberMapParts'
 import MemberMapKey from './MemberMapKey'
+import MemberMapControls from './MemberMapControls'
 
 // Everything the visitor sees. The map logic lives in MemberMap.jsx.
-export default function MemberMapView({
-    data, error, province, setProvince,
-    showFacilities, setShowFacilities,
-    showGrouped, setShowGrouped,
-    satellite, setSatellite, mapEl
-}) {
-    // Province totals for the dropdown and the key
-    const provinceTotals = {}
-    if (data) {
-        data.points.forEach(p => {
-            provinceTotals[p.province] = (provinceTotals[p.province] || 0) + p.count
-        })
+export default function MemberMapView({ data, error, scope, mapEl, controls }) {
+    const keyProps = data && {
+        provinces: scope.provinces, grandTotal: data.total,
+        province: controls.province, setProvince: controls.onProvince
     }
-    const provinceList = Object.keys(provinceTotals).sort((a, b) => provinceTotals[b] - provinceTotals[a])
-    const keyProps = { provinceList, provinceTotals, province, setProvince }
 
     return (
         <section className="px-3" id="member-map" style={{ overflow: "hidden", maxWidth: "100%" }}>
@@ -25,8 +16,8 @@ export default function MemberMapView({
                 <div className="my-5 py-2 py-lg-5">
                     <h1 className="display-4 fw-bold mb-4 text-center">Where our members work</h1>
                     <p className="text-center mx-auto mb-4" style={{ maxWidth: 700 }}>
-                        RuDASA members work in rural facilities across South Africa.
-                        Choose a province to zoom in, or tap a pin to see the details.
+                        Every facility where a RuDASA member works has a pin. Choose a province or district,
+                        search for a facility, or tap a pin to see the details.
                     </p>
 
                     {error && (
@@ -42,49 +33,11 @@ export default function MemberMapView({
                     {data && (
                         <>
                             <div className="text-center mb-4">
-                                <span className="display-5 fw-bold text-primary">{data.total.toLocaleString()}</span>
-                                <div className="text-muted">RuDASA members</div>
+                                <span className="display-5 fw-bold text-primary">{fmt(scope.total)}</span>
+                                <div className="text-muted">{scope.label}</div>
                             </div>
 
-                            {/* Controls */}
-                            <div className="d-flex flex-wrap align-items-center gap-3 mb-3">
-                                <select
-                                    className="form-select w-auto"
-                                    style={{ maxWidth: "100%" }}
-                                    aria-label="Filter by province"
-                                    value={province}
-                                    onChange={(e) => setProvince(e.target.value)}
-                                >
-                                    <option value="All">All provinces</option>
-                                    {provinceList.map(name => (
-                                        <option key={name} value={name}>{name} ({provinceTotals[name]})</option>
-                                    ))}
-                                </select>
-                                <button
-                                    type="button"
-                                    className="btn btn-outline-secondary bg-white text-dark fw-semibold"
-                                    onClick={() => setSatellite(s => !s)}
-                                >
-                                    {satellite ? "Street view" : "Satellite view"}
-                                </button>
-                            </div>
-
-                            <div className="d-flex flex-wrap gap-4 mb-3">
-                                <div className="form-check">
-                                    <input
-                                        id="mm-facilities" type="checkbox" className="form-check-input"
-                                        checked={showFacilities} onChange={(e) => setShowFacilities(e.target.checked)}
-                                    />
-                                    <label htmlFor="mm-facilities" className="form-check-label">Facilities with 5+ members</label>
-                                </div>
-                                <div className="form-check">
-                                    <input
-                                        id="mm-grouped" type="checkbox" className="form-check-input"
-                                        checked={showGrouped} onChange={(e) => setShowGrouped(e.target.checked)}
-                                    />
-                                    <label htmlFor="mm-grouped" className="form-check-label">Smaller facilities (grouped by district)</label>
-                                </div>
-                            </div>
+                            <MemberMapControls {...controls} provinces={scope.provinces} districts={scope.districts} />
 
                             {/* Map with the key floating over it on desktop */}
                             <div style={{ position: "relative", maxWidth: "100%", overflow: "hidden", borderRadius: 12, isolation: "isolate", contain: "paint" }}>
@@ -108,25 +61,11 @@ export default function MemberMapView({
                             <MemberMapKey {...keyProps} phone />
 
                             <p className="text-center text-muted small mt-3 mb-0">
-                                Facilities with fewer than 5 members are grouped by district to protect member privacy.
+                                Where a facility or district has fewer than 5 members, the exact number is not shown,
+                                to protect member privacy.
                             </p>
                         </>
                     )}
-
-                    {/* Link to the full Looker Studio report */}
-                    <div className="d-flex justify-content-center mt-4">
-                        <div className="hover-button">
-                            <a
-                                href={FULL_REPORT_URL}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                role="button"
-                                className="btn btn-lg btn-primary gradient-background text-white"
-                            >
-                                View the full interactive report
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
